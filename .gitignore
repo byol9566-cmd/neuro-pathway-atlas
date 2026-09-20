@@ -20,3 +20,6 @@ viewer/.deploy/
 
 # full texts fetched by verify_quotes.py (third-party content, re-downloadable)
 docs/data/pathway-evidence/verification/cache/
+
+# zipped copies made for sending
+docs/handover-seongyeon/*.zip
