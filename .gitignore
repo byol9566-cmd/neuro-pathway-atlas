@@ -1,0 +1,22 @@
+# downloaded atlas volumes (re-fetch with `python -m atlas_pipeline.fetch`)
+data/
+# generated meshes + manifest (rebuild with `python -m atlas_pipeline.build`)
+viewer/public/data/
+
+# python
+pipeline/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# node
+node_modules/
+viewer/dist/
+viewer/test-results/
+viewer/playwright-report/
+
+.DS_Store
+viewer/.deploy/
+
+# full texts fetched by verify_quotes.py (third-party content, re-downloadable)
+docs/data/pathway-evidence/verification/cache/
