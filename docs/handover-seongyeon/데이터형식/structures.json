@@ -1,0 +1,75 @@
+{
+  "_comment": "구조 정의. tract=신경로(중심선 자동 계산), centerline=신경로는 아니지만 길쭉해서 경로선이 무게중심 대신 중심선을 따라가야 하는 구조. source.labels / labelRanges 는 NextBrain argmax 라벨 id (docs/data/nextbrain-argmax-labels.tsv). 한국어 용어는 초안 — 도메인 담당자 검수 필요.",
+  "groups": {
+    "shell": { "name": { "ko": "윤곽", "en": "Outline" }, "color": "#9fb3c8" },
+    "cortex": { "name": { "ko": "대뇌겉질", "en": "Cerebral cortex" }, "color": "#d9a77a" },
+    "thalamus": { "name": { "ko": "시상", "en": "Thalamus" }, "color": "#5b8def" },
+    "basal-ganglia": { "name": { "ko": "바닥핵·중뇌핵", "en": "Basal ganglia & midbrain nuclei" }, "color": "#9b6bd6" },
+    "limbic": { "name": { "ko": "둘레계통", "en": "Limbic system" }, "color": "#e0719e" },
+    "brainstem-nuclei": { "name": { "ko": "뇌줄기 핵", "en": "Brainstem nuclei" }, "color": "#e8893a" },
+    "tracts": { "name": { "ko": "신경로", "en": "Tracts" }, "color": "#e6d36a" },
+    "cerebellum": { "name": { "ko": "소뇌", "en": "Cerebellum" }, "color": "#58b89a" }
+  },
+  "structures": [
+    { "id": "shell-cerebrum", "group": "shell", "name": { "ko": "대뇌반구", "en": "Cerebral hemisphere" }, "source": { "atlas": "nextbrain", "shell": "cerebrum" } },
+    { "id": "shell-brainstem", "group": "shell", "name": { "ko": "뇌줄기", "en": "Brainstem" }, "source": { "atlas": "nextbrain", "shell": "brainstem" } },
+    { "id": "shell-cerebellum", "group": "shell", "name": { "ko": "소뇌", "en": "Cerebellum" }, "source": { "atlas": "nextbrain", "shell": "cerebellum" } },
+
+    { "id": "ctx-postcentral", "group": "cortex", "name": { "ko": "중심뒤이랑 (일차몸감각겉질)", "en": "Postcentral gyrus (S1)" }, "source": { "atlas": "nextbrain", "labels": [2022], "stride": 2 } },
+    { "id": "ctx-precentral", "group": "cortex", "name": { "ko": "중심앞이랑 (일차운동겉질)", "en": "Precentral gyrus (M1)" }, "source": { "atlas": "nextbrain", "labels": [2024], "stride": 2 } },
+    { "id": "ctx-cingulate", "centerline": true, "group": "cortex", "name": { "ko": "띠이랑", "en": "Cingulate gyrus" }, "source": { "atlas": "nextbrain", "labels": [2002, 2010, 2023, 2026], "stride": 2 } },
+    { "id": "ctx-parahippocampal", "centerline": true, "group": "cortex", "name": { "ko": "해마곁이랑·속후각겉질", "en": "Parahippocampal gyrus & entorhinal cortex" }, "source": { "atlas": "nextbrain", "labels": [2006, 2016], "stride": 2 } },
+
+    { "id": "thal-vpl", "group": "thalamus", "name": { "ko": "배쪽뒤가쪽핵 (VPL)", "en": "Ventral posterolateral nucleus" }, "source": { "atlas": "nextbrain", "labels": [394, 458] } },
+    { "id": "thal-vpm", "group": "thalamus", "name": { "ko": "배쪽뒤안쪽핵 (VPM)", "en": "Ventral posteromedial nucleus" }, "source": { "atlas": "nextbrain", "labels": [395, 423] } },
+    { "id": "thal-vl", "group": "thalamus", "name": { "ko": "배쪽가쪽핵 (VL)", "en": "Ventral lateral nucleus" }, "source": { "atlas": "nextbrain", "labels": [314, 350, 381, 382] } },
+    { "id": "thal-va", "group": "thalamus", "name": { "ko": "배쪽앞핵 (VA)", "en": "Ventral anterior nucleus" }, "source": { "atlas": "nextbrain", "labels": [222, 283] } },
+    { "id": "thal-md", "group": "thalamus", "name": { "ko": "등쪽안쪽핵 (MD)", "en": "Mediodorsal nucleus" }, "source": { "atlas": "nextbrain", "labels": [282, 312, 313, 379, 380] } },
+    { "id": "thal-anterior", "group": "thalamus", "name": { "ko": "시상앞핵군 (AV·AD·AM)", "en": "Anterior nuclear group" }, "source": { "atlas": "nextbrain", "labels": [219, 220, 252] } },
+    { "id": "thal-lp-ld", "group": "thalamus", "name": { "ko": "가쪽뒤핵·가쪽등쪽핵 (LP·LD)", "en": "Lateral posterior & lateral dorsal nuclei" }, "source": { "atlas": "nextbrain", "labels": [378, 441] } },
+    { "id": "thal-pulvinar", "group": "thalamus", "name": { "ko": "시상베개", "en": "Pulvinar" }, "source": { "atlas": "nextbrain", "labels": [454, 508, 517, 519, 578, 811, 813] } },
+    { "id": "thal-cm-pf", "group": "thalamus", "name": { "ko": "중심정중핵·다발곁핵 (CM·Pf)", "en": "Centromedian & parafascicular nuclei" }, "source": { "atlas": "nextbrain", "labels": [396, 397, 398, 479] } },
+    { "id": "thal-lgn", "group": "thalamus", "name": { "ko": "가쪽무릎핵 (LGN)", "en": "Lateral geniculate nucleus" }, "source": { "atlas": "nextbrain", "labels": [484] } },
+    { "id": "thal-mgn", "group": "thalamus", "name": { "ko": "안쪽무릎핵 (MGN)", "en": "Medial geniculate nucleus" }, "source": { "atlas": "nextbrain", "labels": [504, 505] } },
+    { "id": "thal-reticular", "group": "thalamus", "name": { "ko": "시상그물핵", "en": "Thalamic reticular nucleus" }, "source": { "atlas": "nextbrain", "labels": [190, 191, 254] } },
+
+    { "id": "bg-caudate", "group": "basal-ganglia", "name": { "ko": "꼬리핵", "en": "Caudate nucleus" }, "source": { "atlas": "nextbrain", "labels": [48, 118, 393] } },
+    { "id": "bg-putamen", "group": "basal-ganglia", "name": { "ko": "조가비핵", "en": "Putamen" }, "source": { "atlas": "nextbrain", "labels": [79, 349] } },
+    { "id": "bg-gpe", "group": "basal-ganglia", "name": { "ko": "창백핵 바깥분절 (GPe)", "en": "Globus pallidus, external segment" }, "source": { "atlas": "nextbrain", "labels": [119] } },
+    { "id": "bg-gpi", "group": "basal-ganglia", "name": { "ko": "창백핵 속분절 (GPi)", "en": "Globus pallidus, internal segment" }, "source": { "atlas": "nextbrain", "labels": [206] } },
+    { "id": "bg-stn", "group": "basal-ganglia", "name": { "ko": "시상밑핵 (STN)", "en": "Subthalamic nucleus" }, "source": { "atlas": "nextbrain", "labels": [315, 316, 321] } },
+    { "id": "bg-sn", "group": "basal-ganglia", "name": { "ko": "흑색질", "en": "Substantia nigra" }, "source": { "atlas": "nextbrain", "labels": [310, 352] } },
+    { "id": "mb-red-nucleus", "group": "basal-ganglia", "name": { "ko": "적색핵", "en": "Red nucleus" }, "source": { "atlas": "nextbrain", "labels": [385] } },
+
+    { "id": "lim-hippocampus", "centerline": true, "group": "limbic", "name": { "ko": "해마", "en": "Hippocampus" }, "source": { "atlas": "nextbrain", "labelRanges": [[326, 326], [339, 347], [364, 375], [404, 411], [418, 422], [432, 432], [558, 576]] } },
+    { "id": "lim-amygdala", "group": "limbic", "name": { "ko": "편도체", "en": "Amygdala" }, "source": { "atlas": "nextbrain", "labels": [214, 215, 216, 217, 238, 240, 242, 277, 278, 279, 295, 301, 320, 377] } },
+    { "id": "lim-mammillary-body", "group": "limbic", "name": { "ko": "유두체", "en": "Mammillary body" }, "source": { "atlas": "nextbrain", "labels": [305, 306, 307, 308] } },
+    { "id": "tr-fornix", "group": "tracts", "tract": true, "name": { "ko": "뇌활 (해마술 포함)", "en": "Fornix (with fimbria)" }, "source": { "atlas": "nextbrain", "labels": [199, 461] } },
+    { "id": "tr-mtt", "group": "tracts", "tract": true, "name": { "ko": "유두시상로", "en": "Mammillothalamic tract" }, "source": { "atlas": "nextbrain", "labels": [276] } },
+
+    { "id": "tr-medial-lemniscus", "group": "tracts", "tract": true, "name": { "ko": "안쪽섬유띠", "en": "Medial lemniscus" }, "source": { "atlas": "nextbrain", "labels": [499] } },
+    { "id": "tr-mlf", "group": "tracts", "tract": true, "name": { "ko": "안쪽세로다발 (MLF)", "en": "Medial longitudinal fasciculus" }, "source": { "atlas": "nextbrain", "labels": [528] } },
+    { "id": "tr-scp", "group": "tracts", "tract": true, "name": { "ko": "위소뇌다리", "en": "Superior cerebellar peduncle" }, "source": { "atlas": "nextbrain", "labels": [471, 531] } },
+    { "id": "tr-optic-tract", "group": "tracts", "tract": true, "name": { "ko": "시각로", "en": "Optic tract" }, "source": { "atlas": "nextbrain", "labels": [208] } },
+
+    { "id": "bs-gracile", "group": "brainstem-nuclei", "name": { "ko": "널판핵", "en": "Gracile nucleus" }, "source": { "atlas": "nextbrain", "labels": [756] } },
+    { "id": "bs-cuneate", "group": "brainstem-nuclei", "name": { "ko": "쐐기핵", "en": "Cuneate nucleus" }, "source": { "atlas": "nextbrain", "labels": [755] } },
+    { "id": "bs-vestibular-medial", "group": "brainstem-nuclei", "name": { "ko": "안쪽안뜰핵", "en": "Medial vestibular nucleus" }, "source": { "atlas": "nextbrain", "labels": [694] } },
+    { "id": "bs-vestibular-other", "group": "brainstem-nuclei", "name": { "ko": "가쪽·아래·위안뜰핵", "en": "Lateral, inferior & superior vestibular nuclei" }, "source": { "atlas": "nextbrain", "labels": [683, 690, 703] } },
+    { "id": "bs-abducens", "group": "brainstem-nuclei", "name": { "ko": "갓돌림신경핵 (VI)", "en": "Abducens nucleus" }, "source": { "atlas": "nextbrain", "labels": [682] } },
+    { "id": "bs-oculomotor", "group": "brainstem-nuclei", "name": { "ko": "눈돌림신경핵 (III)", "en": "Oculomotor nucleus" }, "source": { "atlas": "nextbrain", "labels": [464], "placeholder": { "radiiMm": [1.4, 2.6, 2.2] } } },
+    { "id": "bs-facial", "group": "brainstem-nuclei", "name": { "ko": "얼굴신경핵 (VII)", "en": "Facial nucleus" }, "source": { "atlas": "nextbrain", "labels": [666] } },
+    { "id": "bs-spinal-trigeminal", "group": "brainstem-nuclei", "name": { "ko": "삼차신경척수핵", "en": "Spinal trigeminal nucleus" }, "source": { "atlas": "nextbrain", "labels": [669] } },
+    { "id": "bs-hypoglossal", "group": "brainstem-nuclei", "name": { "ko": "혀밑신경핵 (XII)", "en": "Hypoglossal nucleus" }, "source": { "atlas": "nextbrain", "labels": [724], "placeholder": { "radiiMm": [1.0, 1.2, 4.5] } } },
+    { "id": "bs-inferior-olive", "group": "brainstem-nuclei", "name": { "ko": "아래올리브핵", "en": "Inferior olivary nucleus" }, "source": { "atlas": "nextbrain", "labels": [654, 671, 685] } },
+    { "id": "bs-pontine-nuclei", "group": "brainstem-nuclei", "name": { "ko": "다리뇌핵", "en": "Pontine nuclei" }, "source": { "atlas": "nextbrain", "labels": [414] } },
+    { "id": "bs-pag", "group": "brainstem-nuclei", "name": { "ko": "수도관주위회색질 (PAG)", "en": "Periaqueductal gray" }, "source": { "atlas": "nextbrain", "labels": [465] } },
+    { "id": "bs-superior-colliculus", "group": "brainstem-nuclei", "name": { "ko": "위둔덕", "en": "Superior colliculus" }, "source": { "atlas": "nextbrain", "labels": [507] } },
+    { "id": "bs-inferior-colliculus", "group": "brainstem-nuclei", "name": { "ko": "아래둔덕", "en": "Inferior colliculus" }, "source": { "atlas": "nextbrain", "labels": [541] } },
+    { "id": "bs-lc-nextbrain", "group": "brainstem-nuclei", "name": { "ko": "청색반점 (NextBrain)", "en": "Locus coeruleus (NextBrain)" }, "source": { "atlas": "nextbrain", "labels": [589] } },
+    { "id": "bs-lc-aan", "group": "brainstem-nuclei", "name": { "ko": "청색반점 (Harvard AAN)", "en": "Locus coeruleus (Harvard AAN)" }, "source": { "atlas": "aan", "files": { "L": "AAN_LC_L_MNI152_1mm_v2p0.nii", "R": "AAN_LC_R_MNI152_1mm_v2p0.nii" } } },
+    { "id": "bs-dorsal-raphe-aan", "group": "brainstem-nuclei", "name": { "ko": "등쪽솔기핵 (Harvard AAN)", "en": "Dorsal raphe nucleus (Harvard AAN)" }, "source": { "atlas": "aan", "files": { "M": "AAN_DR_MNI152_1mm_v2p0.nii" } } },
+
+    { "id": "cb-dentate", "group": "cerebellum", "name": { "ko": "치아핵", "en": "Dentate nucleus" }, "source": { "atlas": "nextbrain", "labels": [721] } }
+  ]
+}

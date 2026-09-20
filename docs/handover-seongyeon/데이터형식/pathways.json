@@ -1,0 +1,160 @@
+{
+  "_comment": "경로 정의. structures[].side 는 기시쪽(origin) 기준 상대값: ipsi | contra. 뷰어에서 기시쪽(L/R)을 바꾸면 실제 좌우가 결정된다. 모든 텍스트는 초안(reviewStatus=draft) — 도메인 담당자 검수 전에는 학습용으로 쓰지 말 것.",
+  "pathways": [
+    {
+      "id": "dcml",
+      "category": "somatosensory",
+      "name": { "ko": "뒤기둥-안쪽섬유띠 경로", "en": "Dorsal column–medial lemniscus pathway" },
+      "summary": { "ko": "분별촉각·진동감각·의식적 고유감각을 반대쪽 일차몸감각겉질로 전달하는 3-뉴런 경로. 숨뇌 아래쪽에서 교차한다." },
+      "origin": { "ko": "자극을 받는 몸 쪽" },
+      "defaultOriginSide": "R",
+      "reviewStatus": "draft",
+      "steps": [
+        {
+          "id": "dcml-1",
+          "neuronOrder": 1,
+          "title": { "ko": "1차 뉴런: 척수신경절 → 뒤기둥" },
+          "description": { "ko": "수용기의 신호가 척수신경절(DRG) 뉴런의 중추가지를 따라 척수로 들어가 같은쪽 뒤기둥을 시냅스 없이 상행한다. T6 아래는 널판다발(안쪽), T6 위는 쐐기다발(가쪽)." },
+          "structures": [],
+          "missing": { "ko": "척수·말초 구조는 이번 시제품 데이터에 없음" }
+        },
+        {
+          "id": "dcml-2",
+          "neuronOrder": 2,
+          "title": { "ko": "널판핵·쐐기핵에서 첫 시냅스" },
+          "description": { "ko": "숨뇌 아래쪽의 같은쪽 널판핵(다리)·쐐기핵(팔)에서 2차 뉴런과 시냅스한다." },
+          "structures": [
+            { "id": "bs-gracile", "side": "ipsi" },
+            { "id": "bs-cuneate", "side": "ipsi" }
+          ]
+        },
+        {
+          "id": "dcml-3",
+          "neuronOrder": 2,
+          "title": { "ko": "감각교차 → 안쪽섬유띠" },
+          "description": { "ko": "2차 뉴런의 축삭이 속활꼴섬유를 이루어 정중선을 건너고(감각교차), 반대쪽 안쪽섬유띠를 따라 숨뇌–다리뇌–중간뇌를 상행한다." },
+          "decussation": true,
+          "structures": [{ "id": "tr-medial-lemniscus", "side": "contra" }]
+        },
+        {
+          "id": "dcml-4",
+          "neuronOrder": 3,
+          "title": { "ko": "시상 VPL에서 둘째 시냅스" },
+          "description": { "ko": "반대쪽 시상의 배쪽뒤가쪽핵(VPL)에서 3차 뉴런과 시냅스한다. (얼굴 감각은 VPM으로 간다.)" },
+          "structures": [{ "id": "thal-vpl", "side": "contra" }]
+        },
+        {
+          "id": "dcml-5",
+          "neuronOrder": 3,
+          "title": { "ko": "일차몸감각겉질" },
+          "description": { "ko": "3차 뉴런의 축삭이 속섬유막 뒤다리를 지나 중심뒤이랑(브로드만 3·1·2 영역)에 도달한다." },
+          "structures": [{ "id": "ctx-postcentral", "side": "contra" }],
+          "missing": { "ko": "속섬유막은 NextBrain에 별도 라벨이 없음" }
+        }
+      ],
+      "lesions": [
+        { "level": { "ko": "척수 뒤기둥" }, "deficit": { "ko": "병변 아래 수준의 같은쪽 진동감각·위치감각 소실" } },
+        { "level": { "ko": "안쪽섬유띠 · VPL · 중심뒤이랑" }, "deficit": { "ko": "반대쪽 몸의 분별촉각·진동감각·위치감각 소실" } }
+      ]
+    },
+    {
+      "id": "papez",
+      "category": "limbic",
+      "name": { "ko": "파페츠 회로", "en": "Papez circuit" },
+      "summary": { "ko": "해마에서 시작해 유두체·시상앞핵·띠이랑을 거쳐 다시 해마로 돌아오는 고리. 서술기억의 공고화에 관여한다." },
+      "origin": { "ko": "표시할 반구" },
+      "defaultOriginSide": "L",
+      "reviewStatus": "draft",
+      "steps": [
+        {
+          "id": "papez-1",
+          "title": { "ko": "해마형성체 → 뇌활" },
+          "description": { "ko": "해마이행부(subiculum)를 중심으로 한 해마형성체의 출력이 해마술을 거쳐 뇌활로 모인다." },
+          "structures": [
+            { "id": "lim-hippocampus", "side": "ipsi" },
+            { "id": "tr-fornix", "side": "ipsi" }
+          ]
+        },
+        {
+          "id": "papez-2",
+          "title": { "ko": "유두체" },
+          "description": { "ko": "뇌활기둥(교차뒤뇌활)이 시상하부의 유두체, 주로 안쪽유두핵에 끝난다." },
+          "structures": [{ "id": "lim-mammillary-body", "side": "ipsi" }]
+        },
+        {
+          "id": "papez-3",
+          "title": { "ko": "유두시상로 → 시상앞핵" },
+          "description": { "ko": "유두체의 출력이 유두시상로를 따라 시상앞핵군으로 올라간다." },
+          "structures": [
+            { "id": "tr-mtt", "side": "ipsi" },
+            { "id": "thal-anterior", "side": "ipsi" }
+          ]
+        },
+        {
+          "id": "papez-4",
+          "title": { "ko": "띠이랑" },
+          "description": { "ko": "시상앞핵의 축삭이 속섬유막 앞다리를 지나 띠이랑으로 투사한다." },
+          "structures": [{ "id": "ctx-cingulate", "side": "ipsi" }]
+        },
+        {
+          "id": "papez-5",
+          "title": { "ko": "해마곁이랑 → 해마로 복귀" },
+          "description": { "ko": "띠이랑의 출력이 띠다발을 따라 해마곁이랑·속후각겉질로 가고, 관통로를 통해 해마로 되돌아와 고리가 닫힌다." },
+          "structures": [
+            { "id": "ctx-parahippocampal", "side": "ipsi" },
+            { "id": "lim-hippocampus", "side": "ipsi" }
+          ]
+        }
+      ],
+      "lesions": [
+        { "level": { "ko": "유두체 · 시상 안쪽부 (티아민 결핍)" }, "deficit": { "ko": "베르니케-코르사코프 증후군: 앞방향기억상실, 작화증" } },
+        { "level": { "ko": "양쪽 해마 · 뇌활" }, "deficit": { "ko": "앞방향기억상실 (새 서술기억 형성 장애)" } }
+      ]
+    },
+    {
+      "id": "hvor",
+      "category": "oculomotor",
+      "name": { "ko": "수평 안뜰눈반사 (VOR)", "en": "Horizontal vestibulo-ocular reflex" },
+      "summary": { "ko": "머리가 한쪽으로 돌 때 두 눈을 반대 방향으로 같은 속도로 돌려 시선을 고정하는 3-뉴런 반사활. 안쪽세로다발(MLF)이 두 눈의 움직임을 묶는다." },
+      "origin": { "ko": "머리가 도는 쪽" },
+      "defaultOriginSide": "L",
+      "reviewStatus": "draft",
+      "steps": [
+        {
+          "id": "hvor-1",
+          "neuronOrder": 1,
+          "title": { "ko": "수평반고리관 → 안쪽안뜰핵" },
+          "description": { "ko": "머리가 도는 쪽의 수평반고리관이 흥분하고, 안뜰신경절 뉴런(1차)이 안뜰신경(VIII)을 통해 같은쪽 안뜰핵(주로 안쪽안뜰핵)에 시냅스한다." },
+          "structures": [{ "id": "bs-vestibular-medial", "side": "ipsi" }],
+          "missing": { "ko": "속귀·안뜰신경은 시제품 데이터에 없음" }
+        },
+        {
+          "id": "hvor-2",
+          "neuronOrder": 2,
+          "title": { "ko": "반대쪽 갓돌림신경핵" },
+          "description": { "ko": "안뜰핵 뉴런(2차)이 정중선을 건너 반대쪽 갓돌림신경핵을 흥분시킨다. 갓돌림신경핵의 운동뉴런(3차)이 반대쪽 눈의 가쪽곧은근을 수축시킨다." },
+          "decussation": true,
+          "structures": [{ "id": "bs-abducens", "side": "contra" }]
+        },
+        {
+          "id": "hvor-3",
+          "title": { "ko": "핵사이뉴런 → 안쪽세로다발" },
+          "description": { "ko": "같은 갓돌림신경핵의 핵사이뉴런 축삭이 곧바로 정중선을 다시 건너, 머리가 도는 쪽의 안쪽세로다발(MLF)을 타고 중간뇌로 올라간다." },
+          "decussation": true,
+          "structures": [{ "id": "tr-mlf", "side": "ipsi" }]
+        },
+        {
+          "id": "hvor-4",
+          "neuronOrder": 3,
+          "title": { "ko": "눈돌림신경핵" },
+          "description": { "ko": "MLF 섬유가 눈돌림신경핵의 안쪽곧은근 아핵을 흥분시켜, 머리가 도는 쪽 눈의 안쪽곧은근이 수축한다. 결과적으로 두 눈이 머리 회전의 반대 방향으로 함께 움직인다." },
+          "structures": [{ "id": "bs-oculomotor", "side": "ipsi" }]
+        }
+      ],
+      "lesions": [
+        { "level": { "ko": "안쪽세로다발 (MLF)" }, "deficit": { "ko": "핵사이눈근육마비(INO): 병변쪽 눈의 모음 장애 + 반대쪽 눈의 벌림 때 눈떨림. 눈모음(폭주)은 보존" } },
+        { "level": { "ko": "갓돌림신경핵" }, "deficit": { "ko": "병변쪽을 향한 수평 주시마비 (운동뉴런과 핵사이뉴런이 함께 손상)" } }
+      ]
+    }
+  ]
+}
