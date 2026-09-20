@@ -48,8 +48,9 @@ Ctrl+휠 또는 +/−: 확대, 드래그: 이동, 클릭: 구조 선택. 구조�
 
 ## 검수 템플릿
 
-`python -m atlas_pipeline.review_template` → `docs/handover-seongyeon/신경경로_내용검수_템플릿.xlsx`
-(현재 content를 미리 채운 구조/경로/단계/병변 시트 + NextBrain 라벨 333개 참고 시트).
+`python -m atlas_pipeline.review_template` → `docs/handover-seongyeon/검수시트/` (CSV 5개 + `0_안내.txt`).
+현재 content를 미리 채운 구조/경로/단계/병변 시트 + NextBrain 라벨 333개 참고 시트. 계정 없이 Numbers·구글 시트 등
+어디서나 열린다. `--xlsx`를 붙이면 색·드롭다운이 있는 엑셀 파일 하나로 뽑는다.
 
 ## content 편집
 
