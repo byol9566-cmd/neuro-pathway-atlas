@@ -38,7 +38,20 @@
 ## 진행 상황
 
 <!-- STATUS:BEGIN -->
-(세션 종료 시 갱신)
+2026-09-20 세션 종료 시점:
+
+- **수집·검토 완료 6개 배치** (`docs/data/pathway-evidence/*.json`, 검토는 `REVIEW.md`): somatosensory, motor, brainstem-reflexes, special-senses, limbic-arousal-autonomic, morphometry. 인용 458개 중 원문에 없는 것 0개.
+- **약점**: 출처 89개 중 57개가 StatPearls(B급). StatPearls 원문 오류가 2건 확인됨 → B급 단독 근거는 확정 금지.
+- **다음 세션의 1순위는 새 주제가 아니라 "출처 교체"**: REVIEW.md에서 ⚠️로 표시한 항목을 A급 리뷰로 보강한다.
+  - 삼차신경 체성감각 경로(StatPearls 1개 장에 전부 의존), 하행 통증조절(Basbaum/Fields, Ossipov 등)
+  - hyperdirect 경로(Nambu 2002), Guillain–Mollaret 삼각(비대올리브변성 리뷰), 소뇌다리
+  - 각막·눈깜박반사의 R1/R2 성분(Cruccu, Kimura, Aramideh & Ongerboer de Visser)
+  - 편도 회로(Sah 2003 Physiol Rev, Janak & Tye 2015 Nature) — 현재 근거 S6(Bioinformation)는 제외 대상
+  - 미각의 중심뒤판로 주행, Wallenberg–Horner 연결(1차 교감신경로의 뇌줄기 주행)
+  - 각 배치 `unsourced` 항목은 Purves *Neuroscience*(NCBI Bookshelf)로 보강. 주의: Bookshelf의 Purves는 검색 미리보기 발췌만 열리는 장이 있음
+- **형태계측은 목적 미달**: 뇌신경핵 크기는 공개 전문에서 못 찾음(`notFound` 29개). 유료 문헌·단행본 영역 → 성연의 도서관 접근 또는 JKMS 2023 뇌줄기 단면 논문 저자 문의(`docs/handover-seongyeon/` 참고)가 더 현실적.
+- 에이전트가 600초 무응답으로 죽는 일이 2번 있었음 → 프롬프트에 "경로 하나 끝날 때마다 파일을 다시 써라"를 넣을 것. 죽으면 SendMessage로 같은 에이전트를 재개하면 읽은 내용을 유지한 채 이어감.
+- 검증 스크립트는 Python 3.10+ 필요: `pipeline/.venv/bin/python docs/data/pathway-evidence/verify_quotes.py <파일>`
 <!-- STATUS:END -->
 
 ## 아직 수집하지 않은 주제 (우선순위 순)
