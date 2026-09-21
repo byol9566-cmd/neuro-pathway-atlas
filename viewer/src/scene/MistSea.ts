@@ -3,8 +3,8 @@ import { WaveField } from './WaveField';
 
 // The backdrop, after the reference the owner picked (mesh3d.gallery/the-state-of-the-gallery): not a
 // sky but a sea. A huge horizontal sheet of mist lies below the brain and rolls in slow swells towards
-// a horizon; motes float above it, thicker in the distance; and wherever the pointer crosses the sheet
-// it leaves fine, faintly iridescent contour ripples that spread and fade.
+// a horizon; motes float above it, thicker in the distance; and a click on the sheet leaves fine contour
+// ripples that spread and fade. (It used to answer the moving pointer too; the owner found that too busy.)
 
 /** World-space swell height in -1..1, shared by the sheet and by the motes that float on it. */
 const SWELL = /* glsl */ `
@@ -181,7 +181,6 @@ export class MistSea {
   private readonly plane: THREE.Plane;
   private readonly shared = { uFlow: { value: 0 }, uMorph: { value: 0 }, uFlowDir: { value: new THREE.Vector2(0.78, 0.62) } };
   private readonly hit = new THREE.Vector3();
-  private lastDrop = new THREE.Vector2(9, 9);
   private surgeLeft = 0;
 
   constructor(private readonly center: THREE.Vector3, renderer: THREE.WebGLRenderer) {
@@ -273,20 +272,10 @@ export class MistSea {
   /** True while the surface is still moving from a touch: keep rendering at full rate. */
   get rippling() { return this.waves.active || this.surgeLeft > 0; }
 
-  /** The pointer passed over the sea along `ray`: stir the surface where it meets the sheet. */
-  stir(ray: THREE.Ray, strength = 0.06) {
-    if (!ray.intersectPlane(this.plane, this.hit)) return;
-    const u = (this.hit.x - this.center.x) / PATCH_SIZE + 0.5;
-    const v = (this.hit.z - this.center.z) / PATCH_SIZE + 0.5;
-    // one drop per ~12 mm of travel: a moving pointer draws a trail, a resting one leaves the water alone
-    if (Math.hypot(u - this.lastDrop.x, v - this.lastDrop.y) * PATCH_SIZE < 22 && strength < 0.2) return;
-    this.lastDrop.set(u, v);
-    this.waves.drop(u, v, strength, 0.012);
-  }
-
-  /** A click: a firmer ring where it landed, and the whole sea rushes towards the viewer for a moment. */
+  /** A click on the sea along `ray`: a ring where it landed, and the whole sea rushes towards the viewer for a moment. */
   surge(ray: THREE.Ray) {
-    this.stir(ray, 0.22);
+    if (!ray.intersectPlane(this.plane, this.hit)) return;
+    this.waves.drop((this.hit.x - this.center.x) / PATCH_SIZE + 0.5, (this.hit.z - this.center.z) / PATCH_SIZE + 0.5, 0.22, 0.012);
     this.surgeLeft = 1.8;
   }
 

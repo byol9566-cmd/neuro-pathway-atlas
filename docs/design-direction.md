@@ -243,6 +243,8 @@ Awwwards 공식 정보로 확인한 것: 제작 Majo Puterka, 2026-08-22 Site of
 - **버그 수정(데스크톱 포함)**: 직전 커밋의 `setViewOffset` 수식이 반대여서 공간이 좁을 때 뇌가 작아지는 게 아니라 **확대**되고 있었음(상세+단면을 같이 열면 발생). 가상 전체 크기를 `w*scale × h*scale`로 바로잡음. 배포본(`f063cbd`)에는 이 버그가 들어 있음 → 다음 배포에서 해소.
 - 검증: 세로·가로 스크린샷, Playwright에 폰 레이아웃 테스트 추가(스크롤 없음·상세가 화면 안·시트 위에 뇌) → tsc·vitest 8·Playwright 7 통과, 빌드 OK. 실제 기기(iOS Safari 주소창·노치)는 미확인.
 
+사용자 지시 8 (같은 날): "마우스 따라다니면서 울렁이는 효과는 빼도 될 것 같다." → 포인터 이동에 반응하던 잔물결(`MistSea.stir`, `pointermove` 연결) 제거. 빈 곳 클릭 시의 동심원 물결(`surge`)과 인트로의 중앙 물결(`centerRipple`)은 유지.
+
 ## 7. 멈춰 둔 다른 작업
 
 - **NextBrain 확률지도 적용**(`docs/research-sources.md` §6-2): `pipeline/atlas_pipeline/fetch.py`에 `fetch_nextbrain_probabilities()`를 추가만 한 상태(미커밋, 다운로드 미실행 — 71MB). 사용자가 UI 작업을 우선시해 중단. UI가 일단락되면 진행 여부를 다시 물을 것.

@@ -141,11 +141,6 @@ export class AtlasScene {
       this.pointerClient = { x: e.clientX, y: e.clientY };
       this.pointerDirty = true;
       this.poke();
-      // the sea answers the pointer wherever it passes over it (not while the intro is still playing)
-      if (!this.intro && !this.reducedMotion.matches) {
-        this.raycaster.setFromCamera(this.pointer, this.camera);
-        this.background.stir(this.raycaster.ray);
-      }
     });
     canvas.addEventListener('pointerleave', () => this.setHovered(null));
     canvas.addEventListener('pointerdown', (e) => (this.downAt = { x: e.clientX, y: e.clientY }));
