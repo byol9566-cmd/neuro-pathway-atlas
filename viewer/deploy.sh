@@ -6,8 +6,13 @@ set -euo pipefail
 cd "$(dirname "$0")"
 test -f public/data/atlas.glb || { echo "public/data/atlas.glb missing: run the pipeline build first" >&2; exit 1; }
 npm run build
-stage=.deploy/neuro-pathway-atlas
+link=.deploy/neuro-pathway-atlas/.vercel
+# Deploy from outside the repository: inside it the CLI attaches the git commit to the deployment, and
+# Vercel blocks the build (TEAM_ACCESS_REQUIRED) when the commit author's e-mail is not on the team.
+stage="${TMPDIR:-/tmp}/neuro-pathway-atlas-deploy/neuro-pathway-atlas"
+rm -rf "$stage"
 mkdir -p "$stage"
-find "$stage" -mindepth 1 -maxdepth 1 ! -name .vercel -exec rm -rf {} +
 cp -R dist/. "$stage"/
-npx vercel deploy "$stage" --prod --yes
+test -d "$link" && cp -R "$link" "$stage"/.vercel
+(cd "$stage" && npx --yes vercel deploy . --prod --yes < /dev/null)
+mkdir -p "$(dirname "$link")" && rm -rf "$link" && cp -R "$stage"/.vercel "$link"
