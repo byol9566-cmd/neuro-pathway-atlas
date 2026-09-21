@@ -101,6 +101,12 @@ test('clicking a mesh in the 3D view selects its structure', async ({ page }) =>
   const mode = await page.evaluate(() => (window as any).__atlas.mode);
   expect(mode.kind).toBe('structure');
   await expect(page.locator('#detail h2')).toHaveText(hovered!.split(' · ')[0]);
+
+  // and the panel's × really is on top and takes the click (a real pointer click, not a dispatched one)
+  const close = (await page.locator('#detail .close').boundingBox())!;
+  await page.mouse.click(close.x + close.width / 2, close.y + close.height / 2);
+  expect(await page.evaluate(() => (window as any).__atlas.mode.kind)).toBe('explore');
+  await expect(page.locator('#detail')).toBeHidden();
 });
 
 test('section panel shows the atlas labels at the chosen level and follows the selection', async ({ page }) => {

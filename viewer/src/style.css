@@ -115,7 +115,8 @@ button.primary:hover:not(:disabled) { background: #c2f0ff; border-color: #c2f0ff
 .attribution { font-size: 12px; color: var(--text-2); border-top: 1px solid var(--hairline); margin-top: 22px; padding-top: 10px; }
 .attribution summary { cursor: pointer; color: var(--text-3); letter-spacing: 0.1em; font-size: 11.5px; }
 
-.close { position: absolute; top: 12px; right: 12px; width: 30px; height: 30px; padding: 0; font-size: 18px; line-height: 1; border-radius: 50%; }
+/* z-index: the rising siblings each form a stacking context and would otherwise lie over the button */
+.close { position: absolute; z-index: 2; top: 12px; right: 12px; width: 30px; height: 30px; padding: 0; font-size: 18px; line-height: 1; border-radius: 50%; }
 dl { display: grid; grid-template-columns: auto 1fr; gap: 5px 14px; margin: 14px 0; }
 dt { color: var(--text-2); }
 dd { margin: 0; }
