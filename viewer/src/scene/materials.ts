@@ -2,6 +2,11 @@ import * as THREE from 'three';
 
 export type MeshState = 'normal' | 'ghost' | 'involved' | 'active';
 
+/** camera-to-orbit-target distance, shared by every ghost material */
+export const ghostFocusDistance = { value: 500 };
+/** 0..1 master fade used by the intro; shared by every ghost and halo material */
+export const sceneReveal = { value: 1 };
+
 const GHOST_VERT = /* glsl */ `
   varying vec3 vNormal;
   varying vec3 vView;
@@ -26,6 +31,7 @@ const GHOST_FRAG = /* glsl */ `
   uniform float uPower;
   uniform float uHover;
   uniform float uFocusDistance;
+  uniform float uReveal;
   varying vec3 vNormal;
   varying vec3 vView;
   varying float vDepth;
@@ -40,26 +46,28 @@ const GHOST_FRAG = /* glsl */ `
     float zoomedIn = 1.0 - smoothstep(180.0, 420.0, uFocusDistance);
     float behindFocus = smoothstep(0.55 * uFocusDistance, 1.05 * uFocusDistance, vDepth);
     float fade = mix(1.0, mix(0.06, 1.0, behindFocus), zoomedIn);
-    float alpha = (uBase + uRim * rim) * fade + uHover * (0.1 + 0.3 * rim);
-    gl_FragColor = vec4(mix(uColor, vec3(1.0), uHover * 0.4), alpha);
+    // close up, dozens of outlines cross the view at once: thin them so the subject stays the brightest thing
+    fade *= mix(1.0, 0.55, zoomedIn);
+    float alpha = ((uBase + uRim * rim) * fade + uHover * (0.1 + 0.3 * rim)) * uReveal;
+    // the rim itself leans towards starlight so the outline reads as lit from behind
+    vec3 color = mix(uColor, vec3(0.92, 0.95, 1.0), rim * 0.55 + uHover * 0.4);
+    gl_FragColor = vec4(color, alpha);
   }
 `;
 
-/** camera-to-orbit-target distance, shared by every ghost material */
-export const ghostFocusDistance = { value: 500 };
-
 export function ghostMaterial(color: THREE.Color, shell: boolean): THREE.ShaderMaterial {
-  const tint = color.clone().lerp(new THREE.Color('#b8c4d4'), shell ? 0.7 : 0.45);
+  const tint = color.clone().lerp(new THREE.Color('#c9ced9'), shell ? 0.62 : 0.42);
   return new THREE.ShaderMaterial({
     vertexShader: GHOST_VERT,
     fragmentShader: GHOST_FRAG,
     uniforms: {
       uColor: { value: tint },
-      uBase: { value: shell ? 0.025 : 0.006 },
-      uRim: { value: shell ? 0.42 : 0.13 },
-      uPower: { value: shell ? 2.2 : 2.6 },
+      uBase: { value: shell ? 0.022 : 0.006 },
+      uRim: { value: shell ? 0.5 : 0.13 },
+      uPower: { value: shell ? 2.3 : 2.6 },
       uHover: { value: 0 },
       uFocusDistance: ghostFocusDistance,
+      uReveal: sceneReveal,
     },
     transparent: true,
     depthWrite: false,
@@ -68,16 +76,63 @@ export function ghostMaterial(color: THREE.Color, shell: boolean): THREE.ShaderM
   });
 }
 
-export function solidMaterial(color: THREE.Color): THREE.MeshStandardMaterial {
-  return new THREE.MeshStandardMaterial({ color, roughness: 0.55, metalness: 0.0 });
+const HALO_VERT = /* glsl */ `
+  uniform float uSize;
+  varying float vFacing;
+  #include <clipping_planes_pars_vertex>
+  void main() {
+    // inflate along the normal; with BackSide rendering only the band outside the silhouette shows
+    vec4 mvPosition = modelViewMatrix * vec4(position + normal * uSize, 1.0);
+    vFacing = abs(dot(normalize(normalMatrix * normal), normalize(-mvPosition.xyz)));
+    gl_Position = projectionMatrix * mvPosition;
+    #include <clipping_planes_vertex>
+  }
+`;
+
+const HALO_FRAG = /* glsl */ `
+  uniform vec3 uColor;
+  uniform float uStrength;
+  uniform float uReveal;
+  varying float vFacing;
+  #include <clipping_planes_pars_fragment>
+  void main() {
+    #include <clipping_planes_fragment>
+    // brightest right next to the structure, falling to nothing at the inflated shell's own edge
+    gl_FragColor = vec4(uColor, uStrength * pow(vFacing, 1.6) * uReveal);
+  }
+`;
+
+/** Cheap glow for active structures: an inflated, additive back-face shell. No post-processing pass. */
+export function haloMaterial(color: THREE.Color, sizeMm: number): THREE.ShaderMaterial {
+  return new THREE.ShaderMaterial({
+    vertexShader: HALO_VERT,
+    fragmentShader: HALO_FRAG,
+    uniforms: {
+      uColor: { value: color.clone().lerp(new THREE.Color('#a0e7ff'), 0.45) },
+      uSize: { value: sizeMm },
+      uStrength: { value: 0.5 },
+      uReveal: sceneReveal,
+    },
+    transparent: true,
+    depthWrite: false,
+    side: THREE.BackSide,
+    blending: THREE.AdditiveBlending,
+    clipping: true,
+  });
 }
+
+export function solidMaterial(color: THREE.Color): THREE.MeshStandardMaterial {
+  return new THREE.MeshStandardMaterial({ color, roughness: 0.5, metalness: 0.0 });
+}
+
+const WHITE = new THREE.Color('#ffffff');
 
 /** Per-frame look of a solid material for a given state; `pulse` is 0..1. */
 export function applySolidState(
   mat: THREE.MeshStandardMaterial, base: THREE.Color, state: MeshState, hovered: boolean, pulse: number,
 ) {
   mat.color.copy(base);
-  if (state === 'involved') mat.color.lerp(new THREE.Color('#ffffff'), 0.15).multiplyScalar(0.62);
+  if (state === 'involved') mat.color.lerp(WHITE, 0.15).multiplyScalar(0.62);
   const glow = state === 'active' ? 0.35 + 0.3 * pulse : 0;
   mat.emissive.copy(base).multiplyScalar(glow + (hovered ? 0.35 : 0));
 }

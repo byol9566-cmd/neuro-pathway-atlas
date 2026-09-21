@@ -38,6 +38,15 @@ cd viewer   && npm test                            # 경로 로직 + content 무
 cd viewer   && npx playwright install chromium && npm run e2e   # 브라우저 시나리오
 ```
 
+## 화면 구성
+
+3D가 화면 전체를 차지하고 유리 패널이 그 위에 떠 있다(디자인 방향과 근거: `docs/design-direction.md`).
+배경은 three.js 안에서 그리는 흑백 은빛 안개 바다(GPU 파동 시뮬레이션, 입자는 뇌 아래에만). 첫 방문 때는
+오프닝 영상(`viewer/public/media/intro.mp4`, 10초)에 이어 입자가 모여 뇌가 되는 등장 연출이 재생되며 클릭이나
+키 입력으로 건너뛸 수 있고, `prefers-reduced-motion`이면 영상·연출·배경 움직임 없이 바로 표시된다.
+단면 창은 헤더를 끌어 옮길 수 있고(더블클릭하면 제자리), 열린 패널을 피해 뇌가 빈 공간으로 옮겨진다.
+단축키: `/` 검색 · `← →` 경로 단계 · `Space` 재생 · `Esc` 나가기 · 툴바의 `?`에 전체 목록.
+
 ## 가로 단면 패널
 
 툴바의 **단면** 버튼. NextBrain 라벨 볼륨의 가로 단면(평면 해상도 0.2 mm, 높이 0.4 mm 간격, 393장)을

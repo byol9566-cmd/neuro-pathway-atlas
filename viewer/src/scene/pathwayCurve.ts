@@ -41,7 +41,7 @@ export class PathwayCurve {
         uTime: { value: 0 },
         uReveal: { value: 0 },
         uDashes: { value: Math.max(4, length / 9) },
-        uColor: { value: new THREE.Color('#ffd34d') },
+        uColor: { value: new THREE.Color('#a0e7ff') }, // starlight accent: tracts themselves are yellow
       },
       transparent: true,
       depthTest: false, // the route must read through every solid structure it passes

@@ -23,3 +23,6 @@ docs/data/pathway-evidence/verification/cache/
 
 # zipped copies made for sending
 docs/handover-seongyeon/*.zip
+
+# Playwright MCP session logs and snapshots
+.playwright-mcp/

@@ -4,20 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#030304" />
     <title>신경경로 3D 아틀라스 — 시제품</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Pretendard (SIL OFL): dynamic subset keeps the Hangul download small -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <!-- JetBrains Mono (SIL OFL): numerals and coordinates only -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap" />
   </head>
   <body>
     <div id="app">
-      <aside id="sidebar"></aside>
       <main id="stage">
         <canvas id="canvas"></canvas>
-        <div id="tooltip" hidden></div>
+        <div class="stage-grain" aria-hidden="true"></div>
+        <div id="labels" aria-hidden="true"></div>
         <div id="toolbar"></div>
+        <div id="help" class="glass" hidden></div>
+        <nav id="rail" class="glass" hidden aria-label="경로 단계"></nav>
+        <p id="hint"></p>
         <div id="stats"></div>
-        <section id="section" hidden></section>
-        <div id="loading">아틀라스 불러오는 중…</div>
+        <section id="section" class="glass" hidden></section>
       </main>
-      <aside id="detail"></aside>
+      <aside id="sidebar" class="glass panel"></aside>
+      <aside id="detail" class="glass panel" hidden></aside>
+      <div id="tooltip" hidden></div>
+      <div id="loading" role="status" aria-live="polite">
+        <!-- first visit only: main.ts sets the source, so nobody else pays for the download -->
+        <video id="intro-video" muted playsinline preload="auto" aria-hidden="true" tabindex="-1"></video>
+        <div class="intro-grain" aria-hidden="true"></div>
+        <div class="intro-card">
+          <span class="intro-star" aria-hidden="true">✦</span>
+          <h1 class="intro-title">신경경로 아틀라스</h1>
+          <p class="intro-sub">Neural Pathway Atlas</p>
+          <div class="intro-bar"><i id="loading-bar"></i></div>
+          <p class="intro-caption" id="loading-caption">신경로를 밝히는 중</p>
+        </div>
+      </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
