@@ -102,8 +102,8 @@ export class AtlasScene {
   private lastFrameMs = performance.now();
   private time = 0;
   private lastActivity = 0;
-  private framing = { x: 0.5, scale: 1 };
-  private framingGoal = { x: 0.5, scale: 1 };
+  private framing = { x: 0.5, y: 0.5, scale: 1 };
+  private framingGoal = { x: 0.5, y: 0.5, scale: 1 };
   private framed = false;
   private frameParity = 0;
   private frames = 0;
@@ -442,26 +442,31 @@ export class AtlasScene {
   }
 
   /**
-   * Put the subject where the panels leave room: `x` is where the orbit centre lands, as a fraction of the
-   * stage width, and `scale` (<= 1) draws everything that much smaller. Done with a view offset, so the
+   * Put the subject where the panels leave room: `x` and `y` are where the orbit centre lands, as fractions
+   * of the stage's width and height, and `scale` (<= 1) draws everything that much smaller. Done with a view offset, so the
    * camera, the controls and picking carry on as if nothing happened.
    */
-  setFraming(x: number, scale: number) {
-    this.framingGoal = { x, scale };
+  setFraming(x: number, scale: number, y = 0.5) {
+    this.framingGoal = { x, y, scale };
     if (this.reducedMotion.matches || !this.framed) {
-      this.framing = { x, scale };
+      this.framing = { x, y, scale };
       this.applyFraming();
     }
     this.framed = true;
     this.poke();
   }
 
+  /** where the subject is being drawn right now (for tests) */
+  get framingNow() { return { ...this.framing }; }
+
   private applyFraming() {
     const { clientWidth: w, clientHeight: h } = this.canvas.parentElement!;
     if (!w || !h) return;
-    const { x, scale } = this.framing;
-    if (Math.abs(x - 0.5) < 1e-4 && Math.abs(scale - 1) < 1e-4) this.camera.clearViewOffset();
-    else this.camera.setViewOffset(w / scale, h / scale, w / scale / 2 - x * w, (h / scale - h) / 2, w, h);
+    const { x, y, scale } = this.framing;
+    if (Math.abs(x - 0.5) < 1e-4 && Math.abs(y - 0.5) < 1e-4 && Math.abs(scale - 1) < 1e-4) this.camera.clearViewOffset();
+    // the canvas is a window onto a *smaller* virtual image: the frustum widens by 1/scale, so everything
+    // is drawn `scale` times its size, and the offsets put the optical axis at (x, y) of the canvas
+    else this.camera.setViewOffset(w * scale, h * scale, (w * scale) / 2 - x * w, (h * scale) / 2 - y * h, w, h);
   }
 
   private resize() {
@@ -504,7 +509,8 @@ export class AtlasScene {
     const time = (this.time += dt);
 
     // nothing but slow drift and pulses to show: every other frame is plenty
-    const reframing = Math.abs(this.framing.x - this.framingGoal.x) > 5e-4 || Math.abs(this.framing.scale - this.framingGoal.scale) > 5e-4;
+    const reframing = Math.abs(this.framing.x - this.framingGoal.x) > 5e-4 || Math.abs(this.framing.y - this.framingGoal.y) > 5e-4
+      || Math.abs(this.framing.scale - this.framingGoal.scale) > 5e-4;
     const busy = reframing || this.intro !== null || this.fly !== null || this.downAt !== null || this.background.rippling || time - this.lastActivity < IDLE_AFTER_S;
     this.frameParity ^= 1;
     if (!busy && this.frameParity) return;
@@ -513,9 +519,10 @@ export class AtlasScene {
     if (reframing) {
       const k = 1 - Math.exp(-dt * 8);
       this.framing.x += (this.framingGoal.x - this.framing.x) * k;
+      this.framing.y += (this.framingGoal.y - this.framing.y) * k;
       this.framing.scale += (this.framingGoal.scale - this.framing.scale) * k;
       this.applyFraming();
-    } else if (this.framing.x !== this.framingGoal.x || this.framing.scale !== this.framingGoal.scale) {
+    } else if (this.framing.x !== this.framingGoal.x || this.framing.y !== this.framingGoal.y || this.framing.scale !== this.framingGoal.scale) {
       this.framing = { ...this.framingGoal };
       this.applyFraming();
     }

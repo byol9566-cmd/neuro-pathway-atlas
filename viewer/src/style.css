@@ -243,12 +243,49 @@ dl.keys dt { font-family: var(--mono); font-size: 12px; color: var(--accent); wh
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 
-/* ---------- narrow screens: canvas on top, panels stacked below ---------- */
+#dock-toggle { display: none; }
+
+/* ---------- phones and narrow windows: the scene on top, one panel docked below, nothing scrolls but the panel ---------- */
 @media (max-width: 900px) {
-  html, body, #app { overflow: auto; height: auto; }
-  #stage { position: relative; height: 62vh; }
-  .panel { position: static; width: auto !important; margin: 10px; max-height: none; }
-  #toolbar, #help, #stats { left: 10px; }
-  #section, #section.beside-detail { right: 10px; width: min(420px, 94%); }
-  #rail { max-width: calc(100% - 24px); }
+  #app { display: flex; flex-direction: column; height: 100dvh; }
+  #stage { position: relative; inset: auto; flex: 1 1 0; min-height: 0; order: 0; }
+  .panel { position: relative; inset: auto; order: 1; flex: 0 0 auto; width: auto !important; height: 44dvh; margin: 0; padding: 16px 16px calc(16px + env(safe-area-inset-bottom));
+    border-radius: var(--r-lg) var(--r-lg) 0 0; border-width: 1px 0 0; overscroll-behavior: contain; transition: height 0.35s var(--ease), padding 0.35s var(--ease); }
+  /* one panel at a time: what is selected, or else the lists */
+  #app.has-detail #sidebar { display: none; }
+  #app.dock-min .panel { height: 0; padding-top: 0; padding-bottom: 0; border-top-color: transparent; overflow: hidden; }
+
+  #toolbar { top: max(10px, env(safe-area-inset-top)); left: 0; right: 0; padding: 0 10px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  #toolbar::-webkit-scrollbar { display: none; }
+  #toolbar > * { flex: 0 0 auto; }
+  #toolbar { gap: 6px; }
+  #toolbar button { min-height: 38px; padding-left: 9px; padding-right: 9px; font-size: 12px; letter-spacing: -0.01em; }
+  #help { left: 10px; right: 10px; top: 58px; max-height: calc(100% - 70px); overflow-y: auto; }
+  #stats { display: none; }
+  #hint { bottom: 12px; max-width: calc(100% - 150px); white-space: normal; text-align: center; font-size: 11px; letter-spacing: 0.04em; line-height: 1.5; }
+  #hint:empty { display: none; }
+  #rail { bottom: 54px; max-width: calc(100% - 20px); }
+  #dock-toggle { display: block; position: absolute; right: 10px; bottom: 10px; z-index: 6; padding: 8px 13px; border-radius: 99px; font-size: 12px; color: var(--text-2); }
+
+  /* the section becomes a sheet over the lower part of the scene; the brain is framed into what is left above */
+  #section, #section.beside-detail { left: 8px; right: 8px; bottom: 50px; width: auto; height: min(56%, 460px); }
+  .section-header { cursor: default; overflow-x: auto; scrollbar-width: none; }
+  .section-header::-webkit-scrollbar { display: none; }
+  .section-header .grip { display: none; }
+  .section-header button { min-height: 32px; padding: 1px 11px; }
+  .with-section #rail, .with-section #hint { display: none; }
+
+  /* fingers, not cursors */
+  button, label, .struct, .step-head { touch-action: manipulation; }
+  .panel button { min-height: 40px; }
+  .panel input:not([type='checkbox']) { min-height: 42px; font-size: 16px; } /* 16px: no zoom-on-focus in iOS */
+  .callout span { font-size: 10.5px; }
+}
+
+/* a phone held sideways: scene on the left, panel on the right */
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 520px) {
+  #app { flex-direction: row; }
+  .panel { height: 100dvh; width: 44vw !important; border-radius: var(--r-lg) 0 0 var(--r-lg); border-width: 0 0 0 1px; padding: 14px 14px calc(14px + env(safe-area-inset-bottom)); transition: width 0.35s var(--ease), padding 0.35s var(--ease); }
+  #app.dock-min .panel { height: 100dvh; width: 0 !important; padding-left: 0; padding-right: 0; border-left-color: transparent; }
+  #section, #section.beside-detail { left: auto; right: 8px; top: 56px; bottom: 50px; width: 48%; height: auto; }
 }

@@ -35,6 +35,7 @@ function staggered(parent: HTMLElement) {
 function makeDraggable(panel: HTMLElement, handle: HTMLElement, bounds: HTMLElement, onMoved: () => void) {
   handle.addEventListener('pointerdown', (down) => {
     if (down.button !== 0 || (down.target as HTMLElement).closest('button, input, label')) return;
+    if (window.matchMedia('(max-width: 900px)').matches) return; // a fixed sheet on phones
     const box = bounds.getBoundingClientRect();
     const rect = panel.getBoundingClientRect();
     const grabX = down.clientX - rect.left;
@@ -249,35 +250,50 @@ async function main() {
   // ---------- detail panel ----------
   const detail = $('#detail');
 
+  const compact = window.matchMedia('(max-width: 900px)');
+
   /** Slide (and, when it gets tight, shrink) the brain into whatever room the open panels leave. */
   function frameSubject() {
     const stage = $('#stage');
     const floating = $('#section');
     const { clientWidth: width, clientHeight: height } = stage;
-    if (!width || window.matchMedia('(max-width: 900px)').matches) {
-      scene.setFraming(0.5, 1);
-      for (const name of ['--subject-x', '--subject-room']) stage.style.removeProperty(name);
-      return;
+    if (!width || !height) return;
+    const box = stage.getBoundingClientRect();
+    let [left, right, top, bottom] = [0, width, 0, height];
+    if (compact.matches) {
+      // phone layout: the panels sit outside the stage; only the section sheet covers part of it
+      Object.assign(floating.style, { left: '', top: '', right: '', bottom: '' });
+      top = $('#toolbar').getBoundingClientRect().bottom - box.top;
+      if (!floating.hidden) {
+        const rect = floating.getBoundingClientRect();
+        if (rect.width > width * 0.8) bottom = rect.top - box.top;
+        else right = rect.left - box.left;
+      }
+    } else {
+      floating.classList.toggle('beside-detail', !$('#detail').hidden);
+      for (const panel of [$('#sidebar'), $('#detail'), floating]) {
+        if (panel.hidden) continue;
+        const rect = panel.getBoundingClientRect();
+        if (rect.left + rect.width / 2 < box.left + width / 2) left = Math.max(left, rect.right - box.left + 12);
+        else right = Math.min(right, rect.left - box.left - 12);
+      }
     }
-    floating.classList.toggle('beside-detail', !$('#detail').hidden);
-    const origin = stage.getBoundingClientRect().left;
-    let left = 0;
-    let right = width;
-    for (const panel of [$('#sidebar'), $('#detail'), floating]) {
-      if (panel.hidden) continue;
-      const rect = panel.getBoundingClientRect();
-      if (rect.left + rect.width / 2 < origin + width / 2) left = Math.max(left, rect.right - origin + 12);
-      else right = Math.min(right, rect.left - origin - 12);
-    }
-    const room = Math.max(right - left, 1);
-    scene.setFraming((left + right) / 2 / width, Math.min(1, Math.max(0.6, room / (0.72 * height))));
+    const roomX = Math.max(right - left, 1);
+    const roomY = Math.max(bottom - top, 1);
+    // at scale 1 the brain is drawn about 0.72 stage heights wide and 0.7 tall, whatever the stage's shape
+    const scale = Math.min(1, Math.max(0.45, Math.min(roomX / (0.72 * height), roomY / (0.7 * height))));
+    scene.setFraming((left + right) / 2 / width, scale, (top + bottom) / 2 / height);
     stage.style.setProperty('--subject-x', `${(left + right) / 2}px`);
-    stage.style.setProperty('--subject-room', `${room}px`);
+    stage.style.setProperty('--subject-room', `${roomX}px`);
   }
+  new ResizeObserver(frameSubject).observe($('#stage'));
+  compact.addEventListener('change', frameSubject);
   window.addEventListener('resize', frameSubject);
 
   function renderDetail(prev: Mode) {
     detail.hidden = mode.kind === 'explore';
+    $('#app').classList.toggle('has-detail', !detail.hidden);
+    if (!detail.hidden) $('#app').classList.remove('dock-min'); // a fresh selection is there to be read
     frameSubject();
     detail.replaceChildren();
     if (mode.kind === 'explore') return;
@@ -393,8 +409,10 @@ async function main() {
 
   const hint = $('#hint');
   function renderHint() {
-    hint.textContent =
-      mode.kind === 'explore' ? '구조를 클릭하거나 경로를 선택하세요 · 드래그 회전 · 휠 확대'
+    const touch = window.matchMedia('(pointer: coarse)').matches;
+    hint.textContent = touch
+      ? (mode.kind === 'explore' ? '구조를 탭 · 드래그 회전 · 두 손가락 확대' : mode.kind === 'structure' ? '다른 구조를 탭해 옮겨 가세요' : '')
+      : mode.kind === 'explore' ? '구조를 클릭하거나 경로를 선택하세요 · 드래그 회전 · 휠 확대'
       : mode.kind === 'structure' ? '다른 구조를 클릭해 옮겨 가세요 · Esc 선택 해제'
       : mode.playing ? '경로 재생 중 · Space 일시정지'
       : '← → 단계 이동 · Space 재생 · Esc 나가기';
@@ -489,6 +507,7 @@ async function main() {
     syncSection(true);
     sectionToggle.classList.add('on');
     $('#stage').classList.add('with-section');
+    if (compact.matches) $('#app').classList.add('dock-min'); // the sheet needs the height the panel was using
     frameSubject();
   }
 
@@ -616,6 +635,7 @@ async function main() {
       states: () => Object.fromEntries([...scene.entries].map(([id, e]) => [id, e.state])),
       setMode,
       setView: (v: ViewPreset) => scene.setView(v, false),
+      framing: () => scene.framingNow,
       section: {
         open: openSection,
         get z() { return section?.zMm; },
@@ -628,6 +648,15 @@ async function main() {
   // ---------- entrance ----------
   const loading = $('#loading');
   const app = $('#app');
+  const dockToggle = $<HTMLButtonElement>('#dock-toggle');
+  const syncDockToggle = () => {
+    const closed = app.classList.contains('dock-min');
+    dockToggle.textContent = closed ? '⌃ 패널 열기' : '⌄ 패널 접기';
+    dockToggle.setAttribute('aria-expanded', String(!closed));
+  };
+  dockToggle.onclick = () => app.classList.toggle('dock-min');
+  new MutationObserver(syncDockToggle).observe(app, { attributes: true, attributeFilter: ['class'] });
+  syncDockToggle();
   frameSubject();
   let filmed = false;
   if (film) {

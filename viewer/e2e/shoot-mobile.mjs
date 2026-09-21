@@ -1,0 +1,34 @@
+// Phone-sized screenshots of the main states: node e2e/shoot-mobile.mjs <outDir> [width] [height]
+import { chromium } from '@playwright/test';
+
+const out = process.argv[2];
+const width = Number(process.argv[3] ?? 390);
+const height = Number(process.argv[4] ?? 844);
+const browser = await chromium.launch({ args: ['--use-angle=metal', '--enable-gpu', '--ignore-gpu-blocklist'] });
+const context = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
+const page = await context.newPage();
+page.on('pageerror', (e) => console.error('pageerror:', e.message));
+page.on('console', (m) => m.type() === 'error' && console.error('console:', m.text()));
+await page.addInitScript(() => sessionStorage.setItem('atlas.intro', '1'));
+await page.goto(process.env.ATLAS_URL ?? 'http://localhost:5199/');
+await page.waitForFunction(() => window.__atlas, null, { timeout: 30000 });
+await page.waitForTimeout(2500);
+const shot = (name) => page.screenshot({ path: `${out}/m-${name}.png` });
+await shot('1-explore');
+await page.evaluate(() => window.__atlas.setMode({ kind: 'pathway', pathwayId: 'dcml', origin: 'R', step: 1, playing: false }));
+await page.waitForTimeout(2500);
+await shot('2-pathway');
+await page.locator('#dock-toggle').tap();
+await page.waitForTimeout(1200);
+await shot('3-panel-closed');
+await page.locator('.section-toggle').tap();
+await page.waitForTimeout(2200);
+await shot('4-section');
+await page.locator('.section-toggle').tap();
+await page.locator('#dock-toggle').tap();
+await page.keyboard.press('Escape');
+await page.locator('[data-structure="thal-vpl"]').tap();
+await page.waitForTimeout(2200);
+await shot('5-structure');
+console.log(await page.evaluate(() => ({ scrollH: document.documentElement.scrollHeight, scrollW: document.documentElement.scrollWidth, innerW: innerWidth })));
+await browser.close();

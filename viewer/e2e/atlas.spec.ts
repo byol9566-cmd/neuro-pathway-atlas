@@ -126,3 +126,34 @@ test('section panel shows the atlas labels at the chosen level and follows the s
   await shot(page, '08-section-cut');
   expect(errors).toEqual([]);
 });
+
+test.describe('phone layout', () => {
+  test.use({ viewport: { width: 390, height: 844 }, hasTouch: true });
+
+  test('nothing scrolls but the docked panel, and the section sheet leaves the brain in view', async ({ page }) => {
+    const errors = await ready(page);
+    const fits = () => page.evaluate(() => document.documentElement.scrollHeight <= innerHeight && document.documentElement.scrollWidth <= innerWidth);
+    expect(await fits()).toBe(true);
+
+    // choosing a pathway swaps the lists for its description, right under the scene
+    await page.locator('[data-pathway="dcml"]').tap();
+    await settle(page);
+    await expect(page.locator('#sidebar')).toBeHidden();
+    await expect(page.locator('#detail h2')).toBeInViewport();
+    expect(await fits()).toBe(true);
+
+    // the section takes the lower part of the scene; the panel folds away and the brain is framed above the sheet
+    await page.locator('.section-toggle').tap();
+    await settle(page);
+    const sheet = (await page.locator('#section').boundingBox())!;
+    const framing = await page.evaluate(() => (window as any).__atlas.framing() as { x: number; y: number; scale: number });
+    const stageHeight = await page.evaluate(() => document.querySelector('#stage')!.clientHeight);
+    expect(framing.y * stageHeight).toBeLessThan(sheet.y);
+    expect(framing.scale).toBeLessThan(1);
+    await shot(page, 'phone-section');
+
+    await page.locator('#dock-toggle').tap();
+    await expect(page.locator('#detail h2')).toBeInViewport();
+    expect(errors).toEqual([]);
+  });
+});

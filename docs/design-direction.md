@@ -236,6 +236,13 @@ Awwwards 공식 정보로 확인한 것: 제작 Majo Puterka, 2026-08-22 Site of
 사용자 지시 6 (같은 날): "배포 전에 내려받아서 사용해. 그 뒤 커밋하고 배포해."
 - 원본(HEVC 10-bit, 9.5MB)을 받아 `ffmpeg -an -c:v libx264 -preset slow -crf 24 -pix_fmt yuv420p -profile:v high -movflags +faststart`로 변환 → `viewer/public/media/intro.mp4`(H.264, 3.7MB, 무음). 같은 프레임을 원본과 나란히 놓고 봐도 밴딩·뭉개짐 차이 없음. `main.ts`의 `INTRO_FILM`은 이제 `${BASE}media/intro.mp4` — 핫링크 제거, Firefox에서도 재생. 위 ❓(영상 자산) 해결: 권리는 사용자가 확인.
 
+사용자 지시 7 (같은 날): "모바일도 잘 보이는지, 모바일도 편하게 볼 수 있게 수정해줘."
+- **관찰**(390×844 터치 에뮬레이션, `e2e/shoot-mobile.mjs`): 페이지 높이 3,917px — 경로를 고르면 설명 패널이 구조 목록 밑 한참 아래, 단면 창이 뇌를 전부 덮음, 툴바 두 줄, 안내 문구가 키보드·마우스 기준.
+- **≤900px 레이아웃**: 페이지 스크롤 없음(100dvh). 위 3D + 아래 도킹 패널 하나(44dvh, 패널 안만 스크롤) — 선택이 있으면 상세, 없으면 목록(`#app.has-detail`). 장면 오른쪽 아래 `#dock-toggle`("패널 접기/열기", `#app.dock-min`)로 접어 3D를 크게. 툴바 한 줄(넘치면 가로 스크롤), 버튼·입력 터치 크기(38~42px, 입력 16px — iOS 확대 방지), safe-area 반영, 통계 숨김, 터치용 안내 문구(`pointer: coarse`).
+- **단면**: 폰에서는 장면 아래쪽 시트(높이 56%, 드래그 없음). 열면 패널이 자동으로 접히고 뇌는 시트 위 빈 영역에 맞춰 위로 옮겨지고 줄어듦 — `setFraming`에 세로 위치 `y` 추가, `frameSubject`가 가로·세로 여유를 함께 계산. 가로로 든 폰(높이 ≤520px)은 왼쪽 3D / 오른쪽 패널, 단면은 장면 오른쪽 절반.
+- **버그 수정(데스크톱 포함)**: 직전 커밋의 `setViewOffset` 수식이 반대여서 공간이 좁을 때 뇌가 작아지는 게 아니라 **확대**되고 있었음(상세+단면을 같이 열면 발생). 가상 전체 크기를 `w*scale × h*scale`로 바로잡음. 배포본(`f063cbd`)에는 이 버그가 들어 있음 → 다음 배포에서 해소.
+- 검증: 세로·가로 스크린샷, Playwright에 폰 레이아웃 테스트 추가(스크롤 없음·상세가 화면 안·시트 위에 뇌) → tsc·vitest 8·Playwright 7 통과, 빌드 OK. 실제 기기(iOS Safari 주소창·노치)는 미확인.
+
 ## 7. 멈춰 둔 다른 작업
 
 - **NextBrain 확률지도 적용**(`docs/research-sources.md` §6-2): `pipeline/atlas_pipeline/fetch.py`에 `fetch_nextbrain_probabilities()`를 추가만 한 상태(미커밋, 다운로드 미실행 — 71MB). 사용자가 UI 작업을 우선시해 중단. UI가 일단락되면 진행 여부를 다시 물을 것.
