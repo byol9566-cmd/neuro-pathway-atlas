@@ -192,6 +192,7 @@ async function main() {
     el('h2', {}, '신경경로'), pathwayList,
     el('h2', {}, '구조'), search, structureList,
     attributionBlock(),
+    licencesBlock(),
   );
 
   for (const p of PATHWAYS) {
@@ -244,6 +245,19 @@ async function main() {
       box.append(el('p', {}, el('a', { href: a.url, target: '_blank', rel: 'noreferrer' }, a.title), ` — ${a.license}. ${a.citation}`));
     }
     box.append(el('p', {}, '오른쪽 반구는 왼쪽 반구 아틀라스를 좌우 반전해 만든 것입니다.'));
+    return box;
+  }
+
+  /** The MIT notices the bundled libraries ask for, and the credits for the fonts and the opening film. */
+  function licencesBlock() {
+    const box = el('details', { className: 'attribution' }, el('summary', {}, '오픈소스 · 폰트 · 영상'));
+    const entry = (name: string, url: string, note: string) => box.append(el('p', {}, el('a', { href: url, target: '_blank', rel: 'noreferrer' }, name), ` — ${note}`));
+    entry('three.js', 'https://github.com/mrdoob/three.js/blob/dev/LICENSE', 'MIT License. Copyright © 2010–2026 three.js authors.');
+    entry('three-mesh-bvh', 'https://github.com/gkjohnson/three-mesh-bvh/blob/master/LICENSE', 'MIT License. Copyright © 2018 Garrett Johnson.');
+    entry('Pretendard', 'https://github.com/orioncactus/pretendard', 'SIL Open Font License 1.1.');
+    entry('JetBrains Mono', 'https://www.jetbrains.com/lp/mono/', 'SIL Open Font License 1.1.');
+    entry('오프닝 영상', 'https://motionsites.ai', 'Motionsites AI 무료 프롬프트에 포함된 영상.');
+    box.append(el('p', {}, 'MIT 라이선스: 위 저작권 표시와 함께 소프트웨어를 자유롭게 사용·복제·수정·배포할 수 있으며, 소프트웨어는 어떠한 보증 없이 제공됩니다.'));
     return box;
   }
 

@@ -245,6 +245,12 @@ Awwwards 공식 정보로 확인한 것: 제작 Majo Puterka, 2026-08-22 Site of
 
 사용자 지시 8 (같은 날): "마우스 따라다니면서 울렁이는 효과는 빼도 될 것 같다." → 포인터 이동에 반응하던 잔물결(`MistSea.stir`, `pointermove` 연결) 제거. 빈 곳 클릭 시의 동심원 물결(`surge`)과 인트로의 중앙 물결(`centerRipple`)은 유지.
 
+사용자 확인 9 (2026-09-22): 배포 전 저작권 점검.
+- 사이트에 실리는 것: 데이터 NextBrain·AAN(둘 다 CC0), 라이브러리 three.js·three-mesh-bvh(MIT), 폰트 Pretendard·JetBrains Mono(OFL), 오프닝 영상, 직접 만든 셰이더·SVG·텍스트. 레퍼런스 사이트의 코드·에셋은 없음.
+- **오프닝 영상 출처(사용자 진술)**: motionsites.ai 의 **무료(Free) 프롬프트**에 포함된 영상. 2026-09-22 확인 시 motionsites.ai 에는 약관·라이선스·FAQ 페이지가 없고(/terms 등 전부 404) 본문에도 이용 조건 문구가 없음 — 푸터 "© Motionsites AI 2026. All rights reserved"뿐. 즉 **상업적 이용·재호스팅 허용 여부는 문서로 확인되지 않음**. 현재는 "copy, paste, and launch"라는 서비스 취지에 따라 사용하고 사이드바에 출처를 표기. 수익화 전에는 운영자에게 문의(https://motionsites.ai/public-contact)하거나 같은 장면을 WebGL로 자체 제작해 대체할 것.
+- 사이드바에 "오픈소스 · 폰트 · 영상" 항목 추가(MIT 저작권 표시·허가 문구, OFL, 영상 출처).
+- 사용자 결정: Tang 2018·Petersen 2019(비상업 전용)는 쓰지 않음. 추가 데이터는 성연이 주는 것으로만.
+
 ## 7. 멈춰 둔 다른 작업
 
 - **NextBrain 확률지도 적용**(`docs/research-sources.md` §6-2): `pipeline/atlas_pipeline/fetch.py`에 `fetch_nextbrain_probabilities()`를 추가만 한 상태(미커밋, 다운로드 미실행 — 71MB). 사용자가 UI 작업을 우선시해 중단. UI가 일단락되면 진행 여부를 다시 물을 것.
