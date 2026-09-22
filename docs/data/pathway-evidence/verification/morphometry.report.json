@@ -1,0 +1,444 @@
+{
+ "batch": "morphometry",
+ "file": "morphometry.json",
+ "tally": {
+  "exact": 37,
+  "fuzzy": 1
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "A high-resolution probabilistic in vivo atlas of human subcortical brain nuclei",
+    "journal": "Scientific Data",
+    "year": 2018,
+    "pmcid": "PMC5903366",
+    "nbk": null,
+    "doi": "10.1038/sdata.2018.63",
+    "license": "Creative Commons Attribution 4.0 International License",
+    "type": "atlas-paper"
+   },
+   "check": {
+    "registryTitle": "A high-resolution probabilistic in vivo atlas of human subcortical brain nuclei.",
+    "registryJournal": "Scientific data",
+    "registryYear": "2018",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "Research Support, Non-U.S. Gov't",
+     "Dataset",
+     "data-paper",
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ],
+    "citedByCount": 477,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S2": {
+   "claimed": {
+    "title": "Greater locus coeruleus vulnerability in atypical clinicopathologic forms of Alzheimer's disease",
+    "journal": "Alzheimer's & Dementia",
+    "year": 2026,
+    "pmcid": "PMC12902885",
+    "nbk": null,
+    "doi": "10.1002/alz.71140",
+    "license": "CC BY-NC 4.0 (Creative Commons Attribution-NonCommercial License)",
+    "type": "primary"
+   },
+   "check": {
+    "registryTitle": "Greater locus coeruleus vulnerability in atypical clinicopathologic forms of Alzheimer's disease.",
+    "registryJournal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+    "registryYear": "2026",
+    "registryLicense": "cc by-nc",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "research-article",
+     "Journal Article"
+    ],
+    "citedByCount": 1,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S3": {
+   "claimed": {
+    "title": "Quantitative anatomy of the fourth ventricle floor: a cadaveric morphometric study",
+    "journal": "Irish Journal of Medical Science",
+    "year": 2026,
+    "pmcid": "PMC12967451",
+    "nbk": null,
+    "doi": "10.1007/s11845-025-04170-5",
+    "license": "Creative Commons Attribution 4.0 International License",
+    "type": "primary"
+   },
+   "check": {
+    "registryTitle": "Quantitative anatomy of the fourth ventricle floor: a cadaveric morphometric study.",
+    "registryJournal": "Irish journal of medical science",
+    "registryYear": "2026",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "research-article",
+     "Journal Article"
+    ],
+    "citedByCount": 0,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S4": {
+   "claimed": {
+    "title": "Stereotactic anatomy of the third ventricle",
+    "journal": "Surgical and Radiologic Anatomy",
+    "year": 2024,
+    "pmcid": "PMC10960742",
+    "nbk": null,
+    "doi": "10.1007/s00276-024-03312-1",
+    "license": "Creative Commons Attribution 4.0 International License",
+    "type": "primary"
+   },
+   "check": {
+    "registryTitle": "Stereotactic anatomy of the third ventricle.",
+    "registryJournal": "Surgical and radiologic anatomy : SRA",
+    "registryYear": "2024",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "research-article",
+     "Journal Article"
+    ],
+    "citedByCount": 4,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S5": {
+   "claimed": {
+    "title": "In vivo Probabilistic Structural Atlas of the Inferior and Superior Colliculi, Medial and Lateral Geniculate Nuclei and Superior Olivary Complex in Humans Based on 7 Tesla MRI",
+    "journal": "Frontiers in Neuroscience",
+    "year": 2019,
+    "pmcid": "PMC6694208",
+    "nbk": null,
+    "doi": "10.3389/fnins.2019.00764",
+    "license": "Creative Commons Attribution License (CC BY 4.0)",
+    "type": "atlas-paper"
+   },
+   "check": {
+    "registryTitle": "<i>In vivo</i> Probabilistic Structural Atlas of the Inferior and Superior Colliculi, Medial and Lateral Geniculate Nuclei and Superior Olivary Complex in Humans Based on 7 Tesla MRI.",
+    "registryJournal": "Frontiers in neuroscience",
+    "registryYear": "2019",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "research-article",
+     "Journal Article"
+    ],
+    "citedByCount": 62,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S6": {
+   "claimed": {
+    "title": "Sensitivity of functional connectivity to periaqueductal gray localization, with implications for identifying disease-related changes in chronic visceral pain: A MAPP Research Network neuroimaging study",
+    "journal": "NeuroImage: Clinical",
+    "year": 2020,
+    "pmcid": "PMC7548991",
+    "nbk": null,
+    "doi": "10.1016/j.nicl.2020.102443",
+    "license": "CC BY-NC-ND 4.0",
+    "type": "primary"
+   },
+   "check": {
+    "registryTitle": "Sensitivity of functional connectivity to periaqueductal gray localization, with implications for identifying disease-related changes in chronic visceral pain: A MAPP Research Network neuroimaging study.",
+    "registryJournal": "NeuroImage. Clinical",
+    "registryYear": "2020",
+    "registryLicense": "cc by-nc-nd",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "research-article",
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ],
+    "citedByCount": 10,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "measurements[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Subthalamic Nucleus STH 135 128 2.9"
+  },
+  {
+   "path": "measurements[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Subthalamic Nucleus STH 135 128 2.9"
+  },
+  {
+   "path": "measurements[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Substantia Nigra (Compacta) SNc 132 136 −1.5"
+  },
+  {
+   "path": "measurements[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Substantia Nigra (Compacta) SNc 132 136 −1.5"
+  },
+  {
+   "path": "measurements[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Substantia Nigra (Reticulata) SNr 261 269 −1.4"
+  },
+  {
+   "path": "measurements[5]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Substantia Nigra (Reticulata) SNr 261 269 −1.4"
+  },
+  {
+   "path": "measurements[6]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Red Nucleus RN 301 298 0.5"
+  },
+  {
+   "path": "measurements[7]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Red Nucleus RN 301 298 0.5"
+  },
+  {
+   "path": "measurements[8]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Mammillary Nucleus MN 64 62 2.0"
+  },
+  {
+   "path": "measurements[9]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Mammillary Nucleus MN 64 62 2.0"
+  },
+  {
+   "path": "measurements[10]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "MB Y 12 – 9.50 – 11.28 – 9.00 200 – 8.56 ± 1.184 – 8.72; – 8.39 24 – 11.30 – 14.25 – 10.10 Z – 8.40 – 9.15 – 7.10 – 7.01 ± 1.648 – 7.24; – 6.78 – 7.05 – 8.10 – 5.08"
+  },
+  {
+   "path": "measurements[11]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Habenular Nuclei HN 29 27 4.5"
+  },
+  {
+   "path": "measurements[12]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Habenular Nuclei HN 29 27 4.5"
+  },
+  {
+   "path": "measurements[13]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In the rostral LC, the median neuronal density was 34 neurons/mm 2 (interquartile range 22,44) in AD cases versus 60 neurons/mm 2 (50,89) in controls ( p < 0.001)"
+  },
+  {
+   "path": "measurements[14]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Similarly, in the middle LC, neuronal density was 38 neurons/mm 2 (27,57) in AD versus 79 neurons/mm 2 (46,104) in controls ( p < 0.001)"
+  },
+  {
+   "path": "measurements[15]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In the caudal LC, density was 42 neurons/mm 2 (29,56) in AD versus 83 neurons/mm 2 (49,98) in controls ( p = 0.015)"
+  },
+  {
+   "path": "measurements[16]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Anatomically, the PAG, a small, curved, hollow partial cylinder approximately 10–14 mm long and 4–5 mm in external diameter encircling the central aqueduct in the midbrain"
+  },
+  {
+   "path": "measurements[17]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Anatomically, the PAG, a small, curved, hollow partial cylinder approximately 10–14 mm long and 4–5 mm in external diameter encircling the central aqueduct in the midbrain"
+  },
+  {
+   "path": "measurements[18]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The MNI-sphere was a 3 mm radius sphere with a location previously published as MNI coordinates for the PAG, (MNI: 4 –26 −14)"
+  },
+  {
+   "path": "measurements[19]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Inferior Colliculus (IC) 63 65 Sitek et al., 2019 73 65 Sitek et al., 2019 200 25–30 Sitek et al., 2019 20.7–200 60 ± 3 (40–77) 55 ± 3 (41–69)"
+  },
+  {
+   "path": "measurements[20]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Inferior Colliculus (IC) 63 65 Sitek et al., 2019 73 65 Sitek et al., 2019 200 25–30 Sitek et al., 2019 20.7–200 60 ± 3 (40–77) 55 ± 3 (41–69)"
+  },
+  {
+   "path": "measurements[21]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Superior Colliculus (SC) – – – 90–110 20–35 Schneider and Kastner, 2009 171–176 20 Amaral et al., 2016 86–180 71 ± 5 (44–95) 75 ± 4 (44–95)"
+  },
+  {
+   "path": "measurements[22]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Superior Colliculus (SC) – – – 90–110 20–35 Schneider and Kastner, 2009 171–176 20 Amaral et al., 2016 86–180 71 ± 5 (44–95) 75 ± 4 (44–95)"
+  },
+  {
+   "path": "measurements[23]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Medial Geniculate Nucleus (MGN) 75 65 Sitek et al., 2019 134 65 Sitek et al., 2019 285 25–30 Sitek et al., 2019 46.6–285 57 ± 6 (28–101) 66 ± 8 (35–126)"
+  },
+  {
+   "path": "measurements[24]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Medial Geniculate Nucleus (MGN) 75 65 Sitek et al., 2019 134 65 Sitek et al., 2019 285 25–30 Sitek et al., 2019 46.6–285 57 ± 6 (28–101) 66 ± 8 (35–126)"
+  },
+  {
+   "path": "measurements[25]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Lateral Geniculate Nucleus (LGN) 104 – Dorph-Petersen et al., 2009 87.7–88.8 47 ± 9 Schmidt et al., 2018 579 30 ± 4 Barnes et al., 2010 66–579 101 ± 5 (83–126) 93 ± 6 (73–129)"
+  },
+  {
+   "path": "measurements[26]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Lateral Geniculate Nucleus (LGN) 104 – Dorph-Petersen et al., 2009 87.7–88.8 47 ± 9 Schmidt et al., 2018 579 30 ± 4 Barnes et al., 2010 66–579 101 ± 5 (83–126) 93 ± 6 (73–129)"
+  },
+  {
+   "path": "measurements[27]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Superior Olivary Complex (SOC) 6 65 Sitek et al., 2019 4 65 Sitek et al., 2019 124 25–30 Sitek et al., 2019 4–124 16 ± 1 (11–21) 20 ± 1 (12–27)"
+  },
+  {
+   "path": "measurements[28]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Superior Olivary Complex (SOC) 6 65 Sitek et al., 2019 4 65 Sitek et al., 2019 124 25–30 Sitek et al., 2019 4–124 16 ± 1 (11–21) 20 ± 1 (12–27)"
+  },
+  {
+   "path": "measurements[29]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Facial Colliculus (Caudal Margin) to Obex 14.5 ± 1.68 12.0–18.0 -"
+  },
+  {
+   "path": "measurements[30]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Aqueduct Opening to Facial Colliculus (Rostral Margin) 14.6 ± 1.97 11.0–18.0 -"
+  },
+  {
+   "path": "measurements[31]",
+   "source": "S3",
+   "status": "fuzzy",
+   "score": 0.99,
+   "quote": "Facial Colliculus → Obex 14.5 ± 1.68 20.74 ± 2.13 M: 24.74 ± 2.31F: 22.44 ± 1.86 – – < 0.0001 < 0.0001"
+  },
+  {
+   "path": "measurements[32]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Hypoglossal Trigone Width 1.92 ± 0.39 1.5–3.0 -"
+  },
+  {
+   "path": "measurements[33]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Hypoglossal Trigone Length 3.65 ± 1.06 2.0–6.0 -"
+  },
+  {
+   "path": "measurements[34]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Vagal Trigone Length 1.83 ± 0.31 1.0–2.3 -"
+  },
+  {
+   "path": "measurements[35]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Vagal Trigone Width 1.56 ± 0.39 1.0–2.0 -"
+  },
+  {
+   "path": "measurements[36]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fourth Ventricle Length 33.58 ± 2.49 29.0–39.0 -"
+  },
+  {
+   "path": "measurements[37]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fourth Ventricle Width 20.0 ± 1.83 17.0–24.0 -"
+  }
+ ]
+}

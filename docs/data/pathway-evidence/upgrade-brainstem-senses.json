@@ -1,0 +1,582 @@
+{
+  "batch": "upgrade-brainstem-senses",
+  "collectedBy": "sub-agent",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "review",
+      "title": "Autonomic control of the eye",
+      "authors": "McDougal DH, Gamlin PD",
+      "journal": "Comprehensive Physiology",
+      "year": 2015,
+      "pmcid": "PMC4919817",
+      "pmid": "25589273",
+      "doi": "10.1002/cphy.c140014",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4919817/",
+      "license": "not stated (NIH Public Access author manuscript deposited in PMC; page shows a generic 'PMC Copyright notice' link and 'Author manuscript; available in PMC' notice, no open-license text displayed)",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S2",
+      "type": "review",
+      "title": "Horner syndrome: clinical perspectives",
+      "authors": "Kanagalingam S, Miller NR",
+      "journal": "Eye and Brain",
+      "year": 2015,
+      "pmcid": "PMC5398733",
+      "pmid": "28539793",
+      "doi": "10.2147/EB.S63633",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5398733/",
+      "license": "© 2015 Kanagalingam and Miller. This work is published by Dove Medical Press Limited, and licensed under Creative Commons Attribution – Non Commercial (unported, v3.0) License. Non-commercial uses of the work are permitted without any further permission from Dove Medical Press Limited, provided the work is properly attributed.",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S3",
+      "type": "review",
+      "title": "The vestibular system: multimodal integration and encoding of self-motion for motor control",
+      "authors": "Cullen KE",
+      "journal": "Trends in Neurosciences",
+      "year": 2012,
+      "pmcid": "PMC4000483",
+      "pmid": "22651930",
+      "doi": "10.1016/j.tins.2012.04.003",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4000483/",
+      "license": "not stated (NIH Public Access author manuscript deposited in PMC; page shows a generic 'PMC Copyright notice' link, no open-license text displayed)",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S4",
+      "type": "primary",
+      "title": "Orbicularis oculi reflex in the Wallenberg syndrome: alteration of the late reflex by lesions of the spinal tract and nucleus of the trigeminal nerve",
+      "authors": "Kimura J, Lyon LW",
+      "journal": "Journal of Neurology, Neurosurgery, and Psychiatry",
+      "year": 1972,
+      "pmcid": "PMC494041",
+      "pmid": "5033569",
+      "doi": "10.1136/jnnp.35.2.228",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC494041/",
+      "license": "not stated (page shows only 'Articles from Journal of Neurology, Neurosurgery, and Psychiatry are provided here courtesy of BMJ Publishing Group' and a generic 'PMC Copyright notice' link; no open-license text displayed). Full body text on this page is scanned page images without OCR; only the abstract text was readable/quotable.",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "Jaw reflexes and masseter electromyograms in mesencephalic and pontine lesions",
+      "authors": "Ongerboer de Visser BW, Goor C",
+      "journal": "Journal of Neurology, Neurosurgery, and Psychiatry",
+      "year": 1976,
+      "pmcid": "PMC492220",
+      "pmid": "1255224",
+      "doi": "10.1136/jnnp.39.1.90",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC492220/",
+      "license": "not stated (page shows only a generic 'PMC Copyright notice' link and BMJ Publishing Group courtesy attribution; no open-license text displayed). Full body text on this page is scanned page images without OCR; only the abstract text was readable/quotable.",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S6",
+      "type": "review",
+      "title": "Coding in the mammalian gustatory system",
+      "authors": "Carleton A, Accolla R, Simon SA",
+      "journal": "Trends in Neurosciences",
+      "year": 2010,
+      "pmcid": "PMC2902637",
+      "pmid": "20493563",
+      "doi": "10.1016/j.tins.2010.04.002",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2902637/",
+      "license": "© 2010 Elsevier Ltd. All rights reserved. (NIH Public Access author manuscript; page states 'This is a PDF file of an unedited manuscript that has been accepted for publication.')",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S7",
+      "type": "review",
+      "title": "Cortical processing of odor objects",
+      "authors": "Wilson DA, Sullivan RM",
+      "journal": "Neuron",
+      "year": 2011,
+      "pmcid": "PMC3223720",
+      "pmid": "22118179",
+      "doi": "10.1016/j.neuron.2011.10.027",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3223720/",
+      "license": "© 2011 Elsevier Inc. All rights reserved. (NIH Public Access author manuscript; page states 'This is a PDF file of an unedited manuscript that has been accepted for publication.')",
+      "openedVia": "pmc-html"
+    }
+  ],
+  "pathways": [
+    {
+      "id": "pupillary-light-reflex",
+      "upgradeNote": "New A-grade (peer-reviewed review) evidence added to steps 2-4 of the existing pathway from docs/data/pathway-evidence/brainstem-reflexes.json. Original step structure fields copied for traceability; only NEW evidence entries are listed below.",
+      "steps": [
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Pretectal nucleus (midbrain, level of superior colliculus)",
+          "courseVia": ["posterior commissure"],
+          "terminatesIn": "Edinger-Westphal nucleus, both sides",
+          "laterality": "bilateral",
+          "decussation": { "present": true, "where": "posterior commissure" },
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "These results demonstrate that, in macaques, there is a direct projection from the pretectum to EW, that it arises from only one retinorecipient pretectal nucleus, the PON, and that the PON projects predominantly contralaterally to the EW by way of the posterior commissure",
+              "species": "macaque monkey"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Edinger-Westphal nucleus (preganglionic parasympathetic)",
+          "courseVia": ["oculomotor nerve (CN III)", "inferior division of CN III"],
+          "terminatesIn": "Ciliary ganglion (synapse with postganglionic neurons)",
+          "laterality": "ipsilateral (each Edinger-Westphal nucleus drives ipsilateral pupil)",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Within the ciliary ganglion, postganglionic neurons are contacted by the cholinergic, nicotinic synapses of parasympathetic preganglionic axon terminals",
+              "species": "human/primate (review synthesis)"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 4,
+          "cellBodies": "Ciliary ganglion (postganglionic parasympathetic neurons)",
+          "courseVia": ["short ciliary nerves"],
+          "terminatesIn": "Sphincter pupillae muscle",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The axons of these postganglionic neurons leave the ciliary ganglion to enter the eye via the short ciliary nerves.",
+              "species": "human/primate (review synthesis)"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Whether the pretectal olivary nucleus (PON) projects equally to BOTH Edinger-Westphal nuclei ('same side and the contralateral side', per the existing StatPearls source S4 in brainstem-reflexes.json) or predominantly to the CONTRALATERAL Edinger-Westphal nucleus.",
+          "positions": [
+            {
+              "claim": "The pupillary light reflex fibers synapse at the pretectal nucleus and then pass to the Edinger-Westphal nucleus of the same side and the contralateral side through the posterior commissure (existing claim, StatPearls).",
+              "source": "brainstem-reflexes.json S4 (not re-cited here; carried over for comparison)",
+              "quote": "The pupillary light reflex fibers synapse at the pretectal nucleus and the pass to the Edinger-Westphal nucleus of the same side and the contralateral side through the posterior commissure"
+            },
+            {
+              "claim": "In tract-tracing studies in macaques, the pretectal olivary nucleus projects predominantly (not equally) to the contralateral Edinger-Westphal nucleus via the posterior commissure; almost all retrogradely labeled PON cells were contralateral to the EW injection site.",
+              "source": "S1",
+              "quote": "the PON projects predominantly contralaterally to the EW by way of the posterior commissure"
+            }
+          ]
+        }
+      ],
+      "unsourced": []
+    },
+    {
+      "id": "accommodation-convergence-near-reflex",
+      "upgradeNote": "New A-grade evidence added to step 1 of the existing pathway (near-triad definition).",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Retinal ganglion cells (afferent limb shared with the visual/pupillary light pathway)",
+          "courseVia": ["optic nerve", "optic chiasm", "optic tract", "lateral geniculate nucleus", "optic radiations to visual cortex", "visual association cortex projections to superior colliculus and pretectal areas"],
+          "terminatesIn": "Oculomotor and Edinger-Westphal nuclei (via cortical/pretectal relay)",
+          "laterality": "bilateral cortical processing feeding a bilateral near-response output",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "These collective processes, termed convergence, ocular accommodation, and miosis respectively, are classically referred to as the near response or the near triad.",
+              "species": "human/primate (review synthesis)"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [],
+      "unsourced": [
+        "S1 (McDougal & Gamlin) does not name a specific dedicated 'supraoculomotor area' or near-response neuron population; it describes the near-triad definition and general oculomotor/EW efferent targets but the precise supranuclear near-response generator was not found stated in this opened source beyond the pretectal/cortical relay already cited from other sources in the original file."
+      ]
+    },
+    {
+      "id": "sympathetic-pathway-to-the-eye-horner-syndrome",
+      "upgradeNote": "New A-grade evidence added to steps 1-3 and to the first-order-neuron lesion entry and the overall-deficit lesion entry of the existing pathway.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Posterolateral hypothalamus (first-order/central neuron)",
+          "courseVia": ["descends uncrossed through the midbrain and pons/brainstem tegmentum to the intermediolateral cell column"],
+          "terminatesIn": "Intermediolateral cell columns at spinal levels C8-T2 (ciliospinal center of Budge)",
+          "laterality": "ipsilateral, uncrossed",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "First-order neurons are located in the posterolateral hypothalamus",
+              "species": "human"
+            },
+            {
+              "source": "S2",
+              "quote": "sympathetic fibers pass through the lateral brain stem and extend to the ciliospinal center of Budge and Waller in the intermediolateral gray column of the spinal cord at C8–T1",
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Ciliospinal center of Budge, intermediolateral cell column C8-T2 (second-order/preganglionic neuron)",
+          "courseVia": ["exits spinal cord at T1", "cervical sympathetic chain, ascending over the lung apex"],
+          "terminatesIn": "Superior cervical ganglion (C3-C4 level)",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The preganglionic sympathetic neurons that innervate the eye are located in the intermediolateral cell column (IML) in the C8-T2 segments of the spinal cord, a region termed the ciliospinal center of Budge (and Waller).",
+              "species": "human/primate (review synthesis)"
+            },
+            {
+              "source": "S1",
+              "quote": "The axons of these preganglionic neurons project to the sympathetic chain ganglia and travel in the sympathetic trunk to the superior cervical ganglion.",
+              "species": "human/primate (review synthesis)"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Superior cervical ganglion (third-order/postganglionic neuron)",
+          "courseVia": ["sudomotor/vasomotor branches follow the external carotid artery (face/sweat glands); other fibers ascend within the carotid plexus along the internal carotid artery, through the cavernous sinus (joining CN VI briefly), then the superior orbital fissure with the ophthalmic division of CN V, continuing as the long ciliary nerves"],
+          "terminatesIn": "Dilator pupillae and superior tarsal (Muller) muscle (via long ciliary nerves); sweat glands/vasculature of the face (via external carotid plexus)",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The axons of these postganglionic neurons project from the superior cervical ganglion as the internal carotid nerves to the level of the cavernous sinuses where they form the carotid plexus around the carotid arteries.",
+              "species": "human/primate (review synthesis)"
+            },
+            {
+              "source": "S1",
+              "quote": "Many of the fibers destined for the eye form the sympathetic root of the ciliary ganglion, which runs along with the ophthalmic artery to enter the orbit.",
+              "species": "human/primate (review synthesis)"
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "First-order neuron (hypothalamus to C8-T2 intermediolateral cell column) — e.g. stroke, lateral medullary (Wallenberg) syndrome, Arnold-Chiari malformation, high spinal cord trauma",
+          "deficit": "Horner syndrome with anhidrosis potentially involving the entire ipsilateral side of the body, because these fibers arise centrally before dividing",
+          "side": "ipsilateral",
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "Among 33 consecutive patients with lateral medullary infarction, Horner syndrome was found in 91%, ipsilateral ataxia in 85%, and contralateral hypalgesia in 85%.",
+              "species": "human"
+            },
+            {
+              "source": "S2",
+              "quote": "Wallenberg syndrome most often is caused by thrombotic occlusion of the ipsilateral vertebral artery",
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "site": "Sympathetic pathway (any level) — Horner syndrome overall",
+          "deficit": "Partial ptosis (from denervation of the superior tarsal/Muller muscle, milder than CN III ptosis), miosis (unopposed parasympathetic tone on the dilator pupillae), with pupillary light and accommodation responses remaining normal since they do not depend on sympathetic innervation",
+          "side": "ipsilateral",
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "Horner syndrome consists of unilateral ptosis, an ipsilateral miotic but normally reactive pupil, and in some cases, ipsilateral facial anhidrosis",
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "unsourced": [
+        "S1 (McDougal & Gamlin) does not use the term 'Horner syndrome' anywhere in the sections opened, and does not explicitly name the superior tarsal (Muller) muscle among the third-order neuron's targets; it discusses the dilator pupillae pathway and ciliary-ganglion sympathetic root but Muller's muscle innervation specifically was not found stated verbatim in the opened text.",
+        "Neither S1 nor S2 explicitly states the specific anatomical adjacency of the descending first-order sympathetic tract to the spinothalamic tract in the lateral medulla (the classic explanation for why Wallenberg syndrome combines Horner syndrome with contralateral pain/temperature loss); S2 confirms the clinical association (91% Horner in lateral medullary infarction) but not this specific tract-adjacency mechanism in the text opened."
+      ]
+    },
+    {
+      "id": "horizontal-vestibulo-ocular-reflex",
+      "upgradeNote": "New A-grade evidence added to steps 1-2 of the existing pathway (three-neuron arc formulation).",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Bipolar (primary afferent) neurons of the Scarpa (vestibular) ganglion, receiving input from horizontal semicircular canal hair cells",
+          "courseVia": ["vestibular division of cranial nerve VIII"],
+          "terminatesIn": "Vestibular nuclear complex (superior and medial vestibular nuclei) at the pontomedullary junction",
+          "laterality": "ipsilateral (afferents and first synapse are on the side of the stimulated canal)",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S3",
+              "quote": "Vestibular signals from the labyrinth of the inner ear are transferred to the vestibular nuclei (VN) via the vestibular afferents of the VIII nerve.",
+              "species": "monkey/primate (review synthesis, mostly macaque electrophysiology)"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Superior and medial vestibular nuclei (second-order/excitatory limb)",
+          "courseVia": ["crossing fibers at the pontine/medullary midline", "medial longitudinal fasciculus (ascending)"],
+          "terminatesIn": "Contralateral abducens nucleus",
+          "laterality": "contralateral (excitatory projection crosses to the abducens nucleus opposite the stimulated ear)",
+          "decussation": { "present": true, "where": "at the level of the vestibular nuclei / pons, crossing to the contralateral abducens nucleus" },
+          "evidence": [
+            {
+              "source": "S3",
+              "quote": "The most direct pathway that mediates the VOR comprises a three neuron arc: vestibular nerve afferents project to central neurons in the vestibular nuclei (i.e., VOR neurons), which in turn project to extraocular motoneurons.",
+              "species": "monkey/primate (review synthesis, mostly macaque electrophysiology)"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [],
+      "unsourced": [
+        "S3 (Cullen 2012) states the VOR is mediated by a 'three neuron arc' from vestibular afferents, through vestibular-nucleus (VOR) neurons, to extraocular motoneurons, but in the text opened it does not explicitly name the medial longitudinal fasciculus, the abducens nucleus, or the oculomotor nucleus, nor does it state that the second-order projection specifically crosses the midline to the contralateral abducens nucleus; that anatomical specificity is not confirmed by this particular source and remains sourced only from the existing StatPearls sources (S5-S7) in brainstem-reflexes.json."
+      ]
+    },
+    {
+      "id": "central-vestibular-pathways",
+      "upgradeNote": "New A-grade evidence added to step 1 (Scarpa ganglion/CN VIII afferents to vestibular nuclei) and step 5 (VOR three-neuron arc) of the existing pathway.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Bipolar neurons of the vestibular (Scarpa) ganglion",
+          "courseVia": ["vestibulocochlear nerve (CN VIII)"],
+          "terminatesIn": "the four vestibular nuclei (superior, medial, lateral, inferior) at the pontomedullary junction, or directly to the cerebellum",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S3",
+              "quote": "Vestibular signals from the labyrinth of the inner ear are transferred to the vestibular nuclei (VN) via the vestibular afferents of the VIII nerve.",
+              "species": "monkey/primate (review synthesis, mostly macaque electrophysiology)"
+            },
+            {
+              "source": "S3",
+              "quote": "In turn, the central neurons of the vestibular nuclei project to the neural structures that control eye movements, posture, and balance, as well as to upstream structures involved in the computation of self-motion",
+              "species": "monkey/primate (review synthesis, mostly macaque electrophysiology)"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "neuronOrder": 2,
+          "cellBodies": "Superior and medial vestibular nucleus neurons (vestibulo-ocular reflex arc)",
+          "courseVia": ["medial longitudinal fasciculus (MLF)"],
+          "terminatesIn": "contralateral abducens nucleus (CN VI, lateral rectus) and ipsilateral oculomotor nucleus (CN III, medial rectus)",
+          "laterality": "bilateral",
+          "decussation": { "present": true, "where": "crosses to the contralateral abducens nucleus via the MLF" },
+          "evidence": [
+            {
+              "source": "S3",
+              "quote": "The most direct pathway that mediates the VOR comprises a three neuron arc: vestibular nerve afferents project to central neurons in the vestibular nuclei (i.e., VOR neurons), which in turn project to extraocular motoneurons.",
+              "species": "monkey/primate (review synthesis, mostly macaque electrophysiology)"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [],
+      "unsourced": [
+        "S3 confirms the generic three-neuron VOR arc (afferents -> vestibular nucleus VOR neurons -> extraocular motoneurons) but, in the sections opened, does not itself specify the medial longitudinal fasciculus, the identity of the abducens/oculomotor nuclei, or which vestibular nuclei (superior/medial) are involved; those specifics remain sourced only from the existing StatPearls source (S7) in the original file."
+      ]
+    },
+    {
+      "id": "corneal-blink-reflex",
+      "upgradeNote": "New A-grade (primary clinical) evidence added to step 1 and the Wallenberg-syndrome lesion entry of the existing pathway, directly addressing the conflict already flagged in the original file about which nucleus relays the reflex.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Trigeminal ganglion (pseudounipolar neurons of the ophthalmic division, V1)",
+          "courseVia": ["long ciliary branches of the nasociliary nerve", "ophthalmic division of the trigeminal nerve (CN V1)"],
+          "terminatesIn": "Principal (chief) sensory nucleus of CN V per S10, OR spinal trigeminal nucleus per S9 (see conflicts)",
+          "laterality": "ipsilateral (afferent limb from the stimulated cornea)",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S4",
+              "quote": "the neurones of the first order responsible for the bilateral late reflex on unilateral stimulation terminate in the ipsilateral spinal nucleus of the trigeminal nerve without significant crossing over to the same structure on the other side.",
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Lateral medulla / spinal trigeminal nucleus (Wallenberg syndrome, PICA occlusion)",
+          "deficit": "Absent late-stage blink response bilaterally upon corneal stimulation of the affected side, because the spinal trigeminal nucleus relaying the reflex is disrupted",
+          "side": "bilateral deficit upon stimulation of the affected (ipsilateral) side",
+          "evidence": [
+            {
+              "source": "S4",
+              "quote": "An afferent delay of the late reflex on the side of the lesion in the presence of a normal early reflex was seen in all but two cases.",
+              "species": "human"
+            },
+            {
+              "source": "S4",
+              "quote": "An afferent delay of the late reflex in the presence of a normal or nearly normal early reflex is consistent with a lateral medullary lesion implicating the spinal tract and nucleus.",
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Whether corneal reflex afferents relay in the principal (chief) sensory trigeminal nucleus or the spinal trigeminal nucleus (conflict already present in the original brainstem-reflexes.json between its S9 and S10)",
+          "positions": [
+            {
+              "claim": "In nine patients with lateral medullary (Wallenberg) lesions, the late (R2) blink component was selectively delayed on the lesioned side, and the first-order neurons carrying the bilateral late reflex on unilateral stimulation terminate in the ipsilateral spinal trigeminal nucleus without significant crossing to the other side, directly implicating the spinal trigeminal nucleus/tract as the relay for the late component.",
+              "source": "S4",
+              "quote": "An afferent delay of the late reflex in the presence of a normal or nearly normal early reflex is consistent with a lateral medullary lesion implicating the spinal tract and nucleus."
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "S4's full body text (definitions of R1 vs R2 latency values, subject numbers beyond the abstract, and exact lesion localization details) is present only as scanned page images on the PMC HTML page with no OCR; only the abstract text could be opened and quoted verbatim in this session."
+      ]
+    },
+    {
+      "id": "jaw-jerk-reflex",
+      "upgradeNote": "New A-grade (primary clinical) evidence added to step 1 of the existing pathway, and a new lesion entry (none existed in the original file).",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Mesencephalic trigeminal nucleus (unique: pseudounipolar afferent cell bodies lie within this brainstem nucleus itself rather than in the trigeminal ganglion)",
+          "courseVia": ["stretch receptors of the muscles of mastication (masseter) via proprioceptive afferents that bypass the trigeminal ganglion"],
+          "terminatesIn": "Cell body within the mesencephalic nucleus itself, which relays directly to the motor trigeminal nucleus",
+          "laterality": "ipsilateral afferent input, then bilateral efferent relay",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S5",
+              "quote": "It is suggested that the afferent limb of the human jaw reflex passes through the mesencephalic trigeminal nucleus.",
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Mesencephalic lesions (affecting the mesencephalic trigeminal nucleus, the proposed afferent/proprioceptive limb of the jaw jerk)",
+          "deficit": "Jaw reflexes delayed or absent, while masseter electromyograms (the efferent motor limb, tested by direct nerve/muscle stimulation) remain normal",
+          "side": "ipsilateral",
+          "evidence": [
+            {
+              "source": "S5",
+              "quote": "In the former group jaw reflexes were abnormal, being delayed or absent, whereas masseter electromyograms were normal.",
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "unsourced": [
+        "S5's full body text describing exact lesion locations, latency measurements and the pontine-lesion group findings in detail is present only as scanned page images on the PMC HTML page with no OCR; only the abstract text could be opened and quoted verbatim in this session."
+      ]
+    },
+    {
+      "id": "gustatory-pathway",
+      "upgradeNote": "New A-grade evidence added to steps 2-3 of the existing pathway (second-order NTS to VPMpc projection, species-comparative; third-order VPMpc to cortex).",
+      "steps": [
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Second-order neurons in the rostral (gustatory) nucleus of the solitary tract",
+          "courseVia": ["ascending ipsilateral projection from the solitary nucleus"],
+          "terminatesIn": "parvicellular division of the ventral posteromedial nucleus (VPMpc) of the thalamus",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S6",
+              "quote": "The rodent and primate taste systems differ in that for rodents, fibres from the rNST projects ipsilaterally to the PBN, whereas the primates rNST fibres project directly to the parvocellular division of the ventroposterior medial nucleus of the thalamus (VPMpc).",
+              "species": "rodent (rat) and non-human primate, comparative"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "VPMpc thalamic neurons",
+          "courseVia": ["posterior limb of the internal capsule"],
+          "terminatesIn": "frontal operculum, anterior insular cortex, and rostral Brodmann area 3B",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S6",
+              "quote": "The gustatory fibres from the VPMpc terminate in the primary gustatory cortex (GC).",
+              "species": "rodent (rat) and non-human primate, comparative"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [],
+      "unsourced": [
+        "S6 (Carleton, Accolla & Simon 2010) does not mention a 'central tegmental tract' anywhere in the text opened; it describes the primate route only as rNST fibres projecting 'directly' to VPMpc (in contrast to the rodent's obligatory pontine parabrachial-nucleus relay), without naming the specific fiber tract used. The 'central tegmental tract' label for this route, mentioned in the task brief, was not found stated in this source and is not cited here.",
+        "S6 does not state the word 'ipsilateral' in connection with the primate NTS-to-VPMpc-to-cortex route specifically (it uses 'ipsilaterally' only for the rodent NTS-to-PBN leg); the ipsilaterality of the primate route is implied by 'projects directly' but not asserted verbatim for primates in the opened text, so it is not attached as a direct quote for that specific claim.",
+        "S6 does not mention the insula or frontal operculum by name (it says fibres terminate in 'the primary gustatory cortex (GC)' without specifying its subregions), so the specific frontal-operculum/anterior-insula/BA3B terminations remain sourced only from the existing StatPearls source (S10) in special-senses.json."
+      ]
+    },
+    {
+      "id": "olfactory-pathway",
+      "upgradeNote": "New A-grade evidence added to step 2 of the existing pathway (mitral/tufted cell axons via the lateral olfactory tract to piriform cortex).",
+      "steps": [
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Mitral and tufted cells of the olfactory bulb",
+          "courseVia": ["olfactory tract / lateral olfactory tract"],
+          "terminatesIn": "anterior olfactory nucleus, olfactory tubercle, piriform cortex, amygdala and entorhinal cortex",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "evidence": [
+            {
+              "source": "S7",
+              "quote": "Layer I is a plexiform layer which includes pyramidal cell apical dendrites and the mitral/tufted cell axons as they leave the lateral olfactory tract, as well as association fibers.",
+              "species": "rodent (rat/mouse; review is explicitly focused on 'the mammalian olfactory cortex' with rodent data predominating)"
+            },
+            {
+              "source": "S7",
+              "quote": "The olfactory cortex serves as point of anatomical convergence for olfactory bulb output neurons, mitral/tufted cells, conveying information about distinct odorant features extracted in the periphery.",
+              "species": "rodent (rat/mouse; review is explicitly focused on 'the mammalian olfactory cortex' with rodent data predominating)"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [],
+      "unsourced": [
+        "S7 (Wilson & Sullivan 2011) does not contain the words 'thalamus' or 'thalamic' anywhere in the sections opened, so the specific claim that olfaction reaches cortex 'without an obligatory thalamic relay' could not be corroborated from this source; that claim remains sourced only from the existing review source (S13, Dikecligil & Gottfried) in special-senses.json."
+      ]
+    }
+  ]
+}

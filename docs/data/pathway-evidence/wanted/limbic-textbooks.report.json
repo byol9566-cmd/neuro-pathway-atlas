@@ -1,0 +1,495 @@
+{
+ "file": "limbic-textbooks.json",
+ "batches": [
+  {
+   "batch": "limbic-arousal-autonomic",
+   "pathways": [
+    {
+     "id": "papez-circuit-trisynaptic-hippocampal",
+     "candidates": [
+      {
+       "doi": "10.1001/archneurpsyc.1937.02260220069003",
+       "title": "A PROPOSED MECHANISM OF EMOTION",
+       "journal": "Archives of Neurology And Psychiatry",
+       "year": 1937,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Papez JW. A proposed mechanism of emotion. Arch Neurol Psychiatry 1937;38(4):725-743."
+      },
+      {
+       "doi": "10.1017/s0140525x99002034",
+       "title": "Episodic memory, amnesia, and the hippocampal–anterior thalamic axis",
+       "journal": "Behavioral and Brain Sciences",
+       "year": 1999,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "11301518",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": false,
+       "status": "OK",
+       "citation": "Aggleton JP, Brown MW. Episodic memory, amnesia, and the hippocampal-anterior thalamic axis. Behav Brain Sci 1999;22(3):425-444."
+      },
+      {
+       "doi": "10.1038/s41583-022-00591-8",
+       "title": "The anterior thalamic nuclei: core components of a tripartite episodic memory system",
+       "journal": "Nature Reviews Neuroscience",
+       "year": 2022,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "35478245",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Aggleton JP, O'Mara SM. The anterior thalamic nuclei: core components of a tripartite episodic memory system. Nat Rev Neurosci 2022;23(8):505-516."
+      },
+      {
+       "doi": "10.1016/j.neubiorev.2022.104813",
+       "title": "Time to retire the serial Papez circuit: Implications for space, memory, and attention",
+       "journal": "Neuroscience &amp; Biobehavioral Reviews",
+       "year": 2022,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "35940310",
+        "pmcid": "PMC10804970",
+        "isOpenAccess": "Y",
+        "pubType": "research support, non-u.s. gov't; review-article; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Aggleton JP, Nelson AJD, O'Mara SM. Time to retire the serial Papez circuit: implications for space, memory, and attention. Neurosci Biobehav Rev 2022;140:104813."
+      }
+     ]
+    },
+    {
+     "id": "amygdala-fear-circuit",
+     "candidates": [
+      {
+       "doi": "10.1152/physrev.00002.2003",
+       "title": "The Amygdaloid Complex: Anatomy and Physiology",
+       "journal": "Physiological Reviews",
+       "year": 2003,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "12843409",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Sah P, Faber ESL, Lopez De Armentia M, Power J. The amygdaloid complex: anatomy and physiology. Physiol Rev 2003;83(3):803-834."
+      },
+      {
+       "doi": "10.1038/nature14188",
+       "title": "From circuits to behaviour in the amygdala",
+       "journal": "Nature",
+       "year": 2015,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "25592533",
+        "pmcid": "PMC4565157",
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Janak PH, Tye KM. From circuits to behaviour in the amygdala. Nature 2015;517(7534):284-292."
+      },
+      {
+       "doi": "10.1146/annurev.neuro.23.1.155",
+       "title": "Emotion Circuits in the Brain",
+       "journal": "Annual Review of Neuroscience",
+       "year": 2000,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "10845062",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "LeDoux JE. Emotion circuits in the brain. Annu Rev Neurosci 2000;23:155-184."
+      }
+     ]
+    },
+    {
+     "id": "dopamine-reward-pathways",
+     "candidates": [
+      {
+       "doi": "10.1038/npp.2009.129",
+       "title": "The Reward Circuit: Linking Primate Anatomy and Human Imaging",
+       "journal": "Neuropsychopharmacology",
+       "year": 2009,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "19812543",
+        "pmcid": "PMC3055449",
+        "isOpenAccess": "N",
+        "pubType": "review-article; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Haber SN, Knutson B. The reward circuit: linking primate anatomy and human imaging. Neuropsychopharmacology 2010;35(1):4-26."
+      },
+      {
+       "doi": "10.1016/j.tins.2007.03.006",
+       "title": "Dopamine neuron systems in the brain: an update",
+       "journal": "Trends in Neurosciences",
+       "year": 2007,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "17408759",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Bjorklund A, Dunnett SB. Dopamine neuron systems in the brain: an update. Trends Neurosci 2007;30(5):194-202."
+      },
+      {
+       "doi": "10.1016/j.cell.2015.07.046",
+       "title": "The Brain on Drugs: From Reward to Addiction",
+       "journal": "Cell",
+       "year": 2015,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "26276628",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Volkow ND, Morales M. The brain on drugs: from reward to addiction. Cell 2015;162(4):712-725."
+      }
+     ]
+    },
+    {
+     "id": "ascending-arousal-system-flip-flop",
+     "candidates": [
+      {
+       "doi": "10.1038/nature04284",
+       "title": "Hypothalamic regulation of sleep and circadian rhythms",
+       "journal": "Nature",
+       "year": 2005,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "16251950",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, u.s. gov't, p.h.s.; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Saper CB, Scammell TE, Lu J. Hypothalamic regulation of sleep and circadian rhythms. Nature 2005;437(7063):1257-1263."
+      },
+      {
+       "doi": "10.1016/j.neuron.2010.11.032",
+       "title": "Sleep State Switching",
+       "journal": "Neuron",
+       "year": 2010,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "21172606",
+        "pmcid": "PMC3026325",
+        "isOpenAccess": "N",
+        "pubType": "research-article; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": false,
+       "status": "OK",
+       "citation": "Saper CB, Fuller PM, Pedersen NP, Lu J, Scammell TE. Sleep state switching. Neuron 2010;68(6):1023-1042."
+      },
+      {
+       "doi": "10.1016/j.neuron.2017.01.014",
+       "title": "Neural Circuitry of Wakefulness and Sleep",
+       "journal": "Neuron",
+       "year": 2017,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "28231463",
+        "pmcid": "PMC5325713",
+        "isOpenAccess": "N",
+        "pubType": "research-article; review; journal article"
+       },
+       "oaAgreed": false,
+       "status": "OK",
+       "citation": "Scammell TE, Arrigoni E, Lipton JO. Neural circuitry of wakefulness and sleep. Neuron 2017;93(4):747-765."
+      }
+     ]
+    },
+    {
+     "id": "hypothalamo-pituitary-axes",
+     "candidates": [
+      {
+       "doi": "10.1002/cphy.c150015",
+       "title": "Regulation of the Hypothalamic‐Pituitary‐Adrenocortical Stress Response",
+       "journal": "Comprehensive Physiology",
+       "year": 2016,
+       "type": "other",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "27065163",
+        "pmcid": "PMC4867107",
+        "isOpenAccess": "N",
+        "pubType": "research-article; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Herman JP, McKlveen JM, Ghosal S, Kopp B, Wulsin A, Makinson R, Scheimann J, Myers B. Regulation of the hypothalamic-pituitary-adrenocortical stress response. Compr Physiol 2016;6(2):603-621."
+      },
+      {
+       "doi": "10.1002/cphy.c150053",
+       "title": "Magnocellular Neurons and Posterior Pituitary Function",
+       "journal": "Comprehensive Physiology",
+       "year": 2016,
+       "type": "other",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Brown CH. Magnocellular neurons and posterior pituitary function. Compr Physiol 2016;6(4):1701-1741."
+      }
+     ]
+    },
+    {
+     "id": "central-autonomic-control-micturition",
+     "candidates": [
+      {
+       "doi": "10.1038/nrn2401",
+       "title": "The neural control of micturition",
+       "journal": "Nature Reviews Neuroscience",
+       "year": 2008,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "18490916",
+        "pmcid": "PMC2897743",
+        "isOpenAccess": "N",
+        "pubType": "research-article; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Fowler CJ, Griffiths D, de Groat WC. The neural control of micturition. Nat Rev Neurosci 2008;9(6):453-466."
+      },
+      {
+       "doi": "10.1038/nrurol.2015.266",
+       "title": "Neural control of micturition in humans: a working model",
+       "journal": "Nature Reviews Urology",
+       "year": 2015,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "26620610",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Griffiths D. Neural control of micturition in humans: a working model. Nat Rev Urol 2015;12(12):695-705."
+      },
+      {
+       "doi": "10.1002/cphy.c130056",
+       "title": "Neural Control of the Lower Urinary Tract",
+       "journal": "Comprehensive Physiology",
+       "year": 2014,
+       "type": "other",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "de Groat WC, Griffiths D, Yoshimura N. Neural control of the lower urinary tract. Compr Physiol 2015;5(1):327-396."
+      }
+     ]
+    },
+    {
+     "id": "circadian-retinohypothalamic-scn-pineal",
+     "candidates": [
+      {
+       "doi": "10.1038/s41583-018-0026-z",
+       "title": "Generation of circadian rhythms in the suprachiasmatic nucleus",
+       "journal": "Nature Reviews Neuroscience",
+       "year": 2018,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Hastings MH, Maywood ES, Brancaccio M. Generation of circadian rhythms in the suprachiasmatic nucleus. Nat Rev Neurosci 2018;19(8):453-469."
+      },
+      {
+       "doi": "10.1002/cne.901460102",
+       "title": "A retinohypothalamic projection in the rat",
+       "journal": "Journal of Comparative Neurology",
+       "year": 1972,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Moore RY, Lenn NJ. A retinohypothalamic projection in the rat. J Comp Neurol 1972;146(1):1-14."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "batch": "textbooks-and-morphometry",
+   "pathways": [
+    {
+     "id": "books-general",
+     "candidates": [
+      {
+       "isbn": "9783540346845 (print) / 9783540346869 (e-book)",
+       "title": "The Human Central Nervous System",
+       "publisher": "Springer",
+       "year": "December 2007",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Nieuwenhuys R, Voogd J, van Huijzen C. The Human Central Nervous System. 4th ed. Berlin: Springer, 2008."
+      },
+      {
+       "isbn": "9780323396325",
+       "title": "Fundamental Neuroscience for Basic and Clinical Applications",
+       "publisher": "Elsevier",
+       "year": "Oct 27, 2017",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Haines DE, ed. Fundamental Neuroscience for Basic and Clinical Applications. 5th ed. Philadelphia: Elsevier, 2018."
+      },
+      {
+       "isbn": "9780190228958",
+       "title": "Central Nervous System",
+       "publisher": "Oxford University Press, Incorporated, Oxford University Press",
+       "year": "2016",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Brodal P. The Central Nervous System: Structure and Function. 5th ed. Oxford: Oxford University Press, 2016."
+      },
+      {
+       "isbn": "9781259642234",
+       "title": "Principles of Neural Science, Sixth Edition",
+       "publisher": "McGraw-Hill Professional Publishing",
+       "year": "2021",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Kandel ER, Koester JD, Mack SH, Siegelbaum SA, eds. Principles of Neural Science. 6th ed. New York: McGraw-Hill, 2021."
+      },
+      {
+       "isbn": "9780123742360",
+       "title": "The human nervous system",
+       "publisher": "Elsevier Academic Press, Academic Press",
+       "year": "2012",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Paxinos G, Mai JK, eds. The Human Nervous System. 3rd ed. Amsterdam: Elsevier/Academic Press, 2012."
+      }
+     ]
+    },
+    {
+     "id": "morphometry-brainstem-nuclei",
+     "candidates": [
+      {
+       "isbn": "9780080925219",
+       "title": "Atlas of the Human Brainstem",
+       "publisher": "Elsevier Science & Technology Books",
+       "year": "2013",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Paxinos G, Huang XF, Sengul G, Watson C. Atlas of the Human Brainstem. Amsterdam: Academic Press/Elsevier, 2012."
+      },
+      {
+       "isbn": "9783805522106",
+       "title": "Cytoarchitecture of the Human Brain Stem",
+       "publisher": "S. Karger AG (Switzerland), S. Karger",
+       "year": "June 1981",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Olszewski J, Baxter D. Cytoarchitecture of the Human Brain Stem. 3rd rev. ed. Basel: Karger, 2014 (원저 1954)."
+      },
+      {
+       "doi": "10.1007/s00276-012-0979-y",
+       "title": "The human locus coeruleus 3-D stereotactic anatomy",
+       "journal": "Surgical and Radiologic Anatomy",
+       "year": 2012,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "22638719",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Fernandes P, Regala J, Correia F, Goncalves-Ferreira AJ. The human locus coeruleus 3-D stereotactic anatomy. Surg Radiol Anat 2012;34(10):879-885."
+      },
+      {
+       "doi": "10.1016/j.neuroimage.2009.06.012",
+       "title": "In vivo mapping of the human locus coeruleus",
+       "journal": "NeuroImage",
+       "year": 2009,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "19524044",
+        "pmcid": "PMC3671394",
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Keren NI, Lozar CT, Harris KC, Morgan PS, Eckert MA. In vivo mapping of the human locus coeruleus. Neuroimage 2009;47(4):1261-1267."
+      },
+      {
+       "doi": "10.1002/cne.903010202",
+       "title": "Cytoarchitecture of the human dorsal raphe nucleus",
+       "journal": "Journal of Comparative Neurology",
+       "year": 1990,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "2262589",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Baker KG, Halliday GM, Tork I. Cytoarchitecture of the human dorsal raphe nucleus. J Comp Neurol 1990;301(2):147-161."
+      },
+      {
+       "doi": "10.1016/0306-4522(91)90043-n",
+       "title": "Distribution, morphology and number of monoamine-synthesizing and substance P-containing neurons in the human dorsal raphe nucleus",
+       "journal": "Neuroscience",
+       "year": 1991,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Baker KG, Halliday GM, Hornung JP, Geffen LB, Cotton RG, Tork I. Distribution, morphology and number of monoamine-synthesizing and substance P-containing neurons in the human dorsal raphe nucleus. Neuroscience 1991;42(3):757-775."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,757 @@
+{
+ "batch": "special-senses",
+ "file": "special-senses.json",
+ "tally": {
+  "exact": 66
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "Neuroanatomy, Optic Tract",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK549840",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits others to distribute the work, provided that the article is not altered or used commercially.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Optic Tract - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S2": {
+   "claimed": {
+    "title": "Homonymous Hemianopsia",
+    "journal": "StatPearls [Internet]",
+    "year": 2024,
+    "pmcid": "",
+    "nbk": "NBK558929",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits others to distribute the work, provided that the article is not altered or used commercially.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Homonymous Hemianopsia - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S3": {
+   "claimed": {
+    "title": "Neuroanatomy, Pupillary Light Reflexes and Pathway",
+    "journal": "StatPearls [Internet]",
+    "year": 2025,
+    "pmcid": "",
+    "nbk": "NBK553169",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits others to distribute the work, provided that the article is not altered or used commercially.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Pupillary Light Reflexes and Pathway - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S4": {
+   "claimed": {
+    "title": "The dorsal lateral geniculate nucleus and the pulvinar as essential partners for visual cortical functions",
+    "journal": "Frontiers in Neuroscience",
+    "year": 2023,
+    "pmcid": "PMC10498387",
+    "nbk": "",
+    "doi": "10.3389/fnins.2023.1258393",
+    "license": "cc by",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "The dorsal lateral geniculate nucleus and the pulvinar as essential partners for visual cortical functions.",
+    "registryJournal": "Frontiers in neuroscience",
+    "registryYear": "2023",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 14,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S5": {
+   "claimed": {
+    "title": "Neuroanatomy, Auditory Pathway",
+    "journal": "StatPearls [Internet]",
+    "year": 2025,
+    "pmcid": "",
+    "nbk": "NBK532311",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits others to distribute the work, provided that the article is not altered or used commercially.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Auditory Pathway - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S6": {
+   "claimed": {
+    "title": "Olivocochlear Efferents in Animals and Humans: From Anatomy to Clinical Relevance",
+    "journal": "Frontiers in Neurology",
+    "year": 2018,
+    "pmcid": "PMC5879449",
+    "nbk": "",
+    "doi": "10.3389/fneur.2018.00197",
+    "license": "cc by",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Olivocochlear Efferents in Animals and Humans: From Anatomy to Clinical Relevance.",
+    "registryJournal": "Frontiers in neurology",
+    "registryYear": "2018",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 108,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S7": {
+   "claimed": {
+    "title": "Neuroanatomy, Vestibular Pathways",
+    "journal": "StatPearls [Internet]",
+    "year": 2025,
+    "pmcid": "",
+    "nbk": "NBK557380",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits others to distribute the work, provided that the article is not altered or used commercially.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Vestibular Pathways - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S8": {
+   "claimed": {
+    "title": "Localization of Vestibular Cortex Using Electrical Cortical Stimulation: A Systematic Literature Review",
+    "journal": "Brain Sciences",
+    "year": 2024,
+    "pmcid": "PMC10813901",
+    "nbk": "",
+    "doi": "10.3390/brainsci14010075",
+    "license": "cc by",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Localization of Vestibular Cortex Using Electrical Cortical Stimulation: A Systematic Literature Review.",
+    "registryJournal": "Brain sciences",
+    "registryYear": "2024",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 5,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S9": {
+   "claimed": {
+    "title": "The human vestibular cortex: functional anatomy of OP2, its connectivity and the effect of vestibular disease",
+    "journal": "Cerebral Cortex",
+    "year": 2023,
+    "pmcid": "PMC9890474",
+    "nbk": "",
+    "doi": "10.1093/cercor/bhac085",
+    "license": "cc by",
+    "type": "primary"
+   },
+   "check": {
+    "registryTitle": "The human vestibular cortex: functional anatomy of OP2, its connectivity and the effect of vestibular disease.",
+    "registryJournal": "Cerebral cortex (New York, N.Y. : 1991)",
+    "registryYear": "2023",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "Research Support, Non-U.S. Gov't",
+     "research-article",
+     "Journal Article"
+    ],
+    "citedByCount": 29,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S10": {
+   "claimed": {
+    "title": "Neuroanatomy, Neural Taste Pathway",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK545236",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits others to distribute the work, provided that the article is not altered or used commercially.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Neural Taste Pathway - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S11": {
+   "claimed": {
+    "title": "Neuroanatomy, Nucleus Gustatory",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK554522",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits others to distribute the work, provided that the article is not altered or used commercially.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Nucleus Gustatory - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S12": {
+   "claimed": {
+    "title": "Physiology, Olfactory",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK542239",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits others to distribute the work, provided that the article is not altered or used commercially.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Physiology, Olfactory - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S13": {
+   "claimed": {
+    "title": "What Does the Human Olfactory System Do, and How Does It Do It?",
+    "journal": "Annual Review of Psychology",
+    "year": 2024,
+    "pmcid": "PMC12931680",
+    "nbk": "",
+    "doi": "10.1146/annurev-psych-042023-101155",
+    "license": "cc by",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "What Does the Human Olfactory System Do, and How Does It Do It?",
+    "registryJournal": "Annual review of psychology",
+    "registryYear": "2024",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "research-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 32,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S14": {
+   "claimed": {
+    "title": "Central Projections of the Olfactory Bulb (in: Neuroscience, 2nd edition)",
+    "journal": "Sinauer Associates",
+    "year": 2001,
+    "pmcid": "",
+    "nbk": "NBK11071",
+    "doi": "",
+    "license": "Copyright (c) 2001, Sinauer Associates, Inc. By agreement with the publisher, this book is accessible by the search feature, but cannot be browsed.",
+    "type": "textbook"
+   },
+   "check": {
+    "registryTitle": "Central Projections of the Olfactory Bulb - Neuroscience - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The optic tracts consist of the axons originating from the retinal ganglion cells (RGCs) in the retina."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The optic chiasm is an area of partial decussation, in which primarily the nasal retinal fibers traveling through the left and right optic nerves decussate to the contralateral optic chiasm and optic tract."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It has been shown that around 53% of the total optic nerve fibers cross at the optic chiasma, and 47% of the optic nerve fibers do not cross."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[2]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "By crossing at the optic chiasm, all fibers recording the left visual field of both eyes project to the right hemisphere, and the same applies to the right visual field."
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Each optic tract carries one-half of the visual field, consisting of afferent (sensory) information from temporal hemi-retinal fibers ipsilaterally and nasal hemi-retinal fibers contralaterally."
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Parvocellular (P) and magnocellular (M) cells of the LGN separate into six layers, in which fibers originating from ipsilateral RGCs synapse onto layers 2, 3, and 5, while contralateral neural information synapses onto layers 1, 4, and 6."
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The left and right LGN serve as points of neural origin for optic radiations (Meyer’s loop, central bundle, and Baum’s loop) that travel to the primary visual striate cortex (V1) and several extrastriate locations of the cortex, primarily through the internal capsule."
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[2]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "it is now well established that the four dorsal layers (parvocellular) of the dLGN receive signals about form and color from X-type ganglion cells and the two ventral layers (magnocellular), receive signals about movement from Y-type ganglion cells."
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[3]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Ventral to each of the magno- and parvocellular layers lie the koniocellular layers, which contain a heterogenous group of neurons whose functions remain to be fully determined."
+  },
+  {
+   "path": "pathways[0].steps[4].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The inferior radiation first courses anteriorly, along the roof of the lateral ventricle's temporal horn, before turning laterally and projecting through the temporal lobe as a Meyer loop."
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The superior pathway courses posteriorly through the parietal lobe before contacting the visual cortex."
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The superior bank of the calcarine sulcus receives visual data from the inferior fields, and the inferior bank is responsible for the superior visual field."
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The LGN contains an array of axons distributed in 6 laminae or layers that receive the signal from either the ipsilateral or contralateral eye. Such a retinotopic organization is crucial to properly merge binocular images at the occipital cortex."
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Simultaneously, some fibers from the optic tract also communicate with the superior colliculus, pretectal nuclei, and suprachiasmatic nuclei, which are involved in multiple physiologic functions, including the light reflex."
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[1]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Moreover, pulvinar is considered to play an important role in unconscious vision or blindsight"
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A lesion of the optic nerve anterior to the optic chiasm produces vision loss in the ipsilateral eye."
+  },
+  {
+   "path": "pathways[0].lesions[1].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Lesions of the optic chiasm result in bitemporal hemianopia. The most common causes are pituitary tumors, given the close relationship of the chiasm to the pituitary gland, and aneurysms of the anterior communicating artery."
+  },
+  {
+   "path": "pathways[0].lesions[2].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "By crossing at the optic chiasm, all fibers recording the left visual field of both eyes project to the right hemisphere, and the same applies to the right visual field."
+  },
+  {
+   "path": "pathways[0].lesions[3].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "For instance, right-sided Meyer loop (inferior radiation) damage would cause vision loss in the superior-left quadrant bilaterally (pie in the sky)."
+  },
+  {
+   "path": "pathways[0].lesions[4].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The damage to the right optic radiation passing through the parietal lobe causes vision loss in the inferior left quadrant bilaterally (pie on the floor defect)."
+  },
+  {
+   "path": "pathways[0].lesions[5].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Sparing of the macula permits a centrally localized (about 5°-25°) region of functional vision in the side affected with HH, leading to an incomplete HH."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Ipsilateral auditory nerve Ipsilateral cochlear nucleus Superior olivary complex"
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The majority of fibers decussate to the contralateral superior olivary complex, while a smaller subset remains on the ipsilateral side."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Spatial location is encoded within the superior olivary complex through comparison of auditory inputs from the right and left sides of the head."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This interaural timing difference enables the superior olivary complex to determine the spatial location of a sound."
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Contralateral and ipsilateral lateral lemniscus nuclei Contralateral and ipsilateral inferior colliculus"
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Contralateral and ipsilateral inferior colliculus Contralateral and ipsilateral medial geniculate nuclei"
+  },
+  {
+   "path": "pathways[1].steps[5].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Contralateral and ipsilateral medial geniculate nuclei Contralateral and ipsilateral transverse temporal gyrus (auditory region)"
+  },
+  {
+   "path": "pathways[1].steps[5].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Most of the auditory pathway is binaural, receiving input from both right and left auditory systems. This bilateral organization facilitates precise localization of auditory stimuli"
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Medial-olivocochlear (MOC) efferents originate in the medial superior olivary nuclei and terminate directly upon outer hair cells (OHCs)"
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[1]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "lateral olivocochlear (LOC) efferents originate in the lateral superior olivary nuclei and terminate on the dendrites of type I auditory nerve afferent fibers, beneath inner hair cells (IHCs)"
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[2]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "who originally classified them into crossed and uncrossed types, depending on whether they originated in the contralateral or the ipsilateral SOC, respectively."
+  },
+  {
+   "path": "pathways[1].lesions[0].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Most of the auditory pathway is binaural, receiving input from both right and left auditory systems. This bilateral organization facilitates precise localization of auditory stimuli"
+  },
+  {
+   "path": "pathways[1].lesions[1].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Additional deficits develop ipsilateral to the lesion as the tumor progresses, including tinnitus, vertigo, nystagmus, facial drooping, decreased corneal reflex, hoarseness, dysphagia, ataxia, and dysarthria."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Bipolar neurons of the Scarpa ganglion convey afferent signals from the otolith organs and semicircular canals through cranial nerve VIII (vestibulocochlear nerve) to the brainstem at the pontomedullary junction."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[1]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These fibers synapse in the 4 vestibular nuclei—superior, medial, lateral, and inferior—or project directly to the cerebellum via the inferior cerebellar peduncle (juxtarestiform body)."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The vestibulocerebellum, comprising the flocculonodular lobe and adjacent vermis, maintains an exclusive functional connection with the vestibular system."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[1]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This region receives primary afferent input directly from the Scarpa ganglion and secondary projections from the vestibular nuclei through the juxtarestiform body of the inferior cerebellar peduncle."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The LVST originates from the lateral vestibular nucleus and descends ipsilaterally through the anterior spinal cord to all levels, facilitating activation of extensor muscles in the limbs and trunk."
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The MVST arises from the medial vestibular nucleus and travels bilaterally via the MLF, projecting primarily to cervical spinal levels."
+  },
+  {
+   "path": "pathways[2].steps[4].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Activation of the superior and medial vestibular nuclei during head rotation generates impulses that cross to the contralateral abducens nucleus, stimulating the lateral rectus muscle, while interneuronal projections via the MLF activate the ipsilateral oculomotor nucleus to contract the medial rectus."
+  },
+  {
+   "path": "pathways[2].steps[5].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The thalamus functions as a central relay for vestibular processing, receiving bilateral input from the superior vestibular nuclei and contralateral projections from the medial vestibular nucleus via the MLF and central tegmental tracts."
+  },
+  {
+   "path": "pathways[2].steps[5].evidence[1]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Within the thalamus, vestibular signals are primarily processed in the ventral posterior complex, which comprises the ventral posterolateral, ventral posteromedial, and ventral posteroinferior nuclei."
+  },
+  {
+   "path": "pathways[2].steps[6].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These nuclei integrate vestibular, proprioceptive, and visual inputs and transmit efferent fibers through the posterior limb of the internal capsule to the primary somatosensory cortex."
+  },
+  {
+   "path": "pathways[2].steps[6].evidence[1]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Vestibular input relayed through the thalamus is transmitted to higher-order cortical centers, most prominently converging in the parieto-insular vestibular cortex."
+  },
+  {
+   "path": "pathways[2].steps[6].evidence[2]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "OP2 is a core region within the human cortical vestibular network on the basis of its location"
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Lesions involving these regions, particularly within the flocculonodular lobe, produce gaze-holding deficits, disrupted smooth tracking, nystagmus, and truncal ataxia, often presenting as a broad-based or “drunken” gait."
+  },
+  {
+   "path": "pathways[2].lesions[1].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The characteristic manifestation of internuclear ophthalmoplegia is impaired adduction of the ipsilateral eye, accompanied by abducting nystagmus of the contralateral eye during horizontal gaze."
+  },
+  {
+   "path": "pathways[2].lesions[2].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Damage to the LVST compromises postural control, producing truncal instability, falls, or lateropulsion."
+  },
+  {
+   "path": "pathways[2].conflicts[0].positions[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "OP2 is homologous to the nonhuman primate parieto-insular vestibular cortex (PIVC)—a “core” cortical vestibular region"
+  },
+  {
+   "path": "pathways[2].conflicts[0].positions[1]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It seems that the vestibular cortex has the form of an extensive network rather than a discrete, limited, and well-demarcated cortical location."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[0]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Its central processes enter the brainstem at the pontomedullary junction and travel caudally to the medulla oblongata, where they synapse at the nucleus solitarius."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[1]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Specifically, the synapse occurs in the rostral part of the nucleus solitarius, known as the gustatory region of the nucleus."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[0]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Next, the second-order fibers ascend ipsilaterally to the parvicellular division of the ventral posteromedial nucleus (VPMpc) of the thalamus, where the next synapse occurs."
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[0]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The third-order fibers travel ipsilaterally through the posterior limb of the internal capsule to terminate in the frontal operculum, anterior insular cortex, and in the rostral part of the Brodmann area 3B."
+  },
+  {
+   "path": "pathways[3].steps[3].evidence[0]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Additionally, secondary fibers travel from the gustatory cortex to the posterolateral portion of the orbitofrontal cortex (OFC)."
+  },
+  {
+   "path": "pathways[3].lesions[0].evidence[0]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A vestibular schwannoma (also referred to as an acoustic neuroma), which is a benign tumor that grows into the cerebellopontine angle (CPA), can cause loss of taste in the anterior two-thirds of the tongue on the ipsilateral side."
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[0]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The third-order fibers travel ipsilaterally through the posterior limb of the internal capsule to terminate in the frontal operculum, anterior insular cortex, and in the rostral part of the Brodmann area 3B."
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[1]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Axons from the rostral gustatory solitary nucleus project to the ventral posterior medial nucleus of the thalamus VPM and ultimately terminate, both crossed and uncrossed, at the neocortex, the gustatory cortex (the anterior insula of the temporal lobe and frontal opercular region)."
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Axonal projections of olfactory nerves synapse with the dendrites of mitral and tufted cells in spherical structures known as glomeruli."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Second-order mitral cells then project via olfactory tracts to specific areas within the brain that process olfactory information, including the piriform cortex, olfactory tubercle, amygdala, and entorhinal cortex."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[1]",
+   "source": "S13",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the mitral and tufted cells, coalesce into the olfactory tract, one on each side of the brain, and project ipsilaterally to a wide number of brain areas, including the anterior olfactory nucleus (AON), olfactory tubercle, piriform cortex, amygdala, and entorhinal cortex"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[2]",
+   "source": "S13",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Odor information reaches olfactory cortex within just two synapses, without an obligatory thalamic relay"
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[0]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the only relay—via the axons of mitral and tufted cells—for olfactory information from the periphery to the rest of the brain"
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[1]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The major target of the olfactory tract is the three-layered pyriform cortex in the ventromedial aspect of the temporal lobe near the optic chiasm"
+  },
+  {
+   "path": "pathways[4].lesions[0].evidence[0]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the recent coronavirus disease 2019 (COVID-19) caused by the specific virus (SARS-COV-2) pandemic has been associated with loss of sense of smell and taste in up to 75% of patients"
+  }
+ ]
+}

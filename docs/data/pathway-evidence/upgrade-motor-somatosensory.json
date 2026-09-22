@@ -1,0 +1,258 @@
+{
+  "batch": "upgrade-motor-somatosensory",
+  "collectedBy": "sub-agent",
+  "note": "This file adds NEW A-grade (peer-reviewed, PMC) evidence to existing claims already recorded in somatosensory.json (pathway: descending-pain-modulation) and motor.json (pathways: corticobulbar-tract, cerebellar-circuits). It does not redefine those pathways: each 'steps'/'lesions' entry below reproduces only the identifying fields of the ORIGINAL step/lesion (order, neuronOrder, cellBodies, courseVia, terminatesIn, laterality, decussation, neurotransmitter/site/deficit/side) so the new evidence can be matched to the right place, and the 'evidence' array here contains ONLY the new quotes collected in this session -- it is meant to be merged with (not to replace) the original evidence array already on file.",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "review",
+      "title": "Descending control of nociception: specificity, recruitment and plasticity",
+      "authors": "Heinricher MM, Tavares I, Leith JL, Lumb BM",
+      "journal": "Brain Research Reviews",
+      "year": 2009,
+      "pmcid": "PMC2894733",
+      "pmid": "19146877",
+      "doi": "10.1016/j.brainresrev.2008.12.009",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2894733/",
+      "license": "Publisher's Disclaimer: This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain. (NIH Public Access author manuscript; no CC license statement found on the article page.)",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S2",
+      "type": "primary",
+      "title": "The course of facial corticobulbar tract fibers in the dorsolateral medulla oblongata",
+      "authors": "Kanbayashi T, Sonoo M",
+      "journal": "BMC Neurology",
+      "year": 2021,
+      "pmcid": "PMC8165998",
+      "pmid": "34058995",
+      "doi": "10.1186/s12883-021-02247-z",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8165998/",
+      "license": "Open Access. This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made.",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S3",
+      "type": "review",
+      "title": "Hypertrophic Olivary Degeneration and Palatal or Oculopalatal Tremor",
+      "authors": "Tilikete C, Desestret V",
+      "journal": "Frontiers in Neurology",
+      "year": 2017,
+      "pmcid": "PMC5490180",
+      "pmid": "28706504",
+      "doi": "10.3389/fneur.2017.00302",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5490180/",
+      "license": "Copyright © 2017 Tilikete and Desestret. This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) or licensor are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S4",
+      "type": "review",
+      "title": "Consensus Paper: Roles of the Cerebellum in Motor Control—The Diversity of Ideas on Cerebellar Involvement in Movement",
+      "authors": "Manto M, Bower JM, Conforto AB, Delgado-García JM, Farias da Guarda SN, Gerwig M, Habas C, Hagura N, Ivry RB, Mariën P, Molinari M, Naito E, Nowak DA, Oulad Ben Taib N, Pelisson D, Tesche CD, Tilikete C, Timmann D",
+      "journal": "Cerebellum (London, England)",
+      "year": 2012,
+      "pmcid": "PMC4347949",
+      "pmid": "22161499",
+      "doi": "10.1007/s12311-011-0331-9",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4347949/",
+      "license": "© Springer Science+Business Media, LLC 2011. (No article-level CC license statement found on the PMC page; PMC Copyright Notice applies.)",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S5",
+      "type": "primary",
+      "title": "In-Vivo Mapping of the Human Locus Coeruleus",
+      "authors": "Keren NI, Lozar CT, Harris KC, Morgan PS, Eckert MA",
+      "journal": "NeuroImage",
+      "year": 2009,
+      "pmcid": "PMC3671394",
+      "pmid": "19524044",
+      "doi": "10.1016/j.neuroimage.2009.06.012",
+      "nbk": "",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3671394/",
+      "license": "© 2009 Elsevier Inc. All rights reserved. Publisher's Disclaimer: This is a PDF file of an unedited manuscript that has been accepted for publication (NIH Public Access author manuscript; no CC license statement found on the article page).",
+      "openedVia": "pmc-html"
+    }
+  ],
+  "pathways": [
+    {
+      "id": "descending-pain-modulation",
+      "upgradeNote": "Adds new evidence to the existing 'descending-pain-modulation' pathway in somatosensory.json (PAG -> RVM -> dorsal horn circuit; ON/OFF cells). Identifying fields below are copied verbatim from the original step 2 so the new evidence can be matched; the 'evidence' array here holds ONLY new quotes from S1 (Heinricher et al. 2009), to be merged with the existing evidence already on file.",
+      "steps": [
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "PAG neurons projecting to raphe nuclei (rostral ventromedial medulla, including nucleus raphe magnus)",
+          "courseVia": ["PAG → raphe nuclei (glutamatergic) → descending raphespinal fibers to dorsal horn"],
+          "terminatesIn": "Dorsal horn – enkephalinergic interneurons that inhibit C-fiber pain afferents",
+          "laterality": "bilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "serotonin (PAG–RVM–dorsal horn pathway); glutamate (PAG→raphe activation); enkephalin (dorsal horn interneurons)",
+          "evidence": [
+            { "source": "S1", "quote": "The PAG projects to the RVM, which in turn sends its output to dorsal horn laminae important in nociceptive function.", "species": "not stated (review; general PAG-RVM circuit anatomy, established mainly by rat/cat tracing studies cited in the text)" },
+            { "source": "S1", "quote": "The PAG does not project directly to the spinal cord.", "species": "not stated (review; general PAG-RVM circuit anatomy)" },
+            { "source": "S1", "quote": "Instead, its principle descending projection is to the RVM, which can be considered the output of the midline pain-modulation system.", "species": "not stated (review; general PAG-RVM circuit anatomy)" },
+            { "source": "S1", "quote": "It includes the nucleus raphe magnus and adjacent reticular formation, and projects diffusely to dorsal horn laminae important in nociceptive processing, including superficial layers and deep dorsal horn.", "species": "not stated (review; general RVM anatomy)" },
+            { "source": "S1", "quote": "ON-cells entered a period of activity, and OFF-cells a period of silence.", "species": "rat (Fields et al. 1983 single-unit recording, as cited in this review)" },
+            { "source": "S1", "quote": "it is the OFF-cells that function as the antinociceptive output from the RVM", "species": "rat (RVM single-unit recording/pharmacology literature cited in this review)" },
+            { "source": "S1", "quote": "it was possible to show that ON-cells are the facilitating output from the RVM.", "species": "rat (RVM single-unit recording/microinjection literature cited in this review)" },
+            { "source": "S1", "quote": "At least some cells of each class project to the spinal cord, and specifically to the dorsal horn.", "species": "rat (RVM-to-dorsal-horn tract-tracing literature cited in this review)" },
+            { "source": "S1", "quote": "at least some NEUTRAL-cells, but apparently no ON-cells or OFF-cells are serotonergic.", "species": "rat (RVM neurochemistry literature cited in this review)" }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Neurotransmitter identity of the RVM neurons that project descending output to the dorsal horn in the PAG-RVM-dorsal horn pathway",
+          "positions": [
+            { "claim": "The serotonergic PAG-RVM pathway is considered the key endogenous modulator of pain (existing claim already on file in somatosensory.json, pathway descending-pain-modulation, step 2, citing StatPearls source S8 'Neuroanatomy, Periaqueductal Gray'; that source was not re-opened in this session, so it is described here rather than re-quoted).", "source": "", "quote": "" },
+            { "claim": "The functionally characterized RVM output neurons that mediate descending control (ON-cells, which facilitate nociception, and OFF-cells, which inhibit it) are specifically reported as NOT serotonergic; only some of the functionally silent NEUTRAL-cells are serotonergic.", "source": "S1", "quote": "at least some NEUTRAL-cells, but apparently no ON-cells or OFF-cells are serotonergic." }
+          ]
+        }
+      ],
+      "unsourced": []
+    },
+    {
+      "id": "corticobulbar-tract",
+      "upgradeNote": "Adds new evidence to the existing 'corticobulbar-tract' pathway in motor.json (the aberrant/looping course of facial corticobulbar fibers in the medulla; contralateral routing to the lower facial nucleus). Identifying fields below are copied verbatim from the original step 2; the 'evidence' array holds ONLY new quotes from S2 (Kanbayashi & Sonoo 2021), a clinico-anatomical study of lateral medullary infarction (Wallenberg syndrome) patients that traces this exact course.",
+      "steps": [
+        {
+          "order": 2,
+          "neuronOrder": 1,
+          "cellBodies": "Corticobulbar fibers destined for the facial nucleus",
+          "courseVia": ["as above to the pontine facial motor nucleus"],
+          "terminatesIn": "Dorsal (upper face) division of the facial motor nucleus bilaterally; ventral (lower face) division of the facial motor nucleus contralaterally",
+          "laterality": "bilateral (upper face) / contralateral (lower face)",
+          "decussation": { "present": true, "where": "lower-face component crosses before reaching the ventral facial subnucleus" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S2", "quote": "The CBT to the facial nucleus had been considered to decussate at the level of the pons.", "species": "human" },
+            { "source": "S2", "quote": "However, some previous studies have shown that at least some fibers of the CBT to the facial nucleus that innervate the lower facial muscles descend to the level of the medulla along with the CST.", "species": "human" },
+            { "source": "S2", "quote": "These fibers then ascend to the facial nucleus through the dorsolateral medulla after decussation", "species": "human" },
+            { "source": "S2", "quote": "Then, after forming a loop and decussation, it ascends through the medial and ventral areas of the dorsolateral medulla to the facial nucleus in the caudal pons.", "species": "human" },
+            { "source": "S2", "quote": "the CBT to the facial nucleus descends with the corticospinal tract at least to the middle portion of the medulla, and then ascends to the facial nucleus through the medial and ventral areas of the dorsolateral medulla after decussation.", "species": "human" }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [],
+      "unsourced": [
+        "S2 (Kanbayashi & Sonoo 2021) confirms the aberrant/looping medullary course of the crossed corticobulbar fibers destined for the lower facial nucleus, but does not itself state which cranial-nerve motor nuclei (e.g. trigeminal motor nucleus, nucleus ambiguus) receive bilateral vs. contralateral cortical input -- that part of the existing unsourced note in motor.json remains unresolved."
+      ]
+    },
+    {
+      "id": "cerebellar-circuits",
+      "upgradeNote": "Adds new evidence to the existing 'cerebellar-circuits' pathway in motor.json: (a) the Guillain-Mollaret triangle's dentate-nucleus / red-nucleus / central-tegmental-tract / inferior-olive circuit (S3, Tilikete & Desestret 2017), which directly resolves the pathway's previously 'unsourced' note about the central tegmental tract naming the red-nucleus-to-inferior-olive limb; and (b) general cerebellar input/output organisation -- climbing-fiber input to Purkinje cells, Purkinje-to-deep-nuclei-to-thalamus output, and dentate/red-nucleus/thalamus connectivity (S4, Manto et al. 2012 consensus paper). Identifying fields below are copied verbatim from the original steps/lesion so the new evidence can be matched; 'evidence' arrays here hold ONLY new quotes.",
+      "steps": [
+        {
+          "order": 3,
+          "neuronOrder": 1,
+          "cellBodies": "Inferior olivary nucleus (principal, medial and dorsal accessory olives)",
+          "courseVia": ["olivocerebellar climbing fibers", "contralateral inferior cerebellar peduncle (ICP)"],
+          "terminatesIn": "Purkinje cell bodies (climbing fiber synapse) in the cerebellar cortex",
+          "laterality": "contralateral",
+          "decussation": { "present": true, "where": "climbing fiber axons cross to ascend through the contralateral inferior cerebellar peduncle" },
+          "neurotransmitter": "aspartate (climbing fiber excitatory transmitter per motor.json S4/StatPearls)",
+          "evidence": [
+            { "source": "S4", "quote": "the climbing fiber input carries an error signal weakening the strength of a subset of parallel fibers/Purkinje neuron synapses in the cerebellar cortex", "species": "not stated (general theoretical statement; Marr-Albus model, originally derived from animal cerebellar physiology)" }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 2,
+          "cellBodies": "Purkinje cells of the cerebellar cortex",
+          "courseVia": ["axons through the granular layer into the cerebellar white matter"],
+          "terminatesIn": "Deep cerebellar (intracerebellar) nuclei: fastigial, interposed (globose/emboliform), and dentate",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S4", "quote": "Purkinje cells send inhibitory projections to deep cerebellar nuclei that in turn send excitatory projections to thalamic nuclei.", "species": "human (TMS study of cerebellum-brain inhibition, CBI)" }
+          ]
+        },
+        {
+          "order": 5,
+          "neuronOrder": 3,
+          "cellBodies": "Dentate and interposed (globose/emboliform) nuclei",
+          "courseVia": ["superior cerebellar peduncle (SCP)", "decussation at the level of the inferior colliculus in the midbrain"],
+          "terminatesIn": "Contralateral red nucleus and thalamus (dentato-rubro-thalamic and interposito-rubral tracts)",
+          "laterality": "contralateral",
+          "decussation": { "present": true, "where": "decussation of the superior cerebellar peduncle at the level of the inferior colliculus" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S4", "quote": "inhibition of the dentatothalamic excitatory projection leads to decrease in M1 excitability", "species": "human (TMS study of cerebellum-brain inhibition, CBI)" },
+            { "source": "S4", "quote": "the sensorimotor, lateral premotor, supplementary motor, anterior cingulate, and insular cortices, striatum, ventral thalamus, red nucleus, and cerebellum including the dentate nuclei", "species": "human (resting-state functional connectivity study)" },
+            { "source": "S3", "quote": "the pathway coming from the contralateral dentate nucleus, through the contralateral brachium conjunctivum crossing the midline, turning around the ipsilateral red nucleus, and descending in the ipsilateral central tegmental tract to the inferior olive", "species": "human" }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Dentato-rubro-olivary pathway (dentate nucleus, red nucleus, inferior olivary nucleus) - Guillain-Mollaret triangle",
+          "deficit": "Hypertrophic olivary degeneration with palatal myoclonus, tremor, and ataxia",
+          "side": "variable (unilateral or bilateral depending on which limb of the triangle is disrupted)",
+          "evidence": [
+            { "source": "S3", "quote": "the pathway coming from the contralateral dentate nucleus, through the contralateral brachium conjunctivum crossing the midline, turning around the ipsilateral red nucleus, and descending in the ipsilateral central tegmental tract to the inferior olive" },
+            { "source": "S3", "quote": "Hypertrophic degeneration of the inferior olive is mainly observed in patients developing palatal tremor (PT) or oculopalatal tremor (OPT)." },
+            { "source": "S3", "quote": "HOD on MRI is unilateral or bilateral in case of symptomatic PT and bilateral in case of PAPT" },
+            { "source": "S3", "quote": "In symptomatic PT, HOD usually appears contralateral in case of cerebellar lesion and ipsilateral in case of lateralized central tegmental tract lesion" }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "unsourced": [],
+      "resolvedUnsourced": [
+        "RESOLVED (previously unsourced in motor.json): 'The red-nucleus-to-inferior-olive limb of the Guillain-Mollaret triangle travels via the central tegmental tract' -- now directly supported by S3 (Tilikete & Desestret 2017), quote: 'the pathway coming from the contralateral dentate nucleus, through the contralateral brachium conjunctivum crossing the midline, turning around the ipsilateral red nucleus, and descending in the ipsilateral central tegmental tract to the inferior olive.' This also confirms the laterality pattern (crossed dentato-rubral limb, ipsilateral central-tegmental-tract-to-olive limb), matching S3's further statement that 'In symptomatic PT, HOD usually appears contralateral in case of cerebellar lesion and ipsilateral in case of lateralized central tegmental tract lesion,' which supports the existing lesion entry's 'variable (unilateral or bilateral depending on which limb of the triangle is disrupted)' laterality claim.",
+        "STILL UNSOURCED (unchanged): 'Purkinje cell output onto the deep cerebellar nuclei is inhibitory and GABAergic' -- S4 (Manto et al. 2012) confirms the projection is inhibitory ('Purkinje cells send inhibitory projections to deep cerebellar nuclei') but does not name GABA as the transmitter in the quoted text, so the specific neurotransmitter identity remains unsourced.",
+        "STILL UNSOURCED (unchanged): the 'double decussation' explanation for why cerebellar hemisphere lesions produce ipsilateral signs -- no single sentence stating this synthesis in those words was found in S3 or S4 either; it remains a reviewer-level inference from the two separately-sourced crossing steps."
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "structure": "Locus coeruleus (LC)",
+      "quantity": "position_description",
+      "value": "adjacent to the floor of the fourth ventricle in the rostral pons, extending into the midbrain to the level of the inferior colliculi",
+      "unit": "n/a (qualitative anatomical position, citing prior histological literature)",
+      "side": "bilateral (paired, paramedian nucleus)",
+      "method": "narrative anatomical description in the Introduction, citing prior histological studies (Chan-Palay and Asan 1989b; German et al. 1988; Manaye et al. 1995), not this study's own segmentation",
+      "sample": "not stated in this passage (general anatomical background); this paper's own in vivo sample is n=44 healthy adults, age 19-79 years",
+      "space": "n/a",
+      "source": "S5",
+      "quote": "The LC is located adjacent to the floor of the fourth ventricle in the rostral pons and extends into the midbrain to the level of the inferior colliculi",
+      "locationInPaper": "Introduction, paragraph 2 (anatomical background on the LC)"
+    },
+    {
+      "structure": "Locus coeruleus (LC)",
+      "quantity": "coordinates",
+      "value": "MNI Z = -18 to -33 (rostrocaudal range of peak T1-TSE LC signal, from just inferior to the red nucleus down to the origin of the superior cerebellar peduncle); per-level mean X,Y coordinates and SDs are tabulated for left and right LC separately in the paper's Table 1 (not independently re-typeset here to avoid transcription error in numeric table data)",
+      "unit": "mm, MNI152 space",
+      "side": "bilateral (left and right LC reported and localized separately)",
+      "method": "in vivo MRI, high-resolution T1-turbo spin echo (T1-TSE) neuromelanin-sensitive imaging, individual brainstems normalized to a study-specific template and then to the MNI-152 template; maximum-intensity voxel per axial section used to define LC coordinate",
+      "sample": "n=44 healthy adults (age 19-79 years), in vivo",
+      "space": "MNI152",
+      "source": "S5",
+      "quote": "LC signal was consistently observed in rostral to caudal sections between the inferior aspect of the red nucleus (upper limit of the image acquisition) and the origin of the superior cerebellar peduncle",
+      "locationInPaper": "Results, section 'MNI Location of the LC'; corresponding numeric coordinates tabulated in Table 1 'LC spatial location and distribution'"
+    },
+    {
+      "structure": "Locus coeruleus (LC)",
+      "quantity": "diameter_mm",
+      "value": "~1-2",
+      "unit": "mm (spatial extent in the axial plane)",
+      "side": "bilateral",
+      "method": "cited from prior histological/imaging literature (Chan-Palay and Asan 1989b; German et al. 1988; Hoogendijk et al. 1995), used by the authors to justify their probability-map approach; not this study's own direct diameter measurement",
+      "sample": "not stated in this passage (cited prior literature); this paper's own in vivo sample is n=44 healthy adults, age 19-79 years",
+      "space": "n/a",
+      "source": "S5",
+      "quote": "the core of the LC given its spatial extent of ~1–2 mm in the axial plane",
+      "locationInPaper": "Discussion, paragraph on methodological considerations (spatial variability of LC signal)"
+    }
+  ]
+}

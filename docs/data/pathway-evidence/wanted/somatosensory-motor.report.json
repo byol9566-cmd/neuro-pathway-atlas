@@ -1,0 +1,521 @@
+{
+ "file": "somatosensory-motor.json",
+ "batches": [
+  {
+   "batch": "somatosensory",
+   "pathways": [
+    {
+     "id": "dcml-pathway",
+     "candidates": [
+      {
+       "doi": "10.1152/physrev.00048.2011",
+       "title": "The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force",
+       "journal": "Physiological Reviews",
+       "year": 2012,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "23073629",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Proske U, Gandevia SC. The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiol Rev. 2012;92(4):1651-1697."
+      },
+      {
+       "isbn": "9781461348931",
+       "title": "Sensory Mechanisms of the Spinal Cord",
+       "publisher": "Springer",
+       "year": "May 31, 2013",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Willis WD, Coggeshall RE. Sensory Mechanisms of the Spinal Cord, Vol. 2: Ascending Sensory Tracts and Their Descending Control, 3rd ed. Springer US; 2004."
+      },
+      {
+       "isbn": "9781416047056",
+       "title": "Gray's clinical neuroanatomy",
+       "publisher": "Elsevier/Saunders",
+       "year": "2011",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011."
+      }
+     ]
+    },
+    {
+     "id": "anterolateral-system-spinothalamic-tract",
+     "candidates": [
+      {
+       "doi": "10.1097/00004691-199701000-00002",
+       "title": "Neuroanatomy of the Pain System and of the Pathways That Modulate Pain",
+       "journal": "Journal of Clinical Neurophysiology",
+       "year": 1997,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Willis WD, Westlund KN. Neuroanatomy of the Pain System and of the Pathways That Modulate Pain. J Clin Neurophysiol. 1997;14(1):2-31."
+      },
+      {
+       "doi": "10.1146/annurev.neuro.26.041002.131022",
+       "title": "P<scp>AIN</scp> M<scp>ECHANISMS</scp>: Labeled Lines Versus Convergence in Central Processing",
+       "journal": "Annual Review of Neuroscience",
+       "year": 2003,
+       "type": "journal-article",
+       "titleMatch": 0.89,
+       "epmc": {
+        "pmid": "12651967",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "historical article; research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Craig AD. Pain Mechanisms: Labeled Lines Versus Convergence in Central Processing. Annu Rev Neurosci. 2003;26:1-30."
+      },
+      {
+       "isbn": "9781461348931",
+       "title": "Sensory Mechanisms of the Spinal Cord",
+       "publisher": "Springer",
+       "year": "May 31, 2013",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Willis WD, Coggeshall RE. Sensory Mechanisms of the Spinal Cord, Vol. 2: Ascending Sensory Tracts and Their Descending Control, 3rd ed. Springer US; 2004."
+      }
+     ]
+    },
+    {
+     "id": "trigeminal-somatosensory-pathways",
+     "candidates": [
+      {
+       "doi": "10.1146/annurev.ne.06.030183.002121",
+       "title": "Spinal and Trigeminal Mechanisms of Nociception",
+       "journal": "Annual Review of Neuroscience",
+       "year": 1983,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "6132587",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Dubner R, Bennett GJ. Spinal and Trigeminal Mechanisms of Nociception. Annu Rev Neurosci. 1983;6:381-418."
+      },
+      {
+       "doi": "10.1177/10454411000110010401",
+       "title": "Acute and Chronic Craniofacial Pain: Brainstem Mechanisms of Nociceptive Transmission and Neuroplasticity, and Their Clinical Correlates",
+       "journal": "Critical Reviews in Oral Biology &amp; Medicine",
+       "year": 2000,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "10682901",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Sessle BJ. Acute and Chronic Craniofacial Pain: Brainstem Mechanisms of Nociceptive Transmission and Neuroplasticity, and Their Clinical Correlates. Crit Rev Oral Biol Med. 2000;11(1):57-91."
+      },
+      {
+       "isbn": "9781416047056",
+       "title": "Gray's clinical neuroanatomy",
+       "publisher": "Elsevier/Saunders",
+       "year": "2011",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011."
+      }
+     ]
+    },
+    {
+     "id": "spinocerebellar-tracts",
+     "candidates": [
+      {
+       "doi": "10.1152/physrev.2001.81.2.539",
+       "title": "Proprioception From a Spinocerebellar Perspective",
+       "journal": "Physiological Reviews",
+       "year": 2001,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "11274339",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, u.s. gov't, p.h.s.; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Bosco G, Poppele RE. Proprioception From a Spinocerebellar Perspective. Physiol Rev. 2001;81(2):539-568."
+      },
+      {
+       "isbn": "9781416047056",
+       "title": "Gray's clinical neuroanatomy",
+       "publisher": "Elsevier/Saunders",
+       "year": "2011",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011."
+      }
+     ]
+    },
+    {
+     "id": "descending-pain-modulation",
+     "candidates": [
+      {
+       "doi": "10.1146/annurev.ne.07.030184.001521",
+       "title": "Endogenous Pain Control Systems: Brainstem Spinal Pathways and Endorphin Circuitry",
+       "journal": "Annual Review of Neuroscience",
+       "year": 1984,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "6143527",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; review; research support, u.s. gov't, non-p.h.s.; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Basbaum AI, Fields HL. Endogenous Pain Control Systems: Brainstem Spinal Pathways and Endorphin Circuitry. Annu Rev Neurosci. 1984;7:309-338."
+      },
+      {
+       "doi": "10.1172/jci43766",
+       "title": "Central modulation of pain",
+       "journal": "Journal of Clinical Investigation",
+       "year": 2010,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Ossipov MH, Dussor GO, Porreca F. Central modulation of pain. J Clin Invest. 2010;120(11):3779-3787."
+      },
+      {
+       "doi": "10.1016/j.brainresrev.2008.12.009",
+       "title": "Descending control of nociception: Specificity, recruitment and plasticity",
+       "journal": "Brain Research Reviews",
+       "year": 2009,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "19146877",
+        "pmcid": "PMC2894733",
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Heinricher MM, Tavares I, Leith JL, Lumb BM. Descending control of nociception: Specificity, recruitment and plasticity. Brain Res Rev. 2009;60(1):214-225."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "batch": "motor",
+   "pathways": [
+    {
+     "id": "corticospinal-tracts",
+     "candidates": [
+      {
+       "doi": "10.1146/annurev.neuro.31.060407.125547",
+       "title": "Descending Pathways in Motor Control",
+       "journal": "Annual Review of Neuroscience",
+       "year": 2008,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "18558853",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Lemon RN. Descending Pathways in Motor Control. Annu Rev Neurosci. 2008;31:195-218."
+      },
+      {
+       "doi": "10.1093/brain/91.1.1",
+       "title": "THE FUNCTIONAL ORGANIZATION OF THE MOTOR SYSTEM IN THE MONKEY",
+       "journal": "Brain",
+       "year": 1968,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "4966862",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Lawrence DG, Kuypers HGJM. The functional organization of the motor system in the monkey. I. The effects of bilateral pyramidal lesions. Brain. 1968;91(1):1-14."
+      },
+      {
+       "isbn": "9781416047056",
+       "title": "Gray's clinical neuroanatomy",
+       "publisher": "Elsevier/Saunders",
+       "year": "2011",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011."
+      }
+     ]
+    },
+    {
+     "id": "corticobulbar-tract",
+     "candidates": [
+      {
+       "doi": "10.1212/wnl.37.6.930",
+       "title": "Organization of the facial nucleus and corticofacial projection in the monkey",
+       "journal": "Neurology",
+       "year": 1987,
+       "type": "journal-article",
+       "titleMatch": 0.73,
+       "epmc": {
+        "pmid": "3587643",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, u.s. gov't, p.h.s.; research support, non-u.s. gov't; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Jenny AB, Saper CB. Organization of the facial nucleus and corticofacial projection in the monkey: a reconsideration of the upper motor neuron facial palsy. Neurology. 1987;37(6):930-939."
+      },
+      {
+       "doi": "10.1186/s12883-021-02247-z",
+       "title": "The course of facial corticobulbar tract fibers in the dorsolateral medulla oblongata",
+       "journal": "BMC Neurology",
+       "year": 2021,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "34058995",
+        "pmcid": "PMC8165998",
+        "isOpenAccess": "Y",
+        "pubType": "research-article; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Kanbayashi T, Sonoo M. The course of facial corticobulbar tract fibers in the dorsolateral medulla oblongata. BMC Neurol. 2021;21:214."
+      },
+      {
+       "isbn": "9781416047056",
+       "title": "Gray's clinical neuroanatomy",
+       "publisher": "Elsevier/Saunders",
+       "year": "2011",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011."
+      }
+     ]
+    },
+    {
+     "id": "basal-ganglia-circuits",
+     "candidates": [
+      {
+       "doi": "10.1016/s0168-0102(02)00027-5",
+       "title": "Functional significance of the cortico–subthalamo–pallidal ‘hyperdirect’ pathway",
+       "journal": "Neuroscience Research",
+       "year": 2002,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Nambu A, Tokuno H, Takada M. Functional significance of the cortico-subthalamo-pallidal 'hyperdirect' pathway. Neurosci Res. 2002;43(2):111-117."
+      },
+      {
+       "doi": "10.1016/0166-2236(90)90110-v",
+       "title": "Primate models of movement disorders of basal ganglia origin",
+       "journal": "Trends in Neurosciences",
+       "year": 1990,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "DeLong MR. Primate models of movement disorders of basal ganglia origin. Trends Neurosci. 1990;13(7):281-285."
+      },
+      {
+       "doi": "10.1016/0166-2236(90)90107-l",
+       "title": "Functional architecture of basal ganglia circuits: neural substrates of parallel processing",
+       "journal": "Trends in Neurosciences",
+       "year": 1990,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Alexander GE, Crutcher MD. Functional architecture of basal ganglia circuits: neural substrates of parallel processing. Trends Neurosci. 1990;13(7):266-271."
+      },
+      {
+       "isbn": "9781416047056",
+       "title": "Gray's clinical neuroanatomy",
+       "publisher": "Elsevier/Saunders",
+       "year": "2011",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011."
+      }
+     ]
+    },
+    {
+     "id": "cerebellar-circuits",
+     "candidates": [
+      {
+       "doi": "10.1016/j.brainres.2019.04.024",
+       "title": "Hypertrophic olivary degeneration: A comprehensive review focusing on etiology",
+       "journal": "Brain Research",
+       "year": 2019,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "31026459",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Wang H, Wang Y, Wang R, Li Y, Wang P, Li J, Du J. Hypertrophic olivary degeneration: A comprehensive review focusing on etiology. Brain Res. 2019;1718:53-63."
+      },
+      {
+       "doi": "10.3389/fneur.2017.00302",
+       "title": "Hypertrophic Olivary Degeneration and Palatal or Oculopalatal Tremor",
+       "journal": "Frontiers in Neurology",
+       "year": 2017,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "28706504",
+        "pmcid": "PMC5490180",
+        "isOpenAccess": "Y",
+        "pubType": "review-article; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Tilikete C, Desestret V. Hypertrophic Olivary Degeneration and Palatal or Oculopalatal Tremor. Front Neurol. 2017;8:302."
+      },
+      {
+       "doi": "10.1007/s12311-011-0331-9",
+       "title": "Consensus Paper: Roles of the Cerebellum in Motor Control—The Diversity of Ideas on Cerebellar Involvement in Movement",
+       "journal": "The Cerebellum",
+       "year": 2011,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "22161499",
+        "pmcid": "PMC4347949",
+        "isOpenAccess": "N",
+        "pubType": "research-article; review; consensus statement; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Manto M, Bower JM, Conforto AB, et al. Consensus Paper: Roles of the Cerebellum in Motor Control—The Diversity of Ideas on Cerebellar Involvement in Movement. Cerebellum. 2012;11(2):457-487."
+      },
+      {
+       "isbn": "9781416047056",
+       "title": "Gray's clinical neuroanatomy",
+       "publisher": "Elsevier/Saunders",
+       "year": "2011",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011."
+      }
+     ]
+    },
+    {
+     "id": "extrapyramidal-descending-tracts",
+     "candidates": [
+      {
+       "doi": "10.1113/jphysiol.2011.215160",
+       "title": "The primate reticulospinal tract, hand function and functional recovery",
+       "journal": "The Journal of Physiology",
+       "year": 2011,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Baker SN. The primate reticulospinal tract, hand function and functional recovery. J Physiol. 2011;589(23):5603-5612."
+      },
+      {
+       "doi": "10.1016/s0079-6123(08)60813-4",
+       "title": "Vestibulospinal, Reticulospinal and Interstitiospinal Pathways in the Cat",
+       "journal": "Progress in Brain Research",
+       "year": 1979,
+       "type": "book-chapter",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Fukushima K, Peterson BW, Wilson VJ. Vestibulospinal, Reticulospinal and Interstitiospinal Pathways in the Cat. Prog Brain Res. 1979;50:121-136."
+      },
+      {
+       "doi": "10.1146/annurev.neuro.31.060407.125547",
+       "title": "Descending Pathways in Motor Control",
+       "journal": "Annual Review of Neuroscience",
+       "year": 2008,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "18558853",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Lemon RN. Descending Pathways in Motor Control. Annu Rev Neurosci. 2008;31:195-218."
+      },
+      {
+       "isbn": "9781416047056",
+       "title": "Gray's clinical neuroanatomy",
+       "publisher": "Elsevier/Saunders",
+       "year": "2011",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011."
+      }
+     ]
+    },
+    {
+     "id": "spinal-reflex-arcs",
+     "candidates": [
+      {
+       "doi": "10.1016/0301-0082(92)90024-9",
+       "title": "Interneuronal relay in spinal pathways from proprioceptors",
+       "journal": "Progress in Neurobiology",
+       "year": 1992,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Jankowska E. Interneuronal relay in spinal pathways from proprioceptors. Prog Neurobiol. 1992;38(4):335-378."
+      },
+      {
+       "isbn": "9780521192583",
+       "title": "The circuitry of the human spinal cord",
+       "publisher": "Cambridge University Press",
+       "year": "2012",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Pierrot-Deseilligny E, Burke D. The Circuitry of the Human Spinal Cord: Its Role in Motor Control and Movement Disorders, 2nd ed. Cambridge University Press; 2012."
+      },
+      {
+       "isbn": "9781416047056",
+       "title": "Gray's clinical neuroanatomy",
+       "publisher": "Elsevier/Saunders",
+       "year": "2011",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

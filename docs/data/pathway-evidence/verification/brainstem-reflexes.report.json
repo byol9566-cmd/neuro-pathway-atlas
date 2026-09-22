@@ -1,0 +1,878 @@
+{
+ "batch": "brainstem-reflexes",
+ "file": "brainstem-reflexes.json",
+ "tally": {
+  "exact": 80
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "Neuroanatomy, Pupillary Light Reflexes and Pathway",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2025,
+    "pmcid": "",
+    "nbk": "NBK553169",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Pupillary Light Reflexes and Pathway - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S2": {
+   "claimed": {
+    "title": "Marcus Gunn Pupil",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2026,
+    "pmcid": "",
+    "nbk": "NBK557675",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Marcus Gunn Pupil - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S3": {
+   "claimed": {
+    "title": "Argyll Robertson Pupil",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2024,
+    "pmcid": "",
+    "nbk": "NBK537179",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Argyll Robertson Pupil - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S4": {
+   "claimed": {
+    "title": "Parinaud Syndrome",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK441892",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Parinaud Syndrome - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S5": {
+   "claimed": {
+    "title": "Neuroanatomy, Vestibular Pathways",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2025,
+    "pmcid": "",
+    "nbk": "NBK557380",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Vestibular Pathways - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S6": {
+   "claimed": {
+    "title": "Neuroanatomy, Vestibulo-ocular Reflex",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK545297",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Vestibulo-ocular Reflex - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S7": {
+   "claimed": {
+    "title": "Vestibular Dysfunction",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK558926",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Vestibular Dysfunction - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S8": {
+   "claimed": {
+    "title": "Internuclear Ophthalmoplegia",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK441970",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Internuclear Ophthalmoplegia - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S9": {
+   "claimed": {
+    "title": "Corneal Reflex",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2026,
+    "pmcid": "",
+    "nbk": "NBK534247",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Corneal Reflex - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S10": {
+   "claimed": {
+    "title": "Intra-operative blink reflex neurophysiological monitoring in posterior skull base neurosurgery",
+    "journal": "Frontiers in Surgery",
+    "year": 2025,
+    "pmcid": "PMC12237997",
+    "nbk": "",
+    "doi": "10.3389/fsurg.2025.1485459",
+    "license": "This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Intra-operative blink reflex neurophysiological monitoring in posterior skull base neurosurgery.",
+    "registryJournal": "Frontiers in surgery",
+    "registryYear": "2025",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "research-article",
+     "Journal Article"
+    ],
+    "citedByCount": 1,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S11": {
+   "claimed": {
+    "title": "Neuroanatomy, Trigeminal Nucleus",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK539823",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Trigeminal Nucleus - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S12": {
+   "claimed": {
+    "title": "Physiology, Gag Reflex",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK554502",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Physiology, Gag Reflex - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S13": {
+   "claimed": {
+    "title": "Physiological mechanisms and therapeutic targets in chronic cough",
+    "journal": "Physiological Reports",
+    "year": 2026,
+    "pmcid": "PMC13447969",
+    "nbk": "",
+    "doi": "10.14814/phy2.71036",
+    "license": "This is an open access article under the terms of the http://creativecommons.org/licenses/by/4.0/ License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Physiological mechanisms and therapeutic targets in chronic cough.",
+    "registryJournal": "Physiological reports",
+    "registryYear": "2026",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 0,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S14": {
+   "claimed": {
+    "title": "Physiology, Baroreceptors",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2026,
+    "pmcid": "",
+    "nbk": "NBK538172",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Physiology, Baroreceptors - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S15": {
+   "claimed": {
+    "title": "Physiology, Accommodation",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2022,
+    "pmcid": "",
+    "nbk": "NBK542189",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Physiology, Accommodation - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S16": {
+   "claimed": {
+    "title": "Horner Syndrome",
+    "journal": "StatPearls [Internet], StatPearls Publishing",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK500000",
+    "doi": "",
+    "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0), which permits others to distribute the work, provided that the article is not altered or used commercially. You are not required to obtain permission to distribute this article, provided that you credit the author and journal.",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Horner Syndrome - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S17": {
+   "claimed": {
+    "title": "Neural Control of Tissue Perfusion: Emerging Evidence and Beyond",
+    "journal": "Current Hypertension Reports",
+    "year": 2026,
+    "pmcid": "PMC13319144",
+    "nbk": "",
+    "doi": "10.1007/s11906-026-01378-3",
+    "license": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Neural Control of Tissue Perfusion: Emerging Evidence and Beyond.",
+    "registryJournal": "Current hypertension reports",
+    "registryYear": "2026",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 0,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Nasal retinal fibers decussate at the optic chiasm and project to the contralateral pretectal nucleus, whereas temporal retinal fibers project to the ipsilateral pretectal nucleus"
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The pupillary light reflex fibers synapse at the pretectal nucleus and the pass to the Edinger-Westphal nucleus of the same side and the contralateral side through the posterior commissure"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These axons travel through the oculomotor nerve to synapse with postganglionic neurons in the ciliary ganglion. The short ciliary nerves arising from the ciliary ganglion then stimulate the pupillary sphincter muscle, producing pupillary constriction"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The preganglionic motor neuron connects the Edinger-Westphal nucleus to the ciliary ganglion. These fibers pass through the inferior division of the oculomotor nerve"
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The postganglionic motor neurons innervate the sphincter pupillae via short ciliary nerves"
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This paradoxical dilation occurs because the affected eye transmits a weaker afferent signal, thereby reducing pupillomotor input"
+  },
+  {
+   "path": "pathways[0].lesions[1].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Unilateral lesions of the olivary pretectal area or the brachium of the superior colliculus can cause a tectal MGP, which is contralateral in nature and can present without vision loss due to the pupillary fibers branching off before reaching the visually processing areas"
+  },
+  {
+   "path": "pathways[0].lesions[2].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "dorsal midbrain lesion that interrupts the pupillary light reflex pathway but spares the more ventral pupillary near the reflex pathway"
+  },
+  {
+   "path": "pathways[0].lesions[2].evidence[1]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The patient with Argyll Robertson pupils will show small, irregular pupils with light-near dissociation: absent light reflex, prompt constriction with near accommodation"
+  },
+  {
+   "path": "pathways[0].lesions[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Pupillary constriction is absent in both eyes when light is directed into the affected eye, as the retinal signal cannot reach central processing centers"
+  },
+  {
+   "path": "pathways[0].lesions[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Light directed into the eye with a damaged oculomotor nerve produces a retinal signal that reaches both Edinger-Westphal nuclei, but only the contralateral pupil constricts because the efferent pathway on the affected side is disrupted"
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Bipolar neurons of the Scarpa ganglion convey afferent signals from the otolith organs and semicircular canals through cranial nerve VIII (vestibulocochlear nerve) to the brainstem at the pontomedullary junction"
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[1]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These send signals through the vestibular nerves to Scarpa's ganglion and thence to the ipsilateral vestibular nucleus"
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Activation of the superior and medial vestibular nuclei during head rotation generates impulses that cross to the contralateral abducens nucleus, stimulating the lateral rectus muscle, while interneuronal projections via the MLF activate the ipsilateral oculomotor nucleus to contract the medial rectus"
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "During head rotation, such as to the left, vestibular impulses are transmitted from the left semicircular canal to the left vestibular nuclei. These nuclei send excitatory projections to the right abducens nucleus, activating the right lateral rectus muscle"
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[2]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Using first-order sensory neurons of cranial nerve V, most of the semicircular canal inputs synapse at the superior and medial nuclei"
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Concurrently, interneurons ascend in the MLF to stimulate the left oculomotor nucleus, coordinating conjugate eye movement opposite to the head turn"
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "via the interstitial nucleus of Cajal, the ventral tegmental tract, the medial longitudinal fasciculus, the ascending tract of Deiters, and the brachium conjunctivum to ultimately stimulate the nucleus of the nerve controlling the relevant extraocular muscle contralaterally"
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[1]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "and inhibit the nucleus of the nerve controlling the opposing extraocular muscle on the side ipsilateral to the stimulation"
+  },
+  {
+   "path": "pathways[1].lesions[0].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The characteristic manifestation of internuclear ophthalmoplegia is impaired adduction of the ipsilateral eye, accompanied by abducting nystagmus of the contralateral eye during horizontal gaze"
+  },
+  {
+   "path": "pathways[1].lesions[1].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Lesions affecting the abducens nucleus, rather than the nerve itself, produce a horizontal gaze palsy involving both eyes toward the side of the lesion"
+  },
+  {
+   "path": "pathways[1].lesions[2].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Oscillopsia results in blurred vision when the head is in motion and objects appear to jiggle and bounce since they do not stay fixed at one point in the retina"
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Activation of the superior and medial vestibular nuclei during head rotation generates impulses that cross to the contralateral abducens nucleus, stimulating the lateral rectus muscle, while interneuronal projections via the MLF activate the ipsilateral oculomotor nucleus to contract the medial rectus"
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[1]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "via the interstitial nucleus of Cajal, the ventral tegmental tract, the medial longitudinal fasciculus, the ascending tract of Deiters, and the brachium conjunctivum to ultimately stimulate the nucleus of the nerve controlling the relevant extraocular muscle contralaterally"
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Saccades are initiated by the frontal eye field (FEF), which sends signals to the contralateral paramedian pontine reticular formation (PPRF) for horizontal saccades and the rostral interstitial nucleus of the medial longitudinal fasciculus (riMLF) for vertical saccades"
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The paramedian pontine reticular formation activates the ipsilateral abducens nucleus which sends signals to the Lateral rectus muscle of the same side and via abducent excitatory interneurons (after decussation) to the contralateral medial rectus subnucleus of the oculomotor nucleus through the medial longitudinal fasciculus"
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The paramedian pontine reticular formation activates the ipsilateral abducens nucleus which sends signals to the Lateral rectus muscle of the same side and via abducent excitatory interneurons (after decussation) to the contralateral medial rectus subnucleus of the oculomotor nucleus through the medial longitudinal fasciculus"
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It occurs because of the involvement of the vertical gaze centers, which are in proximity to the Superior colliculus, with some of the main nuclei being the interstitial nuclei of Cajal and the rostral interstitial nucleus of the Medial Longitudinal Fasciculus (riMLF)"
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[1]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the pathways for downward gaze are directed medially from the rostral interstitial nucleus of the Medial Longitudinal Fasciculus (MLF); whereas, the fibers for upward gaze are directed laterally from the Medial Longitudinal Fasciculus and decussate in the posterior commissure"
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Internuclear ophthalmoplegia occurs due to a lesion in the medial longitudinal fasciculus (MLF) by blocking the connection between the contralateral sixth nerve nucleus and the ipsilateral third nerve nucleus, thus affecting horizontal gaze"
+  },
+  {
+   "path": "pathways[2].lesions[1].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This syndrome is characterized by the loss of all horizontal movements except abduction in the contralateral eye"
+  },
+  {
+   "path": "pathways[2].lesions[2].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Parinaud syndrome is classically described by the triad of upgaze palsy, convergence retraction nystagmus, and pupillary hyporeflexia"
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Sensory information is transmitted via the ophthalmic nerve to synapse within the spinal trigeminal nucleus in the brainstem"
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[1]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "an afferent impulse from either free nerve endings or mechanoreceptors within the corneal epithelium is sent by way of nasociliary nerve and its long ciliary nerve branches of the ophthalmic division of the trigeminal nerve (CN V) to the principal sensory nucleus"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Neurons in the spinal trigeminal nucleus project to the facial nucleus, forming synapses with the facial nerve"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[1]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Axons then project bilaterally to facial motor nucleus, which initiating the efferent motor response via the temporal and zygomatic branches of the facial nerve (CN VII), leading to the contraction of orbicularis oculi muscles and coordinated eye closure (blink)"
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The late-stage reflex activates facial nerves bilaterally, producing simultaneous blinking of both eyes"
+  },
+  {
+   "path": "pathways[3].lesions[0].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Peripheral lesions produce ipsilateral reflex deficits, whereas central lesions result in bilateral deficits"
+  },
+  {
+   "path": "pathways[3].lesions[0].evidence[1]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In stage-specific testing, lesions of the trigeminal nerve typically manifest as ipsilateral deficits in the early stage, whereas lesions of the facial nerve produce ipsilateral deficits in both the early and late stages"
+  },
+  {
+   "path": "pathways[3].lesions[1].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A common lesion that alters the blink response is Wallenberg syndrome, caused by a lateral medullary infarct"
+  },
+  {
+   "path": "pathways[3].lesions[1].evidence[1]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Relaying the blink reflex depends on the spinal trigeminal nucleus located in the lateral medulla"
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Sensory information is transmitted via the ophthalmic nerve to synapse within the spinal trigeminal nucleus in the brainstem"
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[1]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "an afferent impulse from either free nerve endings or mechanoreceptors within the corneal epithelium is sent by way of nasociliary nerve and its long ciliary nerve branches of the ophthalmic division of the trigeminal nerve (CN V) to the principal sensory nucleus"
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[0]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This nucleus is unique in that the fibers do not have a cell body in the trigeminal ganglion"
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[1]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "receives information about stretch sensation from the muscles of mastication, and serves as the afferent limb of the jaw jerk reflex"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[0]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In this reflex, there is an interplay between the mesencephalic nucleus and motor V nucleus"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[1]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "pseudounipolar afferent fibers from stretch receptors relay information directly to the cell body in the nucleus, which is then relayed bilaterally to the trigeminal motor nuclei, which project to cause contraction of the masseter"
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[0]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "pseudounipolar afferent fibers from stretch receptors relay information directly to the cell body in the nucleus, which is then relayed bilaterally to the trigeminal motor nuclei, which project to cause contraction of the masseter"
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These sensations are carried by CN IX, which acts as the afferent limb of the reflex to the ipsilateral nucleus solitarius (also referred to as the gustatory nucleus) after synapsing at the superior ganglion located in the jugular foramen"
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These nuclei send fibers to the nucleus ambiguus, a motor nucleus in the rostral medulla. Efferent nerve fibers to the pharyngeal musculature traverse from the nucleus ambiguus through CN X, resulting in the bilateral contraction of the posterior pharyngeal muscles"
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[1]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Contraction of the pharyngeal musculature ipsilateral to the side of the stimulus is known as the direct gag reflex, and contraction of the musculature on the contralateral side is known as the consensual gag reflex"
+  },
+  {
+   "path": "pathways[5].steps[2].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These nuclei send fibers to the nucleus ambiguus, a motor nucleus in the rostral medulla. Efferent nerve fibers to the pharyngeal musculature traverse from the nucleus ambiguus through CN X, resulting in the bilateral contraction of the posterior pharyngeal muscles"
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Stimulation of the soft palate can also elicit the gag reflex; in this case, the sensory limb is the trigeminal nerve (CN V). Here, sensory stimulation of the soft palate travels through the nucleus of the spinal tract of the trigeminal nerve"
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[0]",
+   "source": "S13",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Glutamatergic vagal afferents (Aδ and C fibres) terminate in the caudal nucleus tractus solitarius (nTS), the primary sensory hub for cough initiation"
+  },
+  {
+   "path": "pathways[5].steps[5].evidence[0]",
+   "source": "S13",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "efferently projected to medullary circuits that control glottic closure (nucleus ambiguus) and expiratory drive (caudal ventral respiratory group)"
+  },
+  {
+   "path": "pathways[5].lesions[0].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "If the glossopharyngeal (IX) nerve is damaged on 1 side, there is no response when touched"
+  },
+  {
+   "path": "pathways[5].lesions[1].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "If the vagus (X) nerve is damaged and either side is touched, the soft palate elevates and moves toward the affected side"
+  },
+  {
+   "path": "pathways[5].lesions[2].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Bulbar palsy symptoms can include a lack of a gag reflex, difficulty swallowing (dysphagia), excessive drooling, and slurred speech (dysarthria), most commonly caused by a brainstem stroke or tumor"
+  },
+  {
+   "path": "pathways[6].steps[0].evidence[0]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Carotid sinus afferents travel along the carotid sinus nerve, a branch of the glossopharyngeal nerve, and have their cell bodies in the petrosal ganglion. Aortic and cardiopulmonary afferents travel primarily through the vagus nerve, with their cell bodies located in the nodose ganglion"
+  },
+  {
+   "path": "pathways[6].steps[0].evidence[1]",
+   "source": "S17",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Baroreceptors in the carotid sinus send impulses along the carotid sinus nerve"
+  },
+  {
+   "path": "pathways[6].steps[1].evidence[0]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The NTS sends excitatory projections to the caudal ventrolateral medulla, whose inhibitory neurons project to the rostral ventrolateral medulla"
+  },
+  {
+   "path": "pathways[6].steps[2].evidence[0]",
+   "source": "S17",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The CVLM contains a population of GABAergic neurons that receive excitatory drive from the NTS and project to the RVLM, forming the central inhibitory limb of the arterial baroreflex"
+  },
+  {
+   "path": "pathways[6].steps[2].evidence[1]",
+   "source": "S17",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "When baroreceptor activity increases (due to elevated BP), NTS activates CVLM, which in turn inhibits RVLM activity. This inhibition reduces sympathetic outflow, leading to vasodilation and decreased heart rate, thus lowering BP"
+  },
+  {
+   "path": "pathways[6].steps[3].evidence[0]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The NTS sends excitatory projections to the caudal ventrolateral medulla, whose inhibitory neurons project to the rostral ventrolateral medulla—a major source of excitatory drive to sympathetic preganglionic neurons"
+  },
+  {
+   "path": "pathways[6].steps[4].evidence[0]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The NTS also sends excitatory projections to cardiac parasympathetic neurons in the nucleus ambiguus. These neurons provide parasympathetic output to the heart through the vagus nerve"
+  },
+  {
+   "path": "pathways[6].steps[4].evidence[1]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The NTS integrates afferent input from arterial and cardiopulmonary receptors and projects to autonomic centers, including the caudal ventrolateral medulla, dorsal motor nucleus of the vagus, and nucleus ambiguus"
+  },
+  {
+   "path": "pathways[7].steps[0].evidence[0]",
+   "source": "S15",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Like the pupillary light reflex, the afferent limb of the reflex is through the optic nerve, and the efferent limb involves the Edinger-Westphal nucleus and the oculomotor nerve"
+  },
+  {
+   "path": "pathways[7].steps[0].evidence[1]",
+   "source": "S15",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The supranuclear control over the near reflex differs from the light reflex. It includes cortical areas surrounding the visual cortex and frontal eye fields. The midbrain center for the near reflex is more ventral than the light reflex"
+  },
+  {
+   "path": "pathways[7].steps[1].evidence[0]",
+   "source": "S15",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The oculomotor nucleus stimulates contraction of the medial recti bilaterally, which results in convergence. Simultaneously, the Edinger-Westphal nucleus coordinates parasympathetic pupillary constriction via the ciliary ganglion"
+  },
+  {
+   "path": "pathways[7].steps[1].evidence[1]",
+   "source": "S15",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This action involves contraction of the medial rectus muscles of both eyes, with the relaxation of lateral recti resulting in the adduction of both eyes"
+  },
+  {
+   "path": "pathways[7].steps[2].evidence[0]",
+   "source": "S15",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Contraction of bilateral ciliary muscles results in the thickening of the lens, which shortens the focal length and increases its refractive power"
+  },
+  {
+   "path": "pathways[7].lesions[0].evidence[0]",
+   "source": "S15",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This action occurs because the midbrain center for the near reflex is more ventral than the pretectal nucleus, which controls the light reflex"
+  },
+  {
+   "path": "pathways[8].steps[0].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The first-order neurons originate in the hypothalamus and descend uncrossed through the midbrain and pons, terminating in the intermediolateral cell columns at the C8 through T2 levels of the spinal cord, known as the ciliospinal center of Budge"
+  },
+  {
+   "path": "pathways[8].steps[1].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Second-order preganglionic neurons exit the spinal cord at the T1 level and enter the cervical sympathetic chain, where they ascend to synapse in the superior cervical ganglion at the C3 through C4 levels"
+  },
+  {
+   "path": "pathways[8].steps[2].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Third-order postganglionic fibers divide into sudomotor and vasomotor branches that follow the external carotid artery and innervate the sweat glands and blood vessels of the face"
+  },
+  {
+   "path": "pathways[8].steps[2].evidence[1]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The remaining fibers ascend within the carotid plexus along the internal carotid artery and enter the cavernous sinus, where they join the abducens nerve (cranial nerve VI)"
+  },
+  {
+   "path": "pathways[8].lesions[0].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "First-order neuron lesions may cause anhidrosis involving the ipsilateral side of the body because these fibers arise centrally"
+  },
+  {
+   "path": "pathways[8].lesions[1].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Second-order neuron lesions typically affect the ipsilateral face"
+  },
+  {
+   "path": "pathways[8].lesions[2].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Third-order postganglionic neuron lesions produce limited facial anhidrosis, usually confined to the area adjacent to the ipsilateral brow, because the vasomotor and sudomotor fibers have already branched from the pathway"
+  },
+  {
+   "path": "pathways[8].lesions[3].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The sympathetic nervous system mediates pupillary dilation. Disruption of this pathway leaves parasympathetic innervation unopposed, resulting in pupillary constriction. Pupillary responses to light and accommodation remain normal because these systems do not depend on sympathetic innervation"
+  }
+ ]
+}

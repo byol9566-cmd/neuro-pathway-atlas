@@ -1,0 +1,620 @@
+{
+ "file": "brainstem-special-senses.json",
+ "batches": [
+  {
+   "batch": "brainstem-reflexes",
+   "pathways": [
+    {
+     "id": "pupillary-light-reflex",
+     "candidates": [
+      {
+       "doi": "10.1002/cphy.c140014",
+       "title": "Autonomic Control of the Eye",
+       "journal": "Comprehensive Physiology",
+       "year": 2014,
+       "type": "other",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "25589275",
+        "pmcid": "PMC4919817",
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "McDougal DH, Gamlin PD. Autonomic Control of the Eye. Compr Physiol. 2015;5(1):439-473."
+      },
+      {
+       "doi": "10.1212/con.0000000000001542",
+       "title": "Disorders of the Pupil",
+       "journal": "CONTINUUM: Lifelong Learning in Neurology",
+       "year": 2025,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Kawasaki A. Disorders of the Pupil. Continuum (Minneap Minn). 2025;31(2)."
+      }
+     ]
+    },
+    {
+     "id": "horizontal-vestibulo-ocular-reflex",
+     "candidates": [
+      {
+       "doi": "10.1146/annurev.neuro.31.060407.125555",
+       "title": "Vestibular System: The Many Facets of a Multimodal Sense",
+       "journal": "Annual Review of Neuroscience",
+       "year": 2008,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Angelaki DE, Cullen KE. Vestibular System: The Many Facets of a Multimodal Sense. Annu Rev Neurosci. 2008;31:125-150."
+      },
+      {
+       "doi": "10.1016/j.tins.2011.12.001",
+       "title": "The vestibular system: multimodal integration and encoding of self-motion for motor control",
+       "journal": "Trends in Neurosciences",
+       "year": 2012,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "22245372",
+        "pmcid": "PMC4000483",
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Cullen KE. The vestibular system: multimodal integration and encoding of self-motion for motor control. Trends Neurosci. 2012;35(3):185-196."
+      },
+      {
+       "doi": "10.1016/s0079-6123(05)51006-9",
+       "title": "The Anatomy of the vestibular nuclei",
+       "journal": "Progress in Brain Research",
+       "year": 2006,
+       "type": "book-chapter",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Highstein SM, Holstein GR. The Anatomy of the Vestibular Nuclei. Prog Brain Res. 2006;151:157-203."
+      }
+     ]
+    },
+    {
+     "id": "horizontal-conjugate-gaze-saccade-circuit",
+     "candidates": [
+      {
+       "doi": "10.1038/nrn986",
+       "title": "The brainstem control of saccadic eye movements",
+       "journal": "Nature Reviews Neuroscience",
+       "year": 2002,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "12461552",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, u.s. gov't, p.h.s.; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Sparks DL. The brainstem control of saccadic eye movements. Nat Rev Neurosci. 2002;3(12):952-964."
+      },
+      {
+       "doi": "10.1146/annurev.ne.08.030185.001515",
+       "title": "Brainstem Control of Saccadic Eye Movements",
+       "journal": "Annual Review of Neuroscience",
+       "year": 1985,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "3920944",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, u.s. gov't, p.h.s.; review; research support, u.s. gov't, non-p.h.s.; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Fuchs AF, Kaneko CRS, Scudder CA. Brainstem Control of Saccadic Eye Movements. Annu Rev Neurosci. 1985;8:307-337."
+      }
+     ]
+    },
+    {
+     "id": "corneal-blink-reflex",
+     "candidates": [
+      {
+       "doi": "10.1093/brain/awh366",
+       "title": "Brainstem reflex circuits revisited",
+       "journal": "Brain",
+       "year": 2004,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "15601661",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "multicenter study; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Cruccu G, Iannetti GD, Marx JJ, Thoemke F, Truini A, Fitzek S, Galeotti F, Urban PP, Romaniello A, Stoeter P, Manfredi M, Hopf HC. Brainstem reflex circuits revisited. Brain. 2005;128(Pt 2):386-394."
+      },
+      {
+       "doi": "10.1093/brain/98.3.413",
+       "title": "ELECTRICALLY ELICITED BLINK REFLEX IN DIAGNOSIS OF MULTIPLE SCLEROSIS",
+       "journal": "Brain",
+       "year": 1975,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "1182485",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Kimura J. Electrically elicited blink reflex in diagnosis of multiple sclerosis. Review of 260 patients over a seven-year period. Brain. 1975;98(3):413-426."
+      },
+      {
+       "doi": "10.1136/jnnp.35.2.228",
+       "title": "Orbicularis oculi reflex in the Wallenberg syndrome: alteration of the late reflex by lesions of the spinal tract and nucleus of the trigeminal nerve",
+       "journal": "Journal of Neurology, Neurosurgery &amp; Psychiatry",
+       "year": 1972,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "5037034",
+        "pmcid": "PMC494041",
+        "isOpenAccess": "N",
+        "pubType": "research-article; journal article"
+       },
+       "oaAgreed": false,
+       "status": "OK",
+       "citation": "Kimura J, Lyon LW. Orbicularis oculi reflex in the Wallenberg syndrome: alteration of the late reflex by lesions of the spinal tract and nucleus of the trigeminal nerve. J Neurol Neurosurg Psychiatry. 1972;35(2):228-233."
+      },
+      {
+       "doi": "10.1002/mus.10120",
+       "title": "Brainstem reflexes: Electrodiagnostic techniques, physiology, normative data, and clinical applications",
+       "journal": "Muscle &amp; Nerve",
+       "year": 2002,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Aramideh M, Ongerboer de Visser BW. Brainstem reflexes: electrodiagnostic techniques, physiology, normative data, and clinical applications. Muscle Nerve. 2002;26(1):14-30."
+      }
+     ]
+    },
+    {
+     "id": "jaw-jerk-reflex",
+     "candidates": [
+      {
+       "doi": "10.1093/brain/awh366",
+       "title": "Brainstem reflex circuits revisited",
+       "journal": "Brain",
+       "year": 2004,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "15601661",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "multicenter study; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Cruccu G, Iannetti GD, Marx JJ, Thoemke F, Truini A, Fitzek S, Galeotti F, Urban PP, Romaniello A, Stoeter P, Manfredi M, Hopf HC. Brainstem reflex circuits revisited. Brain. 2005;128(Pt 2):386-394."
+      },
+      {
+       "doi": "10.1016/0013-4694(83)92033-3",
+       "title": "The jaw and blink reflexes - a review of clinical applications",
+       "journal": "Electroencephalography and Clinical Neurophysiology",
+       "year": 1983,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Ongerboer de Visser BW. The jaw and blink reflexes: a review of clinical applications. Electroencephalogr Clin Neurophysiol Suppl. 1983;36:263-268."
+      },
+      {
+       "doi": "10.1136/jnnp.39.1.90",
+       "title": "Jaw reflexes and masseter electromyograms in mesencephalic and pontine lesions: an electrodiagnostic study.",
+       "journal": "Journal of Neurology, Neurosurgery &amp; Psychiatry",
+       "year": 1976,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "1255217",
+        "pmcid": "PMC492220",
+        "isOpenAccess": "N",
+        "pubType": "research-article; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Ongerboer de Visser BW, Goor C. Jaw reflexes and masseter electromyograms in mesencephalic and pontine lesions: an electrodiagnostic study. J Neurol Neurosurg Psychiatry. 1976;39(1):90-92."
+      }
+     ]
+    },
+    {
+     "id": "gag-pharyngeal-and-cough-reflex",
+     "candidates": [
+      {
+       "doi": "10.1152/physrev.2001.81.2.929",
+       "title": "Brain Stem Control of Swallowing: Neuronal Network and Cellular Mechanisms",
+       "journal": "Physiological Reviews",
+       "year": 2001,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "11274347",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Jean A. Brain stem control of swallowing: neuronal network and cellular mechanisms. Physiol Rev. 2001;81(2):929-969."
+      },
+      {
+       "doi": "10.1378/chest.129.1_suppl.33s",
+       "title": "Anatomy and Neurophysiology of the Cough Reflex",
+       "journal": "Chest",
+       "year": 2006,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "16428690",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "comparative study; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Canning BJ. Anatomy and neurophysiology of the cough reflex: ACCP evidence-based clinical practice guidelines. Chest. 2006;129(1 Suppl):33S-47S."
+      }
+     ]
+    },
+    {
+     "id": "baroreceptor-reflex",
+     "candidates": [
+      {
+       "doi": "10.1212/01.wnl.0000335246.93495.92",
+       "title": "The arterial baroreflex",
+       "journal": "Neurology",
+       "year": 2008,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "19015490",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Benarroch EE. The arterial baroreflex: functional organization and involvement in neurologic disease. Neurology. 2008;71(21):1733-1738."
+      },
+      {
+       "doi": "10.1152/physrev.1994.74.2.323",
+       "title": "Functional organization of central pathways regulating the cardiovascular system",
+       "journal": "Physiological Reviews",
+       "year": 1994,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "8171117",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Dampney RA. Functional organization of central pathways regulating the cardiovascular system. Physiol Rev. 1994;74(2):323-364."
+      }
+     ]
+    },
+    {
+     "id": "accommodation-convergence-near-reflex",
+     "candidates": [
+      {
+       "doi": "10.1002/cphy.c140014",
+       "title": "Autonomic Control of the Eye",
+       "journal": "Comprehensive Physiology",
+       "year": 2014,
+       "type": "other",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "25589275",
+        "pmcid": "PMC4919817",
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "McDougal DH, Gamlin PD. Autonomic Control of the Eye. Compr Physiol. 2015;5(1):439-473."
+      },
+      {
+       "doi": "10.1016/0959-4388(95)80104-9",
+       "title": "Neuronal circuitry controlling the near response",
+       "journal": "Current Opinion in Neurobiology",
+       "year": 1995,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Mays LE, Gamlin PD. Neuronal circuitry controlling the near response. Curr Opin Neurobiol. 1995;5(6):763-768."
+      },
+      {
+       "doi": "10.1111/j.1749-6632.2002.tb02825.x",
+       "title": "Neural Mechanisms for the Control of Vergence Eye Movements",
+       "journal": "Annals of the New York Academy of Sciences",
+       "year": 2002,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "11960810",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, u.s. gov't, p.h.s.; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Gamlin PD. Neural mechanisms for the control of vergence eye movements. Ann N Y Acad Sci. 2002;956:264-272."
+      }
+     ]
+    },
+    {
+     "id": "sympathetic-pathway-to-the-eye-horner-syndrome",
+     "candidates": [
+      {
+       "doi": "10.1002/cphy.c140014",
+       "title": "Autonomic Control of the Eye",
+       "journal": "Comprehensive Physiology",
+       "year": 2014,
+       "type": "other",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "25589275",
+        "pmcid": "PMC4919817",
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "McDougal DH, Gamlin PD. Autonomic Control of the Eye. Compr Physiol. 2015;5(1):439-473."
+      },
+      {
+       "doi": "10.2147/EB.S63633",
+       "title": "Horner syndrome: clinical perspectives",
+       "journal": "Eye and Brain",
+       "year": 2015,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "28539793",
+        "pmcid": "PMC5398733",
+        "isOpenAccess": "Y",
+        "pubType": "review-article; review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Kanagalingam S, Miller NR. Horner syndrome: clinical perspectives. Eye Brain. 2015;7:35-46."
+      },
+      {
+       "doi": "10.1016/j.nic.2007.11.003",
+       "title": "Horner's Syndrome: Clinical and Radiographic Evaluation",
+       "journal": "Neuroimaging Clinics of North America",
+       "year": 2008,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "18466837",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Reede DL, Garcon E, Smoker WR, Kardon R. Horner's syndrome: clinical and radiographic evaluation. Neuroimaging Clin N Am. 2008;18(2):369-385."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "batch": "special-senses",
+   "pathways": [
+    {
+     "id": "visual-pathway",
+     "candidates": [
+      {
+       "doi": "10.1016/j.neuron.2007.10.012",
+       "title": "Visual Field Maps in Human Cortex",
+       "journal": "Neuron",
+       "year": 2007,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "17964252",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Wandell BA, Dumoulin SO, Brewer AA. Visual Field Maps in Human Cortex. Neuron. 2007;56(2):366-383."
+      },
+      {
+       "doi": null,
+       "status": "NO_DOI",
+       "citation": "Kupfer C, Chumbley L, Downer JC. Quantitative histology of optic nerve, optic tract and lateral geniculate nucleus of man. J Anat. 1967;101(3):393-401."
+      },
+      {
+       "isbn": "9781259642234",
+       "title": "Principles of Neural Science, Sixth Edition",
+       "publisher": "McGraw-Hill Professional Publishing",
+       "year": "2021",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Kandel ER, Koester JD, Mack SH, Siegelbaum SA (eds). Principles of Neural Science, 6th ed. Chapter: The Central Visual Pathways."
+      }
+     ]
+    },
+    {
+     "id": "central-auditory-pathway",
+     "candidates": [
+      {
+       "doi": "10.1152/physrev.00026.2009",
+       "title": "Mechanisms of Sound Localization in Mammals",
+       "journal": "Physiological Reviews",
+       "year": 2010,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "20664077",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Grothe B, Pecka M, McAlpine D. Mechanisms of Sound Localization in Mammals. Physiol Rev. 2010;90(3):983-1012."
+      },
+      {
+       "isbn": "9781597565308",
+       "status": "ISBN_NOT_FOUND",
+       "citation": "Møller AR. Hearing: Anatomy, Physiology, and Disorders of the Auditory System, 3rd ed."
+      }
+     ]
+    },
+    {
+     "id": "central-vestibular-pathways",
+     "candidates": [
+      {
+       "doi": "10.1016/j.brainresrev.2010.12.002",
+       "title": "The thalamocortical vestibular system in animals and humans",
+       "journal": "Brain Research Reviews",
+       "year": 2011,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "21223979",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "review; journal article"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Lopez C, Blanke O. The thalamocortical vestibular system in animals and humans. Brain Res Rev. 2011;67(1-2):119-146."
+      },
+      {
+       "doi": "10.1016/s0079-6123(05)51006-9",
+       "title": "The Anatomy of the vestibular nuclei",
+       "journal": "Progress in Brain Research",
+       "year": 2006,
+       "type": "book-chapter",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Highstein SM, Holstein GR. The Anatomy of the Vestibular Nuclei. Prog Brain Res. 2006;151:157-203."
+      },
+      {
+       "doi": "10.1146/annurev.neuro.31.060407.125555",
+       "title": "Vestibular System: The Many Facets of a Multimodal Sense",
+       "journal": "Annual Review of Neuroscience",
+       "year": 2008,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Angelaki DE, Cullen KE. Vestibular System: The Many Facets of a Multimodal Sense. Annu Rev Neurosci. 2008;31:125-150."
+      }
+     ]
+    },
+    {
+     "id": "gustatory-pathway",
+     "candidates": [
+      {
+       "doi": "10.1016/j.tins.2010.04.002",
+       "title": "Coding in the mammalian gustatory system",
+       "journal": "Trends in Neurosciences",
+       "year": 2010,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "20493563",
+        "pmcid": "PMC2902637",
+        "isOpenAccess": "N",
+        "pubType": "research support, non-u.s. gov't; research-article; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Carleton A, Accolla R, Simon SA. Coding in the mammalian gustatory system. Trends Neurosci. 2010;33(7):326-334."
+      },
+      {
+       "doi": "10.1007/s00429-010-0266-9",
+       "title": "Taste representation in the human insula",
+       "journal": "Brain Structure and Function",
+       "year": 2010,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "20512366",
+        "pmcid": null,
+        "isOpenAccess": "N",
+        "pubType": "review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Small DM. Taste representation in the human insula. Brain Struct Funct. 2010;214(5-6):551-561."
+      },
+      {
+       "isbn": "9780444638557",
+       "title": "Smell and Taste",
+       "publisher": "Elsevier",
+       "year": "2019",
+       "status": "OK",
+       "via": "openlibrary",
+       "citation": "Rolls ET. Taste and smell processing in the brain. In: Handbook of Clinical Neurology, Vol. 164: Smell and Taste. 2019:97-118."
+      }
+     ]
+    },
+    {
+     "id": "olfactory-pathway",
+     "candidates": [
+      {
+       "doi": "10.1016/j.brainresrev.2005.08.005",
+       "title": "A field guide to the anterior olfactory nucleus (cortex)",
+       "journal": "Brain Research Reviews",
+       "year": 2005,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": null,
+       "status": "OK",
+       "citation": "Brunjes PC, Illig KR, Meyer EA. A field guide to the anterior olfactory nucleus (cortex). Brain Res Rev. 2005;50(2):305-335."
+      },
+      {
+       "doi": "10.1016/j.neuron.2011.10.027",
+       "title": "Cortical Processing of Odor Objects",
+       "journal": "Neuron",
+       "year": 2011,
+       "type": "journal-article",
+       "titleMatch": 1.0,
+       "epmc": {
+        "pmid": "22099455",
+        "pmcid": "PMC3223720",
+        "isOpenAccess": "N",
+        "pubType": "research-article; review; journal article; research support, n.i.h., extramural"
+       },
+       "oaAgreed": true,
+       "status": "OK",
+       "citation": "Wilson DA, Sullivan RM. Cortical Processing of Odor Objects. Neuron. 2011;72(4):506-519."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

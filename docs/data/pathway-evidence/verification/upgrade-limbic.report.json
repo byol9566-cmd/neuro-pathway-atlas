@@ -1,0 +1,554 @@
+{
+ "batch": "upgrade-limbic",
+ "file": "upgrade-limbic.json",
+ "tally": {
+  "exact": 48
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "Time to retire the serial Papez circuit: Implications for space, memory, and attention",
+    "journal": "Neuroscience & Biobehavioral Reviews",
+    "year": 2022,
+    "pmcid": "PMC10804970",
+    "nbk": "",
+    "doi": "10.1016/j.neubiorev.2022.104813",
+    "license": "This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Time to retire the serial Papez circuit: Implications for space, memory, and attention.",
+    "registryJournal": "Neuroscience and biobehavioral reviews",
+    "registryYear": "2022",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "Research Support, Non-U.S. Gov't",
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 42,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S2": {
+   "claimed": {
+    "title": "From circuits to behaviour in the amygdala",
+    "journal": "Nature",
+    "year": 2015,
+    "pmcid": "PMC4565157",
+    "nbk": "",
+    "doi": "10.1038/nature14188",
+    "license": "not stated",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "From circuits to behaviour in the amygdala.",
+    "registryJournal": "Nature",
+    "registryYear": "2015",
+    "registryLicense": null,
+    "isOpenAccess": "N",
+    "pubTypes": [
+     "Research Support, Non-U.S. Gov't",
+     "research-article",
+     "Review",
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ],
+    "citedByCount": 1624,
+    "titleSimilarity": 0.99,
+    "yearMatches": true,
+    "fullTextVia": "pmc-html"
+   },
+   "textAvailable": true
+  },
+  "S3": {
+   "claimed": {
+    "title": "The Reward Circuit: Linking Primate Anatomy and Human Imaging",
+    "journal": "Neuropsychopharmacology",
+    "year": 2010,
+    "pmcid": "PMC3055449",
+    "nbk": "",
+    "doi": "10.1038/npp.2009.129",
+    "license": "not stated",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "The reward circuit: linking primate anatomy and human imaging.",
+    "registryJournal": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+    "registryYear": "2010",
+    "registryLicense": null,
+    "isOpenAccess": "N",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 2903,
+    "titleSimilarity": 0.99,
+    "yearMatches": true,
+    "fullTextVia": "pmc-html"
+   },
+   "textAvailable": true
+  },
+  "S4": {
+   "claimed": {
+    "title": "Sleep State Switching",
+    "journal": "Neuron",
+    "year": 2010,
+    "pmcid": "PMC3026325",
+    "nbk": "",
+    "doi": "10.1016/j.neuron.2010.11.032",
+    "license": "not stated",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Sleep state switching.",
+    "registryJournal": "Neuron",
+    "registryYear": "2010",
+    "registryLicense": null,
+    "isOpenAccess": "N",
+    "pubTypes": [
+     "research-article",
+     "Review",
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ],
+    "citedByCount": 1015,
+    "titleSimilarity": 0.98,
+    "yearMatches": true,
+    "fullTextVia": "pmc-html"
+   },
+   "textAvailable": true
+  },
+  "S5": {
+   "claimed": {
+    "title": "Neural Circuitry of Wakefulness and Sleep",
+    "journal": "Neuron",
+    "year": 2017,
+    "pmcid": "PMC5325713",
+    "nbk": "",
+    "doi": "10.1016/j.neuron.2017.01.014",
+    "license": "not stated",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Neural Circuitry of Wakefulness and Sleep.",
+    "registryJournal": "Neuron",
+    "registryYear": "2017",
+    "registryLicense": null,
+    "isOpenAccess": "N",
+    "pubTypes": [
+     "research-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 800,
+    "titleSimilarity": 0.99,
+    "yearMatches": true,
+    "fullTextVia": "pmc-html"
+   },
+   "textAvailable": true
+  },
+  "S6": {
+   "claimed": {
+    "title": "Regulation of the Hypothalamic-Pituitary-Adrenocortical Stress Response",
+    "journal": "Comprehensive Physiology",
+    "year": 2016,
+    "pmcid": "PMC4867107",
+    "nbk": "",
+    "doi": "10.1002/cphy.c150015",
+    "license": "not stated",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Regulation of the Hypothalamic-Pituitary-Adrenocortical Stress Response.",
+    "registryJournal": "Comprehensive Physiology",
+    "registryYear": "2016",
+    "registryLicense": null,
+    "isOpenAccess": "N",
+    "pubTypes": [
+     "research-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 1236,
+    "titleSimilarity": 0.99,
+    "yearMatches": true,
+    "fullTextVia": "pmc-html"
+   },
+   "textAvailable": true
+  },
+  "S7": {
+   "claimed": {
+    "title": "The neural control of micturition",
+    "journal": "Nature Reviews Neuroscience",
+    "year": 2008,
+    "pmcid": "PMC2897743",
+    "nbk": "",
+    "doi": "10.1038/nrn2401",
+    "license": "not stated",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "The neural control of micturition.",
+    "registryJournal": "Nature reviews. Neuroscience",
+    "registryYear": "2008",
+    "registryLicense": null,
+    "isOpenAccess": "N",
+    "pubTypes": [
+     "research-article",
+     "Review",
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ],
+    "citedByCount": 1000,
+    "titleSimilarity": 0.99,
+    "yearMatches": true,
+    "fullTextVia": "pmc-html"
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the subiculum is the primary source of hippocampal projections to sites including the mammillary bodies and anterior thalamic nuclei"
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "surgically lesioning the part of the descending postcommissural fornix that conveys hippocampal inputs to the mammillary bodies"
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This tract emanates from the mammillary bodies to enter the rostral thalamus."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "pathology in a rostral thalamic zone centred around the mammillothalamic tract provides the best predictor of memory loss"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the anterior cingulate cortex is principally interconnected with AM"
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This complex tract contains fibres from numerous brain sites, including the anterior thalamic projections to the cingulate and retrosplenial cortices, as well as to the hippocampal formation"
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "pathology in the anterior thalamic nuclei may be the best predictor of the severe memory loss in this syndrome"
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "many of the same subiculum neurons that innervate area 29 have collaterals that also innervate the mammillary bodies"
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The amygdala receives information about the external environment from the sensory thalamus and sensory cortices, which project strongly to the LA."
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The amygdala receives information about the external environment from the sensory thalamus and sensory cortices, which project strongly to the LA."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The LA projects within the BLA to the BA and BM, as well as to the neighbouring CeA."
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Predominantly unidirectional outputs of the BLA include the striatum, especially the nucleus accumbens (NAc), and the bed nucleus of the stria terminalis (BNST) and the CeA."
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "CeA neurons are primarily GABAergic, with the CeL projecting to the CeM."
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "cells with learning-induced synaptic enhancement project directly to the periaqueductal grey (PAG) as well as the paraventricular nucleus of the thalamus (PVT)"
+  },
+  {
+   "path": "pathways[1].steps[7].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Predominantly unidirectional outputs of the BLA include the striatum, especially the nucleus accumbens (NAc), and the bed nucleus of the stria terminalis (BNST) and the CeA."
+  },
+  {
+   "path": "pathways[1].lesions[0].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Although these lesion effects were intermingled with features that we now attribute to other brain regions, these were the first reports describing the role of a brain region that is important for connecting stimuli with their emotional meaning."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Behavioral and pharmacological studies of dopamine pathways have lead to the association of the mesolimbic pathway with reward processing and nigro-striatal pathway with motor activity."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[1]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The midbrain dopamine neurons project massively to the striatum"
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[2]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the nucleus accumbens (NAcc) and the ventral tegmental area (VTA) dopamine neurons appear to be at the center"
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the ventral SNc neurons project to the dorsal striatum"
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Cholinergic neurons that project to the forebrain are found in the pedunculopontine and laterodorsal tegmental nuclei (PPT and LDT)."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "PPT/LDT cholinergic neurons innervate many subcortical regions that influence arousal, but unlike the BF cholinergic neurons, their innervation of the cortex is sparse."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The monoaminergic cell groups at the mesopontine level which project to the forebrain include the noradrenergic locus coeruleus (LC) and the serotoninergic dorsal and median raphe nuclei"
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The monoaminergic cell groups at the mesopontine level which project to the forebrain include the noradrenergic locus coeruleus (LC) and the serotoninergic dorsal and median raphe nuclei"
+  },
+  {
+   "path": "pathways[3].steps[3].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Histaminergic neurons in the tuberomammillary nucleus (TMN) have similar projection targets and firing patterns"
+  },
+  {
+   "path": "pathways[3].steps[3].evidence[1]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Axons from these cell groups predominantly target the lateral hypothalamus, basal forebrain and cerebral cortex, where they terminate extensively, particularly in the prefrontal cortex."
+  },
+  {
+   "path": "pathways[3].steps[4].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the lateral hypothalamus contains neurons producing the orexin neuropeptides (orexin-A and –B, also known as hypocretin-1 and 2)"
+  },
+  {
+   "path": "pathways[3].steps[4].evidence[1]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "They send axons to the entire cerebral cortex, as well as to the brainstem and basal forebrain, with particularly intense input to the TMN and the LC"
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "VLPO neurons, containing the inhibitory neurotransmitters GABA and galanin, innervate other components of the ascending arousal system as well, including the LC, raphe system, periaqueductal gray matter, parabrachial nucleus, and lateral hypothalamic area"
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[1]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "We propose that this mutually antagonistic relationship can give rise to behavior similar to that seen with a flip-flop switch"
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[2]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "VLPO and MnPO sleep-active neurons are GABAergic, and VLPO neurons also produce the neuropeptide galanin."
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[3]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "One model proposes that this mutual inhibition generates patterns of activity akin to an electrical flip-flop switch"
+  },
+  {
+   "path": "pathways[3].steps[6].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "GABAergic neurons in the ventrolateral periaqueductal gray matter and the adjacent lateral pontine tegmentum (vlPAG/LPT; shown in gold) fire during non-REM states to inhibit entry into REM sleep."
+  },
+  {
+   "path": "pathways[3].steps[6].evidence[1]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Injections of retrograde tracers into the SLD identified major GABAergic inputs from the ventrolateral periaqueductal gray matter (vlPAG) and adjacent lateral pontine tegmentum (LPT)"
+  },
+  {
+   "path": "pathways[3].lesions[1].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "large BF lesions can produce EEG slow waves and even coma"
+  },
+  {
+   "path": "pathways[3].lesions[2].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "injury to the PB region produces coma or\npersistent vegetative state in both animals and humans"
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Injections of retrograde tracers into the SLD identified major GABAergic inputs from the ventrolateral periaqueductal gray matter (vlPAG) and adjacent lateral pontine tegmentum (LPT)"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "discrete populations of CRH neurons located in the dorsomedial parvocellular (mp) division of the paraventricular nucleus (PVN) are the prime-movers of the stress response"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[1]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These neurons project to the median eminence, where CRH as well as other peptides (e.g., vasopressin (AVP)) are released into the hypophysial portal plexus of veins."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "At the adrenal cortex, ACTH acts on melanocortin 2 receptors (MC2R) in the zona fasciculata"
+  },
+  {
+   "path": "pathways[4].steps[3].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "At the adrenal cortex, ACTH acts on melanocortin 2 receptors (MC2R) in the zona fasciculata"
+  },
+  {
+   "path": "pathways[4].steps[3].evidence[1]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Control of glucocorticoid release is mediated by glucocorticoid feedback at varying levels of the HPA axis, serving to limit prolonged exposure to catabolic actions of glucocorticoids"
+  },
+  {
+   "path": "pathways[4].conflicts[0].positions[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "At the adrenal cortex, ACTH acts on melanocortin 2 receptors (MC2R) in the zona fasciculata"
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The paraventricular nucleus of the hypothalamus projects non-specifically to all autonomic preganglionic motor neurons in the spinal cord, including the sacral parasympathetic and sphincter motor nuclei"
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Ascending afferent input from the spinal cord might pass through relay neurons in the periaqueductal grey (PAG) before reaching the pontine micturition centre."
+  },
+  {
+   "path": "pathways[5].steps[2].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Neurons in the PMC receive input from the PAG and from the anterior and caudal hypothalamus, but few or no other inputs; in turn, they send descending axons back to the parasympathetic nucleus in the spinal cord."
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Excitation of the PMC activates descending pathways that cause urethral relaxation and, some seconds later, activation of the sacral parasympathetic outflow."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Somatic cholinergic motor nerves that supply the striated muscles of the external urethral sphincter arise in S2–S4 motor neurons in Onuf's nucleus and reach the periphery through the pudendal nerves"
+  }
+ ]
+}

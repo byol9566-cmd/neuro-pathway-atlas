@@ -1,0 +1,354 @@
+{
+ "batch": "upgrade-motor-somatosensory",
+ "file": "upgrade-motor-somatosensory.json",
+ "tally": {
+  "exact": 27,
+  "UNKNOWN_SOURCE_ID": 1
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "Descending control of nociception: specificity, recruitment and plasticity",
+    "journal": "Brain Research Reviews",
+    "year": 2009,
+    "pmcid": "PMC2894733",
+    "nbk": "",
+    "doi": "10.1016/j.brainresrev.2008.12.009",
+    "license": "Publisher's Disclaimer: This is a PDF file of an unedited manuscript that has been accepted for publication. As a service to our customers we are providing this early version of the manuscript. The manuscript will undergo copyediting, typesetting, and review of the resulting proof before it is published in its final citable form. Please note that during the production process errors may be discovered which could affect the content, and all legal disclaimers that apply to the journal pertain. (NIH Public Access author manuscript; no CC license statement found on the article page.)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Descending control of nociception: Specificity, recruitment and plasticity.",
+    "registryJournal": "Brain research reviews",
+    "registryYear": "2009",
+    "registryLicense": null,
+    "isOpenAccess": "N",
+    "pubTypes": [
+     "Research Support, Non-U.S. Gov't",
+     "research-article",
+     "Review",
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ],
+    "citedByCount": 713,
+    "titleSimilarity": 0.99,
+    "yearMatches": true,
+    "fullTextVia": "pmc-html"
+   },
+   "textAvailable": true
+  },
+  "S2": {
+   "claimed": {
+    "title": "The course of facial corticobulbar tract fibers in the dorsolateral medulla oblongata",
+    "journal": "BMC Neurology",
+    "year": 2021,
+    "pmcid": "PMC8165998",
+    "nbk": "",
+    "doi": "10.1186/s12883-021-02247-z",
+    "license": "Open Access. This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made.",
+    "type": "primary"
+   },
+   "check": {
+    "registryTitle": "The course of facial corticobulbar tract fibers in the dorsolateral medulla oblongata.",
+    "registryJournal": "BMC neurology",
+    "registryYear": "2021",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "research-article",
+     "Journal Article"
+    ],
+    "citedByCount": 5,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S3": {
+   "claimed": {
+    "title": "Hypertrophic Olivary Degeneration and Palatal or Oculopalatal Tremor",
+    "journal": "Frontiers in Neurology",
+    "year": 2017,
+    "pmcid": "PMC5490180",
+    "nbk": "",
+    "doi": "10.3389/fneur.2017.00302",
+    "license": "Copyright © 2017 Tilikete and Desestret. This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) or licensor are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Hypertrophic Olivary Degeneration and Palatal or Oculopalatal Tremor.",
+    "registryJournal": "Frontiers in neurology",
+    "registryYear": "2017",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 75,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S4": {
+   "claimed": {
+    "title": "Consensus Paper: Roles of the Cerebellum in Motor Control—The Diversity of Ideas on Cerebellar Involvement in Movement",
+    "journal": "Cerebellum (London, England)",
+    "year": 2012,
+    "pmcid": "PMC4347949",
+    "nbk": "",
+    "doi": "10.1007/s12311-011-0331-9",
+    "license": "© Springer Science+Business Media, LLC 2011. (No article-level CC license statement found on the PMC page; PMC Copyright Notice applies.)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Consensus paper: roles of the cerebellum in motor control--the diversity of ideas on cerebellar involvement in movement.",
+    "registryJournal": "Cerebellum (London, England)",
+    "registryYear": "2012",
+    "registryLicense": null,
+    "isOpenAccess": "N",
+    "pubTypes": [
+     "research-article",
+     "Review",
+     "Consensus Statement",
+     "Journal Article"
+    ],
+    "citedByCount": 742,
+    "titleSimilarity": 0.99,
+    "yearMatches": true,
+    "fullTextVia": "pmc-html"
+   },
+   "textAvailable": true
+  },
+  "S5": {
+   "claimed": {
+    "title": "In-Vivo Mapping of the Human Locus Coeruleus",
+    "journal": "NeuroImage",
+    "year": 2009,
+    "pmcid": "PMC3671394",
+    "nbk": "",
+    "doi": "10.1016/j.neuroimage.2009.06.012",
+    "license": "© 2009 Elsevier Inc. All rights reserved. Publisher's Disclaimer: This is a PDF file of an unedited manuscript that has been accepted for publication (NIH Public Access author manuscript; no CC license statement found on the article page).",
+    "type": "primary"
+   },
+   "check": {
+    "registryTitle": "In vivo mapping of the human locus coeruleus.",
+    "registryJournal": "NeuroImage",
+    "registryYear": "2009",
+    "registryLicense": null,
+    "isOpenAccess": "N",
+    "pubTypes": [
+     "Research Support, Non-U.S. Gov't",
+     "research-article",
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ],
+    "citedByCount": 293,
+    "titleSimilarity": 0.97,
+    "yearMatches": true,
+    "fullTextVia": "pmc-html"
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The PAG projects to the RVM, which in turn sends its output to dorsal horn laminae important in nociceptive function."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The PAG does not project directly to the spinal cord."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Instead, its principle descending projection is to the RVM, which can be considered the output of the midline pain-modulation system."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It includes the nucleus raphe magnus and adjacent reticular formation, and projects diffusely to dorsal horn laminae important in nociceptive processing, including superficial layers and deep dorsal horn."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "ON-cells entered a period of activity, and OFF-cells a period of silence."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[5]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "it is the OFF-cells that function as the antinociceptive output from the RVM"
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[6]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "it was possible to show that ON-cells are the facilitating output from the RVM."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[7]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "At least some cells of each class project to the spinal cord, and specifically to the dorsal horn."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[8]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "at least some NEUTRAL-cells, but apparently no ON-cells or OFF-cells are serotonergic."
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[0]",
+   "source": "",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": ""
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "at least some NEUTRAL-cells, but apparently no ON-cells or OFF-cells are serotonergic."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The CBT to the facial nucleus had been considered to decussate at the level of the pons."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "However, some previous studies have shown that at least some fibers of the CBT to the facial nucleus that innervate the lower facial muscles descend to the level of the medulla along with the CST."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[2]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These fibers then ascend to the facial nucleus through the dorsolateral medulla after decussation"
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[3]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Then, after forming a loop and decussation, it ascends through the medial and ventral areas of the dorsolateral medulla to the facial nucleus in the caudal pons."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[4]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the CBT to the facial nucleus descends with the corticospinal tract at least to the middle portion of the medulla, and then ascends to the facial nucleus through the medial and ventral areas of the dorsolateral medulla after decussation."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the climbing fiber input carries an error signal weakening the strength of a subset of parallel fibers/Purkinje neuron synapses in the cerebellar cortex"
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Purkinje cells send inhibitory projections to deep cerebellar nuclei that in turn send excitatory projections to thalamic nuclei."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "inhibition of the dentatothalamic excitatory projection leads to decrease in M1 excitability"
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[1]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the sensorimotor, lateral premotor, supplementary motor, anterior cingulate, and insular cortices, striatum, ventral thalamus, red nucleus, and cerebellum including the dentate nuclei"
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[2]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the pathway coming from the contralateral dentate nucleus, through the contralateral brachium conjunctivum crossing the midline, turning around the ipsilateral red nucleus, and descending in the ipsilateral central tegmental tract to the inferior olive"
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the pathway coming from the contralateral dentate nucleus, through the contralateral brachium conjunctivum crossing the midline, turning around the ipsilateral red nucleus, and descending in the ipsilateral central tegmental tract to the inferior olive"
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[1]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Hypertrophic degeneration of the inferior olive is mainly observed in patients developing palatal tremor (PT) or oculopalatal tremor (OPT)."
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[2]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "HOD on MRI is unilateral or bilateral in case of symptomatic PT and bilateral in case of PAPT"
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[3]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In symptomatic PT, HOD usually appears contralateral in case of cerebellar lesion and ipsilateral in case of lateralized central tegmental tract lesion"
+  },
+  {
+   "path": "measurements[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The LC is located adjacent to the floor of the fourth ventricle in the rostral pons and extends into the midbrain to the level of the inferior colliculi"
+  },
+  {
+   "path": "measurements[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "LC signal was consistently observed in rostral to caudal sections between the inferior aspect of the red nucleus (upper limit of the image acquisition) and the origin of the superior cerebellar peduncle"
+  },
+  {
+   "path": "measurements[2]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the core of the LC given its spatial extent of ~1–2 mm in the axial plane"
+  }
+ ]
+}

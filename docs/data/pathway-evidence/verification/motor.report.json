@@ -1,0 +1,1164 @@
+{
+ "batch": "motor",
+ "file": "motor.json",
+ "tally": {
+  "exact": 106,
+  "fuzzy": 13
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "Neuroanatomy, Lateral Corticospinal Tract",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK534818",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Lateral Corticospinal Tract - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S2": {
+   "claimed": {
+    "title": "Neuroanatomy, Corticobulbar Tract",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK555891",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Corticobulbar Tract - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S3": {
+   "claimed": {
+    "title": "Neuroanatomy, Basal Ganglia",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK537141",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Basal Ganglia - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S4": {
+   "claimed": {
+    "title": "Neuroanatomy, Cerebellum",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK538167",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Cerebellum - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S5": {
+   "claimed": {
+    "title": "Neuroanatomy, Upper Motor Neuron Signs",
+    "journal": "StatPearls [Internet]",
+    "year": 2026,
+    "pmcid": "",
+    "nbk": "NBK541082",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Upper Motor Neuron Signs - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S6": {
+   "claimed": {
+    "title": "Hemiballismus",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK559127",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Hemiballismus - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S7": {
+   "claimed": {
+    "title": "Decerebrate and Decorticate Posturing",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK559135",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Decerebrate and Decorticate Posturing - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S8": {
+   "claimed": {
+    "title": "Neuroanatomy, Spinal Cord Myotatic Reflex",
+    "journal": "StatPearls [Internet]",
+    "year": 2026,
+    "pmcid": "",
+    "nbk": "NBK551629",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Spinal Cord Myotatic Reflex - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S9": {
+   "claimed": {
+    "title": "Neuroanatomy, Extrapyramidal System",
+    "journal": "StatPearls [Internet]",
+    "year": 2022,
+    "pmcid": "",
+    "nbk": "NBK554542",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Extrapyramidal System - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S10": {
+   "claimed": {
+    "title": "Physiology, Deep Tendon Reflexes",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK562238",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Physiology, Deep Tendon Reflexes - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S11": {
+   "claimed": {
+    "title": "Monosynaptic Reflex",
+    "journal": "StatPearls [Internet]",
+    "year": 2022,
+    "pmcid": "",
+    "nbk": "NBK541028",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Monosynaptic Reflex - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S12": {
+   "claimed": {
+    "title": "Neuroanatomy, Superior and Inferior Olivary Nucleus (Superior and Inferior Olivary Complex)",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK542242",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Superior and Inferior Olivary Nucleus (Superior and Inferior Olivary Complex) - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S13": {
+   "claimed": {
+    "title": "Neuroanatomy, Spinal Cord",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK559056",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Spinal Cord - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S14": {
+   "claimed": {
+    "title": "Recommendations for the Neurophysiological Assessment of Conditioned Pain Modulation: A Systematic Review of Nociceptive Blink Reflex and Nociceptive Withdrawal Reflex Protocols",
+    "journal": "European Journal of Pain",
+    "year": 2025,
+    "pmcid": "PMC12558665",
+    "nbk": "",
+    "doi": "10.1002/ejp.70149",
+    "license": "CC BY 4.0 (open access article under the terms of the Creative Commons Attribution License)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Recommendations for the Neurophysiological Assessment of Conditioned Pain Modulation: A Systematic Review of Nociceptive Blink Reflex and Nociceptive Withdrawal Reflex Protocols.",
+    "registryJournal": "European journal of pain (London, England)",
+    "registryYear": "2025",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "Systematic Review",
+     "review-article",
+     "Journal Article"
+    ],
+    "citedByCount": 4,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S15": {
+   "claimed": {
+    "title": "A Distributed Oscillatory Network Model of Parkinsonian Tremor: Integrating Basal Ganglia and Cerebello-Thalamic Circuits",
+    "journal": "Tremor and Other Hyperkinetic Movements",
+    "year": 2026,
+    "pmcid": "PMC13353100",
+    "nbk": "",
+    "doi": "10.5334/tohm.1198",
+    "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International License)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "A Distributed Oscillatory Network Model of Parkinsonian Tremor: Integrating Basal Ganglia and Cerebello-Thalamic Circuits.",
+    "registryJournal": "Tremor and other hyperkinetic movements (New York, N.Y.)",
+    "registryYear": "2026",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 0,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S16": {
+   "claimed": {
+    "title": "Involvement of the Cerebellar Peduncles in FMR1 Premutation Carriers: A Pictorial Review of Their Anatomy, Imaging, and Pathology",
+    "journal": "International Journal of Molecular Sciences",
+    "year": 2025,
+    "pmcid": "PMC12072475",
+    "nbk": "",
+    "doi": "10.3390/ijms26094402",
+    "license": "CC BY 4.0 (Creative Commons Attribution 4.0 International License)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Involvement of the Cerebellar Peduncles in <i>FMR1</i> Premutation Carriers: A Pictorial Review of Their Anatomy, Imaging, and Pathology.",
+    "registryJournal": "International journal of molecular sciences",
+    "registryYear": "2025",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 0,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S17": {
+   "claimed": {
+    "title": "Progression of a pontine cavernous malformation and delayed bilateral hypertrophic olivary degeneration: illustrative case",
+    "journal": "Journal of Neurosurgery: Case Lessons",
+    "year": 2026,
+    "pmcid": "PMC13576435",
+    "nbk": "",
+    "doi": "10.3171/case26577",
+    "license": "CC BY-NC-ND 4.0",
+    "type": "primary"
+   },
+   "check": {
+    "registryTitle": "Progression of a pontine cavernous malformation and delayed bilateral hypertrophic olivary degeneration: illustrative case.",
+    "registryJournal": "Journal of neurosurgery. Case lessons",
+    "registryYear": "2026",
+    "registryLicense": "cc by-nc-nd",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "Journal Article",
+     "case-report"
+    ],
+    "citedByCount": 0,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It passes through the posterior limb of the internal capsule, through the cerebral peduncle and basis pontis, decussates at the caudal medulla (pyramidal decussation), and then continues to descend contralaterally into the spinal cord."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "From cell bodies located in the motor cortex, UMN axons descend through the ipsilateral structures in the following sequential order: corona radiata, posterior limb of the internal capsule, cerebral peduncle of the midbrain, central pons, and pyramids of the medulla."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[2]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "At the pyramids, CST axons decussate at the pyramidal decussation. Following decussation, axons become contralateral to their cell bodies of origin and enter the spinal cord via the lateral funiculus."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral corticospinal tract contains over 90% of the fibers present in the corticospinal tract and runs the length of the spinal cord."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "CST axons terminate at various spinal cord levels within the central gray column and at the base of the dorsal column. Termination occurs either on interneurons or directly on LMNs."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[2]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "UMN projections that synapse directly onto LMNs typically control distal extremities. These direct corticomotor connections are considered essential for fine motor control of the fingers and hands."
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The anterior corticospinal tract sends fibers mainly to the trunk or axial muscles. The control is both ipsilateral and contralateral."
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In addition to the lateral CST, a smaller uncrossed pathway, the anterior CST, contributes to axial and proximal motor control."
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Occlusion of a lenticulostriate artery causing an ischemic infarction of the internal capsule (a lacunar infarct) will cause contralateral weakness of both the face, arm, and leg."
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Infarction of the posterior limb of the internal capsule, most often due to lenticulostriate artery occlusion, produces a pure UMN syndrome involving the contralateral face, arm, and leg."
+  },
+  {
+   "path": "pathways[0].lesions[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "damage to upper motor neurons may result in increased reflexes, increased tone, positive Babinski, and spastic paresis."
+  },
+  {
+   "path": "pathways[0].lesions[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "damage to lower motor neurons is usually accompanied by muscle atrophy, fasciculations, and flaccid paralysis."
+  },
+  {
+   "path": "pathways[0].lesions[2].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "LMN signs typically include muscle atrophy, paralysis of individual muscles, fasciculations, fibrillations, hypotonia, and hyporeflexia."
+  },
+  {
+   "path": "pathways[0].lesions[2].evidence[2]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "α motor neurons remain preserved in UMN lesions. Therefore, muscle atrophy, fasciculations, and fibrillations are generally absent in isolated UMN syndromes."
+  },
+  {
+   "path": "pathways[0].lesions[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Ipsilateral LMN signs (flaccid paralysis/fasciculations) at the level of the lesion due to damage of lateral corticospinal tracts Ipsilateral UMN signs below the level of the lesion (spastic paralysis) due to lateral corticospinal tract damage"
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral corticospinal tract contains over 90% of the fibers present in the corticospinal tract and runs the length of the spinal cord."
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[1]",
+   "source": "S13",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "At the lower end of the medulla, almost 70 to 80% of the fibers cross to the opposite side of the spinal cord, called the pyramidal (motor) decussation ."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "From here, the corticobulbar fibers pass through the corona radiata, genu of the internal capsule, peduncle of the cerebrum, base of the pons, and then to the medullary pyramid."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Corticobulbar fibers pass through middle 1/3 of crus cerebri and then enter the pons and medulla to terminate at corresponding nerve nuclei."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[2]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Corticobulbar tract supplies input bilaterally to trigeminal, facial, and hypoglossal nerve nuclei."
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This innervation is bilateral for most of the cranial nerves, with the exception of corticobulbar fibers providing input to the lower facial nucleus, which receives contralateral innervation."
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Both right and left half of the motor cortex of the brain gives fibers to the dorsal division of the motor nucleus of the facial nerve ( bilateral innervation), but the lower division of facial nerve nucleus receives unilateral upper motor neuron fibers."
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[2]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Exceptions include portions of the facial (cranial nerve VII) and hypoglossal (cranial nerve XII) nerves, which receive predominantly contralateral UMN input from the pyramidal tract."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A lesion involving UMN pathways to the hypoglossal nerve results in tongue deviation away from the side of the lesion due to contralateral genioglossus weakness."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Supranuclear lesions of the hypoglossal nerve can occur at any site extending from the cerebral cortex to hypoglossal nerve nuclei. Tongue atrophy does not occur in supranuclear lesions, but it can lead to uncoordinated, slow but spastic tongue movements."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[2]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Infranuclear lesions of hypoglossal nerve cause weakness, ipsilateral atrophy of the tongue with fasciculations."
+  },
+  {
+   "path": "pathways[1].lesions[0].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Pseudobulbar palsy is a condition in which there is bilateral damage to corticobulbar fibers leading to dysarthria, dysphagia, spasticity of the tongue, hyperreflexia, and difficulty with jaw and facial movements."
+  },
+  {
+   "path": "pathways[1].lesions[0].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Bilateral CBT lesions produce a clinical syndrome known as pseudobulbar palsy."
+  },
+  {
+   "path": "pathways[1].lesions[1].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It results in paralysis of muscles of the opposite lower half of the face."
+  },
+  {
+   "path": "pathways[1].lesions[1].evidence[1]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A unilateral UMN lesion involving the facial nerve results in contralateral lower facial droop."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It starts with excitatory glutamate-driven input from the cortex to the striatum (caudate nucleus and putamen)."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[1]",
+   "source": "S3",
+   "status": "fuzzy",
+   "score": 0.995,
+   "quote": "These excitatory glutamatergic projections from layers III and V of the cortical lobes, including the motor, frontal, and parietal lobes provide the basal ganglia with information about conscious intentions."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[0]",
+   "source": "S3",
+   "status": "fuzzy",
+   "score": 0.986,
+   "quote": "The neurons that express the D1-family of receptors send projections to the GPi/SNpr to form the Direct pathway while those expressing D2-family of receptors send projections to the GPe as part of the Indirect pathway."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[1]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The activation of the striatum sends D1-dopamine receptor driven inhibitory GABAergic signals to the GPi."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The GPi/SNpr has GABAergic inhibitory neurons that project to the VA and VL of the thalamus both of which send excitatory projections to the motor cortex."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[1]",
+   "source": "S6",
+   "status": "fuzzy",
+   "score": 0.995,
+   "quote": "The inactivation of the GPi allows excitatory glutamate signals to be generated in the thalamus (also called disinhibition of the thalamus), relaying fibers to multiple areas in the motor cortex."
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The dorsal striatal neurons expressing the D2-family of dopamine receptors are inhibited by dopamine from the SN. These D2R neurons send inhibitory GABAergic connections to the GPe."
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[1]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the activation of the D2-dopamine receptor in the striatum leads to the firing of the globus pallidus externus (GPe). Subsequently, the GPe sends inhibitory signals to the STN."
+  },
+  {
+   "path": "pathways[2].steps[4].evidence[0]",
+   "source": "S3",
+   "status": "fuzzy",
+   "score": 0.99,
+   "quote": "The GPe inhibits the subthalamic nucleus, which excites the GPi/SNpr, completing the Indirect pathway."
+  },
+  {
+   "path": "pathways[2].steps[5].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It sends glutaminergic projections to GPi and substantia nigra."
+  },
+  {
+   "path": "pathways[2].steps[5].evidence[1]",
+   "source": "S15",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "During periods of STN disinhibition, STN activity exerts a strong glutamatergic drive onto the GPi (6) and, retrogradely, onto the GPe."
+  },
+  {
+   "path": "pathways[2].steps[6].evidence[0]",
+   "source": "S15",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In parallel, the STN receives direct excitatory input from the sensorimotor cortex via the hyperdirect pathway."
+  },
+  {
+   "path": "pathways[2].steps[7].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The dopaminergic projections of the SNpc synapse on the putamen and the caudate nuclei of the striatum."
+  },
+  {
+   "path": "pathways[2].steps[7].evidence[1]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A tonic release of dopamine preferentially modulates the D1 receptor, and this is a powerful modulator of the nigrostriatal pathway."
+  },
+  {
+   "path": "pathways[2].steps[7].evidence[2]",
+   "source": "S3",
+   "status": "fuzzy",
+   "score": 0.991,
+   "quote": "Therefore, dopamine will depolarize this population of striatal neurons and increase activity in the Direct pathway."
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This disease is a result of neurodegeneration of the SNpc dopaminergic neurons."
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[1]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This loss of dopamine depresses the nigrostriatal pathway. With decreased dopaminergic input the striatum exerts less positive motor activity and more negative motor inhibition."
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[2]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "PD is characterized by generalized extrapyramidal hypertonia, static tremor, and akinesia."
+  },
+  {
+   "path": "pathways[2].lesions[1].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This creates an abnormally long Huntington gene which leads to neuronal death in the caudate and the putamen."
+  },
+  {
+   "path": "pathways[2].lesions[1].evidence[1]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The indirect pathway is interrupted and leads to a hyperkinetic presentation."
+  },
+  {
+   "path": "pathways[2].lesions[2].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "characterized by intermittent, sudden, violent, involuntary, flinging, or ballistic high amplitude movements involving the ipsilateral arm and leg caused by dysfunction in the central nervous system of the contralateral side."
+  },
+  {
+   "path": "pathways[2].lesions[2].evidence[1]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Commonly, a lesion in the contralateral subthalamic nuclei causes hemiballism."
+  },
+  {
+   "path": "pathways[2].lesions[2].evidence[2]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Given that the subthalamus is part of the indirect pathway this lesion reduces or eliminates indirect pathway signaling, leading to a relative overabundance of activity in the direct pathway."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the pontocerebellar projections, which transmit information from the contralateral cerebral cortex, via the pontine nuclei, to the cerebellum"
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[1]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Later, projections of the axons of the corticopontine and the pontocerebellar fibers will develop the middle cerebellar peduncle and connect the cerebral cortex with the cerebellum."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[2]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Mossy fibers use glutamate, while the climbing fibers use aspartate as their main excitatory neurotransmitter to provide excitatory signals to the Purkinje cells."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In the cerebellar cortex, mossy fibers synapse on granule cells in the deepest, granular layer of the cortex; the granule cells' axons extend throughout the outermost, molecular layer as parallel fibers, forming synapses on large numbers of Purkinje cell dendrites."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[1]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Thus each mossy fiber has a small effect on a large number of Purkinje cells, while each climbing fiber has a significant impact on a single cell."
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "After receiving motor and sensory inputs, the axons of inferior olive neurons branch into several climbing and mossy fibers (CF and MF) that ascend through the contralateral ICP to the cerebellar cortex."
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[1]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The thicker climbing fibers synapse directly in the Purkinje cell layer, usually on the Purkinje cell bodies."
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[2]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "They represent the terminal ending of the olivocerebellar tracts."
+  },
+  {
+   "path": "pathways[3].steps[3].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The axons are long, pass through the granular layer, enter the white matter, acquire a myelin sheath, and terminate in the intracerebellar nuclei."
+  },
+  {
+   "path": "pathways[3].steps[3].evidence[1]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "From medial to lateral, the deep nuclei are the fastigial, interposed (consisting of globose and emboliform nuclei), and dentate nuclei, which is the largest nuclei."
+  },
+  {
+   "path": "pathways[3].steps[4].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fibers from the dentate, emboliform, and globose nuclei leave the cerebellum through the superior cerebellar peduncle."
+  },
+  {
+   "path": "pathways[3].steps[4].evidence[1]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The SCPs enter the midbrain caudally to the inferior colliculus and trochlear nerves, decussate at the level of the inferior colliculus, and project to the midbrain nuclei and thalamus."
+  },
+  {
+   "path": "pathways[3].steps[4].evidence[2]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It carries tracts from the dentate and interpositus nuclei (globose and emboliform nuclei) that will mainly end in the contralateral red nuclei and thalamus"
+  },
+  {
+   "path": "pathways[3].steps[4].evidence[3]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Some of these tracts are the dentato-rubro-thalamic and the interposito-rubral tracts and will participate in modifying and coordinating motor skills and muscle activity from the same side of the body"
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fibers from the fastigial nucleus exit through the inferior cerebellar peduncle."
+  },
+  {
+   "path": "pathways[3].steps[6].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Some fibers from the interpositus and dentate nuclei exit the SCP and descend ipsilaterally through the pontomedullary tegmentum to reach the contralateral inferior olivary nuclei."
+  },
+  {
+   "path": "pathways[3].lesions[0].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Each cerebellar hemisphere controls the same side of the body, thus if damaged the symptoms will occur ipsilaterally."
+  },
+  {
+   "path": "pathways[3].lesions[0].evidence[1]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the pontocerebellar projections, which transmit information from the contralateral cerebral cortex, via the pontine nuclei, to the cerebellum"
+  },
+  {
+   "path": "pathways[3].lesions[0].evidence[2]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It carries tracts from the dentate and interpositus nuclei (globose and emboliform nuclei) that will mainly end in the contralateral red nuclei and thalamus"
+  },
+  {
+   "path": "pathways[3].lesions[1].evidence[0]",
+   "source": "S17",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Hypertrophic olivary degeneration (HOD) is a rare form of transsynaptic degeneration resulting from disruption of the dentato-rubro-olivary pathway, also known as the Guillain-Mollaret triangle (GMT)."
+  },
+  {
+   "path": "pathways[3].lesions[1].evidence[1]",
+   "source": "S17",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Schematic illustration of the dentato-rubro-olivary pathway (GMT), demonstrating the anatomical relationship between the dentate nucleus, red nucleus, and inferior olivary nucleus."
+  },
+  {
+   "path": "pathways[3].lesions[1].evidence[2]",
+   "source": "S17",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "HOD is characterized by delayed onset degeneration and hypertrophy of the inferior olivary nucleus and is typically associated with symptoms such as palatal myoclonus, tremor, and ataxia after injury to the GMT pathway"
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[0]",
+   "source": "S9",
+   "status": "fuzzy",
+   "score": 0.994,
+   "quote": "The rubrospinal tract originates from the red nucleus of the midbrain tegmentum. It crosses the midline in ventral tegmental decussation located in the caudal midbrain."
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[1]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The tract forms a contralateral tract in the dorsolateral part of the lateral funiculus and lies in the ventrolateral part of the spinal cord."
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[2]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The rubrospinal tract synapses in these laminae with alpha and gamma motor neurons that stimulate the flexor muscles."
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[3]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The rubrospinal tract carries signals from the red nucleus to the spinal motor neurons."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The medial vestibulospinal tract originates in the medial vestibular nuclei, or Schwalbe nucleus, in the medulla and terminates in the limb motor neurons."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[1]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "They are responsible for innervating upper-body musculature, especially muscles of the neck and forelimbs."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral vestibulospinal tract originates in the lateral vestibular nuclei, or Deiter's nucleus of the pons, and ipsilaterally courses down to the Rexed's laminae VII and VIII."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[1]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These laminae contain premotor interneurons and other alpha and gamma motor neurons responsible for innervating the extensor muscles that oppose gravity and inhibiting the flexor muscles."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[2]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The vestibulospinal tract plays a crucial role in maintaining an erect posture."
+  },
+  {
+   "path": "pathways[4].steps[3].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The medial (pontine) reticulospinal tract originates in the pontine reticular formation and projects down to the ventromedial spinal cord via the ipsilateral anterior funiculus, which contains alpha and gamma motor neurons of the extensor muscles."
+  },
+  {
+   "path": "pathways[4].steps[4].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral (medullary) reticulospinal tract ordinates in the medullary reticular formation and projects to motor neurons in the spinal cord via the bilateral lateral funiculus."
+  },
+  {
+   "path": "pathways[4].steps[5].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The tectospinal tract originates from the superior colliculus of the midbrain and receives stimulation from the retina and cortical visual association areas, courses ventromedial to the periaqueductal gray (PAG) matter"
+  },
+  {
+   "path": "pathways[4].steps[5].evidence[1]",
+   "source": "S9",
+   "status": "fuzzy",
+   "score": 0.993,
+   "quote": "and terminates in the contralateral anterior gray horn lamina VI, VII, and VIII of cervical and upper thoracic segments of the spinal cord."
+  },
+  {
+   "path": "pathways[4].steps[5].evidence[2]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It serves a critical function in the orientation of the head, neck, eyes, and upper extremities in response to sudden movement, loud noises, and bright lights."
+  },
+  {
+   "path": "pathways[4].lesions[0].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It is, however, accepted that decorticate typically requires an injury more rostral than decerebrate posturing. In most literature, this level is considered the red nucleus at the intercollicular level of the midbrain."
+  },
+  {
+   "path": "pathways[4].lesions[0].evidence[1]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The red nucleus is anatomically at the intercollicular level, and thus lesions above the red nucleus tend to cause decortication and lesions below, decerebration."
+  },
+  {
+   "path": "pathways[4].lesions[0].evidence[2]",
+   "source": "S9",
+   "status": "fuzzy",
+   "score": 0.993,
+   "quote": "Decorticate rigidity occurs when an injury at the superior border of the red nucleus disturbs descending corticospinal and rubrospinal tracts."
+  },
+  {
+   "path": "pathways[4].lesions[1].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Decerebrate posturing has been demonstrated in monkeys with a transecting lesion at the level between the superior and inferior colliculi within the midbrain. This is also described as being at or below the level of the red nucleus."
+  },
+  {
+   "path": "pathways[4].lesions[1].evidence[1]",
+   "source": "S9",
+   "status": "fuzzy",
+   "score": 0.994,
+   "quote": "Decerebrate rigidity occurs when an injury at the superior border of the pons disconnects the posterior aspect of the brainstem and the spinal cord from the rest of the brain."
+  },
+  {
+   "path": "pathways[4].lesions[1].evidence[2]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Through animal models and human studies, it has been shown that the vestibulospinal tract plays a major role in decerebrate posturing."
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The myotatic reflex is monosynaptic and induced by sudden passive stretch of muscle fibers. The response produces contraction in the agonist muscle or muscle group, with simultaneous relaxation of the antagonist muscle or muscle group."
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[1]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "After entry into the spinal cord, the group Ia afferent axon travels anteriorly through the spinal cord gray matter toward the ipsilateral ventral horn, where direct synaptic contact occurs with an α motor neuron, utilizing glutamate within lamina IX of the spinal cord."
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[2]",
+   "source": "S10",
+   "status": "fuzzy",
+   "score": 0.996,
+   "quote": "The Ia afferent sensory fibers in the muscle spindles produce action potentials in response to the stretch. These Ia afferent fibers go to the spinal cord at the dorsal root and monosynaptically stimulate the alpha motor neuron."
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A second synaptic pathway involves an inhibitory interneuron, utilizing acetylcholine within lamina III of the dorsal horn."
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[1]",
+   "source": "S8",
+   "status": "fuzzy",
+   "score": 0.993,
+   "quote": "The interneuron exits the gray matter laterally, ascends or descends through the white matter of the propriospinal tract (also termed the fasciculus proprius), and reenters the gray matter to synapse with and inhibit a separate α motor neuron within lamina IX of the anterior horn."
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[2]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Glycinergic transmission mediates inhibition at the level of the antagonist muscle group."
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[3]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The antagonistic muscle is inhibited during the reflex while the agonist muscle contracts. This action occurs polysynaptically through the Ia inhibitory interneuron, which inhibits alpha motor neurons to the antagonistic muscle."
+  },
+  {
+   "path": "pathways[5].steps[2].evidence[0]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Golgi tendon organs regulate the inverse myotatic reflex, mediated through Ib afferents and gamma efferents."
+  },
+  {
+   "path": "pathways[5].steps[2].evidence[1]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This reflex helps control sustained tonic contraction following the stretch reflex by inhibiting the agonist muscles (via inhibitory postsynaptic potentials) and stimulating the corresponding antagonist muscles (via excitatory postsynaptic potentials)."
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[0]",
+   "source": "S14",
+   "status": "fuzzy",
+   "score": 0.994,
+   "quote": "Excitatory interneurons in the dorsal and ventral horns also initiate a withdrawal reflex, activating proximal (e.g., biceps femoris) and distal (e.g., tibialis anterior) muscles."
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[1]",
+   "source": "S14",
+   "status": "fuzzy",
+   "score": 0.994,
+   "quote": "High-intensity stimulation (1.5-2x threshold) of the plantar arch or sural nerve preferentially activates A-delta fibres, which transmit nociceptive signals to the dorsal horn."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The afferent limb is formed by the musculocutaneous nerve, which conveys stretch sensation to the spinal cord via dorsal rootlets from C5 to C6."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[1]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Biceps Reflex Muscle involved: biceps brachii Nerve supply: musculocutaneous Segmental innervation: C5-C6"
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[2]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The afferent limb consists of the radial nerve and dorsal nerve roots from C6 to C8, predominantly C7."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[3]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Triceps Reflex Muscle involved: triceps brachii Nerve supply: radial Segmental innervation: C7-C8"
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[4]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The afferent limb consists of the femoral nerve and dorsal nerve roots from L2 to L4, predominantly L4."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[5]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Patellar Reflex (knee-jerk) Muscle involved: quadriceps femoris Nerve supply: femoral Segmental innervation: L2-L4"
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[6]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The afferent limb passes through the tibial nerve to the dorsal nerve roots of S1 to S2, predominantly S1."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[7]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Achilles Reflex (ankle-jerk) Muscles involved: gastrocnemius, soleus Nerve supply: tibial Segmental innervation: S1-S2"
+  },
+  {
+   "path": "pathways[5].lesions[0].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Loss of inhibitory input from the descending motor pathways results in disinhibition of spinal reflex circuits. This phenomenon leads to exaggerated deep tendon reflexes, such as an increased knee-jerk response during physical examination."
+  },
+  {
+   "path": "pathways[5].lesions[0].evidence[1]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Hyperreflexia, defined as a reflex score of 3 or 4, is a corroborative finding in patients with upper motor neuron lesions, indicating central nervous system injury."
+  },
+  {
+   "path": "pathways[5].lesions[0].evidence[2]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Lesions involving the cerebral cortex, brainstem, or descending motor tracts are classified as upper motor neuron lesions. These lesions lead to increased reflexes (grades 3-4) due to a loss of inhibition from the descending motor pathways."
+  },
+  {
+   "path": "pathways[5].lesions[1].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Hyporeflexia, defined as a reflex score of 0 or 1, is a finding consistent with lower motor neuron lesions, indicating pathology within the peripheral nervous system."
+  },
+  {
+   "path": "pathways[5].lesions[1].evidence[1]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A lesion affecting the anterior horn of the spinal cord at that level, or the motor fiber itself, is classified as a lower motor neuron lesion. These lesions cause decreased reflexes (grades 0-1) due to damage to the alpha motor neurons."
+  }
+ ]
+}

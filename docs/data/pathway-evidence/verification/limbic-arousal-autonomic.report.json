@@ -1,0 +1,941 @@
+{
+ "batch": "limbic-arousal-autonomic",
+ "file": "limbic-arousal-autonomic.json",
+ "tally": {
+  "exact": 69,
+  "fuzzy": 1
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "The Cortico-Limbo-Thalamo-Cortical Circuits: An Update to the Original Papez Circuit of the Human Limbic System",
+    "journal": "Brain Topography",
+    "year": 2023,
+    "pmcid": "PMC10164017",
+    "nbk": "",
+    "doi": "10.1007/s10548-023-00955-y",
+    "license": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "The Cortico-Limbo-Thalamo-Cortical Circuits: An Update to the Original Papez Circuit of the Human Limbic System.",
+    "registryJournal": "Brain topography",
+    "registryYear": "2023",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 86,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S2": {
+   "claimed": {
+    "title": "Wernicke-Korsakoff Syndrome",
+    "journal": "StatPearls [Internet]",
+    "year": 2026,
+    "pmcid": "",
+    "nbk": "NBK470344",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Wernicke-Korsakoff Syndrome - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S3": {
+   "claimed": {
+    "title": "Non-Canonical Subiculum Circuit Organization and Function",
+    "journal": "Hippocampus",
+    "year": 2026,
+    "pmcid": "PMC12947615",
+    "nbk": "",
+    "doi": "10.1002/hipo.70087",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives License (CC BY-NC-ND)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Non-Canonical Subiculum Circuit Organization and Function.",
+    "registryJournal": "Hippocampus",
+    "registryYear": "2026",
+    "registryLicense": "cc by-nc-nd",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 3,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S4": {
+   "claimed": {
+    "title": "Hippocampal architecture viewed through the eyes of methodological development",
+    "journal": "Anatomical Science International",
+    "year": 2025,
+    "pmcid": "PMC12513980",
+    "nbk": "",
+    "doi": "10.1007/s12565-025-00878-7",
+    "license": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Hippocampal architecture viewed through the eyes of methodological development.",
+    "registryJournal": "Anatomical science international",
+    "registryYear": "2025",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 6,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S5": {
+   "claimed": {
+    "title": "Quality Controls: The Role of Self-Corrective Science in Explorations of Primate Memory Systems",
+    "journal": "Hippocampus",
+    "year": 2024,
+    "pmcid": "PMC11632137",
+    "nbk": "",
+    "doi": "10.1002/hipo.23667",
+    "license": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Quality Controls: The Role of Self-Corrective Science in Explorations of Primate Memory Systems.",
+    "registryJournal": "Hippocampus",
+    "registryYear": "2025",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "article-commentary",
+     "Historical Article",
+     "Research Support, N.I.H., Intramural",
+     "Journal Article"
+    ],
+    "citedByCount": 5,
+    "titleSimilarity": 0.99,
+    "yearMatches": false
+   },
+   "textAvailable": true
+  },
+  "S6": {
+   "claimed": {
+    "title": "Unraveling the amygdala: A review of its anatomy and functions",
+    "journal": "Bioinformation",
+    "year": 2024,
+    "pmcid": "PMC11953536",
+    "nbk": "",
+    "doi": "10.6026/9732063002001588",
+    "license": "Open Access article which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Unraveling the amygdala: A review of its anatomy and functions.",
+    "registryJournal": "Bioinformation",
+    "registryYear": "2024",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "other",
+     "Journal Article"
+    ],
+    "citedByCount": 8,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S7": {
+   "claimed": {
+    "title": "An auditory “low road” for threat processing in humans sensitive to fast temporal cues",
+    "journal": "iScience",
+    "year": 2026,
+    "pmcid": "PMC13571650",
+    "nbk": "",
+    "doi": "10.1016/j.isci.2026.117436",
+    "license": "CC BY license (open access article under the CC BY license)",
+    "type": "primary"
+   },
+   "check": {
+    "registryTitle": "An auditory \"low road\" for threat processing in humans sensitive to fast temporal cues.",
+    "registryJournal": "iScience",
+    "registryYear": "2026",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "research-article",
+     "Journal Article"
+    ],
+    "citedByCount": 0,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S8": {
+   "claimed": {
+    "title": "Neuroanatomy, Amygdala",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK537102",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Amygdala - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S9": {
+   "claimed": {
+    "title": "Molecular Imaging of the Human Emotion Circuit (Chapter 1, in: Social and Affective Neuroscience of Everyday Human Interaction)",
+    "journal": "NCBI Bookshelf (Springer book chapter)",
+    "year": 2022,
+    "pmcid": "",
+    "nbk": "NBK595465",
+    "doi": "10.1007/978-3-031-08651-9_1",
+    "license": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+    "type": "textbook"
+   },
+   "check": {
+    "registryTitle": "Molecular Imaging of the Human Emotion Circuit - Social and Affective Neuroscience of Everyday Human Interaction - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S10": {
+   "claimed": {
+    "title": "The ventrolateral preoptic nucleus: a multisystem integrator in sleep-wake regulation",
+    "journal": "Frontiers in Neuroscience",
+    "year": 2026,
+    "pmcid": "PMC13195008",
+    "nbk": "",
+    "doi": "10.3389/fnins.2026.1773131",
+    "license": "Creative Commons Attribution License (CC BY)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "The ventrolateral preoptic nucleus: a multisystem integrator in sleep-wake regulation.",
+    "registryJournal": "Frontiers in neuroscience",
+    "registryYear": "2026",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 0,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S11": {
+   "claimed": {
+    "title": "Neuroanatomy, Reticular Activating System",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK549835",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Reticular Activating System - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S12": {
+   "claimed": {
+    "title": "Brainstem dysfunction in critically ill patients",
+    "journal": "Critical Care",
+    "year": 2020,
+    "pmcid": "PMC6945639",
+    "nbk": "",
+    "doi": "10.1186/s13054-019-2718-9",
+    "license": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Brainstem dysfunction in critically ill patients.",
+    "registryJournal": "Critical care (London, England)",
+    "registryYear": "2020",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 109,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S13": {
+   "claimed": {
+    "title": "Neuroanatomy, Hypothalamus",
+    "journal": "StatPearls [Internet]",
+    "year": 2022,
+    "pmcid": "",
+    "nbk": "NBK525993",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Hypothalamus - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S14": {
+   "claimed": {
+    "title": "Physiology, Cortisol",
+    "journal": "StatPearls [Internet]",
+    "year": 2025,
+    "pmcid": "",
+    "nbk": "NBK538239",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Physiology, Cortisol - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S15": {
+   "claimed": {
+    "title": "From synaptic transmission to neural circuits: multilevel effects of stress on the hippocampus, bed nucleus of the stria terminalis, and paraventricular hypothalamic nucleus",
+    "journal": "Frontiers in Systems Neuroscience",
+    "year": 2026,
+    "pmcid": "PMC13381638",
+    "nbk": "",
+    "doi": "10.3389/fnsys.2026.1829622",
+    "license": "Creative Commons Attribution License (CC BY)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "From synaptic transmission to neural circuits: multilevel effects of stress on the hippocampus, bed nucleus of the stria terminalis, and paraventricular hypothalamic nucleus.",
+    "registryJournal": "Frontiers in systems neuroscience",
+    "registryYear": "2026",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 0,
+    "titleSimilarity": 1.0,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S16": {
+   "claimed": {
+    "title": "Neuroanatomy, Pontine Micturition Center",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK557419",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Neuroanatomy, Pontine Micturition Center - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S17": {
+   "claimed": {
+    "title": "Physiology, Bladder",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK538533",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Physiology, Bladder - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S18": {
+   "claimed": {
+    "title": "Horner Syndrome",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK500000",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Horner Syndrome - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S19": {
+   "claimed": {
+    "title": "Physiology, Pineal Gland",
+    "journal": "StatPearls [Internet]",
+    "year": 2023,
+    "pmcid": "",
+    "nbk": "NBK525955",
+    "doi": "",
+    "license": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+    "type": "statpearls"
+   },
+   "check": {
+    "registryTitle": "Physiology, Pineal Gland - StatPearls - NCBI Bookshelf"
+   },
+   "textAvailable": true
+  },
+  "S20": {
+   "claimed": {
+    "title": "A primer on circadian rhythms for psychiatry",
+    "journal": "NPP—Digital Psychiatry and Neuroscience",
+    "year": 2026,
+    "pmcid": "PMC13153416",
+    "nbk": "",
+    "doi": "10.1038/s44277-026-00060-5",
+    "license": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "A primer on circadian rhythms for psychiatry.",
+    "registryJournal": "NPP - digital psychiatry and neuroscience",
+    "registryYear": "2026",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 0,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The hippocampus then connects to the mammillary bodies via the fornix (FX)."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The mammillary bodies project to the ventral thalamus via the mammillothalamic tract (MTT)."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The mammillothalamic is a projection bundle that arises from the mammillary bodies, projects dorsally, and cranially, toward the thalamus."
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the ATR fibers connect the thalamic midline and anterior nuclear groups with the frontal lobe by traversing through the anterior limbs of bilateral internal capsules"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The ventral thalamus links back into the prefrontal cortex and anterior cingulate gyrus via the thalamo-cingulate projections (TC) to complete the Papez circuit"
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The CB is the longest limbic pathway of the Papez circuit generating a large loop connecting the prefrontal projections of the cingulate gyrus to the hippocampus in the parahippocampal gyrus of the temporal lobe"
+  },
+  {
+   "path": "pathways[0].steps[4].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The outer two thirds are targeted mainly by layer II (and more weakly by layer V) of the entorhinal cortex via the perforant path"
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It contains the axons of the granule cells (i.e., the mossy fibers) and is the site at which they form the en passant synapses on the proximal dendrites of CA3 pyramids"
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[0]",
+   "source": "S4",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The collaterals of the giant CA3 pyramids which target the CA1 region have been named Schaffer collaterals after the first neuroanatomist to describe them"
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Canonical pathways encompass the classic trisynaptic loop from the entorhinal cortex (EC) to dentate gyrus (DG), CA3, CA1, and subiculum (SUB)."
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In Korsakoff syndrome, injury involving the mammillary bodies, anterior and mediodorsal thalamic nuclei, mammillothalamic pathways, and connected hippocampal and frontal networks contributes to severe impairment of episodic memory and executive function."
+  },
+  {
+   "path": "pathways[0].lesions[1].evidence[0]",
+   "source": "S5",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The original account by Scoville and Milner (1957) described that in the 10 patients studied, including H.M., the severe anterograde memory impairments occurred only after bilateral MTL excisions that included much of the amygdala, hippocampus, and surrounding cortex."
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[0]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the subiculum has been considered the “fourth leg” and output region of the trisynaptic pathway"
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[1]",
+   "source": "S3",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "recent evidence highlights the subiculum as a site of integration, receiving and redistributing outputs from the hippocampus, anterior thalamus, retrosplenial cortex, and entorhinal cortex"
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[0]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "consists of direct anatomical projections from visual thalamic nuclei to the amygdala (a key structure for detecting danger)"
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[1]",
+   "source": "S7",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "one of the most extensively studied neural pathways serving this function is the so-called “low road” for emotion processing"
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[0]",
+   "source": "S7",
+   "status": "fuzzy",
+   "score": 0.993,
+   "quote": "the canonical auditory thalamocortical pathway (MGB-primary auditory cortex; PAC; Table 2), used here as a proxy for the cortical “high road.”"
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The basolateral nuclei of amygdala collect sensory input from the cortical association area, prefrontal cortex, thalamus and hippocampus through lateral nucleus."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[1]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Basolateral nucleus processes this information and sends it to the central nucleus of amygdala through excitatory glutamatergic pathway along with relay of inhibitory GABAergic interneuron/intercalated neurons."
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The main output pathway of amygdala is central nucleus."
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Activation of inhibitory GABAergic neurons in the central nucleus leads to the development of autonomic and somatic signals of fear in the hypothalamus and brainstem."
+  },
+  {
+   "path": "pathways[1].steps[5].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Amygdala has neural circuits to carry out its different functions with two major output pathways; the Dorsal route via stria terminalis that projects to the septal area and hypothalamus"
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[0]",
+   "source": "S8",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the ventral route via the ventral amygdalofugal pathway which terminates in the septal area, hypothalamus, and the medial dorsal thalamic nucleus"
+  },
+  {
+   "path": "pathways[1].steps[7].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "BLA also activates the cells in the BNST to the hypothalamus and brainstem structures for autonomic & somatic signs of anxiety"
+  },
+  {
+   "path": "pathways[1].steps[7].evidence[1]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Central nucleus pathway triggers short term & result in sensation of fear and bed nucleus of stria-terminalis pathway leads to long-term activation & general signs of anxiety"
+  },
+  {
+   "path": "pathways[1].lesions[0].evidence[0]",
+   "source": "S6",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Kluver-Bucy syndrome (KBS) is a rare neuropsychiatric condition caused by the abrasions which disturbs the hippocampus, bilateral temporal lobes of amygdala. The pathological characteristics are hyperorality, hypersexuality, hyper-metamorphosis, placidity, bulimia, visual agnosia and amnesia."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The mesolimbic pathway projects from the ventral tegmental area (VTA) to the ventral striatum."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The MFB is the most prominent mesolimbic reward pathway connecting the ventral tegmental areas with the prefrontal cortex"
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The MFB connects the midbrain's periaqueductal gray matter (PAG) to the ventral tegmental areas and the prefrontal cortex (PreFr)."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The mesocortical pathway projecting from the VTA to the prefrontal cortex is, in turn, more involved in executive functions although it also contributes to reward processing."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The nigrostriatal pathway connects substantia nigra to the striatum (putamen and caudate) and contributes critically to motion control."
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[0]",
+   "source": "S9",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Finally, the tuberoinfundibular pathway connects the hypothalamus and the pituitary gland."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[0]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral and dorsal pedunculopontine tegmentum contains primarily cholinergic neurons in neighboring groups within the midbrain and pons."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[1]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Cholinergic neurons project to the thalamus and cortex, promoting desynchronization of the brain,"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[0]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The locus coeruleus is located within the upper dorsolateral pons of the brainstem. It is activated directly by orexin from the lateral hypothalamus, and in response, releases norepinephrine."
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[0]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The raphe nuclei are located midline throughout the brainstem within the pons, midbrain, and medulla. The majority of neurons located in the raphe nuclei are serotonergic."
+  },
+  {
+   "path": "pathways[3].steps[3].evidence[0]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "VLPO-related inhibitory output targets multiple wake-promoting nuclei—including the histaminergic tuberomammillary nucleus (TMN), noradrenergic locus coeruleus (LC), serotonergic raphe nuclei, and cholinergic neurons of the basal forebrain—thereby lowering cortical arousal and stabilizing sleep states"
+  },
+  {
+   "path": "pathways[3].steps[4].evidence[0]",
+   "source": "S11",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "these centers are activated by the lateral hypothalamus (LH), which releases the neuropeptide orexin in response to the light hitting the eyes, which then stimulates arousal and the transition from sleep to waking."
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[0]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "sleep–wake control has classically been conceptualized through the “flip-flop switch” model, in which sleep-promoting preoptic neurons and arousal-promoting systems engage in reciprocal inhibition to permit rapid and stable state transitions"
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[1]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "including GABA/galanin co-expressing neurons, non-galanin GABAergic neurons, and glutamatergic neurons—contribute differentially to non-rapid eye movement (NREM) sleep, rapid eye movement (REM)-associated processes"
+  },
+  {
+   "path": "pathways[3].steps[6].evidence[0]",
+   "source": "S10",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "inhibition of vlPAG GABAergic REM-off neurons disinhibits pontine REM-promoting circuitry, thereby facilitating REM expression"
+  },
+  {
+   "path": "pathways[3].lesions[0].evidence[0]",
+   "source": "S12",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Acute impairments of consciousness include coma which is defined as a “state of unresponsiveness in which the patient lies with eyes closed and cannot be aroused to respond appropriately to stimuli even with vigorous stimulation”"
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[0]",
+   "source": "S13",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The paraventricular and supraoptic nuclei both produce the peptides oxytocin and ADH, which are released from neuronal axons into the capillaries of the posterior pituitary."
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[1]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Magnocellular neurons in the paraventricular and supraoptic nuclei produce arginine vasopressin."
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[2]",
+   "source": "S15",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In humans, PVN neurons display a similar magnocellular/parvocellular organization, with magnocellular cells releasing OT and VP systemically and parvocellular cells regulating neuroendocrine and autonomic processes."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[0]",
+   "source": "S15",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "PNCs synthesize hypophysiotropic hormones—including corticotropin-releasing hormone (CRH), thyrotropin-releasing hormone (TRH), gonadotropin-releasing hormone (GnRH), and somatostatin—and project to the median eminence, where they release these hormones into the hypophyseal portal system."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[1]",
+   "source": "S13",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The arcuate nucleus releases hormones secreted by axon terminals into the hypothalamohypophysial venous portal system to control anterior pituitary hormone release."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[0]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Corticotropin-releasing hormone (CRH), synthesized and secreted by the paraventricular nucleus of the hypothalamus, stimulates the anterior pituitary to release ACTH."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[1]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "ACTH then acts on the adrenal cortex to promote cortisol synthesis and secretion."
+  },
+  {
+   "path": "pathways[4].steps[3].evidence[0]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This hormone functions as the primary glucocorticoid synthesized and released by the zona fasciculata of the adrenal cortex."
+  },
+  {
+   "path": "pathways[4].steps[3].evidence[1]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Cortisol exerts negative feedback on both the hypothalamus and anterior pituitary, inhibiting the secretion of CRH and ACTH, respectively."
+  },
+  {
+   "path": "pathways[4].conflicts[0].positions[0]",
+   "source": "S14",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This hormone functions as the primary glucocorticoid synthesized and released by the zona fasciculata of the adrenal cortex."
+  },
+  {
+   "path": "pathways[4].conflicts[0].positions[1]",
+   "source": "S13",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "ACTH travels through systemic circulation to stimulate the adrenal cortex (zona reticularis) production of the stress-response hormone cortisol."
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[0]",
+   "source": "S18",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The first-order neurons originate in the hypothalamus and descend uncrossed through the midbrain and pons, terminating in the intermediolateral cell columns at the C8 through T2 levels of the spinal cord, known as the ciliospinal center of Budge."
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The central PAG receives afferents from the sacral cord, which in turn sends projections to the PMC."
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[1]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "When the urinary bladder becomes distended, the stretch receptors of the bladder wall transmits an afferent signal to the pons, which subsequent"
+  },
+  {
+   "path": "pathways[5].steps[2].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "PAG serves only as a relay station during transmission of afferents from the bladder to the PMC."
+  },
+  {
+   "path": "pathways[5].steps[2].evidence[1]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In fact, no direct connections exist between PAG and the sacral cord motoneurons."
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The PMC, also known as Barrington's nucleus, is located in the brainstem and works with other regions of the brain to coordinate micturition."
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[1]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It achieves this through activation of parasympathetic neurons, triggering the detrusor muscle to contract and indirectly inhibits the somatic nerves that maintain the external sphincter closed in contraction."
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[2]",
+   "source": "S17",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Pre-ganglionic parasympathetic nerve fibers exit the spinal cord primarily between S2 to S4."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[0]",
+   "source": "S16",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "External urethral sphincter relaxation is mediated indirectly by suppressing Onuf's nucleus located in the sacral spinal cord."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[1]",
+   "source": "S17",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These neurons arise from Onuf's nucleus, located in the anterior horn of the sacral region of the spinal cord, and coalesce to become the pudendal nerve, which utilizes acetylcholine to contract the external urethral sphincter through stimulation of a nicotinic receptor at that site."
+  },
+  {
+   "path": "pathways[6].steps[0].evidence[0]",
+   "source": "S20",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Intrinsically photosensitive retinal ganglion cells (ipRGCs) containing the blue light-sensitive photopigment melanopsin transmit light signals via the retinohypothalamic tract directly to the SCN, synchronizing SCN neurons to the external light-dark cycle."
+  },
+  {
+   "path": "pathways[6].steps[0].evidence[1]",
+   "source": "S19",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "During the daytime, light stimulates the retinohypothalamic pineal pathway. The retinal ganglion cells activate the suprachiasmatic nucleus (SCN) through the optic nerve."
+  },
+  {
+   "path": "pathways[6].steps[1].evidence[0]",
+   "source": "S19",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Specialized ganglia take the impulses generated by the light to the suprachiasmatic nucleus of the hypothalamus. The fibers from the hypothalamus then give off to the superior cervical ganglia in the spinal cord."
+  },
+  {
+   "path": "pathways[6].steps[2].evidence[0]",
+   "source": "S18",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The first-order neurons originate in the hypothalamus and descend uncrossed through the midbrain and pons, terminating in the intermediolateral cell columns at the C8 through T2 levels of the spinal cord, known as the ciliospinal center of Budge."
+  },
+  {
+   "path": "pathways[6].steps[3].evidence[0]",
+   "source": "S18",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Second-order preganglionic neurons exit the spinal cord at the T1 level and enter the cervical sympathetic chain, where they ascend to synapse in the superior cervical ganglion at the C3 through C4 levels."
+  },
+  {
+   "path": "pathways[6].steps[4].evidence[0]",
+   "source": "S19",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "From the spinal cord, signals are relayed back to the pineal gland via postganglionic neurons."
+  },
+  {
+   "path": "pathways[6].steps[4].evidence[1]",
+   "source": "S19",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The sympathetic innervation is from the superior cervical ganglion, while the parasympathetic innervation is from the optic and pterygopalatine ganglia."
+  }
+ ]
+}

@@ -1,0 +1,401 @@
+{
+  "batches": [
+    {
+      "batch": "limbic-arousal-autonomic",
+      "pathways": [
+        {
+          "id": "papez-circuit-trisynaptic-hippocampal",
+          "weakness": "전체 사슬(해마이행부->유두체->시상앞핵->띠이랑->해마곁이랑->관통로->치아이랑->CA3->CA1) 서술이 사실상 리뷰 1편(S1, Kamali 2023)에 의존; 파페츠 회로의 원저(Papez 1937)와 표준 Aggleton 계열 문헌이 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Papez JW. A proposed mechanism of emotion. Arch Neurol Psychiatry 1937;38(4):725-743.",
+              "doi": "10.1001/archneurpsyc.1937.02260220069003",
+              "crossrefTitle": "A PROPOSED MECHANISM OF EMOTION",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "파페츠 회로의 원저술; 사슬의 각 연결(해마->유두체->시상앞핵->띠이랑->해마곁이랑)이 원래 어떤 근거로 제안되었는지 확인",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Aggleton JP, Brown MW. Episodic memory, amnesia, and the hippocampal-anterior thalamic axis. Behav Brain Sci 1999;22(3):425-444.",
+              "doi": "10.1017/s0140525x99002034",
+              "crossrefTitle": "Episodic memory, amnesia, and the hippocampal–anterior thalamic axis",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "해마-유두체-시상앞핵 축이 삽화기억에 필수적이라는 표준 근거(확장된 해마계); 유두체->유두시상로->시상앞핵 단계의 기능적 근거로 사용 가능",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Aggleton JP, O'Mara SM. The anterior thalamic nuclei: core components of a tripartite episodic memory system. Nat Rev Neurosci 2022;23(8):505-516.",
+              "doi": "10.1038/s41583-022-00591-8",
+              "crossrefTitle": "The anterior thalamic nuclei: core components of a tripartite episodic memory system",
+              "oa": "N",
+              "pmcid": "",
+              "why": "최근 10년 내 종합 리뷰; 시상앞핵의 세 갈래(유두시상로/내측시상로/변연계) 연결 구조를 최신 근거로 보강",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Aggleton JP, Nelson AJD, O'Mara SM. Time to retire the serial Papez circuit: implications for space, memory, and attention. Neurosci Biobehav Rev 2022;140:104813.",
+              "doi": "10.1016/j.neubiorev.2022.104813",
+              "crossrefTitle": "Time to retire the serial Papez circuit: Implications for space, memory, and attention",
+              "oa": "Y",
+              "pmcid": "PMC10804970",
+              "why": "고전적 '단일 순차 고리' 모델에 대한 최신 비판적 리뷰; conflicts 항목(해마이행부가 단순 출력 중계인지 통합 허브인지)을 보강하는 대안 관점 제공",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "amygdala-fear-circuit",
+          "weakness": "편도 핵 구분과 출력 경로(중심핵->시상하부/뇌줄기, 분계선조/배쪽편도원심로)의 핵심 근거가 저품질 학술지(S6 Bioinformation, 수집자 스스로 C등급 표시)에 의존; Sah/Janak & Tye/LeDoux 등 표준 문헌 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Sah P, Faber ESL, Lopez De Armentia M, Power J. The amygdaloid complex: anatomy and physiology. Physiol Rev 2003;83(3):803-834.",
+              "doi": "10.1152/physrev.00002.2003",
+              "crossrefTitle": "The Amygdaloid Complex: Anatomy and Physiology",
+              "oa": "N",
+              "pmcid": "",
+              "why": "편도 핵군(가쪽핵/기저외측핵/중심핵)의 세포구축과 뉴런 유형(흥분성/GABA성 사이신경세포 포함)의 표준 근거; 가쪽핵->기저외측핵->중심핵 경로 단계 검증용",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Janak PH, Tye KM. From circuits to behaviour in the amygdala. Nature 2015;517(7534):284-292.",
+              "doi": "10.1038/nature14188",
+              "crossrefTitle": "From circuits to behaviour in the amygdala",
+              "oa": "N",
+              "pmcid": "PMC4565157",
+              "why": "편도 내 회로(가쪽핵->기저외측핵->중심핵)와 중심핵의 GABA성 출력이 공포/자율 반응을 매개한다는 최근 10년 내 종합 리뷰; 시상->편도 '저위로' 개념도 다룸",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "LeDoux JE. Emotion circuits in the brain. Annu Rev Neurosci 2000;23:155-184.",
+              "doi": "10.1146/annurev.neuro.23.1.155",
+              "crossrefTitle": "Emotion Circuits in the Brain",
+              "oa": "N",
+              "pmcid": "",
+              "why": "시상->편도 직접 투사('저위로')와 겉질->편도 경로('고위로')를 제안한 고전 리뷰(피인용 5000+); S7(iScience 2026, 피인용 0, 사람 단일 연구)이 유일한 저위로 근거인 문제를 보완",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "dopamine-reward-pathways",
+          "weakness": "중뇌변연/중뇌겉질/흑색질선조체/결절깔때기 4개 경로 기원-종착 서술이 NCBI Bookshelf 단행본 장(S9, 감정 회로의 분자영상)과 리뷰 1편(S1)에만 의존; 보상 회로 해부학 표준 리뷰 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Haber SN, Knutson B. The reward circuit: linking primate anatomy and human imaging. Neuropsychopharmacology 2010;35(1):4-26.",
+              "doi": "10.1038/npp.2009.129",
+              "crossrefTitle": "The Reward Circuit: Linking Primate Anatomy and Human Imaging",
+              "oa": "N",
+              "pmcid": "PMC3055449",
+              "why": "VTA->복측선조체(중뇌변연) 및 VTA->전전두엽(중뇌겉질) 경로의 표준 해부학 근거(피인용 2900+); 경로 종착부 명칭 정확도 검증용",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Bjorklund A, Dunnett SB. Dopamine neuron systems in the brain: an update. Trends Neurosci 2007;30(5):194-202.",
+              "doi": "10.1016/j.tins.2007.03.006",
+              "crossrefTitle": "Dopamine neuron systems in the brain: an update",
+              "oa": "N",
+              "pmcid": "",
+              "why": "흑색질선조체/중뇌변연/중뇌겉질/결절깔때기 4개 도파민계 전체 분류 체계의 표준 근거(A9-A17 세포군); unsourced 항목(흑색질선조체 변성->파킨슨증)도 뒷받침",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Volkow ND, Morales M. The brain on drugs: from reward to addiction. Cell 2015;162(4):712-725.",
+              "doi": "10.1016/j.cell.2015.07.046",
+              "crossrefTitle": "The Brain on Drugs: From Reward to Addiction",
+              "oa": "N",
+              "pmcid": "",
+              "why": "최근 10년 내 종합 리뷰; 중뇌변연 보상 회로의 사람 영상 근거를 추가로 보강",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "ascending-arousal-system-flip-flop",
+          "weakness": "상행각성계 해부(PPT/LDT, 청반, 솔기핵, 결절유두체핵, 오렉신)는 StatPearls(S11) 한 장에 의존하고, flip-flop 스위치 모델 자체는 좁은 주제 리뷰(S10 VLPO) 하나뿐; 원조 Saper flip-flop 논문들이 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Saper CB, Scammell TE, Lu J. Hypothalamic regulation of sleep and circadian rhythms. Nature 2005;437(7063):1257-1263.",
+              "doi": "10.1038/nature04284",
+              "crossrefTitle": "Hypothalamic regulation of sleep and circadian rhythms",
+              "oa": "N",
+              "pmcid": "",
+              "why": "수면-각성 flip-flop 스위치 모델(VLPO <-> 상행각성계 상호억제)의 원 제안 리뷰; 각 단계(청반/솔기핵/결절유두체핵/오렉신)의 상호 연결 근거",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Saper CB, Fuller PM, Pedersen NP, Lu J, Scammell TE. Sleep state switching. Neuron 2010;68(6):1023-1042.",
+              "doi": "10.1016/j.neuron.2010.11.032",
+              "crossrefTitle": "Sleep state switching",
+              "oa": "Y",
+              "pmcid": "PMC3026325",
+              "why": "flip-flop 모델의 개정판(REM 스위치·vlPAG GABA성 REM-off 뉴런 포함); 6~7단계(VLPO, vlPAG->LDT/PPT)의 직접 근거",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Scammell TE, Arrigoni E, Lipton JO. Neural circuitry of wakefulness and sleep. Neuron 2017;93(4):747-765.",
+              "doi": "10.1016/j.neuron.2017.01.014",
+              "crossrefTitle": "Neural Circuitry of Wakefulness and Sleep",
+              "oa": "Y",
+              "pmcid": "PMC5325713",
+              "why": "최근 10년 내 종합 리뷰로 StatPearls(S11)를 대체할 각성계 전체 회로도의 표준 근거",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "hypothalamo-pituitary-axes",
+          "weakness": "거대세포/소세포 시상하부-뇌하수체 경로가 StatPearls 3개 장(S13,S14,S15)에 의존하며 S13과 S14가 서로 모순(ACTH 표적이 다발층 vs 그물층); 부신겉질층 표준 생리학 리뷰 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Herman JP, McKlveen JM, Ghosal S, Kopp B, Wulsin A, Makinson R, Scheimann J, Myers B. Regulation of the hypothalamic-pituitary-adrenocortical stress response. Compr Physiol 2016;6(2):603-621.",
+              "doi": "10.1002/cphy.c150015",
+              "crossrefTitle": "Regulation of the Hypothalamic-Pituitary-Adrenocortical Stress Response",
+              "oa": "N",
+              "pmcid": "PMC4867107",
+              "why": "PVN 소세포신경분비세포(CRH)->뇌하수체앞엽(ACTH)->부신겉질(코르티솔, 다발층)의 표준 생리학 근거; S13/S14의 다발층 vs 그물층 모순을 해소할 A급 문헌",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Brown CH. Magnocellular neurons and posterior pituitary function. Compr Physiol 2016;6(4):1701-1741.",
+              "doi": "10.1002/cphy.c150053",
+              "crossrefTitle": "Magnocellular Neurons and Posterior Pituitary Function",
+              "oa": "N",
+              "pmcid": "",
+              "why": "시삭위핵/뇌실곁핵 거대세포신경분비세포->뇌하수체뒤엽(옥시토신/바소프레신)의 표준 근거; PVN의 거대세포/소세포 이중 조직을 상세히 다룸",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "central-autonomic-control-micturition",
+          "weakness": "시상하부척수로, 뇌수도관주위회색질-다리뇌배뇨중추(바링턴핵)-엉치부교감/오누프핵 전체 경로가 StatPearls 2개 장(S16,S17)에만 의존; Fowler/Griffiths/de Groat 등 배뇨신경학 표준 리뷰 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Fowler CJ, Griffiths D, de Groat WC. The neural control of micturition. Nat Rev Neurosci 2008;9(6):453-466.",
+              "doi": "10.1038/nrn2401",
+              "crossrefTitle": "The neural control of micturition",
+              "oa": "N",
+              "pmcid": "PMC2897743",
+              "why": "방광구심로->PAG(중계)->바링턴핵->엉치부교감핵/오누프핵 전체 배뇨회로의 표준 리뷰(피인용 1000+); StatPearls 단독 근거를 대체할 A급 문헌",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Griffiths D. Neural control of micturition in humans: a working model. Nat Rev Urol 2015;12(12):695-705.",
+              "doi": "10.1038/nrurol.2015.266",
+              "crossrefTitle": "Neural control of micturition in humans: a working model",
+              "oa": "N",
+              "pmcid": "",
+              "why": "최근 10년 내 리뷰; 사람 뇌영상 기반으로 PAG의 중계 역할과 바링턴핵-오누프핵 억제 경로를 재확인",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "de Groat WC, Griffiths D, Yoshimura N. Neural control of the lower urinary tract. Compr Physiol 2015;5(1):327-396.",
+              "doi": "10.1002/cphy.c130056",
+              "crossrefTitle": "Neural Control of the Lower Urinary Tract",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "교과서 수준의 종합 리뷰; 엉치부교감 전신경세포->음부신경->외요도조임근 단계와 오누프핵 억제 기전의 상세 근거",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "circadian-retinohypothalamic-scn-pineal",
+          "weakness": "망막시상하부로->시각교차위핵->뇌실곁핵->척수->위목신경절->솔방울샘 경로가 StatPearls(S19, REVIEW.md가 멜라토닌 '뇌하수체' 오기로 내적 모순을 지적)와 리뷰 1편(S20)에 의존; SCN 자체 기전과 고전 RHT 해부 원저 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Hastings MH, Maywood ES, Brancaccio M. Generation of circadian rhythms in the suprachiasmatic nucleus. Nat Rev Neurosci 2018;19(8):453-469.",
+              "doi": "10.1038/s41583-018-0026-z",
+              "crossrefTitle": "Generation of circadian rhythms in the suprachiasmatic nucleus",
+              "oa": "N",
+              "pmcid": "",
+              "why": "SCN 내부 기전 및 SCN->PVN->솔방울샘 원심 경로의 최신 종합 리뷰(피인용 800+); StatPearls(S19) 내적 모순(멜라토닌 출처 오기)을 대체할 A급 근거",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Moore RY, Lenn NJ. A retinohypothalamic projection in the rat. J Comp Neurol 1972;146(1):1-14.",
+              "doi": "10.1002/cne.901460102",
+              "crossrefTitle": "A retinohypothalamic projection in the rat",
+              "oa": "N",
+              "pmcid": "",
+              "why": "망막신경절세포->시각교차위핵 직접 투사(망막시상하부로)를 처음 해부학적으로 기술한 고전 원저(피인용 870+); 1단계 경로의 원조 근거",
+              "checked": false
+            }
+          ]
+        }
+      ],
+      "notes": "WebSearch 미사용(전부 Crossref/EuropePMC curl로 탐색). 모든 후보는 제목/서지사항만 Crossref로 대조했고 checked=false(전문을 직접 열어 인용문을 확인하지 않음). 편도 저위로(시상->편도 직접투사)의 사람 근거는 여전히 S7(iScience 2026, 피인용 0) 단일 연구뿐이라 LeDoux 2000은 개념적 근거일 뿐 사람 데이터는 아님. PVN->엉치부교감핵 직접투사, 멜라토닌 합성효소(AANAT/ASMT), 흑색질선조체 변성->파킨슨증에 대한 직접 근거는 여전히 못 찾음(교과서 확인 필요)."
+    },
+    {
+      "batch": "textbooks-and-morphometry",
+      "pathways": [
+        {
+          "id": "books-general",
+          "weakness": "본 프로젝트 전체가 StatPearls(B등급)에 크게 의존; 표준 신경해부학 교과서(장 단위 인용)가 전혀 없음. 아래는 도서관 전자책으로 찾을 표준 참고서 5종",
+          "candidates": [
+            {
+              "kind": "book",
+              "citation": "Nieuwenhuys R, Voogd J, van Huijzen C. The Human Central Nervous System. 4th ed. Berlin: Springer, 2008.",
+              "isbn": "9783540346845 (print) / 9783540346869 (e-book)",
+              "publisher": "Springer (Springer Berlin Heidelberg)",
+              "chapter": "변연계/시상하부/뇌줄기 장 전체 - 파페츠 회로, 편도, 시상하부-뇌하수체, 상행망상활성계, 자율신경 중추 관련 장",
+              "doi": "10.1007/978-3-540-34686-9",
+              "crossrefTitle": "The Human Central Nervous System",
+              "oa": "N",
+              "pmcid": "",
+              "why": "가장 표준적인 사람 중추신경계 해부학 원저 교과서; 모든 7개 경로의 뼈대(핵 경계, 섬유로 주행)를 StatPearls보다 상세하고 신뢰성 높게 뒷받침",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Haines DE, ed. Fundamental Neuroscience for Basic and Clinical Applications. 5th ed. Philadelphia: Elsevier, 2018.",
+              "isbn": "9780323396325",
+              "publisher": "Elsevier",
+              "chapter": "간뇌(Diencephalon), 변연계(Limbic System), 자율신경계(Visceral Motor System) 장",
+              "doi": "10.1016/b978-0-323-39632-5.00007-4 (예시 장 DOI, 시리즈 ISBN 확인용)",
+              "crossrefTitle": "The Meninges (Fundamental Neuroscience for Basic and Clinical Applications 소속 장)",
+              "oa": "N",
+              "pmcid": "",
+              "why": "임상 상관을 포함한 표준 신경과학 교과서; 시상하부-뇌하수체 축, 자율신경 중추, 변연계 장이 우리 근거의 임상 렌즈(병변 증상) 보강용",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Brodal P. The Central Nervous System: Structure and Function. 5th ed. Oxford: Oxford University Press, 2016.",
+              "isbn": "9780190228958",
+              "publisher": "Oxford University Press",
+              "chapter": "The Hypothalamus, The Limbic System, Control of Autonomic Functions 장",
+              "doi": "10.1093/med/9780190228958.003.0004 (예시 장 DOI, 시리즈 ISBN 확인용)",
+              "crossrefTitle": "Synaptic Function (The Central Nervous System 소속 장; ISBN 9780190228958로 도서 확인)",
+              "oa": "N",
+              "pmcid": "",
+              "why": "기능 중심 서술이 강한 표준 교과서; 시상하부-변연-자율신경 연결의 기능적 논리(왜 이 경로가 이렇게 연결되는가)를 보강",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Kandel ER, Koester JD, Mack SH, Siegelbaum SA, eds. Principles of Neural Science. 6th ed. New York: McGraw-Hill, 2021.",
+              "isbn": "9781259642234",
+              "publisher": "McGraw-Hill",
+              "chapter": "Emotion, Motivation and Addiction, The Hypothalamus: Autonomic, Hormonal, and Behavioral Control of Survival 장",
+              "doi": "",
+              "crossrefTitle": "",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "도파민 보상회로/편도-정서/시상하부 자율통제 장이 우리 dopamine-reward-pathways, amygdala-fear-circuit, hypothalamo-pituitary-axes 경로의 표준 교과서 근거",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Paxinos G, Mai JK, eds. The Human Nervous System. 3rd ed. Amsterdam: Elsevier/Academic Press, 2012.",
+              "isbn": "9780123742360",
+              "publisher": "Elsevier (Academic Press)",
+              "chapter": "Hypothalamus, Amygdala, Hippocampal Formation, Basal Forebrain/Diencephalon 장",
+              "doi": "10.1016/b978-0-12-374236-0.10045-8 (예시 장 DOI, 시리즈 ISBN 확인용)",
+              "crossrefTitle": "Preface (The Human Nervous System 소속 장; ISBN 9780123742360으로 도서 확인)",
+              "oa": "N",
+              "pmcid": "",
+              "why": "핵 단위 세포구축 서술이 가장 상세한 참고서; 시상앞핵/유두체/편도 아핵/SCN 등 개별 핵의 경계·세포형 정의에 직접 사용 가능",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "morphometry-brainstem-nuclei",
+          "weakness": "morphometry.json의 notFound 29개 항목(눈돌림/도르래/갓돌림/삼차/얼굴/안뜰/달팽이/고립로/의문/미주등쪽/혀밑신경핵, 청반/솔기/PAG 등)은 공개 전문에서 크기·뉴런 수를 못 찾음; 유료 원저·아틀라스·고전 단행본 필요",
+          "candidates": [
+            {
+              "kind": "book",
+              "citation": "Paxinos G, Huang XF, Sengul G, Watson C. Atlas of the Human Brainstem. Amsterdam: Academic Press/Elsevier, 2012.",
+              "isbn": "9780080925219",
+              "publisher": "Elsevier (Academic Press)",
+              "chapter": "전체 - 중뇌/다리뇌/숨뇌 횡단면 아틀라스, 뇌신경핵 전체(눈돌림~혀밑신경핵) 경계와 위치",
+              "doi": "10.1016/b978-0-08-092521-9.50003-2 (예시 장 DOI, 시리즈 ISBN 확인용)",
+              "crossrefTitle": "WITHDRAWN: Dedication (Atlas of the Human Brainstem 소속 장; ISBN 9780080925219로 도서 확인)",
+              "oa": "N",
+              "pmcid": "",
+              "why": "notFound 목록의 거의 모든 뇌신경핵(삼차신경핵군, 안뜰핵군, 달팽이핵, 고립로핵, 의문핵, 미주등쪽핵, 혀밑신경핵 등)의 경계와 상대적 위치를 직접 제공하는 유일한 사람 뇌줄기 전용 아틀라스",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Olszewski J, Baxter D. Cytoarchitecture of the Human Brain Stem. 3rd rev. ed. Basel: Karger, 2014 (원저 1954).",
+              "isbn": "9783805522106",
+              "publisher": "S. Karger",
+              "chapter": "전체 - 뇌줄기 핵의 세포구축 원저 도해",
+              "doi": "10.1159/isbn.978-3-8055-2210-6",
+              "crossrefTitle": "Cytoarchitecture of the Human Brain Stem",
+              "oa": "N",
+              "pmcid": "",
+              "why": "사람 뇌줄기 세포구축의 고전 원저(1954년 초판, 여전히 표준 명명법의 기초); 아틀라스만으로 부족한 세포형·층 구분을 보강",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Fernandes P, Regala J, Correia F, Goncalves-Ferreira AJ. The human locus coeruleus 3-D stereotactic anatomy. Surg Radiol Anat 2012;34(10):879-885.",
+              "doi": "10.1007/s00276-012-0979-y",
+              "crossrefTitle": "The human locus coeruleus 3-D stereotactic anatomy",
+              "oa": "N",
+              "pmcid": "",
+              "why": "청반의 실측 3차원 크기(길이/폭/부피)와 좌표를 사체 조직에서 직접 측정; S2(Dunlop 2026)가 뉴런밀도만 제공하고 크기 자체는 못 주는 공백을 메움",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Keren NI, Lozar CT, Harris KC, Morgan PS, Eckert MA. In vivo mapping of the human locus coeruleus. Neuroimage 2009;47(4):1261-1267.",
+              "doi": "10.1016/j.neuroimage.2009.06.012",
+              "crossrefTitle": "In vivo mapping of the human locus coeruleus",
+              "oa": "N",
+              "pmcid": "PMC3671394",
+              "why": "청반 in vivo MRI 기반 부피 측정(피인용 290+); Fernandes 2012의 사체 측정치와 교차검증 가능",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Baker KG, Halliday GM, Tork I. Cytoarchitecture of the human dorsal raphe nucleus. J Comp Neurol 1990;301(2):147-161.",
+              "doi": "10.1002/cne.903010202",
+              "crossrefTitle": "Cytoarchitecture of the human dorsal raphe nucleus",
+              "oa": "N",
+              "pmcid": "",
+              "why": "notFound 목록의 '등쪽솔기핵 부피/크기' 공백을 메우는 원저; 아핵 구분과 경계 좌표 제공",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Baker KG, Halliday GM, Hornung JP, Geffen LB, Cotton RG, Tork I. Distribution, morphology and number of monoamine-synthesizing and substance P-containing neurons in the human dorsal raphe nucleus. Neuroscience 1991;42(3):757-775.",
+              "doi": "10.1016/0306-4522(91)90043-n",
+              "crossrefTitle": "Distribution, morphology and number of monoamine-synthesizing and substance P-containing neurons in the human dorsal raphe nucleus",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "등쪽솔기핵의 세로토닌성 뉴런 총 수를 정량한 원저; morphometry.json이 요청한 '뇌줄기 핵의 뉴런 수' 항목 중 솔기핵을 직접 충족",
+              "checked": false
+            }
+          ]
+        }
+      ],
+      "notes": "Google Books API가 이 세션 내내 daily quota 초과(429)로 응답 불가 - ISBN 검증은 대신 Crossref(도서 레코드가 있는 경우) 및 Open Library API(openlibrary.org/search.json, Kandel 6판만)로 대체 확인. Nieuwenhuys/Olszewski&Baxter/Paxinos&Huang는 Crossref 자체에 도서 레코드(ISBN 포함)가 있어 직접 확인. Brodal/Paxinos&Mai/Haines는 Crossref의 '장(chapter)' 레코드에 걸린 시리즈 ISBN으로 간접 확인(장 제목 자체는 책의 정체성과 무관 - container-title과 publisher/author로 확인). notFound 29개 중 눈돌림/도르래/갓돌림/삼차신경핵군/얼굴신경핵/안뜰핵군/달팽이핵/고립로핵/의문핵/미주등쪽핵/혀밑신경핵 본체/널판·쐐기핵/아래올리브/신경로 굵기(MLF, 유두시상로, 뇌활, 안쪽섬유띠)는 개별 계측 원저를 EuropePMC/Crossref 공개 문헌에서 찾지 못함 -> Paxinos&Huang 아틀라스와 Olszewski&Baxter 원저(둘 다 유료 단행본)가 가장 유력한 경로이며, 개별 논문 탐색은 실패."
+    }
+  ]
+}

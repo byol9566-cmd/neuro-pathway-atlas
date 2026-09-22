@@ -1,0 +1,474 @@
+{
+  "batches": [
+    {
+      "batch": "brainstem-reflexes",
+      "pathways": [
+        {
+          "id": "pupillary-light-reflex",
+          "weakness": "네 단계 사슬 전체가 StatPearls 4개 장(S1-S4)에만 의존 — A급 교차 확인 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "McDougal DH, Gamlin PD. Autonomic Control of the Eye. Compr Physiol. 2015;5(1):439-473.",
+              "doi": "10.1002/cphy.c140014",
+              "crossrefTitle": "Autonomic Control of the Eye",
+              "oa": "N",
+              "pmcid": "PMC4919817",
+              "why": "동공빛반사 구심로(망막신경절세포→시신경교차→시각로→시개전핵)와 원심로(에딩거-베스트팔핵→동안신경→섬모체신경절)를 포함한 자율신경 안구조절 전체를 다루는 A급 종설(피인용 383)로 뉴런 차수·교차 위치를 검증할 수 있음",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Kawasaki A. Disorders of the Pupil. Continuum (Minneap Minn). 2025;31(2).",
+              "doi": "10.1212/con.0000000000001542",
+              "crossrefTitle": "Disorders of the Pupil",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "동공전문가의 2025년 최신 임상신경학 종설로 빛반사 경로의 병변 국소화(RAPD, Argyll Robertson 동공 등) 서술을 최신 문헌으로 뒷받침",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "horizontal-vestibulo-ocular-reflex",
+          "weakness": "3-뉴런 궁 전체가 StatPearls 2개 장(S5, S6)에 의존하며 그중 S6는 원문 오류(안뜰 구심신경을 'CN V'로 오기)가 발견됨 — 교체 시급",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Angelaki DE, Cullen KE. Vestibular System: The Many Facets of a Multimodal Sense. Annu Rev Neurosci. 2008;31:125-150.",
+              "doi": "10.1146/annurev.neuro.31.060407.125555",
+              "crossrefTitle": "Vestibular System: The Many Facets of a Multimodal Sense",
+              "oa": "N",
+              "pmcid": "",
+              "why": "수평 VOR의 3-뉴런 궁(안뜰신경절→안뜰핵→반대쪽 갓돌림신경핵/같은쪽 MLF경유 눈돌림신경핵)을 다루는 A급 표준 종설(피인용 628)로 S5·S6의 서술을 검증",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Cullen KE. The vestibular system: multimodal integration and encoding of self-motion for motor control. Trends Neurosci. 2012;35(3):185-196.",
+              "doi": "10.1016/j.tins.2011.12.001",
+              "crossrefTitle": "The vestibular system: multimodal integration and encoding of self-motion for motor control",
+              "oa": "N",
+              "pmcid": "PMC4000483",
+              "why": "VOR 회로의 안뜰핵-안구운동핵 연결을 현대적으로 개괄하는 A급 종설(피인용 430)로 push-pull 흥분/억제 조직화 주장을 뒷받침",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Highstein SM, Holstein GR. The Anatomy of the Vestibular Nuclei. Prog Brain Res. 2006;151:157-203.",
+              "doi": "10.1016/s0079-6123(05)51006-9",
+              "crossrefTitle": "The Anatomy of the vestibular nuclei",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "'어느 안뜰핵(위/안쪽 vs Deiters 외측핵)이 수평 VOR을 매개하는가'라는 REVIEW.md의 충돌 1건을 직접 겨냥한 안뜰핵 해부 전문 총설(Neuroanatomy of the Oculomotor System 특별호)",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "horizontal-conjugate-gaze-saccade-circuit",
+          "weakness": "전체 사슬이 StatPearls 2개 장(S8, S4)에만 의존",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Sparks DL. The brainstem control of saccadic eye movements. Nat Rev Neurosci. 2002;3(12):952-964.",
+              "doi": "10.1038/nrn986",
+              "crossrefTitle": "The brainstem control of saccadic eye movements",
+              "oa": "N",
+              "pmcid": "",
+              "why": "전두안구영역→PPRF→갓돌림신경핵(교차 사이신경세포)→반대쪽 안쪽곧은근 아래핵으로 이어지는 수평보기 사슬을 정리한 A급 표준 종설(피인용 483)",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Fuchs AF, Kaneko CRS, Scudder CA. Brainstem Control of Saccadic Eye Movements. Annu Rev Neurosci. 1985;8:307-337.",
+              "doi": "10.1146/annurev.ne.08.030185.001515",
+              "crossrefTitle": "Brainstem Control of Saccadic Eye Movements",
+              "oa": "N",
+              "pmcid": "",
+              "why": "단속운동 회로 해부생리의 고전 원조 총설(피인용 273)로 PPRF·갓돌림신경 사이신경세포·riMLF/Cajal사이질핵의 수직주시 경로 서술을 뒷받침",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "corneal-blink-reflex",
+          "weakness": "구심로 1차 시냅스 위치를 둘러싼 충돌(척수삼차신경핵 S9 vs 주감각핵 S10)이 있고, S10은 수술중감시 원저의 배경 서술이라 단독 근거로 부적합(REVIEW.md 지적) — Cruccu/Kimura/Aramideh 등 눈깜박반사 생리학 A급 문헌으로 R1/R2 성분을 보강해야 함",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Cruccu G, Iannetti GD, Marx JJ, Thoemke F, Truini A, Fitzek S, Galeotti F, Urban PP, Romaniello A, Stoeter P, Manfredi M, Hopf HC. Brainstem reflex circuits revisited. Brain. 2005;128(Pt 2):386-394.",
+              "doi": "10.1093/brain/awh366",
+              "crossrefTitle": "Brainstem reflex circuits revisited",
+              "oa": "N",
+              "pmcid": "",
+              "why": "뇌졸중 병변-MRI 대조로 각막반사·눈깜박반사 R1/R2의 뇌줄기 회로를 재검증한 A급 원저 겸 종설(피인용 124)로 척수삼차신경핵 vs 주감각핵 시냅스 위치 충돌을 해소할 근거",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Kimura J. Electrically elicited blink reflex in diagnosis of multiple sclerosis. Review of 260 patients over a seven-year period. Brain. 1975;98(3):413-426.",
+              "doi": "10.1093/brain/98.3.413",
+              "crossrefTitle": "ELECTRICALLY ELICITED BLINK REFLEX IN DIAGNOSIS OF MULTIPLE SCLEROSIS",
+              "oa": "N",
+              "pmcid": "",
+              "why": "눈깜박반사 R1(다리뇌, 주감각핵 경유)·R2(연수, 척수삼차신경핵 경유) 성분을 전기생리학적으로 처음 대규모 검증한 Kimura의 고전 원저(피인용 98)",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Kimura J, Lyon LW. Orbicularis oculi reflex in the Wallenberg syndrome: alteration of the late reflex by lesions of the spinal tract and nucleus of the trigeminal nerve. J Neurol Neurosurg Psychiatry. 1972;35(2):228-233.",
+              "doi": "10.1136/jnnp.35.2.228",
+              "crossrefTitle": "Orbicularis oculi reflex in the Wallenberg syndrome: alteration of the late reflex by lesions of the spinal tract and nucleus of the trigeminal nerve",
+              "oa": "Y",
+              "pmcid": "PMC494041",
+              "why": "현재 근거의 Wallenberg 증후군-양측 후기반응 소실 주장을 뒷받침하는 원저이자, 척수삼차신경핵이 후기(R2) 성분을 매개한다는 증거",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Aramideh M, Ongerboer de Visser BW. Brainstem reflexes: electrodiagnostic techniques, physiology, normative data, and clinical applications. Muscle Nerve. 2002;26(1):14-30.",
+              "doi": "10.1002/mus.10120",
+              "crossrefTitle": "Brainstem reflexes: Electrodiagnostic techniques, physiology, normative data, and clinical applications",
+              "oa": "N",
+              "pmcid": "",
+              "why": "REVIEW.md가 명시한 A급 목표 문헌 — 각막반사를 포함한 뇌줄기 반사 전반의 전기진단 생리와 정상치를 정리한 표준 종설(피인용 121)",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "jaw-jerk-reflex",
+          "weakness": "전체 사슬(중뇌삼차신경핵의 특이한 세포체 위치 포함)이 StatPearls 1개 장(S11)에만 의존하고, 항진된 턱반사의 임상적 국소화 의미는 출처 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Cruccu G, Iannetti GD, Marx JJ, Thoemke F, Truini A, Fitzek S, Galeotti F, Urban PP, Romaniello A, Stoeter P, Manfredi M, Hopf HC. Brainstem reflex circuits revisited. Brain. 2005;128(Pt 2):386-394.",
+              "doi": "10.1093/brain/awh366",
+              "crossrefTitle": "Brainstem reflex circuits revisited",
+              "oa": "N",
+              "pmcid": "",
+              "why": "턱반사를 포함한 삼차신경 매개 뇌줄기반사 회로를 병변-영상 대조로 재검증한 A급 문헌(corneal-blink-reflex와 공유)",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Ongerboer de Visser BW. The jaw and blink reflexes: a review of clinical applications. Electroencephalogr Clin Neurophysiol Suppl. 1983;36:263-268.",
+              "doi": "10.1016/0013-4694(83)92033-3",
+              "crossrefTitle": "The jaw and blink reflexes - a review of clinical applications",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "턱반사 항진이 상위운동신경세포 병변을 시사한다는 임상적 국소화 의미(현재 unsourced로 표시된 항목)를 뒷받침할 수 있는 표준 임상 종설",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Ongerboer de Visser BW, Goor C. Jaw reflexes and masseter electromyograms in mesencephalic and pontine lesions: an electrodiagnostic study. J Neurol Neurosurg Psychiatry. 1976;39(1):90-92.",
+              "doi": "10.1136/jnnp.39.1.90",
+              "crossrefTitle": "Jaw reflexes and masseter electromyograms in mesencephalic and pontine lesions: an electrodiagnostic study.",
+              "oa": "N",
+              "pmcid": "PMC492220",
+              "why": "중뇌삼차신경핵-운동삼차신경핵 단시냅스 반사궁을 중뇌·다리뇌 병변 환자에서 직접 확인한 고전 원저(피인용 24)",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "gag-pharyngeal-and-cough-reflex",
+          "weakness": "구역반사 사슬(CN IX→고립로핵→모호핵)은 StatPearls 1개 장(S12)에만 의존; 기침반사는 최근 저인용 리뷰(S13) 1편뿐",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Jean A. Brain stem control of swallowing: neuronal network and cellular mechanisms. Physiol Rev. 2001;81(2):929-969.",
+              "doi": "10.1152/physrev.2001.81.2.929",
+              "crossrefTitle": "Brain Stem Control of Swallowing: Neuronal Network and Cellular Mechanisms",
+              "oa": "N",
+              "pmcid": "",
+              "why": "연하/구역반사의 핵심 중계인 고립로핵-모호핵 신경망을 정리한 A급 고전 종설(피인용 799)로 구역반사 원심로 서술을 뒷받침",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Canning BJ. Anatomy and neurophysiology of the cough reflex: ACCP evidence-based clinical practice guidelines. Chest. 2006;129(1 Suppl):33S-47S.",
+              "doi": "10.1378/chest.129.1_suppl.33s",
+              "crossrefTitle": "Anatomy and Neurophysiology of the Cough Reflex",
+              "oa": "N",
+              "pmcid": "",
+              "why": "미주신경 후두기관 구심로→고립로핵미측부→모호핵/배쪽호흡그룹으로 이어지는 기침반사 해부를 정리한 A급 표준 지침 종설(피인용 95)로 S13을 보강",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "baroreceptor-reflex",
+          "weakness": "NTS→CVLM→RVLM 사슬이 StatPearls 1개 장(S14)과 피인용 0인 2026년 신규 종설(S17) 1편에만 의존",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Benarroch EE. The arterial baroreflex: functional organization and involvement in neurologic disease. Neurology. 2008;71(21):1733-1738.",
+              "doi": "10.1212/01.wnl.0000335246.93495.92",
+              "crossrefTitle": "The arterial baroreflex",
+              "oa": "N",
+              "pmcid": "",
+              "why": "경동맥굴/대동맥궁 구심로→고립로핵→미측배가쪽연수(CVLM)→입쪽배가쪽연수(RVLM)의 압력수용기반사 사슬을 정리한 A급 임상신경학 표준 종설(피인용 147)",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Dampney RA. Functional organization of central pathways regulating the cardiovascular system. Physiol Rev. 1994;74(2):323-364.",
+              "doi": "10.1152/physrev.1994.74.2.323",
+              "crossrefTitle": "Functional organization of central pathways regulating the cardiovascular system",
+              "oa": "N",
+              "pmcid": "",
+              "why": "RVLM 교감흥분성 신경세포와 CVLM GABA성 억제 사슬을 확립한 고전 A급 원조 종설(피인용 1199)로 압력수용기반사 중추 경로 전체를 뒷받침",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "accommodation-convergence-near-reflex",
+          "weakness": "전체 사슬이 StatPearls 1개 장(S15)에만 의존하며, supraoculomotor area 등 근접반응 신경군 명칭은 출처 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "McDougal DH, Gamlin PD. Autonomic Control of the Eye. Compr Physiol. 2015;5(1):439-473.",
+              "doi": "10.1002/cphy.c140014",
+              "crossrefTitle": "Autonomic Control of the Eye",
+              "oa": "N",
+              "pmcid": "PMC4919817",
+              "why": "근접반응(수렴·조절·동공수축) 삼중동반운동의 대뇌겉질-중뇌 회로를 정리한 A급 종설(pupillary-light-reflex와 공유)",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Mays LE, Gamlin PD. Neuronal circuitry controlling the near response. Curr Opin Neurobiol. 1995;5(6):763-768.",
+              "doi": "10.1016/0959-4388(95)80104-9",
+              "crossrefTitle": "Neuronal circuitry controlling the near response",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "동안신경핵 인근 supraoculomotor area 근접반응 전용 신경군을 영장류에서 규명한 A급 종설로 현재 unsourced 항목(근접반응 전용 신경군)을 보강",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Gamlin PD. Neural mechanisms for the control of vergence eye movements. Ann N Y Acad Sci. 2002;956:264-272.",
+              "doi": "10.1111/j.1749-6632.2002.tb02825.x",
+              "crossrefTitle": "Neural Mechanisms for the Control of Vergence Eye Movements",
+              "oa": "N",
+              "pmcid": "",
+              "why": "수렴안구운동을 매개하는 신경회로(대뇌겉질-중뇌-동안신경핵)를 정리한 A급 종설(피인용 80)",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "sympathetic-pathway-to-the-eye-horner-syndrome",
+          "weakness": "3-뉴런 교감사슬 전체가 StatPearls 1개 장(S16)에만 의존; REVIEW.md가 1차뉴런의 뇌줄기 주행-Wallenberg 연결을 우선 보강 대상으로 지적",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "McDougal DH, Gamlin PD. Autonomic Control of the Eye. Compr Physiol. 2015;5(1):439-473.",
+              "doi": "10.1002/cphy.c140014",
+              "crossrefTitle": "Autonomic Control of the Eye",
+              "oa": "N",
+              "pmcid": "PMC4919817",
+              "why": "시상하부-섬모체척수중추(Budge)-위목신경절-해면정맥굴로 이어지는 안구교감신경 3차 신경사슬 전체를 다루는 A급 종설",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Kanagalingam S, Miller NR. Horner syndrome: clinical perspectives. Eye Brain. 2015;7:35-46.",
+              "doi": "10.2147/EB.S63633",
+              "crossrefTitle": "Horner syndrome: clinical perspectives",
+              "oa": "Y",
+              "pmcid": "PMC5398733",
+              "why": "REVIEW.md가 지목한 목표 문헌 — 1차뉴런이 뇌줄기 배가쪽피개를 지나는 경로와 Wallenberg(외측연수)증후군에서 척수시상로 인접성으로 인해 동반되는 Horner 증후군을 정리한 오픈액세스 A급 종설",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Reede DL, Garcon E, Smoker WR, Kardon R. Horner's syndrome: clinical and radiographic evaluation. Neuroimaging Clin N Am. 2008;18(2):369-385.",
+              "doi": "10.1016/j.nic.2007.11.003",
+              "crossrefTitle": "Horner's Syndrome: Clinical and Radiographic Evaluation",
+              "oa": "N",
+              "pmcid": "",
+              "why": "1차/2차/3차 신경세포 수준별 병변 위치와 영상 소견(외측연수경색 포함)을 정리한 A급 종설(피인용 61)로 병변 국소화 서술을 검증",
+              "checked": false
+            }
+          ]
+        }
+      ],
+      "notes": "9개 경로 전부 후보 확보(2-4개씩). Cruccu 2005(Brain), Aramideh & Ongerboer de Visser 2002(Muscle Nerve), Kimura 1975/1972 등 REVIEW.md 목표 문헌을 눈깜박반사/턱반사 경로에 배치. 압력수용기반사·조절-수렴반사·눈교감신경로는 Crossref/EuropePMC로 검증된 A급 종설(Benarroch, Dampney, Mays & Gamlin, Kanagalingam & Miller, Reede 등)로 보강. 눈교감신경로의 Wallenberg-1차신경세포 연결은 Kanagalingam & Miller(2015, 오픈액세스)가 직접 다룸. WebSearch는 사용하지 않음(Crossref bibliographic query + EuropePMC 검색만으로 전부 해결)."
+    },
+    {
+      "batch": "special-senses",
+      "pathways": [
+        {
+          "id": "visual-pathway",
+          "weakness": "핵심 사슬은 StatPearls 2개 장(S1,S2)+A급 리뷰 1편(S4)로 비교적 양호하나, 교차/비교차 섬유 비율(53:47)의 원출처와 망막위상 지도(retinotopy) 서술은 출처 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Wandell BA, Dumoulin SO, Brewer AA. Visual Field Maps in Human Cortex. Neuron. 2007;56(2):366-383.",
+              "doi": "10.1016/j.neuron.2007.10.012",
+              "crossrefTitle": "Visual Field Maps in Human Cortex",
+              "oa": "N",
+              "pmcid": "",
+              "why": "사람 시각겉질의 망막위상 지도(중심오목→후두극, 주변시야→앞쪽 새발톱고랑) 서술을 뒷받침하는 A급 표준 종설(피인용 975)로 현재 unsourced 항목을 보강",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Kupfer C, Chumbley L, Downer JC. Quantitative histology of optic nerve, optic tract and lateral geniculate nucleus of man. J Anat. 1967;101(3):393-401.",
+              "doi": null,
+              "crossrefTitle": "",
+              "oa": "N",
+              "pmcid": "PMC1270921",
+              "why": "시신경교차에서 코쪽:귀쪽 망막섬유의 교차 비율(약 53:47, 현재 S2가 이 수치를 인용하는데 원출처는 불명확)을 사람에서 정량 조직학으로 직접 측정한 고전 원저(피인용 88). DOI 없음(1967년, DOI 도입 이전) — Crossref로 확인 불가하여 doi는 null, EuropePMC PMCID로 실재 확인",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Kandel ER, Koester JD, Mack SH, Siegelbaum SA (eds). Principles of Neural Science, 6th ed. Chapter: The Central Visual Pathways.",
+              "isbn": "9781259642234",
+              "publisher": "McGraw-Hill",
+              "chapter": "The Central Visual Pathways",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "시각로 전체 사슬(망막신경절세포-시신경-시신경교차-시각로-가쪽무릎핵-시각방사-일차시각겉질)의 표준 교과서 서술로 StatPearls를 대체할 A급 대안",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "central-auditory-pathway",
+          "weakness": "달팽이핵→위올리브복합체(사다리체 교차)→가쪽섬유띠→아래둔덕→안쪽무릎핵→가로관자이랑 전체 사슬이 StatPearls 1개 장(S5)에 의존; 청각부챗살의 속섬유막 경로는 출처 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Grothe B, Pecka M, McAlpine D. Mechanisms of Sound Localization in Mammals. Physiol Rev. 2010;90(3):983-1012.",
+              "doi": "10.1152/physrev.00026.2009",
+              "crossrefTitle": "Mechanisms of Sound Localization in Mammals",
+              "oa": "N",
+              "pmcid": "",
+              "why": "사다리체에서의 교차, 위올리브복합체(안쪽/가쪽 올리브)의 양이간 비교 처리를 정리한 A급 표준 종설(피인용 681)로 S5의 사슬을 검증",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Møller AR. Hearing: Anatomy, Physiology, and Disorders of the Auditory System, 3rd ed.",
+              "isbn": "9781597565308",
+              "publisher": "Plural Publishing",
+              "chapter": "The Central Auditory Nervous System",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "달팽이핵부터 가로관자이랑까지 청각중추경로 전체와 청각부챗살의 속섬유막 주행(현재 unsourced 항목)을 다루는 표준 교과서",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "central-vestibular-pathways",
+          "weakness": "핵심 사슬은 StatPearls 1개 장(S7)+A급 원저(S9, OP2)+체계적고찰(S8)로 비교적 양호하나, 안뜰겉질이 단일 핵심영역인지 넓은 네트워크인지 충돌 중이고 원심 안뜰계는 출처 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Lopez C, Blanke O. The thalamocortical vestibular system in animals and humans. Brain Res Rev. 2011;67(1-2):119-146.",
+              "doi": "10.1016/j.brainresrev.2010.12.002",
+              "crossrefTitle": "The thalamocortical vestibular system in animals and humans",
+              "oa": "N",
+              "pmcid": "",
+              "why": "REVIEW.md가 지적한 '단일 핵심 OP2(S9) vs 넓은 네트워크(S8)' 충돌을 종·다중 연구를 통합해 정리한 A급 종설(피인용 421)",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Highstein SM, Holstein GR. The Anatomy of the Vestibular Nuclei. Prog Brain Res. 2006;151:157-203.",
+              "doi": "10.1016/s0079-6123(05)51006-9",
+              "crossrefTitle": "The Anatomy of the vestibular nuclei",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "가쪽/안쪽안뜰핵에서 기시하는 안뜰척수로(LVST/MVST)와 MLF를 통한 안뜰-안구/척수 투사를 다루는 A급 해부 종설(horizontal-vestibulo-ocular-reflex와 공유)",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Angelaki DE, Cullen KE. Vestibular System: The Many Facets of a Multimodal Sense. Annu Rev Neurosci. 2008;31:125-150.",
+              "doi": "10.1146/annurev.neuro.31.060407.125555",
+              "crossrefTitle": "Vestibular System: The Many Facets of a Multimodal Sense",
+              "oa": "N",
+              "pmcid": "",
+              "why": "안뜰소뇌·안뜰척수로·안뜰시상피질 경로 전체를 개괄하는 A급 표준 종설(horizontal-vestibulo-ocular-reflex와 공유)",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "gustatory-pathway",
+          "weakness": "네 단계 전체 사슬이 StatPearls 2개 장(S10,S11)에만 의존; 3차 시상피질 투사가 같은쪽만인지 교차·비교차 모두인지 충돌 중이며, 영장류의 시상 직행경로 vs 설치류의 팔곁핵 중계 차이는 출처 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Carleton A, Accolla R, Simon SA. Coding in the mammalian gustatory system. Trends Neurosci. 2010;33(7):326-334.",
+              "doi": "10.1016/j.tins.2010.04.002",
+              "crossrefTitle": "Coding in the mammalian gustatory system",
+              "oa": "N",
+              "pmcid": "PMC2902637",
+              "why": "REVIEW.md가 요청한 중추 미각경로(고립로핵→시상 VPMpc→미각겉질) 리뷰 — 영장류/설치류 팔곁핵 중계 차이를 포함해 시상 경로를 정리한 A급 종설(피인용 129)",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Small DM. Taste representation in the human insula. Brain Struct Funct. 2010;214(5-6):551-561.",
+              "doi": "10.1007/s00429-010-0266-9",
+              "crossrefTitle": "Taste representation in the human insula",
+              "oa": "N",
+              "pmcid": "",
+              "why": "VPMpc에서 앞뇌섬엽/이마덮개로 이어지는 3차 미각 투사가 사람에서 같은쪽/양측 중 어느 쪽인지(현재 S10 vs S11 충돌)를 사람 영상 자료로 다루는 A급 종설(피인용 210)",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Rolls ET. Taste and smell processing in the brain. In: Handbook of Clinical Neurology, Vol. 164: Smell and Taste. 2019:97-118.",
+              "doi": "10.1016/b978-0-444-63855-7.00007-1",
+              "isbn": "9780444638557",
+              "publisher": "Elsevier",
+              "chapter": "Taste and smell processing in the brain",
+              "oa": "unknown",
+              "pmcid": "",
+              "why": "REVIEW.md가 명시한 목표(중추 미각경로의 시상 VPMpc 경로) 종합 서술을 담은 표준 임상신경학 핸드북 장",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "olfactory-pathway",
+          "weakness": "핵심 사슬은 StatPearls 1개 장(S12)+A급 리뷰(S13)+Purves 발췌(S14, 미리보기만 열람 가능)로 비교적 양호하나, 앞맞교차를 통한 반구간 후각 연결과 사람 앞후각핵의 기능적 의의는 출처 없음",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Brunjes PC, Illig KR, Meyer EA. A field guide to the anterior olfactory nucleus (cortex). Brain Res Rev. 2005;50(2):305-335.",
+              "doi": "10.1016/j.brainresrev.2005.08.005",
+              "crossrefTitle": "A field guide to the anterior olfactory nucleus (cortex)",
+              "oa": "N",
+              "pmcid": "",
+              "why": "앞후각핵의 앞맞교차를 통한 반구간(좌우) 후각 연결(현재 unsourced 항목)과 사람에서의 기능적 의의를 정리한 A급 해부 종설(피인용 165)",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Wilson DA, Sullivan RM. Cortical Processing of Odor Objects. Neuron. 2011;72(4):506-519.",
+              "doi": "10.1016/j.neuron.2011.10.027",
+              "crossrefTitle": "Cortical Processing of Odor Objects",
+              "oa": "N",
+              "pmcid": "PMC3223720",
+              "why": "승모/솔세포축삭이 시상 중계 없이 두 시냅스만으로 조롱박겉질·편도·내후각겉질에 도달한다는 현재 근거(S13)의 핵심 주장을 뒷받침하는 A급 종설(피인용 349)",
+              "checked": false
+            }
+          ]
+        }
+      ],
+      "notes": "5개 경로 전부 후보 확보. 미각경로에는 REVIEW.md가 요청한 시상 VPMpc 경로 리뷰(Carleton et al. 2010; Rolls 2019 챕터)를 배치. 시각경로의 53:47 교차비율 원출처(Kupfer et al. 1967)는 DOI 도입 이전 논문이라 doi=null, EuropePMC PMCID(PMC1270921)로 실재만 확인. 안뜰겉질 단일영역-vs-네트워크 충돌은 Lopez & Blanke 2011로 보강 가능. WebSearch는 사용하지 않음."
+    }
+  ]
+}

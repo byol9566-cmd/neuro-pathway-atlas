@@ -1,0 +1,552 @@
+{
+  "batch": "somatosensory",
+  "collectedBy": "sub-agent",
+  "sources": [
+    { "id": "S1", "type": "statpearls",
+      "title": "Neuroanatomy, Medial Lemniscus (Reils Band, Reils Ribbon)",
+      "authors": "Navarro-Orozco D, Miller R, Bollu PC", "journal": "StatPearls Publishing",
+      "year": 2025, "pmcid": "", "pmid": "30252296", "doi": "", "nbk": "NBK526040",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK526040/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S2", "type": "statpearls",
+      "title": "Neuroanatomy, Posterior Column (Dorsal Column)",
+      "authors": "Al-Chalabi M, Reddy V, Alsalman I", "journal": "StatPearls Publishing",
+      "year": 2023, "pmcid": "", "pmid": "29939665", "doi": "", "nbk": "NBK507888",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK507888/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S3", "type": "statpearls",
+      "title": "Neuroanatomy, Spinothalamic Tract",
+      "authors": "Al-Chalabi M, Reddy V, Gupta S", "journal": "StatPearls Publishing",
+      "year": 2023, "pmcid": "", "pmid": "29939601", "doi": "", "nbk": "NBK507824",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK507824/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S4", "type": "statpearls",
+      "title": "Neuroanatomy, Anterior White Commissure",
+      "authors": "Ku J, Jozsa F", "journal": "StatPearls Publishing",
+      "year": 2026, "pmcid": "", "pmid": "31536221", "doi": "", "nbk": "NBK546614",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK546614/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S5", "type": "statpearls",
+      "title": "Neuroanatomy, Trigeminal Nucleus",
+      "authors": "Price S, Daly DT", "journal": "StatPearls Publishing",
+      "year": 2023, "pmcid": "", "pmid": "30969645", "doi": "", "nbk": "NBK539823",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK539823/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S6", "type": "statpearls",
+      "title": "Neuroanatomy, Spinocerebellar Dorsal Tract",
+      "authors": "Koh M, Markovich B", "journal": "StatPearls Publishing",
+      "year": 2023, "pmcid": "", "pmid": "32310473", "doi": "", "nbk": "NBK556013",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK556013/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S7", "type": "review",
+      "title": "Functional Anatomy of the Spinal Tracts Based on Evolutionary Perspectives",
+      "authors": "Kang JH, Im S", "journal": "Korean Journal of Neurotrauma",
+      "year": 2023, "pmcid": "PMC10567534", "pmid": "37840623", "doi": "10.13004/kjnt.2023.19.e43", "nbk": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10567534/",
+      "license": "This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (https://creativecommons.org/licenses/by-nc/4.0/) which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+      "openedVia": "europepmc-fulltext" },
+    { "id": "S8", "type": "statpearls",
+      "title": "Neuroanatomy, Periaqueductal Gray",
+      "authors": "Mokhtar M, Singh P", "journal": "StatPearls Publishing",
+      "year": 2023, "pmcid": "", "pmid": "32119278", "doi": "", "nbk": "NBK554391",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK554391/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S9", "type": "statpearls",
+      "title": "Neuroanatomy, Locus Coeruleus",
+      "authors": "Khroud NK, Reddy V, Saadabadi A", "journal": "StatPearls Publishing",
+      "year": 2022, "pmcid": "", "pmid": "30020642", "doi": "", "nbk": "NBK513270",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK513270/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S10", "type": "statpearls",
+      "title": "Physiology, Pain",
+      "authors": "Chen JS, Kandle PF, Murray IV, Fitzgerald LA, Sehdev JS", "journal": "StatPearls Publishing",
+      "year": 2023, "pmcid": "", "pmid": "30969611", "doi": "", "nbk": "NBK539789",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK539789/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S11", "type": "statpearls",
+      "title": "Lateral Medullary Syndrome (Wallenberg Syndrome)",
+      "authors": "Easton-Carr R, Lui F, Das JM", "journal": "StatPearls Publishing",
+      "year": 2026, "pmcid": "", "pmid": "31869134", "doi": "", "nbk": "NBK551670",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK551670/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S12", "type": "statpearls",
+      "title": "Tabes Dorsalis",
+      "authors": "Bhandari J, Thada PK, Leslie SW, Ratzan RM", "journal": "StatPearls Publishing",
+      "year": 2024, "pmcid": "", "pmid": "32491814", "doi": "", "nbk": "NBK557891",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK557891/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S13", "type": "statpearls",
+      "title": "Brown-Séquard Syndrome",
+      "authors": "Shams S, Farrell CL, Arain A", "journal": "StatPearls Publishing",
+      "year": 2024, "pmcid": "", "pmid": "30844162", "doi": "", "nbk": "NBK538135",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK538135/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S14", "type": "statpearls",
+      "title": "Syringomyelia",
+      "authors": "Shenoy VS, Munakomi S, Sampath R", "journal": "StatPearls Publishing",
+      "year": 2024, "pmcid": "", "pmid": "30725795", "doi": "", "nbk": "NBK537110",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK537110/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" },
+    { "id": "S15", "type": "statpearls",
+      "title": "Neuroanatomy, Internal Capsule",
+      "authors": "Emos MC, Khan Suheb MZ, Agarwal S", "journal": "StatPearls Publishing",
+      "year": 2023, "pmcid": "", "pmid": "31194338", "doi": "", "nbk": "NBK542181",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK542181/",
+      "license": "This book is distributed under the terms of the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)",
+      "openedVia": "bookshelf" }
+  ],
+  "pathways": [
+    {
+      "id": "dcml-pathway",
+      "name": "Dorsal column–medial lemniscus (posterior column–medial lemniscus) pathway",
+      "category": "ascending somatosensory / discriminative touch and proprioception",
+      "function": "Conveys conscious proprioception, vibration, fine (discriminative) touch and 2-point discrimination from skin and joints to the primary somatosensory cortex.",
+      "steps": [
+        {
+          "order": 1, "neuronOrder": 1,
+          "cellBodies": "Dorsal root ganglion (pseudounipolar neurons)",
+          "courseVia": ["peripheral nerve", "dorsal root (medial division, medial dorsal root entry zone)", "fasciculus gracilis (below T6) or fasciculus cuneatus (T6 and above)"],
+          "terminatesIn": "Nucleus gracilis (lower body) or nucleus cuneatus (upper body) in caudal medulla",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S2", "quote": "most of the central axonal processes leave the dorsal horn gray matter without synapsing and enter the dorsal funiculus, thereby constituting either the fasciculus gracilis or the fasciculus cuneatus", "species": "human" },
+            { "source": "S2", "quote": "The fasciculus gracilis carries sensory information associated with the DCML pathway from the lower extremities and terminates and synapses at the nucleus gracilis in the caudal medulla", "species": "human" },
+            { "source": "S7", "quote": "The gracile fasciculus conveys sensory information from the lower body (T7 and below) and synapses with the gracile nucleus. The cuneate fasciculus conveys sensory information from the upper body (C2–T7) and synapses to the cuneate nucleus", "species": "human" }
+          ]
+        },
+        {
+          "order": 2, "neuronOrder": 2,
+          "cellBodies": "Nucleus gracilis / nucleus cuneatus (caudal medulla, dorsal column nuclei)",
+          "courseVia": ["internal arcuate fibers (decussate)", "medial lemniscus"],
+          "terminatesIn": "Ventral posterolateral nucleus (VPL) of thalamus",
+          "laterality": "contralateral",
+          "decussation": { "present": true, "where": "Internal arcuate fibers cross the midline in the caudal medulla (sensory decussation)" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S1", "quote": "The arcuate fibers decussate at the caudal medulla and ascend via the medial lemniscus contralaterally in the brainstem until synapsing at the ventral posterolateral nucleus of the thalamus", "species": "human" },
+            { "source": "S2", "quote": "The internal arcuate fibers are axons that emerge ventrally from the dorsal column nuclei, course ventromedially through the medullary tegmentum, and ultimately cross the midline. This is where the DCML pathway decussates", "species": "human" },
+            { "source": "S7", "quote": "Axons originating from the gracile and cuneate nuclei cross to the opposite side through the internal arcuate fibers and form the medial lemniscus (late decussation)", "species": "human" }
+          ]
+        },
+        {
+          "order": 3, "neuronOrder": 3,
+          "cellBodies": "Ventral posterolateral nucleus (VPL) of thalamus",
+          "courseVia": ["thalamocortical fibers", "posterior limb of internal capsule"],
+          "terminatesIn": "Primary somatosensory cortex (postcentral gyrus, Brodmann areas 3, 1, 2)",
+          "laterality": "ipsilateral (to thalamus; contralateral to body side of origin)",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S2", "quote": "The VPL neurons are the third-order neurons of the pathway, and their axons project laterally out of the thalamus and course somatotopically through the posterior limb of the internal capsule, terminating in the primary somatosensory cortex of the postcentral gyrus", "species": "human" },
+            { "source": "S15", "quote": "The posterior third of the posterior limb contains major somatosensory relays from the thalamus to the primary somatosensory cortex", "species": "human" }
+          ]
+        }
+      ],
+      "lesions": [
+        { "site": "Posterior spinal artery territory (posterior/dorsal columns)", "deficit": "Loss of vibration and proprioception (posterior cord syndrome), with sparing of pain, temperature and motor function",
+          "side": "bilateral",
+          "evidence": [
+            { "source": "S2", "quote": "Posterior cord syndrome (PCS) is characterized by loss of vibration and proprioception sensation, and the posterior spinal artery supplies reflexes below the level of the lesion through the posterior column pathway" },
+            { "source": "S2", "quote": "motor strength, pain, and temperature sensations are spared in PCS because the spinothalamic and cortical motor tracts are unaffected, and their vascular supply comes from the anterior spinal artery" }
+          ]
+        },
+        { "site": "Spinal cord hemisection (Brown-Séquard syndrome), dorsal columns", "deficit": "Loss of fine touch, vibration, 2-point discrimination and conscious proprioception",
+          "side": "ipsilateral",
+          "evidence": [
+            { "source": "S13", "quote": "Ipsilateral modalities of fine touch, vibration, 2-point discrimination, and conscious proprioception are affected due to injury to the dorsal columns ascending within the dorsomedial spinal cord" }
+          ]
+        },
+        { "site": "Tabes dorsalis (tertiary neurosyphilis; degeneration of dorsal columns/dorsal roots)", "deficit": "Sensory ataxia, impaired vibratory and positional sense, loss of reflexes; tabetic gait",
+          "side": "bilateral",
+          "evidence": [
+            { "source": "S12", "quote": "This condition is a form of tertiary or late neurosyphilis characterized by a slow, progressive degeneration of the dorsal columns and dorsal roots of the spinal cord" },
+            { "source": "S12", "quote": "Other neurological findings encompass absent lower extremity reflexes, impaired vibratory and positional sensation, deficits in touch, pain, and optic function" },
+            { "source": "S7", "quote": "Below the affected region, they experience a loss of discriminatory touch and vibration bilaterally, as well as difficulties in conveying conscious proprioception, resulting in a characteristic gait disturbance known as tabetic gait" }
+          ]
+        },
+        { "site": "Subacute combined degeneration (vitamin B12 deficiency), posterior column pathway", "deficit": "Paresthesia, loss of vibratory sensation and proprioception",
+          "side": "bilateral",
+          "evidence": [
+            { "source": "S2", "quote": "Another degenerative disease affecting the posterior column pathway is subacute combined degeneration of the spinal cord (SCD), resulting from severe vitamin B12 deficiency" },
+            { "source": "S2", "quote": "Symptoms related to damage in the posterior column pathway include paresthesia, loss of vibratory sensation, and proprioception" }
+          ]
+        },
+        { "site": "Medial medullary syndrome (paramedian anterior spinal artery occlusion), medial lemniscus", "deficit": "Loss of conscious proprioception, vibration, fine touch and 2-point discrimination",
+          "side": "contralateral",
+          "evidence": [
+            { "source": "S1", "quote": "Medial medullary syndrome results from infarction of the medial medulla oblongata due to occlusion of the paramedian branches of the anterior spinal artery" },
+            { "source": "S1", "quote": "Damage to the medial lemniscus causes loss of conscious proprioception, vibration, fine touch, and 2-point discrimination on the contralateral side of the body" }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "unsourced": [
+        "Glutamate is the excitatory neurotransmitter used at first- and second-order synapses of the DCML pathway (widely stated in standard neuroanatomy texts, but no opened source in this session gave an explicit sourced quote naming the neurotransmitter)."
+      ]
+    },
+    {
+      "id": "anterolateral-system-spinothalamic-tract",
+      "name": "Anterolateral system / spinothalamic tract",
+      "category": "ascending somatosensory / pain, temperature and crude touch",
+      "function": "Carries nociceptive, thermal, crude touch and pressure information from the body to the thalamus; includes spinothalamic, spinoreticular and spinotectal (spinomesencephalic) components.",
+      "steps": [
+        {
+          "order": 1, "neuronOrder": 1,
+          "cellBodies": "Dorsal root ganglion (pseudounipolar neurons)",
+          "courseVia": ["peripheral nerve", "lateral dorsal root entry zone", "Lissauer's tract (ascends/descends 1–2 segments)"],
+          "terminatesIn": "Dorsal horn grey matter – substantia gelatinosa / laminae I, II, V",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S3", "quote": "The axons of the central process of the first-order neurons enter the spinal cord through the lateral dorsal root entry zone to enter the Lissauer tract and synapses with second-order neurons in the substantia gelatinosa, located in the grey matter of the spinal cord", "species": "human" },
+            { "source": "S8", "quote": "Initial pain signals ascend through the dorsal horn, specifically through lamina I (superficial dorsal horn), lamina II (substantia gelatinosa), and lamina V (deep dorsal horn)", "species": "human" }
+          ]
+        },
+        {
+          "order": 2, "neuronOrder": 2,
+          "cellBodies": "Dorsal horn (substantia gelatinosa / laminae I, II, V)",
+          "courseVia": ["anterior white commissure (decussation)", "anterolateral/ventrolateral white matter of spinal cord", "spinal lemniscus in brainstem"],
+          "terminatesIn": "Ventral posterolateral nucleus (VPL) of thalamus (spinothalamic component); also reticular formation (spinoreticular) and tectum/periaqueductal region (spinotectal/spinomesencephalic)",
+          "laterality": "contralateral",
+          "decussation": { "present": true, "where": "Anterior white commissure, a few spinal segments above the level of entry" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S3", "quote": "The axons of the second-order neurons cross over the spinal cord to the opposite side two segments above the level of entry via the anterior white commissure, unlike the posterior medial lemniscus pathway, which decussates in the brainstem", "species": "human" },
+            { "source": "S3", "quote": "The spinothalamic tract is part of the anterolateral system, which also encompasses the spinoreticulothalamic tract (SRTT) and the spinotectal tract (SpTT)", "species": "human" },
+            { "source": "S7", "quote": "The lateral spinothalamic tract transmits the most advanced form of sensation: pain generated from the free nerve ending and heat sensation from the thermoreceptor of the skin", "species": "human" },
+            { "source": "S7", "quote": "The fibers enter the cord through the dorsal horn and decussate to the contralateral side (early decussation)", "species": "human" }
+          ]
+        },
+        {
+          "order": 3, "neuronOrder": 3,
+          "cellBodies": "Ventral posterolateral nucleus (VPL) of thalamus",
+          "courseVia": ["thalamocortical fibers", "posterior limb of internal capsule"],
+          "terminatesIn": "Primary somatosensory cortex (postcentral gyrus)",
+          "laterality": "ipsilateral (to thalamus; contralateral to body side of origin)",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S3", "quote": "The spinothalamic tract of the anterolateral system terminates in the ventral posterolateral nucleus (VPL) of the thalamus, the third-order neurons of this pathway", "species": "human" }
+          ]
+        }
+      ],
+      "lesions": [
+        { "site": "Spinal cord hemisection (Brown-Séquard syndrome), spinothalamic tract", "deficit": "Loss of pain and temperature sensation a couple of segments below the lesion",
+          "side": "contralateral",
+          "evidence": [
+            { "source": "S3", "quote": "Spinothalamic tract deficit leads to loss of pain and temperature sensations on one side of the body at about two levels below the lesion but on the contralateral side" },
+            { "source": "S13", "quote": "Ascending anterior spinothalamic tracts containing afferents of pain, temperature, and crude touch are transected, leading to contralateral hemisensory loss of these modalities" },
+            { "source": "S7", "quote": "damage to the early decussating spinothalamic tract results in the loss of crude touch, pressure, temperature, and pain sensations on the opposite side below the affected level." }
+          ]
+        },
+        { "site": "Syringomyelia (central cavitation, anterior white commissure)", "deficit": "Bilateral, dermatomal (\"cape-like\") loss of pain and temperature with preserved touch/vibration",
+          "side": "bilateral",
+          "evidence": [
+            { "source": "S3", "quote": "bilateral loss of pain and temperature in a dermatomal fashion can be present in syringomyelia where the anterior white commissure becomes obliterated due to cavitation in the central spinal cord" },
+            { "source": "S14", "quote": "Consequently, there is a loss of pain and temperature sensation with preserved touch and vibratory sense, leading to segmental dissociated sensory loss" },
+            { "source": "S4", "quote": "Syringomyelia, defined as cavitation of the cervical spinal cord originating in the central canal, initially affects crossing spinothalamic fibers within the anterior white commissure, producing a characteristic loss of pain and temperature sensation" },
+            { "source": "S7", "quote": "In patients with syringomyelia, a fluid-filled cavity develops within the central canal of the spinal cord, leading to the obstruction of the ventral white commissure" }
+          ]
+        },
+        { "site": "Lateral medullary syndrome (Wallenberg; PICA/vertebral artery occlusion), spinothalamic tract", "deficit": "Contralateral loss of pain and temperature over body, plus ipsilateral facial pain/temperature loss from spinal trigeminal tract involvement",
+          "side": "contralateral",
+          "evidence": [
+            { "source": "S3", "quote": "Lateral medullary syndrome caused by occlusion of posterior inferior cerebellar artery affects the spinothalamic tract as STT runs in the lateral aspect of the medulla, resulting in loss of pain and temperature sensations over the entire contralateral side of the body" },
+            { "source": "S11", "quote": "Spinothalamic tract: Contralateral pain and temperature loss affecting the arm, body, and leg" }
+          ]
+        },
+        { "site": "Thalamic lesion, VPL nucleus", "deficit": "Initial loss of all contralateral sensation followed by central (thalamic) pain – Déjérine-Roussy syndrome",
+          "side": "contralateral",
+          "evidence": [
+            { "source": "S3", "quote": "A lesion localized to a ventral posterolateral in the thalamus will lead to an initial loss of all sensations from the contralateral side of the body, including pain" },
+            { "source": "S3", "quote": "this is referred to as thalamic pain syndrome (Déjérine-Roussy syndrome)" }
+          ]
+        },
+        { "site": "Anterior spinal artery syndrome", "deficit": "Bilateral pain and temperature loss below the lesion with preserved vibration/proprioception",
+          "side": "bilateral",
+          "evidence": [
+            { "source": "S3", "quote": "Patients with anterior spinal artery syndrome present with pain and temperature loss bilaterally below the level of the lesion" },
+            { "source": "S3", "quote": "vibratory and proprioceptive senses are preserved due to posterior column sparing" }
+          ]
+        }
+      ],
+      "conflicts": [
+        { "issue": "Number of spinal segments the second-order fibers ascend in Lissauer's tract before decussating in the anterior white commissure",
+          "positions": [
+            { "claim": "Second-order fibers cross two segments above the level of entry", "source": "S3", "quote": "The axons of the second-order neurons cross over the spinal cord to the opposite side two segments above the level of entry via the anterior white commissure, unlike the posterior medial lemniscus pathway, which decussates in the brainstem" },
+            { "claim": "Second-order fibers ascend 1 to 3 spinal cord levels through Lissauer's tract before/around decussation", "source": "S4", "quote": "Axons of 2nd-order neurons from the spinothalamic tract decussate at the anterior white commissure and ascend 1 to 3 spinal cord levels through the Lissauer tract" }
+          ]
+        }
+      ],
+      "unsourced": [
+        "Substance P and glutamate are the principal neurotransmitters of first-order nociceptive afferents synapsing in the dorsal horn (standard teaching; no explicit sourced quote naming the neurotransmitter at spinothalamic synapses was found in the texts opened this session).",
+        "The spinoreticulothalamic component projects to intralaminar thalamic nuclei, including the centrolateral (CL) nucleus, providing a diffuse/poorly localized pain pathway; the closest sourced statement found only mentions projection to a 'non-specific medial thalamus' (S8) without naming the intralaminar or centrolateral nucleus specifically."
+      ]
+    },
+    {
+      "id": "trigeminal-somatosensory-pathways",
+      "name": "Trigeminal somatosensory pathways",
+      "category": "ascending somatosensory / face and oral cavity",
+      "function": "Transmits pain, temperature, touch, vibration, 2-point discrimination and proprioception from the face and muscles of mastication via three sensory nuclei (principal/chief sensory, spinal trigeminal, mesencephalic) to VPM and the somatosensory cortex.",
+      "steps": [
+        {
+          "order": 1, "neuronOrder": 1,
+          "cellBodies": "Trigeminal (semilunar/Gasserian) ganglion (pseudounipolar neurons); mesencephalic nucleus neurons (unique – cell bodies lie within the CNS, not the ganglion)",
+          "courseVia": ["ophthalmic (V1), maxillary (V2), mandibular (V3) divisions", "trigeminal nerve root entering brainstem at mid-pons"],
+          "terminatesIn": "Chief/principal sensory nucleus, spinal trigeminal nucleus, or mesencephalic nucleus depending on modality",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S5", "quote": "Except for the fibers projecting to the mesencephalic nucleus, the sensory fibers from V1, V2, and V3 travel along axons from pseudounipolar neurons to their cell bodies in the trigeminal ganglion", "species": "human" },
+            { "source": "S5", "quote": "The afferent fibers of that neuron then enter the brainstem at the mid-pons and travel to either the chief/principal sensory nucleus or descend via the spinal trigeminal tract to synapse in the spinal trigeminal nucleus", "species": "human" },
+            { "source": "S5", "quote": "This nucleus is unique in that the fibers do not have a cell body in the trigeminal ganglion. Instead, pseudounipolar afferent fibers from stretch receptors relay information directly to the cell body in the nucleus, which is then relayed bilaterally to the trigeminal motor nuclei", "species": "human" }
+          ]
+        },
+        {
+          "order": 2, "neuronOrder": 2,
+          "cellBodies": "Chief/principal sensory nucleus (touch/proprioception/vibration/2-point discrimination) or spinal trigeminal nucleus, pars caudalis (pain/temperature/crude touch)",
+          "courseVia": ["dorsal trigeminothalamic tract (DTTT, ipsilateral, from chief sensory nucleus)", "ventral trigeminothalamic tract (VTTT, decussates, from chief sensory nucleus and spinal trigeminal nucleus)"],
+          "terminatesIn": "Ventral posteromedial nucleus (VPM) of thalamus",
+          "laterality": "bilateral (DTTT ipsilateral; VTTT contralateral)",
+          "decussation": { "present": true, "where": "Fibers of the ventral trigeminothalamic tract decussate near their nucleus of origin (chief sensory nucleus or spinal trigeminal nucleus) before ascending to VPM" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S5", "quote": "It is responsible for 2-point discrimination, conscious proprioception, vibration, and fine touch", "species": "human" },
+            { "source": "S5", "quote": "This tract conveys information only from the ipsilateral chief sensory nucleus (2-point discrimination, conscious proprioception, vibration, and fine touch) to the ipsilateral VPM", "species": "human" },
+            { "source": "S5", "quote": "fibers that synapse in the chief sensory nucleus (i.e., 2-point discrimination, conscious proprioception, vibration, and fine touch) can decussate and form the VTTT to the contralateral ventral posteromedial nucleus of the thalamus, or they can ascend as the DTTT", "species": "human" },
+            { "source": "S5", "quote": "This specific tract conveys fast pain and temperature from one side of the face to the contralateral ventral posteromedial nucleus of the thalamus (VPM) and eventually to the primary sensory cortex", "species": "human" },
+            { "source": "S5", "quote": "sensory information from the lateral face projects more caudally to the pars caudalis, the middle (cheek and eye) to the pars interopolaris, and the central face (mouth and nose) to the pars oralis", "species": "human" },
+            { "source": "S5", "quote": "It is responsible for pain, temperature, and crude touch", "species": "human" }
+          ]
+        },
+        {
+          "order": 3, "neuronOrder": 3,
+          "cellBodies": "Ventral posteromedial nucleus (VPM) of thalamus",
+          "courseVia": ["thalamocortical fibers"],
+          "terminatesIn": "Primary somatosensory cortex (postcentral gyrus, Brodmann areas 3, 1, 2)",
+          "laterality": "ipsilateral (to thalamus; contralateral to face side of origin for pain/temperature)",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S5", "quote": "This nucleus contains third-order neuronal cell bodies and sends that information somatotopically via third-order neuronal fibers to the postcentral gyrus (Brodmann areas 3, 1, and 2) of the primary sensory cortex", "species": "human" }
+          ]
+        }
+      ],
+      "lesions": [
+        { "site": "Spinal trigeminal nucleus (rostral vs caudal portion)", "deficit": "\"Onion-skin\" pattern of facial sensory loss – rostral lesions affect mouth/nose, caudal lesions affect lateral face",
+          "side": "ipsilateral",
+          "evidence": [
+            { "source": "S5", "quote": "a lesion of the spinal trigeminal nucleus will result in an “onion skin” shaped loss of sensation." },
+            { "source": "S5", "quote": "a lesion in the rostral portion of the spinal trigeminal nucleus will lead to loss of sensation of the mouth and nose, whereas a lesion in the caudal portion will result in loss of sensation of the lateral face" }
+          ]
+        },
+        { "site": "Trigeminal ganglion or any of the three sensory nuclei", "deficit": "Loss of facial sensation",
+          "side": "ipsilateral",
+          "evidence": [
+            { "source": "S5", "quote": "A unilateral transection or lesion of the trigeminal ganglion or the three nuclei will result in loss of sensation to the ipsilateral face" }
+          ]
+        },
+        { "site": "Unilateral corticobulbar lesion", "deficit": "Muscles of mastication are spared due to bilateral cortical input to motor trigeminal nucleus",
+          "side": "bilateral",
+          "evidence": [
+            { "source": "S5", "quote": "a unilateral cortical lesion does not affect the muscles of mastication; this is because the motor nucleus receives bilateral cortical input" }
+          ]
+        },
+        { "site": "Lateral medullary syndrome (Wallenberg), caudal spinal trigeminal nucleus/tract", "deficit": "Ipsilateral facial sensory loss (pain/temperature), with contralateral body pain/temperature loss from spinothalamic tract involvement",
+          "side": "ipsilateral",
+          "evidence": [
+            { "source": "S11", "quote": "Caudal trigeminal nucleus and tract: Ipsilateral facial sensation abnormalities, primarily involving pain and temperature" }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "unsourced": []
+    },
+    {
+      "id": "spinocerebellar-tracts",
+      "name": "Spinocerebellar tracts (dorsal/posterior spinocerebellar, cuneocerebellar, ventral/anterior spinocerebellar)",
+      "category": "ascending somatosensory / unconscious proprioception to cerebellum",
+      "function": "Relay unconscious proprioceptive information from muscle spindles and Golgi tendon organs of the trunk and limbs to the cerebellum for coordination of posture and movement.",
+      "steps": [
+        {
+          "order": 1, "neuronOrder": 1,
+          "cellBodies": "Dorsal root ganglion (pseudounipolar neurons); axons collateralize to Clarke's nucleus/column (C8–L3) for the trunk and lower limb",
+          "courseVia": ["peripheral nerve", "dorsal root", "collateral to posterior grey horn (Clarke's column, C8–L3)"],
+          "terminatesIn": "Clarke's nucleus (dorsal nucleus of Clarke), C8–L3",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S6", "quote": "The first-order neuron for the dorsal spinocerebellar tract transmits impulses to a specific location in the posterior gray horn known as Clarke’s nucleus. This set of nuclei range from the C8-L3 portions of the spinal cord, collectively referred to as Clarke’s column", "species": "human" }
+          ]
+        },
+        {
+          "order": 2, "neuronOrder": 2,
+          "cellBodies": "Clarke's nucleus/column (dorsal/posterior spinocerebellar tract, trunk & lower limb) or accessory cuneate nucleus in medulla (cuneocerebellar tract, upper limb equivalent)",
+          "courseVia": ["dorsal (posterior) spinocerebellar tract, ipsilateral lateral funiculus", "inferior cerebellar peduncle", "cuneate fasciculus → accessory cuneate nucleus → inferior cerebellar peduncle (cuneocerebellar tract)"],
+          "terminatesIn": "Ipsilateral cerebellar cortex (vermis and paravermis of anterior lobe) as mossy fibers",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S6", "quote": "The DSCT ascends on the ipsilateral side, enters the cerebellum via the inferior peduncle, and terminates as mossy fibers in the cerebellar cortex. Specifically, the information transmits to the vermis and paravermis in the anterior lobe of the cerebellum", "species": "human" },
+            { "source": "S7", "quote": "This tract does not decussate and ascends through the same-side lateral funiculus, and terminates in the ipsilateral cerebellar cortex through the inferior cerebellar peduncle", "species": "human" },
+            { "source": "S7", "quote": "The cuneocerebellar tract has the same function as the posterior spinocerebellar tract, conveying unconscious proprioception from muscles and tendons in the upper extremities", "species": "human" },
+            { "source": "S7", "quote": "This tract passes through the cuneate fasciculus in the posterior funiculus and continues into the same-side accessory cuneate nucleus of the medulla. From the accessory cuneate nucleus, it extends further into the cerebellum via the inferior cerebellar peduncle", "species": "human" }
+          ]
+        },
+        {
+          "order": 3, "neuronOrder": 2,
+          "cellBodies": "Ventral (anterior) spinocerebellar tract neurons (lumbosacral cord)",
+          "courseVia": ["decussation near level of origin", "ascends contralaterally", "superior cerebellar peduncle", "decussates again within the cerebellum"],
+          "terminatesIn": "Ipsilateral cerebellar cortex (double decussation restores ipsilateral termination)",
+          "laterality": "ipsilateral (net; achieved via double decussation)",
+          "decussation": { "present": true, "where": "Decussates once near Clarke's nucleus/level of origin, then decussates again within the cerebellum via the superior cerebellar peduncle" },
+          "neurotransmitter": "",
+          "evidence": [
+            { "source": "S6", "quote": "the DSCT stays ipsilateral throughout the entire tract, while the VSCT decussates twice. The VSCT decussates first at the level of Clarke’s nucleus and rises contralaterally from the input to the brain.", "species": "human" },
+            { "source": "S7", "quote": "The anterior spinocerebellar tract conveys unconscious proprioception to the lower extremities. It originates in the lumbosacral segment and decussates to the opposite side, ascending to enter the superior cerebellar peduncle. Within the cerebellum, it decussates and terminates in the ipsilateral cerebellar cortex", "species": "human" },
+            { "source": "S7", "quote": "This is one of the exceptions among the primitive tracts in which decussation occurs but controls the ipsilateral side", "species": "human" }
+          ]
+        }
+      ],
+      "lesions": [
+        { "site": "Friedreich ataxia (degeneration of spinocerebellar tract, DRG, dorsal column, lateral corticospinal tract)", "deficit": "Ataxia, loss of proprioception, spastic paralysis, loss of deep tendon reflexes",
+          "side": "bilateral",
+          "evidence": [
+            { "source": "S6", "quote": "This disease is characterized by degeneration of the spinocerebellar tract, dorsal root ganglia, dorsal column, and lateral corticospinal tracts" },
+            { "source": "S6", "quote": "Patients typically present with ataxia, loss of proprioception, spastic paralysis, and a loss of deep tendon reflexes" }
+          ]
+        },
+        { "site": "Tabes dorsalis (demyelination of dorsal columns, dorsal roots and dorsal spinocerebellar tract)", "deficit": "Ataxia and sensory loss",
+          "side": "bilateral",
+          "evidence": [
+            { "source": "S6", "quote": "Tabes dorsalis is characterized by slow demyelination of the dorsal columns and the dorsal roots of the spinal cord. Demyelination causes damage to different tracts, such as the dorsal column medial lemniscus pathway, and the dorsal spinocerebellar tract" }
+          ]
+        },
+        { "site": "Vitamin E deficiency (dorsal column and spinocerebellar tract demyelination)", "deficit": "Ataxia and proprioceptive/hematologic abnormalities",
+          "side": "bilateral",
+          "evidence": [
+            { "source": "S6", "quote": "A vitamin E deficiency could lead to hematological and neurological issues such as hemolytic anemia and demyelination of the dorsal column and the spinocerebellar tract" }
+          ]
+        },
+        { "site": "Spinal cord hemisection (Brown-Séquard syndrome), spinocerebellar tracts", "deficit": "Ipsilateral loss of proprioception (dorsal spinocerebellar tract); ventral spinocerebellar tract input is bilateral and less affected by hemisection",
+          "side": "ipsilateral",
+          "evidence": [
+            { "source": "S13", "quote": "Dorsal and ventral spinocerebellar tracts within the lateral region of the spinal cord carry ipsilateral afferents mediating proprioception. Hemisection of the dorsal spinocerebellar tract leads to ipsilateral loss of proprioception, whereas the ventral spinocerebellar tract contains bilateral afferent proprioceptive inputs" }
+          ]
+        },
+        { "site": "Lateral medullary syndrome (Wallenberg), spinocerebellar tract and inferior cerebellar peduncle", "deficit": "Ipsilateral ataxia and lateropulsion",
+          "side": "ipsilateral",
+          "evidence": [
+            { "source": "S11", "quote": "Spinocerebellar tracts and the inferior cerebellar peduncle: Ipsilateral ataxia and lateral pulsion" }
+          ]
+        }
+      ],
+      "conflicts": [
+        { "issue": "Functional content carried by the ventral/anterior spinocerebellar tract (VSCT/ASCT): proprioceptive sensory information vs. motor/efferent-copy information",
+          "positions": [
+            { "claim": "The VSCT relays motor information rather than proprioceptive information, unlike the DSCT", "source": "S6", "quote": "The DSCT has a tract that runs parallel with it: the ventral spinocerebellar tract (VSCT). Instead of relaying proprioceptive information, the VSCT relays motor information" },
+            { "claim": "The anterior spinocerebellar tract conveys unconscious proprioception (to the lower extremities)", "source": "S7", "quote": "The anterior spinocerebellar tract conveys unconscious proprioception to the lower extremities. It originates in the lumbosacral segment and decussates to the opposite side, ascending to enter the superior cerebellar peduncle" },
+            { "claim": "The ventral spinocerebellar tract carries (bilateral) afferent proprioceptive inputs", "source": "S13", "quote": "whereas the ventral spinocerebellar tract contains bilateral afferent proprioceptive inputs" }
+          ]
+        }
+      ],
+      "unsourced": []
+    },
+    {
+      "id": "descending-pain-modulation",
+      "name": "Descending pain modulation (PAG–RVM–dorsal horn and PAG–locus coeruleus pathways)",
+      "category": "descending modulatory / analgesia",
+      "function": "Midbrain and brainstem circuits that inhibit (or facilitate) nociceptive transmission at the dorsal horn, via serotonergic PAG–raphe magnus–enkephalinergic interneuron and noradrenergic PAG–locus coeruleus routes.",
+      "steps": [
+        {
+          "order": 1, "neuronOrder": 1,
+          "cellBodies": "Periaqueductal gray (PAG), midbrain – receives ascending nociceptive input from dorsal horn lamina I, II, V via spinothalamic/spinobulbar pathways",
+          "courseVia": ["ascending spinothalamic and spinobulbar pathways to PAG"],
+          "terminatesIn": "Periaqueductal gray (dorsal, dorsolateral, lateral, ventrolateral columns)",
+          "laterality": "bilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "glutamate (ascending); serotonin, norepinephrine, dopamine, enkephalin, GABA within PAG circuitry",
+          "evidence": [
+            { "source": "S8", "quote": "Initial pain signals ascend through the dorsal horn, specifically through lamina I (superficial dorsal horn), lamina II (substantia gelatinosa), and lamina V (deep dorsal horn)", "species": "human" },
+            { "source": "S8", "quote": "Those signals, via the spinothalamic and spinobulbar pathways, further ascend to the PAG and other structures to be relayed to the non-specific medial thalamus", "species": "human" },
+            { "source": "S8", "quote": "The PAG has two major descending pathways involving the rostral ventromedial medulla (RVMM) and the locus coeruleus (LC)", "species": "human" }
+          ]
+        },
+        {
+          "order": 2, "neuronOrder": 2,
+          "cellBodies": "PAG neurons projecting to raphe nuclei (rostral ventromedial medulla, including nucleus raphe magnus)",
+          "courseVia": ["PAG → raphe nuclei (glutamatergic) → descending raphespinal fibers to dorsal horn"],
+          "terminatesIn": "Dorsal horn – enkephalinergic interneurons that inhibit C-fiber pain afferents",
+          "laterality": "bilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "serotonin (PAG–RVM–dorsal horn pathway); glutamate (PAG→raphe activation); enkephalin (dorsal horn interneurons)",
+          "evidence": [
+            { "source": "S8", "quote": "The serotonergic PAG- RVMM pathway is considered the key endogenous modulator of pain, constituting a primary target for supraspinal opioid analgesia", "species": "human" },
+            { "source": "S8", "quote": "Specifically, the PAG activates the raphe nuclei via glutamate, and the raphe nuclei activate enkephalin neurons, causing inhibitory signals to c-fiber pain afferents", "species": "human" }
+          ]
+        },
+        {
+          "order": 3, "neuronOrder": 2,
+          "cellBodies": "Locus coeruleus (lateral floor of fourth ventricle / upper dorsolateral pons)",
+          "courseVia": ["PAG → locus coeruleus → descending noradrenergic fibers to dorsal horn"],
+          "terminatesIn": "Dorsal horn – presynaptic alpha-2 adrenergic receptors on nociceptive afferents",
+          "laterality": "bilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "norepinephrine",
+          "evidence": [
+            { "source": "S9", "quote": "The locus coeruleus is a nucleus in the lateral floor of the fourth ventricle and upper dorsolateral pons", "species": "human" },
+            { "source": "S9", "quote": "Norepinephrine (noradrenaline) is a neurotransmitter predominantly released from the locus coeruleus", "species": "human" },
+            { "source": "S8", "quote": "The PAG -LC pathway propagates by norepinephrine (NE), exerting an antinociceptive effect in the dorsal horn via the presynaptic alpha-2 receptor", "species": "human" }
+          ]
+        },
+        {
+          "order": 4, "neuronOrder": 3,
+          "cellBodies": "Dorsal horn inhibitory interneurons (enkephalinergic and other opioid/GABA/glycinergic types) activated by A-beta afferents and by descending PAG/RVM input",
+          "courseVia": ["local dorsal horn circuitry"],
+          "terminatesIn": "Presynaptic and postsynaptic inhibition of dorsal horn projection neurons of the anterolateral system",
+          "laterality": "ipsilateral (segmental)",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "endogenous opioids (enkephalin), GABA, glycine",
+          "evidence": [
+            { "source": "S10", "quote": "Local stimulation of A-delta and A-beta also serves to modulate transmission of pain information via excitation of interneurons. These interneurons serve an inhibitory effect on dorsal horn projection neurons which signal to the anterolateral system", "species": "human" },
+            { "source": "S10", "quote": "The ascending information may also prompt neurons of the rostral ventral medulla and midbrain periaqueductal gray to engage descending feedback systems that regulate the output from the spinal cord, and thus modulate pain sensation", "species": "human" },
+            { "source": "S10", "quote": "This occurs via the release of hormones and chemicals (e.g., endogenous opioids, GABA, glycine) that can have analgesic properties to limit pain sensation", "species": "human" }
+          ]
+        }
+      ],
+      "lesions": [
+        { "site": "Periaqueductal gray – clinical/experimental stimulation and dysfunction (not a classic named eponymous syndrome)", "deficit": "Stimulation of PAG reduces anesthetic/analgesic requirement (antinociception); reduced PAG activation is associated with chronic pain states such as low back pain and complex regional pain syndrome",
+          "side": "bilateral",
+          "evidence": [
+            { "source": "S8", "quote": "Initial recognition of this structure stemmed from the observation that stimulation of the PAG before surgery resulted in decreased anesthetic requirements" },
+            { "source": "S8", "quote": "lower activation of the PAG in chronic pain states, such as lower back pain and complex regional pain syndrome, as well as distractions from pain with upregulation of the PAG" }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "unsourced": [
+        "No classic eponymous lesion–deficit correlation (comparable to Brown-Séquard, syringomyelia, lateral medullary syndrome, or tabes dorsalis for the other pathways) for isolated damage to the PAG–RVM or PAG–locus coeruleus descending pain-modulation pathways was found in the texts opened this session; the clinical correlations located concern chronic pain states and deep-brain-stimulation/analgesia research rather than a discrete stroke or trauma syndrome.",
+          "GABAergic and glycinergic interneurons in the substantia gelatinosa mediate presynaptic and postsynaptic inhibition of nociceptive afferents as part of the gate-control mechanism; a fully explicit sourced quote naming GABA/glycine acting presynaptically at the primary afferent terminal (rather than just listed among analgesic chemicals) was not located in the texts opened this session."
+      ]
+    }
+  ]
+}

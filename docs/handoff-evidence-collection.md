@@ -52,6 +52,11 @@
 - **형태계측은 목적 미달**: 뇌신경핵 크기는 공개 전문에서 못 찾음(`notFound` 29개). 유료 문헌·단행본 영역 → 성연의 도서관 접근 또는 JKMS 2023 뇌줄기 단면 논문 저자 문의(`docs/handover-seongyeon/` 참고)가 더 현실적.
 - 에이전트가 600초 무응답으로 죽는 일이 2번 있었음 → 프롬프트에 "경로 하나 끝날 때마다 파일을 다시 써라"를 넣을 것. 죽으면 SendMessage로 같은 에이전트를 재개하면 읽은 내용을 유지한 채 이어감.
 - 검증 스크립트는 Python 3.10+ 필요: `pipeline/.venv/bin/python docs/data/pathway-evidence/verify_quotes.py <파일>`
+
+2026-09-22 추가:
+- 사용자가 대학 도서관 계정으로 유료 문헌을 직접 받아 주기로 함. **받을 문헌 목록은 `docs/data/pathway-evidence/wanted/WANTED.md`** (책 11권·논문 75편, 그중 받을 논문 56편, 1순위 구분 있음). 후보 조사는 서브에이전트(`wanted/*.json`), DOI·ISBN 실재 확인은 `wanted/verify_wanted.py`(`*.report.json`). 전문 내용은 아직 아무것도 확인하지 않음(`checked: false`).
+- 받은 PDF는 `~/Downloads/atlas-refs/`에 들어옴 → 다음 할 일: 각 PDF에서 우리 주장에 대한 8~45단어 인용을 뽑아(에이전트가 PDF를 읽고 추출, 메인이 `verify_quotes.py`류로 원문 대조 — PDF는 로컬 파일이므로 대조 스크립트를 로컬 텍스트 기준으로 확장해야 함) StatPearls 근거를 교체하고 REVIEW.md 갱신.
+- 2026-09-23: 무료 전문 19편에서 인용 104개 추출·검증 완료(`upgrade-*.json`, REVIEW.md "upgrade-*" 절). NOT_FOUND 0. 해결: 코르티솔 생성층 모순(다발층 확정), Guillain–Mollaret 삼각, 얼굴 겉질숨뇌로 고리 주행, 편도→PAG. 새 충돌 4건은 REVIEW.md ❓ 목록. **기존 배치 파일에는 아직 통합하지 않음** — 성연 검수와 함께 `content/pathways.json` 반영 시 같이 할 것. 사용자 몫은 `wanted/WANTED.md` "0. 최소 세트"(책 4권 + 논문 7편)로 축소.
 <!-- STATUS:END -->
 
 ## 아직 수집하지 않은 주제 (우선순위 순)

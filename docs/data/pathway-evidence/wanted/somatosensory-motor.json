@@ -1,0 +1,416 @@
+{
+  "batches": [
+    {
+      "batch": "somatosensory",
+      "pathways": [
+        {
+          "id": "dcml-pathway",
+          "weakness": "핵심 사슬이 StatPearls 2개(S1,S2)와 국내 학술지 리뷰 1개(S7, PMC10567534, B+)로만 받쳐지고 A급 문헌이 없음; 시냅스 신경전달물질(글루탐산) 등은 무출처로 남아 있음.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Proske U, Gandevia SC. The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force. Physiol Rev. 2012;92(4):1651-1697.",
+              "doi": "10.1152/physrev.00048.2011",
+              "crossrefTitle": "The Proprioceptive Senses: Their Roles in Signaling Body Shape, Body Position and Movement, and Muscle Force",
+              "oa": "N",
+              "why": "DCML이 전달하는 고유감각·진동감각의 수용기(근방추·관절)와 1차/2차 구심로 생리를 다루는 표준 리뷰로, StatPearls에 없는 신경전달물질·수용기 기전 보강용.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Willis WD, Coggeshall RE. Sensory Mechanisms of the Spinal Cord, Vol. 2: Ascending Sensory Tracts and Their Descending Control, 3rd ed. Springer US; 2004.",
+              "isbn": "9781461348931",
+              "publisher": "Springer",
+              "chapter": "후주-내측섬유띠 경로(dorsal column-medial lemniscus system) 해부 서술 장 — 도서관에서 목차 확인 필요",
+              "oa": "N",
+              "why": "척수 상행감각로 해부의 표준 전거(Willis 저)로, 널판/쐐기다발 경계 분절(T6 vs T7 논쟁) 및 내측섬유띠 교차 위치를 재확인하는 용도.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011.",
+              "isbn": "9781416047056",
+              "publisher": "Elsevier",
+              "chapter": "Spinal Cord and Nerve Roots (pp.117-147)",
+              "oa": "N",
+              "why": "표준 교과서 장으로 DCML 경로의 뉴런 차수·교차 위치·VPL 종착을 교차 확인.",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "anterolateral-system-spinothalamic-tract",
+          "weakness": "StatPearls만으로 뒷받침되고(S3,S4,S7,S8,S11,S13,S14), 교차 전 분절 수 충돌(S3 'two segments' vs S4 '1 to 3 levels')과 1차/2차 뉴런 서술 오류 소지가 있어 A급 문헌으로 바로잡을 필요.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Willis WD, Westlund KN. Neuroanatomy of the Pain System and of the Pathways That Modulate Pain. J Clin Neurophysiol. 1997;14(1):2-31.",
+              "doi": "10.1097/00004691-199701000-00002",
+              "crossrefTitle": "Neuroanatomy of the Pain System and of the Pathways That Modulate Pain",
+              "oa": "N",
+              "pmcid": "PMC7859971",
+              "why": "고전적 표준 리뷰(피인용 500+)로 척수시상로의 앞백색맞교차 교차 위치·라미나 구성·척수그물시상로 등을 재검증해 StatPearls 간 충돌을 정리할 근거.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Craig AD. Pain Mechanisms: Labeled Lines Versus Convergence in Central Processing. Annu Rev Neurosci. 2003;26:1-30.",
+              "doi": "10.1146/annurev.neuro.26.041002.131022",
+              "crossrefTitle": "Pain Mechanisms: Labeled Lines Versus Convergence in Central Processing",
+              "oa": "N",
+              "why": "라미나 I 특이 투사 등 최신 척수시상로 이해를 다루는 표준 리뷰로, StatPearls의 단순화된 서술을 최신 근거로 교체.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Willis WD, Coggeshall RE. Sensory Mechanisms of the Spinal Cord, Vol. 2: Ascending Sensory Tracts and Their Descending Control, 3rd ed. Springer US; 2004.",
+              "isbn": "9781461348931",
+              "publisher": "Springer",
+              "chapter": "척수시상로(spinothalamic tract) 해부 및 교차 장 — 목차 확인 필요",
+              "oa": "N",
+              "why": "1차 구심섬유의 Lissauer로 주행과 2차 뉴런의 앞백색맞교차 교차를 정확히 구분해 수집자가 지적한 서술 오류를 바로잡을 표준 전거.",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "trigeminal-somatosensory-pathways",
+          "weakness": "인용 10개 전부가 StatPearls 한 장(S5, NBK539823)에서만 나옴 — 단일 출처 의존.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Dubner R, Bennett GJ. Spinal and Trigeminal Mechanisms of Nociception. Annu Rev Neurosci. 1983;6:381-418.",
+              "doi": "10.1146/annurev.ne.06.030183.002121",
+              "crossrefTitle": "Spinal and Trigeminal Mechanisms of Nociception",
+              "oa": "N",
+              "why": "고전적 표준 리뷰(피인용 400+)로 삼차신경척수핵 pars caudalis/interpolaris/oralis의 체성국소 구성과 통증 경로를 독립적으로 뒷받침.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Sessle BJ. Acute and Chronic Craniofacial Pain: Brainstem Mechanisms of Nociceptive Transmission and Neuroplasticity, and Their Clinical Correlates. Crit Rev Oral Biol Med. 2000;11(1):57-91.",
+              "doi": "10.1177/10454411000110010401",
+              "crossrefTitle": "Acute and Chronic Craniofacial Pain: Brainstem Mechanisms of Nociceptive Transmission and Neuroplasticity, and Their Clinical Correlates",
+              "oa": "N",
+              "why": "삼차신경 뇌줄기 핵의 통증·온도 전달 기전에 특화된 고피인용 리뷰(피인용 450+)로 S5 StatPearls의 단일 출처 문제를 보강.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011.",
+              "isbn": "9781416047056",
+              "publisher": "Elsevier",
+              "chapter": "Cranial Nerves (pp.185-208)",
+              "oa": "N",
+              "why": "주감각핵/척수삼차신경핵/중뇌핵 3분류와 VPM 종착을 표준 교과서로 재확인.",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "spinocerebellar-tracts",
+          "weakness": "StatPearls(S6)와 국내 리뷰(S7)만으로 뒷받침되며, 배쪽척수소뇌로가 운동 정보인지 고유감각 정보인지에 대한 충돌이 있음.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Bosco G, Poppele RE. Proprioception From a Spinocerebellar Perspective. Physiol Rev. 2001;81(2):539-568.",
+              "doi": "10.1152/physrev.2001.81.2.539",
+              "crossrefTitle": "Proprioception From a Spinocerebellar Perspective",
+              "oa": "N",
+              "why": "배쪽/등쪽 척수소뇌로가 전달하는 정보(고유감각 vs 원심성 사본)에 대한 고전적 생리학 리뷰로 수집자가 기록한 충돌(운동 정보 vs 고유감각)을 직접 다룸.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011.",
+              "isbn": "9781416047056",
+              "publisher": "Elsevier",
+              "chapter": "Cerebellum (pp.229-244)",
+              "oa": "N",
+              "why": "등쪽/배쪽 척수소뇌로, 쐐기소뇌로의 이중 교차 구조를 표준 교과서로 재확인.",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "descending-pain-modulation",
+          "weakness": "StatPearls 3개 장(S8,S9,S10)뿐이고 A급 근거 없음 — 이 주제는 Basbaum & Fields, Ossipov 등 고전·표준 리뷰가 풍부하므로 교체 가능.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Basbaum AI, Fields HL. Endogenous Pain Control Systems: Brainstem Spinal Pathways and Endorphin Circuitry. Annu Rev Neurosci. 1984;7:309-338.",
+              "doi": "10.1146/annurev.ne.07.030184.001521",
+              "crossrefTitle": "Endogenous Pain Control Systems: Brainstem Spinal Pathways and Endorphin Circuitry",
+              "oa": "N",
+              "why": "PAG-RVM(raphe magnus)-척수 하행 통증억제 사슬 개념을 처음 정립한 고전 리뷰(피인용 1800+)로 현재 S8 StatPearls 단독 근거를 대체.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Ossipov MH, Dussor GO, Porreca F. Central modulation of pain. J Clin Invest. 2010;120(11):3779-3787.",
+              "doi": "10.1172/jci43766",
+              "crossrefTitle": "Central modulation of pain",
+              "oa": "N",
+              "pmcid": "PMC2964993",
+              "why": "PAG-RVM 및 PAG-청색반점(노르에피네프린) 경로의 최신 통합 리뷰로, 하행 촉진/억제 이중 기능까지 다뤄 근거 보강.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Heinricher MM, Tavares I, Leith JL, Lumb BM. Descending control of nociception: Specificity, recruitment and plasticity. Brain Res Rev. 2009;60(1):214-225.",
+              "doi": "10.1016/j.brainresrev.2008.12.009",
+              "crossrefTitle": "Descending control of nociception: Specificity, recruitment and plasticity",
+              "oa": "N",
+              "pmcid": "PMC2894733",
+              "why": "RVM on-cell/off-cell 개념 등 PAG-RVM-척수 회로의 세포 수준 기전을 다뤄 뒷등뿔 억제성 사이신경세포(엔케팔린/GABA/글라이신) 무출처 항목 보강에 사용 가능.",
+              "checked": false
+            }
+          ]
+        }
+      ],
+      "notes": "WebSearch 미사용(0/3, Crossref bibliographic 검색과 Europe PMC PUB_TYPE:review 검색만 사용). DCML·척수시상로는 Willis & Coggeshall의 2권짜리 단행본(Sensory Mechanisms of the Spinal Cord Vol.2, Springer)을 반복 제안했으나, 어느 장이 정확히 DCML/척수시상로를 다루는지는 목차를 직접 확인하지 못해 '도서관에서 목차 확인 필요'로 표시함. spinocerebellar-tracts는 A급 저널 후보를 Bosco & Poppele 2001 1편만 찾았고(2~4개 규칙의 하한), Clarke's column/DSCT에 특화된 더 최근 리뷰는 찾지 못함."
+    },
+    {
+      "batch": "motor",
+      "pathways": [
+        {
+          "id": "corticospinal-tracts",
+          "weakness": "핵심 사슬이 StatPearls만으로 뒷받침(S1,S5,S13)되고, 피라미드교차 비율 충돌('>90%' S1 vs '70-80%' S13)이 있으며 A급 문헌이 없음.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Lemon RN. Descending Pathways in Motor Control. Annu Rev Neurosci. 2008;31:195-218.",
+              "doi": "10.1146/annurev.neuro.31.060407.125547",
+              "crossrefTitle": "Descending Pathways in Motor Control",
+              "oa": "N",
+              "why": "브리프 지정 목표 문헌. 피질척수로를 포함한 모든 하행 운동경로를 종·기능별로 정리한 표준 리뷰(피인용 1200+)로 교차 비율 등 세부 수치의 최신 근거로 사용.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Lawrence DG, Kuypers HGJM. The functional organization of the motor system in the monkey. I. The effects of bilateral pyramidal lesions. Brain. 1968;91(1):1-14.",
+              "doi": "10.1093/brain/91.1.1",
+              "crossrefTitle": "THE FUNCTIONAL ORGANIZATION OF THE MOTOR SYSTEM IN THE MONKEY",
+              "oa": "N",
+              "why": "피질척수로가 원위부 사지 정교운동(직접 코르티코운동신경세포 연결)에 필수적이라는 고전적 병변 연구(피인용 800+)로, 외측/앞피질척수로의 기능 분리를 뒷받침.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011.",
+              "isbn": "9781416047056",
+              "publisher": "Elsevier",
+              "chapter": "Brain Stem (pp.157-184)",
+              "oa": "N",
+              "why": "피라미드교차 위치와 외측/앞피질척수로의 분리를 표준 교과서로 재확인.",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "corticobulbar-tract",
+          "weakness": "StatPearls 2개 장(S2,S5)만으로 뒷받침됨; 삼차신경운동핵·의문핵의 양측 지배 주장은 무출처.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Jenny AB, Saper CB. Organization of the facial nucleus and corticofacial projection in the monkey: a reconsideration of the upper motor neuron facial palsy. Neurology. 1987;37(6):930-939.",
+              "doi": "10.1212/wnl.37.6.930",
+              "crossrefTitle": "Organization of the facial nucleus and corticofacial projection in the monkey: a reconsideration of the upper motor neuron facial palsy",
+              "oa": "N",
+              "why": "얼굴신경핵 등쪽(상안면, 양측 지배)/배쪽(하안면, 반대쪽 지배) 구분의 원저 해부 연구로, StatPearls의 '상안면 양측·하안면 반대쪽' 주장을 직접 뒷받침.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Kanbayashi T, Sonoo M. The course of facial corticobulbar tract fibers in the dorsolateral medulla oblongata. BMC Neurol. 2021;21:214.",
+              "doi": "10.1186/s12883-021-02247-z",
+              "crossrefTitle": "The course of facial corticobulbar tract fibers in the dorsolateral medulla oblongata",
+              "oa": "Y",
+              "pmcid": "PMC8165998",
+              "why": "최근 병변-증상 매핑 연구로 안면 피질핵로 섬유의 뇌줄기 내 주행 경로를 재확인 — 오픈액세스.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011.",
+              "isbn": "9781416047056",
+              "publisher": "Elsevier",
+              "chapter": "Cranial Nerves (pp.185-208)",
+              "oa": "N",
+              "why": "삼차신경·얼굴신경·혀밑신경 운동핵에 대한 피질핵로 양측/편측 지배 패턴을 표준 교과서로 재확인.",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "basal-ganglia-circuits",
+          "weakness": "hyperdirect 경로 근거가 가설 모델 논문(S15, Tremor Other Hyperkinet Mov 2026, 피인용 0)뿐이라 해부학적 사실의 1차 근거로 부적합 — Nambu 2002 등 hyperdirect 개념 원저로 교체 필요. direct/indirect 경로도 고전 근거가 없음.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Nambu A, Tokuno H, Takada M. Functional significance of the cortico-subthalamo-pallidal 'hyperdirect' pathway. Neurosci Res. 2002;43(2):111-117.",
+              "doi": "10.1016/s0168-0102(02)00027-5",
+              "crossrefTitle": "Functional significance of the cortico–subthalamo–pallidal 'hyperdirect' pathway",
+              "oa": "N",
+              "why": "브리프 지정 목표 문헌. hyperdirect 경로(피질→시상밑핵 직접 투사) 개념을 정립한 원저 리뷰로 S15 가설 모델 논문을 대체.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "DeLong MR. Primate models of movement disorders of basal ganglia origin. Trends Neurosci. 1990;13(7):281-285.",
+              "doi": "10.1016/0166-2236(90)90110-v",
+              "crossrefTitle": "Primate models of movement disorders of basal ganglia origin",
+              "oa": "N",
+              "why": "직접/간접 경로 모델과 파킨슨병·무도병·반측무도병의 회로 설명을 정립한 고전 리뷰(피인용 2600+)로 direct/indirect pathway 서술의 표준 근거.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Alexander GE, Crutcher MD. Functional architecture of basal ganglia circuits: neural substrates of parallel processing. Trends Neurosci. 1990;13(7):266-271.",
+              "doi": "10.1016/0166-2236(90)90107-l",
+              "crossrefTitle": "Functional architecture of basal ganglia circuits: neural substrates of parallel processing",
+              "oa": "N",
+              "why": "피질-선조체-창백핵-시상-피질 루프의 병렬 처리 모델을 정립한 고전 리뷰(피인용 2600+)로 직접/간접 경로의 신경전달물질·핵 연결을 재확인.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011.",
+              "isbn": "9781416047056",
+              "publisher": "Elsevier",
+              "chapter": "Basal Ganglia (pp.247-260)",
+              "oa": "N",
+              "why": "선조체-창백핵-시상밑핵 연결과 D1/D2 수용체 발현 뉴런 구분을 표준 교과서로 재확인.",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "cerebellar-circuits",
+          "weakness": "Guillain–Mollaret 삼각(치아-적색-하올리브 경로)의 근거가 증례 보고 1건(S17, 2026)의 서론뿐 — 비대올리브변성 리뷰로 교체 필요. 소뇌다리·위소뇌다리 교차 서술도 질병 논문의 배경 설명(S16, MDPI, 피인용 0)에서 가져옴.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Wang H, Wang Y, Wang R, Li Y, Wang P, Li J, Du J. Hypertrophic olivary degeneration: A comprehensive review focusing on etiology. Brain Res. 2019;1718:53-63.",
+              "doi": "10.1016/j.brainres.2019.04.024",
+              "crossrefTitle": "Hypertrophic olivary degeneration: A comprehensive review focusing on etiology",
+              "oa": "N",
+              "why": "Guillain–Mollaret 삼각(치아핵-적색핵-하올리브핵) 손상에 따른 비대올리브변성을 종합적으로 다룬 리뷰(피인용 50+)로 S17 증례보고 단독 근거를 대체.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Tilikete C, Desestret V. Hypertrophic Olivary Degeneration and Palatal or Oculopalatal Tremor. Front Neurol. 2017;8:302.",
+              "doi": "10.3389/fneur.2017.00302",
+              "crossrefTitle": "Hypertrophic Olivary Degeneration and Palatal or Oculopalatal Tremor",
+              "oa": "Y",
+              "pmcid": "PMC5490180",
+              "why": "치아-적색-올리브 회로 손상과 구개/안구구개 진전의 임상-해부 상관관계를 다룬 고피인용 리뷰(피인용 75+, 오픈액세스)로 Guillain-Mollaret 삼각 병변의 임상 근거 보강.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Manto M, Bower JM, Conforto AB, et al. Consensus Paper: Roles of the Cerebellum in Motor Control—The Diversity of Ideas on Cerebellar Involvement in Movement. Cerebellum. 2012;11(2):457-487.",
+              "doi": "10.1007/s12311-011-0331-9",
+              "crossrefTitle": "Consensus Paper: Roles of the Cerebellum in Motor Control—The Diversity of Ideas on Cerebellar Involvement in Movement",
+              "oa": "N",
+              "pmcid": "PMC4347949",
+              "why": "치아핵·중간핵·꼭지핵의 출력 경로와 소뇌-대뇌 루프에 대한 다학제 합의 리뷰(피인용 700+)로 S16 MDPI 질병 논문의 배경 서술을 대체할 일반 소뇌 회로 근거.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011.",
+              "isbn": "9781416047056",
+              "publisher": "Elsevier",
+              "chapter": "Cerebellum (pp.229-244)",
+              "oa": "N",
+              "why": "소뇌 다리 3종(상/중/하)의 섬유 구성과 교차 위치를 표준 교과서로 재확인.",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "extrapyramidal-descending-tracts",
+          "weakness": "StatPearls 2개 장(S7,S9)만으로 뒷받침되고 A급 문헌이 없음.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Baker SN. The primate reticulospinal tract, hand function and functional recovery. J Physiol. 2011;589(23):5603-5612.",
+              "doi": "10.1113/jphysiol.2011.215160",
+              "crossrefTitle": "The primate reticulospinal tract, hand function and functional recovery",
+              "oa": "Y",
+              "pmcid": "PMC3249036",
+              "why": "영장류 그물척수로의 기능과 손 운동에 대한 표준 리뷰(피인용 300+, 오픈액세스)로 망상척수로 서술을 사람/영장류 데이터로 보강.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Fukushima K, Peterson BW, Wilson VJ. Vestibulospinal, Reticulospinal and Interstitiospinal Pathways in the Cat. Prog Brain Res. 1979;50:121-136.",
+              "doi": "10.1016/s0079-6123(08)60813-4",
+              "crossrefTitle": "Vestibulospinal, Reticulospinal and Interstitiospinal Pathways in the Cat",
+              "oa": "unknown",
+              "why": "안뜰척수로·그물척수로의 기원핵과 교차/비교차 주행을 정리한 고전 신경생리 연구(피인용 50+)지만 고양이 모델이므로 사람 해부에는 종 차이 유의해 사용.",
+              "checked": false
+            },
+            {
+              "kind": "article",
+              "citation": "Lemon RN. Descending Pathways in Motor Control. Annu Rev Neurosci. 2008;31:195-218.",
+              "doi": "10.1146/annurev.neuro.31.060407.125547",
+              "crossrefTitle": "Descending Pathways in Motor Control",
+              "oa": "N",
+              "why": "적색척수로·그물척수로·안뜰척수로·덮개척수로를 포함한 모든 하행 운동경로를 종간 비교로 정리한 표준 리뷰 — corticospinal-tracts 항목과 후보 중복이지만 이 경로군 전체를 뒷받침하는 근거로도 유효.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011.",
+              "isbn": "9781416047056",
+              "publisher": "Elsevier",
+              "chapter": "Brain Stem (pp.157-184)",
+              "oa": "N",
+              "why": "적색핵·안뜰핵·그물체·위둔덕에서 기원하는 4개 경로의 교차 위치와 종착 라미나를 표준 교과서로 재확인.",
+              "checked": false
+            }
+          ]
+        },
+        {
+          "id": "spinal-reflex-arcs",
+          "weakness": "StatPearls 3개 장(S8,S10,S11)과 측정법 논문(S14, 반사 감시 체계적 고찰)만으로 뒷받침됨; 교차폄반사(crossed extensor reflex)는 무출처.",
+          "candidates": [
+            {
+              "kind": "article",
+              "citation": "Jankowska E. Interneuronal relay in spinal pathways from proprioceptors. Prog Neurobiol. 1992;38(4):335-378.",
+              "doi": "10.1016/0301-0082(92)90024-9",
+              "crossrefTitle": "Interneuronal relay in spinal pathways from proprioceptors",
+              "oa": "N",
+              "why": "Ia 억제성 사이신경세포에 의한 상반억제, Ib 개재신경세포 등 척수 반사궁의 사이신경세포 회로를 정리한 고전 리뷰(피인용 600+)로 무출처 항목 보강.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Pierrot-Deseilligny E, Burke D. The Circuitry of the Human Spinal Cord: Its Role in Motor Control and Movement Disorders, 2nd ed. Cambridge University Press; 2012.",
+              "isbn": "9780521192583",
+              "publisher": "Cambridge University Press",
+              "chapter": "척수 반사궁(신장반사·역신장반사·굽힘반사) 회로 관련 장",
+              "oa": "N",
+              "why": "사람 척수 반사궁 연구의 표준 단행본(피인용 200~400+)으로 교차폄반사를 포함한 다중분절 반사 회로를 사람 데이터로 뒷받침. 브리프가 예시로 든 4개 출판사(Springer/Elsevier/Wolters Kluwer/Oxford)에는 속하지 않으나 이 주제의 표준 전거라 포함.",
+              "checked": false
+            },
+            {
+              "kind": "book",
+              "citation": "Mtui E, Gruener G, Dockery P. Gray's Clinical Neuroanatomy: The Anatomic Basis for Clinical Neuroscience. Elsevier; 2011.",
+              "isbn": "9781416047056",
+              "publisher": "Elsevier",
+              "chapter": "Spinal Cord and Nerve Roots (pp.117-147)",
+              "oa": "N",
+              "why": "신장반사·역신장반사의 척수 분절 및 상반신경지배 회로를 표준 교과서로 재확인.",
+              "checked": false
+            }
+          ]
+        }
+      ],
+      "notes": "WebSearch 미사용(0/3, Crossref bibliographic 검색과 Europe PMC PUB_TYPE:review 검색만 사용). Guillain-Mollaret 삼각(HOD) 대체 후보 2편(Wang 2019, Tilikete 2017 OA) 확인 — S17 증례보고 대체 가능. hyperdirect 경로는 Nambu 2002 원저(Neurosci Res)로 S15 대체 가능, Lemon 2008(Annu Rev Neurosci)도 확인됨. corticobulbar·extrapyramidal은 최근 종설이 상대적으로 적어 고전 원저(Jenny & Saper 1987; Fukushima et al. 1979, 고양이 모델)로 보강 — Fukushima 1979는 Europe PMC에 DOI로 색인되어 있지 않아 oa: unknown으로 표기. Pierrot-Deseilligny & Burke 단행본은 Cambridge University Press로, 브리프가 예시로 든 4개 출판사에는 속하지 않지만 척수 반사궁의 표준 전거라 포함함(도서관 접근성은 성연 확인 필요)."
+    }
+  ]
+}
