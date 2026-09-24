@@ -1,0 +1,163 @@
+{
+ "batch": "upgrade-lib-sah2003",
+ "file": "upgrade-lib-sah2003.json",
+ "tally": {
+  "exact": 18,
+  "UNKNOWN_SOURCE_ID": 1
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "The Amygdaloid Complex: Anatomy and Physiology",
+    "journal": "Physiological Reviews 83(3): 803-834",
+    "year": 2003,
+    "pmcid": "",
+    "nbk": "",
+    "doi": "10.1152/physrev.00002.2003",
+    "license": "not stated (library copy)",
+    "type": "review"
+   },
+   "check": {
+    "note": "local PDF",
+    "file": "/Users/lim/Downloads/atlas-refs/sah-et-al-2003-the-amygdaloid-complex-anatomy-and-physiology.pdf",
+    "chars": 169876
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Subcortical acoustic inputs arise from the thalamic medial geniculate nucleus and target the same areas of the LA"
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Most cortical projections originate in association areas and transmit processed information by a series of cortico-cortical connections originating in the primary sensory cortex"
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The majority are ipsilateral and enter the amygdala via the external capsule"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The LA sends extensive projections to the basal and accessory basal nuclei and the capsular part of the central nucleus"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Most projections to and from the LA make asymmetrical synapses, indicating they are excitatory"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Inputs to the basolateral complex use glutamate as the transmitter and activate synapses expressing both AMPA and NMDA receptors"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Long-term synaptic plasticity, involving activation of glutamate receptors within the LA, has been proposed as the mechanism underlying the acquisition and storage of fear conditioning"
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The largest projection from basal nuclei is to the medial subdivision of the central nucleus"
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These afferents form asymmetric synapses with spines and dendrites in the central nucleus and are therefore thought to be glutamatergic"
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "act as feed-forward interneurons to cells in the CeA, leading to the generation of a disynaptic inhibitory synaptic potential in these neurons following stimulation in the basolateral complex"
+  },
+  {
+   "path": "pathways[0].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Activation of the central nucleus induces this autonomic response by stimulating groups of neurons in the brain stem that control the autonomic system, or alternatively by stimulating hypothalamic nuclei that modulate these centers"
+  },
+  {
+   "path": "pathways[0].steps[4].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Projections to the brain stem are to three main areas: the periaqueductal gray, which leads to vocalization, startle, analgesia and cardiovascular changes"
+  },
+  {
+   "path": "pathways[0].steps[4].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Large numbers of neurons in the medial subdivision of the central nucleus and medial nucleus are GABAergic, and these projections from the central nucleus have been suggested to be inhibitory"
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the medial subdivision of the central nucleus has substantial projections to the hypothalamus, bed nucleus of the stria terminalis"
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In addition to these direct projections to the hypothalamus, the CeA has a strong projection to the BNST, which also innervates hypothalamic nuclei."
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Monkeys with temporal lobe lesions exhibited an absence of anger and fear, increased exploration, visual agnosia, hyperorality, hypersexualtity, and loss of social interactions."
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Subsequent work has shown that lesions restricted to the amygdala produced many of these effects including a loss of fear and anger, increased exploration, and hyperorality"
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[0]",
+   "source": "S6 (original limbic-arousal-autonomic.json batch; not reopened by this sub-agent this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Kluver-Bucy syndrome (KBS) is a rare neuropsychiatric condition caused by the abrasions which disturbs the hippocampus, bilateral temporal lobes of amygdala. The pathological characteristics are hyperorality, hypersexuality, hyper-metamorphosis, placidity, bulimia, visual agnosia and amnesia."
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Monkeys with temporal lobe lesions exhibited an absence of anger and fear, increased exploration, visual agnosia, hyperorality, hypersexualtity, and loss of social interactions."
+  }
+ ]
+}

@@ -1,0 +1,702 @@
+{
+ "batch": "upgrade-lib-nieuwenhuys-brainstem",
+ "file": "upgrade-lib-nieuwenhuys-brainstem.json",
+ "tally": {
+  "exact": 85,
+  "UNKNOWN_SOURCE_ID": 11
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "The Human Central Nervous System",
+    "journal": "Springer (4th ed.)",
+    "year": 2008,
+    "pmcid": null,
+    "nbk": null,
+    "doi": null,
+    "license": "not stated (library copy)",
+    "type": "textbook"
+   },
+   "check": {
+    "note": "local PDF",
+    "file": "/Users/lim/Downloads/atlas-refs/nieuwenhuys-2008-human-cns.pdf",
+    "chars": 2821910
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Within the optic chiasm a partial decussation takes place: fibres from the nasal halves of the retinae, including the projection of the monocular visual field, cross to the opposite side; those from the temporal halves of the retinas remain uncrossed"
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Axons of retinal ganglion cells, which pass via the optic nerve and tract to the pretectal region, particularly the olivary pretectal nucleus"
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Melanopsin-containing ganglion cells are responsible for the retained pupillary light reflex and circadian responses in transgenic mice, lacking both rod and cone photoreceptors"
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Axons of neurons of the olivary pretectal nucleus project to the Edinger-Westphal nuclei of both sides. Their fibres decussate in the posterior commissure"
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The pretectal efferents to the ipsilateral accessory oculomotor nucleus provide for the direct pupillary light reflex, those to the contralateral nucleus for the consensual pupillary light reflex."
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Axons of the parasympathetic preganglionic neurons of the accessory oculomotor nuclei, which pass with the oculomotor nerves to the ciliary ganglia. Here they synapse with postganglionic neurons."
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Postganglionic neurons whose axons innervate the sphincter pupillae muscle of the iris."
+  },
+  {
+   "path": "pathways[0].lesions[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The neural pathway for this convergence-induced pupillary constriction is believed to be independent of that for light-induced pupillary constriction, since the two reflexes are dissociated in the clinical phenomenon, known as the Argyll Robertson sign."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The first-order elements are bipolar neurons, the somata of which constitute the vestibular ganglion, located in the internal auditory meatus."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The central processes of the bipolar cells constitute the vestibular part of the eighth cranial nerve, which enters the brain stem at the level of the pontomedullary junction."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A lateral rotation of the head excites the ipsilateral horizontal canal by a displacement of the endolymphe in the direction of the ampulla."
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This reflex stabilizes the retinal image by producing compensatory conjugate eye movements for head movements perceived by the labyrinths."
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Horizontal canal fibres terminate on two groups of excitatory neurons located in the MVmc, projecting to the contralateral abducens nucleus and the ipsilateral medial rectus pool of motoneurons in the nucleus of the oculomotor nerve"
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The excitatory pathway to the ipsilateral medial rectus motoneurons ascends in the ascending tract of Deiters, located in the lateral wing of the MLF"
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It is duplicated by an internuclear pathway, which arises from the contralateral abducens nucleus, and then recrosses to ascend in the MLF."
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The corresponding inhibitory pathway takes its origin from the MVmc and terminates in the ipsilateral abducens nucleus."
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This inhibitory pathway, like some of the inhibitory vestibulospinal pathways, uses glycine as a neurotransmitter; the ascending inhibitory pathways to the fourth and third nuclei are GABAergic"
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral vestibulospinal tract takes its origin from the lateral vestibular nucleus."
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[0]",
+   "source": "brainstem-reflexes.json#S5/S7",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Activation of the superior and medial vestibular nuclei during head rotation generates impulses that cross to the contralateral abducens nucleus"
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Horizontal canal fibres terminate on two groups of excitatory neurons located in the MVmc, projecting to the contralateral abducens nucleus and the ipsilateral medial rectus pool of motoneurons in the nucleus of the oculomotor nerve"
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Of the gaze centres, the riMLF is innervated by both subdivisions of the frontal eye field and the supplementary eye field."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "For horizontal eye movements these cells are located in the medial part of the nucleus reticularis pontis caudalis, in the so-called pontine paramedian reticular formation (PPRF), rostral to the abducens nucleus."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "EBC’s project to the ipsilateral abducens nucleus; the projection of the IBS’s is crossed."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The medial rectus muscle is innervated by the oculomotor nerve. Its motoneurons receive their excitatory input through an internuclear pathway, originating from interneurons in the abducens nucleus"
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Short lead burst neurons for motoneurons of the oculomotor and trochlear nerves lie in the rostral interstitial nucleus of the medial longitudinal fascicle (riMLF)."
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The riMLF is a wing-shaped nucleus located dorsal to the rostral pole of the red nucleus and rostral to the interstitial nucleus of Cajal."
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The projection of the riMLF to the motoneurons of the oculomotor and trochlear nerve nuclei is mainly ipsilateral."
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Recently, inhibitory neurons with projections to the contralateral inferior rectus and inferior oblique motor pools have been located to the interstitial nucleus of Cajal"
+  },
+  {
+   "path": "pathways[2].lesions[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Clinicopathological evidence indicates that Parinaud’s syndrome (vertical gaze paralysis) results from damage to the riMLF or its efferent fibres"
+  },
+  {
+   "path": "pathways[2].lesions[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In human patients, lesions including the frontal eye field produce paralysis of conjugate gaze to the opposite side, with deviation of eyes and head to the side of the lesion."
+  },
+  {
+   "path": "pathways[2].conflicts[0].positions[0]",
+   "source": "brainstem-reflexes.json#S8",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Saccades are initiated by the frontal eye field (FEF), which sends signals to the contralateral paramedian pontine reticular formation (PPRF) for horizontal saccades"
+  },
+  {
+   "path": "pathways[2].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The innervation of the PPRF is weak and does not target the saccade generator."
+  },
+  {
+   "path": "pathways[2].conflicts[1].positions[0]",
+   "source": "brainstem-reflexes.json#S4",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "the pathways for downward gaze are directed medially from the rostral interstitial nucleus of the Medial Longitudinal Fasciculus (MLF); whereas, the fibers for upward gaze are directed laterally from the Medial Longitudinal Fasciculus and decussate in the posterior commissure"
+  },
+  {
+   "path": "pathways[2].conflicts[1].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The projection of the riMLF to the motoneurons of the oculomotor and trochlear nerve nuclei is mainly ipsilateral."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Its afferent pathway consists of sensory fibres innervating the cornea, that terminate in the nucleus of the spinal tract of the trigeminal nerve"
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The ipsilateral, short latency orbicularis oculi reflex (R1 component) synapses in the nucleus of the spinal tract of the trigeminal nerve."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The early, ipsilateral (R1) component of the blink reflex is relayed by interneurons located in the principal and spinal trigeminal nuclei"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The late, bilateral (R2) component of the blink reflex is relayed by interneurons in the pontine and medullary blink centres"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The medullary blink centre receives trigeminal input via multi-synaptic pathways relaying in the tectum and the reticular formation."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The pontine blink centre receives a projection from the rubrobulbar and spinal tract. This connection is used by the cerebellum in conditioning the blink reflex"
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The blink reflex protects the eyeball by closing the eyelids through contraction of the orbicularis oculi muscle."
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The dorsal subnucleus innervates the frontalis and orbicularis oculi muscles."
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[0]",
+   "source": "brainstem-reflexes.json#S9",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Sensory information is transmitted via the ophthalmic nerve to synapse within the spinal trigeminal nucleus in the brainstem"
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[1]",
+   "source": "brainstem-reflexes.json#S10",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "an afferent impulse from either free nerve endings or mechanoreceptors within the corneal epithelium is sent by way of nasociliary nerve and its long ciliary nerve branches of the ophthalmic division of the trigeminal nerve (CN V) to the principal sensory nucleus"
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Its afferent pathway consists of sensory fibres innervating the cornea, that terminate in the nucleus of the spinal tract of the trigeminal nerve"
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Muscle spindle afferents from facial and masticatory muscles are an exception: their cell bodies are located in the mesencephalic nucleus of the trigeminal nerve in the upper brain stem."
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Unlike other primary afferents, the Ia muscle-spindle afferents from the jaw muscles, which enter the brain stem in the trigeminal nerve, arise from cells located within the central nervous system."
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These cells constitute the mesencephalic nucleus of the trigeminal nerve, located alongside the central grey matter of the mesencephalon."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The axons of these cells descend into the mesencephalic tract of the trigeminal nerve and then bifurcate."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "One branch terminates on the motoneurons of the trigeminal motor nucleus."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The axons of neurons located in the mesencephalic nucleus of the trigeminal nerve join the motor root (portio minor) of the trigeminal nerve and send branches to the motoneurons innervating the jaw muscles, located in the motor nucleus of the trigeminal nerve."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Excitatory pathways from the mesencephalic nucleus thus have access to motoneurons innervating jaw closers from both sides."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The main branches of these neurons are the Ia afferents from the masticatory muscles."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "They exit the brain stem, together with the axons of the motoneurons innervating the masticatory muscles, into the portio minor of the trigeminal nerve, which joins the mandibular division of the trigeminal nerve"
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The motor nucleus of the trigeminal nerve can be divided into a lateral group, containing motoneurons innervating jaw closing muscles, and a medial group with the motoneurons of the jaw openers"
+  },
+  {
+   "path": "pathways[4].conflicts[0].positions[0]",
+   "source": "brainstem-reflexes.json#S11",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "In this reflex, there is an interplay between the mesencephalic nucleus and motor V nucleus"
+  },
+  {
+   "path": "pathways[4].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These collaterals innervate motoneurons of jaw closers in the lateral group, both directly and by synapsing in the supratrigeminal nucleus"
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Motoneurons of the ambiguus nucleus innervating pharyngeal muscles, which are involved in the second phase, receive input from the nucleus of the solitary tract."
+  },
+  {
+   "path": "pathways[5].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The glossopharyngeal nerve innervates the stylopharyngeus muscle. Together with the vagus nerve it gives rise to the nervous plexus of the pharynx and the oesophagus."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "General visceral afferents, which innervate the baroreceptors of the carotid sinus and the arch of the aorta, chemoreceptors of the glomus caroticum, the heart, the bronchi and the abdominal viscera, are contained in the glossopharyngeal and vagus nerves"
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The caudal portion of the solitary nucleus constitutes an important centre for the regulation of visceral, cardiovascular and respiratory functions"
+  },
+  {
+   "path": "pathways[5].steps[5].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Neurons of the ventral respiratory group are located near the ambiguus nucleus."
+  },
+  {
+   "path": "pathways[5].steps[5].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Inspiratory neurons are located in its rostral part; they project to motoneurons of the phrenic nerve at C3/C4 that innervate the diaphragm, the main inspiratory muscle."
+  },
+  {
+   "path": "pathways[5].steps[5].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The caudally located expiratory neurons project to spinal interneurons for motoneurons innervating abdominal muscles."
+  },
+  {
+   "path": "pathways[5].conflicts[0].positions[0]",
+   "source": "brainstem-reflexes.json (existing step 3, terminatesIn field)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Efferent nerve fibres to the pharyngeal musculature traverse from the nucleus ambiguus through CN X, resulting in the bilateral contraction of the posterior pharyngeal muscles"
+  },
+  {
+   "path": "pathways[5].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The glossopharyngeal nerve innervates the stylopharyngeus muscle. Together with the vagus nerve it gives rise to the nervous plexus of the pharynx and the oesophagus."
+  },
+  {
+   "path": "pathways[6].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "General visceral afferents, which innervate the baroreceptors of the carotid sinus and the arch of the aorta, chemoreceptors of the glomus caroticum, the heart, the bronchi and the abdominal viscera, are contained in the glossopharyngeal and vagus nerves"
+  },
+  {
+   "path": "pathways[6].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Viscerosensory fibres of the vagal and glossopharyngeal nerves, which innervate baroreceptors, terminate in the caudal nucleus of the solitary tract."
+  },
+  {
+   "path": "pathways[6].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Baroreceptors in the carotid sinus and the ascending aorta connect with the rostral part of the general visceral portion of the nucleus of the solitary tract; chemoreceptors sensitive to O2 and CO 2 concentrations terminate more caudally."
+  },
+  {
+   "path": "pathways[6].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "An inhibitory pathway from the nucleus of the solitary tract (red) terminates on a group of excitatory neurons in the ventrolateral superficial reticular formation, at the level of the noradrenergic A1 group. Ascending axons from these cells terminate in C1."
+  },
+  {
+   "path": "pathways[6].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It projects to vasomotor interneurons in the caudal ventrolateral medulla, involved in the maintenance of blood pressure, to vagal parasympathetic premotor neurons controlling heart rate"
+  },
+  {
+   "path": "pathways[6].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The C1 group is inhibited by more caudally located GABAergic neurons in the VLSM"
+  },
+  {
+   "path": "pathways[6].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These inhibitory neurons receive an input from baroreceptor-activated cells of the nucleus of the solitary tract, thus causing inhibition of vasomotor tone."
+  },
+  {
+   "path": "pathways[6].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Presympathetic neurons in the VLSM, 50% of which correspond to the adrenergic C1 group, project to the thoracic intermediolateral column"
+  },
+  {
+   "path": "pathways[6].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Crossed solitariospinal fibres descend from the caudal part of the nucleus to terminate in the autonomic centres of the spinal cord"
+  },
+  {
+   "path": "pathways[6].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Short pathways connect the nucleus of the solitary tract with cardiomotor neurons in the dorsal vagal nucleus, subserving slowing down the heart rate."
+  },
+  {
+   "path": "pathways[6].conflicts[0].positions[0]",
+   "source": "brainstem-reflexes.json#S14",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The NTS also sends excitatory projections to cardiac parasympathetic neurons in the nucleus ambiguus. These neurons provide parasympathetic output to the heart through the vagus nerve"
+  },
+  {
+   "path": "pathways[6].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Short pathways connect the nucleus of the solitary tract with cardiomotor neurons in the dorsal vagal nucleus, subserving slowing down the heart rate."
+  },
+  {
+   "path": "pathways[6].conflicts[1].positions[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Viscerosensory fibres of the vagal and glossopharyngeal nerves, which innervate baroreceptors, terminate in the caudal nucleus of the solitary tract."
+  },
+  {
+   "path": "pathways[6].conflicts[1].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Baroreceptors in the carotid sinus and the ascending aorta connect with the rostral part of the general visceral portion of the nucleus of the solitary tract; chemoreceptors sensitive to O2 and CO 2 concentrations terminate more caudally."
+  },
+  {
+   "path": "pathways[7].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The pathway for the accommodation reflex, i.e. increase in the curvature of the lens for near vision, is (as far as its mesencephalic centres and efferent limbs are concerned) closely comparable to the pathway for the light reflex."
+  },
+  {
+   "path": "pathways[7].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "However, the afferent limb of the accommodation reflex includes the visual cortex and is thus much longer and much more complex than that of the light reflex"
+  },
+  {
+   "path": "pathways[7].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In addition to the response to light, pupillary constriction also occurs following the initiation of ocular convergence."
+  },
+  {
+   "path": "pathways[7].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In both pathways the pretectal region, the accessory oculomotor nucleus and the ciliary ganglion represent successive relay stations."
+  },
+  {
+   "path": "pathways[7].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The final link on the efferent side of the accommodation pathway is formed by the postganglionic fibres to the ciliary muscle."
+  },
+  {
+   "path": "pathways[7].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The neural pathway for this convergence-induced pupillary constriction is believed to be independent of that for light-induced pupillary constriction, since the two reflexes are dissociated in the clinical phenomenon, known as the Argyll Robertson sign."
+  },
+  {
+   "path": "pathways[7].conflicts[0].positions[0]",
+   "source": "brainstem-reflexes.json#S15",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "This action occurs because the midbrain center for the near reflex is more ventral than the pretectal nucleus, which controls the light reflex"
+  },
+  {
+   "path": "pathways[7].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This pathway terminates on a group of small neurons outside the classical oculomotor nucleus"
+  },
+  {
+   "path": "pathways[8].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The centre for pupillary dilation is located in the intermediolateral cell column of the upper thoracic cord."
+  },
+  {
+   "path": "pathways[8].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The preganglionic sympathetic fibres originating from this so-called centrum ciliospinale ascend through the sympathetic trunk and synapse in the superior cervical ganglion with postganglionic elements."
+  },
+  {
+   "path": "pathways[8].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The axons of the latter accompany the branches of the internal carotid artery and traverse the ciliary ganglion before they innervate the dilatator pupillae muscle of the iris."
+  },
+  {
+   "path": "pathways[8].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fibres descending through the lateral part of the medulla oblongata and of the spinal cord synapse in the sympathetic ciliospinal centre. The origin of these fibres is unknown."
+  },
+  {
+   "path": "pathways[8].conflicts[0].positions[0]",
+   "source": "brainstem-reflexes.json#S16",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The first-order neurons originate in the hypothalamus and descend uncrossed through the midbrain and pons, terminating in the intermediolateral cell columns at the C8 through T2 levels of the spinal cord, known as the ciliospinal center of Budge"
+  },
+  {
+   "path": "pathways[8].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fibres descending through the lateral part of the medulla oblongata and of the spinal cord synapse in the sympathetic ciliospinal centre. The origin of these fibres is unknown."
+  },
+  {
+   "path": "pathways[8].conflicts[1].positions[0]",
+   "source": "brainstem-reflexes.json#S16",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The remaining fibers ascend within the carotid plexus along the internal carotid artery and enter the cavernous sinus, where they join the abducens nerve (cranial nerve VI)"
+  },
+  {
+   "path": "pathways[8].conflicts[1].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The axons of the latter accompany the branches of the internal carotid artery and traverse the ciliary ganglion before they innervate the dilatator pupillae muscle of the iris."
+  }
+ ]
+}

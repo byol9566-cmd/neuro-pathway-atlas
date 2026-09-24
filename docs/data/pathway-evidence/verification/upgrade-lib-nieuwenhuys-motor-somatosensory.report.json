@@ -1,0 +1,1073 @@
+{
+ "batch": "upgrade-lib-nieuwenhuys-motor-somatosensory",
+ "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json",
+ "tally": {
+  "exact": 134,
+  "UNKNOWN_SOURCE_ID": 15
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "The Human Central Nervous System",
+    "journal": "Springer (4th ed.)",
+    "year": 2008,
+    "pmcid": null,
+    "nbk": null,
+    "doi": null,
+    "license": "not stated (library copy)",
+    "type": "textbook"
+   },
+   "check": {
+    "note": "local PDF",
+    "file": "/Users/lim/Downloads/atlas-refs/nieuwenhuys-2008-human-cns.pdf",
+    "chars": 2821910
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Root fibres from sacral and lumbar dorsal roots ascend into the fasciculus gracilis; root fibres from cervical roots ascend into the fasciculus cuneatus, to terminate in the corresponding dorsal column nuclei."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fibres from sacral and lumbar roots ascend medially, in the fasciculus gracilis; those from cervical roots ascend laterally, in the fasciculus cuneatus."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The dorsal column nuclei consist of the medial nucleus gracilis and the more laterally located medial and lateral cuneate nuclei."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fibres from the dorsal column nuclei decussate in the caudal medulla oblongata and ascend into the medial lemniscus to the lateral ventroposterior nucleus of the thalamus."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The dorsal column nuclei project to the contralateral VPL through the medial lemniscus."
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral ventroposterior nucleus innervates areas 3 b and 1 of the primary somatosensory cortex and the secondary somatosensory cortex (S2)."
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[0]",
+   "source": "S7 (original somatosensory.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The gracile fasciculus conveys sensory information from the lower body (T7 and below) and synapses with the gracile nucleus. The cuneate fasciculus conveys sensory information from the upper body (C2–T7) and synapses to the cuneate nucleus"
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fibres from sacral and lumbar roots ascend medially, in the fasciculus gracilis; those from cervical roots ascend laterally, in the fasciculus cuneatus. A small contingent of thoracic fibres takes an intermediate position"
+  },
+  {
+   "path": "pathways[0].conflicts[1].positions[0]",
+   "source": "S13 (original somatosensory.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Ipsilateral modalities of fine touch, vibration, 2-point discrimination, and conscious proprioception are affected due to injury to the dorsal columns ascending within the dorsomedial spinal cord"
+  },
+  {
+   "path": "pathways[0].conflicts[1].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In patients with lesions of the dorsal columns the localization of tactile stimuli and position sense is mostly intact"
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Most of the fibres joining the anterolateral fasciculus cross in the ventral white commissure, but a distinct ipsilateral component exists."
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The spinothalamic tract takes its origin from multiple laminae and from all levels of the spinal cord."
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "They terminate diffusely in the centrolateral intralaminar nucleus, in the adjoining lateral paralaminar region of the mediodorsal nucleus, and more sparsely, in other intralaminar and midline nuclei of the thalamus"
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[0]",
+   "source": "S8 (original somatosensory.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Initial pain signals ascend through the dorsal horn, specifically through lamina I (superficial dorsal horn), lamina II (substantia gelatinosa), and lamina V (deep dorsal horn)"
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Most spinothalamic tract cells occur in lamina I (50% [51]), in the lamina IV/V border zone and lamina VI mostly laterally, and scattered in laminae VII and VIII."
+  },
+  {
+   "path": "pathways[1].conflicts[1].positions[0]",
+   "source": "S3 (original somatosensory.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The spinothalamic tract of the anterolateral system terminates in the ventral posterolateral nucleus (VPL) of the thalamus, the third-order neurons of this pathway"
+  },
+  {
+   "path": "pathways[1].conflicts[1].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The main relay nucleus for the conduction of pain and temperature is the VMpo"
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Somatosensory fibres of the trigeminal nerve enter the pons in the sensory root (portio major) and are distributed to the principal sensory nucleus and the spinal trigeminal nucleus."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Unlike other primary afferents, the Ia muscle-spindle afferents from the jaw muscles, which enter the brain stem in the trigeminal nerve, arise from cells located within the central nervous system."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The axons of these cells descend into the mesencephalic tract of the trigeminal nerve and then bifurcate."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "One branch terminates on the motoneurons of the trigeminal motor nucleus."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The principal sensory nucleus of the trigeminal nerve projects bilaterally to the VPM as the trigeminal component of the medial lemniscus and the uncrossed dorsal trigeminothalamic tract"
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The entire principal sensory nucleus gives rise to a crossed pathway joining the medial lemniscus as the trigeminal lemniscus"
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The uncrossed dorsal trigeminothalamic tract arises from the dorsal part of the principal sensory nucleus and conducts information from the intraoral cavity"
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The termination of the uncrossed trigeminothalamic is found in the medial VPM, lateral to the gustatory parvocellular VPM."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "VPM projects laterally in the primary somatosensory cortex (S1)."
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The essential role of the caudal subnucleus in pain and temperature transmission from the face is exemplified by Sjöqvist’s tractotomy of the spinal tract at the level of the rostral border of the pars caudalis"
+  },
+  {
+   "path": "pathways[2].lesions[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "which effectively eliminates pain and temperature sensitivity in the ipsilateral face, leaving the tactile sense intact."
+  },
+  {
+   "path": "pathways[2].conflicts[0].positions[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fibres from the principal sensory nucleus and the pars oralis and interpolaris of the spinal nucleus of the trigeminal nerve decussate at the level of the pons and join the medial lemniscus as the trigeminal lemniscus."
+  },
+  {
+   "path": "pathways[2].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The caudal subnucleus gives rise to ascending fibres, which cross in the caudal medulla oblongata and join the spinothalamic tract"
+  },
+  {
+   "path": "pathways[2].conflicts[1].positions[0]",
+   "source": "S5 (original somatosensory.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "This specific tract conveys fast pain and temperature from one side of the face to the contralateral ventral posteromedial nucleus of the thalamus (VPM) and eventually to the primary sensory cortex"
+  },
+  {
+   "path": "pathways[2].conflicts[1].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Trigeminothalamic fibres from all layers of the subnucleus caudalis of the spinal nucleus of the trigeminal nerve join the spinothalamic tract to terminate in the intralaminar nuclei, the posterior ventromedial nucleus (VMpo), the caudal medial dorsal nucleus (MD) and the shell of the ventroposterior complex."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Clarkes’s column and the spinal border cells receive dorsal root afferents and give rise to spinocerebellar pathways"
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "An important contingent of sacral and lumbar root fibres, carrying proprioceptive information from the lower limbs, leaves the dorsal columns to terminate in the spinal grey matter, particularly in Clarke’s dorsal column, which gives rise to the dorsal spinocerebellar tract"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The large, myelinated axons of Clarke’s column occupy the dorsolateral periphery of the lateral funiculus as the uncrossed dorsal spinocerebellar tract"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Joined by fibres originating from the reticular formation, the external cuneate nucleus and the contralateral inferior olive, it constitutes the restiform body"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "composed of the dorsal spinocerebellar tract and of external arcuate fibres from the reticular nuclei of the lateral and anterior funiculus"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The restiform body is an afferent system, containing the spinocerebellar and olivocerebellar tracts and other afferents from the medulla oblongata."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral cuneate nucleus and group Z, a collection of large neurons rostral to the gracile nucleus, both receive information from muscle spindle afferents."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[5]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Muscle spindle afferents from the forelimb ascend in the dorsal columns and terminate in a somatotopical pattern in the lateral cuneate nucleus."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[6]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The main projection of the lateral cuneate nucleus is to the cerebellum."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[7]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A rough localization in the paravermal region of the hind limb in the ventral lobules of the anterior lobe"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[8]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Spinocerebellar fibres distribute to the anterior lobe and certain lobules of the posterior lobe (lobulus simplex, pyramis, lobulus gracilis and the lateral belly of the biventral lobule, the paramedian lobule of comparative anatomy"
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The latter stems from contralateral spinal border cells of the lumbar cord"
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The ventral spinocerebellar tract leaves the area of the anterolateral fascicle in the rostral metencephalon, and passes rostral to the entrance of the trigeminal nerve to enter the cerebellum along the superior cerebellar peduncle."
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[0]",
+   "source": "S6 (original somatosensory.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "This set of nuclei range from the C8-L3 portions of the spinal cord, collectively referred to as Clarke’s column"
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "is a discrete, roundish collection of large neurons, located medially at the base of the dorsal horn at thoracic and high lumbar levels"
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The mesencephalic periaqueductal grey receives afferents from spinal laminae I, VI, VII and VIII, and projects to the intralaminar thalamic nuclei"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The nucleus raphe magnus contains numerous serotoninergic neurons, and it has been demonstrated that its cells project massively to the superficial dorsal horn"
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Noradrenergic cells situated in rhombencephalic catecholaminergic cell groups A5, A6 and A7, which also project to the superficial dorsal horn, contribute to the descending pain-inhibiting system"
+  },
+  {
+   "path": "pathways[4].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The first of these is the “gate control mechanism”, which was first described by Melzack and Wall"
+  },
+  {
+   "path": "pathways[4].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Opiates exert their influence on nociceptive transmission both at the level of the periaqueductal grey and at the termination of the primary afferents."
+  },
+  {
+   "path": "pathways[4].steps[3].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Specific nociceptive neurons in lamina I are selectively inhibited by morphine"
+  },
+  {
+   "path": "pathways[4].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This system was first noticed after discovering that electrical stimulation of the mesencephalic periaqueductal grey produces profound analgesia"
+  },
+  {
+   "path": "pathways[4].conflicts[0].positions[0]",
+   "source": "S8 (original somatosensory.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The PAG -LC pathway propagates by norepinephrine (NE), exerting an antinociceptive effect in the dorsal horn via the presynaptic alpha-2 receptor"
+  },
+  {
+   "path": "pathways[4].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Noradrenergic cells situated in rhombencephalic catecholaminergic cell groups A5, A6 and A7, which also project to the superficial dorsal horn, contribute to the descending pain-inhibiting system"
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Corticospinal and corticobulbar fibres from the pericentral cortex descend in the internal capsule and the middle portion of the cerebral peduncle"
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "After traversing the pontine nuclei they form the pyramidal tract on the ventral surface of the medulla oblongata."
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Corticospinal fibres decussate at the border of the medulla oblongata with the spinal cord."
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The pyramidal tract emerges at the surface at the caudal border of the pons and decussates at the transition of the medulla oblongata with the spinal cord."
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The distribution of the corticospinal tract in the human brain is very similar to that in nonhuman primates"
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "After its partial decussation at the border of the brain stem and the cord, the crossed fibres of the pyramidal tract descend into the dorsal half of the lateral funiculus as the lateral pyramidal tract"
+  },
+  {
+   "path": "pathways[5].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The uncrossed fibres of the anterior pyramidal tract are located in the anterior funiculus, next to the anterior median fissure."
+  },
+  {
+   "path": "pathways[5].conflicts[0].positions[0]",
+   "source": "S1 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The lateral corticospinal tract contains over 90% of the fibers present in the corticospinal tract and runs the length of the spinal cord."
+  },
+  {
+   "path": "pathways[5].conflicts[0].positions[1]",
+   "source": "S13 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "At the lower end of the medulla, almost 70 to 80% of the fibers cross to the opposite side of the spinal cord, called the pyramidal (motor) decussation ."
+  },
+  {
+   "path": "pathways[5].conflicts[0].positions[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In monkeys 10% of the dorsolateral pyramidal tract is uncrossed, and a similar percentage of the corticospinal fibres terminates ipsilaterally"
+  },
+  {
+   "path": "pathways[6].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Contrary to the motor nucleus of the trigeminal nerve, the motoneurons of the facial nucleus receive a strong, bilateral projection from the motor cortex"
+  },
+  {
+   "path": "pathways[6].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the face area of M1, the dorsal and ventral premotor cortex and the caudal cingulate motor area project to the contralateral lateral subnucleus that innervates the perioral muscles."
+  },
+  {
+   "path": "pathways[6].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Direct corticomotoneuronal connections to the trigeminal motor nucleus appear to be scarce or absent."
+  },
+  {
+   "path": "pathways[6].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Direct corticomotoneuronal projections to the hypoglossal nucleus are rare in non-human primates, but strengthened in humans"
+  },
+  {
+   "path": "pathways[6].conflicts[0].positions[0]",
+   "source": "S5 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "a unilateral cortical lesion does not affect the muscles of mastication; this is because the motor nucleus receives bilateral cortical input"
+  },
+  {
+   "path": "pathways[6].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Direct corticomotoneuronal connections to the trigeminal motor nucleus appear to be scarce or absent."
+  },
+  {
+   "path": "pathways[7].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The corticostriate fibres, which use the excitatory amino acid glutamate as their neurotransmitter"
+  },
+  {
+   "path": "pathways[7].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The striatal efferents passing to the GPi arise from medium-sized spiny neurons (MSNs) that co-contain GABA and substance P, whereas the striatal projections to the GPe arise from MSNs that co-contain GABA and enkephalin."
+  },
+  {
+   "path": "pathways[7].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The D1 class receptors are preferentially expressed in the substance P-containing MSNs forming part of the direct circuit, whereas the D2 class receptors are specifically expressed on the enkephalin-containing MSNs"
+  },
+  {
+   "path": "pathways[7].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The vast majority of the striatopallidal and striatonigral fibres are known to contain GABA and to exert an inhibitory influence."
+  },
+  {
+   "path": "pathways[7].steps[1].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The direct circuit is composed of excitatory corticostriatal, inhibitory striatopallidal, inhibitory pallidothalamic and excitatory thalamocortical projections."
+  },
+  {
+   "path": "pathways[7].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Both the pallidothalamic and nigrothalamic projections are known to be GABAergic"
+  },
+  {
+   "path": "pathways[7].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "All large neurons within both pallidal segments are GABAergic, inhibitory projection neurons."
+  },
+  {
+   "path": "pathways[7].steps[2].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The elements in the external segment project to the subthalamic nucleus, whereas those in the internal segment project to the thalamus, the lateral habenular nucleus and the pedunculopontine nucleus in the caudal mesencephalic tegmentum."
+  },
+  {
+   "path": "pathways[7].steps[2].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "They are glutamatergic and activate cortical neurons. As a result of these data the following concept was developed"
+  },
+  {
+   "path": "pathways[7].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The indirect circuit includes an excitatory corticostriatal projection that terminates onto striatal medium spiny projection neurons that co-contain GABA and enkephalin along with dopamine D2-class receptors"
+  },
+  {
+   "path": "pathways[7].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The efferents of the GPe, which are also GABAergic and inhibitory, project in a topographically organized fashion to the subthalamic nucleus (STN)"
+  },
+  {
+   "path": "pathways[7].steps[4].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "an inhibitory projection from the GPe to the subthalamic nucleus (STN) and an excitatory projection from STN to the GPi"
+  },
+  {
+   "path": "pathways[7].steps[5].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The STN also receives a glutamatergic excitatory input from the cerebral cortex."
+  },
+  {
+   "path": "pathways[7].steps[5].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The subthalamic efferents have an excitatory effect on pallidal and nigra neurons and use glutamate as their neurotransmitter"
+  },
+  {
+   "path": "pathways[7].steps[5].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The subthalamic neurons are excitatory and use glutamate as their neurotransmitter"
+  },
+  {
+   "path": "pathways[7].steps[5].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "cortical activation of the inhibitory, GABA and enkephalin-containing MSNs reduces the output of GPe activity, resulting in a decreased inhibition or disinhibition of STN neurons, which causes an increase in the glutamatergic activation of GPe/SNr."
+  },
+  {
+   "path": "pathways[7].steps[5].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Cortical activation of the indirect circuit produces disinhibition of subthalamic neurons, resulting in an increase of the subthalamic activation of the GPi."
+  },
+  {
+   "path": "pathways[7].steps[6].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The subthalamic neurons receive an excitatory, glutamatergic input from the cortex and an inhibitory, GABAergic input from the external pallidal segment."
+  },
+  {
+   "path": "pathways[7].steps[7].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The dopaminergic neurons in the pars compacta give rise to a large nigrostriatal system, which reciprocates the striatonigral projection."
+  },
+  {
+   "path": "pathways[7].steps[7].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The striatonigral fibres contain GABA and substance P and inhibit the neurons in the SNc."
+  },
+  {
+   "path": "pathways[7].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Parkinson’s disease (PD) or paralysis agitans is a common neurodegenerative disorder that usually begins during the fifth or sixth decade of life."
+  },
+  {
+   "path": "pathways[7].lesions[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The disease is characterized by progressive slowness of movement (bradykinesia), muscular rigidity, tremor and disturbances in posture and gait."
+  },
+  {
+   "path": "pathways[7].lesions[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The neuropathological hallmark of PD is the massive loss of the pigmented, dopaminergic neurons in the pars compacta of the substantia nigra, which leads to a reduction in the dopamine content in the striatum, most severely in the putamen"
+  },
+  {
+   "path": "pathways[7].lesions[0].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "loss of dopaminergic input from the substantia nigra to the striatum decreases activity in the direct circuit and increases activity in the indirect circuit"
+  },
+  {
+   "path": "pathways[7].lesions[0].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Thus, the resultant reduced cortical motor output explains the hypokinetic features of PD."
+  },
+  {
+   "path": "pathways[7].lesions[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Huntington’s chorea is a rare autosomal dominant disease of middle age, characterized by rapid, jerky, involuntary movements of the face, arms and legs and by progressive mental deterioration."
+  },
+  {
+   "path": "pathways[7].lesions[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It has been reported that in the earlier stages of the disease the striatal projection neurons participating in the indirect circuit are preferentially lost"
+  },
+  {
+   "path": "pathways[7].lesions[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This inhibition of the STN neurons in turn reduces inhibition or disinhibits thalamocortical neurons in V A and VL and, ultimately, increases the excitatory input to the motor cortical areas, which could explain the choreatic movements"
+  },
+  {
+   "path": "pathways[7].lesions[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Hemibalism is a disorder characterized by vigorous involuntary movements of the extremities with a repetitive, stereotypical character on one side of the body."
+  },
+  {
+   "path": "pathways[7].lesions[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The hyperkinesia is known to be caused by focal (commonly vascular) lesions of the contralateral STN"
+  },
+  {
+   "path": "pathways[7].lesions[2].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It is assumed that the STN lesions reduce the excitation of inhibitory GPi neurons, which in turn causes a hyperactivity of disinhibited thalamocortical projection neurons"
+  },
+  {
+   "path": "pathways[8].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Mossy fibres are excitatory; most use glutamate as their neurotransmitter."
+  },
+  {
+   "path": "pathways[8].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Mossy fibres enter the cerebellum through the restiform body and the middle cerebellar peduncle."
+  },
+  {
+   "path": "pathways[8].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The pontocerebellar projection is mainly crossed; most of its fibres decussate in the pes pontis."
+  },
+  {
+   "path": "pathways[8].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Granule cell axons ascend toward the molecular layer, where they split into two branches that run parallel to the transverse fissures and, therefore, are called parallel fibres."
+  },
+  {
+   "path": "pathways[8].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Parallel fibres may reach a length of 10 mm or more and terminate with excitatory (glutamatergic) synapses on the spiny branchlets of Purkinje cell dendrites"
+  },
+  {
+   "path": "pathways[8].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Climbing fibres originate in the medulla oblongata from the contralateral inferior olive, ascend in the restiform body and distribute to the Purkinje cells"
+  },
+  {
+   "path": "pathways[8].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Each adult Purkinje cell is innervated by a single climbing fibre, which terminates with multiple, excitatory (glutamatergic) synapses on the smooth, proximal branches of its dendritic tree."
+  },
+  {
+   "path": "pathways[8].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Purkinje cells are inhibitory and use gamma-aminobutyric acid (GABA) as their neurotransmitter"
+  },
+  {
+   "path": "pathways[8].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Purkinje cell axons traverse the white matter and terminate on neurons of the cerebellar and certain vestibular nuclei."
+  },
+  {
+   "path": "pathways[8].steps[3].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Four cerebellar nuclei can be distinguished, which are arranged into two groups of interconnected nuclei: a medial and caudal group, consisting of the fastigial (medial) and the globose (posterior interposed) nuclei"
+  },
+  {
+   "path": "pathways[8].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The output of the emboliform, globose and dentate nuclei is directed through the superior cerebellar peduncle (brachium conjunctivum)."
+  },
+  {
+   "path": "pathways[8].steps[4].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The emboliform nucleus (anterior interposed nucleus), which receives Purkinje cell axons of the C1,C 3 and Y zones, projects to the contralateral magnocellular red nucleus and to the thalamus"
+  },
+  {
+   "path": "pathways[8].steps[6].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Descending pathways to the inferior olive take their origin from the parvocellular red nucleus (the central tegmental tract) and the nuclei of the mesodiencephalic border (the medial tegmental tract)"
+  },
+  {
+   "path": "pathways[8].steps[6].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The central tegmental tract connects the parvocellular red nucleus with the principal olive"
+  },
+  {
+   "path": "pathways[8].steps[6].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "gives rise to the central tegmental tract, which takes its origin from the dorsomedial aspect of the red nucleus"
+  },
+  {
+   "path": "pathways[8].steps[6].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It terminates in the principal nucleus of the inferior olive."
+  },
+  {
+   "path": "pathways[8].steps[6].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "One of these tracts, the central tegmental tract , forms a fleece of myelinated fibres around the olive, which is known as the amiculum"
+  },
+  {
+   "path": "pathways[8].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "There is loss of precision in muscle contraction; movements overshoot or undershoot (dysmetria), and an intention tremor is often present."
+  },
+  {
+   "path": "pathways[8].lesions[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Bilateral, axial ataxia dominates if the vermis is injured."
+  },
+  {
+   "path": "pathways[8].lesions[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Symptoms from damage to the hemisphere and the interposed and dentate nuclei are lateralized to the ipsilateral side due to the double decussation of the superior cerebellar peduncle and the pyramidal tract."
+  },
+  {
+   "path": "pathways[8].conflicts[0].positions[0]",
+   "source": "S4 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Mossy fibers use glutamate, while the climbing fibers use aspartate as their main excitatory neurotransmitter to provide excitatory signals to the Purkinje cells."
+  },
+  {
+   "path": "pathways[8].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Each adult Purkinje cell is innervated by a single climbing fibre, which terminates with multiple, excitatory (glutamatergic) synapses on the smooth, proximal branches of its dendritic tree."
+  },
+  {
+   "path": "pathways[8].conflicts[1].positions[0]",
+   "source": "S16 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The SCPs enter the midbrain caudally to the inferior colliculus and trochlear nerves, decussate at the level of the inferior colliculus, and project to the midbrain nuclei and thalamus."
+  },
+  {
+   "path": "pathways[8].conflicts[1].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This pathway decussates at the pontomesencephalic border and splits into ascending and descending branches"
+  },
+  {
+   "path": "pathways[9].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In humans the magnocellular red nucleus is relatively small"
+  },
+  {
+   "path": "pathways[9].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This tract decussates at the level of the red nucleus and terminates in cranial motor nuclei, on interneurons in the lateral tegmental field, the lateral reticular nucleus"
+  },
+  {
+   "path": "pathways[9].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral vestibulospinal tract takes up a more lateral position at the border of the anterior and lateral funiculi."
+  },
+  {
+   "path": "pathways[9].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "descends from this region in the medial longitudinal fascicle, through the anterior funiculus, to terminate bilaterally in laminae VIII and VII of the intermediate zone"
+  },
+  {
+   "path": "pathways[9].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These fibres do not terminate, or do so only very sparingly, in the motoneuronal cell groups"
+  },
+  {
+   "path": "pathways[9].steps[5].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Among the efferent pathways the tectospinal tractis quite prominent."
+  },
+  {
+   "path": "pathways[9].steps[5].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Its coarse fibres radiate from the intermediate layers of the superior colliculus to the midline, where they cross in the dorsal tegmental decussation"
+  },
+  {
+   "path": "pathways[9].conflicts[0].positions[0]",
+   "source": "S9 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The rubrospinal tract originates from the red nucleus of the midbrain tegmentum. It crosses the midline in ventral tegmental decussation located in the caudal midbrain."
+  },
+  {
+   "path": "pathways[9].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The rubrospinal tract, which is present in most mammals as a distinct bundle of coarse fibres ventral to the lateral pyramidal tract, cannot be recognized in the human spinal cord"
+  },
+  {
+   "path": "pathways[9].conflicts[0].positions[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A rubrobulbar tract probably exists in the human brain, but the presence of a rubrospinal tract has never been substantiated."
+  },
+  {
+   "path": "pathways[9].conflicts[1].positions[0]",
+   "source": "S9 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The medial (pontine) reticulospinal tract originates in the pontine reticular formation and projects down to the ventromedial spinal cord via the ipsilateral anterior funiculus, which contains alpha and gamma motor neurons of the extensor muscles."
+  },
+  {
+   "path": "pathways[9].conflicts[1].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These fibres do not terminate, or do so only very sparingly, in the motoneuronal cell groups"
+  },
+  {
+   "path": "pathways[10].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The first link in the myotatic or stretch reflex is the Ia muscle spindle afferents."
+  },
+  {
+   "path": "pathways[10].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Ia afferents terminate directly on motoneurons innervating the same muscle."
+  },
+  {
+   "path": "pathways[10].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Collaterals of the Ia fibres terminate on inhibitory (gamma-aminobutyric acid, GABA, -containing) Ia interneurons located in lamina VII, just dorsal to the motor nuclei."
+  },
+  {
+   "path": "pathways[10].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These neurons project to motoneurons innervating the antagonist muscles."
+  },
+  {
+   "path": "pathways[10].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "I b primary afferents carry information from Golgi tendon organs"
+  },
+  {
+   "path": "pathways[10].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "I b fibres inhibit the motoneurons innervating this muscle via I b inhibitory interneurons in the ventral intermediate grey."
+  },
+  {
+   "path": "pathways[10].steps[2].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the effect of the Golgi tendon organs is not limited to autogenic inhibition, but also may produce excitatory effects in particular muscle groups"
+  },
+  {
+   "path": "pathways[10].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The pathway of the flexor reflex is more complicated and includes two or more spinal interneurons."
+  },
+  {
+   "path": "pathways[10].conflicts[0].positions[0]",
+   "source": "S8 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "A second synaptic pathway involves an inhibitory interneuron, utilizing acetylcholine within lamina III of the dorsal horn."
+  },
+  {
+   "path": "pathways[10].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Collaterals of the Ia fibres terminate on inhibitory (gamma-aminobutyric acid, GABA, -containing) Ia interneurons located in lamina VII, just dorsal to the motor nuclei."
+  }
+ ]
+}

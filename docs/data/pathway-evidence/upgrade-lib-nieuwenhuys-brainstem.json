@@ -1,0 +1,1532 @@
+{
+  "batch": "upgrade-lib-nieuwenhuys-brainstem",
+  "collectedBy": "sub-agent",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "textbook",
+      "title": "The Human Central Nervous System",
+      "authors": "Nieuwenhuys R, Voogd J, van Huijzen C",
+      "journal": "Springer (4th ed.)",
+      "year": 2008,
+      "isbn": "9783540346845",
+      "file": "~/Downloads/atlas-refs/nieuwenhuys-2008-human-cns.pdf",
+      "license": "not stated (library copy)",
+      "openedVia": "local-pdf"
+    }
+  ],
+  "pathways": [
+    {
+      "id": "pupillary-light-reflex",
+      "name": "Pupillary light reflex",
+      "category": "Cranial nerve / brainstem reflex",
+      "function": "Constricts the pupil in response to light to regulate retinal illumination; direct and consensual bilateral response used clinically to localize afferent (optic nerve) vs efferent (oculomotor) lesions.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Retinal ganglion cells (afferent limb begins with photoreceptor-driven signal in retina)",
+          "courseVia": [
+            "optic nerve (CN II)",
+            "optic chiasm",
+            "optic tract"
+          ],
+          "terminatesIn": "Pretectal nucleus (bypasses lateral geniculate nucleus)",
+          "laterality": "bilateral (nasal fibers decussate to contralateral pretectal nucleus; temporal fibers stay ipsilateral)",
+          "decussation": {
+            "present": true,
+            "where": "optic chiasm (nasal retinal fibers only)"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Within the optic chiasm a partial decussation takes place: fibres from the nasal halves of the retinae, including the projection of the monocular visual field, cross to the opposite side; those from the temporal halves of the retinas remain uncrossed",
+              "page": 758,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "Axons of retinal ganglion cells, which pass via the optic nerve and tract to the pretectal region, particularly the olivary pretectal nucleus",
+              "page": 791,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "Melanopsin-containing ganglion cells are responsible for the retained pupillary light reflex and circadian responses in transgenic mice, lacking both rod and cone photoreceptors",
+              "page": 757,
+              "species": "mouse"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Pretectal nucleus (midbrain, level of superior colliculus)",
+          "courseVia": [
+            "posterior commissure"
+          ],
+          "terminatesIn": "Edinger-Westphal nucleus, both sides",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": true,
+            "where": "posterior commissure"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Axons of neurons of the olivary pretectal nucleus project to the Edinger-Westphal nuclei of both sides. Their fibres decussate in the posterior commissure",
+              "page": 791,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The pretectal efferents to the ipsilateral accessory oculomotor nucleus provide for the direct pupillary light reflex, those to the contralateral nucleus for the consensual pupillary light reflex.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Edinger-Westphal nucleus (preganglionic parasympathetic)",
+          "courseVia": [
+            "oculomotor nerve (CN III)",
+            "inferior division of CN III"
+          ],
+          "terminatesIn": "Ciliary ganglion (synapse with postganglionic neurons)",
+          "laterality": "ipsilateral (each Edinger-Westphal nucleus drives ipsilateral pupil)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Axons of the parasympathetic preganglionic neurons of the accessory oculomotor nuclei, which pass with the oculomotor nerves to the ciliary ganglia. Here they synapse with postganglionic neurons.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 4,
+          "cellBodies": "Ciliary ganglion (postganglionic parasympathetic neurons)",
+          "courseVia": [
+            "short ciliary nerves"
+          ],
+          "terminatesIn": "Sphincter pupillae muscle",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Postganglionic neurons whose axons innervate the sphincter pupillae muscle of the iris.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Optic nerve (afferent limb, one side)",
+          "deficit": "Relative afferent pupillary defect (RAPD / Marcus Gunn pupil): light swung into the affected eye produces less constriction (or paradoxical dilation) than light into the healthy eye, because the affected eye's afferent signal is weaker",
+          "side": "ipsilateral (afferent defect on the side of the diseased optic nerve)",
+          "evidence": []
+        },
+        {
+          "site": "Olivary pretectal nucleus or brachium of the superior colliculus (unilateral)",
+          "deficit": "Tectal (unilateral) RAPD that can occur without vision loss, because the pupillary fibers branch off the visual pathway before the visually processing areas",
+          "side": "contralateral",
+          "evidence": []
+        },
+        {
+          "site": "Dorsal midbrain lesion near the Sylvian aqueduct (neurosyphilis) affecting the dorsal efferent pupillary light-reflex fibers on the Edinger-Westphal nucleus while sparing the more ventral near-reflex fibers",
+          "deficit": "Argyll Robertson pupil: small, irregular bilateral pupils with light-near dissociation (absent light reflex, prompt constriction on near accommodation)",
+          "side": "bilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The neural pathway for this convergence-induced pupillary constriction is believed to be independent of that for light-induced pupillary constriction, since the two reflexes are dissociated in the clinical phenomenon, known as the Argyll Robertson sign.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "site": "Optic nerve, unilateral, complete",
+          "deficit": "No pupillary constriction in either eye when light is directed into the affected eye (afferent limb interrupted); light into the unaffected eye still produces bilateral constriction",
+          "side": "bilateral (efferent output unaffected, but afferent signal from the damaged side cannot reach either Edinger-Westphal nucleus)",
+          "evidence": []
+        },
+        {
+          "site": "Oculomotor nerve (efferent limb, one side)",
+          "deficit": "Light into the affected eye still activates both Edinger-Westphal nuclei via intact afferents, but only the contralateral (unaffected) pupil constricts because the efferent path on the affected side is disrupted",
+          "side": "ipsilateral (efferent deficit on the side of the CN III lesion)",
+          "evidence": []
+        }
+      ],
+      "conflicts": [],
+      "unsourced": [
+        "Human-specific confirmation that melanopsin-containing intrinsically photosensitive retinal ganglion cells (ipRGCs) can sustain a sluggish pupillary light reflex when rod/cone photoreceptor input is lost was not found in Nieuwenhuys; the source gives only the analogous finding in transgenic mice lacking rods and cones (see step 1 evidence, species mouse).",
+        "The precise ratio of crossed (nasal) to uncrossed (temporal) retinal fibres at the chiasm (commonly cited as approximately 53:47) was not found stated numerically in Nieuwenhuys; the source confirms only that nasal fibres cross and temporal fibres remain uncrossed, without giving a ratio."
+      ]
+    },
+    {
+      "id": "horizontal-vestibulo-ocular-reflex",
+      "name": "Horizontal vestibulo-ocular reflex (VOR)",
+      "category": "Brainstem reflex / oculomotor",
+      "function": "Generates conjugate eye movements equal and opposite to horizontal head rotation to stabilize the retinal image (gaze stabilization) during head motion.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Bipolar (primary afferent) neurons of the Scarpa (vestibular) ganglion, receiving input from horizontal semicircular canal hair cells",
+          "courseVia": [
+            "vestibular division of cranial nerve VIII"
+          ],
+          "terminatesIn": "Vestibular nuclear complex (superior and medial vestibular nuclei) at the pontomedullary junction",
+          "laterality": "ipsilateral (afferents and first synapse are on the side of the stimulated canal)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The first-order elements are bipolar neurons, the somata of which constitute the vestibular ganglion, located in the internal auditory meatus.",
+              "page": 716,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The central processes of the bipolar cells constitute the vestibular part of the eighth cranial nerve, which enters the brain stem at the level of the pontomedullary junction.",
+              "page": 716,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "A lateral rotation of the head excites the ipsilateral horizontal canal by a displacement of the endolymphe in the direction of the ampulla.",
+              "page": 729,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Superior and medial vestibular nuclei (second-order/excitatory limb)",
+          "courseVia": [
+            "crossing fibres at the pontine/medullary midline",
+            "medial longitudinal fasciculus (ascending)"
+          ],
+          "terminatesIn": "Contralateral abducens nucleus",
+          "laterality": "contralateral (excitatory projection crosses to the abducens nucleus opposite the stimulated ear)",
+          "decussation": {
+            "present": true,
+            "where": "at the level of the vestibular nuclei / pons, crossing to the contralateral abducens nucleus"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "This reflex stabilizes the retinal image by producing compensatory conjugate eye movements for head movements perceived by the labyrinths.",
+              "page": 729,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "Horizontal canal fibres terminate on two groups of excitatory neurons located in the MVmc, projecting to the contralateral abducens nucleus and the ipsilateral medial rectus pool of motoneurons in the nucleus of the oculomotor nerve",
+              "page": 729,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Abducens internuclear neurons (in the contralateral abducens nucleus)",
+          "courseVia": [
+            "contralateral medial longitudinal fasciculus (crossing back toward the side of head rotation)"
+          ],
+          "terminatesIn": "Oculomotor medial rectus subnucleus (ipsilateral to the original stimulated ear/side of head turn)",
+          "laterality": "contralateral to the abducens nucleus of origin, i.e. back to the side of the original head rotation",
+          "decussation": {
+            "present": true,
+            "where": "abducens internuclear neurons cross within the pons to ascend in the contralateral MLF"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The excitatory pathway to the ipsilateral medial rectus motoneurons ascends in the ascending tract of Deiters, located in the lateral wing of the MLF",
+              "page": 729,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "It is duplicated by an internuclear pathway, which arises from the contralateral abducens nucleus, and then recrosses to ascend in the MLF.",
+              "page": 729,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 2,
+          "cellBodies": "Vestibular nuclei / interstitial nucleus of Cajal region (ascending pathways carrying vestibulo-ocular signals)",
+          "courseVia": [
+            "interstitial nucleus of Cajal",
+            "ventral tegmental tract",
+            "medial longitudinal fasciculus",
+            "ascending tract of Deiters",
+            "brachium conjunctivum"
+          ],
+          "terminatesIn": "Nucleus of the extraocular-muscle nerve contralateral to the stimulated side (excitatory), with inhibition of the nucleus controlling the ipsilateral antagonist muscle",
+          "laterality": "contralateral excitation / ipsilateral inhibition (push-pull organization)",
+          "decussation": {
+            "present": true,
+            "where": "multiple ascending vestibulo-ocular tracts (MLF, ascending tract of Deiters, ventral tegmental tract, brachium conjunctivum) cross in the brainstem"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The corresponding inhibitory pathway takes its origin from the MVmc and terminates in the ipsilateral abducens nucleus.",
+              "page": 729,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "This inhibitory pathway, like some of the inhibitory vestibulospinal pathways, uses glycine as a neurotransmitter; the ascending inhibitory pathways to the fourth and third nuclei are GABAergic",
+              "page": 729,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The lateral vestibulospinal tract takes its origin from the lateral vestibular nucleus.",
+              "page": 725,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Medial longitudinal fasciculus (unilateral)",
+          "deficit": "Internuclear ophthalmoplegia: impaired adduction of the ipsilateral eye with abducting nystagmus of the contralateral eye during horizontal gaze/VOR",
+          "side": "ipsilateral adduction deficit, contralateral nystagmus",
+          "evidence": []
+        },
+        {
+          "site": "Abducens nucleus (as opposed to the abducens nerve fascicle)",
+          "deficit": "Horizontal gaze palsy of both eyes toward the side of the lesion, because interneuronal fibers to the contralateral oculomotor nucleus are also interrupted",
+          "side": "bilateral gaze deficit toward the side of the lesion",
+          "evidence": []
+        },
+        {
+          "site": "Bilateral VOR pathway (peripheral vestibular apparatus or central vestibulo-ocular circuitry)",
+          "deficit": "Oscillopsia: the visual scene appears to move with head movement because retinal image stabilization fails",
+          "side": "bilateral",
+          "evidence": []
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Precise vestibular-nucleus subdivision relaying horizontal semicircular canal signals to the abducens/oculomotor nuclei",
+          "positions": [
+            {
+              "claim": "StatPearls (S5) attributes the relay to the superior and medial vestibular nuclei generally; StatPearls (S7) attributes it only to 'the ipsilateral vestibular nucleus' generically.",
+              "source": "brainstem-reflexes.json#S5/S7",
+              "quote": "Activation of the superior and medial vestibular nuclei during head rotation generates impulses that cross to the contralateral abducens nucleus"
+            },
+            {
+              "claim": "Nieuwenhuys localizes the horizontal-canal VOR relay specifically to two groups of excitatory neurons within the magnocellular medial vestibular nucleus (MVmc), a more precise sub-nuclear locus than either StatPearls position.",
+              "source": "S1",
+              "quote": "Horizontal canal fibres terminate on two groups of excitatory neurons located in the MVmc, projecting to the contralateral abducens nucleus and the ipsilateral medial rectus pool of motoneurons in the nucleus of the oculomotor nerve",
+              "page": 729
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The horizontal VOR normally has a gain close to 1.0 (compensatory eye velocity approximately equal and opposite to head velocity); this quantitative detail was not found stated in Nieuwenhuys.",
+        "Nieuwenhuys uses the term 'vestibular ganglion' rather than the eponym 'Scarpa ganglion' for the first-order bipolar neurons; the eponym itself was not found in the opened chapter."
+      ]
+    },
+    {
+      "id": "horizontal-conjugate-gaze-saccade-circuit",
+      "name": "Horizontal conjugate gaze / saccade circuit",
+      "category": "Cortical-brainstem oculomotor circuit",
+      "function": "Generates fast, conjugate horizontal eye movements (saccades) directed opposite to the initiating frontal eye field, coordinating the abducens and oculomotor nuclei via the MLF.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Frontal eye field (cortex)",
+          "courseVia": [
+            "corticobulbar projection to the pons"
+          ],
+          "terminatesIn": "Contralateral paramedian pontine reticular formation (PPRF) for horizontal saccades (rostral interstitial nucleus of the MLF, riMLF, for vertical saccades)",
+          "laterality": "contralateral (FEF drives PPRF on the opposite side, producing gaze toward the opposite side)",
+          "decussation": {
+            "present": true,
+            "where": "corticobulbar fibres cross en route to the contralateral PPRF"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Of the gaze centres, the riMLF is innervated by both subdivisions of the frontal eye field and the supplementary eye field.",
+              "page": 787,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Paramedian pontine reticular formation (horizontal gaze center)",
+          "courseVia": [
+            "direct projection to ipsilateral abducens nucleus"
+          ],
+          "terminatesIn": "Ipsilateral abducens nucleus, driving the lateral rectus of the same side",
+          "laterality": "ipsilateral (PPRF activates the abducens nucleus on its own side)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "For horizontal eye movements these cells are located in the medial part of the nucleus reticularis pontis caudalis, in the so-called pontine paramedian reticular formation (PPRF), rostral to the abducens nucleus.",
+              "page": 771,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "EBC’s project to the ipsilateral abducens nucleus; the projection of the IBS’s is crossed.",
+              "page": 771,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Abducens internuclear (excitatory) interneurons within the abducens nucleus",
+          "courseVia": [
+            "decussate in the pons, ascend in the contralateral medial longitudinal fasciculus"
+          ],
+          "terminatesIn": "Contralateral medial rectus subnucleus of the oculomotor nucleus",
+          "laterality": "contralateral (crosses to drive the medial rectus subnucleus on the other side), producing horizontal gaze opposite to the initiating frontal eye field",
+          "decussation": {
+            "present": true,
+            "where": "abducens excitatory interneurons decussate before ascending in the MLF"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The medial rectus muscle is innervated by the oculomotor nerve. Its motoneurons receive their excitatory input through an internuclear pathway, originating from interneurons in the abducens nucleus",
+              "page": 771,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 1,
+          "cellBodies": "Interstitial nucleus of Cajal and rostral interstitial nucleus of the MLF (riMLF), vertical/torsional gaze centers near the superior colliculus",
+          "courseVia": [
+            "fibers for downward gaze directed medially from riMLF; fibers for upward gaze directed laterally from the MLF"
+          ],
+          "terminatesIn": "Oculomotor and trochlear nuclei bilaterally (vertical gaze); upgaze fibers decussate in the posterior commissure",
+          "laterality": "bilateral, with upgaze fibers crossing in the posterior commissure and downgaze fibers directed medially without the same crossing point",
+          "decussation": {
+            "present": true,
+            "where": "upward-gaze fibers decussate in the posterior commissure; downward-gaze fibers are directed medially from the riMLF"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Short lead burst neurons for motoneurons of the oculomotor and trochlear nerves lie in the rostral interstitial nucleus of the medial longitudinal fascicle (riMLF).",
+              "page": 771,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The riMLF is a wing-shaped nucleus located dorsal to the rostral pole of the red nucleus and rostral to the interstitial nucleus of Cajal.",
+              "page": 771,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The projection of the riMLF to the motoneurons of the oculomotor and trochlear nerve nuclei is mainly ipsilateral.",
+              "page": 771,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "Recently, inhibitory neurons with projections to the contralateral inferior rectus and inferior oblique motor pools have been located to the interstitial nucleus of Cajal",
+              "page": 771,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Medial longitudinal fasciculus (unilateral)",
+          "deficit": "Internuclear ophthalmoplegia: the MLF lesion blocks the connection between the contralateral sixth-nerve nucleus and the ipsilateral third-nerve nucleus, so the cardinal sign is impaired/slowed adduction on the same side as the MLF lesion, with dissociated nystagmus of the abducting eye",
+          "side": "ipsilateral adduction deficit",
+          "evidence": []
+        },
+        {
+          "site": "Combined lesion of the PPRF (horizontal gaze center) and the adjacent MLF on the same side",
+          "deficit": "One-and-a-half syndrome: loss of all horizontal eye movements except abduction of the contralateral eye",
+          "side": "ipsilateral horizontal gaze palsy plus ipsilateral INO; only contralateral abduction preserved",
+          "evidence": []
+        },
+        {
+          "site": "Dorsal midbrain / pretectum compressing the vertical gaze centers (Parinaud syndrome)",
+          "deficit": "Triad of upgaze palsy, convergence-retraction nystagmus, and pupillary light-near dissociation (hyporeflexia to light with preserved near response); downgaze and the vestibulo-ocular reflex are classically spared",
+          "side": "bilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Clinicopathological evidence indicates that Parinaud’s syndrome (vertical gaze paralysis) results from damage to the riMLF or its efferent fibres",
+              "page": 771,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "site": "Frontal eye field (cortical, unilateral)",
+          "deficit": "Paralysis of conjugate gaze to the opposite side, with deviation of the eyes and head toward the side of the lesion; spontaneous recovery usually occurs within days",
+          "side": "contralateral gaze palsy (deviation toward the ipsilateral, lesioned side)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "In human patients, lesions including the frontal eye field produce paralysis of conjugate gaze to the opposite side, with deviation of eyes and head to the side of the lesion.",
+              "page": 785,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Whether the frontal eye field drives horizontal saccades mainly via a direct projection to the PPRF",
+          "positions": [
+            {
+              "claim": "Saccades are initiated by the frontal eye field (FEF), which sends signals to the contralateral paramedian pontine reticular formation (PPRF) for horizontal saccades and to the riMLF for vertical saccades.",
+              "source": "brainstem-reflexes.json#S8",
+              "quote": "Saccades are initiated by the frontal eye field (FEF), which sends signals to the contralateral paramedian pontine reticular formation (PPRF) for horizontal saccades"
+            },
+            {
+              "claim": "Nieuwenhuys states that the PPRF (horizontal saccade generator) receives only weak innervation from the frontal eye field, whereas the riMLF (vertical saccade generator) is strongly innervated by both subdivisions of the FEF and the supplementary eye field.",
+              "source": "S1",
+              "quote": "The innervation of the PPRF is weak and does not target the saccade generator.",
+              "page": 787
+            }
+          ]
+        },
+        {
+          "issue": "Laterality of the riMLF's projection to the oculomotor/trochlear motoneurons for vertical gaze",
+          "positions": [
+            {
+              "claim": "The pathways for downward gaze are directed medially from the riMLF, whereas fibres for upward gaze are directed laterally and decussate in the posterior commissure, implying a bilaterally organized upgaze/downgaze split.",
+              "source": "brainstem-reflexes.json#S4",
+              "quote": "the pathways for downward gaze are directed medially from the rostral interstitial nucleus of the Medial Longitudinal Fasciculus (MLF); whereas, the fibers for upward gaze are directed laterally from the Medial Longitudinal Fasciculus and decussate in the posterior commissure"
+            },
+            {
+              "claim": "Nieuwenhuys states the riMLF's excitatory projection to the oculomotor/trochlear motoneurons is 'mainly ipsilateral', with a separate, contralaterally-projecting inhibitory population localized to the interstitial nucleus of Cajal rather than to the riMLF itself.",
+              "source": "S1",
+              "quote": "The projection of the riMLF to the motoneurons of the oculomotor and trochlear nerve nuclei is mainly ipsilateral.",
+              "page": 771
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The interstitial nucleus of Cajal is also described in general neuroanatomy as an eye-position integrator that helps hold gaze steady after a saccade (velocity-to-position integration); Nieuwenhuys instead names the nucleus prepositus hypoglossi as the neural integrator for horizontal eye movements and the interstitial nucleus of Cajal as the integrator for vertical/rotatory eye movements, without using the term 'velocity-to-position integration' verbatim.",
+        "The exact cytoarchitectural boundaries separating the riMLF from the adjacent interstitial nucleus of Cajal were not detailed beyond their being located dorsal to the rostral red nucleus and rostral/adjacent to each other."
+      ]
+    },
+    {
+      "id": "corneal-blink-reflex",
+      "name": "Corneal (blink) reflex",
+      "category": "Cranial nerve / brainstem reflex",
+      "function": "Protective bilateral eyelid closure (blink) triggered by mechanical or noxious stimulation of the cornea.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Trigeminal ganglion (pseudounipolar neurons of the ophthalmic division, V1)",
+          "courseVia": [
+            "long ciliary branches of the nasociliary nerve",
+            "ophthalmic division of the trigeminal nerve (CN V1)"
+          ],
+          "terminatesIn": "Principal (chief) sensory nucleus of CN V per S10, OR spinal trigeminal nucleus per S9 (see conflicts)",
+          "laterality": "ipsilateral (afferent limb from the stimulated cornea)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Its afferent pathway consists of sensory fibres innervating the cornea, that terminate in the nucleus of the spinal tract of the trigeminal nerve",
+              "page": 865,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The ipsilateral, short latency orbicularis oculi reflex (R1 component) synapses in the nucleus of the spinal tract of the trigeminal nerve.",
+              "page": 865,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Second-order neurons in the spinal trigeminal nucleus (S9) / principal sensory nucleus (S10)",
+          "courseVia": [
+            "bilateral projection to the facial motor nuclei"
+          ],
+          "terminatesIn": "Facial motor nucleus, both sides",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": true,
+            "where": "second-order trigeminal interneurons project bilaterally to the facial motor nuclei"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The early, ipsilateral (R1) component of the blink reflex is relayed by interneurons located in the principal and spinal trigeminal nuclei",
+              "page": 866,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The late, bilateral (R2) component of the blink reflex is relayed by interneurons in the pontine and medullary blink centres",
+              "page": 866,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The medullary blink centre receives trigeminal input via multi-synaptic pathways relaying in the tectum and the reticular formation.",
+              "page": 867,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The pontine blink centre receives a projection from the rubrobulbar and spinal tract. This connection is used by the cerebellum in conditioning the blink reflex",
+              "page": 867,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Facial motor nucleus (both sides)",
+          "courseVia": [
+            "facial nerve (CN VII), encircling the abducens nucleus, exiting at the stylomastoid foramen"
+          ],
+          "terminatesIn": "Orbicularis oculi muscle, both eyes",
+          "laterality": "bilateral (early-stage response is predominantly ipsilateral via A-beta fibers; late-stage response is bilateral)",
+          "decussation": {
+            "present": false,
+            "where": "efferent limb itself does not cross further; bilaterality arises from the bilateral second-order projection above"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The blink reflex protects the eyeball by closing the eyelids through contraction of the orbicularis oculi muscle.",
+              "page": 865,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The dorsal subnucleus innervates the frontalis and orbicularis oculi muscles.",
+              "page": 865,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Trigeminal nerve (peripheral, afferent limb)",
+          "deficit": "Ipsilateral early-stage blink deficit on stimulation of the affected side (sensory loss); central lesions instead cause bilateral deficits",
+          "side": "ipsilateral",
+          "evidence": []
+        },
+        {
+          "site": "Lateral medulla / spinal trigeminal nucleus (Wallenberg syndrome, PICA occlusion)",
+          "deficit": "Absent late-stage blink response bilaterally upon corneal stimulation of the affected side, because the spinal trigeminal nucleus relaying the reflex is disrupted",
+          "side": "bilateral deficit upon stimulation of the affected (ipsilateral) side",
+          "evidence": []
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Whether corneal reflex afferents relay in the principal (chief) sensory trigeminal nucleus or the spinal trigeminal nucleus",
+          "positions": [
+            {
+              "claim": "Corneal sensory information synapses directly in the spinal trigeminal nucleus in the brainstem (StatPearls S9).",
+              "source": "brainstem-reflexes.json#S9",
+              "quote": "Sensory information is transmitted via the ophthalmic nerve to synapse within the spinal trigeminal nucleus in the brainstem"
+            },
+            {
+              "claim": "The corneal afferent impulse is sent via the nasociliary/long ciliary nerves of CN V1 to the principal sensory nucleus of CN V, in the rostral pons (StatPearls S10).",
+              "source": "brainstem-reflexes.json#S10",
+              "quote": "an afferent impulse from either free nerve endings or mechanoreceptors within the corneal epithelium is sent by way of nasociliary nerve and its long ciliary nerve branches of the ophthalmic division of the trigeminal nerve (CN V) to the principal sensory nucleus"
+            },
+            {
+              "claim": "Nieuwenhuys states the corneal afferent pathway terminates in the nucleus of the spinal tract of the trigeminal nerve, agreeing with S9; however, the early (R1) blink component is relayed by interneurons located in BOTH the principal and spinal trigeminal nuclei together, not the spinal nucleus alone.",
+              "source": "S1",
+              "quote": "Its afferent pathway consists of sensory fibres innervating the cornea, that terminate in the nucleus of the spinal tract of the trigeminal nerve",
+              "page": 865
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "A commonly taught reconciliation is that the fast, largely ipsilateral early (R1) blink component is mediated via an oligosynaptic route through the principal sensory nucleus, while the slower, bilateral late (R2) component is mediated via a polysynaptic route through the spinal trigeminal nucleus. Nieuwenhuys instead describes the R1 component as relayed by interneurons in 'the principal and spinal trigeminal nuclei' jointly and the R2 component as relayed by separate 'pontine and medullary blink centres', a somewhat different scheme than the commonly taught reconciliation."
+      ]
+    },
+    {
+      "id": "jaw-jerk-reflex",
+      "name": "Jaw jerk reflex",
+      "category": "Cranial nerve / brainstem reflex (monosynaptic stretch reflex)",
+      "function": "Monosynaptic stretch reflex of the masseter (jaw-closing) muscles evoked by tapping the chin with the mouth slightly open; used clinically to distinguish upper vs lower motor neuron trigeminal lesions.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Mesencephalic trigeminal nucleus (unique: pseudounipolar afferent cell bodies lie within this brainstem nucleus itself rather than in the trigeminal ganglion)",
+          "courseVia": [
+            "stretch receptors of the muscles of mastication (masseter) via proprioceptive afferents that bypass the trigeminal ganglion"
+          ],
+          "terminatesIn": "Cell body within the mesencephalic nucleus itself, which relays directly to the motor trigeminal nucleus",
+          "laterality": "ipsilateral afferent input, then bilateral efferent relay (see below)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Muscle spindle afferents from facial and masticatory muscles are an exception: their cell bodies are located in the mesencephalic nucleus of the trigeminal nerve in the upper brain stem.",
+              "page": 688,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "Unlike other primary afferents, the Ia muscle-spindle afferents from the jaw muscles, which enter the brain stem in the trigeminal nerve, arise from cells located within the central nervous system.",
+              "page": 706,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "These cells constitute the mesencephalic nucleus of the trigeminal nerve, located alongside the central grey matter of the mesencephalon.",
+              "page": 706,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Mesencephalic trigeminal nucleus neuron directly synapsing (monosynaptic) onto motor trigeminal nucleus",
+          "courseVia": [
+            "direct intrabrainstem relay between the mesencephalic nucleus and the motor V nucleus"
+          ],
+          "terminatesIn": "Motor trigeminal nucleus (bilaterally)",
+          "laterality": "bilateral (afferent stretch information is relayed bilaterally to the trigeminal motor nuclei)",
+          "decussation": {
+            "present": true,
+            "where": "relay from the mesencephalic nucleus to the trigeminal motor nuclei is bilateral"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The axons of these cells descend into the mesencephalic tract of the trigeminal nerve and then bifurcate.",
+              "page": 706,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "One branch terminates on the motoneurons of the trigeminal motor nucleus.",
+              "page": 706,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The axons of neurons located in the mesencephalic nucleus of the trigeminal nerve join the motor root (portio minor) of the trigeminal nerve and send branches to the motoneurons innervating the jaw muscles, located in the motor nucleus of the trigeminal nerve.",
+              "page": 705,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "Excitatory pathways from the mesencephalic nucleus thus have access to motoneurons innervating jaw closers from both sides.",
+              "page": 863,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Motor trigeminal nucleus (dorsolateral pontine tegmentum, mid-pons)",
+          "courseVia": [
+            "mandibular division of the trigeminal nerve (CN V3)"
+          ],
+          "terminatesIn": "Masseter muscle (and other muscles of mastication)",
+          "laterality": "bilateral contraction",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The main branches of these neurons are the Ia afferents from the masticatory muscles.",
+              "page": 706,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "They exit the brain stem, together with the axons of the motoneurons innervating the masticatory muscles, into the portio minor of the trigeminal nerve, which joins the mandibular division of the trigeminal nerve",
+              "page": 706,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The motor nucleus of the trigeminal nerve can be divided into a lateral group, containing motoneurons innervating jaw closing muscles, and a medial group with the motoneurons of the jaw openers",
+              "page": 863,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Whether the mesencephalic-nucleus-to-motor-trigeminal jaw-jerk relay is purely monosynaptic",
+          "positions": [
+            {
+              "claim": "The jaw jerk reflex is described as a monosynaptic stretch reflex, with a single, direct intrabrainstem relay between the mesencephalic nucleus and the motor V nucleus (StatPearls S11).",
+              "source": "brainstem-reflexes.json#S11",
+              "quote": "In this reflex, there is an interplay between the mesencephalic nucleus and motor V nucleus"
+            },
+            {
+              "claim": "Nieuwenhuys describes collaterals of the mesencephalic-nucleus afferents (descending as Probst's tract) that innervate jaw-closer motoneurons both directly AND indirectly by synapsing first in the supratrigeminal nucleus, implying a disynaptic component alongside the classic monosynaptic one.",
+              "source": "S1",
+              "quote": "These collaterals innervate motoneurons of jaw closers in the lateral group, both directly and by synapsing in the supratrigeminal nucleus",
+              "page": 863
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The jaw jerk reflex is typically absent or minimal in healthy individuals, and an exaggerated (brisk) jaw jerk is classically taught to indicate an upper motor neuron lesion above the level of the trigeminal motor nucleus (e.g. pseudobulbar palsy from bilateral corticobulbar tract lesions); this clinical exaggeration/localization detail was not found stated in Nieuwenhuys, which covered only the underlying anatomy.",
+        "Nieuwenhuys additionally describes the mesencephalic-nucleus afferents as carrying a second modality (pressure mechanoreceptors of the periodontal ligaments, via the caudal part of the nucleus) alongside the muscle-spindle afferents that mediate the jaw jerk itself; this periodontal-pressure component is not part of the jaw-jerk stretch-reflex arc described in the original StatPearls-sourced pathway."
+      ]
+    },
+    {
+      "id": "gag-pharyngeal-and-cough-reflex",
+      "name": "Gag (pharyngeal) reflex and cough reflex",
+      "category": "Cranial nerve / brainstem visceral reflex",
+      "function": "Gag reflex: bilateral pharyngeal muscle contraction and soft palate elevation to prevent swallowing/aspiration of foreign material, evoked by touching the posterior pharyngeal wall, tonsillar pillars, or tongue base. Cough reflex: forced expiratory maneuver to expel airway irritants, evoked mainly via vagal afferents from the larynx/trachea.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Glossopharyngeal (CN IX) sensory neurons, cell bodies at the superior (jugular) ganglion",
+          "courseVia": [
+            "CN IX, entering at the jugular foramen"
+          ],
+          "terminatesIn": "Ipsilateral nucleus of the solitary tract (nucleus solitarius / gustatory nucleus)",
+          "laterality": "ipsilateral (afferent limb from the stimulated side)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Nucleus of the solitary tract",
+          "courseVia": [
+            "projections to nucleus ambiguus"
+          ],
+          "terminatesIn": "Nucleus ambiguus (motor nucleus, rostral medulla)",
+          "laterality": "bilateral (direct + consensual gag reflex both elicited)",
+          "decussation": {
+            "present": true,
+            "where": "solitary-tract second-order neurons project to the nucleus ambiguus on both sides, producing a consensual (contralateral) as well as direct (ipsilateral) response"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Motoneurons of the ambiguus nucleus innervating pharyngeal muscles, which are involved in the second phase, receive input from the nucleus of the solitary tract.",
+              "page": 869,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Nucleus ambiguus",
+          "courseVia": [
+            "vagus nerve (CN X)"
+          ],
+          "terminatesIn": "Posterior pharyngeal muscles / stylopharyngeus",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The glossopharyngeal nerve innervates the stylopharyngeus muscle. Together with the vagus nerve it gives rise to the nervous plexus of the pharynx and the oesophagus.",
+              "page": 868,
+              "species": "rat"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 1,
+          "cellBodies": "Trigeminal afferents from the soft palate (alternate afferent limb for gag reflex when the soft palate rather than posterior pharynx/tongue base is stimulated)",
+          "courseVia": [
+            "CN V",
+            "nucleus of the spinal tract of the trigeminal nerve"
+          ],
+          "terminatesIn": "Spinal trigeminal nucleus",
+          "laterality": "ipsilateral afferent",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 5,
+          "neuronOrder": 1,
+          "cellBodies": "Vagal (CN X) sensory (Adelta and C-fiber) afferents from the laryngotracheal mucosa (cough reflex)",
+          "courseVia": [
+            "vagus nerve"
+          ],
+          "terminatesIn": "Caudal nucleus tractus solitarius (nTS)",
+          "laterality": "ipsilateral afferent",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate (afferent synapse onto nTS neurons)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "General visceral afferents, which innervate the baroreceptors of the carotid sinus and the arch of the aorta, chemoreceptors of the glomus caroticum, the heart, the bronchi and the abdominal viscera, are contained in the glossopharyngeal and vagus nerves",
+              "page": 707,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The caudal portion of the solitary nucleus constitutes an important centre for the regulation of visceral, cardiovascular and respiratory functions",
+              "page": 707,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "neuronOrder": 2,
+          "cellBodies": "Caudal nucleus tractus solitarius (Tac1-expressing neurons integrate vagal cough-related input)",
+          "courseVia": [
+            "medullary projections to nucleus ambiguus and to the caudal ventral respiratory group"
+          ],
+          "terminatesIn": "Nucleus ambiguus (glottic closure) and caudal ventral respiratory group (expiratory drive)",
+          "laterality": "bilateral coordination of glottic closure and expiratory effort",
+          "decussation": {
+            "present": true,
+            "where": "nTS projections to medullary respiratory/motor circuits coordinate bilateral glottic and expiratory muscle activity"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Neurons of the ventral respiratory group are located near the ambiguus nucleus.",
+              "page": 904,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "Inspiratory neurons are located in its rostral part; they project to motoneurons of the phrenic nerve at C3/C4 that innervate the diaphragm, the main inspiratory muscle.",
+              "page": 905,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "The caudally located expiratory neurons project to spinal interneurons for motoneurons innervating abdominal muscles.",
+              "page": 905,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Glossopharyngeal nerve (CN IX), unilateral",
+          "deficit": "No gag response when the affected side is touched (afferent limb damaged)",
+          "side": "ipsilateral",
+          "evidence": []
+        },
+        {
+          "site": "Vagus nerve (CN X), unilateral",
+          "deficit": "Soft palate elevates and deviates toward the affected side regardless of which side is touched (efferent limb damaged)",
+          "side": "ipsilateral (palate deviates toward the lesion)",
+          "evidence": []
+        },
+        {
+          "site": "Bilateral lower cranial nerve (IX, X, XI, XII) involvement (bulbar palsy)",
+          "deficit": "Absent gag reflex together with dysphagia, drooling, and dysarthria",
+          "side": "bilateral",
+          "evidence": []
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Motor innervation of the stylopharyngeus muscle in the gag-reflex efferent limb",
+          "positions": [
+            {
+              "claim": "The pathway groups 'posterior pharyngeal muscles / stylopharyngeus' together as the shared efferent target of the nucleus ambiguus via CN X (vagus).",
+              "source": "brainstem-reflexes.json (existing step 3, terminatesIn field)",
+              "quote": "Efferent nerve fibres to the pharyngeal musculature traverse from the nucleus ambiguus through CN X, resulting in the bilateral contraction of the posterior pharyngeal muscles"
+            },
+            {
+              "claim": "Nieuwenhuys states that the stylopharyngeus muscle specifically is innervated by the glossopharyngeal nerve (CN IX) itself, not by the vagus/nucleus ambiguus route used for the other posterior pharyngeal muscles.",
+              "source": "S1",
+              "quote": "The glossopharyngeal nerve innervates the stylopharyngeus muscle. Together with the vagus nerve it gives rise to the nervous plexus of the pharynx and the oesophagus.",
+              "page": 868
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The specific afferent limb from the jugular (superior) ganglion of CN IX to the ipsilateral nucleus solitarius for pharyngeal touch/gag sensation was not found described in Nieuwenhuys in these terms; the source discusses glossopharyngeal general visceral and gustatory afferents to the solitary tract but not gag-specific mechanosensation from the posterior pharyngeal wall.",
+        "The alternate trigeminal (soft palate) afferent limb for the gag reflex, via the spinal trigeminal nucleus, was not found described in Nieuwenhuys.",
+        "Cough-reflex afferents below the vocal folds are classically taught to travel mainly via the internal branch of the superior laryngeal nerve and the recurrent laryngeal nerve (both vagal branches); Nieuwenhuys was not found to name these individual laryngeal nerve branches, only vagal 'general visceral afferents...contained in the glossopharyngeal and vagus nerves' more broadly (see step 5 evidence).",
+        "Absence of the gag reflex alone is a poor predictor of aspiration risk in stroke patients, a clinically important testing-performance caveat not addressed by Nieuwenhuys, which covers only anatomy."
+      ]
+    },
+    {
+      "id": "baroreceptor-reflex",
+      "name": "Baroreceptor reflex",
+      "category": "Autonomic / brainstem visceral reflex",
+      "function": "Rapid, short-term negative-feedback regulation of arterial blood pressure via reflex adjustment of heart rate, cardiac contractility, and vascular resistance.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Carotid sinus baroreceptor afferents: cell bodies in the petrosal ganglion of CN IX; aortic arch baroreceptor afferents: cell bodies in the nodose ganglion of CN X",
+          "courseVia": [
+            "carotid sinus nerve (branch of glossopharyngeal nerve, CN IX)",
+            "vagus nerve (CN X)"
+          ],
+          "terminatesIn": "Nucleus tractus solitarius (NTS)",
+          "laterality": "ipsilateral afferent limb",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate (onto second-order NTS neurons)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "General visceral afferents, which innervate the baroreceptors of the carotid sinus and the arch of the aorta, chemoreceptors of the glomus caroticum, the heart, the bronchi and the abdominal viscera, are contained in the glossopharyngeal and vagus nerves",
+              "page": 707,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "Viscerosensory fibres of the vagal and glossopharyngeal nerves, which innervate baroreceptors, terminate in the caudal nucleus of the solitary tract.",
+              "page": 904,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "Baroreceptors in the carotid sinus and the ascending aorta connect with the rostral part of the general visceral portion of the nucleus of the solitary tract; chemoreceptors sensitive to O2 and CO 2 concentrations terminate more caudally.",
+              "page": 905,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Nucleus tractus solitarius (NTS)",
+          "courseVia": [
+            "excitatory glutamatergic projection to the caudal ventrolateral medulla (CVLM)"
+          ],
+          "terminatesIn": "Caudal ventrolateral medulla (CVLM)",
+          "laterality": "bilateral autonomic integration",
+          "decussation": {
+            "present": false,
+            "where": "NTS-to-CVLM-to-RVLM circuitry is generally described as an ipsilateral medullary chain, with bilateral autonomic output"
+          },
+          "neurotransmitter": "glutamate",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "An inhibitory pathway from the nucleus of the solitary tract (red) terminates on a group of excitatory neurons in the ventrolateral superficial reticular formation, at the level of the noradrenergic A1 group. Ascending axons from these cells terminate in C1.",
+              "page": 904,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "It projects to vasomotor interneurons in the caudal ventrolateral medulla, involved in the maintenance of blood pressure, to vagal parasympathetic premotor neurons controlling heart rate",
+              "page": 707,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Caudal ventrolateral medulla (CVLM), GABAergic neurons",
+          "courseVia": [
+            "inhibitory GABAergic projection to the rostral ventrolateral medulla (RVLM)"
+          ],
+          "terminatesIn": "Rostral ventrolateral medulla (RVLM)",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The C1 group is inhibited by more caudally located GABAergic neurons in the VLSM",
+              "page": 905,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "These inhibitory neurons receive an input from baroreceptor-activated cells of the nucleus of the solitary tract, thus causing inhibition of vasomotor tone.",
+              "page": 905,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 4,
+          "cellBodies": "Rostral ventrolateral medulla (RVLM) sympathetic premotor neurons",
+          "courseVia": [
+            "bulbospinal projection to intermediolateral cell column of the spinal cord"
+          ],
+          "terminatesIn": "Sympathetic preganglionic neurons (intermediolateral cell column)",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate (RVLM to spinal preganglionic neurons)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Presympathetic neurons in the VLSM, 50% of which correspond to the adrenergic C1 group, project to the thoracic intermediolateral column",
+              "page": 905,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "Crossed solitariospinal fibres descend from the caudal part of the nucleus to terminate in the autonomic centres of the spinal cord",
+              "page": 707,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "neuronOrder": 2,
+          "cellBodies": "Nucleus tractus solitarius (parallel parasympathetic branch)",
+          "courseVia": [
+            "excitatory projection to cardiac parasympathetic (vagal) neurons"
+          ],
+          "terminatesIn": "Nucleus ambiguus (cardiac parasympathetic neurons) and dorsal motor nucleus of the vagus",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Short pathways connect the nucleus of the solitary tract with cardiomotor neurons in the dorsal vagal nucleus, subserving slowing down the heart rate.",
+              "page": 905,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Which vagal nucleus provides the parasympathetic (cardioinhibitory) output of the baroreflex",
+          "positions": [
+            {
+              "claim": "The NTS sends excitatory projections to cardiac parasympathetic neurons in the nucleus ambiguus, which provide parasympathetic output to the heart through the vagus nerve.",
+              "source": "brainstem-reflexes.json#S14",
+              "quote": "The NTS also sends excitatory projections to cardiac parasympathetic neurons in the nucleus ambiguus. These neurons provide parasympathetic output to the heart through the vagus nerve"
+            },
+            {
+              "claim": "Nieuwenhuys attributes the short NTS-to-cardiomotor pathway that slows the heart rate specifically to the dorsal vagal nucleus (dorsal motor nucleus of the vagus), not the nucleus ambiguus.",
+              "source": "S1",
+              "quote": "Short pathways connect the nucleus of the solitary tract with cardiomotor neurons in the dorsal vagal nucleus, subserving slowing down the heart rate.",
+              "page": 905
+            }
+          ]
+        },
+        {
+          "issue": "Apparent internal tension in Nieuwenhuys over whether baroreceptor afferents terminate in the 'caudal' or a 'rostral' part of the nucleus of the solitary tract",
+          "positions": [
+            {
+              "claim": "Viscerosensory (baroreceptor) fibres of the vagus and glossopharyngeal nerves terminate in the caudal nucleus of the solitary tract.",
+              "source": "S1",
+              "quote": "Viscerosensory fibres of the vagal and glossopharyngeal nerves, which innervate baroreceptors, terminate in the caudal nucleus of the solitary tract.",
+              "page": 904
+            },
+            {
+              "claim": "Baroreceptors connect with the rostral part of the general visceral portion of the nucleus of the solitary tract, while chemoreceptors terminate more caudally.",
+              "source": "S1",
+              "quote": "Baroreceptors in the carotid sinus and the ascending aorta connect with the rostral part of the general visceral portion of the nucleus of the solitary tract; chemoreceptors sensitive to O2 and CO 2 concentrations terminate more caudally.",
+              "page": 905
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "Carotid sinus baroreceptors are sometimes described as more sensitive over the normal physiological blood-pressure range than aortic arch baroreceptors; this comparative sensitivity claim was not found stated in Nieuwenhuys.",
+        "The specific eponymous ganglia (petrosal ganglion of CN IX, nodose ganglion of CN X) for baroreceptor afferent cell bodies were not found named in the opened Nieuwenhuys chapters; 'nodose ganglion' appears only in a reference-list citation, not in the running text.",
+        "Nieuwenhuys uses the terms 'ventrolateral superficial medulla oblongata (VLSM)' and the adrenergic/noradrenergic cell groups A1 and C1 rather than the modern 'CVLM'/'RVLM' terminology used in the existing pathway; the two schemes appear to correspond (A1-region inhibitory neurons ≈ CVLM, C1 group ≈ RVLM) but this equivalence is not stated explicitly by the source itself."
+      ]
+    },
+    {
+      "id": "accommodation-convergence-near-reflex",
+      "name": "Accommodation-convergence (near) reflex",
+      "category": "Cranial nerve / brainstem-cortical reflex (synkinesis)",
+      "function": "Coordinated synkinesis of convergence (medial rectus contraction), lens accommodation (ciliary muscle contraction), and pupillary constriction to bring a near object into sharp binocular focus.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Retinal ganglion cells (afferent limb shared with the visual/pupillary light pathway)",
+          "courseVia": [
+            "optic nerve",
+            "optic chiasm",
+            "optic tract",
+            "lateral geniculate nucleus",
+            "optic radiations to visual cortex",
+            "visual association cortex projections to superior colliculus and pretectal areas"
+          ],
+          "terminatesIn": "Oculomotor and Edinger-Westphal nuclei (via cortical/pretectal relay)",
+          "laterality": "bilateral cortical processing feeding a bilateral near-response output",
+          "decussation": {
+            "present": false,
+            "where": "afferent limb shares the visual pathway's chiasmal decussation but the near-reflex-specific supranuclear relay is described as cortical/pretectal without an additional named crossing point"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The pathway for the accommodation reflex, i.e. increase in the curvature of the lens for near vision, is (as far as its mesencephalic centres and efferent limbs are concerned) closely comparable to the pathway for the light reflex.",
+              "page": 791,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "However, the afferent limb of the accommodation reflex includes the visual cortex and is thus much longer and much more complex than that of the light reflex",
+              "page": 791,
+              "species": "human"
+            },
+            {
+              "source": "S1",
+              "quote": "In addition to the response to light, pupillary constriction also occurs following the initiation of ocular convergence.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Oculomotor nucleus (medial rectus subnucleus) and Edinger-Westphal nucleus, midbrain near-response center (more ventral than the pretectal light-reflex center)",
+          "courseVia": [
+            "oculomotor nerve (CN III)",
+            "inferior division to medial rectus; parasympathetic fibers to ciliary ganglion"
+          ],
+          "terminatesIn": "Medial rectus muscles (convergence) and, via the ciliary ganglion/short ciliary nerves, the sphincter pupillae and ciliary muscle",
+          "laterality": "bilateral (both medial recti contract for convergence; both pupils constrict)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "In both pathways the pretectal region, the accessory oculomotor nucleus and the ciliary ganglion represent successive relay stations.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 2,
+          "cellBodies": "Edinger-Westphal nucleus (parasympathetic preganglionic, near-response ventral subdivision)",
+          "courseVia": [
+            "oculomotor nerve",
+            "ciliary ganglion",
+            "short ciliary nerves"
+          ],
+          "terminatesIn": "Ciliary muscle (lens accommodation)",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The final link on the efferent side of the accommodation pathway is formed by the postganglionic fibres to the ciliary muscle.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Dorsal midbrain (light-near dissociation)",
+          "deficit": "Light reflex is impaired while the near/accommodation reflex remains intact, because the midbrain near-response center is more ventral than the pretectal nucleus controlling the light reflex and is spared by dorsal lesions",
+          "side": "bilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The neural pathway for this convergence-induced pupillary constriction is believed to be independent of that for light-induced pupillary constriction, since the two reflexes are dissociated in the clinical phenomenon, known as the Argyll Robertson sign.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Localization of the midbrain near-response (convergence) centre relative to the pretectal light-reflex centre",
+          "positions": [
+            {
+              "claim": "The midbrain center for the near reflex is more ventral than the pretectal nucleus, which controls the light reflex.",
+              "source": "brainstem-reflexes.json#S15",
+              "quote": "This action occurs because the midbrain center for the near reflex is more ventral than the pretectal nucleus, which controls the light reflex"
+            },
+            {
+              "claim": "Nieuwenhuys does not describe the near-response centre in terms of dorsoventral position relative to the pretectal nucleus; instead it characterizes the convergence-induced pupillary pathway as independent of the light pathway (consistent with the Argyll Robertson dissociation) and terminating on 'a group of small neurons outside the classical oculomotor nucleus'.",
+              "source": "S1",
+              "quote": "This pathway terminates on a group of small neurons outside the classical oculomotor nucleus",
+              "page": 791
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The near-response is sometimes localized to a specific 'supraoculomotor area' or dedicated near-response neuron population adjacent to the oculomotor complex in primate physiology studies; Nieuwenhuys names only 'a group of small neurons outside the classical oculomotor nucleus' without using the term 'supraoculomotor area'.",
+        "The normal accommodative convergence/accommodation (AC/A) ratio (commonly cited as 3 to 5 prism diopters per diopter of accommodation) was not found stated in Nieuwenhuys."
+      ]
+    },
+    {
+      "id": "sympathetic-pathway-to-the-eye-horner-syndrome",
+      "name": "Sympathetic pathway to the eye and Horner syndrome localisation",
+      "category": "Autonomic (sympathetic) pathway",
+      "function": "Three-neuron sympathetic chain providing tonic sympathetic drive to the dilator pupillae, superior tarsal (Muller) muscle, and facial sweat glands/vasculature; interruption at any of the three neuron levels produces Horner syndrome (ptosis, miosis, anhidrosis), and the pattern of associated deficits localises the lesion to the first-, second-, or third-order neuron.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Posterolateral hypothalamus (first-order/central neuron)",
+          "courseVia": [
+            "descends uncrossed through the midbrain and pons/brainstem tegmentum to the intermediolateral cell column"
+          ],
+          "terminatesIn": "Intermediolateral cell columns at spinal levels C8-T2 (ciliospinal center of Budge)",
+          "laterality": "ipsilateral, uncrossed",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The centre for pupillary dilation is located in the intermediolateral cell column of the upper thoracic cord.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Ciliospinal center of Budge, intermediolateral cell column C8-T2 (second-order/preganglionic neuron)",
+          "courseVia": [
+            "exits spinal cord at T1",
+            "cervical sympathetic chain, ascending over the lung apex"
+          ],
+          "terminatesIn": "Superior cervical ganglion (C3-C4 level)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The preganglionic sympathetic fibres originating from this so-called centrum ciliospinale ascend through the sympathetic trunk and synapse in the superior cervical ganglion with postganglionic elements.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Superior cervical ganglion (third-order/postganglionic neuron)",
+          "courseVia": [
+            "sudomotor/vasomotor branches follow the external carotid artery (face/sweat glands); other fibers ascend within the carotid plexus along the internal carotid artery, through the cavernous sinus (joining CN VI briefly), then the superior orbital fissure with the ophthalmic division of CN V, continuing as the long ciliary nerves"
+          ],
+          "terminatesIn": "Dilator pupillae and superior tarsal (Muller) muscle (via long ciliary nerves); sweat glands/vasculature of the face (via external carotid plexus)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The axons of the latter accompany the branches of the internal carotid artery and traverse the ciliary ganglion before they innervate the dilatator pupillae muscle of the iris.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "First-order neuron (hypothalamus to C8-T2 intermediolateral cell column) — e.g. stroke, lateral medullary (Wallenberg) syndrome, Arnold-Chiari malformation, high spinal cord trauma",
+          "deficit": "Horner syndrome with anhidrosis potentially involving the entire ipsilateral side of the body, because these fibers arise centrally before dividing",
+          "side": "ipsilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Fibres descending through the lateral part of the medulla oblongata and of the spinal cord synapse in the sympathetic ciliospinal centre. The origin of these fibres is unknown.",
+              "page": 791,
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "site": "Second-order neuron (cervical sympathetic chain/thoracic outlet) — e.g. Pancoast tumor, cervical rib, brachial plexus trauma, neuroblastoma",
+          "deficit": "Horner syndrome with anhidrosis typically confined to the ipsilateral face",
+          "side": "ipsilateral",
+          "evidence": []
+        },
+        {
+          "site": "Third-order neuron (superior cervical ganglion to eye) — e.g. carotid dissection, cavernous sinus lesion, cluster headache/Raeder syndrome",
+          "deficit": "Horner syndrome with anhidrosis limited to a small area near the ipsilateral brow, because the vasomotor/sudomotor fibers have already branched off before this point",
+          "side": "ipsilateral",
+          "evidence": []
+        },
+        {
+          "site": "Sympathetic pathway (any level) — Horner syndrome overall",
+          "deficit": "Partial ptosis (from denervation of the superior tarsal/Muller muscle, milder than CN III ptosis), miosis (unopposed parasympathetic tone on the dilator pupillae), with pupillary light and accommodation responses remaining normal since they do not depend on sympathetic innervation",
+          "side": "ipsilateral",
+          "evidence": []
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Whether the central (first-order) sympathetic fibres descending to the ciliospinal centre have a confirmed hypothalamic origin",
+          "positions": [
+            {
+              "claim": "The first-order neurons originate in the hypothalamus and descend uncrossed through the midbrain and pons, terminating in the intermediolateral cell columns at the C8 through T2 levels of the spinal cord (the ciliospinal center of Budge).",
+              "source": "brainstem-reflexes.json#S16",
+              "quote": "The first-order neurons originate in the hypothalamus and descend uncrossed through the midbrain and pons, terminating in the intermediolateral cell columns at the C8 through T2 levels of the spinal cord, known as the ciliospinal center of Budge"
+            },
+            {
+              "claim": "Nieuwenhuys states that fibres descending through the lateral part of the medulla and spinal cord synapse in the sympathetic ciliospinal centre, but explicitly says the origin of these descending fibres is unknown.",
+              "source": "S1",
+              "quote": "Fibres descending through the lateral part of the medulla oblongata and of the spinal cord synapse in the sympathetic ciliospinal centre. The origin of these fibres is unknown.",
+              "page": 791
+            }
+          ]
+        },
+        {
+          "issue": "Route taken by third-order (postganglionic) sympathetic fibres from the superior cervical ganglion to the dilator pupillae",
+          "positions": [
+            {
+              "claim": "Postganglionic fibres ascend within the carotid plexus along the internal carotid artery, enter the cavernous sinus (joining CN VI briefly), then pass through the superior orbital fissure with the ophthalmic division of CN V, continuing as the long ciliary nerves — with no mention of the ciliary ganglion.",
+              "source": "brainstem-reflexes.json#S16",
+              "quote": "The remaining fibers ascend within the carotid plexus along the internal carotid artery and enter the cavernous sinus, where they join the abducens nerve (cranial nerve VI)"
+            },
+            {
+              "claim": "Nieuwenhuys states these postganglionic axons accompany branches of the internal carotid artery and traverse the ciliary ganglion itself before innervating the dilator pupillae, a detail absent from the StatPearls account.",
+              "source": "S1",
+              "quote": "The axons of the latter accompany the branches of the internal carotid artery and traverse the ciliary ganglion before they innervate the dilatator pupillae muscle of the iris.",
+              "page": 791
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The first-order sympathetic tract is commonly taught to descend within the dorsolateral brainstem tegmentum in close proximity to the spinothalamic tract, explaining why lateral medullary (Wallenberg) infarcts classically produce ipsilateral Horner syndrome together with contralateral body pain/temperature loss. Nieuwenhuys confirms only that descending fibres to the ciliospinal centre travel through 'the lateral part of the medulla oblongata', without describing adjacency to the spinothalamic tract, and states the origin of these fibres is unknown (see conflicts)."
+      ]
+    }
+  ]
+}

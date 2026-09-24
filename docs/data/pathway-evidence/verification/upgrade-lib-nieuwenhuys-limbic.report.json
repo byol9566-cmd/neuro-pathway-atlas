@@ -1,0 +1,793 @@
+{
+ "batch": "upgrade-lib-nieuwenhuys-limbic",
+ "file": "upgrade-lib-nieuwenhuys-limbic.json",
+ "tally": {
+  "exact": 98,
+  "UNKNOWN_SOURCE_ID": 11
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "The Human Central Nervous System",
+    "journal": "Springer (4th ed.)",
+    "year": 2008,
+    "pmcid": null,
+    "nbk": null,
+    "doi": null,
+    "license": "not stated (library copy)",
+    "type": "textbook"
+   },
+   "check": {
+    "note": "local PDF",
+    "file": "/Users/lim/Downloads/atlas-refs/nieuwenhuys-2008-human-cns.pdf",
+    "chars": 2821910
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The main bundle of the fornix or postcommissural fornix finally traverses the hypothalamus, where most of its fibres terminate in the mamillary body."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The fornix is a large, compact, arch-shaped bundle that originates from the hippocampal formation and projects to the septal region and hypothalamus."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The mamillothalamic tract, which passes to the anterior thalamic nucleus, forms part of the so-called Papez circuit."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The fasciculus mamillaris princeps, containing the efferents of the mamillary nuclei, constitutes a large compact bundle that passes dorsally for a short distance and then splits into two components, the large mamillothalamic and smaller mamillotegmental"
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The anterior nuclear group receives the mamillothalamic tract."
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The anterior and lateral dorsal nuclei are reciprocally connected with the limbic cortex of the cingulate gyrus, retrosplenial area and pre- and parasubiculum"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The fibres originating from the anterior nuclei reach the temporal lobe via the cingulum and terminate in the subicular complex and, more specifically, in the presubiculum"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This projection forms part of the so-called circuit of Papez, which will be discussed below."
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The cingulum consists of a bundle of short and long association fibres that surround the corpus callosum."
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Passing through the core of the cingulate and parahippocampal gyri, it extends from the septal area to the uncal region in the temporal lobe"
+  },
+  {
+   "path": "pathways[0].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The fibres passing from the entorhinal cortex to the dentate gyrus form a large pathway known as the temporo-ammonic or perforant path"
+  },
+  {
+   "path": "pathways[0].steps[4].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "They originate principally from large stellate cells situated in layer II of the entorhinal cortex and perforate through the subiculum and the zone of the obliterated hippocampal fissure."
+  },
+  {
+   "path": "pathways[0].steps[4].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "After entering the dentate gyrus, these fibres ramify in the outer two thirds of the molecular layer of that structure, where they form excitatory synapses onto the dendritic spines of granule cells"
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The axons of the granule cells in the dentate gyrus pass as mossy fibres to the stratum radiatum of field CA3, in which they form a separate sublayer known as the stratum lucidum ."
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The mossy fibre varicosities contain large amounts of Zn 2+ and opioid peptides that are coreleased with the primary neurotransmitter glutamate"
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These collaterals are collectively known as Schaffer collaterals ."
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Physiological experiments have shown that the Schaffer collaterals exert an excitatory action on CA1 pyramidal cells"
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The CA1 pyramidal cells project massively to the subiculum"
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "All of these projections originate from pyramidal neurons and are considered to be excitatory in nature."
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "these may form the final link (7) in a second route, along which the hippocampo-entorhinal circuit is closed"
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[0]",
+   "source": "S2",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "In Korsakoff syndrome, injury involving the mammillary bodies, anterior and mediodorsal thalamic nuclei, mammillothalamic pathways, and connected hippocampal and frontal networks contributes to severe impairment of episodic memory and executive function."
+  },
+  {
+   "path": "pathways[0].lesions[1].evidence[0]",
+   "source": "S5",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The original account by Scoville and Milner (1957) described that in the 10 patients studied, including H.M., the severe anterograde memory impairments occurred only after bilateral MTL excisions that included much of the amygdala, hippocampus, and surrounding cortex."
+  },
+  {
+   "path": "pathways[0].lesions[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "bilateral damage limited to the hippocampal formation is sufficient to produce enduring memory impairment."
+  },
+  {
+   "path": "pathways[0].lesions[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The only pathology that could be associated with his memory disturbance was complete loss of neurons in the hippocampal CA1 field."
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[0]",
+   "source": "S3",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "the subiculum has been considered the “fourth leg” and output region of the trisynaptic pathway"
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[1]",
+   "source": "S3",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "recent evidence highlights the subiculum as a site of integration, receiving and redistributing outputs from the hippocampus, anterior thalamus, retrosplenial cortex, and entorhinal cortex"
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "these may form the final link (7) in a second route, along which the hippocampo-entorhinal circuit is closed"
+  },
+  {
+   "path": "pathways[0].conflicts[1].positions[0]",
+   "source": "original batch (step 3-4 structure)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "n/a (structural claim, not a quoted source)"
+  },
+  {
+   "path": "pathways[0].conflicts[1].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The fibres originating from the anterior nuclei reach the temporal lobe via the cingulum and terminate in the subicular complex and, more specifically, in the presubiculum"
+  },
+  {
+   "path": "pathways[0].conflicts[2].positions[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In 1937, Papez [99] published a notable paper in which he claimed on theoretical grounds that a circuit, of which the hippocampal formation and the cingulate gyrus form important components, constitutes the neural substrate of emotional behaviour."
+  },
+  {
+   "path": "pathways[0].conflicts[2].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "An adequate empirical definition of the limbic system is lacking"
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The magnocellular portion of the MGN sends heavy projections to the lateral, accessory basal and central amygdaloid nuclei"
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The auditory association cortex situated in the anterior half of the superior temporal gyrus"
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "All of these neocortical areas project to the deep or basolateral part of the amygdala."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral nucleus projects to the basal, accessory basal, cortical and medial nuclei"
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The basal nucleus projects to the accessory basal, central (especially the medial part) and medial nuclei"
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A sizable proportion of the neurons in the central nucleus that project to the brain stem are GABAergic"
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The central amygdaloid nucleus gives rise to a large projection, whose constituent fibres initially travel medially via the ventral amygdalofugal pathway and then turn caudally, to descend through the most lateral part of the hypothalamus and the tegmental regions of the brain stem"
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "fibres are distributed to numerous centres, including the peripeduncular nucleus, the substantia nigra pars compacta, the ventral tegmental area, the cuneiform nucleus, the periaqueductal grey matter"
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The most caudal fibres of this so-called amygdalotegmental projection reach the cervical cord"
+  },
+  {
+   "path": "pathways[1].steps[5].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The stria terminalis , i.e. the dorsal amygdalofugal pathway, emerges from the caudomedial aspect of the amygdala."
+  },
+  {
+   "path": "pathways[1].steps[5].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The precommissural fibres curve caudally around the anterior commissure and terminate in the medial preoptic and anterior hypothalamic areas"
+  },
+  {
+   "path": "pathways[1].steps[5].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The efferent projections of the amygdaloid complex are distributed to: (1) the septo-preopticohypothalamic continuum; (2) the dorsal thalamus; (3) a variety of cell groups located in the brain stem; (4) the corpus striatum and (5) a considerable number of cortical areas"
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The ventral amygdalofugal pathway is a large assemblage of rather loosely arranged fibres, which extends from the amygdaloid complex to the rostral part of the diencephalon."
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "others spread in the lateral preoptico-hypothalamic zone; and still others enter the inferior thalamic peduncle to terminate in the mediodorsal thalamic nucleus"
+  },
+  {
+   "path": "pathways[1].steps[7].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The postcommissural fibres spread to the BST, an elongated cell mass that accompanies the stria terminalis throughout most of its extent"
+  },
+  {
+   "path": "pathways[1].lesions[0].evidence[0]",
+   "source": "S6",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Kluver-Bucy syndrome (KBS) is a rare neuropsychiatric condition caused by the abrasions which disturbs the hippocampus, bilateral temporal lobes of amygdala. The pathological characteristics are hyperorality, hypersexuality, hyper-metamorphosis, placidity, bulimia, visual agnosia and amnesia."
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[0]",
+   "source": "S8 (original batch)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Amygdala has neural circuits to carry out its different functions with two major output pathways; the Dorsal route via stria terminalis that projects to the septal area and hypothalamus"
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The precommissural fibres curve caudally around the anterior commissure and terminate in the medial preoptic and anterior hypothalamic areas"
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the nucleus accumbens receives a strong dopaminergic input from the ventral tegmental area, whereas the caudate-putamen complex receives a similar projection from the substantia nigra"
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "abnormalities in the synaptic transmission from mesocortical dopaminergic fibres to the pyramidal neurons giving origin to the prefronto-accumbens projection"
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "whereas the caudate-putamen complex receives a similar projection from the substantia nigra, further substantiates the interpretation of the nucleus accumbens as a part of the ventral striatum"
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Two cell masses, the laterodorsal tegmental (LDT) and pedunculopontine tegmental (PPT) nuclei, both situated in the tegmentum of the caudal midbrain and rostral pons."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These nuclei contain numerous neurons that use acetylcholine as a neurotransmitter."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The dorsal branch, which includes numerous cholinergic fibres from the LDT and PPT, passes to the thalamus itself and the reticular thalamic nucleus"
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fibres ascending from the mesopontine cholinergic (LDT, PPT), noradrenergic (LC), and serotoninergic (DR, CS) cell groups and from other parts of the reticular formation together form an ascending arousal system (AAS)."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Noradrenergic neurons clustered in the locus coeruleus (LC), in the rostral pontine tegmentum"
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Mesencephalic serotoninergic neurons in the dorsal raphe (DR) and central superior (CS) nuclei."
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The ventral branch of the ascending arousal system, which consists mainly of serotoninergic and noradrenergic fibres, enters the hypothalamus."
+  },
+  {
+   "path": "pathways[3].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A group of histaminergic cells clustered in the tuberomamillary nucleus (TMN) in the posterior hypothalamus"
+  },
+  {
+   "path": "pathways[3].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The TMN neurons contain several other neurotransmitters and modulators in addition to histamine, including GABA, galanin, and substance P"
+  },
+  {
+   "path": "pathways[3].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A group of diffusely arranged neurons in the intermediate region of the hypothalamus characterized by presence of the neuropeptide orexin (also known as hypocretin)"
+  },
+  {
+   "path": "pathways[3].steps[4].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "noradrenergic and serotoninergic fibres of the ventral branch of the ascending arousal system are joined by histaminergic fibres from the TMN, orexinergic fibres from the PFG, and further rostrally by numerous axons from the cholinergic BT"
+  },
+  {
+   "path": "pathways[3].steps[4].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "There is evidence that degeneration or agenesis of the orexinergic hypothalamic neurons in humans"
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The VLPO sends descending projections to the various components of the ascending arousal system"
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Because the VLPO neurons synthesize GABA and galanin, their descending projections are likely to be inhibitory."
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Thus a reciprocal inhibitory interaction likely exists between the sleep-promoting VLPO and the monoaminergic wake-promoting centres in the caudal hypothalamus and brain stem."
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "When VLPO neurons fire rapidly during sleep, they would inhibit the monoaminergic cell groups, thus disinhibiting and reinforcing their own firing."
+  },
+  {
+   "path": "pathways[3].steps[5].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Similarly, when monoamine neurons fire at a high rate during wakefulness, they would inhibit the VLPO, thereby disinhibiting their own firing"
+  },
+  {
+   "path": "pathways[3].steps[6].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "However, at onset of REM sleep, noradrenergic and serotoninergic neurons are inhibited by a local GABAergic element, which leads to disinhibition of the cholinergic neurons."
+  },
+  {
+   "path": "pathways[3].lesions[0].evidence[0]",
+   "source": "S12",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Acute impairments of consciousness include coma which is defined as a “state of unresponsiveness in which the patient lies with eyes closed and cannot be aroused to respond appropriately to stimuli even with vigorous stimulation”"
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[0]",
+   "source": "S10 (original batch)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "GABAergic neurons in the ventrolateral periaqueductal gray matter and the adjacent lateral pontine tegmentum (vlPAG/LPT; shown in gold) fire during non-REM states to inhibit entry into REM sleep."
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "There is evidence that normally the noradrenergic LC and serotoninergic DR and CS are tonically active and inhibit the mesopontine cholinergic system."
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The magnocellular nuclei of the anterior hypothalamus, i.e. the supraoptic and (magnocellular) paraventricular nuclei, give rise to axons that descend through the infundibular stalk to the posterior lobe of the pituitary."
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These axons, which together form the supraoptico-paraventriculo-hypophyseal tract, transport colloid droplets containing the hormones oxytocin and vasopressin to the posterior pituitary lobe or neurohypophysis, where they are released into the blood."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Parvocellular neurons in the hypothalamic paraventricular nucleus (PVH), which produce corticotropin-releasing hormone (CRH)."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In rats, CRH-producing cells are located in a distinct subnucleus of the PVH, but in humans they are scattered throughout the nucleus"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Most of the CRH-producing neurons in the PVH project to the neurohemal contact zone in the median eminence (ME)."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The cells of the infundibular nucleus are involved in controlling secretion of the anterior pituitary hormones by regulating hormones that stimulate or inhibit the liberation of hormones produced in the pituitary."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Corticotrope cells in the anterior pituitary gland (APG) that produce adrenocorticotrope hormone (ACTH)."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Attaining the anterior pituitary via the hypothalamo-hypophyseal portal circulation, CRH stimulates the secretion of ACTH from the corticotropes and ACTH in turn stimulates the release of adrenal glucocorticoids."
+  },
+  {
+   "path": "pathways[4].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Elements in the adrenal cortex (AC) producing the so-called stress hormones, i.e. the glucocorticoids (GCS) corticosterone and cortisol."
+  },
+  {
+   "path": "pathways[4].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Adrenal corticosteroids exert a selective negative feedback effect on the synthesis of CRH in the PVH and on the hippocampus"
+  },
+  {
+   "path": "pathways[4].conflicts[0].positions[0]",
+   "source": "S14",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "This hormone functions as the primary glucocorticoid synthesized and released by the zona fasciculata of the adrenal cortex."
+  },
+  {
+   "path": "pathways[4].conflicts[0].positions[1]",
+   "source": "S13",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "ACTH travels through systemic circulation to stimulate the adrenal cortex (zona reticularis) production of the stress-response hormone cortisol."
+  },
+  {
+   "path": "pathways[4].conflicts[0].positions[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Elements in the adrenal cortex (AC) producing the so-called stress hormones, i.e. the glucocorticoids (GCS) corticosterone and cortisol."
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the paraventricular nucleus, referred to as “master controller of the autonomic system”"
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "projects directly to the dorsal vagal motor nucleus, nucleus ambiguus, and thoracic (sympathetic) and sacral (parasympathetic) preganglionic cell columns"
+  },
+  {
+   "path": "pathways[5].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Apart from the paraventricular nucleus, the dorsomedial nucleus and lateral hypothalamic area also provide descending connections to the autonomic nuclei of the lower brain stem and spinal cord"
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The traditional view of co-ordinated reflex micturition holds that micturition is mediated by a spinal cord-brain stem-spinal cord reflex loop, initiated by input from pelvic nerve afferents signaling bladder distension"
+  },
+  {
+   "path": "pathways[5].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The reflex loop is closed by an ascending pathway from spinal neurons located within the terminal plexus of pelvic and pudendal nerve afferents in sacral lamina I that terminates in the periaqueductal grey"
+  },
+  {
+   "path": "pathways[5].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "and a projection of the periaqueductal grey to the pontine micturition region"
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The pontine micturition region (M-region of Holstege, Barrington’s nucleus [17]) is located in the dorsolateral pontine tegmentum."
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It projects bilaterally to the sacral intermediolateral nucleus and the commissural nucleus, which contains the interneurons inhibiting Onuf’s nucleus"
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The detrusor muscle is innervated by an intra- and juxtamural cholinergic plexus, which is postganglionic to parasympathetic preganglionic fibres from the sacral intermediolateral nucleus"
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Stimulation of the pontine micturition region results in micturition."
+  },
+  {
+   "path": "pathways[5].steps[3].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The presence of a pontine micturition region has been confirmed in PET-studies carried out by Blok et al."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The external urethral sphincter is innervated by a subset of motoneurons of Onuf’s nucleus."
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This nucleus is located in the sacral anterior horn"
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Relaxation of the urethral sphincter is produced by inhibitory interneurons located in the commissural nucleus that terminate on the motoneurons of Onuf’s nucleus"
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In addition, Onuf’s nucleus receives supraspinal afferents from the hypothalamus, the lateral pontine reticular formation"
+  },
+  {
+   "path": "pathways[5].steps[4].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A column of small motoneurons extending from S1 caudally, which contains Onuf’s nucleus"
+  },
+  {
+   "path": "pathways[6].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These endogenous SCH rhythms are adjusted daily (entrained) to the environmental light/ dark cycle through a direct projection from the retina to the SCH"
+  },
+  {
+   "path": "pathways[6].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In rodents [338] as well as humans [82], this tract terminates in the ventral part of the SCH."
+  },
+  {
+   "path": "pathways[6].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The rostroventral part of the paraventricular nucleus (PVH) receives a direct projection from the SCH which is augmented by indirect projections via the subparaventricular zone (SPZ) and dorsomedial hypothalamus nucleus (DMH)."
+  },
+  {
+   "path": "pathways[6].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Many neurons in the PVH and DMH have long, descending axons that pass to autonomic centres in the brain stem and spinal cord"
+  },
+  {
+   "path": "pathways[6].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The projection to the pineal includes sympathetic preganglionic neurons in the rostral part of the spinal intermediolateral cell column and postganglionic neurons in the superior cervical ganglion."
+  },
+  {
+   "path": "pathways[6].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The projection to the pineal includes sympathetic preganglionic neurons in the rostral part of the spinal intermediolateral cell column and postganglionic neurons in the superior cervical ganglion."
+  },
+  {
+   "path": "pathways[6].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These fibres form part of the projections by which the SCH controls secretion of melatonin from the pineal gland"
+  }
+ ]
+}

@@ -1,0 +1,2016 @@
+{
+  "batch": "upgrade-lib-nieuwenhuys-motor-somatosensory",
+  "collectedBy": "sub-agent",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "textbook",
+      "title": "The Human Central Nervous System",
+      "authors": "Nieuwenhuys R, Voogd J, van Huijzen C",
+      "journal": "Springer (4th ed.)",
+      "year": 2008,
+      "isbn": "9783540346845",
+      "file": "~/Downloads/atlas-refs/nieuwenhuys-2008-human-cns.pdf",
+      "license": "not stated (library copy)",
+      "openedVia": "local-pdf"
+    }
+  ],
+  "pathways": [
+    {
+      "id": "dcml-pathway",
+      "name": "Dorsal column–medial lemniscus (posterior column–medial lemniscus) pathway",
+      "category": "ascending somatosensory / discriminative touch and proprioception",
+      "function": "Conveys conscious proprioception, vibration, fine (discriminative) touch and 2-point discrimination from skin and joints to the primary somatosensory cortex.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Dorsal root ganglion (pseudounipolar neurons)",
+          "courseVia": [
+            "peripheral nerve",
+            "dorsal root (medial division, medial dorsal root entry zone)",
+            "fasciculus gracilis (below T6) or fasciculus cuneatus (T6 and above)"
+          ],
+          "terminatesIn": "Nucleus gracilis (lower body) or nucleus cuneatus (upper body) in caudal medulla",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Root fibres from sacral and lumbar dorsal roots ascend into the fasciculus gracilis; root fibres from cervical roots ascend into the fasciculus cuneatus, to terminate in the corresponding dorsal column nuclei.",
+              "species": "human",
+              "page": 691
+            },
+            {
+              "source": "S1",
+              "quote": "Fibres from sacral and lumbar roots ascend medially, in the fasciculus gracilis; those from cervical roots ascend laterally, in the fasciculus cuneatus.",
+              "species": "human",
+              "page": 694
+            },
+            {
+              "source": "S1",
+              "quote": "The dorsal column nuclei consist of the medial nucleus gracilis and the more laterally located medial and lateral cuneate nuclei.",
+              "species": "human",
+              "page": 694
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Nucleus gracilis / nucleus cuneatus (caudal medulla, dorsal column nuclei)",
+          "courseVia": [
+            "internal arcuate fibers (decussate)",
+            "medial lemniscus"
+          ],
+          "terminatesIn": "Ventral posterolateral nucleus (VPL) of thalamus",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "Internal arcuate fibers cross the midline in the caudal medulla (sensory decussation)"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Fibres from the dorsal column nuclei decussate in the caudal medulla oblongata and ascend into the medial lemniscus to the lateral ventroposterior nucleus of the thalamus.",
+              "species": "human",
+              "page": 691
+            },
+            {
+              "source": "S1",
+              "quote": "The dorsal column nuclei project to the contralateral VPL through the medial lemniscus.",
+              "species": "human",
+              "page": 696
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Ventral posterolateral nucleus (VPL) of thalamus",
+          "courseVia": [
+            "thalamocortical fibers",
+            "posterior limb of internal capsule"
+          ],
+          "terminatesIn": "Primary somatosensory cortex (postcentral gyrus, Brodmann areas 3, 1, 2)",
+          "laterality": "ipsilateral (to thalamus; contralateral to body side of origin)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The lateral ventroposterior nucleus innervates areas 3 b and 1 of the primary somatosensory cortex and the secondary somatosensory cortex (S2).",
+              "species": "human",
+              "page": 692
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Level of the boundary between the fasciculus gracilis (lower body) and the fasciculus cuneatus (upper body)",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S7): a fairly sharp segmental cutoff -- gracile fasciculus carries the lower body (T7 and below), cuneate fasciculus the upper body (C2-T7)",
+              "source": "S7 (original somatosensory.json batch; not reopened this session)",
+              "quote": "The gracile fasciculus conveys sensory information from the lower body (T7 and below) and synapses with the gracile nucleus. The cuneate fasciculus conveys sensory information from the upper body (C2–T7) and synapses to the cuneate nucleus"
+            },
+            {
+              "claim": "Nieuwenhuys describes a gradual transition rather than a sharp cutoff: sacral/lumbar fibres in the gracile fasciculus, cervical fibres in the cuneate fasciculus, with a small contingent of thoracic fibres occupying an intermediate position between the two",
+              "source": "S1",
+              "quote": "Fibres from sacral and lumbar roots ascend medially, in the fasciculus gracilis; those from cervical roots ascend laterally, in the fasciculus cuneatus. A small contingent of thoracic fibres takes an intermediate position",
+              "page": 694
+            }
+          ]
+        },
+        {
+          "issue": "Whether dorsal column lesions actually abolish conscious touch localization and position sense in humans",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S13): dorsal column/posterior column damage causes loss of fine touch, vibration, 2-point discrimination and conscious proprioception",
+              "source": "S13 (original somatosensory.json batch; not reopened this session)",
+              "quote": "Ipsilateral modalities of fine touch, vibration, 2-point discrimination, and conscious proprioception are affected due to injury to the dorsal columns ascending within the dorsomedial spinal cord"
+            },
+            {
+              "claim": "Nieuwenhuys states that in patients with dorsal column lesions the localization of tactile stimuli and position sense is mostly intact, implying other ascending spinal systems (e.g. the anterolateral fasciculus) also contribute to these modalities",
+              "source": "S1",
+              "quote": "In patients with lesions of the dorsal columns the localization of tactile stimuli and position sense is mostly intact",
+              "page": 684
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "Glutamate is the excitatory neurotransmitter used at first- and second-order synapses of the DCML pathway (widely stated in standard neuroanatomy texts, but no explicit sourced quote naming the neurotransmitter was found in Nieuwenhuys ch.16)."
+      ]
+    },
+    {
+      "id": "anterolateral-system-spinothalamic-tract",
+      "name": "Anterolateral system / spinothalamic tract",
+      "category": "ascending somatosensory / pain, temperature and crude touch",
+      "function": "Carries nociceptive, thermal, crude touch and pressure information from the body to the thalamus; includes spinothalamic, spinoreticular and spinotectal (spinomesencephalic) components.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Dorsal root ganglion (pseudounipolar neurons)",
+          "courseVia": [
+            "peripheral nerve",
+            "lateral dorsal root entry zone",
+            "Lissauer's tract (ascends/descends 1–2 segments)"
+          ],
+          "terminatesIn": "Dorsal horn grey matter – substantia gelatinosa / laminae I, II, V",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Dorsal horn (substantia gelatinosa / laminae I, II, V)",
+          "courseVia": [
+            "anterior white commissure (decussation)",
+            "anterolateral/ventrolateral white matter of spinal cord",
+            "spinal lemniscus in brainstem"
+          ],
+          "terminatesIn": "Ventral posterolateral nucleus (VPL) of thalamus (spinothalamic component); also reticular formation (spinoreticular) and tectum/periaqueductal region (spinotectal/spinomesencephalic)",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "Anterior white commissure, a few spinal segments above the level of entry"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Most of the fibres joining the anterolateral fasciculus cross in the ventral white commissure, but a distinct ipsilateral component exists.",
+              "species": "human",
+              "page": 698
+            },
+            {
+              "source": "S1",
+              "quote": "The spinothalamic tract takes its origin from multiple laminae and from all levels of the spinal cord.",
+              "species": "human",
+              "page": 699
+            },
+            {
+              "source": "S1",
+              "quote": "They terminate diffusely in the centrolateral intralaminar nucleus, in the adjoining lateral paralaminar region of the mediodorsal nucleus, and more sparsely, in other intralaminar and midline nuclei of the thalamus",
+              "species": "human",
+              "page": 700
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Ventral posterolateral nucleus (VPL) of thalamus",
+          "courseVia": [
+            "thalamocortical fibers",
+            "posterior limb of internal capsule"
+          ],
+          "terminatesIn": "Primary somatosensory cortex (postcentral gyrus)",
+          "laterality": "ipsilateral (to thalamus; contralateral to body side of origin)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Which spinal grey-matter laminae give rise to the second-order (spinothalamic) projection neurons",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S8): the relay occurs in the substantia gelatinosa, i.e. laminae I, II and V",
+              "source": "S8 (original somatosensory.json batch; not reopened this session)",
+              "quote": "Initial pain signals ascend through the dorsal horn, specifically through lamina I (superficial dorsal horn), lamina II (substantia gelatinosa), and lamina V (deep dorsal horn)"
+            },
+            {
+              "claim": "Nieuwenhuys states the spinothalamic tract arises from lamina I and laminae IV-IX, with most cells actually located in lamina I, the lamina IV/V border zone, lamina VI, and scattered in laminae VII and VIII -- a broader and different set of laminae than I, II, V",
+              "source": "S1",
+              "quote": "Most spinothalamic tract cells occur in lamina I (50% [51]), in the lamina IV/V border zone and lamina VI mostly laterally, and scattered in laminae VII and VIII.",
+              "page": 699
+            }
+          ]
+        },
+        {
+          "issue": "Primary thalamic relay nucleus for spinothalamic pain and temperature fibres",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S3): the ventral posterolateral nucleus (VPL) is the thalamic relay and gives rise to the third-order neurons of this pathway",
+              "source": "S3 (original somatosensory.json batch; not reopened this session)",
+              "quote": "The spinothalamic tract of the anterolateral system terminates in the ventral posterolateral nucleus (VPL) of the thalamus, the third-order neurons of this pathway"
+            },
+            {
+              "claim": "Nieuwenhuys identifies a separate, dedicated nucleus -- the posterior ventromedial nucleus (VMpo) -- as the main relay for pain and temperature; VPL receives only scattered spinothalamic terminations",
+              "source": "S1",
+              "quote": "The main relay nucleus for the conduction of pain and temperature is the VMpo",
+              "page": 696
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "Substance P and glutamate are the principal neurotransmitters of first-order nociceptive afferents synapsing in the dorsal horn (standard teaching; no explicit sourced quote naming the neurotransmitter at spinothalamic synapses was found in Nieuwenhuys ch.16)."
+      ]
+    },
+    {
+      "id": "trigeminal-somatosensory-pathways",
+      "name": "Trigeminal somatosensory pathways",
+      "category": "ascending somatosensory / face and oral cavity",
+      "function": "Transmits pain, temperature, touch, vibration, 2-point discrimination and proprioception from the face and muscles of mastication via three sensory nuclei (principal/chief sensory, spinal trigeminal, mesencephalic) to VPM and the somatosensory cortex.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Trigeminal (semilunar/Gasserian) ganglion (pseudounipolar neurons); mesencephalic nucleus neurons (unique – cell bodies lie within the CNS, not the ganglion)",
+          "courseVia": [
+            "ophthalmic (V1), maxillary (V2), mandibular (V3) divisions",
+            "trigeminal nerve root entering brainstem at mid-pons"
+          ],
+          "terminatesIn": "Chief/principal sensory nucleus, spinal trigeminal nucleus, or mesencephalic nucleus depending on modality",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Somatosensory fibres of the trigeminal nerve enter the pons in the sensory root (portio major) and are distributed to the principal sensory nucleus and the spinal trigeminal nucleus.",
+              "species": "human",
+              "page": 703
+            },
+            {
+              "source": "S1",
+              "quote": "Unlike other primary afferents, the Ia muscle-spindle afferents from the jaw muscles, which enter the brain stem in the trigeminal nerve, arise from cells located within the central nervous system.",
+              "species": "human",
+              "page": 706
+            },
+            {
+              "source": "S1",
+              "quote": "The axons of these cells descend into the mesencephalic tract of the trigeminal nerve and then bifurcate.",
+              "species": "human",
+              "page": 706
+            },
+            {
+              "source": "S1",
+              "quote": "One branch terminates on the motoneurons of the trigeminal motor nucleus.",
+              "species": "human",
+              "page": 706
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Chief/principal sensory nucleus (touch/proprioception/vibration/2-point discrimination) or spinal trigeminal nucleus, pars caudalis (pain/temperature/crude touch)",
+          "courseVia": [
+            "dorsal trigeminothalamic tract (DTTT, ipsilateral, from chief sensory nucleus)",
+            "ventral trigeminothalamic tract (VTTT, decussates, from chief sensory nucleus and spinal trigeminal nucleus)"
+          ],
+          "terminatesIn": "Ventral posteromedial nucleus (VPM) of thalamus",
+          "laterality": "bilateral (DTTT ipsilateral; VTTT contralateral)",
+          "decussation": {
+            "present": true,
+            "where": "Fibers of the ventral trigeminothalamic tract decussate near their nucleus of origin (chief sensory nucleus or spinal trigeminal nucleus) before ascending to VPM"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The principal sensory nucleus of the trigeminal nerve projects bilaterally to the VPM as the trigeminal component of the medial lemniscus and the uncrossed dorsal trigeminothalamic tract",
+              "species": "human",
+              "page": 696
+            },
+            {
+              "source": "S1",
+              "quote": "The entire principal sensory nucleus gives rise to a crossed pathway joining the medial lemniscus as the trigeminal lemniscus",
+              "species": "human",
+              "page": 706
+            },
+            {
+              "source": "S1",
+              "quote": "The uncrossed dorsal trigeminothalamic tract arises from the dorsal part of the principal sensory nucleus and conducts information from the intraoral cavity",
+              "species": "human",
+              "page": 706
+            },
+            {
+              "source": "S1",
+              "quote": "The termination of the uncrossed trigeminothalamic is found in the medial VPM, lateral to the gustatory parvocellular VPM.",
+              "species": "human",
+              "page": 706
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Ventral posteromedial nucleus (VPM) of thalamus",
+          "courseVia": [
+            "thalamocortical fibers"
+          ],
+          "terminatesIn": "Primary somatosensory cortex (postcentral gyrus, Brodmann areas 3, 1, 2)",
+          "laterality": "ipsilateral (to thalamus; contralateral to face side of origin for pain/temperature)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "VPM projects laterally in the primary somatosensory cortex (S1).",
+              "species": "human",
+              "page": 705
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Sjöqvist tractotomy of the spinal trigeminal tract at the rostral border of the pars caudalis",
+          "deficit": "Effective elimination of pain and temperature sensitivity in the ipsilateral face, with sparing of tactile sense",
+          "side": "ipsilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The essential role of the caudal subnucleus in pain and temperature transmission from the face is exemplified by Sjöqvist’s tractotomy of the spinal tract at the level of the rostral border of the pars caudalis",
+              "species": "human",
+              "page": 706
+            },
+            {
+              "source": "S1",
+              "quote": "which effectively eliminates pain and temperature sensitivity in the ipsilateral face, leaving the tactile sense intact.",
+              "species": "human",
+              "page": 706
+            }
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Level at which crossed trigeminothalamic fibres decussate",
+          "positions": [
+            {
+              "claim": "Fibres from the principal sensory nucleus and the pars oralis and interpolaris of the spinal trigeminal nucleus decussate at the level of the pons",
+              "source": "S1",
+              "quote": "Fibres from the principal sensory nucleus and the pars oralis and interpolaris of the spinal nucleus of the trigeminal nerve decussate at the level of the pons and join the medial lemniscus as the trigeminal lemniscus.",
+              "page": 705
+            },
+            {
+              "claim": "Fibres from the pars caudalis (pain/temperature) instead cross in the caudal medulla oblongata before joining the spinothalamic tract -- a different decussation level than the other trigeminal subnuclei",
+              "source": "S1",
+              "quote": "The caudal subnucleus gives rise to ascending fibres, which cross in the caudal medulla oblongata and join the spinothalamic tract",
+              "page": 703
+            }
+          ]
+        },
+        {
+          "issue": "Thalamic termination of pars caudalis (pain/temperature) trigeminothalamic fibres",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S5): this tract conveys fast pain and temperature to the contralateral ventral posteromedial nucleus (VPM)",
+              "source": "S5 (original somatosensory.json batch; not reopened this session)",
+              "quote": "This specific tract conveys fast pain and temperature from one side of the face to the contralateral ventral posteromedial nucleus of the thalamus (VPM) and eventually to the primary sensory cortex"
+            },
+            {
+              "claim": "Nieuwenhuys states that pars caudalis trigeminothalamic fibres join the spinothalamic tract and terminate mainly in the intralaminar nuclei, the posterior ventromedial nucleus (VMpo), the caudal medial dorsal nucleus and the shell of the ventroposterior complex -- not primarily VPM",
+              "source": "S1",
+              "quote": "Trigeminothalamic fibres from all layers of the subnucleus caudalis of the spinal nucleus of the trigeminal nerve join the spinothalamic tract to terminate in the intralaminar nuclei, the posterior ventromedial nucleus (VMpo), the caudal medial dorsal nucleus (MD) and the shell of the ventroposterior complex.",
+              "page": 705
+            }
+          ]
+        }
+      ],
+      "unsourced": []
+    },
+    {
+      "id": "spinocerebellar-tracts",
+      "name": "Spinocerebellar tracts (dorsal/posterior spinocerebellar, cuneocerebellar, ventral/anterior spinocerebellar)",
+      "category": "ascending somatosensory / unconscious proprioception to cerebellum",
+      "function": "Relay unconscious proprioceptive information from muscle spindles and Golgi tendon organs of the trunk and limbs to the cerebellum for coordination of posture and movement.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Dorsal root ganglion (pseudounipolar neurons); axons collateralize to Clarke's nucleus/column (C8–L3) for the trunk and lower limb",
+          "courseVia": [
+            "peripheral nerve",
+            "dorsal root",
+            "collateral to posterior grey horn (Clarke's column, C8–L3)"
+          ],
+          "terminatesIn": "Clarke's nucleus (dorsal nucleus of Clarke), C8–L3",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Clarkes’s column and the spinal border cells receive dorsal root afferents and give rise to spinocerebellar pathways",
+              "species": "human",
+              "page": 189
+            },
+            {
+              "source": "S1",
+              "quote": "An important contingent of sacral and lumbar root fibres, carrying proprioceptive information from the lower limbs, leaves the dorsal columns to terminate in the spinal grey matter, particularly in Clarke’s dorsal column, which gives rise to the dorsal spinocerebellar tract",
+              "species": "human",
+              "page": 694
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Clarke's nucleus/column (dorsal/posterior spinocerebellar tract, trunk & lower limb) or accessory cuneate nucleus in medulla (cuneocerebellar tract, upper limb equivalent)",
+          "courseVia": [
+            "dorsal (posterior) spinocerebellar tract, ipsilateral lateral funiculus",
+            "inferior cerebellar peduncle",
+            "cuneate fasciculus → accessory cuneate nucleus → inferior cerebellar peduncle (cuneocerebellar tract)"
+          ],
+          "terminatesIn": "Ipsilateral cerebellar cortex (vermis and paravermis of anterior lobe) as mossy fibers",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The large, myelinated axons of Clarke’s column occupy the dorsolateral periphery of the lateral funiculus as the uncrossed dorsal spinocerebellar tract",
+              "species": "human",
+              "page": 191
+            },
+            {
+              "source": "S1",
+              "quote": "Joined by fibres originating from the reticular formation, the external cuneate nucleus and the contralateral inferior olive, it constitutes the restiform body",
+              "species": "human",
+              "page": 205
+            },
+            {
+              "source": "S1",
+              "quote": "composed of the dorsal spinocerebellar tract and of external arcuate fibres from the reticular nuclei of the lateral and anterior funiculus",
+              "species": "human",
+              "page": 209
+            },
+            {
+              "source": "S1",
+              "quote": "The restiform body is an afferent system, containing the spinocerebellar and olivocerebellar tracts and other afferents from the medulla oblongata.",
+              "species": "human",
+              "page": 809
+            },
+            {
+              "source": "S1",
+              "quote": "The lateral cuneate nucleus and group Z, a collection of large neurons rostral to the gracile nucleus, both receive information from muscle spindle afferents.",
+              "species": "human",
+              "page": 695
+            },
+            {
+              "source": "S1",
+              "quote": "Muscle spindle afferents from the forelimb ascend in the dorsal columns and terminate in a somatotopical pattern in the lateral cuneate nucleus.",
+              "species": "human",
+              "page": 695
+            },
+            {
+              "source": "S1",
+              "quote": "The main projection of the lateral cuneate nucleus is to the cerebellum.",
+              "species": "human",
+              "page": 695
+            },
+            {
+              "source": "S1",
+              "quote": "A rough localization in the paravermal region of the hind limb in the ventral lobules of the anterior lobe",
+              "species": "human",
+              "page": 832
+            },
+            {
+              "source": "S1",
+              "quote": "Spinocerebellar fibres distribute to the anterior lobe and certain lobules of the posterior lobe (lobulus simplex, pyramis, lobulus gracilis and the lateral belly of the biventral lobule, the paramedian lobule of comparative anatomy",
+              "species": "human",
+              "page": 817
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 2,
+          "cellBodies": "Ventral (anterior) spinocerebellar tract neurons (lumbosacral cord)",
+          "courseVia": [
+            "decussation near level of origin",
+            "ascends contralaterally",
+            "superior cerebellar peduncle",
+            "decussates again within the cerebellum"
+          ],
+          "terminatesIn": "Ipsilateral cerebellar cortex (double decussation restores ipsilateral termination)",
+          "laterality": "ipsilateral (net; achieved via double decussation)",
+          "decussation": {
+            "present": true,
+            "where": "Decussates once near Clarke's nucleus/level of origin, then decussates again within the cerebellum via the superior cerebellar peduncle"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The latter stems from contralateral spinal border cells of the lumbar cord",
+              "species": "human",
+              "page": 191
+            },
+            {
+              "source": "S1",
+              "quote": "The ventral spinocerebellar tract leaves the area of the anterolateral fascicle in the rostral metencephalon, and passes rostral to the entrance of the trigeminal nerve to enter the cerebellum along the superior cerebellar peduncle.",
+              "species": "human",
+              "page": 211
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Precise segmental extent of Clarke's column (dorsal nucleus of Clarke)",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S6): Clarke's column ranges specifically from spinal segments C8 to L3",
+              "source": "S6 (original somatosensory.json batch; not reopened this session)",
+              "quote": "This set of nuclei range from the C8-L3 portions of the spinal cord, collectively referred to as Clarke’s column"
+            },
+            {
+              "claim": "Nieuwenhuys describes Clarke's column only in non-numeric terms, as located at 'thoracic and high lumbar levels', without giving C8 or L3 as exact boundaries",
+              "source": "S1",
+              "quote": "is a discrete, roundish collection of large neurons, located medially at the base of the dorsal horn at thoracic and high lumbar levels",
+              "page": 187
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "Nieuwenhuys describes the ventral (anterior) spinocerebellar tract's origin and course anatomically (arising from contralateral spinal border cells of the lumbar cord) but does not explicitly characterize whether its content is proprioceptive sensory information or motor/efference-copy signalling, so this source cannot adjudicate the existing conflict about the tract's functional content.",
+        "Nieuwenhuys does not explicitly state that the ventral spinocerebellar tract decussates a second time within the cerebellum itself; only a general principle that cerebellar hemisphere signs are ipsilateral 'due to the double decussation of the superior cerebellar peduncle and the pyramidal tract' was found (Nieuwenhuys ch.20, p.834), which concerns cerebellar output rather than the VSCT specifically."
+      ]
+    },
+    {
+      "id": "descending-pain-modulation",
+      "name": "Descending pain modulation (PAG–RVM–dorsal horn and PAG–locus coeruleus pathways)",
+      "category": "descending modulatory / analgesia",
+      "function": "Midbrain and brainstem circuits that inhibit (or facilitate) nociceptive transmission at the dorsal horn, via serotonergic PAG–raphe magnus–enkephalinergic interneuron and noradrenergic PAG–locus coeruleus routes.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Periaqueductal gray (PAG), midbrain – receives ascending nociceptive input from dorsal horn lamina I, II, V via spinothalamic/spinobulbar pathways",
+          "courseVia": [
+            "ascending spinothalamic and spinobulbar pathways to PAG"
+          ],
+          "terminatesIn": "Periaqueductal gray (dorsal, dorsolateral, lateral, ventrolateral columns)",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate (ascending); serotonin, norepinephrine, dopamine, enkephalin, GABA within PAG circuitry",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The mesencephalic periaqueductal grey receives afferents from spinal laminae I, VI, VII and VIII, and projects to the intralaminar thalamic nuclei",
+              "species": "human",
+              "page": 702
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "PAG neurons projecting to raphe nuclei (rostral ventromedial medulla, including nucleus raphe magnus)",
+          "courseVia": [
+            "PAG → raphe nuclei (glutamatergic) → descending raphespinal fibers to dorsal horn"
+          ],
+          "terminatesIn": "Dorsal horn – enkephalinergic interneurons that inhibit C-fiber pain afferents",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "serotonin (PAG–RVM–dorsal horn pathway); glutamate (PAG→raphe activation); enkephalin (dorsal horn interneurons)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The nucleus raphe magnus contains numerous serotoninergic neurons, and it has been demonstrated that its cells project massively to the superficial dorsal horn",
+              "species": "human",
+              "page": 703
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 2,
+          "cellBodies": "Locus coeruleus (lateral floor of fourth ventricle / upper dorsolateral pons)",
+          "courseVia": [
+            "PAG → locus coeruleus → descending noradrenergic fibers to dorsal horn"
+          ],
+          "terminatesIn": "Dorsal horn – presynaptic alpha-2 adrenergic receptors on nociceptive afferents",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "norepinephrine",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Noradrenergic cells situated in rhombencephalic catecholaminergic cell groups A5, A6 and A7, which also project to the superficial dorsal horn, contribute to the descending pain-inhibiting system",
+              "species": "human",
+              "page": 703
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 3,
+          "cellBodies": "Dorsal horn inhibitory interneurons (enkephalinergic and other opioid/GABA/glycinergic types) activated by A-beta afferents and by descending PAG/RVM input",
+          "courseVia": [
+            "local dorsal horn circuitry"
+          ],
+          "terminatesIn": "Presynaptic and postsynaptic inhibition of dorsal horn projection neurons of the anterolateral system",
+          "laterality": "ipsilateral (segmental)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "endogenous opioids (enkephalin), GABA, glycine",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The first of these is the “gate control mechanism”, which was first described by Melzack and Wall",
+              "species": "human",
+              "page": 702
+            },
+            {
+              "source": "S1",
+              "quote": "Opiates exert their influence on nociceptive transmission both at the level of the periaqueductal grey and at the termination of the primary afferents.",
+              "species": "human",
+              "page": 703
+            },
+            {
+              "source": "S1",
+              "quote": "Specific nociceptive neurons in lamina I are selectively inhibited by morphine",
+              "species": "human",
+              "page": 703
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Periaqueductal gray – clinical/experimental stimulation and dysfunction (not a classic named eponymous syndrome)",
+          "deficit": "Stimulation of PAG reduces anesthetic/analgesic requirement (antinociception); reduced PAG activation is associated with chronic pain states such as low back pain and complex regional pain syndrome",
+          "side": "bilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "This system was first noticed after discovering that electrical stimulation of the mesencephalic periaqueductal grey produces profound analgesia",
+              "species": "human",
+              "page": 702
+            }
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Anatomical source of the noradrenergic descending pain-inhibitory projection to the dorsal horn",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S8): the noradrenergic route is specifically the PAG-locus coeruleus (LC) pathway",
+              "source": "S8 (original somatosensory.json batch; not reopened this session)",
+              "quote": "The PAG -LC pathway propagates by norepinephrine (NE), exerting an antinociceptive effect in the dorsal horn via the presynaptic alpha-2 receptor"
+            },
+            {
+              "claim": "Nieuwenhuys attributes the descending noradrenergic pain-inhibiting projection to a broader set of rhombencephalic catecholaminergic cell groups, A5, A6 and A7 (of which the locus coeruleus corresponds only to A6), rather than to the locus coeruleus alone",
+              "source": "S1",
+              "quote": "Noradrenergic cells situated in rhombencephalic catecholaminergic cell groups A5, A6 and A7, which also project to the superficial dorsal horn, contribute to the descending pain-inhibiting system",
+              "page": 703
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "GABAergic and glycinergic interneurons in the substantia gelatinosa mediate presynaptic and postsynaptic inhibition of nociceptive afferents as part of the gate-control mechanism; Nieuwenhuys names and attributes the 'gate control mechanism' to Melzack and Wall but does not explicitly state which transmitter acts presynaptically at the primary afferent terminal."
+      ]
+    },
+    {
+      "id": "corticospinal-tracts",
+      "name": "Lateral and anterior corticospinal tracts",
+      "category": "pyramidal / descending motor",
+      "function": "Voluntary control of contralateral limb (lateral tract) and axial/trunk (anterior tract) musculature",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Primary motor cortex (precentral gyrus, area 4), with contributions from premotor and supplementary motor cortex",
+          "courseVia": [
+            "corona radiata",
+            "posterior limb of internal capsule",
+            "cerebral peduncle (middle third, crus cerebri)",
+            "basis pontis",
+            "medullary pyramid",
+            "pyramidal decussation"
+          ],
+          "terminatesIn": "Lateral corticospinal tract: interneurons and alpha motor neurons of the contralateral anterior (ventral) horn; anterior corticospinal tract: axial/proximal motor neurons bilaterally",
+          "laterality": "ipsilateral until the pyramidal decussation, then contralateral (lateral tract)",
+          "decussation": {
+            "present": true,
+            "where": "pyramidal decussation, caudal medulla"
+          },
+          "neurotransmitter": "glutamate (stated for the Ia-afferent/alpha-motor-neuron synapse in the reflex arc; not explicitly named for the corticomotoneuronal synapse in the opened sources)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Corticospinal and corticobulbar fibres from the pericentral cortex descend in the internal capsule and the middle portion of the cerebral peduncle",
+              "species": "human",
+              "page": 851
+            },
+            {
+              "source": "S1",
+              "quote": "After traversing the pontine nuclei they form the pyramidal tract on the ventral surface of the medulla oblongata.",
+              "species": "human",
+              "page": 851
+            },
+            {
+              "source": "S1",
+              "quote": "Corticospinal fibres decussate at the border of the medulla oblongata with the spinal cord.",
+              "species": "human",
+              "page": 851
+            },
+            {
+              "source": "S1",
+              "quote": "The pyramidal tract emerges at the surface at the caudal border of the pons and decussates at the transition of the medulla oblongata with the spinal cord.",
+              "species": "human",
+              "page": 205
+            },
+            {
+              "source": "S1",
+              "quote": "The distribution of the corticospinal tract in the human brain is very similar to that in nonhuman primates",
+              "species": "human",
+              "page": 845
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 1,
+          "cellBodies": "Lateral corticospinal tract fibers (>90% of corticospinal fibers by one source; ~70-80% by another, see conflicts)",
+          "courseVia": [
+            "lateral funiculus of the spinal cord"
+          ],
+          "terminatesIn": "central gray column and base of dorsal column; either interneurons or directly on lower motor neurons",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "After its partial decussation at the border of the brain stem and the cord, the crossed fibres of the pyramidal tract descend into the dorsal half of the lateral funiculus as the lateral pyramidal tract",
+              "species": "human",
+              "page": 191
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 1,
+          "cellBodies": "Uncrossed anterior corticospinal tract fibers",
+          "courseVia": [
+            "anterior funiculus of the spinal cord"
+          ],
+          "terminatesIn": "axial and proximal (trunk) motor neurons, bilaterally",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": true,
+            "where": "crosses locally at the segmental level near termination"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The uncrossed fibres of the anterior pyramidal tract are located in the anterior funiculus, next to the anterior median fissure.",
+              "species": "human",
+              "page": 191
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Proportion of corticospinal fibres that decussate at the pyramidal decussation",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S1 of motor.json): the lateral (crossed) corticospinal tract contains over 90% of corticospinal fibres",
+              "source": "S1 (original motor.json batch; not reopened this session)",
+              "quote": "The lateral corticospinal tract contains over 90% of the fibers present in the corticospinal tract and runs the length of the spinal cord."
+            },
+            {
+              "claim": "Original batch (StatPearls, S13 of motor.json): almost 70-80% of corticospinal fibres cross at the pyramidal decussation",
+              "source": "S13 (original motor.json batch; not reopened this session)",
+              "quote": "At the lower end of the medulla, almost 70 to 80% of the fibers cross to the opposite side of the spinal cord, called the pyramidal (motor) decussation ."
+            },
+            {
+              "claim": "Nieuwenhuys gives no human percentage at all, describing the human decussation only as 'partial'; the only numeric figure given is for monkeys, where about 10% of the dorsolateral pyramidal tract remains uncrossed (i.e. roughly 90% crossed) -- animal data, not a human measurement",
+              "source": "S1",
+              "quote": "In monkeys 10% of the dorsolateral pyramidal tract is uncrossed, and a similar percentage of the corticospinal fibres terminates ipsilaterally",
+              "page": 854,
+              "species": "monkey"
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The corticomotoneuronal synapse on alpha motor neurons uses glutamate as its neurotransmitter (physiologically well established but not stated verbatim in Nieuwenhuys ch.21/ch.06)."
+      ]
+    },
+    {
+      "id": "corticobulbar-tract",
+      "name": "Corticobulbar (corticonuclear) tract",
+      "category": "pyramidal / descending motor",
+      "function": "Upper motor neuron innervation of cranial nerve motor nuclei supplying the head, face, pharynx, larynx and tongue",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Precentral gyrus (Brodmann areas 4, 6), premotor and supplementary motor areas",
+          "courseVia": [
+            "corona radiata",
+            "genu of the internal capsule",
+            "crus cerebri of the cerebral peduncle (middle third)",
+            "base of the pons",
+            "medullary pyramid"
+          ],
+          "terminatesIn": "Motor nuclei of trigeminal, facial, glossopharyngeal, vagus, accessory, and hypoglossal cranial nerves (directly or via interneurons)",
+          "laterality": "bilateral for most cranial nerve nuclei",
+          "decussation": {
+            "present": false,
+            "where": "fibers project bilaterally rather than crossing en masse; the lower facial and hypoglossal components are largely crossed"
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 2,
+          "neuronOrder": 1,
+          "cellBodies": "Corticobulbar fibers destined for the facial nucleus",
+          "courseVia": [
+            "as above to the pontine facial motor nucleus"
+          ],
+          "terminatesIn": "Dorsal (upper face) division of the facial motor nucleus bilaterally; ventral (lower face) division of the facial motor nucleus contralaterally",
+          "laterality": "bilateral (upper face) / contralateral (lower face)",
+          "decussation": {
+            "present": true,
+            "where": "lower-face component crosses before reaching the ventral facial subnucleus"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Contrary to the motor nucleus of the trigeminal nerve, the motoneurons of the facial nucleus receive a strong, bilateral projection from the motor cortex",
+              "species": "human",
+              "page": 867
+            },
+            {
+              "source": "S1",
+              "quote": "the face area of M1, the dorsal and ventral premotor cortex and the caudal cingulate motor area project to the contralateral lateral subnucleus that innervates the perioral muscles.",
+              "species": "monkey",
+              "page": 867
+            },
+            {
+              "source": "S1",
+              "quote": "Direct corticomotoneuronal connections to the trigeminal motor nucleus appear to be scarce or absent.",
+              "species": "monkey",
+              "page": 864
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 1,
+          "cellBodies": "Corticobulbar fibers destined for the hypoglossal nucleus",
+          "courseVia": [
+            "as above to the medullary hypoglossal nucleus"
+          ],
+          "terminatesIn": "Hypoglossal nucleus, predominantly contralateral",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "crosses before reaching the hypoglossal nucleus"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Direct corticomotoneuronal projections to the hypoglossal nucleus are rare in non-human primates, but strengthened in humans",
+              "species": "human",
+              "page": 867
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Whether sparing of the muscles of mastication after a unilateral corticobulbar lesion reflects abundant direct bilateral corticomotoneuronal wiring to the trigeminal motor nucleus",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S5): a unilateral cortical lesion does not affect the muscles of mastication because the motor nucleus receives bilateral cortical input",
+              "source": "S5 (original motor.json batch; not reopened this session)",
+              "quote": "a unilateral cortical lesion does not affect the muscles of mastication; this is because the motor nucleus receives bilateral cortical input"
+            },
+            {
+              "claim": "Nieuwenhuys (citing monkey tracing studies) reports that direct corticomotoneuronal connections onto the trigeminal motor nucleus itself are scarce or absent, implying the bilateral sparing of jaw muscles is mediated indirectly (via brain stem premotor/interneuron circuits) rather than by an abundance of direct bilateral corticomotoneuronal fibres",
+              "source": "S1",
+              "quote": "Direct corticomotoneuronal connections to the trigeminal motor nucleus appear to be scarce or absent.",
+              "page": 864,
+              "species": "monkey"
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The trigeminal motor nucleus and nucleus ambiguus (vagal/glossopharyngeal motor component) are said to receive predominantly bilateral corticobulbar input, but no source-verified statement specific to the nucleus ambiguus by that name was found in Nieuwenhuys ch.21."
+      ]
+    },
+    {
+      "id": "basal-ganglia-circuits",
+      "name": "Basal ganglia circuits: direct, indirect, and hyperdirect pathways",
+      "category": "extrapyramidal / motor modulation loop",
+      "function": "Gate and modulate initiation, amplitude, and suppression of voluntary movement via cortico-striato-pallido-thalamo-cortical loops",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Cerebral cortex (motor, frontal, parietal lobes, layers III and V)",
+          "courseVia": [
+            "corticostriatal projection"
+          ],
+          "terminatesIn": "Striatum (caudate and putamen) medium spiny neurons",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The corticostriate fibres, which use the excitatory amino acid glutamate as their neurotransmitter",
+              "species": "human",
+              "page": 446
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Striatal medium spiny neurons expressing D1 dopamine receptors (direct pathway)",
+          "courseVia": [
+            "direct pathway striatal projection"
+          ],
+          "terminatesIn": "Globus pallidus internus (GPi) / substantia nigra pars reticulata (SNpr)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The striatal efferents passing to the GPi arise from medium-sized spiny neurons (MSNs) that co-contain GABA and substance P, whereas the striatal projections to the GPe arise from MSNs that co-contain GABA and enkephalin.",
+              "species": "human",
+              "page": 453
+            },
+            {
+              "source": "S1",
+              "quote": "The D1 class receptors are preferentially expressed in the substance P-containing MSNs forming part of the direct circuit, whereas the D2 class receptors are specifically expressed on the enkephalin-containing MSNs",
+              "species": "human",
+              "page": 453
+            },
+            {
+              "source": "S1",
+              "quote": "The vast majority of the striatopallidal and striatonigral fibres are known to contain GABA and to exert an inhibitory influence.",
+              "species": "human",
+              "page": 446
+            },
+            {
+              "source": "S1",
+              "quote": "The direct circuit is composed of excitatory corticostriatal, inhibitory striatopallidal, inhibitory pallidothalamic and excitatory thalamocortical projections.",
+              "species": "human",
+              "page": 472
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "GPi / SNpr inhibitory neurons",
+          "courseVia": [
+            "direct pathway pallidothalamic projection"
+          ],
+          "terminatesIn": "Ventral anterior (VA) and ventrolateral (VL) nuclei of the thalamus",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Both the pallidothalamic and nigrothalamic projections are known to be GABAergic",
+              "species": "human",
+              "page": 446
+            },
+            {
+              "source": "S1",
+              "quote": "All large neurons within both pallidal segments are GABAergic, inhibitory projection neurons.",
+              "species": "human",
+              "page": 441
+            },
+            {
+              "source": "S1",
+              "quote": "The elements in the external segment project to the subthalamic nucleus, whereas those in the internal segment project to the thalamus, the lateral habenular nucleus and the pedunculopontine nucleus in the caudal mesencephalic tegmentum.",
+              "species": "human",
+              "page": 441
+            },
+            {
+              "source": "S1",
+              "quote": "They are glutamatergic and activate cortical neurons. As a result of these data the following concept was developed",
+              "species": "human",
+              "page": 446
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 2,
+          "cellBodies": "Striatal medium spiny neurons expressing D2 dopamine receptors (indirect pathway)",
+          "courseVia": [
+            "indirect pathway striatal projection"
+          ],
+          "terminatesIn": "Globus pallidus externus (GPe)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The indirect circuit includes an excitatory corticostriatal projection that terminates onto striatal medium spiny projection neurons that co-contain GABA and enkephalin along with dopamine D2-class receptors",
+              "species": "human",
+              "page": 472
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "neuronOrder": 3,
+          "cellBodies": "GPe inhibitory neurons",
+          "courseVia": [
+            "pallidosubthalamic projection"
+          ],
+          "terminatesIn": "Subthalamic nucleus (STN)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The efferents of the GPe, which are also GABAergic and inhibitory, project in a topographically organized fashion to the subthalamic nucleus (STN)",
+              "species": "human",
+              "page": 453
+            },
+            {
+              "source": "S1",
+              "quote": "an inhibitory projection from the GPe to the subthalamic nucleus (STN) and an excitatory projection from STN to the GPi",
+              "species": "human",
+              "page": 472
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "neuronOrder": 4,
+          "cellBodies": "Subthalamic nucleus neurons (indirect pathway relay)",
+          "courseVia": [
+            "subthalamopallidal projection"
+          ],
+          "terminatesIn": "GPi / SNpr",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The STN also receives a glutamatergic excitatory input from the cerebral cortex.",
+              "species": "human",
+              "page": 453
+            },
+            {
+              "source": "S1",
+              "quote": "The subthalamic efferents have an excitatory effect on pallidal and nigra neurons and use glutamate as their neurotransmitter",
+              "species": "human",
+              "page": 453
+            },
+            {
+              "source": "S1",
+              "quote": "The subthalamic neurons are excitatory and use glutamate as their neurotransmitter",
+              "species": "human",
+              "page": 442
+            },
+            {
+              "source": "S1",
+              "quote": "cortical activation of the inhibitory, GABA and enkephalin-containing MSNs reduces the output of GPe activity, resulting in a decreased inhibition or disinhibition of STN neurons, which causes an increase in the glutamatergic activation of GPe/SNr.",
+              "species": "human",
+              "page": 455
+            },
+            {
+              "source": "S1",
+              "quote": "Cortical activation of the indirect circuit produces disinhibition of subthalamic neurons, resulting in an increase of the subthalamic activation of the GPi.",
+              "species": "human",
+              "page": 472
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "neuronOrder": 1,
+          "cellBodies": "Sensorimotor cortex (hyperdirect pathway)",
+          "courseVia": [
+            "hyperdirect corticosubthalamic projection"
+          ],
+          "terminatesIn": "Subthalamic nucleus (dorsal STN) directly, bypassing the striatum",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate (excitatory)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The subthalamic neurons receive an excitatory, glutamatergic input from the cortex and an inhibitory, GABAergic input from the external pallidal segment.",
+              "species": "human",
+              "page": 442
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "neuronOrder": 1,
+          "cellBodies": "Substantia nigra pars compacta (SNpc) dopaminergic neurons (nigrostriatal pathway)",
+          "courseVia": [
+            "nigrostriatal pathway"
+          ],
+          "terminatesIn": "Putamen and caudate nucleus of the striatum, modulating D1- and D2-expressing neurons oppositely",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "dopamine",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The dopaminergic neurons in the pars compacta give rise to a large nigrostriatal system, which reciprocates the striatonigral projection.",
+              "species": "human",
+              "page": 443
+            },
+            {
+              "source": "S1",
+              "quote": "The striatonigral fibres contain GABA and substance P and inhibit the neurons in the SNc.",
+              "species": "human",
+              "page": 455
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Substantia nigra pars compacta dopaminergic neurons",
+          "deficit": "Parkinson disease: bradykinesia, resting tremor, postural instability, shuffling gait (hypokinetic)",
+          "side": "bilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Parkinson’s disease (PD) or paralysis agitans is a common neurodegenerative disorder that usually begins during the fifth or sixth decade of life.",
+              "species": "human",
+              "page": 475
+            },
+            {
+              "source": "S1",
+              "quote": "The disease is characterized by progressive slowness of movement (bradykinesia), muscular rigidity, tremor and disturbances in posture and gait.",
+              "species": "human",
+              "page": 475
+            },
+            {
+              "source": "S1",
+              "quote": "The neuropathological hallmark of PD is the massive loss of the pigmented, dopaminergic neurons in the pars compacta of the substantia nigra, which leads to a reduction in the dopamine content in the striatum, most severely in the putamen",
+              "species": "human",
+              "page": 475
+            },
+            {
+              "source": "S1",
+              "quote": "loss of dopaminergic input from the substantia nigra to the striatum decreases activity in the direct circuit and increases activity in the indirect circuit",
+              "species": "human",
+              "page": 476
+            },
+            {
+              "source": "S1",
+              "quote": "Thus, the resultant reduced cortical motor output explains the hypokinetic features of PD.",
+              "species": "human",
+              "page": 476
+            }
+          ]
+        },
+        {
+          "site": "Caudate and putamen (striatum)",
+          "deficit": "Huntington disease: chorea (hyperkinetic) from interruption of the indirect pathway, plus cognitive and psychiatric dysfunction",
+          "side": "bilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Huntington’s chorea is a rare autosomal dominant disease of middle age, characterized by rapid, jerky, involuntary movements of the face, arms and legs and by progressive mental deterioration.",
+              "species": "human",
+              "page": 476
+            },
+            {
+              "source": "S1",
+              "quote": "It has been reported that in the earlier stages of the disease the striatal projection neurons participating in the indirect circuit are preferentially lost",
+              "species": "human",
+              "page": 477
+            },
+            {
+              "source": "S1",
+              "quote": "This inhibition of the STN neurons in turn reduces inhibition or disinhibits thalamocortical neurons in V A and VL and, ultimately, increases the excitatory input to the motor cortical areas, which could explain the choreatic movements",
+              "species": "human",
+              "page": 477
+            }
+          ]
+        },
+        {
+          "site": "Subthalamic nucleus",
+          "deficit": "Hemiballismus: violent, involuntary flinging movements of the ipsilateral (to the lesion side, i.e. contralateral body side) arm and leg",
+          "side": "contralateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Hemibalism is a disorder characterized by vigorous involuntary movements of the extremities with a repetitive, stereotypical character on one side of the body.",
+              "species": "human",
+              "page": 477
+            },
+            {
+              "source": "S1",
+              "quote": "The hyperkinesia is known to be caused by focal (commonly vascular) lesions of the contralateral STN",
+              "species": "human",
+              "page": 477
+            },
+            {
+              "source": "S1",
+              "quote": "It is assumed that the STN lesions reduce the excitation of inhibitory GPi neurons, which in turn causes a hyperactivity of disinhibited thalamocortical projection neurons",
+              "species": "human",
+              "page": 477
+            }
+          ]
+        }
+      ],
+      "conflicts": [],
+      "unsourced": [
+        "The word 'hyperdirect' is never used in the running body text of Nieuwenhuys ch.14 -- it occurs exactly once in the whole chapter, inside a bibliography reference title (Nambu et al. 2002, cited but not adopted as chapter terminology) -- even though the underlying anatomical fact (a direct glutamatergic cortex-to-STN projection bypassing the striatum) is described and sourced above."
+      ]
+    },
+    {
+      "id": "cerebellar-circuits",
+      "name": "Cerebellar circuits: cortico-ponto-cerebellar, olivocerebellar, and cerebellothalamocortical output",
+      "category": "cerebellar / motor coordination loop",
+      "function": "Coordinate timing, accuracy, and learning of movement by comparing intended and actual motor output",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Cerebral cortex (corticopontine neurons)",
+          "courseVia": [
+            "corticopontine tract",
+            "pontine nuclei",
+            "pontocerebellar fibers",
+            "middle cerebellar peduncle (MCP)"
+          ],
+          "terminatesIn": "Contralateral cerebellar cortex (mossy fiber input)",
+          "laterality": "contralateral (relative to the cerebellar hemisphere reached)",
+          "decussation": {
+            "present": true,
+            "where": "pontocerebellar fibers cross in the pons before entering the contralateral middle cerebellar peduncle"
+          },
+          "neurotransmitter": "glutamate (mossy fiber input)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Mossy fibres are excitatory; most use glutamate as their neurotransmitter.",
+              "species": "human",
+              "page": 817
+            },
+            {
+              "source": "S1",
+              "quote": "Mossy fibres enter the cerebellum through the restiform body and the middle cerebellar peduncle.",
+              "species": "human",
+              "page": 817
+            },
+            {
+              "source": "S1",
+              "quote": "The pontocerebellar projection is mainly crossed; most of its fibres decussate in the pes pontis.",
+              "species": "human",
+              "page": 832
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 1,
+          "cellBodies": "Mossy fiber terminals",
+          "courseVia": [
+            "granular layer of cerebellar cortex"
+          ],
+          "terminatesIn": "Granule cells, whose parallel fiber axons synapse on Purkinje cell dendrites in the molecular layer",
+          "laterality": "ipsilateral (within the cerebellar cortex)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Granule cell axons ascend toward the molecular layer, where they split into two branches that run parallel to the transverse fissures and, therefore, are called parallel fibres.",
+              "species": "human",
+              "page": 813
+            },
+            {
+              "source": "S1",
+              "quote": "Parallel fibres may reach a length of 10 mm or more and terminate with excitatory (glutamatergic) synapses on the spiny branchlets of Purkinje cell dendrites",
+              "species": "human",
+              "page": 813
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 1,
+          "cellBodies": "Inferior olivary nucleus (principal, medial and dorsal accessory olives)",
+          "courseVia": [
+            "olivocerebellar climbing fibers",
+            "contralateral inferior cerebellar peduncle (ICP)"
+          ],
+          "terminatesIn": "Purkinje cell bodies (climbing fiber synapse) in the cerebellar cortex",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "climbing fiber axons cross to ascend through the contralateral inferior cerebellar peduncle"
+          },
+          "neurotransmitter": "aspartate (climbing fiber excitatory transmitter per S4)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Climbing fibres originate in the medulla oblongata from the contralateral inferior olive, ascend in the restiform body and distribute to the Purkinje cells",
+              "species": "human",
+              "page": 817
+            },
+            {
+              "source": "S1",
+              "quote": "Each adult Purkinje cell is innervated by a single climbing fibre, which terminates with multiple, excitatory (glutamatergic) synapses on the smooth, proximal branches of its dendritic tree.",
+              "species": "human",
+              "page": 817
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 2,
+          "cellBodies": "Purkinje cells of the cerebellar cortex",
+          "courseVia": [
+            "axons through the granular layer into the cerebellar white matter"
+          ],
+          "terminatesIn": "Deep cerebellar (intracerebellar) nuclei: fastigial, interposed (globose/emboliform), and dentate",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Purkinje cells are inhibitory and use gamma-aminobutyric acid (GABA) as their neurotransmitter",
+              "species": "human",
+              "page": 813
+            },
+            {
+              "source": "S1",
+              "quote": "Purkinje cell axons traverse the white matter and terminate on neurons of the cerebellar and certain vestibular nuclei.",
+              "species": "human",
+              "page": 813
+            },
+            {
+              "source": "S1",
+              "quote": "Four cerebellar nuclei can be distinguished, which are arranged into two groups of interconnected nuclei: a medial and caudal group, consisting of the fastigial (medial) and the globose (posterior interposed) nuclei",
+              "species": "human",
+              "page": 821
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "neuronOrder": 3,
+          "cellBodies": "Dentate and interposed (globose/emboliform) nuclei",
+          "courseVia": [
+            "superior cerebellar peduncle (SCP)",
+            "decussation at the level of the inferior colliculus in the midbrain"
+          ],
+          "terminatesIn": "Contralateral red nucleus and thalamus (dentato-rubro-thalamic and interposito-rubral tracts)",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "decussation of the superior cerebellar peduncle at the level of the inferior colliculus"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The output of the emboliform, globose and dentate nuclei is directed through the superior cerebellar peduncle (brachium conjunctivum).",
+              "species": "human",
+              "page": 824
+            },
+            {
+              "source": "S1",
+              "quote": "The emboliform nucleus (anterior interposed nucleus), which receives Purkinje cell axons of the C1,C 3 and Y zones, projects to the contralateral magnocellular red nucleus and to the thalamus",
+              "species": "human",
+              "page": 824
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "neuronOrder": 1,
+          "cellBodies": "Fastigial nucleus (vestibulocerebellar output)",
+          "courseVia": [
+            "inferior cerebellar peduncle"
+          ],
+          "terminatesIn": "Vestibular nuclei / reticular formation",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 7,
+          "neuronOrder": 1,
+          "cellBodies": "Interposed and dentate nuclei feedback fibers",
+          "courseVia": [
+            "descend ipsilaterally through the pontomedullary tegmentum"
+          ],
+          "terminatesIn": "Contralateral inferior olivary nuclei (cerebello-olivary feedback pathway)",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "crosses to reach the contralateral inferior olive"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Descending pathways to the inferior olive take their origin from the parvocellular red nucleus (the central tegmental tract) and the nuclei of the mesodiencephalic border (the medial tegmental tract)",
+              "species": "human",
+              "page": 822
+            },
+            {
+              "source": "S1",
+              "quote": "The central tegmental tract connects the parvocellular red nucleus with the principal olive",
+              "species": "human",
+              "page": 827
+            },
+            {
+              "source": "S1",
+              "quote": "gives rise to the central tegmental tract, which takes its origin from the dorsomedial aspect of the red nucleus",
+              "species": "human",
+              "page": 217
+            },
+            {
+              "source": "S1",
+              "quote": "It terminates in the principal nucleus of the inferior olive.",
+              "species": "human",
+              "page": 217
+            },
+            {
+              "source": "S1",
+              "quote": "One of these tracts, the central tegmental tract , forms a fleece of myelinated fibres around the olive, which is known as the amiculum",
+              "species": "human",
+              "page": 205
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Cerebellar hemisphere",
+          "deficit": "Ataxia, dysmetria, intention tremor, dysdiadochokinesia ipsilateral to the lesion",
+          "side": "ipsilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "There is loss of precision in muscle contraction; movements overshoot or undershoot (dysmetria), and an intention tremor is often present.",
+              "species": "human",
+              "page": 834
+            },
+            {
+              "source": "S1",
+              "quote": "Bilateral, axial ataxia dominates if the vermis is injured.",
+              "species": "human",
+              "page": 834
+            },
+            {
+              "source": "S1",
+              "quote": "Symptoms from damage to the hemisphere and the interposed and dentate nuclei are lateralized to the ipsilateral side due to the double decussation of the superior cerebellar peduncle and the pyramidal tract.",
+              "species": "human",
+              "page": 834
+            }
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Neurotransmitter of the climbing-fibre-to-Purkinje-cell synapse",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S4 of motor.json): climbing fibres use aspartate as their main excitatory neurotransmitter",
+              "source": "S4 (original motor.json batch; not reopened this session)",
+              "quote": "Mossy fibers use glutamate, while the climbing fibers use aspartate as their main excitatory neurotransmitter to provide excitatory signals to the Purkinje cells."
+            },
+            {
+              "claim": "Nieuwenhuys describes the climbing-fibre-to-Purkinje-cell synapse as excitatory and glutamatergic, not aspartatergic",
+              "source": "S1",
+              "quote": "Each adult Purkinje cell is innervated by a single climbing fibre, which terminates with multiple, excitatory (glutamatergic) synapses on the smooth, proximal branches of its dendritic tree.",
+              "page": 817
+            }
+          ]
+        },
+        {
+          "issue": "Level at which the superior cerebellar peduncle (dentate/interposed nuclei output) decussates",
+          "positions": [
+            {
+              "claim": "Original batch (PMC review, S16 of motor.json): the superior cerebellar peduncle decussates at the level of the inferior colliculus",
+              "source": "S16 (original motor.json batch; not reopened this session)",
+              "quote": "The SCPs enter the midbrain caudally to the inferior colliculus and trochlear nerves, decussate at the level of the inferior colliculus, and project to the midbrain nuclei and thalamus."
+            },
+            {
+              "claim": "Nieuwenhuys states this pathway decussates at the pontomesencephalic border, not at the level of the inferior colliculus",
+              "source": "S1",
+              "quote": "This pathway decussates at the pontomesencephalic border and splits into ascending and descending branches",
+              "page": 824
+            }
+          ]
+        }
+      ],
+      "unsourced": []
+    },
+    {
+      "id": "extrapyramidal-descending-tracts",
+      "name": "Extrapyramidal descending tracts: rubrospinal, vestibulospinal, reticulospinal, and tectospinal",
+      "category": "extrapyramidal / descending motor",
+      "function": "Regulate posture, muscle tone, and reflexive orientation independent of the pyramidal (corticospinal/corticobulbar) system",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Red nucleus, midbrain tegmentum",
+          "courseVia": [
+            "ventral tegmental decussation (caudal midbrain)",
+            "dorsolateral part of the lateral funiculus"
+          ],
+          "terminatesIn": "Ventral horn lamina V, VI, and VII; synapses with alpha and gamma motor neurons of flexor muscles",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "ventral tegmental decussation in the caudal midbrain"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "In humans the magnocellular red nucleus is relatively small",
+              "species": "human",
+              "page": 217
+            },
+            {
+              "source": "S1",
+              "quote": "This tract decussates at the level of the red nucleus and terminates in cranial motor nuclei, on interneurons in the lateral tegmental field, the lateral reticular nucleus",
+              "species": "human",
+              "page": 849
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 1,
+          "cellBodies": "Medial vestibular nucleus (Schwalbe nucleus), medulla",
+          "courseVia": [
+            "medial vestibulospinal tract"
+          ],
+          "terminatesIn": "Limb motor neurons, especially neck and forelimb (upper-body) musculature",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 3,
+          "neuronOrder": 1,
+          "cellBodies": "Lateral vestibular nucleus (Deiter's nucleus), pons",
+          "courseVia": [
+            "lateral vestibulospinal tract"
+          ],
+          "terminatesIn": "Rexed laminae VII and VIII (premotor interneurons and alpha/gamma motor neurons of extensor muscles)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The lateral vestibulospinal tract takes up a more lateral position at the border of the anterior and lateral funiculi.",
+              "species": "human",
+              "page": 191
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 1,
+          "cellBodies": "Pontine reticular formation (medial reticulospinal tract)",
+          "courseVia": [
+            "ipsilateral anterior funiculus"
+          ],
+          "terminatesIn": "Alpha and gamma motor neurons of extensor muscles, ventromedial spinal cord",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "descends from this region in the medial longitudinal fascicle, through the anterior funiculus, to terminate bilaterally in laminae VIII and VII of the intermediate zone",
+              "species": "human",
+              "page": 875
+            },
+            {
+              "source": "S1",
+              "quote": "These fibres do not terminate, or do so only very sparingly, in the motoneuronal cell groups",
+              "species": "human",
+              "page": 875
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "neuronOrder": 1,
+          "cellBodies": "Medullary reticular formation (lateral reticulospinal tract)",
+          "courseVia": [
+            "bilateral lateral funiculus"
+          ],
+          "terminatesIn": "Motor neurons in the spinal cord",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 6,
+          "neuronOrder": 1,
+          "cellBodies": "Superior colliculus, midbrain",
+          "courseVia": [
+            "courses ventromedial to the periaqueductal gray matter"
+          ],
+          "terminatesIn": "Contralateral anterior gray horn lamina VI, VII, and VIII of cervical and upper thoracic spinal segments",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "crosses before terminating in the contralateral anterior gray horn"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Among the efferent pathways the tectospinal tractis quite prominent.",
+              "species": "human",
+              "page": 215
+            },
+            {
+              "source": "S1",
+              "quote": "Its coarse fibres radiate from the intermediate layers of the superior colliculus to the midline, where they cross in the dorsal tegmental decussation",
+              "species": "human",
+              "page": 215
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Existence of a distinct rubrospinal tract in the human spinal cord",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S9 of motor.json): the rubrospinal tract originates from the red nucleus and crosses in the ventral tegmental decussation to descend to spinal motor neurons",
+              "source": "S9 (original motor.json batch; not reopened this session)",
+              "quote": "The rubrospinal tract originates from the red nucleus of the midbrain tegmentum. It crosses the midline in ventral tegmental decussation located in the caudal midbrain."
+            },
+            {
+              "claim": "Nieuwenhuys states that the rubrospinal tract, although present as a distinct bundle in most mammals, cannot be recognized in the human spinal cord",
+              "source": "S1",
+              "quote": "The rubrospinal tract, which is present in most mammals as a distinct bundle of coarse fibres ventral to the lateral pyramidal tract, cannot be recognized in the human spinal cord",
+              "page": 191
+            },
+            {
+              "claim": "Nieuwenhuys further states that only a rubrobulbar tract probably exists in the human brain, while a rubrospinal tract has never been substantiated",
+              "source": "S1",
+              "quote": "A rubrobulbar tract probably exists in the human brain, but the presence of a rubrospinal tract has never been substantiated.",
+              "page": 217
+            }
+          ]
+        },
+        {
+          "issue": "Termination pattern of the medial (pontine) reticulospinal tract",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S9 of motor.json): this tract terminates on alpha and gamma motor neurons of the extensor muscles",
+              "source": "S9 (original motor.json batch; not reopened this session)",
+              "quote": "The medial (pontine) reticulospinal tract originates in the pontine reticular formation and projects down to the ventromedial spinal cord via the ipsilateral anterior funiculus, which contains alpha and gamma motor neurons of the extensor muscles."
+            },
+            {
+              "claim": "Nieuwenhuys states that fibres of this system terminate bilaterally in laminae VII and VIII of the intermediate zone and do not terminate, or do so only very sparingly, directly in the motoneuronal cell groups",
+              "source": "S1",
+              "quote": "These fibres do not terminate, or do so only very sparingly, in the motoneuronal cell groups",
+              "page": 875
+            }
+          ]
+        }
+      ],
+      "unsourced": []
+    },
+    {
+      "id": "spinal-reflex-arcs",
+      "name": "Spinal reflex arcs: myotatic, inverse myotatic, and withdrawal reflexes",
+      "category": "spinal segmental reflex",
+      "function": "Rapid, involuntary regulation of muscle length, tension, and protective withdrawal from noxious stimuli",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Dorsal root ganglion (Ia afferent neuron from the muscle spindle)",
+          "courseVia": [
+            "dorsal root",
+            "dorsal horn gray matter"
+          ],
+          "terminatesIn": "Alpha motor neuron of the homonymous (agonist) muscle, lamina IX of the ventral horn (monosynaptic)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The first link in the myotatic or stretch reflex is the Ia muscle spindle afferents.",
+              "species": "human",
+              "page": 189
+            },
+            {
+              "source": "S1",
+              "quote": "Ia afferents terminate directly on motoneurons innervating the same muscle.",
+              "species": "human",
+              "page": 189
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Ia inhibitory interneuron, dorsal horn lamina III",
+          "courseVia": [
+            "propriospinal tract (fasciculus proprius)"
+          ],
+          "terminatesIn": "Alpha motor neuron of the antagonist muscle, lamina IX of the anterior horn",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "acetylcholine at the interneuron synapse; glycine at the antagonist alpha-motor-neuron synapse (reciprocal inhibition)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Collaterals of the Ia fibres terminate on inhibitory (gamma-aminobutyric acid, GABA, -containing) Ia interneurons located in lamina VII, just dorsal to the motor nuclei.",
+              "species": "human",
+              "page": 189
+            },
+            {
+              "source": "S1",
+              "quote": "These neurons project to motoneurons innervating the antagonist muscles.",
+              "species": "human",
+              "page": 189
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 1,
+          "cellBodies": "Golgi tendon organ afferent (Ib) at the musculotendinous junction",
+          "courseVia": [
+            "dorsal root, spinal interneurons"
+          ],
+          "terminatesIn": "Inhibitory postsynaptic potentials onto agonist alpha motor neurons and excitatory postsynaptic potentials onto antagonist alpha motor neurons (inverse myotatic / Ib reflex)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "I b primary afferents carry information from Golgi tendon organs",
+              "species": "human",
+              "page": 189
+            },
+            {
+              "source": "S1",
+              "quote": "I b fibres inhibit the motoneurons innervating this muscle via I b inhibitory interneurons in the ventral intermediate grey.",
+              "species": "human",
+              "page": 189
+            },
+            {
+              "source": "S1",
+              "quote": "the effect of the Golgi tendon organs is not limited to autogenic inhibition, but also may produce excitatory effects in particular muscle groups",
+              "species": "human",
+              "page": 189
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 1,
+          "cellBodies": "Cutaneous nociceptive afferent (A-delta fiber)",
+          "courseVia": [
+            "dorsal horn interneurons (polysynaptic)"
+          ],
+          "terminatesIn": "Excitatory interneurons in the dorsal and ventral horns activating flexor muscles for withdrawal (e.g. biceps femoris, tibialis anterior)",
+          "laterality": "ipsilateral (flexor withdrawal); contralateral extension is the classically described crossed-extensor component",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The pathway of the flexor reflex is more complicated and includes two or more spinal interneurons.",
+              "species": "human",
+              "page": 189
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "neuronOrder": 0,
+          "cellBodies": "Clinical tendon-reflex root levels (myotatic reflex arcs commonly tested)",
+          "courseVia": [
+            "biceps: musculocutaneous nerve",
+            "triceps: radial nerve",
+            "patellar: femoral nerve",
+            "Achilles: tibial nerve"
+          ],
+          "terminatesIn": "Segmental spinal cord levels: biceps C5-C6, triceps C7 (C6-C8), patellar L2-L4, Achilles S1 (S1-S2)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Location and neurotransmitter of the Ia inhibitory interneuron mediating reciprocal inhibition of the antagonist muscle",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S8 of motor.json): the inhibitory interneuron uses acetylcholine and is located in lamina III of the dorsal horn",
+              "source": "S8 (original motor.json batch; not reopened this session)",
+              "quote": "A second synaptic pathway involves an inhibitory interneuron, utilizing acetylcholine within lamina III of the dorsal horn."
+            },
+            {
+              "claim": "Nieuwenhuys states the Ia inhibitory interneuron is GABAergic and located in lamina VII, just dorsal to the motor nuclei -- a different transmitter and a different laminar location",
+              "source": "S1",
+              "quote": "Collaterals of the Ia fibres terminate on inhibitory (gamma-aminobutyric acid, GABA, -containing) Ia interneurons located in lamina VII, just dorsal to the motor nuclei.",
+              "page": 189
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The crossed extensor reflex (contralateral limb extension accompanying ipsilateral flexor withdrawal, mediated by commissural interneurons crossing the spinal midline) is a classic teaching point but was not found described in those terms for LIMB reflexes. Nieuwenhuys does describe an analogous but distinct CERVICAL commissural circuit: 'Commissural interneurons are located in lamina VIII. Their axons cross in the anterior white commissure.' and 'Cervical lamina VIII commissural interneurons use glycine to inhibit contralateral neck motoneurons' (ch.06, p.190-191) -- a glycinergic crossed-inhibitory circuit for the neck, not a generalized crossed-extensor pathway for the limbs."
+      ]
+    }
+  ]
+}

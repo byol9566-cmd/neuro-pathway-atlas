@@ -208,3 +208,65 @@
 ### 방법 메모
 - PMC 저자원고(Europe PMC에 XML 없음)는 `pmc.ncbi.nlm.nih.gov/articles/<PMCID>/` HTML로 대조하도록 `verify_quotes.py` 확장. 연속 요청 시 PMC가 **reCAPTCHA 페이지를 200으로** 돌려주므로(캐시에 그대로 저장됨) 캡차 페이지를 걸러내는 처리가 필요 — 이번엔 수동으로 지우고 재실행함.
 - 수집자들이 WebFetch 요약 대신 curl로 원문을 받아 자체 대조한 것이 인용 정확도(**exact 102/104, NOT_FOUND 0**)에 기여함.
+
+---
+
+## upgrade-lib-* (2026-09-24~, 도서관 문헌: 사용자가 받아 준 PDF)
+
+처리 흐름: PDF → `pdf_text.py`(줄 끝 하이픈 결합, 페이지 표시) → 수집 에이전트가 그 텍스트에서만 인용 → `verify_quotes.py`가 같은 텍스트로 대조(`"file"` 필드 지원 추가). 원문 텍스트는 `verification/cache/local/`(gitignore).
+
+| 파일 | 출처 | 인용 | exact | NOT_FOUND | 종 |
+|---|---|---|---|---|---|
+| upgrade-lib-sah2003 | Sah 2003 *Physiol Rev* (A) | 18 | 18 | 0 | 해부·생리 16개는 **쥐**, 병변 2개는 원숭이 |
+
+**amygdala-fear-circuit** 결과
+- 이전에 C급(S6 Bioinformation)에만 기대던 단계 4(BLA→중심핵), 5(중심핵→시상하부·뇌줄기, GABA성), 8(→BNST) 및 Klüver–Bucy 병변이 A급으로 받쳐짐 → **S6는 제외 가능**.
+- `unsourced` 2건 해소: 중심핵→PAG 직접 투사(p.7), BLA 공포조건화 가소성이 글루탐산(AMPA/NMDA)성(p.23). Janak & Tye 2015와 합쳐 편도 회로의 핵심 사슬은 이제 독립 A급 출처 2개.
+- **여전히 못 받친 것**: 단계 6·7의 "분계선조(stria terminalis)"와 "배쪽편도원심로(ventral amygdalofugal pathway)"라는 **경로 이름**. Sah는 BNST를 표적으로만 언급하고 이 두 섬유로를 이름으로 서술하지 않음 → 교과서(Nieuwenhuys ★) 몫.
+- 주의: 이 리뷰의 해부 서술은 설치류 기준이라 학습 도구의 사람 해부 문장에는 "설치류 연구에서 확립" 정도의 단서가 필요하거나 교과서 인용을 병기해야 함.
+- 충돌(경미): Klüver–Bucy 증상 목록이 출처마다 다름(Sah: 공포·분노 소실, 탐색 증가, 시각실인, 과다구강행동, 과다성욕, 사회성 소실 / StatPearls·S6: 과다구강행동, 과다성욕, 과다변태증, 온순화, 과식, 시각실인, 기억상실). 증상 목록은 원 기술(Klüver & Bucy 1939)의 항목을 쓰되 성연 확인.
+- 원문 오탈자 "hypersexualtity"(p.20)는 대조를 위해 그대로 인용함 — 화면 표시에는 쓰지 말 것.
+
+### upgrade-lib-nieuwenhuys-* (2026-09-24, Nieuwenhuys·Voogd·van Huijzen *The Human Central Nervous System* 4판, Springer 2008)
+
+966쪽 전체를 `pdf_text.py`로 추출하고 15개 장을 잘라 에이전트 4개에 배분. 경로 32개 전부 대상.
+
+| 파일 | 경로 | 인용 | exact | NOT_FOUND |
+|---|---|---|---|---|
+| upgrade-lib-nieuwenhuys-limbic | 7 | 98 | 98 | 0 |
+| upgrade-lib-nieuwenhuys-brainstem | 9 | 85 | 85 | 0 |
+| upgrade-lib-nieuwenhuys-senses | 5 | 92 | 92 | 0 |
+| upgrade-lib-nieuwenhuys-motor-somatosensory | 11 | 134 | 134 | 0 |
+| **합계** | 32 | **409** | 409 | **0** |
+
+(각 파일의 UNKNOWN_SOURCE_ID는 기존 배치의 StatPearls 입장을 비교용으로 옮긴 자리 — 새 인용 아님.) 사람 해부학 교과서라 `species`는 거의 전부 human; 동물 연구를 명시한 문장(고양이 배뇨 실험, 원숭이 피라미드 교차율 등)만 따로 표시됨. 단계 구조(order·cellBodies·courseVia·terminatesIn·laterality·decussation)는 원본 배치와 바이트 단위로 동일함을 확인.
+
+**이번 책으로 A급이 된 것(요약)**: 32개 경로 전부에 사람 교과서 인용이 붙음. 특히 파페츠·해마 3시냅스 회로, 분계선조·배쪽편도원심로(이름), 배뇨 회로(Barrington 핵·Onuf 핵), 망막시상하부로→SCN→PVN→IML→위목신경절→솔방울샘 전체 사슬, 후각 경로 전 단계(앞맞교차 포함), 시각 경로의 겉질 망막위상 지도·겉무릎체외 경로, 청각부챗살의 렌즈핵밑 속섬유막 주행, 안뜰 원심계, 미각 경로가 **교차하지 않는** 유일한 상행 감각로라는 서술, 소뇌 "이중 교차" 설명, 중심뒤판로.
+
+**❓ 교과서가 기존(StatPearls) 서술과 다른 곳 — 성연 검수 필수** (양쪽 인용 모두 파일에 있음)
+1. **적색척수로**: "cannot be recognized in the human spinal cord", "has never been substantiated"(21장). 우리 겉질외 하행로 배치에 적색척수로 단계가 있음 → 사람에서는 적색숨뇌로만, 또는 "동물에서 뚜렷·사람에서 미확인"으로 표기할지 결정.
+2. **뒤섬유기둥 손상**: "localization of tactile stimuli and position sense is mostly intact"(16장, 사람 증례) → 뒤섬유기둥 증후군의 "위치감각 소실" 서술과 충돌. 교과서 입장은 Wall & Noordenbos 계열; 임상 교육에서는 여전히 소실로 가르침 → 표현 수위 결정.
+3. **통증·온도의 시상 중계핵**: VPL이 아니라 **VMpo**를 "main relay nucleus"로 서술(Craig 학설 채택). 학습 도구는 어느 쪽?
+4. **삼차신경 교차 위치**가 아핵별로 다름(주감각핵·oralis·interpolaris는 다리뇌, caudalis는 숨뇌 아래), caudalis는 VPM이 아니라 VMpo·속판내핵·MD로 투사.
+5. **널판/쐐기다발 경계**: 뚜렷한 T6/T7 경계가 아니라 점진적 이행(가슴 분절은 "중간 위치").
+6. **Clarke 기둥 분절**: "thoracic and high lumbar"만 — StatPearls의 C8–L3 범위와 다름.
+7. **하행 노르아드레날린 통증조절**: 청색반점 단독이 아니라 A5/A6/A7 집단.
+8. **피라미드 교차율**: 사람 수치 없음("partial decussation"), 원숭이 ~90%만 → 기존 충돌(70–80% vs >90%) 미해결.
+9. **오름섬유 신경전달물질**: 글루탐산(기존 "아스파르트산"과 충돌).
+10. **위소뇌다리 교차 높이**: "pontomesencephalic border"(기존 "아래둔덕 높이").
+11. **Ia 억제 사이뉴런**: GABA성, VII층(기존 "콜린성, III층"은 오류로 보임).
+12. **각막반사**: R1은 주감각핵·척수핵 양쪽 사이뉴런, R2는 별도의 다리뇌·숨뇌 눈깜박중추(3번째 입장).
+13. **수평 홱보기**: FEF→PPRF 직접 투사는 "weak"; 주 경로는 FEF→위둔덕→PPRF(문맥 확인함).
+14. **riMLF→눈돌림·도르래핵**: 주로 같은쪽.
+15. **턱반사**: 단시냅스 외에 위삼차핵(supratrigeminal) 경유 이시냅스 경로도.
+16. **구역반사 원심**: 붓인두근은 IX 자체가 지배(기존은 X·의문핵으로 묶음).
+17. **압수용기반사 부교감 출력**: 미주신경등쪽핵(기존 의문핵); 책 안에서도 NTS 꼬리쪽 vs 머리쪽 서술이 엇갈림.
+18. **Horner 1차 뉴런 기원**: "is unknown"(기존 "시상하부"); 3차 뉴런은 섬모신경절을 통과.
+19. **안쪽안뜰척수로**: 같은쪽 안쪽안뜰척수로와 별도의 교차 안뜰척수로를 구분(기존 "양측").
+20. **안뜰 시상 표적**: VPS/VPI(영장류) — 기존 VPL/VPM/VPI.
+21. **REM-off GABA 뉴런**: vlPAG 이름 없이 "local GABAergic element".
+22. **파페츠 회로 개념 자체**의 역사적 한계를 책이 서술 — 화면에서는 "고전적 회로"로 표기 권장(Aggleton 2022와 같은 결).
+
+**여전히 못 받친 것**(이 책은 임상 서술이 거의 없음): 임상 명칭·증후군(Brown-Séquard, Wallenberg, 척수공동증, 척수매독, Friedreich, 제뇌·제피질 자세, 거짓숨뇌마비, UMN/LMN 징후 목록), "hyperdirect"라는 용어, 결절깔때기 도파민 경로, Wernicke–Korsakoff, 53:47 시각교차 비율, VOR 이득, 여러 시냅스의 신경전달물질. → 임상 항목은 Haines·Brodal(★) 몫.
+
+**절차 문제**: 체성감각·운동 담당 에이전트가 **금지된 하위 에이전트 5개를 생성**했고(브리프의 "Do NOT spawn sub-agents" 무시), 그중 둘이 출력 파일을 덮어써 두 번 깨졌다고 스스로 보고함. 최종 파일은 메인 세션이 인용 134개 전부와 단계 구조를 독립 검증해 이상 없음을 확인했으므로 채택. 다음부터는 이 규칙을 브리프뿐 아니라 프롬프트 본문에도 넣을 것.

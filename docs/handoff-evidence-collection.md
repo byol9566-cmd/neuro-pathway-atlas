@@ -57,6 +57,7 @@
 - 사용자가 대학 도서관 계정으로 유료 문헌을 직접 받아 주기로 함. **받을 문헌 목록은 `docs/data/pathway-evidence/wanted/WANTED.md`** (책 11권·논문 75편, 그중 받을 논문 56편, 1순위 구분 있음). 후보 조사는 서브에이전트(`wanted/*.json`), DOI·ISBN 실재 확인은 `wanted/verify_wanted.py`(`*.report.json`). 전문 내용은 아직 아무것도 확인하지 않음(`checked: false`).
 - 받은 PDF는 `~/Downloads/atlas-refs/`에 들어옴 → 다음 할 일: 각 PDF에서 우리 주장에 대한 8~45단어 인용을 뽑아(에이전트가 PDF를 읽고 추출, 메인이 `verify_quotes.py`류로 원문 대조 — PDF는 로컬 파일이므로 대조 스크립트를 로컬 텍스트 기준으로 확장해야 함) StatPearls 근거를 교체하고 REVIEW.md 갱신.
 - 2026-09-23: 무료 전문 19편에서 인용 104개 추출·검증 완료(`upgrade-*.json`, REVIEW.md "upgrade-*" 절). NOT_FOUND 0. 해결: 코르티솔 생성층 모순(다발층 확정), Guillain–Mollaret 삼각, 얼굴 겉질숨뇌로 고리 주행, 편도→PAG. 새 충돌 4건은 REVIEW.md ❓ 목록. **기존 배치 파일에는 아직 통합하지 않음** — 성연 검수와 함께 `content/pathways.json` 반영 시 같이 할 것. 사용자 몫은 `wanted/WANTED.md` "0. 최소 세트"(책 4권 + 논문 7편)로 축소.
+- 2026-09-24: 사용자가 받아 준 도서관 PDF 2건 처리 — Sah 2003(편도, 인용 18), **Nieuwenhuys 2008 교과서(경로 32개 전부, 인용 409)**. 전부 exact, NOT_FOUND 0. 파일 `upgrade-lib-*.json`, 검토는 REVIEW.md "upgrade-lib-*" 절(교과서 vs StatPearls 충돌 22건 ❓ 목록 — 성연 검수 필수, 특히 적색척수로·뒤섬유기둥·VMpo). PDF 처리 도구 `pdf_text.py`(+ `verify_quotes.py`의 `file` 필드). 받은 PDF와 추출 텍스트는 `~/Downloads/atlas-refs/`와 `verification/cache/local/`(둘 다 저장소 밖/gitignore). 남은 최소 세트: Haines·Brodal·Kandel + 논문 6편 — 임상 항목(증후군·병변)은 Haines/Brodal이 필요.
 <!-- STATUS:END -->
 
 ## 아직 수집하지 않은 주제 (우선순위 순)

@@ -120,11 +120,21 @@ def source_text(src: dict) -> tuple[str | None, dict]:
             title = re.search(r"<title>(.*?)</title>", page, re.S)
             meta = {"registryTitle": html.unescape(title.group(1)).strip() if title else None}
         return (normalise(page) if page else None), meta
+    file = (src.get("file") or "").strip()
+    if file:
+        # a PDF the owner fetched from the library: the same text pdf_text.py gives the collectors
+        from pdf_text import pdf_to_text, text_path
+        pdf = Path(file).expanduser()
+        if not pdf.exists():
+            return None, {"error": f"file not found: {pdf}"}
+        cached = text_path(pdf)
+        text = cached.read_text(encoding="utf-8") if cached.exists() else pdf_to_text(pdf)
+        return normalise(text), {"note": "local PDF", "file": str(pdf), "chars": len(text)}
     url = (src.get("url") or "").strip()
     if url:
         page = fetch(url, re.sub(r"\W+", "_", url)[:120] + ".html")
         return (normalise(page) if page else None), {"note": "no PMCID/NBK: fetched the url as given"}
-    return None, {"error": "source has no pmcid, nbk or url"}
+    return None, {"error": "source has no pmcid, nbk, file or url"}
 
 
 def iter_quotes(node, path=""):

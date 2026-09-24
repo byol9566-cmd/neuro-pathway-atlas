@@ -1,0 +1,709 @@
+{
+ "batch": "upgrade-lib-nieuwenhuys-senses",
+ "file": "upgrade-lib-nieuwenhuys-senses.json",
+ "tally": {
+  "exact": 92,
+  "UNKNOWN_SOURCE_ID": 5
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "The Human Central Nervous System",
+    "journal": "Springer (4th ed.)",
+    "year": 2008,
+    "pmcid": null,
+    "nbk": null,
+    "doi": null,
+    "license": "not stated (library copy)",
+    "type": "textbook"
+   },
+   "check": {
+    "note": "local PDF",
+    "file": "/Users/lim/Downloads/atlas-refs/nieuwenhuys-2008-human-cns.pdf",
+    "chars": 2821910
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The axons of the ganglion cells pass over the inner surface of the retina and converge towards the posterior pole of the eye, where they pierce through foramina in the sclera and then constitute the optic nerve."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Within the optic chiasm a partial decussation takes place: fibres from the nasal halves of the retinae, including the projection of the monocular visual field, cross to the opposite side; those from the temporal halves of the retinas remain uncrossed"
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "After this partial decussation, the axons of the retinal ganglion cells continue without interruption behind the chiasm as the two diverging optic tracts."
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These arch around the lateral sides of the diencephalon until they reach the lateral geniculate bodies, where most of their fibres terminate."
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Layer M1 and layers P4 and P6 receive fibres from the contralateral eye, and layer M2 and layers P3 and P5 receive fibres from the ipsilateral eye"
+  },
+  {
+   "path": "pathways[0].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The efferent fibres of the lateral geniculate body constitute the optic radiation or geniculocalcarine tract, which terminates in the primary visual cortex."
+  },
+  {
+   "path": "pathways[0].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The upper quadrant of the visual field is represented in the contralateral V1 cortex of the lower bank of the calcarine sulcus"
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the lower quadrant is represented in the upper bank of this sulcus"
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The fovea, i.e. the retinal areas concerned with central vision, projects to a relatively large area in the posterior part of the primary visual cortex."
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The nasal periphery of the retina, concerned with the temporal, monocular periphery of the visual field, projects to the extreme anterior part of the visual cortex"
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "some fibres continue in a mediocaudal direction and pass via the brachium of the superior colliculus to the superior colliculus, the pretectal region and the terminal nuclei of the accessory optic system"
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Several retinocortical pathways to nonprimary visual areas avoid the lateral geniculate body and synapse in the superior colliculus and the pulvinar."
+  },
+  {
+   "path": "pathways[0].steps[7].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The retinogeniculocortical projection and the extrageniculate and extrastriate visual pathways."
+  },
+  {
+   "path": "pathways[1].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The axons of the type 1 cells of the spiral ganglion bifurcate in the centre of the ventral cochlear nucleus, dividing it into the anterior and posterior ventral nucleus, and distribute in a tonotopical manner to both the dorsal and the ventral cochlear nuclei"
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The trapezoid body crosses in the ventral part of the tegmentum."
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The terminations of the axons of the globular bushy cells in the central portion of the ventral cochlear nucleus envelop the cells of the contralateral nucleus of the trapezoid body with their calyces"
+  },
+  {
+   "path": "pathways[1].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The spherical bushy cells located in the anterior portion of the ventral cochlear nucleus project to the ipsilateral lateral superior olivary nucleus and to the medial superior olivary nucleus of both sides"
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The medial superior olive receives a projection to its lateral half from the ipsilateral cochlear nuclei and to its medial half from the contralateral side."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral superior olive receives tonotopically arranged projections from the ipsilateral and contralateral cochlear nuclei."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The highly specific spatial organization of afferents to cells in the medial superior olivary nucleus has to do with its role in interpreting interaural time differences, which are maximal at low frequencies."
+  },
+  {
+   "path": "pathways[1].steps[2].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "For the localization of sound, interaural level differences, which are maximal at high frequencies, are encoded in the lateral superior olive"
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Both superior olivary nuclei project in turn to the dorsal nucleus of the lateral lemniscus and the inferior colliculus; the projection of the medial superior olive is an ipsilateral one, and the projections of the lateral superior olive are bilateral"
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The brachium of the inferior colliculus, a prominent bundle visible on the surface of the midbrain, connects the inferior colliculus with the medial geniculate body"
+  },
+  {
+   "path": "pathways[1].steps[5].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The final link in the auditory system is formed by the auditory radiation through which the medial geniculate body is connected with the superior temporal cortex."
+  },
+  {
+   "path": "pathways[1].steps[5].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Passing laterally, this radiation traverses the sublenticular portion of the internal capsule."
+  },
+  {
+   "path": "pathways[1].steps[5].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The primary auditory cortex (known as its core area) corresponds roughly to the transverse gyrus of Heschl."
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The final link in this descending system is formed by the olivocochlear bundle, which originates from the superior olivary complex."
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The medial system originates from large periolivary neurons located medial to the superior olives (medial nucleus of the trapezoid body)."
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Its coarse axons project bilaterally to the cochlea, where they form large synaptic terminals at the base of the outer hair cells"
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Most fibres of the lateral olivocochlear system take their origin from small neurons located within the lateral superior olive"
+  },
+  {
+   "path": "pathways[1].steps[6].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The crossed projection of the small neurons is topically organized; shell cells project diffusely over the entire length of the ipsilateral cochlea"
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The first-order elements are bipolar neurons, the somata of which constitute the vestibular ganglion, located in the internal auditory meatus."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It comprises four cell masses, the superior, lateral, medial and descending (or inferior) vestibular nuclei"
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Vestibular rootfibres reach the cerebellum via the superior vestibular nucleus."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Primary vestibular afferents reach the cerebellum through the juxtarestiform body."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The cerebellovestibular fibres arise from Purkinje cells located in the flocculonodular lobe, the uvula and the anterior vermis, and from the fastigial nucleus"
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Purkinje cells of the vestibulocerebellum (nodulus and adjoining uvula, flocculus and ventral paraflocculus) project to the other vestibular nuclei and group Y."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral vestibulospinal tract takes its origin from the lateral vestibular nucleus."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The main component of the lateral vestibulospinal tract descends to lumbar levels."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral vestibulospinal tract is an uncrossed pathway from the lateral vestibular nucleus located lateral to the MLF in the centre of the bulbar reticular formation, that descends along the entire spinal cord"
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Two other fibre systems, corresponding to the medial and the crossed vestibulospinal tracts, descend in or adjacent to the MLF"
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The medial vestibulospinal tract is located ipsilaterally in the dorsolateral bulbar MLF and consists of mediumsized and small fibres."
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Fibres of the crossed vestibulospinal tract decussate at their level of origin and become located next to the midline in the MLF."
+  },
+  {
+   "path": "pathways[2].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The three-neuron arc of the vestibulo-ocular reflex connecting the semicircular canals with the extraocular muscles."
+  },
+  {
+   "path": "pathways[2].steps[4].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Horizontal canal fibres terminate on two groups of excitatory neurons located in the MVmc, projecting to the contralateral abducens nucleus and the ipsilateral medial rectus pool of motoneurons in the nucleus of the oculomotor nerve"
+  },
+  {
+   "path": "pathways[2].steps[5].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "However, there is evidence that cells located within the superior, medial and inferior vestibular nuclei give rise to fibres that terminate in the thalamus."
+  },
+  {
+   "path": "pathways[2].steps[5].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "They decussate in the isthmus region and pass diffusely through the midbrain tegmentum and the fields of Forel to terminate in the thalamus."
+  },
+  {
+   "path": "pathways[2].steps[5].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In primates the vestibulothalamic fibres terminate bilaterally in the shell surrounding the ventral posterior nuclei (ventral posterior superior nucleus, VPS, and ventral posterior inferior nucleus, VPI)"
+  },
+  {
+   "path": "pathways[2].steps[6].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Similar vestibular cortical areas also were localized in the human brain using fMRI after bilateral galvanic stimulation of the labyrinth"
+  },
+  {
+   "path": "pathways[2].steps[6].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The PIVC was located in the left parieto-temporal junction, superficial to Heschl’s gyrus and caudal to the parietal speech areas."
+  },
+  {
+   "path": "pathways[2].steps[6].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The different vestibular cortical areas are interconnected; the PIVC occupies a central position in this network"
+  },
+  {
+   "path": "pathways[2].steps[7].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It should be noted that the vestibular nerve, in addition to afferent fibres, also carries a number of efferent fibres."
+  },
+  {
+   "path": "pathways[2].steps[7].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The projection to one labyrinth has a bilaterally symmetrical origin from the cell groups on each side of the brain stem"
+  },
+  {
+   "path": "pathways[2].steps[7].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In the cat about 20% of the efferent vestibular neurons give off axons that terminate on hair cells of both labyrinths"
+  },
+  {
+   "path": "pathways[2].conflicts[0].positions[0]",
+   "source": "special-senses.json S7 (not re-cited here; carried over for comparison)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The MVST arises from the medial vestibular nucleus and travels bilaterally via the MLF, projecting primarily to cervical spinal levels."
+  },
+  {
+   "path": "pathways[2].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The medial vestibulospinal tract is located ipsilaterally in the dorsolateral bulbar MLF and consists of mediumsized and small fibres."
+  },
+  {
+   "path": "pathways[2].conflicts[1].positions[0]",
+   "source": "special-senses.json S7 (not re-cited here; carried over for comparison)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Within the thalamus, vestibular signals are primarily processed in the ventral posterior complex, which comprises the ventral posterolateral, ventral posteromedial, and ventral posteroinferior nuclei."
+  },
+  {
+   "path": "pathways[2].conflicts[1].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In primates the vestibulothalamic fibres terminate bilaterally in the shell surrounding the ventral posterior nuclei (ventral posterior superior nucleus, VPS, and ventral posterior inferior nucleus, VPI)"
+  },
+  {
+   "path": "pathways[2].conflicts[2].positions[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The different vestibular cortical areas are interconnected; the PIVC occupies a central position in this network"
+  },
+  {
+   "path": "pathways[2].conflicts[2].positions[1]",
+   "source": "special-senses.json S8 (not re-cited here; carried over for comparison)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "It seems that the vestibular cortex has the form of an extensive network rather than a discrete, limited, and well-demarcated cortical location."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Special visceral afferents that innervate taste buds in the fungiform papillae of the anterior half of the tongue and foliate papillae along its lateral edges course in the chorda tympani and the intermediate nerve, usually included with the facial nerve."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Taste buds of the palate and the pharynx are innervated by the vagus nerve."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The nucleus of the solitary tract can be subdivided into a rostral gustatory portion, which receives gustatory afferents from the facial, glossopharyngeal and vagal nerves, and a caudal portion, which receives general visceral afferents from these nerves."
+  },
+  {
+   "path": "pathways[3].steps[0].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The first relay for taste is located in the nucleus of the solitary tract in the lower brain stem."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The rostral, gustatory portion of the solitary nucleus gives rise to an uncrossed ascending pathway terminating in the caudal half of the parvocellular VPM"
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The uncrossed gustatory pathway, from the rostral solitary nucleus to the caudal half of the parvocellular medial ventroposterior nucleus of the thalamus (VPp), ascends near the dorsal trigeminothalamic tract."
+  },
+  {
+   "path": "pathways[3].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Most of these connections, with the exception of the pathway for taste, are crossed."
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The parvocellular VPM projects to the gustatory cortex, located in the rostral, granular cortex of the insula and the inner frontal operculum"
+  },
+  {
+   "path": "pathways[3].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "VPp projects to the rostral insula and the frontal operculum, and to the base of the postcentral gyrus."
+  },
+  {
+   "path": "pathways[3].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Secondary projections from the gustatory cortex were traced to the dysgranular insular cortex and the lateral orbitofrontal cortex"
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[0]",
+   "source": "special-senses.json S10 (not re-cited here; carried over for comparison)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The third-order fibers travel ipsilaterally through the posterior limb of the internal capsule to terminate in the frontal operculum, anterior insular cortex, and in the rostral part of the Brodmann area 3B."
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[1]",
+   "source": "special-senses.json S11 (not re-cited here; carried over for comparison)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "Axons from the rostral gustatory solitary nucleus project to the ventral posterior medial nucleus of the thalamus VPM and ultimately terminate, both crossed and uncrossed, at the neocortex, the gustatory cortex (the anterior insula of the temporal lobe and frontal opercular region)."
+  },
+  {
+   "path": "pathways[3].conflicts[0].positions[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The rostral, gustatory portion of the solitary nucleus gives rise to an uncrossed ascending pathway terminating in the caudal half of the parvocellular VPM"
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Remarkably, the axons of neurosensory cells expressing the same odorant receptor all converge on a few target glomeruli"
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "There are about 6 million olfactory sensory neurons in the human nasal mucosa"
+  },
+  {
+   "path": "pathways[4].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In young adult humans, approximately 8,000 glomeruli have been counted"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Secondary olfactory fibres originating from the olfactory bulb pass by way of the lateral olfactory tract to the amygdala, where they terminate mainly in the cortical nucleus"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The lateral olfactory stria carries secondary olfactory fibres to the cortical and medial amygdaloid nuclei."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The amygdala receives a direct projection from the olfactory bulb, which terminates mainly in the cortical nucleus"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Impulses carrying information from all sense organs except olfactory terminate in particular thalamic nuclei, where they are projected to specific cortical areas by thalamic relay cells"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "After having distributed fibres to the anterior olfactory nucleus and the olfactory tubercle, the entire secondary olfactory projection enters the lateral olfactory stria"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[5]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Following that stria, the fibres reach the prepiriform, periamygdaloid and entorhinal cortices and the cortical amygdaloid nucleus, where they terminate"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[6]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Two structures which border on the primary olfactory cortex, i.e. the cortical nucleus of the amygdala and the entorhinal cortex"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[7]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "also receive direct projections from the olfactory bulb"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[8]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In primates, the olfactory projections are confined to the rostral parts of both of these structures."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[9]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In contrast, the olfactory neocortical areas receive their major sensory input directly from the primary olfactory cortex, without a thalamic relay, and the afferents carrying this input terminate principally in layer I"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[10]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In the somatosensory, visual and auditory systems, sensory information reaches the cortex via a thalamic relay, and the thalamocortical fibres terminate mainly in a well-differentiated layer IV"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[11]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The anterior olfactory nucleus and the primary olfactory cortex are interconnected by fibres passing through the anterior commissure."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[12]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "By the same route, fibres originating from the anterior olfactory nucleus project to the deeper layers of the contralateral olfactory bulb"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[13]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Monorhinal odorous stimuli activate the primary olfactory cortex bilaterally, consistent with the commissural connections between these areas via the anterior commissure"
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[14]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The anterior olfactory nucleus projects massively and bilaterally to the olfactory bulb."
+  },
+  {
+   "path": "pathways[4].steps[1].evidence[15]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In primates, including humans, the anterior olfactory nucleus is only poorly developed and consists of some small groups of neurons situated in the caudal part of the olfactory bulb, in the olfactory peduncle and in the area where this peduncle joins the hemisphere"
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Thus it has been established that the prepiriform cortex distributes fibres to the basolateral complex and that the entorhinal cortex projects to the central, basolateral and cortical nuclei"
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The mitral cells in the olfactory bulb are the principal source of afferent input to the primary olfactory cortex."
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These afferents pass via the lateral olfactory tract to layer Ia of the cortex, making excitatory synaptic contacts with the apical dendrites of pyramidal cells"
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The primary olfactory cortex comprises three layers, which are usually designated as layers I, II and III"
+  },
+  {
+   "path": "pathways[4].steps[2].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This olfactory cortex is, particularly in macrosmatic mammals, subdivided in prepiriform and piriform (or periamygdaloid) cortical fields."
+  }
+ ]
+}

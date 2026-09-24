@@ -1,0 +1,275 @@
+{
+  "batch": "upgrade-lib-sah2003",
+  "collectedBy": "sub-agent",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "review",
+      "title": "The Amygdaloid Complex: Anatomy and Physiology",
+      "authors": "Sah P, Faber ESL, Lopez De Armentia M, Power J",
+      "journal": "Physiological Reviews 83(3): 803-834",
+      "year": 2003,
+      "pmcid": "",
+      "pmid": "",
+      "doi": "10.1152/physrev.00002.2003",
+      "nbk": "",
+      "url": "https://doi.org/10.1152/physrev.00002.2003",
+      "license": "not stated (library copy)",
+      "file": "~/Downloads/atlas-refs/sah-et-al-2003-the-amygdaloid-complex-anatomy-and-physiology.pdf",
+      "openedVia": "local-pdf"
+    }
+  ],
+  "pathways": [
+    {
+      "id": "amygdala-fear-circuit",
+      "name": "Amygdala fear circuit",
+      "category": "limbic",
+      "function": "Rapid detection and behavioural/autonomic response to threat; fear conditioning and anxiety",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Sensory thalamic relay nuclei (e.g. medial geniculate body for audition, other sensory thalamic nuclei for other modalities)",
+          "courseVia": [
+            "direct thalamo-amygdala projection (\"low road\")"
+          ],
+          "terminatesIn": "lateral nucleus of the amygdala",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "glutamate (not explicitly stated in opened sources for this exact step)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Subcortical acoustic inputs arise from the thalamic medial geniculate nucleus and target the same areas of the LA",
+              "species": "rat",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 1,
+          "cellBodies": "Sensory cortical association areas / primary sensory cortex",
+          "courseVia": [
+            "thalamocortical pathway then corticoamygdala projection (\"high road\")"
+          ],
+          "terminatesIn": "lateral nucleus and basolateral nuclei of the amygdala",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "glutamate (not explicitly stated for this step)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Most cortical projections originate in association areas and transmit processed information by a series of cortico-cortical connections originating in the primary sensory cortex",
+              "species": "rat",
+              "page": 5
+            },
+            {
+              "source": "S1",
+              "quote": "The majority are ipsilateral and enter the amygdala via the external capsule",
+              "species": "rat",
+              "page": 5
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 2,
+          "cellBodies": "Lateral nucleus of the amygdala",
+          "courseVia": [
+            "intra-amygdaloid excitatory glutamatergic pathway with relay through inhibitory GABAergic/intercalated interneurons"
+          ],
+          "terminatesIn": "basolateral nucleus of the amygdala",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "glutamate (excitatory) with GABAergic intercalated relay",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The LA sends extensive projections to the basal and accessory basal nuclei and the capsular part of the central nucleus",
+              "species": "rat",
+              "page": 9
+            },
+            {
+              "source": "S1",
+              "quote": "Most projections to and from the LA make asymmetrical synapses, indicating they are excitatory",
+              "species": "rat",
+              "page": 9
+            },
+            {
+              "source": "S1",
+              "quote": "Inputs to the basolateral complex use glutamate as the transmitter and activate synapses expressing both AMPA and NMDA receptors",
+              "species": "rat",
+              "page": 23
+            },
+            {
+              "source": "S1",
+              "quote": "Long-term synaptic plasticity, involving activation of glutamate receptors within the LA, has been proposed as the mechanism underlying the acquisition and storage of fear conditioning",
+              "species": "rat",
+              "page": 25
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 3,
+          "cellBodies": "Basolateral nucleus of the amygdala",
+          "courseVia": [
+            "intra-amygdaloid projection"
+          ],
+          "terminatesIn": "central nucleus of the amygdala",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "glutamate",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The largest projection from basal nuclei is to the medial subdivision of the central nucleus",
+              "species": "rat",
+              "page": 9
+            },
+            {
+              "source": "S1",
+              "quote": "These afferents form asymmetric synapses with spines and dendrites in the central nucleus and are therefore thought to be glutamatergic",
+              "species": "rat",
+              "page": 9
+            },
+            {
+              "source": "S1",
+              "quote": "act as feed-forward interneurons to cells in the CeA, leading to the generation of a disynaptic inhibitory synaptic potential in these neurons following stimulation in the basolateral complex",
+              "species": "rat",
+              "page": 19
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "neuronOrder": 4,
+          "cellBodies": "Central nucleus of the amygdala (GABAergic output neurons)",
+          "courseVia": [
+            "direct descending projections"
+          ],
+          "terminatesIn": "hypothalamus and brainstem (autonomic and somatic effector centres)",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Activation of the central nucleus induces this autonomic response by stimulating groups of neurons in the brain stem that control the autonomic system, or alternatively by stimulating hypothalamic nuclei that modulate these centers",
+              "species": "rat",
+              "page": 7
+            },
+            {
+              "source": "S1",
+              "quote": "Projections to the brain stem are to three main areas: the periaqueductal gray, which leads to vocalization, startle, analgesia and cardiovascular changes",
+              "species": "rat",
+              "page": 7
+            },
+            {
+              "source": "S1",
+              "quote": "Large numbers of neurons in the medial subdivision of the central nucleus and medial nucleus are GABAergic, and these projections from the central nucleus have been suggested to be inhibitory",
+              "species": "rat",
+              "page": 8
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "neuronOrder": 4,
+          "cellBodies": "Amygdala (central and basolateral nuclei)",
+          "courseVia": [
+            "stria terminalis (dorsal route)"
+          ],
+          "terminatesIn": "septal area and hypothalamus",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 7,
+          "neuronOrder": 4,
+          "cellBodies": "Amygdala",
+          "courseVia": [
+            "ventral amygdalofugal pathway (ventral route)"
+          ],
+          "terminatesIn": "septal area, hypothalamus, and medial dorsal thalamic nucleus",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 8,
+          "neuronOrder": 5,
+          "cellBodies": "Basolateral amygdala / central nucleus",
+          "courseVia": [
+            "projections to bed nucleus of the stria terminalis (BNST)"
+          ],
+          "terminatesIn": "hypothalamus and brainstem structures (sustained anxiety response)",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "the medial subdivision of the central nucleus has substantial projections to the hypothalamus, bed nucleus of the stria terminalis",
+              "species": "rat",
+              "page": 7
+            },
+            {
+              "source": "S1",
+              "quote": "In addition to these direct projections to the hypothalamus, the CeA has a strong projection to the BNST, which also innervates hypothalamic nuclei.",
+              "species": "rat",
+              "page": 8
+            }
+          ]
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Bilateral amygdala / bilateral medial temporal lobe",
+          "deficit": "Klüver-Bucy syndrome: hyperorality, hypersexuality, hyper-metamorphosis, placidity, bulimia, visual agnosia and amnesia",
+          "side": "bilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Monkeys with temporal lobe lesions exhibited an absence of anger and fear, increased exploration, visual agnosia, hyperorality, hypersexualtity, and loss of social interactions.",
+              "species": "monkey (Macaca)",
+              "page": 20
+            },
+            {
+              "source": "S1",
+              "quote": "Subsequent work has shown that lesions restricted to the amygdala produced many of these effects including a loss of fear and anger, increased exploration, and hyperorality",
+              "species": "monkey (Macaca)",
+              "page": 20
+            }
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Symptom profile attributed to bilateral temporal-lobe/amygdala (Klüver-Bucy-type) lesions",
+          "positions": [
+            {
+              "claim": "C-grade source (original batch, S6/Bioinformation) lists hyperorality, hypersexuality, hyper-metamorphosis, placidity, bulimia, visual agnosia and amnesia as the pathological characteristics of Kluver-Bucy syndrome",
+              "source": "S6 (original limbic-arousal-autonomic.json batch; not reopened by this sub-agent this session)",
+              "quote": "Kluver-Bucy syndrome (KBS) is a rare neuropsychiatric condition caused by the abrasions which disturbs the hippocampus, bilateral temporal lobes of amygdala. The pathological characteristics are hyperorality, hypersexuality, hyper-metamorphosis, placidity, bulimia, visual agnosia and amnesia."
+            },
+            {
+              "claim": "Sah et al. 2003, describing the classic monkey lesion literature (Kluver & Bucy; Weiskrantz), lists a partly different set: absence of anger and fear, increased exploration, visual agnosia, hyperorality and hypersexuality, and loss of social interactions -- it does not mention bulimia, placidity, hyper-metamorphosis or amnesia as part of this symptom set",
+              "source": "S1",
+              "quote": "Monkeys with temporal lobe lesions exhibited an absence of anger and fear, increased exploration, visual agnosia, hyperorality, hypersexualtity, and loss of social interactions."
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "Steps 6-7 (the dorsal 'stria terminalis' route and the 'ventral amygdalofugal pathway' as distinctly named white-matter tracts to the septal area/hypothalamus/medial dorsal thalamus) are NOT supported by Sah et al. 2003: the string 'amygdalofugal' does not occur anywhere in the opened text, and 'stria terminalis' occurs only in the context of the bed nucleus of the stria terminalis (BNST) as a cell group/target (e.g. medial CeA projections to the hypothalamus and BNST) and in reference-list titles, never as a named dorsal efferent route to the septal area. No quotable statement supporting these two tract names as such was found in this source.",
+        "RESOLVED by this source: the previously-unsourced claim that the central nucleus projects directly to the periaqueductal gray (PAG) as a brainstem effector target for fear/autonomic responses is now supported -- see step 5 evidence above ('Projections to the brain stem are to three main areas: the periaqueductal gray, which leads to vocalization, startle, analgesia and cardiovascular changes', p.7).",
+        "RESOLVED by this source: the previously-unsourced claim that basolateral-amygdala fear-conditioning plasticity is glutamatergic and NMDA/AMPA-receptor-dependent is now supported -- see step 3 evidence above ('Inputs to the basolateral complex use glutamate as the transmitter and activate synapses expressing both AMPA and NMDA receptors', p.23; and the LTP/glutamate-receptor quote, p.25)."
+      ]
+    }
+  ]
+}
