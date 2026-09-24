@@ -1,0 +1,451 @@
+{
+  "batch": "upgrade-lib-willis1997",
+  "collectedBy": "sub-agent",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "review",
+      "title": "Neuroanatomy of the pain system and of the pathways that modulate pain",
+      "authors": "Willis WD, Westlund KN",
+      "journal": "J Clin Neurophysiol",
+      "year": 1997,
+      "pmcid": "PMC7859971",
+      "doi": "10.1097/00004691-199701000-00002",
+      "license": "not stated (free full text on PMC)",
+      "openedVia": "pmc-html"
+    }
+  ],
+  "pathways": [
+    {
+      "id": "anterolateral-system-spinothalamic-tract",
+      "name": "Anterolateral system / spinothalamic tract",
+      "category": "ascending somatosensory / pain, temperature and crude touch",
+      "function": "Carries nociceptive, thermal, crude touch and pressure information from the body to the thalamus; includes spinothalamic, spinoreticular and spinotectal (spinomesencephalic) components.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Dorsal root ganglion (pseudounipolar neurons)",
+          "courseVia": [
+            "peripheral nerve",
+            "lateral dorsal root entry zone",
+            "Lissauer's tract (ascends/descends 1–2 segments)"
+          ],
+          "terminatesIn": "Dorsal horn grey matter – substantia gelatinosa / laminae I, II, V",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The neurotransmitters contained in the terminals of nociceptive afferent fibers in the dorsal horn include excitatory amino acids, particularly glutamate",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "In monkeys, a large fraction of spinothalamic tract cells is located in the lumbar and sacral enlargements, and these cells are concentrated in the marginal zone and neck of the dorsal horn in laminae I and IV-VI",
+              "species": "monkey"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Dorsal horn (substantia gelatinosa / laminae I, II, V)",
+          "courseVia": [
+            "anterior white commissure (decussation)",
+            "anterolateral/ventrolateral white matter of spinal cord",
+            "spinal lemniscus in brainstem"
+          ],
+          "terminatesIn": "Ventral posterolateral nucleus (VPL) of thalamus (spinothalamic component); also reticular formation (spinoreticular) and tectum/periaqueductal region (spinotectal/spinomesencephalic)",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "Anterior white commissure, a few spinal segments above the level of entry"
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The axons of spinothalamic neurons often decussate through the ventral white commissure at a very short distance from the cell body",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "The axons cross the midline in the ventral gray commissure at a level near that of the cell bodies of the neurons.",
+              "species": "monkey"
+            },
+            {
+              "source": "S1",
+              "quote": "The particular nuclei of termination include the VPL, VPI, and POm nuclei in the lateral thalamus and CL and other intralaminar nuclei, as well as VMpo in the medial thalamus.",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "A projection from lamina I has been traced to a medial thalamic nucleus, the posterior part of the ventral medial nucleus, VMpo",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "In anesthetized monkeys, a much larger percentage of nociceptive neurons is situated in the VPL nucleus",
+              "species": "monkey"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Ventral posterolateral nucleus (VPL) of thalamus",
+          "courseVia": [
+            "thalamocortical fibers",
+            "posterior limb of internal capsule"
+          ],
+          "terminatesIn": "Primary somatosensory cortex (postcentral gyrus)",
+          "laterality": "ipsilateral (to thalamus; contralateral to body side of origin)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Their projection to the SI cortex, implies that the SI cortex is also involved in the discriminative aspects of pain sensation.",
+              "species": "monkey"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "How many spinal segments spinothalamic (second-order) fibers ascend in Lissauer's tract / the dorsal horn before decussating in the anterior/ventral white commissure",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S3): second-order fibers cross two segments above the level of entry (not reopened this session)",
+              "source": "S3 (original somatosensory.json batch; not reopened this session)",
+              "quote": "The axons of the second-order neurons cross over the spinal cord to the opposite side two segments above the level of entry via the anterior white commissure, unlike the posterior medial lemniscus pathway, which decussates in the brainstem"
+            },
+            {
+              "claim": "Original batch (StatPearls, S4): fibers ascend 1 to 3 spinal cord levels through the Lissauer tract before decussating (not reopened this session)",
+              "source": "S4 (original somatosensory.json batch; not reopened this session)",
+              "quote": "Axons of 2nd-order neurons from the spinothalamic tract decussate at the anterior white commissure and ascend 1 to 3 spinal cord levels through the Lissauer tract"
+            },
+            {
+              "claim": "Willis and Westlund state that spinothalamic axons decussate through the ventral white commissure at a very short distance from the cell body -- essentially at, not several segments above, the level of origin -- and that the crossing occurs at a level near that of the cell bodies of the neurons of origin",
+              "source": "S1",
+              "quote": "The axons of spinothalamic neurons often decussate through the ventral white commissure at a very short distance from the cell body"
+            }
+          ]
+        },
+        {
+          "issue": "Primary thalamic relay nucleus for spinothalamic pain and temperature fibers: VPL vs VMpo",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S3): the ventral posterolateral nucleus (VPL) is the thalamic relay and gives rise to the third-order neurons of this pathway (not reopened this session)",
+              "source": "S3 (original somatosensory.json batch; not reopened this session)",
+              "quote": "The spinothalamic tract of the anterolateral system terminates in the ventral posterolateral nucleus (VPL) of the thalamus, the third-order neurons of this pathway"
+            },
+            {
+              "claim": "Nieuwenhuys (upgrade batch, S1 of that batch) identifies VMpo as the main relay nucleus for pain and temperature, with only scattered spinothalamic terminations reaching VPL (not reopened this session)",
+              "source": "upgrade-lib-nieuwenhuys S1 (not reopened this session)",
+              "quote": "The main relay nucleus for the conduction of pain and temperature is the VMpo"
+            },
+            {
+              "claim": "Willis and Westlund describe multiple parallel thalamic targets rather than a single dedicated relay: VPL, VPI and POm in the lateral thalamus, CL and other intralaminar nuclei, plus VMpo in the medial thalamus all receive spinothalamic terminations",
+              "source": "S1",
+              "quote": "The particular nuclei of termination include the VPL, VPI, and POm nuclei in the lateral thalamus and CL and other intralaminar nuclei, as well as VMpo in the medial thalamus."
+            },
+            {
+              "claim": "Willis and Westlund note the VMpo projection specifically arises from lamina I and is a separate, medial-thalamus target from VPL",
+              "source": "S1",
+              "quote": "A projection from lamina I has been traced to a medial thalamic nucleus, the posterior part of the ventral medial nucleus, VMpo"
+            },
+            {
+              "claim": "Willis and Westlund report that in anesthetized monkeys the VPL nucleus itself contains a much larger proportion of nociceptive neurons than in awake monkeys, supporting a substantial (not merely scattered) VPL role in pain processing, in tension with Nieuwenhuys's characterization of VPL input as scattered",
+              "source": "S1",
+              "quote": "In anesthetized monkeys, a much larger percentage of nociceptive neurons is situated in the VPL nucleus"
+            }
+          ]
+        },
+        {
+          "issue": "Which spinal grey-matter laminae give rise to the second-order (spinothalamic) projection neurons",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S8): the relay occurs in the substantia gelatinosa, i.e. laminae I, II and V (not reopened this session)",
+              "source": "S8 (original somatosensory.json batch; not reopened this session)",
+              "quote": "Initial pain signals ascend through the dorsal horn, specifically through lamina I (superficial dorsal horn), lamina II (substantia gelatinosa), and lamina V (deep dorsal horn)"
+            },
+            {
+              "claim": "Willis and Westlund report (for monkeys) spinothalamic cells concentrated in laminae I and IV-VI, a broader and different set than I, II, V",
+              "source": "S1",
+              "quote": "In monkeys, a large fraction of spinothalamic tract cells is located in the lumbar and sacral enlargements, and these cells are concentrated in the marginal zone and neck of the dorsal horn in laminae I and IV-VI"
+            }
+          ]
+        }
+      ],
+      "unsourced": []
+    },
+    {
+      "id": "trigeminal-somatosensory-pathways",
+      "name": "Trigeminal somatosensory pathways",
+      "category": "ascending somatosensory / face and oral cavity",
+      "function": "Transmits pain, temperature, touch, vibration, 2-point discrimination and proprioception from the face and muscles of mastication via three sensory nuclei (principal/chief sensory, spinal trigeminal, mesencephalic) to VPM and the somatosensory cortex.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Trigeminal (semilunar/Gasserian) ganglion (pseudounipolar neurons); mesencephalic nucleus neurons (unique – cell bodies lie within the CNS, not the ganglion)",
+          "courseVia": [
+            "ophthalmic (V1), maxillary (V2), mandibular (V3) divisions",
+            "trigeminal nerve root entering brainstem at mid-pons"
+          ],
+          "terminatesIn": "Chief/principal sensory nucleus, spinal trigeminal nucleus, or mesencephalic nucleus depending on modality",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Chief/principal sensory nucleus (touch/proprioception/vibration/2-point discrimination) or spinal trigeminal nucleus, pars caudalis (pain/temperature/crude touch)",
+          "courseVia": [
+            "dorsal trigeminothalamic tract (DTTT, ipsilateral, from chief sensory nucleus)",
+            "ventral trigeminothalamic tract (VTTT, decussates, from chief sensory nucleus and spinal trigeminal nucleus)"
+          ],
+          "terminatesIn": "Ventral posteromedial nucleus (VPM) of thalamus",
+          "laterality": "bilateral (DTTT ipsilateral; VTTT contralateral)",
+          "decussation": {
+            "present": true,
+            "where": "Fibers of the ventral trigeminothalamic tract decussate near their nucleus of origin (chief sensory nucleus or spinal trigeminal nucleus) before ascending to VPM"
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "Ventral posteromedial nucleus (VPM) of thalamus",
+          "courseVia": [
+            "thalamocortical fibers"
+          ],
+          "terminatesIn": "Primary somatosensory cortex (postcentral gyrus, Brodmann areas 3, 1, 2)",
+          "laterality": "ipsilateral (to thalamus; contralateral to face side of origin for pain/temperature)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        }
+      ],
+      "lesions": [],
+      "conflicts": [],
+      "unsourced": [
+        "Willis and Westlund 1997 (PMC7859971) contains NO body-text discussion of the trigeminal system at all -- the word 'trigeminal' appears in this article only inside the References list, as part of the titles of other papers being cited (e.g. Cechetto et al. 1985, Craig 1992). The review's scope is the spinal pain system (spinothalamic, spinomesencephalic, spinoreticular, spinolimbic, spinocervical, postsynaptic dorsal column pathways) and its descending modulation; it does not treat the trigeminal principal sensory nucleus, spinal trigeminal nucleus subdivisions, mesencephalic nucleus, DTTT/VTTT, or VPM. No claim in any step of this pathway, and none of the trigeminal-decussation-level conflict the task asked to sharpen (per-subnucleus decussation level, e.g. pons vs caudal medulla), could be sourced from this text. This entire pathway is therefore left with empty evidence arrays in this batch."
+      ]
+    },
+    {
+      "id": "descending-pain-modulation",
+      "name": "Descending pain modulation (PAG–RVM–dorsal horn and PAG–locus coeruleus pathways)",
+      "category": "descending modulatory / analgesia",
+      "function": "Midbrain and brainstem circuits that inhibit (or facilitate) nociceptive transmission at the dorsal horn, via serotonergic PAG–raphe magnus–enkephalinergic interneuron and noradrenergic PAG–locus coeruleus routes.",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Periaqueductal gray (PAG), midbrain – receives ascending nociceptive input from dorsal horn lamina I, II, V via spinothalamic/spinobulbar pathways",
+          "courseVia": [
+            "ascending spinothalamic and spinobulbar pathways to PAG"
+          ],
+          "terminatesIn": "Periaqueductal gray (dorsal, dorsolateral, lateral, ventrolateral columns)",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate (ascending); serotonin, norepinephrine, dopamine, enkephalin, GABA within PAG circuitry",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Nociceptive projection neurons in the spinal cord transmit information to a number of regions of the brainstem and diencephalon, including the thalamus, periaqueductal gray, parabrachial region, and bulbar reticular formation",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "The spinoreticular and spinothalamic tracts ascend together in the ventrolateral spinal cord and brainstem",
+              "species": "not stated"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "PAG neurons projecting to raphe nuclei (rostral ventromedial medulla, including nucleus raphe magnus)",
+          "courseVia": [
+            "PAG → raphe nuclei (glutamatergic) → descending raphespinal fibers to dorsal horn"
+          ],
+          "terminatesIn": "Dorsal horn – enkephalinergic interneurons that inhibit C-fiber pain afferents",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "serotonin (PAG–RVM–dorsal horn pathway); glutamate (PAG→raphe activation); enkephalin (dorsal horn interneurons)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The PAG has excitatory connections with the NRM",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "A striking feature of the raphe nuclei is that a large proportion of the neurons contain 5-HT",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "Projections to the spinal cord originate from the nuclei raphe magnus, pallidus, obscurus, and pontis.",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "Neurotransmitters involved in the antinociceptive actions of the pathway from the PAG through the NRM and adjacent reticular formation include endogenous opiates, 5-HT, and NE",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "Presumably, the actions on different classes of 5-hydroxytryptamine (5-HT) receptors are mediated by release of 5-HT from raphespinal axons, and those on adrenoceptors are mediated by NE, released from noradrenergic axons descending from the locus ceruleus/parabrachial complex or the A5 group.",
+              "species": "not stated"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 2,
+          "cellBodies": "Locus coeruleus (lateral floor of fourth ventricle / upper dorsolateral pons)",
+          "courseVia": [
+            "PAG → locus coeruleus → descending noradrenergic fibers to dorsal horn"
+          ],
+          "terminatesIn": "Dorsal horn – presynaptic alpha-2 adrenergic receptors on nociceptive afferents",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "norepinephrine",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Noradrenergic projections to all regions of the spinal cord arise almost entirely from the dorsolateral pontine catecholamine cell groups A5, A6, and A7.",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "In monkeys and cats, bilateral projections descend from the locus ceruleus and subcerulear region to innervate laminae I, II, and V, primarily contralaterally",
+              "species": "monkey, cat"
+            },
+            {
+              "source": "S1",
+              "quote": "Another dense input to the dorsal horn originates from the ipsilateral Kolliker-Fuse nucleus",
+              "species": "not stated"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 3,
+          "cellBodies": "Dorsal horn inhibitory interneurons (enkephalinergic and other opioid/GABA/glycinergic types) activated by A-beta afferents and by descending PAG/RVM input",
+          "courseVia": [
+            "local dorsal horn circuitry"
+          ],
+          "terminatesIn": "Presynaptic and postsynaptic inhibition of dorsal horn projection neurons of the anterolateral system",
+          "laterality": "ipsilateral (segmental)",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "endogenous opioids (enkephalin), GABA, glycine",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Inhibition in the nociceptive circuits of the dorsal horn is mediated by a number of neurotransmitters, including inhibitory amino acids, such as GABA and glycine",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "GABA is involved in both pre- and postsynaptic inhibition and glycine in postsynaptic inhibition",
+              "species": "not stated"
+            },
+            {
+              "source": "S1",
+              "quote": "Presynaptic receptors that mediate presynaptic inhibition include GABAA and GABAB receptors",
+              "species": "not stated"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Whether the descending RVM/NRM output to the dorsal horn is purely serotonergic",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S8): the serotonergic PAG-RVM pathway is the key endogenous modulator of pain (not reopened this session)",
+              "source": "S8 (original somatosensory.json batch; not reopened this session)",
+              "quote": "The serotonergic PAG- RVMM pathway is considered the key endogenous modulator of pain, constituting a primary target for supraspinal opioid analgesia"
+            },
+            {
+              "claim": "upgrade-motor-somatosensory.json (S1 of that batch) reports that the functionally characterized RVM output neurons (ON-cells, which facilitate pain, and OFF-cells, which inhibit it) are specifically NOT serotonergic; only some functionally silent NEUTRAL-cells are (not reopened this session)",
+              "source": "upgrade-motor-somatosensory S1 (not reopened this session)",
+              "quote": "at least some NEUTRAL-cells, but apparently no ON-cells or OFF-cells are serotonergic."
+            },
+            {
+              "claim": "Willis and Westlund attribute the raphe nuclei's antinociceptive output to a mixture of endogenous opiates, 5-HT, AND norepinephrine acting together through the PAG-NRM-reticular formation pathway -- not to serotonin alone",
+              "source": "S1",
+              "quote": "Neurotransmitters involved in the antinociceptive actions of the pathway from the PAG through the NRM and adjacent reticular formation include endogenous opiates, 5-HT, and NE"
+            },
+            {
+              "claim": "Willis and Westlund do specifically tie 5-HT release in the dorsal horn to raphespinal (i.e. raphe-derived, including NRM) axons as distinct from the separately-mediated noradrenergic (locus ceruleus/A5) component, supporting a serotonergic raphespinal projection while treating it as one of several parallel descending transmitter systems rather than the sole RVM output",
+              "source": "S1",
+              "quote": "Presumably, the actions on different classes of 5-hydroxytryptamine (5-HT) receptors are mediated by release of 5-HT from raphespinal axons, and those on adrenoceptors are mediated by NE, released from noradrenergic axons descending from the locus ceruleus/parabrachial complex or the A5 group."
+            }
+          ]
+        },
+        {
+          "issue": "Anatomical source of the noradrenergic descending pain-inhibitory projection to the dorsal horn: locus coeruleus alone vs. a broader A5/A6/A7 cell-group system",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S8): the noradrenergic route is specifically the PAG-locus coeruleus (LC) pathway (not reopened this session)",
+              "source": "S8 (original somatosensory.json batch; not reopened this session)",
+              "quote": "The PAG -LC pathway propagates by norepinephrine (NE), exerting an antinociceptive effect in the dorsal horn via the presynaptic alpha-2 receptor"
+            },
+            {
+              "claim": "Nieuwenhuys (upgrade batch S1) attributes the descending noradrenergic pain-inhibiting projection to the broader rhombencephalic catecholaminergic cell groups A5, A6 and A7, of which locus coeruleus corresponds only to A6 (not reopened this session)",
+              "source": "upgrade-lib-nieuwenhuys S1 (not reopened this session)",
+              "quote": "Noradrenergic cells situated in rhombencephalic catecholaminergic cell groups A5, A6 and A7, which also project to the superficial dorsal horn, contribute to the descending pain-inhibiting system"
+            },
+            {
+              "claim": "Willis and Westlund independently confirm the broader A5/A6/A7 framing: noradrenergic projections to the spinal cord arise almost entirely from the dorsolateral pontine catecholamine cell groups A5, A6, and A7 (locus ceruleus = A6, subceruleus and Kolliker-Fuse nucleus also contributing), not from locus ceruleus alone",
+              "source": "S1",
+              "quote": "Noradrenergic projections to all regions of the spinal cord arise almost entirely from the dorsolateral pontine catecholamine cell groups A5, A6, and A7."
+            },
+            {
+              "claim": "Willis and Westlund further note that within this broader system the laterality differs by nucleus of origin: locus ceruleus/subceruleus projections are bilateral but primarily contralateral, whereas the Kolliker-Fuse nucleus contributes a separate, purely ipsilateral input to the dorsal horn",
+              "source": "S1",
+              "quote": "Another dense input to the dorsal horn originates from the ipsilateral Kolliker-Fuse nucleus"
+            }
+          ]
+        }
+      ],
+      "unsourced": []
+    }
+  ]
+}

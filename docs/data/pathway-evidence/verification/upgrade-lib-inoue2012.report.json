@@ -1,0 +1,176 @@
+{
+ "batch": "upgrade-lib-inoue2012",
+ "file": "upgrade-lib-inoue2012.json",
+ "tally": {
+  "exact": 21
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "Immunotoxin-Mediated Tract Targeting in the Primate Brain: Selective Elimination of the Cortico-Subthalamic \"Hyperdirect\" Pathway",
+    "journal": "PLoS ONE",
+    "year": 2012,
+    "pmcid": "",
+    "nbk": "",
+    "doi": "10.1371/journal.pone.0039149",
+    "license": "This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+    "type": "primary"
+   },
+   "check": {
+    "note": "local PDF",
+    "file": "/Users/lim/Downloads/atlas-refs/inoue-2012-plosone-hyperdirect-immunotoxin.pdf",
+    "chars": 47899
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In remarkable contrast, dense terminal labeling from the SMA was seen in the striatum, especially the putamen, as in the control case"
+  },
+  {
+   "path": "pathways[0].steps[2].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Then, another corollary signal through the cortico-striato-GPi direct pathway disinhibits part of the thalamic and cortical target areas and releases the desired motor program alone."
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The subthalamic nucleus (STN) receives input from the cerebral cortex, especially from the motor-related areas of the frontal lobe and, in turn, sends output to the internal segment of the globus pallidus (GPi), a major output station of the basal ganglia"
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It has been shown that electrical stimulation in the motor-related areas, including the primary motor cortex (MI) and the supplementary motor area (SMA), induces an early, short-latency excitation in GPi neurons, followed by an inhibition and then a late, long-latency excitation"
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Several lines of pharmacophysiological evidence suggest that the early excitation may be derived from the hyperdirect pathway."
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Based on several pharmacophysiological findings, the early excitation is considered to be derived from the cortico-STNGPi pathway"
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The present results define that the cortically-driven early excitation in GPi neurons is mediated by the hyperdirect pathway."
+  },
+  {
+   "path": "pathways[0].steps[5].evidence[5]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Finally, the third corollary signal transmitted by way of the cortico-striato-GPe-STN-GPi indirect pathway again inhibits the thalamic and cortical target areas extensively."
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This pathway links the motor-related areas of the frontal lobe directly to the subthalamic nucleus (STN) without relay at the striatum."
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This pathway connects the motor-related areas of the frontal lobe to the GPi, an output station of the basal ganglia, at short latency via the STN without relay at the striatum and is involved in motor information processing in the basal ganglia."
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "the hyperdirect pathway conveys excitatory signals from the frontal motor-related areas toward the GPi, bypassing the striatum, with shorter conduction time than signals through the striatum that arise from both the direct and the indirect pathways"
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "By mapping cortically evoked orthodromic responses, the SMArecipient territory was identified in the STN, mainly within its medial aspect"
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[4]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "After the BDA injections into the SMA forelimb region (monkey G), anterogradely labeled axon terminals were so largely decreased in the STN"
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[5]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "These anatomical data clearly indicated that cortico-STN projection originating from the SMA forelimb region was selectively eliminated without affecting either the corticostriatal projection or the cortico-STN projections from SMA regions with other representations than the forelimb."
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[6]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "When a voluntary movement is about to be initiated by the motor cortical mechanism, a corollary signal conveyed through the cortico-STN-GPi hyperdirect pathway first inhibits large areas of the thalamic and cortical target structures"
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[7]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "it is most likely that the hyperdirect pathway exerts a powerful excitatory effect on the GPi to suppress involuntary and unnecessary movements prior to the selected motor action."
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[8]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "According to functional magnetic resonance imaging studies using human subjects, the cortico-STN projection conveys stop signals to inhibit motor responses"
+  },
+  {
+   "path": "pathways[0].steps[6].evidence[9]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "However, no apparent motor deficits were observed in either monkey M or monkey G."
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Lesions or blockade of STN neuron activity induced involuntary movements, hemiballism"
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This late excitation is ascribable to the late excitation in the STN and is probably mediated by the cortico-striato-external pallidal segment (GPe)-STN-GPi indirect pathway."
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "it has also been suggested that the late excitation in the STN is part of the prolonged excitation induced by the cortico-STN projection"
+  }
+ ]
+}

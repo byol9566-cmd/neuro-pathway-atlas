@@ -270,3 +270,27 @@
 **여전히 못 받친 것**(이 책은 임상 서술이 거의 없음): 임상 명칭·증후군(Brown-Séquard, Wallenberg, 척수공동증, 척수매독, Friedreich, 제뇌·제피질 자세, 거짓숨뇌마비, UMN/LMN 징후 목록), "hyperdirect"라는 용어, 결절깔때기 도파민 경로, Wernicke–Korsakoff, 53:47 시각교차 비율, VOR 이득, 여러 시냅스의 신경전달물질. → 임상 항목은 Haines·Brodal(★) 몫.
 
 **절차 문제**: 체성감각·운동 담당 에이전트가 **금지된 하위 에이전트 5개를 생성**했고(브리프의 "Do NOT spawn sub-agents" 무시), 그중 둘이 출력 파일을 덮어써 두 번 깨졌다고 스스로 보고함. 최종 파일은 메인 세션이 인용 134개 전부와 단계 구조를 독립 검증해 이상 없음을 확인했으므로 채택. 다음부터는 이 규칙을 브리프뿐 아니라 프롬프트 본문에도 넣을 것.
+
+### upgrade-lib 2차 (2026-09-24 저녁): 유료 목록의 무료 대체본
+
+사용자가 "남은 문헌이 도서관에서도 다 유료"라고 알려옴. OpenAlex·Europe PMC로 합법적 무료본을 찾은 결과 6편 중 2편(Willis & Westlund 1997은 PMC 무료본, Lemon 2008은 같은 저자의 2019 OA 리뷰로 대체), Nambu 2002는 Haber 2016 OA 리뷰 + 사용자가 받아 준 Inoue 2012(PLoS ONE, CC BY)로 대체.
+
+| 파일 | 출처 | 인용 | exact | NOT_FOUND |
+|---|---|---|---|---|
+| upgrade-lib-inoue2012 | Inoue et al. 2012 *PLoS ONE* (원저, 마카크, CC BY) | 21 | 21 | 0 |
+| upgrade-lib-lemon2019-haber2016 | Lemon 2019 *F1000Res* / Haber 2016 *Dialogues Clin Neurosci* | 34 | 34 | 0 |
+| upgrade-lib-willis1997 | Willis & Westlund 1997 *J Clin Neurophysiol* (PMC7859971) | 30 | 30 | 0 |
+
+**충돌 판정 결과**
+- **"hyperdirect" 용어**: 해결. Haber 2016 본문 "This is referred to as the hyperdirect pathway" + Inoue 2012의 정의("without relay at the striatum"). 이제 가설 모델 논문(S15)은 제외 가능. ❓ 남는 것: 기존 서술의 "STN 등쪽" — Inoue는 SMA 수용 영역을 "medial aspect"로 서술.
+- **피라미드 교차율**: 미해결이지만 틀이 바뀜. Lemon 2019 — 마카크에서 손·팔 CM 종말 98% 반대쪽, 다리 영역 ~90%; 사람 전체 수치는 어느 출처에도 없음 → 학습 도구에서 "약 85–90%, 부위별로 다름"처럼 범위로 쓰고 단일 수치를 피할 것. 성연 판단.
+- **적색척수로(사람)**: Lemon 2019는 언급 없음 → Nieuwenhuys의 "사람에서 확인되지 않음"이 유일한 A급 입장. 성연 판단 필요.
+- **그물척수로 종말**: Nieuwenhuys(운동뉴런에 "very sparingly") vs Lemon 2019(손 운동뉴런에 흥분성 입력, CST 손상 후 강화) — 해부 vs 생리의 긴장. 두 입장 병기.
+- **척수시상로 교차 분절**: Willis — "at a very short distance from the cell body"(사실상 같은 분절 부근). StatPearls의 "2분절"/"1–3분절"과 다름. 3개 입장 병기 → 성연.
+- **VPL vs VMpo**: Willis는 단일 중계핵을 부정(VPL·VPI·POm·CL·VMpo 병렬 종말; 마취 원숭이에서는 VPL에 통각 뉴런이 훨씬 많음) → Nieuwenhuys의 "VMpo가 주 중계핵"과 대비. 학습 도구는 "VPL(및 VMpo 등)"로 쓰는 게 안전.
+- **RVM 출력의 세로토닌성 여부**: Willis는 NRM 경로의 전달물질을 "opiates, 5-HT, NE"로 나열하고 raphespinal 축삭의 5-HT 방출을 인정 → "세로토닌성 성분이 있다"까지는 A급 2개(Willis, Heinricher)가 일치하고, "ON/OFF 세포 자체는 비세로토닌성"(Heinricher)도 그대로 유효. 표현: "세로토닌성·노르아드레날린성·오피오이드성 하행 억제".
+- **노르아드레날린 기원**: A5/A6/A7 집단 — Nieuwenhuys·Willis 두 독립 출처 일치 → StatPearls의 "청색반점" 단독 서술은 교체.
+- 해소된 `unsourced`: 통각 1차 구심 종말의 글루탐산, 후각 사이뉴런의 GABA/글리신 시냅스전·후 억제.
+- Willis에는 삼차신경 서술이 본문에 없음(참고문헌 제목뿐) → 삼차신경 아핵별 교차 충돌은 교과서 단독.
+
+**여전히 필요한 것**: Cruccu 2005(각막반사 R1/R2) — 무료본 없음; 임상 교과서(Haines/Brodal) — 병변·증후군; 미해결 충돌은 성연에게.

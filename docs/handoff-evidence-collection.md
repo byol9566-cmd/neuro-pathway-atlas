@@ -58,6 +58,7 @@
 - 받은 PDF는 `~/Downloads/atlas-refs/`에 들어옴 → 다음 할 일: 각 PDF에서 우리 주장에 대한 8~45단어 인용을 뽑아(에이전트가 PDF를 읽고 추출, 메인이 `verify_quotes.py`류로 원문 대조 — PDF는 로컬 파일이므로 대조 스크립트를 로컬 텍스트 기준으로 확장해야 함) StatPearls 근거를 교체하고 REVIEW.md 갱신.
 - 2026-09-23: 무료 전문 19편에서 인용 104개 추출·검증 완료(`upgrade-*.json`, REVIEW.md "upgrade-*" 절). NOT_FOUND 0. 해결: 코르티솔 생성층 모순(다발층 확정), Guillain–Mollaret 삼각, 얼굴 겉질숨뇌로 고리 주행, 편도→PAG. 새 충돌 4건은 REVIEW.md ❓ 목록. **기존 배치 파일에는 아직 통합하지 않음** — 성연 검수와 함께 `content/pathways.json` 반영 시 같이 할 것. 사용자 몫은 `wanted/WANTED.md` "0. 최소 세트"(책 4권 + 논문 7편)로 축소.
 - 2026-09-24: 사용자가 받아 준 도서관 PDF 2건 처리 — Sah 2003(편도, 인용 18), **Nieuwenhuys 2008 교과서(경로 32개 전부, 인용 409)**. 전부 exact, NOT_FOUND 0. 파일 `upgrade-lib-*.json`, 검토는 REVIEW.md "upgrade-lib-*" 절(교과서 vs StatPearls 충돌 22건 ❓ 목록 — 성연 검수 필수, 특히 적색척수로·뒤섬유기둥·VMpo). PDF 처리 도구 `pdf_text.py`(+ `verify_quotes.py`의 `file` 필드). 받은 PDF와 추출 텍스트는 `~/Downloads/atlas-refs/`와 `verification/cache/local/`(둘 다 저장소 밖/gitignore). 남은 최소 세트: Haines·Brodal·Kandel + 논문 6편 — 임상 항목(증후군·병변)은 Haines/Brodal이 필요.
+- 2026-09-24 저녁: 유료 목록의 무료 대체본 처리 — Inoue 2012(사용자 제공, CC BY), Willis & Westlund 1997(PMC), Lemon 2019 + Haber 2016(OA). 인용 85개, NOT_FOUND 0. hyperdirect 용어·노르아드레날린 기원(A5/A6/A7) 해결; 교차율·VMpo·적색척수로·세로토닌성은 입장 병기 후 성연 판단(REVIEW.md "upgrade-lib 2차"). 남은 건 임상 교과서 1권(Haines/Brodal → 성연 도서관)과 Cruccu 2005뿐.
 <!-- STATUS:END -->
 
 ## 아직 수집하지 않은 주제 (우선순위 순)

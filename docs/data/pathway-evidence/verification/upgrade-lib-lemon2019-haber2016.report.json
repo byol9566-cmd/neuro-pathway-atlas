@@ -1,0 +1,343 @@
+{
+ "batch": "upgrade-lib-lemon2019-haber2016",
+ "file": "upgrade-lib-lemon2019-haber2016.json",
+ "tally": {
+  "exact": 34,
+  "UNKNOWN_SOURCE_ID": 5
+ },
+ "sources": {
+  "S1": {
+   "claimed": {
+    "title": "Recent advances in our understanding of the primate corticospinal system",
+    "journal": "F1000Res",
+    "year": 2019,
+    "pmcid": "PMC6415323",
+    "nbk": "",
+    "doi": "10.12688/f1000research.17445.1",
+    "license": "This is an open access article distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Recent advances in our understanding of the primate corticospinal system.",
+    "registryJournal": "F1000Research",
+    "registryYear": "2019",
+    "registryLicense": "cc by",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "Research Support, Non-U.S. Gov't",
+     "review-article",
+     "Review",
+     "Journal Article"
+    ],
+    "citedByCount": 72,
+    "titleSimilarity": 0.99,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  },
+  "S2": {
+   "claimed": {
+    "title": "Corticostriatal circuitry",
+    "journal": "Dialogues Clin Neurosci",
+    "year": 2016,
+    "pmcid": "PMC4826773",
+    "nbk": "",
+    "doi": "10.31887/DCNS.2016.18.1/shaber",
+    "license": "This is an open-access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by-nc-nd/3.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+    "type": "review"
+   },
+   "check": {
+    "registryTitle": "Corticostriatal circuitry.",
+    "registryJournal": "Dialogues in clinical neuroscience",
+    "registryYear": "2016",
+    "registryLicense": "cc by-nc-nd",
+    "isOpenAccess": "Y",
+    "pubTypes": [
+     "research-article",
+     "Review",
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ],
+    "citedByCount": 692,
+    "titleSimilarity": 0.98,
+    "yearMatches": true
+   },
+   "textAvailable": true
+  }
+ },
+ "quotes": [
+  {
+   "path": "pathways[0].steps[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The cortico-motoneuronal (CM) system is unique to dexterous primates. It provides a direct pathway from motor cortex to the alpha motoneuron."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In the primate, the most characteristic feature is direct cortico-motoneuronal (CM) control of muscles, particularly of hand and finger muscles."
+  },
+  {
+   "path": "pathways[0].steps[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Damage to the human motor cortex and CST is generally far more devastating than in animal models and this may be because the CM system is best developed in humans"
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The main conclusions were that almost all labelled boutons (98%) were found in the contralateral cord."
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A somewhat different picture emerges for the corticospinal projection from the leg area of M1, where around 10% of the fibres terminate ipsilaterally, especially among motoneurons of more proximal leg muscles, confirming a number of physiological studies showing bilateral effects on the lower limb"
+  },
+  {
+   "path": "pathways[0].steps[1].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Interruption of the lateral (crossed) CST at different spinal cervical levels also abolishes RIFM, but again there is some degree of recovery"
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A lesion of the lateral CST at the mid-cervical level interrupts all of the CM and other corticospinal inputs to lower cervical segments but leaves the descending axons of C3–C4 propriospinal neurons intact"
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "It is noteworthy that such a lesion results in a devastating initial loss of the precision grip needed by the monkey to retrieve small rewards"
+  },
+  {
+   "path": "pathways[0].lesions[0].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "classic studies of the effects of mid-cervical cordotomy for pain relief in humans showed that lesions of the lateral funiculus which avoided the CST but which would have interrupted more ventrally located propriospinal fibres did not affect the function of upper limb movement"
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[0]",
+   "source": "S1 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The lateral corticospinal tract contains over 90% of the fibers present in the corticospinal tract and runs the length of the spinal cord."
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[1]",
+   "source": "S13 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "At the lower end of the medulla, almost 70 to 80% of the fibers cross to the opposite side of the spinal cord, called the pyramidal (motor) decussation ."
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The main conclusions were that almost all labelled boutons (98%) were found in the contralateral cord."
+  },
+  {
+   "path": "pathways[0].conflicts[0].positions[3]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "A somewhat different picture emerges for the corticospinal projection from the leg area of M1, where around 10% of the fibres terminate ipsilaterally, especially among motoneurons of more proximal leg muscles, confirming a number of physiological studies showing bilateral effects on the lower limb"
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "showed that recovery after pyramidal lesions probably involves marked upregulation in reticulospinal control of hand motor nuclei."
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In the intact macaque, these inputs overlap with those from the corticospinal system"
+  },
+  {
+   "path": "pathways[1].steps[3].evidence[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "However, 6 months after a unilateral pyramidal lesion, there were considerably higher levels of reticulospinal excitation of forelimb flexor and intrinsic hand motoneurons"
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[0]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "showed that recovery after pyramidal lesions probably involves marked upregulation in reticulospinal control of hand motor nuclei."
+  },
+  {
+   "path": "pathways[1].steps[4].evidence[1]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "However, 6 months after a unilateral pyramidal lesion, there were considerably higher levels of reticulospinal excitation of forelimb flexor and intrinsic hand motoneurons"
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[0]",
+   "source": "S9 (original motor.json batch; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The medial (pontine) reticulospinal tract originates in the pontine reticular formation and projects down to the ventromedial spinal cord via the ipsilateral anterior funiculus, which contains alpha and gamma motor neurons of the extensor muscles."
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[1]",
+   "source": "S1 (upgrade-lib-nieuwenhuys-motor-somatosensory.json; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "These fibres do not terminate, or do so only very sparingly, in the motoneuronal cell groups"
+  },
+  {
+   "path": "pathways[1].conflicts[0].positions[2]",
+   "source": "S1",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "However, 6 months after a unilateral pyramidal lesion, there were considerably higher levels of reticulospinal excitation of forelimb flexor and intrinsic hand motoneurons"
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Afferent projections to the striatum are derived from three major sources"
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Corticostriatal terminals, which are primarily from the layer-five and deep-layer-three pyramidal neurons are distributed in a patchy manner."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[2]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Cortical fibers primarily project to the dendritic spines, form asymmetric terminals, and are glutamatergic."
+  },
+  {
+   "path": "pathways[2].steps[0].evidence[3]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Thalamic projections terminate primarily onto dendrites, and are excitatory and also glutamatergic."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "There are two general types of MSNs: one that co-contains substance P and GABA; and one that co-contains enkephalin and GABA."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Substance P-containing MSNs project primarily to the GPi and SN, while the enkephalin-containing cells project primarily to the GPe."
+  },
+  {
+   "path": "pathways[2].steps[1].evidence[2]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "On the basis of this data and electrophysiological data, the projection cells of the striatum are considered inhibitory."
+  },
+  {
+   "path": "pathways[2].steps[2].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The outputs from the GPi and SNr are to the thalamus, which then projects back to the cortex, completing the “direct” cortico-basal ganglia circuit."
+  },
+  {
+   "path": "pathways[2].steps[3].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Substance P-containing MSNs project primarily to the GPi and SN, while the enkephalin-containing cells project primarily to the GPe."
+  },
+  {
+   "path": "pathways[2].steps[4].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The GPe and parts of the VP project to the subthalamic nucleus (STN). The STN, in turn, provides inputs to the GPi. This pathway is considered the indirect pathway."
+  },
+  {
+   "path": "pathways[2].steps[4].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Importantly, the STN also projects back to the GPe."
+  },
+  {
+   "path": "pathways[2].steps[5].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The GPe and parts of the VP project to the subthalamic nucleus (STN). The STN, in turn, provides inputs to the GPi. This pathway is considered the indirect pathway."
+  },
+  {
+   "path": "pathways[2].steps[6].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "In addition to connections with the basal ganglia, the STN also receives a direct projection from all parts of the frontal cortex."
+  },
+  {
+   "path": "pathways[2].steps[6].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This is referred to as the hyperdirect pathway."
+  },
+  {
+   "path": "pathways[2].steps[7].evidence[0]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "The dopaminergic system includes the SNc, the ventral tegmental area (VTA), and the retrorubral group."
+  },
+  {
+   "path": "pathways[2].steps[7].evidence[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "Dopamine (DA) neurons from the SNc and the VTA project to the DS and VS, respectively."
+  },
+  {
+   "path": "pathways[2].conflicts[0].positions[0]",
+   "source": "S1 (upgrade-lib-nieuwenhuys-motor-somatosensory.json; not reopened this session)",
+   "status": "UNKNOWN_SOURCE_ID",
+   "score": 0.0,
+   "quote": "The subthalamic neurons receive an excitatory, glutamatergic input from the cortex and an inhibitory, GABAergic input from the external pallidal segment."
+  },
+  {
+   "path": "pathways[2].conflicts[0].positions[1]",
+   "source": "S2",
+   "status": "exact",
+   "score": 1.0,
+   "quote": "This is referred to as the hyperdirect pathway."
+  }
+ ]
+}

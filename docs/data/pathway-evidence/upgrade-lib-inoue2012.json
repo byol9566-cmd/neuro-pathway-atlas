@@ -1,0 +1,269 @@
+{
+  "batch": "upgrade-lib-inoue2012",
+  "collectedBy": "sub-agent",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "primary",
+      "title": "Immunotoxin-Mediated Tract Targeting in the Primate Brain: Selective Elimination of the Cortico-Subthalamic \"Hyperdirect\" Pathway",
+      "authors": "Inoue K, Koketsu D, Kato S, Kobayashi K, Nambu A, Takada M",
+      "journal": "PLoS ONE",
+      "year": 2012,
+      "pmcid": "",
+      "pmid": "",
+      "doi": "10.1371/journal.pone.0039149",
+      "nbk": "",
+      "url": "https://doi.org/10.1371/journal.pone.0039149",
+      "license": "This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.",
+      "file": "~/Downloads/atlas-refs/inoue-2012-plosone-hyperdirect-immunotoxin.pdf",
+      "openedVia": "local-pdf"
+    }
+  ],
+  "pathways": [
+    {
+      "id": "basal-ganglia-circuits",
+      "name": "Basal ganglia circuits: direct, indirect, and hyperdirect pathways",
+      "category": "extrapyramidal / motor modulation loop",
+      "function": "Gate and modulate initiation, amplitude, and suppression of voluntary movement via cortico-striato-pallido-thalamo-cortical loops",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Cerebral cortex (motor, frontal, parietal lobes, layers III and V)",
+          "courseVia": ["corticostriatal projection"],
+          "terminatesIn": "Striatum (caudate and putamen) medium spiny neurons",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "glutamate",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "In remarkable contrast, dense terminal labeling from the SMA was seen in the striatum, especially the putamen, as in the control case",
+              "species": "macaque monkey",
+              "page": 6
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Striatal medium spiny neurons expressing D1 dopamine receptors (direct pathway)",
+          "courseVia": ["direct pathway striatal projection"],
+          "terminatesIn": "Globus pallidus internus (GPi) / substantia nigra pars reticulata (SNpr)",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "GABA",
+          "evidence": []
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "GPi / SNpr inhibitory neurons",
+          "courseVia": ["direct pathway pallidothalamic projection"],
+          "terminatesIn": "Ventral anterior (VA) and ventrolateral (VL) nuclei of the thalamus",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Then, another corollary signal through the cortico-striato-GPi direct pathway disinhibits part of the thalamic and cortical target areas and releases the desired motor program alone.",
+              "species": "macaque monkey",
+              "page": 8
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 2,
+          "cellBodies": "Striatal medium spiny neurons expressing D2 dopamine receptors (indirect pathway)",
+          "courseVia": ["indirect pathway striatal projection"],
+          "terminatesIn": "Globus pallidus externus (GPe)",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "GABA",
+          "evidence": []
+        },
+        {
+          "order": 5,
+          "neuronOrder": 3,
+          "cellBodies": "GPe inhibitory neurons",
+          "courseVia": ["pallidosubthalamic projection"],
+          "terminatesIn": "Subthalamic nucleus (STN)",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "GABA",
+          "evidence": []
+        },
+        {
+          "order": 6,
+          "neuronOrder": 4,
+          "cellBodies": "Subthalamic nucleus neurons (indirect pathway relay)",
+          "courseVia": ["subthalamopallidal projection"],
+          "terminatesIn": "GPi / SNpr",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "glutamate",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The subthalamic nucleus (STN) receives input from the cerebral cortex, especially from the motor-related areas of the frontal lobe and, in turn, sends output to the internal segment of the globus pallidus (GPi), a major output station of the basal ganglia",
+              "species": "macaque monkey",
+              "page": 2
+            },
+            {
+              "source": "S1",
+              "quote": "It has been shown that electrical stimulation in the motor-related areas, including the primary motor cortex (MI) and the supplementary motor area (SMA), induces an early, short-latency excitation in GPi neurons, followed by an inhibition and then a late, long-latency excitation",
+              "species": "macaque monkey",
+              "page": 2
+            },
+            {
+              "source": "S1",
+              "quote": "Several lines of pharmacophysiological evidence suggest that the early excitation may be derived from the hyperdirect pathway.",
+              "species": "macaque monkey",
+              "page": 1
+            },
+            {
+              "source": "S1",
+              "quote": "Based on several pharmacophysiological findings, the early excitation is considered to be derived from the cortico-STNGPi pathway",
+              "species": "macaque monkey",
+              "page": 2
+            },
+            {
+              "source": "S1",
+              "quote": "The present results define that the cortically-driven early excitation in GPi neurons is mediated by the hyperdirect pathway.",
+              "species": "macaque monkey",
+              "page": 1
+            },
+            {
+              "source": "S1",
+              "quote": "Finally, the third corollary signal transmitted by way of the cortico-striato-GPe-STN-GPi indirect pathway again inhibits the thalamic and cortical target areas extensively.",
+              "species": "macaque monkey",
+              "page": 8
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "neuronOrder": 1,
+          "cellBodies": "Sensorimotor cortex (hyperdirect pathway)",
+          "courseVia": ["hyperdirect corticosubthalamic projection"],
+          "terminatesIn": "Subthalamic nucleus (dorsal STN) directly, bypassing the striatum",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "glutamate (excitatory)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "This pathway links the motor-related areas of the frontal lobe directly to the subthalamic nucleus (STN) without relay at the striatum.",
+              "species": "macaque monkey",
+              "page": 1
+            },
+            {
+              "source": "S1",
+              "quote": "This pathway connects the motor-related areas of the frontal lobe to the GPi, an output station of the basal ganglia, at short latency via the STN without relay at the striatum and is involved in motor information processing in the basal ganglia.",
+              "species": "macaque monkey",
+              "page": 8
+            },
+            {
+              "source": "S1",
+              "quote": "the hyperdirect pathway conveys excitatory signals from the frontal motor-related areas toward the GPi, bypassing the striatum, with shorter conduction time than signals through the striatum that arise from both the direct and the indirect pathways",
+              "species": "macaque monkey",
+              "page": 8
+            },
+            {
+              "source": "S1",
+              "quote": "By mapping cortically evoked orthodromic responses, the SMArecipient territory was identified in the STN, mainly within its medial aspect",
+              "species": "macaque monkey",
+              "page": 3
+            },
+            {
+              "source": "S1",
+              "quote": "After the BDA injections into the SMA forelimb region (monkey G), anterogradely labeled axon terminals were so largely decreased in the STN",
+              "species": "macaque monkey",
+              "page": 6
+            },
+            {
+              "source": "S1",
+              "quote": "These anatomical data clearly indicated that cortico-STN projection originating from the SMA forelimb region was selectively eliminated without affecting either the corticostriatal projection or the cortico-STN projections from SMA regions with other representations than the forelimb.",
+              "species": "macaque monkey",
+              "page": 6
+            },
+            {
+              "source": "S1",
+              "quote": "When a voluntary movement is about to be initiated by the motor cortical mechanism, a corollary signal conveyed through the cortico-STN-GPi hyperdirect pathway first inhibits large areas of the thalamic and cortical target structures",
+              "species": "macaque monkey",
+              "page": 8
+            },
+            {
+              "source": "S1",
+              "quote": "it is most likely that the hyperdirect pathway exerts a powerful excitatory effect on the GPi to suppress involuntary and unnecessary movements prior to the selected motor action.",
+              "species": "macaque monkey",
+              "page": 8
+            },
+            {
+              "source": "S1",
+              "quote": "According to functional magnetic resonance imaging studies using human subjects, the cortico-STN projection conveys stop signals to inhibit motor responses",
+              "species": "human",
+              "page": 8
+            },
+            {
+              "source": "S1",
+              "quote": "However, no apparent motor deficits were observed in either monkey M or monkey G.",
+              "species": "macaque monkey",
+              "page": 8
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "neuronOrder": 1,
+          "cellBodies": "Substantia nigra pars compacta (SNpc) dopaminergic neurons (nigrostriatal pathway)",
+          "courseVia": ["nigrostriatal pathway"],
+          "terminatesIn": "Putamen and caudate nucleus of the striatum, modulating D1- and D2-expressing neurons oppositely",
+          "laterality": "ipsilateral",
+          "decussation": { "present": false, "where": "" },
+          "neurotransmitter": "dopamine",
+          "evidence": []
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Subthalamic nucleus",
+          "deficit": "Hemiballismus: violent, involuntary flinging movements of the ipsilateral (to the lesion side, i.e. contralateral body side) arm and leg",
+          "side": "contralateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "Lesions or blockade of STN neuron activity induced involuntary movements, hemiballism",
+              "species": "macaque monkey",
+              "page": 8
+            }
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Origin of the late excitation component recorded in GPi neurons following motor-cortex (SMA) stimulation",
+          "positions": [
+            {
+              "claim": "The late excitation is ascribable to the late excitation in the STN and is probably mediated by the cortico-striato-GPe-STN-GPi indirect pathway",
+              "source": "S1",
+              "quote": "This late excitation is ascribable to the late excitation in the STN and is probably mediated by the cortico-striato-external pallidal segment (GPe)-STN-GPi indirect pathway."
+            },
+            {
+              "claim": "Alternatively, the late excitation seen in the STN may just be part of a prolonged excitation driven directly by the cortico-STN (hyperdirect) projection itself, not a separate indirect-pathway relay",
+              "source": "S1",
+              "quote": "it has also been suggested that the late excitation in the STN is part of the prolonged excitation induced by the cortico-STN projection"
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The existing step 7 wording localizes hyperdirect cortico-STN termination to the 'dorsal STN'; Inoue et al. 2012 does not support this term for the SMA (forelimb)-recipient hyperdirect territory it studied -- it instead localizes that territory to the medial aspect of the STN ('the SMArecipient territory was identified in the STN, mainly within its medial aspect', p.3). This source cannot be used to confirm 'dorsal STN' as the hyperdirect termination site; it may reflect a different cortical subregion (e.g. MI vs SMA) not directly traced here.",
+        "Inoue et al. 2012 performed vector injection, immunotoxin ablation, and anterograde/retrograde tracing only for the supplementary motor area (SMA); although electrical stimulation of the primary motor cortex (MI) is mentioned as also evoking the same triphasic GPi response pattern, no anatomical tracing or ablation data specific to an MI-to-STN hyperdirect projection was found in the opened text, so an MI-specific version of this claim cannot be sourced from this paper.",
+        "No data in this source address the direct pathway's own conduction latency or the striatal synaptic delay numerically; the 'shorter conduction time' claim for the hyperdirect pathway relative to the direct/indirect pathways is stated qualitatively only (p.8) and could not be corroborated with a quantitative latency comparison from this text."
+      ]
+    }
+  ]
+}

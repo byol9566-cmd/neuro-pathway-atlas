@@ -1,0 +1,595 @@
+{
+  "batch": "upgrade-lib-lemon2019-haber2016",
+  "collectedBy": "sub-agent",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "review",
+      "title": "Recent advances in our understanding of the primate corticospinal system",
+      "authors": "Lemon RN",
+      "journal": "F1000Res",
+      "year": 2019,
+      "pmcid": "PMC6415323",
+      "pmid": "30906528",
+      "doi": "10.12688/f1000research.17445.1",
+      "nbk": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6415323/",
+      "license": "This is an open access article distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+      "openedVia": "pmc-html"
+    },
+    {
+      "id": "S2",
+      "type": "review",
+      "title": "Corticostriatal circuitry",
+      "authors": "Haber SN",
+      "journal": "Dialogues Clin Neurosci",
+      "year": 2016,
+      "pmcid": "PMC4826773",
+      "pmid": "27069376",
+      "doi": "10.31887/DCNS.2016.18.1/shaber",
+      "nbk": "",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4826773/",
+      "license": "This is an open-access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by-nc-nd/3.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+      "openedVia": "pmc-html"
+    }
+  ],
+  "pathways": [
+    {
+      "id": "corticospinal-tracts",
+      "name": "Lateral and anterior corticospinal tracts",
+      "category": "pyramidal / descending motor",
+      "function": "Voluntary control of contralateral limb (lateral tract) and axial/trunk (anterior tract) musculature",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Primary motor cortex (precentral gyrus, area 4), with contributions from premotor and supplementary motor cortex",
+          "courseVia": [
+            "corona radiata",
+            "posterior limb of internal capsule",
+            "cerebral peduncle (middle third, crus cerebri)",
+            "basis pontis",
+            "medullary pyramid",
+            "pyramidal decussation"
+          ],
+          "terminatesIn": "Lateral corticospinal tract: interneurons and alpha motor neurons of the contralateral anterior (ventral) horn; anterior corticospinal tract: axial/proximal motor neurons bilaterally",
+          "laterality": "ipsilateral until the pyramidal decussation, then contralateral (lateral tract)",
+          "decussation": {
+            "present": true,
+            "where": "pyramidal decussation, caudal medulla"
+          },
+          "neurotransmitter": "glutamate (stated for the Ia-afferent/alpha-motor-neuron synapse in the reflex arc; not explicitly named for the corticomotoneuronal synapse in the opened sources)",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The cortico-motoneuronal (CM) system is unique to dexterous primates. It provides a direct pathway from motor cortex to the alpha motoneuron.",
+              "species": "primate"
+            },
+            {
+              "source": "S1",
+              "quote": "In the primate, the most characteristic feature is direct cortico-motoneuronal (CM) control of muscles, particularly of hand and finger muscles.",
+              "species": "primate"
+            },
+            {
+              "source": "S1",
+              "quote": "Damage to the human motor cortex and CST is generally far more devastating than in animal models and this may be because the CM system is best developed in humans",
+              "species": "human"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 1,
+          "cellBodies": "Lateral corticospinal tract fibers (>90% of corticospinal fibers by one source; ~70-80% by another, see conflicts)",
+          "courseVia": [
+            "lateral funiculus of the spinal cord"
+          ],
+          "terminatesIn": "central gray column and base of dorsal column; either interneurons or directly on lower motor neurons",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "The main conclusions were that almost all labelled boutons (98%) were found in the contralateral cord.",
+              "species": "macaque"
+            },
+            {
+              "source": "S1",
+              "quote": "A somewhat different picture emerges for the corticospinal projection from the leg area of M1, where around 10% of the fibres terminate ipsilaterally, especially among motoneurons of more proximal leg muscles, confirming a number of physiological studies showing bilateral effects on the lower limb",
+              "species": "macaque"
+            },
+            {
+              "source": "S1",
+              "quote": "Interruption of the lateral (crossed) CST at different spinal cervical levels also abolishes RIFM, but again there is some degree of recovery",
+              "species": "macaque"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 1,
+          "cellBodies": "Uncrossed anterior corticospinal tract fibers",
+          "courseVia": [
+            "anterior funiculus of the spinal cord"
+          ],
+          "terminatesIn": "axial and proximal (trunk) motor neurons, bilaterally",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": true,
+            "where": "crosses locally at the segmental level near termination"
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        }
+      ],
+      "lesions": [
+        {
+          "site": "Lateral corticospinal tract, mid-cervical spinal cord",
+          "deficit": "Devastating initial loss of precision grip (macaque), with partial recovery over weeks via C3-C4 propriospinal neurons; sparing of a nearby ventral propriospinal pathway during human cordotomy does not itself impair upper-limb movement",
+          "side": "ipsilateral",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "A lesion of the lateral CST at the mid-cervical level interrupts all of the CM and other corticospinal inputs to lower cervical segments but leaves the descending axons of C3–C4 propriospinal neurons intact",
+              "species": "macaque"
+            },
+            {
+              "source": "S1",
+              "quote": "It is noteworthy that such a lesion results in a devastating initial loss of the precision grip needed by the monkey to retrieve small rewards",
+              "species": "macaque"
+            },
+            {
+              "source": "S1",
+              "quote": "classic studies of the effects of mid-cervical cordotomy for pain relief in humans showed that lesions of the lateral funiculus which avoided the CST but which would have interrupted more ventrally located propriospinal fibres did not affect the function of upper limb movement",
+              "species": "human"
+            }
+          ]
+        }
+      ],
+      "conflicts": [
+        {
+          "issue": "Proportion of corticospinal tract fibers that decussate at the pyramidal decussation",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S1 of motor.json; not reopened this session): the lateral (crossed) corticospinal tract contains over 90% of corticospinal fibers",
+              "source": "S1 (original motor.json batch; not reopened this session)",
+              "quote": "The lateral corticospinal tract contains over 90% of the fibers present in the corticospinal tract and runs the length of the spinal cord."
+            },
+            {
+              "claim": "Original batch (StatPearls, S13 of motor.json; not reopened this session): almost 70-80% of corticospinal fibers cross at the pyramidal decussation",
+              "source": "S13 (original motor.json batch; not reopened this session)",
+              "quote": "At the lower end of the medulla, almost 70 to 80% of the fibers cross to the opposite side of the spinal cord, called the pyramidal (motor) decussation ."
+            },
+            {
+              "claim": "Lemon 2019 gives no single whole-tract human percentage either, but adds a tract/body-region-specific macaque figure: the corticomotoneuronal projection from the hand/arm area of M1 is almost entirely (98%) contralateral",
+              "source": "S1",
+              "quote": "The main conclusions were that almost all labelled boutons (98%) were found in the contralateral cord.",
+              "species": "macaque"
+            },
+            {
+              "claim": "By contrast, in the same macaque data set the corticospinal projection from the leg area of M1 leaves about 10% of fibres terminating ipsilaterally, showing that the crossed/uncrossed proportion is not a single fixed number but varies by body region and by projection type (CM vs total CST)",
+              "source": "S1",
+              "quote": "A somewhat different picture emerges for the corticospinal projection from the leg area of M1, where around 10% of the fibres terminate ipsilaterally, especially among motoneurons of more proximal leg muscles, confirming a number of physiological studies showing bilateral effects on the lower limb",
+              "species": "macaque"
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The corticomotoneuronal synapse on alpha motor neurons uses glutamate as its neurotransmitter (physiologically well established but not stated verbatim in the opened sources).",
+        "Lemon 2019 does not describe the anatomical course of the CST through the internal capsule, cerebral peduncle, basis pontis, or medullary pyramid, nor does it give a whole-tract human decussation percentage; the paper's focus is the primate corticomotoneuronal (CM) system and its spinal terminations, not gross CST anatomy."
+      ]
+    },
+    {
+      "id": "extrapyramidal-descending-tracts",
+      "name": "Extrapyramidal descending tracts: rubrospinal, vestibulospinal, reticulospinal, and tectospinal",
+      "category": "extrapyramidal / descending motor",
+      "function": "Regulate posture, muscle tone, and reflexive orientation independent of the pyramidal (corticospinal/corticobulbar) system",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Red nucleus, midbrain tegmentum",
+          "courseVia": [
+            "ventral tegmental decussation (caudal midbrain)",
+            "dorsolateral part of the lateral funiculus"
+          ],
+          "terminatesIn": "Ventral horn lamina V, VI, and VII; synapses with alpha and gamma motor neurons of flexor muscles",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "ventral tegmental decussation in the caudal midbrain"
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 2,
+          "neuronOrder": 1,
+          "cellBodies": "Medial vestibular nucleus (Schwalbe nucleus), medulla",
+          "courseVia": [
+            "medial vestibulospinal tract"
+          ],
+          "terminatesIn": "Limb motor neurons, especially neck and forelimb (upper-body) musculature",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 3,
+          "neuronOrder": 1,
+          "cellBodies": "Lateral vestibular nucleus (Deiter's nucleus), pons",
+          "courseVia": [
+            "lateral vestibulospinal tract"
+          ],
+          "terminatesIn": "Rexed laminae VII and VIII (premotor interneurons and alpha/gamma motor neurons of extensor muscles)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        },
+        {
+          "order": 4,
+          "neuronOrder": 1,
+          "cellBodies": "Pontine reticular formation (medial reticulospinal tract)",
+          "courseVia": [
+            "ipsilateral anterior funiculus"
+          ],
+          "terminatesIn": "Alpha and gamma motor neurons of extensor muscles, ventromedial spinal cord",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "showed that recovery after pyramidal lesions probably involves marked upregulation in reticulospinal control of hand motor nuclei.",
+              "species": "macaque"
+            },
+            {
+              "source": "S1",
+              "quote": "In the intact macaque, these inputs overlap with those from the corticospinal system",
+              "species": "macaque"
+            },
+            {
+              "source": "S1",
+              "quote": "However, 6 months after a unilateral pyramidal lesion, there were considerably higher levels of reticulospinal excitation of forelimb flexor and intrinsic hand motoneurons",
+              "species": "macaque"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "neuronOrder": 1,
+          "cellBodies": "Medullary reticular formation (lateral reticulospinal tract)",
+          "courseVia": [
+            "bilateral lateral funiculus"
+          ],
+          "terminatesIn": "Motor neurons in the spinal cord",
+          "laterality": "bilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "",
+          "evidence": [
+            {
+              "source": "S1",
+              "quote": "showed that recovery after pyramidal lesions probably involves marked upregulation in reticulospinal control of hand motor nuclei.",
+              "species": "macaque"
+            },
+            {
+              "source": "S1",
+              "quote": "However, 6 months after a unilateral pyramidal lesion, there were considerably higher levels of reticulospinal excitation of forelimb flexor and intrinsic hand motoneurons",
+              "species": "macaque"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "neuronOrder": 1,
+          "cellBodies": "Superior colliculus, midbrain",
+          "courseVia": [
+            "courses ventromedial to the periaqueductal gray matter"
+          ],
+          "terminatesIn": "Contralateral anterior gray horn lamina VI, VII, and VIII of cervical and upper thoracic spinal segments",
+          "laterality": "contralateral",
+          "decussation": {
+            "present": true,
+            "where": "crosses before terminating in the contralateral anterior gray horn"
+          },
+          "neurotransmitter": "",
+          "evidence": []
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Whether the reticulospinal tract terminates directly on (or otherwise functionally engages) forelimb/hand motor neurons",
+          "positions": [
+            {
+              "claim": "Original batch (StatPearls, S9 of motor.json; not reopened this session): the medial (pontine) reticulospinal tract terminates on alpha and gamma motor neurons of extensor muscles",
+              "source": "S9 (original motor.json batch; not reopened this session)",
+              "quote": "The medial (pontine) reticulospinal tract originates in the pontine reticular formation and projects down to the ventromedial spinal cord via the ipsilateral anterior funiculus, which contains alpha and gamma motor neurons of the extensor muscles."
+            },
+            {
+              "claim": "Nieuwenhuys (upgrade-lib-nieuwenhuys-motor-somatosensory.json S1; not reopened this session): fibres of the medial reticulospinal system terminate bilaterally in laminae VII/VIII of the intermediate zone and do not terminate, or do so only very sparingly, directly on motoneurons",
+              "source": "S1 (upgrade-lib-nieuwenhuys-motor-somatosensory.json; not reopened this session)",
+              "quote": "These fibres do not terminate, or do so only very sparingly, in the motoneuronal cell groups"
+            },
+            {
+              "claim": "Lemon 2019 (macaque, physiological rather than anatomical evidence): reticulospinal excitatory input to forelimb flexor and intrinsic hand motoneurons is present even in the intact animal and increases substantially after a unilateral pyramidal (corticospinal) lesion, showing the reticulospinal system does functionally excite hand-related motoneurons, in tension with anatomical accounts of only sparse direct motoneuronal termination",
+              "source": "S1",
+              "quote": "However, 6 months after a unilateral pyramidal lesion, there were considerably higher levels of reticulospinal excitation of forelimb flexor and intrinsic hand motoneurons",
+              "species": "macaque"
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "Lemon 2019 does not mention the rubrospinal, vestibulospinal, or tectospinal tracts at all, and so provides no evidence either way on whether a distinct rubrospinal tract exists in the human spinal cord (the conflict recorded in the original StatPearls batch and in the Nieuwenhuys upgrade batch is unaffected by this source).",
+        "Lemon 2019 discusses 'the reticulospinal tract' as a single primate system providing excitatory input to hand and forelimb motoneurons; it does not distinguish a medial (pontine) from a lateral (medullary) reticulospinal tract, so the evidence attached above to both step 4 and step 5 cannot be assigned to one subdivision over the other on this source alone."
+      ]
+    },
+    {
+      "id": "basal-ganglia-circuits",
+      "name": "Basal ganglia circuits: direct, indirect, and hyperdirect pathways",
+      "category": "extrapyramidal / motor modulation loop",
+      "function": "Gate and modulate initiation, amplitude, and suppression of voluntary movement via cortico-striato-pallido-thalamo-cortical loops",
+      "steps": [
+        {
+          "order": 1,
+          "neuronOrder": 1,
+          "cellBodies": "Cerebral cortex (motor, frontal, parietal lobes, layers III and V)",
+          "courseVia": [
+            "corticostriatal projection"
+          ],
+          "terminatesIn": "Striatum (caudate and putamen) medium spiny neurons",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate",
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "Afferent projections to the striatum are derived from three major sources",
+              "species": "primate"
+            },
+            {
+              "source": "S2",
+              "quote": "Corticostriatal terminals, which are primarily from the layer-five and deep-layer-three pyramidal neurons are distributed in a patchy manner.",
+              "species": "primate"
+            },
+            {
+              "source": "S2",
+              "quote": "Cortical fibers primarily project to the dendritic spines, form asymmetric terminals, and are glutamatergic.",
+              "species": "primate"
+            },
+            {
+              "source": "S2",
+              "quote": "Thalamic projections terminate primarily onto dendrites, and are excitatory and also glutamatergic.",
+              "species": "primate"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "neuronOrder": 2,
+          "cellBodies": "Striatal medium spiny neurons expressing D1 dopamine receptors (direct pathway)",
+          "courseVia": [
+            "direct pathway striatal projection"
+          ],
+          "terminatesIn": "Globus pallidus internus (GPi) / substantia nigra pars reticulata (SNpr)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "There are two general types of MSNs: one that co-contains substance P and GABA; and one that co-contains enkephalin and GABA.",
+              "species": "primate"
+            },
+            {
+              "source": "S2",
+              "quote": "Substance P-containing MSNs project primarily to the GPi and SN, while the enkephalin-containing cells project primarily to the GPe.",
+              "species": "primate"
+            },
+            {
+              "source": "S2",
+              "quote": "On the basis of this data and electrophysiological data, the projection cells of the striatum are considered inhibitory.",
+              "species": "primate"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "neuronOrder": 3,
+          "cellBodies": "GPi / SNpr inhibitory neurons",
+          "courseVia": [
+            "direct pathway pallidothalamic projection"
+          ],
+          "terminatesIn": "Ventral anterior (VA) and ventrolateral (VL) nuclei of the thalamus",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "The outputs from the GPi and SNr are to the thalamus, which then projects back to the cortex, completing the “direct” cortico-basal ganglia circuit.",
+              "species": "primate"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "neuronOrder": 2,
+          "cellBodies": "Striatal medium spiny neurons expressing D2 dopamine receptors (indirect pathway)",
+          "courseVia": [
+            "indirect pathway striatal projection"
+          ],
+          "terminatesIn": "Globus pallidus externus (GPe)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "Substance P-containing MSNs project primarily to the GPi and SN, while the enkephalin-containing cells project primarily to the GPe.",
+              "species": "primate"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "neuronOrder": 3,
+          "cellBodies": "GPe inhibitory neurons",
+          "courseVia": [
+            "pallidosubthalamic projection"
+          ],
+          "terminatesIn": "Subthalamic nucleus (STN)",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "GABA",
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "The GPe and parts of the VP project to the subthalamic nucleus (STN). The STN, in turn, provides inputs to the GPi. This pathway is considered the indirect pathway.",
+              "species": "primate"
+            },
+            {
+              "source": "S2",
+              "quote": "Importantly, the STN also projects back to the GPe.",
+              "species": "primate"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "neuronOrder": 4,
+          "cellBodies": "Subthalamic nucleus neurons (indirect pathway relay)",
+          "courseVia": [
+            "subthalamopallidal projection"
+          ],
+          "terminatesIn": "GPi / SNpr",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate",
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "The GPe and parts of the VP project to the subthalamic nucleus (STN). The STN, in turn, provides inputs to the GPi. This pathway is considered the indirect pathway.",
+              "species": "primate"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "neuronOrder": 1,
+          "cellBodies": "Sensorimotor cortex (hyperdirect pathway)",
+          "courseVia": [
+            "hyperdirect corticosubthalamic projection"
+          ],
+          "terminatesIn": "Subthalamic nucleus (dorsal STN) directly, bypassing the striatum",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "glutamate (excitatory)",
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "In addition to connections with the basal ganglia, the STN also receives a direct projection from all parts of the frontal cortex.",
+              "species": "primate"
+            },
+            {
+              "source": "S2",
+              "quote": "This is referred to as the hyperdirect pathway.",
+              "species": "primate"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "neuronOrder": 1,
+          "cellBodies": "Substantia nigra pars compacta (SNpc) dopaminergic neurons (nigrostriatal pathway)",
+          "courseVia": [
+            "nigrostriatal pathway"
+          ],
+          "terminatesIn": "Putamen and caudate nucleus of the striatum, modulating D1- and D2-expressing neurons oppositely",
+          "laterality": "ipsilateral",
+          "decussation": {
+            "present": false,
+            "where": ""
+          },
+          "neurotransmitter": "dopamine",
+          "evidence": [
+            {
+              "source": "S2",
+              "quote": "The dopaminergic system includes the SNc, the ventral tegmental area (VTA), and the retrorubral group.",
+              "species": "primate"
+            },
+            {
+              "source": "S2",
+              "quote": "Dopamine (DA) neurons from the SNc and the VTA project to the DS and VS, respectively.",
+              "species": "primate"
+            }
+          ]
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue": "Whether the direct cortex-to-subthalamic-nucleus projection is named and adopted as the 'hyperdirect pathway'",
+          "positions": [
+            {
+              "claim": "Nieuwenhuys (upgrade-lib-nieuwenhuys-motor-somatosensory.json S1; not reopened this session): the word 'hyperdirect' never appears in the running body text of the basal ganglia chapter -- it occurs exactly once, inside a bibliography reference title -- even though the underlying cortex-to-STN projection is described and sourced anatomically",
+              "source": "S1 (upgrade-lib-nieuwenhuys-motor-somatosensory.json; not reopened this session)",
+              "quote": "The subthalamic neurons receive an excitatory, glutamatergic input from the cortex and an inhibitory, GABAergic input from the external pallidal segment."
+            },
+            {
+              "claim": "Haber 2016 explicitly names and defines this same cortex-to-STN projection as the 'hyperdirect pathway' in its own running text",
+              "source": "S2",
+              "quote": "This is referred to as the hyperdirect pathway.",
+              "species": "primate"
+            }
+          ]
+        }
+      ],
+      "unsourced": [
+        "The opened Haber 2016 text does not explicitly state that subthalamic nucleus efferents (to GPi/SNr) use glutamate as their neurotransmitter; it only states that STN receives glutamatergic cortical input, not what transmitter its own outputs use.",
+        "The thalamocortical projection from VA/VL to motor cortex is glutamatergic; the opened sources describe it only as 'excitatory' without explicitly naming glutamate as the transmitter (unchanged by this batch)."
+      ]
+    }
+  ]
+}
