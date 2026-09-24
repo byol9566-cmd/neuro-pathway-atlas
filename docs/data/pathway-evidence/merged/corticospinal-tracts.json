@@ -1,0 +1,454 @@
+{
+ "id": "corticospinal-tracts",
+ "name": "Lateral and anterior corticospinal tracts",
+ "category": "pyramidal / descending motor",
+ "function": "Voluntary control of contralateral limb (lateral tract) and axial/trunk (anterior tract) musculature",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Primary motor cortex (precentral gyrus, area 4), with contributions from premotor and supplementary motor cortex",
+   "courseVia": [
+    "corona radiata",
+    "posterior limb of internal capsule",
+    "cerebral peduncle (middle third, crus cerebri)",
+    "basis pontis",
+    "medullary pyramid",
+    "pyramidal decussation"
+   ],
+   "terminatesIn": "Lateral corticospinal tract: interneurons and alpha motor neurons of the contralateral anterior (ventral) horn; anterior corticospinal tract: axial/proximal motor neurons bilaterally",
+   "laterality": "ipsilateral until the pyramidal decussation, then contralateral (lateral tract)",
+   "decussation": {
+    "present": true,
+    "where": "pyramidal decussation, caudal medulla"
+   },
+   "neurotransmitter": "glutamate (stated for the Ia-afferent/alpha-motor-neuron synapse in the reflex arc; not explicitly named for the corticomotoneuronal synapse in the opened sources)",
+   "evidence": [
+    {
+     "source": "NBK534818",
+     "grade": "B",
+     "quote": "It passes through the posterior limb of the internal capsule, through the cerebral peduncle and basis pontis, decussates at the caudal medulla (pyramidal decussation), and then continues to descend contralaterally into the spinal cord.",
+     "species": "human",
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK541082",
+     "grade": "B",
+     "quote": "From cell bodies located in the motor cortex, UMN axons descend through the ipsilateral structures in the following sequential order: corona radiata, posterior limb of the internal capsule, cerebral peduncle of the midbrain, central pons, and pyramids of the medulla.",
+     "species": "human",
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK541082",
+     "grade": "B",
+     "quote": "At the pyramids, CST axons decussate at the pyramidal decussation. Following decussation, axons become contralateral to their cell bodies of origin and enter the spinal cord via the lateral funiculus.",
+     "species": "human",
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "The cortico-motoneuronal (CM) system is unique to dexterous primates. It provides a direct pathway from motor cortex to the alpha motoneuron.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "In the primate, the most characteristic feature is direct cortico-motoneuronal (CM) control of muscles, particularly of hand and finger muscles.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "Damage to the human motor cortex and CST is generally far more devastating than in animal models and this may be because the CM system is best developed in humans",
+     "species": "human",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Corticospinal and corticobulbar fibres from the pericentral cortex descend in the internal capsule and the middle portion of the cerebral peduncle",
+     "species": "human",
+     "page": 851,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "After traversing the pontine nuclei they form the pyramidal tract on the ventral surface of the medulla oblongata.",
+     "species": "human",
+     "page": 851,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Corticospinal fibres decussate at the border of the medulla oblongata with the spinal cord.",
+     "species": "human",
+     "page": 851,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The pyramidal tract emerges at the surface at the caudal border of the pons and decussates at the transition of the medulla oblongata with the spinal cord.",
+     "species": "human",
+     "page": 205,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The distribution of the corticospinal tract in the human brain is very similar to that in nonhuman primates",
+     "species": "human",
+     "page": 845,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 1,
+   "cellBodies": "Lateral corticospinal tract fibers (>90% of corticospinal fibers by one source; ~70-80% by another, see conflicts)",
+   "courseVia": [
+    "lateral funiculus of the spinal cord"
+   ],
+   "terminatesIn": "central gray column and base of dorsal column; either interneurons or directly on lower motor neurons",
+   "laterality": "contralateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK534818",
+     "grade": "B",
+     "quote": "The lateral corticospinal tract contains over 90% of the fibers present in the corticospinal tract and runs the length of the spinal cord.",
+     "species": "human",
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK541082",
+     "grade": "B",
+     "quote": "CST axons terminate at various spinal cord levels within the central gray column and at the base of the dorsal column. Termination occurs either on interneurons or directly on LMNs.",
+     "species": "human",
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK541082",
+     "grade": "B",
+     "quote": "UMN projections that synapse directly onto LMNs typically control distal extremities. These direct corticomotor connections are considered essential for fine motor control of the fingers and hands.",
+     "species": "human",
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "The main conclusions were that almost all labelled boutons (98%) were found in the contralateral cord.",
+     "species": "macaque",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "A somewhat different picture emerges for the corticospinal projection from the leg area of M1, where around 10% of the fibres terminate ipsilaterally, especially among motoneurons of more proximal leg muscles, confirming a number of physiological studies showing bilateral effects on the lower limb",
+     "species": "macaque",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "Interruption of the lateral (crossed) CST at different spinal cervical levels also abolishes RIFM, but again there is some degree of recovery",
+     "species": "macaque",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "After its partial decussation at the border of the brain stem and the cord, the crossed fibres of the pyramidal tract descend into the dorsal half of the lateral funiculus as the lateral pyramidal tract",
+     "species": "human",
+     "page": 191,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 1,
+   "cellBodies": "Uncrossed anterior corticospinal tract fibers",
+   "courseVia": [
+    "anterior funiculus of the spinal cord"
+   ],
+   "terminatesIn": "axial and proximal (trunk) motor neurons, bilaterally",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": true,
+    "where": "crosses locally at the segmental level near termination"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK534818",
+     "grade": "B",
+     "quote": "The anterior corticospinal tract sends fibers mainly to the trunk or axial muscles. The control is both ipsilateral and contralateral.",
+     "species": "human",
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK541082",
+     "grade": "B",
+     "quote": "In addition to the lateral CST, a smaller uncrossed pathway, the anterior CST, contributes to axial and proximal motor control.",
+     "species": "human",
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The uncrossed fibres of the anterior pyramidal tract are located in the anterior funiculus, next to the anterior median fissure.",
+     "species": "human",
+     "page": 191,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Internal capsule / corona radiata (lenticulostriate artery, lacunar infarct)",
+   "deficit": "Contralateral weakness of face, arm, and leg (dense pure motor syndrome)",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Javed 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Occlusion of a lenticulostriate artery causing an ischemic infarction of the internal capsule (a lacunar infarct) will cause contralateral weakness of both the face, arm, and leg."
+    },
+    {
+     "source": "Margetis 2026 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Infarction of the posterior limb of the internal capsule, most often due to lenticulostriate artery occlusion, produces a pure UMN syndrome involving the contralateral face, arm, and leg."
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "Upper motor neuron (anywhere along corticospinal tract)",
+   "deficit": "Increased reflexes, increased tone, positive Babinski sign, spastic paresis",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Javed 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "damage to upper motor neurons may result in increased reflexes, increased tone, positive Babinski, and spastic paresis."
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "Lower motor neuron (anterior horn cell or below)",
+   "deficit": "Muscle atrophy, fasciculations, and flaccid paralysis",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Javed 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "damage to lower motor neurons is usually accompanied by muscle atrophy, fasciculations, and flaccid paralysis."
+    },
+    {
+     "source": "Margetis 2026 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "LMN signs typically include muscle atrophy, paralysis of individual muscles, fasciculations, fibrillations, hypotonia, and hyporeflexia."
+    },
+    {
+     "source": "Margetis 2026 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "α motor neurons remain preserved in UMN lesions. Therefore, muscle atrophy, fasciculations, and fibrillations are generally absent in isolated UMN syndromes."
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "Spinal cord hemisection (Brown-Sequard syndrome)",
+   "deficit": "Ipsilateral LMN signs at the level of the lesion, ipsilateral UMN signs (spastic paralysis) below the lesion from lateral corticospinal tract damage",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Javed 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Ipsilateral LMN signs (flaccid paralysis/fasciculations) at the level of the lesion due to damage of lateral corticospinal tracts Ipsilateral UMN signs below the level of the lesion (spastic paralysis) due to lateral corticospinal tract damage"
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "Lateral corticospinal tract, mid-cervical spinal cord",
+   "deficit": "Devastating initial loss of precision grip (macaque), with partial recovery over weeks via C3-C4 propriospinal neurons; sparing of a nearby ventral propriospinal pathway during human cordotomy does not itself impair upper-limb movement",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Lemon 2019 F1000Res",
+     "grade": "A",
+     "quote": "A lesion of the lateral CST at the mid-cervical level interrupts all of the CM and other corticospinal inputs to lower cervical segments but leaves the descending axons of C3–C4 propriospinal neurons intact"
+    },
+    {
+     "source": "Lemon 2019 F1000Res",
+     "grade": "A",
+     "quote": "It is noteworthy that such a lesion results in a devastating initial loss of the precision grip needed by the monkey to retrieve small rewards"
+    },
+    {
+     "source": "Lemon 2019 F1000Res",
+     "grade": "A",
+     "quote": "classic studies of the effects of mid-cervical cordotomy for pain relief in humans showed that lesions of the lateral funiculus which avoided the CST but which would have interrupted more ventrally located propriospinal fibres did not affect the function of upper limb movement"
+    }
+   ],
+   "file": "upgrade-lib-lemon2019-haber2016.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Proportion of corticospinal tract fibers that decussate at the pyramidal decussation",
+   "positions": [
+    {
+     "source": "Javed 2023 StatPearls [Internet]",
+     "grade": "B",
+     "claim": "The lateral (crossed) corticospinal tract contains over 90% of corticospinal fibers",
+     "quote": "The lateral corticospinal tract contains over 90% of the fibers present in the corticospinal tract and runs the length of the spinal cord."
+    },
+    {
+     "source": "Khan 2023 StatPearls [Internet]",
+     "grade": "B",
+     "claim": "Almost 70-80% of corticospinal fibers cross at the pyramidal decussation",
+     "quote": "At the lower end of the medulla, almost 70 to 80% of the fibers cross to the opposite side of the spinal cord, called the pyramidal (motor) decussation ."
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "issue": "Proportion of corticospinal tract fibers that decussate at the pyramidal decussation",
+   "positions": [
+    {
+     "source": "S1 (original motor.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S1 of motor.json; not reopened this session): the lateral (crossed) corticospinal tract contains over 90% of corticospinal fibers",
+     "quote": "The lateral corticospinal tract contains over 90% of the fibers present in the corticospinal tract and runs the length of the spinal cord."
+    },
+    {
+     "source": "S13 (original motor.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S13 of motor.json; not reopened this session): almost 70-80% of corticospinal fibers cross at the pyramidal decussation",
+     "quote": "At the lower end of the medulla, almost 70 to 80% of the fibers cross to the opposite side of the spinal cord, called the pyramidal (motor) decussation ."
+    },
+    {
+     "source": "Lemon 2019 F1000Res",
+     "grade": "A",
+     "claim": "Lemon 2019 gives no single whole-tract human percentage either, but adds a tract/body-region-specific macaque figure: the corticomotoneuronal projection from the hand/arm area of M1 is almost entirely (98%) contralateral",
+     "quote": "The main conclusions were that almost all labelled boutons (98%) were found in the contralateral cord."
+    },
+    {
+     "source": "Lemon 2019 F1000Res",
+     "grade": "A",
+     "claim": "By contrast, in the same macaque data set the corticospinal projection from the leg area of M1 leaves about 10% of fibres terminating ipsilaterally, showing that the crossed/uncrossed proportion is not a single fixed number but varies by body region and by projection type (CM vs total CST)",
+     "quote": "A somewhat different picture emerges for the corticospinal projection from the leg area of M1, where around 10% of the fibres terminate ipsilaterally, especially among motoneurons of more proximal leg muscles, confirming a number of physiological studies showing bilateral effects on the lower limb"
+    }
+   ],
+   "file": "upgrade-lib-lemon2019-haber2016.json"
+  },
+  {
+   "issue": "Proportion of corticospinal fibres that decussate at the pyramidal decussation",
+   "positions": [
+    {
+     "source": "S1 (original motor.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S1 of motor.json): the lateral (crossed) corticospinal tract contains over 90% of corticospinal fibres",
+     "quote": "The lateral corticospinal tract contains over 90% of the fibers present in the corticospinal tract and runs the length of the spinal cord."
+    },
+    {
+     "source": "S13 (original motor.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S13 of motor.json): almost 70-80% of corticospinal fibres cross at the pyramidal decussation",
+     "quote": "At the lower end of the medulla, almost 70 to 80% of the fibers cross to the opposite side of the spinal cord, called the pyramidal (motor) decussation ."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys gives no human percentage at all, describing the human decussation only as 'partial'; the only numeric figure given is for monkeys, where about 10% of the dorsolateral pyramidal tract remains uncrossed (i.e. roughly 90% crossed) -- animal data, not a human measurement",
+     "quote": "In monkeys 10% of the dorsolateral pyramidal tract is uncrossed, and a similar percentage of the corticospinal fibres terminates ipsilaterally"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The corticomotoneuronal synapse on alpha motor neurons uses glutamate as its neurotransmitter (physiologically well established but not stated verbatim in the opened sources).",
+   "file": "motor.json"
+  },
+  {
+   "text": "The corticomotoneuronal synapse on alpha motor neurons uses glutamate as its neurotransmitter (physiologically well established but not stated verbatim in the opened sources).",
+   "file": "upgrade-lib-lemon2019-haber2016.json"
+  },
+  {
+   "text": "Lemon 2019 does not describe the anatomical course of the CST through the internal capsule, cerebral peduncle, basis pontis, or medullary pyramid, nor does it give a whole-tract human decussation percentage; the paper's focus is the primate corticomotoneuronal (CM) system and its spinal terminations, not gross CST anatomy.",
+   "file": "upgrade-lib-lemon2019-haber2016.json"
+  },
+  {
+   "text": "The corticomotoneuronal synapse on alpha motor neurons uses glutamate as its neurotransmitter (physiologically well established but not stated verbatim in Nieuwenhuys ch.21/ch.06).",
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "sources": {
+  "NBK534818": {
+   "label": "Javed 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Lateral Corticospinal Tract",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK534818"
+  },
+  "NBK541082": {
+   "label": "Margetis 2026 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Upper Motor Neuron Signs",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK541082"
+  },
+  "PMC6415323": {
+   "label": "Lemon 2019 F1000Res",
+   "grade": "A",
+   "title": "Recent advances in our understanding of the primate corticospinal system",
+   "doi": "10.12688/f1000research.17445.1",
+   "pmcid": "PMC6415323",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

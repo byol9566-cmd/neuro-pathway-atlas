@@ -1,0 +1,54 @@
+id	ko	en	group
+shell-cerebrum	대뇌반구	Cerebral hemisphere	shell
+shell-brainstem	뇌줄기	Brainstem	shell
+shell-cerebellum	소뇌	Cerebellum	shell
+ctx-postcentral	중심뒤이랑 (일차몸감각겉질)	Postcentral gyrus (S1)	cortex
+ctx-precentral	중심앞이랑 (일차운동겉질)	Precentral gyrus (M1)	cortex
+ctx-cingulate	띠이랑	Cingulate gyrus	cortex
+ctx-parahippocampal	해마곁이랑·속후각겉질	Parahippocampal gyrus & entorhinal cortex	cortex
+thal-vpl	배쪽뒤가쪽핵 (VPL)	Ventral posterolateral nucleus	thalamus
+thal-vpm	배쪽뒤안쪽핵 (VPM)	Ventral posteromedial nucleus	thalamus
+thal-vl	배쪽가쪽핵 (VL)	Ventral lateral nucleus	thalamus
+thal-va	배쪽앞핵 (VA)	Ventral anterior nucleus	thalamus
+thal-md	등쪽안쪽핵 (MD)	Mediodorsal nucleus	thalamus
+thal-anterior	시상앞핵군 (AV·AD·AM)	Anterior nuclear group	thalamus
+thal-lp-ld	가쪽뒤핵·가쪽등쪽핵 (LP·LD)	Lateral posterior & lateral dorsal nuclei	thalamus
+thal-pulvinar	시상베개	Pulvinar	thalamus
+thal-cm-pf	중심정중핵·다발곁핵 (CM·Pf)	Centromedian & parafascicular nuclei	thalamus
+thal-lgn	가쪽무릎핵 (LGN)	Lateral geniculate nucleus	thalamus
+thal-mgn	안쪽무릎핵 (MGN)	Medial geniculate nucleus	thalamus
+thal-reticular	시상그물핵	Thalamic reticular nucleus	thalamus
+bg-caudate	꼬리핵	Caudate nucleus	basal-ganglia
+bg-putamen	조가비핵	Putamen	basal-ganglia
+bg-gpe	창백핵 바깥분절 (GPe)	Globus pallidus, external segment	basal-ganglia
+bg-gpi	창백핵 속분절 (GPi)	Globus pallidus, internal segment	basal-ganglia
+bg-stn	시상밑핵 (STN)	Subthalamic nucleus	basal-ganglia
+bg-sn	흑색질	Substantia nigra	basal-ganglia
+mb-red-nucleus	적색핵	Red nucleus	basal-ganglia
+lim-hippocampus	해마	Hippocampus	limbic
+lim-amygdala	편도체	Amygdala	limbic
+lim-mammillary-body	유두체	Mammillary body	limbic
+tr-fornix	뇌활 (해마술 포함)	Fornix (with fimbria)	tracts
+tr-mtt	유두시상로	Mammillothalamic tract	tracts
+tr-medial-lemniscus	안쪽섬유띠	Medial lemniscus	tracts
+tr-mlf	안쪽세로다발 (MLF)	Medial longitudinal fasciculus	tracts
+tr-scp	위소뇌다리	Superior cerebellar peduncle	tracts
+tr-optic-tract	시각로	Optic tract	tracts
+bs-gracile	널판핵	Gracile nucleus	brainstem-nuclei
+bs-cuneate	쐐기핵	Cuneate nucleus	brainstem-nuclei
+bs-vestibular-medial	안쪽안뜰핵	Medial vestibular nucleus	brainstem-nuclei
+bs-vestibular-other	가쪽·아래·위안뜰핵	Lateral, inferior & superior vestibular nuclei	brainstem-nuclei
+bs-abducens	갓돌림신경핵 (VI)	Abducens nucleus	brainstem-nuclei
+bs-oculomotor	눈돌림신경핵 (III)	Oculomotor nucleus	brainstem-nuclei
+bs-facial	얼굴신경핵 (VII)	Facial nucleus	brainstem-nuclei
+bs-spinal-trigeminal	삼차신경척수핵	Spinal trigeminal nucleus	brainstem-nuclei
+bs-hypoglossal	혀밑신경핵 (XII)	Hypoglossal nucleus	brainstem-nuclei
+bs-inferior-olive	아래올리브핵	Inferior olivary nucleus	brainstem-nuclei
+bs-pontine-nuclei	다리뇌핵	Pontine nuclei	brainstem-nuclei
+bs-pag	수도관주위회색질 (PAG)	Periaqueductal gray	brainstem-nuclei
+bs-superior-colliculus	위둔덕	Superior colliculus	brainstem-nuclei
+bs-inferior-colliculus	아래둔덕	Inferior colliculus	brainstem-nuclei
+bs-lc-nextbrain	청색반점 (NextBrain)	Locus coeruleus (NextBrain)	brainstem-nuclei
+bs-lc-aan	청색반점 (Harvard AAN)	Locus coeruleus (Harvard AAN)	brainstem-nuclei
+bs-dorsal-raphe-aan	등쪽솔기핵 (Harvard AAN)	Dorsal raphe nucleus (Harvard AAN)	brainstem-nuclei
+cb-dentate	치아핵	Dentate nucleus	cerebellum

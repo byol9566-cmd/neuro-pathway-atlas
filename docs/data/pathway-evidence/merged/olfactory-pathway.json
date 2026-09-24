@@ -1,0 +1,396 @@
+{
+ "id": "olfactory-pathway",
+ "name": "Olfactory pathway",
+ "category": "special sense - smell",
+ "function": "Conveys odor information from olfactory receptor neurons in the nasal epithelium through the olfactory bulb directly to cortical and subcortical olfactory structures, uniquely without an obligatory thalamic relay.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Olfactory sensory (receptor) neurons in the olfactory epithelium",
+   "courseVia": [
+    "olfactory nerve fibers (CN I) through the cribriform plate of the ethmoid bone"
+   ],
+   "terminatesIn": "glomeruli on the surface of the (ipsilateral) olfactory bulb",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK542239",
+     "grade": "B",
+     "quote": "Axonal projections of olfactory nerves synapse with the dendrites of mitral and tufted cells in spherical structures known as glomeruli.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Remarkably, the axons of neurosensory cells expressing the same odorant receptor all converge on a few target glomeruli",
+     "species": "human",
+     "page": 348,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "There are about 6 million olfactory sensory neurons in the human nasal mucosa",
+     "species": "human",
+     "page": 348,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In young adult humans, approximately 8,000 glomeruli have been counted",
+     "species": "human",
+     "page": 348,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Mitral and tufted cells of the olfactory bulb",
+   "courseVia": [
+    "olfactory tract / lateral olfactory tract"
+   ],
+   "terminatesIn": "anterior olfactory nucleus, olfactory tubercle, piriform cortex, amygdala and entorhinal cortex",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK542239",
+     "grade": "B",
+     "quote": "Second-order mitral cells then project via olfactory tracts to specific areas within the brain that process olfactory information, including the piriform cortex, olfactory tubercle, amygdala, and entorhinal cortex.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC12931680",
+     "grade": "A",
+     "quote": "the mitral and tufted cells, coalesce into the olfactory tract, one on each side of the brain, and project ipsilaterally to a wide number of brain areas, including the anterior olfactory nucleus (AON), olfactory tubercle, piriform cortex, amygdala, and entorhinal cortex",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC12931680",
+     "grade": "A",
+     "quote": "Odor information reaches olfactory cortex within just two synapses, without an obligatory thalamic relay",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC3223720",
+     "grade": "A",
+     "quote": "Layer I is a plexiform layer which includes pyramidal cell apical dendrites and the mitral/tufted cell axons as they leave the lateral olfactory tract, as well as association fibers.",
+     "species": "rodent (rat/mouse; review is explicitly focused on 'the mammalian olfactory cortex' with rodent data predominating)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "PMC3223720",
+     "grade": "A",
+     "quote": "The olfactory cortex serves as point of anatomical convergence for olfactory bulb output neurons, mitral/tufted cells, conveying information about distinct odorant features extracted in the periphery.",
+     "species": "rodent (rat/mouse; review is explicitly focused on 'the mammalian olfactory cortex' with rodent data predominating)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Secondary olfactory fibres originating from the olfactory bulb pass by way of the lateral olfactory tract to the amygdala, where they terminate mainly in the cortical nucleus",
+     "species": "human",
+     "page": 412,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The lateral olfactory stria carries secondary olfactory fibres to the cortical and medial amygdaloid nuclei.",
+     "species": "human",
+     "page": 408,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The amygdala receives a direct projection from the olfactory bulb, which terminates mainly in the cortical nucleus",
+     "species": "human",
+     "page": 420,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Impulses carrying information from all sense organs except olfactory terminate in particular thalamic nuclei, where they are projected to specific cortical areas by thalamic relay cells",
+     "species": "human",
+     "page": 274,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "After having distributed fibres to the anterior olfactory nucleus and the olfactory tubercle, the entire secondary olfactory projection enters the lateral olfactory stria",
+     "species": "human",
+     "page": 352,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Following that stria, the fibres reach the prepiriform, periamygdaloid and entorhinal cortices and the cortical amygdaloid nucleus, where they terminate",
+     "species": "human",
+     "page": 352,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Two structures which border on the primary olfactory cortex, i.e. the cortical nucleus of the amygdala and the entorhinal cortex",
+     "species": "human",
+     "page": 358,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "also receive direct projections from the olfactory bulb",
+     "species": "human",
+     "page": 358,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In primates, the olfactory projections are confined to the rostral parts of both of these structures.",
+     "species": "primate",
+     "page": 358,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In contrast, the olfactory neocortical areas receive their major sensory input directly from the primary olfactory cortex, without a thalamic relay, and the afferents carrying this input terminate principally in layer I",
+     "species": "human",
+     "page": 358,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In the somatosensory, visual and auditory systems, sensory information reaches the cortex via a thalamic relay, and the thalamocortical fibres terminate mainly in a well-differentiated layer IV",
+     "species": "human",
+     "page": 358,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The anterior olfactory nucleus and the primary olfactory cortex are interconnected by fibres passing through the anterior commissure.",
+     "species": "human",
+     "page": 358,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "By the same route, fibres originating from the anterior olfactory nucleus project to the deeper layers of the contralateral olfactory bulb",
+     "species": "human",
+     "page": 358,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Monorhinal odorous stimuli activate the primary olfactory cortex bilaterally, consistent with the commissural connections between these areas via the anterior commissure",
+     "species": "human",
+     "page": 360,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The anterior olfactory nucleus projects massively and bilaterally to the olfactory bulb.",
+     "species": "human",
+     "page": 351,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In primates, including humans, the anterior olfactory nucleus is only poorly developed and consists of some small groups of neurons situated in the caudal part of the olfactory bulb, in the olfactory peduncle and in the area where this peduncle joins the hemisphere",
+     "species": "human",
+     "page": 352,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 2,
+   "cellBodies": "Mitral cell axons forming the lateral olfactory tract",
+   "courseVia": [
+    "lateral olfactory tract"
+   ],
+   "terminatesIn": "three-layered piriform (pyriform) cortex, ventromedial temporal lobe, near the optic chiasm (the major target of the olfactory tract)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK11071",
+     "grade": "B",
+     "quote": "the only relay—via the axons of mitral and tufted cells—for olfactory information from the periphery to the rest of the brain",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK11071",
+     "grade": "B",
+     "quote": "The major target of the olfactory tract is the three-layered pyriform cortex in the ventromedial aspect of the temporal lobe near the optic chiasm",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Thus it has been established that the prepiriform cortex distributes fibres to the basolateral complex and that the entorhinal cortex projects to the central, basolateral and cortical nuclei",
+     "species": "human",
+     "page": 412,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The mitral cells in the olfactory bulb are the principal source of afferent input to the primary olfactory cortex.",
+     "species": "human",
+     "page": 356,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "These afferents pass via the lateral olfactory tract to layer Ia of the cortex, making excitatory synaptic contacts with the apical dendrites of pyramidal cells",
+     "species": "human",
+     "page": 356,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The primary olfactory cortex comprises three layers, which are usually designated as layers I, II and III",
+     "species": "human",
+     "page": 353,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "This olfactory cortex is, particularly in macrosmatic mammals, subdivided in prepiriform and piriform (or periamygdaloid) cortical fields.",
+     "species": "human",
+     "page": 342,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "olfactory epithelium and olfactory bulb (e.g. viral upper respiratory infection, including SARS-CoV-2)",
+   "deficit": "anosmia (loss of smell), frequently accompanied by taste complaints attributable to the olfactory loss rather than to direct gustatory system damage",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Obiefuna 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "the recent coronavirus disease 2019 (COVID-19) caused by the specific virus (SARS-COV-2) pandemic has been associated with loss of sense of smell and taste in up to 75% of patients"
+    }
+   ],
+   "file": "special-senses.json"
+  }
+ ],
+ "conflicts": [],
+ "unsourced": [
+  {
+   "text": "The anterior commissure carries interhemispheric olfactory connections between the two anterior olfactory nuclei/olfactory bulbs.",
+   "file": "special-senses.json"
+  },
+  {
+   "text": "Whether the human anterior olfactory nucleus (AON) plays a functionally significant role, as it does in rodents, remains unresolved (noted as an open question by S13, but not itself a sourced anatomical fact).",
+   "file": "special-senses.json"
+  },
+  {
+   "text": "S7 (Wilson & Sullivan 2011) does not contain the words 'thalamus' or 'thalamic' anywhere in the sections opened, so the specific claim that olfaction reaches cortex 'without an obligatory thalamic relay' could not be corroborated from this source; that claim remains sourced only from the existing review source (S13, Dikecligil & Gottfried) in special-senses.json.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "The specific phrase ranking the piriform cortex as the lateral olfactory tract's single 'major target' (as opposed to one of several direct targets alongside the anterior olfactory nucleus, olfactory tubercle, amygdala and entorhinal cortex) was not found verbatim in ch.11; the chapter instead describes the mitral cells as 'the principal source of afferent input to the primary olfactory cortex' and lists prepiriform/periamygdaloid/entorhinal cortices and the cortical amygdaloid nucleus as parallel targets of the lateral olfactory stria. That specific 'major target' ranking statement remains sourced only to S14 in special-senses.json.",
+   "file": "upgrade-lib-nieuwenhuys-senses.json"
+  }
+ ],
+ "sources": {
+  "NBK542239": {
+   "label": "Branigan 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Physiology, Olfactory",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK542239"
+  },
+  "PMC12931680": {
+   "label": "Dikecligil 2024 Annual Review of Psychology",
+   "grade": "A",
+   "title": "What Does the Human Olfactory System Do, and How Does It Do It?",
+   "doi": "10.1146/annurev-psych-042023-101155",
+   "pmcid": "PMC12931680",
+   "isbn": null,
+   "nbk": ""
+  },
+  "NBK11071": {
+   "label": "Purves 2001 Sinauer Associates",
+   "grade": "B",
+   "title": "Central Projections of the Olfactory Bulb (in: Neuroscience, 2nd edition)",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK11071"
+  },
+  "PMC3223720": {
+   "label": "Wilson 2011 Neuron",
+   "grade": "A",
+   "title": "Cortical processing of odor objects",
+   "doi": "10.1016/j.neuron.2011.10.027",
+   "pmcid": "PMC3223720",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

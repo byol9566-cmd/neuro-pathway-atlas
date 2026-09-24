@@ -1,0 +1,254 @@
+{
+ "id": "dopamine-reward-pathways",
+ "name": "Mesolimbic and mesocortical dopamine (reward) pathways, with nigrostriatal and tuberoinfundibular pathways for contrast",
+ "category": "diffuse modulatory / limbic-motor-endocrine",
+ "function": "Reward, motivation and incentive salience (mesolimbic/mesocortical); motor control (nigrostriatal); neuroendocrine prolactin regulation (tuberoinfundibular)",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Ventral tegmental area (VTA) dopaminergic neurons",
+   "courseVia": [
+    "medial forebrain bundle (MFB)"
+   ],
+   "terminatesIn": "ventral striatum / nucleus accumbens",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "dopamine",
+   "evidence": [
+    {
+     "source": "10.1007/978-3-031-08651-9_1",
+     "grade": "B",
+     "quote": "The mesolimbic pathway projects from the ventral tegmental area (VTA) to the ventral striatum.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "PMC10164017",
+     "grade": "A",
+     "quote": "The MFB is the most prominent mesolimbic reward pathway connecting the ventral tegmental areas with the prefrontal cortex",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "PMC10164017",
+     "grade": "A",
+     "quote": "The MFB connects the midbrain's periaqueductal gray matter (PAG) to the ventral tegmental areas and the prefrontal cortex (PreFr).",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "the nucleus accumbens receives a strong dopaminergic input from the ventral tegmental area, whereas the caudate-putamen complex receives a similar projection from the substantia nigra",
+     "species": "human",
+     "page": 432,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC3055449",
+     "grade": "A",
+     "quote": "Behavioral and pharmacological studies of dopamine pathways have lead to the association of the mesolimbic pathway with reward processing and nigro-striatal pathway with motor activity.",
+     "species": "cross-species synthesis (primate anatomy and human imaging review)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC3055449",
+     "grade": "A",
+     "quote": "The midbrain dopamine neurons project massively to the striatum",
+     "species": "primate (macaque tract-tracing)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC3055449",
+     "grade": "A",
+     "quote": "the nucleus accumbens (NAcc) and the ventral tegmental area (VTA) dopamine neurons appear to be at the center",
+     "species": "cross-species synthesis (primate anatomy and human imaging review)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 1,
+   "cellBodies": "Ventral tegmental area (VTA) dopaminergic neurons",
+   "courseVia": [
+    "medial forebrain bundle (MFB) / mesocortical pathway"
+   ],
+   "terminatesIn": "prefrontal cortex",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "dopamine",
+   "evidence": [
+    {
+     "source": "10.1007/978-3-031-08651-9_1",
+     "grade": "B",
+     "quote": "The mesocortical pathway projecting from the VTA to the prefrontal cortex is, in turn, more involved in executive functions although it also contributes to reward processing.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "abnormalities in the synaptic transmission from mesocortical dopaminergic fibres to the pyramidal neurons giving origin to the prefronto-accumbens projection",
+     "species": "cross-species (addiction neurocircuitry synthesis discussed alongside human neuroimaging data)",
+     "page": 478,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 1,
+   "cellBodies": "Substantia nigra pars compacta dopaminergic neurons",
+   "courseVia": [
+    "nigrostriatal pathway"
+   ],
+   "terminatesIn": "striatum (putamen and caudate)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "dopamine",
+   "evidence": [
+    {
+     "source": "10.1007/978-3-031-08651-9_1",
+     "grade": "B",
+     "quote": "The nigrostriatal pathway connects substantia nigra to the striatum (putamen and caudate) and contributes critically to motion control.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "whereas the caudate-putamen complex receives a similar projection from the substantia nigra, further substantiates the interpretation of the nucleus accumbens as a part of the ventral striatum",
+     "species": "human",
+     "page": 432,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC3055449",
+     "grade": "A",
+     "quote": "the ventral SNc neurons project to the dorsal striatum",
+     "species": "primate (macaque tract-tracing)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 1,
+   "cellBodies": "Hypothalamic (tuberoinfundibular/arcuate) dopaminergic neurons",
+   "courseVia": [
+    "tuberoinfundibular pathway to the median eminence / hypophyseal portal system"
+   ],
+   "terminatesIn": "anterior pituitary (lactotrophs)",
+   "laterality": "midline",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "dopamine",
+   "evidence": [
+    {
+     "source": "10.1007/978-3-031-08651-9_1",
+     "grade": "B",
+     "quote": "Finally, the tuberoinfundibular pathway connects the hypothalamus and the pituitary gland.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [],
+ "conflicts": [],
+ "unsourced": [
+  {
+   "text": "Degeneration of nigrostriatal dopaminergic neurons is the classic anatomical substrate of the motor deficits of Parkinson's disease; not explicitly quoted with a citation in the sources opened for this batch.",
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "text": "Tuberoinfundibular dopamine acts on pituitary lactotroph D2 receptors to tonically inhibit prolactin secretion; general endocrinology fact not directly quoted from an opened source in this session.",
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "text": "Degeneration of nigrostriatal dopaminergic neurons as the classic anatomical substrate of Parkinson's disease was not found with a directly quotable sentence in the opened chapters (ch14 discusses the substantia nigra pars compacta -> striatum projection anatomically but the Parkinson's-degeneration link itself, in the sentences examined, appears only via Alzheimer's-comparison passages, not as a standalone quotable sentence).",
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "text": "The hypothalamic tuberoinfundibular dopamine pathway to the anterior pituitary and its inhibition of prolactin secretion (step 4) is NOT described anywhere in the opened Nieuwenhuys hypothalamus chapter (ch10): the terms 'tuberoinfundibular', 'prolactin', 'lactotroph' and 'dopamine' do not co-occur in any body-text sentence of ch10; only the general infundibular-nucleus-to-median-eminence releasing-hormone machinery is described, without naming dopamine or prolactin.",
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "text": "The specific term 'mesolimbic pathway' (as a named tract label) was not found in the body text of ch14; the underlying anatomy (VTA dopaminergic projection to nucleus accumbens) is described, but without the term 'mesolimbic' itself, which appears only in bibliography entry titles.",
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "text": "The VTA-to-prefrontal-cortex mesocortical dopamine projection (step 2) is not described in a directly quotable sentence in Haber & Knutson 2010 (S3/PMC3055449); the paper frames the ventral striatal cortico-basal-ganglia-thalamic loop in detail but does not state a clean VTA->PFC dopaminergic efferent sentence, only a much smaller reciprocal PFC->midbrain projection statement.",
+   "file": "upgrade-limbic.json"
+  },
+  {
+   "text": "The hypothalamic tuberoinfundibular dopamine pathway to the anterior pituitary (step 4) is entirely outside the scope of this reward-circuit review; no mention of the pituitary or tuberoinfundibular tract was found in the opened text.",
+   "file": "upgrade-limbic.json"
+  },
+  {
+   "text": "Degeneration of nigrostriatal dopaminergic neurons is the classic anatomical substrate of the motor deficits of Parkinson's disease; not explicitly quoted with a citation in S3.",
+   "file": "upgrade-limbic.json"
+  }
+ ],
+ "sources": {
+  "10.1007/978-3-031-08651-9_1": {
+   "label": "Nummenmaa 2022 NCBI Bookshelf (Springer book chapter)",
+   "grade": "B",
+   "title": "Molecular Imaging of the Human Emotion Circuit (Chapter 1, in: Social and Affective Neuroscience of Everyday Human Interaction)",
+   "doi": "10.1007/978-3-031-08651-9_1",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK595465"
+  },
+  "PMC10164017": {
+   "label": "Kamali 2023 Brain Topography",
+   "grade": "A",
+   "title": "The Cortico-Limbo-Thalamo-Cortical Circuits: An Update to the Original Papez Circuit of the Human Limbic System",
+   "doi": "10.1007/s10548-023-00955-y",
+   "pmcid": "PMC10164017",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  },
+  "PMC3055449": {
+   "label": "Haber 2010 Neuropsychopharmacology",
+   "grade": "A",
+   "title": "The Reward Circuit: Linking Primate Anatomy and Human Imaging",
+   "doi": "10.1038/npp.2009.129",
+   "pmcid": "PMC3055449",
+   "isbn": null,
+   "nbk": ""
+  }
+ }
+}

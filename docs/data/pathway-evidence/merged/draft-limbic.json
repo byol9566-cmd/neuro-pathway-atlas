@@ -1,0 +1,911 @@
+{
+  "pathways": [
+    {
+      "id": "papez-circuit-trisynaptic-hippocampal",
+      "name_ko": "파페츠 회로와 해마 삼중시냅스회로",
+      "name_en": "Papez circuit and hippocampal trisynaptic circuit",
+      "category_ko": "둘레계통",
+      "summary_ko": "해마에서 시작해 유두체·시상앞핵·띠이랑을 거쳐 다시 해마로 돌아오는 고리로, 서술기억 공고화와 감정처리에 관여한다(파페츠 회로). 해마 자체의 삼중시냅스회로(속후각겉질→치아이랑→CA3→CA1→해마이행부)도 함께 다룬다.",
+      "origin_ko": "표시할 반구",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "해마이행부 → 뇌활 → 유두체",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "lim-hippocampus",
+            "tr-fornix",
+            "lim-mammillary-body"
+          ],
+          "structure_names_ko": "해마(해마이행부), 뇌활, 유두체",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "해마이행부(subiculum)의 신경세포가 교차뒤뇌활(postcommissural fornix)을 거쳐 주로 안쪽유두핵(유두체)에 끝난다. 해마형성체에서 나온 뇌활의 대부분이 시상하부를 지나 유두체에서 끝난다.",
+          "missing_ko": "",
+          "sources": "Kamali 2023 Brain Topography (A); Nieuwenhuys 2008 Springer (A); Aggleton 2022 Neuroscience & Biobehavioral Reviews (A)"
+        },
+        {
+          "order": 2,
+          "title_ko": "유두체 → 유두시상로 → 시상앞핵",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "lim-mammillary-body",
+            "tr-mtt",
+            "thal-anterior"
+          ],
+          "structure_names_ko": "유두체, 유두시상로, 시상앞핵",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "안쪽유두핵의 축삭이 유두시상로를 따라 올라가 시상앞핵군에 끝난다. 유두시상로는 파페츠 회로의 일부를 이룬다.",
+          "missing_ko": "",
+          "sources": "Kamali 2023 Brain Topography (A); Nieuwenhuys 2008 Springer (A); Aggleton 2022 Neuroscience & Biobehavioral Reviews (A)"
+        },
+        {
+          "order": 3,
+          "title_ko": "시상앞핵 → 띠이랑",
+          "neuronOrder": 3,
+          "structure_ids": [
+            "thal-anterior",
+            "ctx-cingulate"
+          ],
+          "structure_names_ko": "시상앞핵, 띠이랑",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "시상앞핵의 축삭이 시상앞쪽방사와 속섬유막 앞다리를 지나 띠이랑(앞띠이랑·전전두엽겉질)으로 투사해 파페츠 회로를 완성한다.",
+          "missing_ko": "시상앞쪽방사(참고); 속섬유막 앞다리(참고); 전전두엽겉질(참고)",
+          "sources": "Kamali 2023 Brain Topography (A); Nieuwenhuys 2008 Springer (A); Aggleton 2022 Neuroscience & Biobehavioral Reviews (A)"
+        },
+        {
+          "order": 4,
+          "title_ko": "띠이랑 → 해마곁이랑(속후각겉질)",
+          "neuronOrder": 4,
+          "structure_ids": [
+            "ctx-cingulate",
+            "ctx-parahippocampal"
+          ],
+          "structure_names_ko": "띠이랑, 해마곁이랑(속후각겉질)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "띠이랑의 출력이 띠다발을 따라 해마곁이랑·속후각겉질로 향한다. 띠다발은 파페츠 회로에서 가장 긴 경로로 띠이랑 앞부분과 관자엽의 해마를 잇는다.",
+          "missing_ko": "띠다발(cingulum bundle, 참고)",
+          "sources": "Kamali 2023 Brain Topography (A); Nieuwenhuys 2008 Springer (A); Aggleton 2022 Neuroscience & Biobehavioral Reviews (A)"
+        },
+        {
+          "order": 5,
+          "title_ko": "속후각겉질 → 치아이랑 (관통로)",
+          "neuronOrder": 5,
+          "structure_ids": [
+            "ctx-parahippocampal"
+          ],
+          "structure_names_ko": "해마곁이랑(속후각겉질)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "속후각겉질 2층(약하게는 5층)의 신경세포가 관통로를 통해 치아이랑 과립세포에 끝난다.",
+          "missing_ko": "관통로(perforant path, 참고); 치아이랑(dentate gyrus, 참고)",
+          "sources": "Zhao 2025 Anatomical Science International (A); Nieuwenhuys 2008 Springer (A)"
+        },
+        {
+          "order": 6,
+          "title_ko": "치아이랑 → CA3 (이끼섬유)",
+          "neuronOrder": 6,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "글루탐산",
+          "description_ko": "치아이랑 과립세포의 축삭(이끼섬유)이 CA3 피라미드신경세포 몸쪽 가지돌기에 이끼섬유이음부를 형성한다.",
+          "missing_ko": "치아이랑(dentate gyrus, 참고); CA3(참고)",
+          "sources": "Zhao 2025 Anatomical Science International (A); Nieuwenhuys 2008 Springer (A)"
+        },
+        {
+          "order": 7,
+          "title_ko": "CA3 → CA1 (샤퍼측지)",
+          "neuronOrder": 7,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "일부 샤퍼측지·연합섬유가 해마맞교차를 거쳐 반대쪽 해마로 건너간다",
+          "neurotransmitter_ko": "글루탐산",
+          "description_ko": "CA3 피라미드신경세포의 축삭측지(샤퍼측지)가 같은쪽 CA1 피라미드신경세포에 끝나며, 일부는 해마맞교차를 지나 반대쪽 해마로도 간다.",
+          "missing_ko": "CA3(참고); CA1(참고)",
+          "sources": "Zhao 2025 Anatomical Science International (A); Nieuwenhuys 2008 Springer (A)"
+        },
+        {
+          "order": 8,
+          "title_ko": "CA1 → 해마이행부 (고리 닫힘)",
+          "neuronOrder": 8,
+          "structure_ids": [
+            "tr-fornix",
+            "lim-hippocampus"
+          ],
+          "structure_names_ko": "뇌활(해마술 포함), 해마(해마이행부)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "글루탐산",
+          "description_ko": "CA1 피라미드신경세포의 축삭이 위판·해마술을 거쳐 해마이행부에 대량으로 끝나며, 삼중시냅스고리를 닫는다.",
+          "missing_ko": "CA1(참고); 위판(alveus, 참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Zhao 2025 Anatomical Science International (A)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "유두체, 앞쪽·등쪽안쪽 시상핵, 유두시상로 (티아민 결핍)",
+          "deficit_ko": "베르니케-코르사코프 증후군: 심한 앞방향기억상실과 실행기능장애",
+          "side_ko": "양쪽",
+          "sources": "Aggleton 2022 Neuroscience & Biobehavioral Reviews (A); Singh 2026 StatPearls (B)"
+        },
+        {
+          "site_ko": "양쪽 안쪽관자엽(해마·편도체·주변겉질) 수술 절제",
+          "deficit_ko": "심한 전반적 앞방향기억상실 (환자 H.M. / Henry Molaison)",
+          "side_ko": "양쪽",
+          "sources": "Murray 2024 Hippocampus (A); Nieuwenhuys 2008 Springer (A)"
+        },
+        {
+          "site_ko": "해마 CA1 영역 단독 손상 (환자 RB, 관상동맥 우회술 중 저혈압 발생)",
+          "deficit_ko": "상당하고 지속적인 앞방향기억장애, 전반적 안쪽관자엽 기억상실보다는 경함",
+          "side_ko": "양쪽",
+          "sources": "Nieuwenhuys 2008 Springer (A)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "삼중시냅스/해마회로에서 해마이행부(subiculum)의 역할: 단순 출력단계인지, 통합허브·병렬경로인지",
+          "positions": [
+            {
+              "source": "Gao 2026 Hippocampus",
+              "grade": "A",
+              "summary_ko": "해마이행부는 삼중시냅스경로의 고전적인 네 번째(출력) 단계로 여겨져 왔다"
+            },
+            {
+              "source": "Gao 2026 Hippocampus",
+              "grade": "A",
+              "summary_ko": "해마이행부는 단순 출력 중계가 아니라 해마·시상앞핵·되이랑겉질·속후각겉질의 입력을 모아 재분배하는 통합 거점으로 보는 것이 더 적절하다"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer",
+              "grade": "A",
+              "summary_ko": "해마-내후각 고리를 닫는 두 번째 병렬 경로가 있다(깊은층 내후각세포가 CA1·해마이행부 신호를 받아 다시 얕은층으로 올림)"
+            },
+            {
+              "source": "Aggleton 2022 Neuroscience & Biobehavioral Reviews",
+              "grade": "A",
+              "summary_ko": "해마이행부에서 띠이랑(29구역)으로 가는 같은 신경세포가 유두체로도 축삭측지를 보내, 단순 종착이 아니라 두 경로로 갈라지는 분기점이다"
+            }
+          ]
+        },
+        {
+          "issue_ko": "시상앞핵이 해마곁이랑·속후각겉질에 이르는 경로가 띠이랑겉질을 거치는 중계뿐인지, 띠다발 내부의 시상 유래 섬유가 해마이행부복합체로 직접 가는 경로도 있는지",
+          "positions": [
+            {
+              "source": "원래 배치(구조 가정)",
+              "grade": "?",
+              "summary_ko": "시상앞핵→띠이랑에서 시냅스→띠다발→해마곁이랑·속후각겉질의 순차중계로 파페츠고리를 설명"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer",
+              "grade": "A",
+              "summary_ko": "시상앞핵에서 나온 섬유가 띠다발 안을 지나 해마이행부복합체(주로 해마이행부앞부분)에 직접 끝나며, 반드시 띠이랑겉질 시냅스를 거치지 않을 수 있다"
+            }
+          ]
+        },
+        {
+          "issue_ko": "파페츠 회로·둘레계통 개념 자체의 타당성과 경계",
+          "positions": [
+            {
+              "source": "Nieuwenhuys 2008 Springer",
+              "grade": "A",
+              "summary_ko": "1937년 파페츠는 이론적 근거로 해마형성체와 띠이랑을 중심으로 한 회로가 감정행동의 신경기반이라고 주장했다"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer",
+              "grade": "A",
+              "summary_ko": "최근 검토자들은 둘레계통 개념이 명확한 실증적 정의가 없고 파페츠 이후 경계가 계속 바뀌어왔다고 비판하며, 이 '회로'를 하나의 명확히 구분된 해부학적 고리로 읽어서는 안 된다고 본다"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amygdala-fear-circuit",
+      "name_ko": "편도체 공포회로",
+      "name_en": "Amygdala fear circuit",
+      "category_ko": "둘레계통",
+      "summary_ko": "위협을 빠르게 탐지해 행동·자율신경 반응을 일으키는 편도체 중심의 공포·불안 회로. 공포조건화에 관여한다.",
+      "origin_ko": "위협 자극이 들어오는 쪽",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "감각시상 → 편도체 가쪽핵 (저경로)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "thal-mgn",
+            "lim-amygdala"
+          ],
+          "structure_names_ko": "안쪽무릎핵(MGN, 청각의 예), 편도체(가쪽핵)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "청각의 경우 안쪽무릎핵 등 감각시상핵에서 나온 축삭이 시상-편도체 직접경로(이른바 '저경로')를 거쳐 편도체 가쪽핵에 끝난다. 위협을 빠르게 처리하는 경로로 알려져 있다.",
+          "missing_ko": "시상-편도체 직접경로(저경로, 참고); 기타 감각시상핵(참고)",
+          "sources": "Cinca-Tomás 2026 iScience (A); Nieuwenhuys 2008 Springer (A); Sah 2003 Physiological Reviews (A)"
+        },
+        {
+          "order": 2,
+          "title_ko": "감각연합겉질 → 편도체 가쪽·바닥가쪽핵 (고경로)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "lim-amygdala"
+          ],
+          "structure_names_ko": "편도체(가쪽핵·바닥가쪽핵)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "감각연합겉질(예: 일차청각겉질 앞쪽의 청각연합겉질)에서 나온 신경세포가 겉질-편도체경로(이른바 '고경로')를 거쳐 편도체 가쪽핵·바닥가쪽핵에 끝난다. 대부분 같은쪽으로 가며 바깥섬유막을 지나 편도체로 들어간다.",
+          "missing_ko": "감각연합겉질·일차감각겉질(참고); 시상겉질경로·겉질-편도체경로('고경로', 참고)",
+          "sources": "Cinca-Tomás 2026 iScience (A); Nieuwenhuys 2008 Springer (A); Sah 2003 Physiological Reviews (A)"
+        },
+        {
+          "order": 3,
+          "title_ko": "가쪽핵 → 바닥가쪽핵",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "lim-amygdala"
+          ],
+          "structure_names_ko": "편도체(가쪽핵 → 바닥가쪽핵)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "글루탐산(흥분성), GABA성 사이신경세포 중계",
+          "description_ko": "가쪽핵이 바닥핵·부바닥핵·겉질핵·안쪽핵으로 투사하며, 흥분성 글루탐산성 경로를 거쳐 억제성 GABA성 사이신경세포의 중계를 받는다. 이 경로의 시냅스가소성은 공포조건화의 획득·저장 기전으로 제안된다.",
+          "missing_ko": "사이신경세포(intercalated cells, 참고)",
+          "sources": "Sah 2003 Physiological Reviews (A); Nieuwenhuys 2008 Springer (A); Janak 2015 Nature (A)"
+        },
+        {
+          "order": 4,
+          "title_ko": "바닥가쪽핵 → 중심핵",
+          "neuronOrder": 3,
+          "structure_ids": [
+            "lim-amygdala"
+          ],
+          "structure_names_ko": "편도체(바닥핵 → 중심핵)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "글루탐산",
+          "description_ko": "바닥핵이 부바닥핵·중심핵(특히 안쪽부분)·안쪽핵으로 투사한다. 중심핵은 편도체의 주요 출력경로로 알려져 있다.",
+          "missing_ko": "",
+          "sources": "Sah 2003 Physiological Reviews (A); Nieuwenhuys 2008 Springer (A); Janak 2015 Nature (A)"
+        },
+        {
+          "order": 5,
+          "title_ko": "중심핵 → 시상하부·뇌줄기(자율신경·몸신경 효과기)",
+          "neuronOrder": 4,
+          "structure_ids": [
+            "lim-amygdala",
+            "bs-pag"
+          ],
+          "structure_names_ko": "편도체(중심핵), 수도관주위회색질(PAG)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "GABA",
+          "description_ko": "중심핵의 GABA성 신경세포에서 나온 축삭이 배쪽편도체이탈경로를 거쳐 가쪽시상하부와 뇌줄기 뒤판(흑색질 조밀부, 배쪽덮개영역, 쐐기핵, 수도관주위회색질 등)으로 내려가며, 일부는 목척수까지 이른다. 중심핵 활성화는 이들 시상하부·뇌줄기 중추를 자극해 자율신경·몸신경성 공포반응을 일으킨다.",
+          "missing_ko": "시상하부(참고); 흑색질 조밀부·배쪽덮개영역·쐐기핵 등 기타 뇌줄기 표적(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Sah 2003 Physiological Reviews (A); Janak 2015 Nature (A)"
+        },
+        {
+          "order": 6,
+          "title_ko": "편도체 → 분계선조(등쪽경로) → 사이막부위·시상하부",
+          "neuronOrder": 4,
+          "structure_ids": [
+            "lim-amygdala"
+          ],
+          "structure_names_ko": "편도체(중심핵·바닥가쪽핵)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "편도체에서 나온 축삭이 분계선조(등쪽편도체이탈경로)를 거쳐 사이막부위와 시상하부로 향한다(출처에 따라 시각앞구역·앞시상하부구역이 구체적 종착지로 다르게 제시됨 — 판정 시트 참고).",
+          "missing_ko": "분계선조(등쪽경로, 참고); 사이막부위(참고); 시상하부(참고)",
+          "sources": "AbuHasan 2023 StatPearls (B); Nieuwenhuys 2008 Springer (A)"
+        },
+        {
+          "order": 7,
+          "title_ko": "편도체 → 배쪽편도체이탈경로 → 사이막부위·시상하부·등쪽안쪽핵",
+          "neuronOrder": 4,
+          "structure_ids": [
+            "lim-amygdala",
+            "thal-md"
+          ],
+          "structure_names_ko": "편도체, 등쪽안쪽핵(MD)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "편도체에서 나온 축삭이 배쪽편도체이탈경로(느슨하게 배열된 섬유다발)를 거쳐 사이막부위·시상하부·등쪽안쪽시상핵으로 향한다.",
+          "missing_ko": "배쪽편도체이탈경로(참고); 사이막부위(참고); 시상하부(참고)",
+          "sources": "AbuHasan 2023 StatPearls (B); Nieuwenhuys 2008 Springer (A)"
+        },
+        {
+          "order": 8,
+          "title_ko": "바닥가쪽핵·중심핵 → 분계선조 침대핵(BNST) → 지속적 불안반응",
+          "neuronOrder": 5,
+          "structure_ids": [
+            "lim-amygdala"
+          ],
+          "structure_names_ko": "편도체(바닥가쪽핵·중심핵)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "바닥가쪽핵·중심핵에서 나온 축삭이 분계선조 침대핵(BNST)을 활성화하고, BNST가 다시 시상하부·뇌줄기로 투사해 지속적인 불안의 자율신경·몸신경 징후를 일으킨다(출처에 따라 중심핵 경로는 단기 공포, BNST 경로는 장기 불안을 매개한다고 구분됨 — 판정 시트 참고).",
+          "missing_ko": "분계선조 침대핵(BNST, 참고); 시상하부·뇌줄기(참고)",
+          "sources": "Sah 2003 Physiological Reviews (A); Nieuwenhuys 2008 Springer (A); Janak 2015 Nature (A)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "양쪽 편도체·양쪽 안쪽관자엽",
+          "deficit_ko": "클뤼버-부시 증후군: 과다구강행동, 과다성욕, 초변형증, 온순함, 폭식증, 시각인식불능증, 기억상실 (출처에 따라 증상 목록이 다름 — 판정 시트 참고)",
+          "side_ko": "양쪽",
+          "sources": "Sah 2003 Physiological Reviews (A); Bala 2024 Bioinformation (C)"
+        },
+        {
+          "site_ko": "양쪽 관자엽 절제(편도체 포함, 역사적 병변)",
+          "deficit_ko": "공격성·공포·방어행동 감소; 편도체가 감정처리에 관여함을 보여준 최초의 병변 증거",
+          "side_ko": "양쪽",
+          "sources": "Janak 2015 Nature (A)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "편도체의 등쪽(분계선조) 출력경로가 '사이막부위'에서 끝나는지, 시각앞핵·시상하부핵과 분계선조 침대핵에서 구체적으로 끝나는지",
+          "positions": [
+            {
+              "source": "원래 배치(StatPearls 유래)",
+              "grade": "?",
+              "summary_ko": "등쪽 분계선조경로가 사이막부위와 시상하부로 투사한다고 기술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer",
+              "grade": "A",
+              "summary_ko": "교련앞섬유는 안쪽시각앞구역·앞시상하부구역에서 끝나고, 전체 출력체계는 '사이막-시각앞-시상하부 연속체'로 기술되며 사이막 자체가 독립된 표적으로 강조되지 않음"
+            }
+          ]
+        },
+        {
+          "issue_ko": "양쪽 관자엽·편도체 병변(클뤼버-부시형)의 증상 목록",
+          "positions": [
+            {
+              "source": "Bala 2024 Bioinformation",
+              "grade": "C",
+              "summary_ko": "과다구강행동, 과다성욕, 초변형증, 온순함, 폭식증, 시각인식불능증, 기억상실을 병리 특징으로 제시"
+            },
+            {
+              "source": "Sah 2003 Physiological Reviews",
+              "grade": "A",
+              "summary_ko": "고전적 원숭이 병변 문헌은 분노·공포의 소실, 탐색 증가, 시각인식불능증, 과다구강행동·과다성욕, 사회적 상호작용 소실을 제시하며 폭식증·온순함·초변형증·기억상실은 언급하지 않음"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dopamine-reward-pathways",
+      "name_ko": "도파민 보상경로 (중간둘레·중간겉질경로; 대조: 흑색질줄무늬체경로·결절누두로)",
+      "name_en": "Mesolimbic and mesocortical dopamine (reward) pathways, with nigrostriatal and tuberoinfundibular pathways for contrast",
+      "category_ko": "확산조절계통 / 둘레-운동-내분비",
+      "summary_ko": "보상과 동기·유인가(중간둘레·중간겉질경로), 운동조절(흑색질줄무늬체경로), 프로락틴 조절(결절누두로)을 담당하는 도파민 경로들.",
+      "origin_ko": "표시할 반구",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "배쪽덮개영역 → 배쪽줄무늬체(중간둘레경로)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "도파민",
+          "description_ko": "배쪽덮개영역(VTA)의 도파민성 신경세포가 안쪽앞뇌다발을 거쳐 배쪽줄무늬체(중격핵)에 끝난다. 중격핵은 배쪽덮개영역에서 강한 도파민성 입력을 받는 것으로 알려져 있다.",
+          "missing_ko": "배쪽덮개영역(VTA, 참고); 안쪽앞뇌다발(MFB, 참고); 배쪽줄무늬체·중격핵(참고)",
+          "sources": "Kamali 2023 Brain Topography (A); Nieuwenhuys 2008 Springer (A); Haber 2010 Neuropsychopharmacology (A)"
+        },
+        {
+          "order": 2,
+          "title_ko": "배쪽덮개영역 → 전전두엽겉질(중간겉질경로)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "도파민",
+          "description_ko": "배쪽덮개영역의 도파민성 신경세포가 중간겉질경로를 거쳐 전전두엽겉질로 투사한다. 이 경로는 주로 실행기능에 관여하지만 보상처리에도 기여한다.",
+          "missing_ko": "배쪽덮개영역(VTA, 참고); 안쪽앞뇌다발·중간겉질경로(참고); 전전두엽겉질(참고)",
+          "sources": "Nummenmaa 2022 NCBI Bookshelf (B); Nieuwenhuys 2008 Springer (A)"
+        },
+        {
+          "order": 3,
+          "title_ko": "흑색질 조밀부 → 등쪽줄무늬체(흑색질줄무늬체경로)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bg-sn",
+            "bg-caudate",
+            "bg-putamen"
+          ],
+          "structure_names_ko": "흑색질, 꼬리핵, 조가비핵",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "도파민",
+          "description_ko": "흑색질 조밀부의 도파민성 신경세포가 흑색질줄무늬체경로를 거쳐 등쪽줄무늬체(꼬리핵·조가비핵)에 끝난다. 이 경로는 운동조절에 관여한다.",
+          "missing_ko": "흑색질줄무늬체경로(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Haber 2010 Neuropsychopharmacology (A); Nummenmaa 2022 NCBI Bookshelf (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "시상하부(결절누두) → 앞뇌하수체(결절누두로)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "정중",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "도파민",
+          "description_ko": "시상하부(결절누두·활꼴핵)의 도파민성 신경세포가 결절누두로를 거쳐 정중융기·뇌하수체문맥계로 나가 앞뇌하수체의 프로락틴분비세포(락토트로프)에 이른다.",
+          "missing_ko": "시상하부활꼴핵(참고); 결절누두로·정중융기·뇌하수체문맥계(참고); 앞뇌하수체 프로락틴분비세포(참고)",
+          "sources": "Nummenmaa 2022 NCBI Bookshelf (B)"
+        }
+      ],
+      "lesions": [],
+      "conflicts": []
+    },
+    {
+      "id": "ascending-arousal-system-flip-flop",
+      "name_ko": "상행각성계와 수면-각성 플립플롭 스위치",
+      "name_en": "Ascending arousal system and the sleep-wake flip-flop switch",
+      "category_ko": "확산조절계통 / 각성",
+      "summary_ko": "겉질각성과 각성상태 유지를 담당하는 상행각성계, 그리고 각성계와 수면유도계 사이의 상호억제로 수면-각성을 전환하는 '플립플롭 스위치'.",
+      "origin_ko": "표시할 반구",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "다리뇌덮개핵(PPT)·가쪽등쪽덮개핵(LDT) → 시상(콜린성 경로)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "아세틸콜린",
+          "description_ko": "중간뇌 꼬리쪽과 다리뇌 머리쪽에 걸친 다리뇌덮개핵(PPT)과 가쪽등쪽덮개핵(LDT)의 콜린성 신경세포가 상행그물활성계의 콜린성 경로를 거쳐 시상(과 겉질)으로 투사하며, 겉질의 비동기화를 촉진한다.",
+          "missing_ko": "다리뇌덮개핵(PPT)·가쪽등쪽덮개핵(LDT, 참고); 시상(비특이적, 참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Saper 2010 Neuron (A); Arguinchona 2023 StatPearls (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "청색반점 → 겉질·시상·시상하부·바닥앞뇌(노르아드레날린성 경로)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-lc-aan"
+          ],
+          "structure_names_ko": "청색반점(Harvard AAN)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "노르에피네프린",
+          "description_ko": "다리뇌 위가쪽에 있는 청색반점의 노르아드레날린성 신경세포가 가쪽시상하부의 오렉신에 의해 직접 활성화되며, 겉질·시상·시상하부·바닥앞뇌로 널리 투사해 노르에피네프린을 분비한다.",
+          "missing_ko": "겉질·시상·시상하부·바닥앞뇌(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Saper 2010 Neuron (A); Arguinchona 2023 StatPearls (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "등쪽·정중솔기핵 → 앞뇌·겉질·바닥앞뇌(세로토닌성 경로)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-dorsal-raphe-aan"
+          ],
+          "structure_names_ko": "등쪽솔기핵(Harvard AAN)",
+          "side": "양쪽 (정중핵)",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "세로토닌",
+          "description_ko": "뇌줄기 정중선을 따라 다리뇌·중간뇌·숨뇌에 있는 솔기핵(주로 등쪽솔기핵과 중심위핵)의 세로토닌성 신경세포가 앞뇌·겉질·바닥앞뇌로 상행투사한다.",
+          "missing_ko": "정중솔기핵(참고); 앞뇌·겉질·바닥앞뇌(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Saper 2010 Neuron (A); Arguinchona 2023 StatPearls (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "결절유두핵 → 겉질·앞뇌(히스타민성 경로)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "히스타민",
+          "description_ko": "뒤쪽시상하부의 결절유두핵에 모인 히스타민성 신경세포가 겉질과 앞뇌로 상행투사해 각성을 촉진한다. 이 신경세포들은 히스타민 외에 GABA·갈라닌·물질P도 함께 지닌다.",
+          "missing_ko": "결절유두핵(TMN, 참고); 겉질·앞뇌(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Wang 2026 Frontiers in Neuroscience (A); Saper 2010 Neuron (A)"
+        },
+        {
+          "order": 5,
+          "title_ko": "가쪽시상하부 오렉신신경세포 → 청색반점·결절유두핵·솔기핵·바닥앞뇌·겉질",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-lc-aan",
+            "bs-dorsal-raphe-aan"
+          ],
+          "structure_names_ko": "청색반점(Harvard AAN), 등쪽솔기핵(Harvard AAN)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "오렉신(하이포크레틴)",
+          "description_ko": "가쪽시상하부 중간부위에 흩어진 오렉신(하이포크레틴) 신경세포가 널리 상행·하행투사하며, 특히 청색반점과 결절유두핵에 강하게 입력하고 솔기핵·바닥앞뇌·온 겉질로도 축삭을 보낸다.",
+          "missing_ko": "가쪽시상하부(참고); 결절유두핵(TMN, 참고); 바닥앞뇌·겉질(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Saper 2010 Neuron (A); Arguinchona 2023 StatPearls (B)"
+        },
+        {
+          "order": 6,
+          "title_ko": "배쪽가쪽시각앞핵(VLPO) → 각성계(상호억제, 플립플롭)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-lc-aan",
+            "bs-dorsal-raphe-aan",
+            "bs-pag"
+          ],
+          "structure_names_ko": "청색반점(Harvard AAN), 등쪽솔기핵(Harvard AAN), 수도관주위회색질(PAG)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "GABA와 갈라닌",
+          "description_ko": "시각앞구역의 배쪽가쪽시각앞핵(VLPO)에 있는 GABA·갈라닌 함유 신경세포(및 갈라닌이 없는 GABA성 신경세포)가 결절유두핵·청색반점·솔기핵·바닥앞뇌·수도관주위회색질 배쪽가쪽부·다리뇌덮개핵(PPT/LDT) 등 각성계 여러 구성요소로 하행·상행 억제성 투사를 보낸다. 수면-각성 조절은 고전적으로 이 시각앞 수면유도신경세포와 각성계 사이의 상호억제로 이루어지는 '플립플롭 스위치' 모형으로 설명된다.",
+          "missing_ko": "배쪽가쪽시각앞핵(VLPO, 참고); 결절유두핵(TMN, 참고); 바닥앞뇌·다리뇌덮개핵(PPT)·가쪽등쪽덮개핵(LDT, 참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Saper 2010 Neuron (A); Wang 2026 Frontiers in Neuroscience (A)"
+        },
+        {
+          "order": 7,
+          "title_ko": "수도관주위회색질 배쪽가쪽부(vlPAG) → 다리뇌 콜린성 REM유발회로(REM-off)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-pag"
+          ],
+          "structure_names_ko": "수도관주위회색질(PAG, 배쪽가쪽부)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "GABA(vlPAG 출력); 근거자료상 vlPAG에 도파민성 신경세포도 존재",
+          "description_ko": "수도관주위회색질 배쪽가쪽부(vlPAG)와 인접한 가쪽다리뇌덮개의 GABA성 REM-off 신경세포가 다리뇌 콜린성 REM 유발 회로(PPT/LDT)를 억제한다. 이 억제가 풀리면 다리뇌 콜린성 회로가 풀려나 REM수면이 나타난다(출처에 따라 vlPAG/LPT의 직접 표적이 LDT/PPT인지, 상호억제의 핵심을 이루는 아래가쪽다리뇌덮개(SLD)인지 다르게 기술됨 — 판정 시트 참고).",
+          "missing_ko": "다리뇌덮개핵(PPT)·가쪽등쪽덮개핵(LDT, 참고); 아래가쪽다리뇌덮개(SLD, 참고)",
+          "sources": "Wang 2026 Frontiers in Neuroscience (A); Nieuwenhuys 2008 Springer (A); Saper 2010 Neuron (A)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "양쪽 정중곁 중간뇌·다리뇌덮개 및 상행그물활성계",
+          "deficit_ko": "혼수: 자발적으로 눈을 감은 채 강한 자극에도 반응하지 않는 지속적 무반응 상태",
+          "side_ko": "양쪽",
+          "sources": "Benghanem 2020 Critical Care (A)"
+        },
+        {
+          "site_ko": "바닥앞뇌(큰 병변)",
+          "deficit_ko": "뇌파 서파화 및 혼수",
+          "side_ko": "양쪽",
+          "sources": "Scammell 2017 Neuron (A)"
+        },
+        {
+          "site_ko": "팔곁핵(parabrachial nucleus)",
+          "deficit_ko": "혼수 또는 지속적 식물상태",
+          "side_ko": "양쪽",
+          "sources": "Scammell 2017 Neuron (A)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "REM수면 시기 외에 다리뇌 콜린성(LDT/PPT) REM유발계를 지속적으로 억제하는 GABA성 핵의 정체",
+          "positions": [
+            {
+              "source": "Saper 2010 Neuron",
+              "grade": "A",
+              "summary_ko": "수도관주위회색질 배쪽가쪽부와 인접 가쪽다리뇌덮개(vlPAG/LPT)의 GABA성 신경세포가 non-REM 동안 발화해 REM 진입을 억제한다고 봄"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer",
+              "grade": "A",
+              "summary_ko": "대신 청색반점과 등쪽·중심위 솔기핵 자체가 긴장성으로 활동하며 콜린성계를 억제하고, REM 시작은 '국소 GABA성 요소'가 이 아민성 세포를 억제해 일어난다고 기술하며 vlPAG를 GABA성 REM-off핵으로 명명하지 않음"
+            }
+          ]
+        },
+        {
+          "issue_ko": "vlPAG·가쪽다리뇌덮개 GABA성 REM-off 신경세포의 하행 표적이 LDT/PPT 콜린성핵인지, 아래가쪽다리뇌덮개(SLD)인지",
+          "positions": [
+            {
+              "source": "Saper 2010 Neuron",
+              "grade": "A",
+              "summary_ko": "vlPAG/LPT의 GABA성 REM-off 신경세포는 아래가쪽다리뇌덮개(SLD)에 투사해 vlPAG/LPT와 상호억제하는 핵심 REM스위치를 이루며, 기존 단계에 적힌 LDT/PPT 콜린성핵에 직접 투사하는 것이 아니다"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hypothalamo-pituitary-axes",
+      "name_ko": "시상하부-뇌하수체 축 (거대세포 신경뇌하수체계 및 소세포 샘뇌하수체계/HPA축)",
+      "name_en": "Hypothalamo-pituitary axes (magnocellular neurohypophyseal and parvocellular adenohypophyseal / HPA axis)",
+      "category_ko": "신경내분비",
+      "summary_ko": "물균형·젖분비·자궁수축(뇌하수체 뒤엽)과 앞뇌하수체 호르몬 분비(스트레스/HPA축 포함)를 조절하는 시상하부-뇌하수체 신경내분비 경로.",
+      "origin_ko": "표시할 반구",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "시각교차위핵·실방핵(거대세포부) → 뇌하수체 뒤엽",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "옥시토신과 아르기닌바소프레신(항이뇨호르몬)",
+          "description_ko": "시각교차위핵(SON)과 실방핵(PVN)의 거대세포신경분비세포가 옥시토신과 항이뇨호르몬(바소프레신)을 만들어, 축삭을 깔때기줄기를 통해 뇌하수체 뒤엽(신경뇌하수체)까지 내려보낸 뒤 모세혈관으로 분비한다.",
+          "missing_ko": "시각교차위핵 및 실방핵(거대세포부, 참고); 시상하부-뇌하수체로(참고); 뇌하수체 뒤엽(참고)",
+          "sources": "Zhou 2026 Frontiers in Systems Neuroscience (A); Nieuwenhuys 2008 Springer (A); Bear 2022 StatPearls (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "실방핵(소세포부) → 앞뇌하수체 코르티코트로프",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "정중/양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "코르티코트로핀분비호르몬(CRH), 갑상샘자극호르몬분비호르몬, 생식샘자극호르몬분비호르몬",
+          "description_ko": "실방핵의 소세포신경분비세포가 코르티코트로핀분비호르몬(CRH)·갑상샘자극호르몬분비호르몬·생식샘자극호르몬분비호르몬 등을 만들어 정중융기로 투사하고, 뇌하수체문맥계로 분비해 뇌하수체 앞엽 코르티코트로프에 전달한다.",
+          "missing_ko": "실방핵(소세포부, 참고); 결절누두로·정중융기·뇌하수체문맥계(참고); 뇌하수체 앞엽 코르티코트로프(참고)",
+          "sources": "Zhou 2026 Frontiers in Systems Neuroscience (A); Nieuwenhuys 2008 Springer (A); Herman 2016 Comprehensive Physiology (A)"
+        },
+        {
+          "order": 3,
+          "title_ko": "앞뇌하수체 코르티코트로프 → 부신겉질",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "부신겉질자극호르몬(ACTH)",
+          "description_ko": "실방핵의 CRH가 문맥순환을 거쳐 뇌하수체 앞엽에 이르러 코르티코트로프에서 부신겉질자극호르몬(ACTH) 분비를 자극하고, ACTH는 온몸순환을 거쳐 부신겉질에 작용한다.",
+          "missing_ko": "뇌하수체 앞엽 코르티코트로프(참고); 부신겉질(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Herman 2016 Comprehensive Physiology (A); Kaur 2025 StatPearls (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "부신겉질 → 시상하부·앞뇌하수체(음성되먹임) 및 말초조직",
+          "neuronOrder": 3,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "코르티솔(글루코코르티코이드)",
+          "description_ko": "부신겉질(다발층 등)의 내분비세포가 코르티솔을 분비해 온몸순환으로 내보낸다. 코르티솔은 시상하부와 뇌하수체 앞엽에 음성되먹임을 걸어 CRH·ACTH 분비를 억제하고, 말초 표적조직에도 작용한다(어느 부신겉질 구역이 ACTH의 표적인지는 출처에 따라 다발층/그물층으로 다르게 기술됨 — 판정 시트 참고).",
+          "missing_ko": "부신겉질(다발층, 참고)",
+          "sources": "Herman 2016 Comprehensive Physiology (A); Nieuwenhuys 2008 Springer (A); Kaur 2025 StatPearls (B)"
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue_ko": "ACTH가 코르티솔 생성을 자극하는 부신겉질 구역이 다발층인지 그물층인지",
+          "positions": [
+            {
+              "source": "Kaur 2025 StatPearls",
+              "grade": "B",
+              "summary_ko": "ACTH가 부신겉질 다발층을 자극해 주요 글루코코르티코이드인 코르티솔을 만든다고 기술"
+            },
+            {
+              "source": "Bear 2022 StatPearls",
+              "grade": "B",
+              "summary_ko": "ACTH가 부신겉질(그물층)을 자극해 스트레스호르몬 코르티솔을 만든다고 기술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer",
+              "grade": "A",
+              "summary_ko": "특정 구역을 지목하지 않고 '부신겉질(AC)의 요소들'이 글루코코르티코이드(코르티코스테론·코르티솔)를 만든다고만 기술"
+            },
+            {
+              "source": "Herman 2016 Comprehensive Physiology",
+              "grade": "A",
+              "summary_ko": "ACTH가 멜라노코르틴2수용체(MC2R)를 통해 구체적으로 다발층에 작용해 글루코코르티코이드 합성을 이끈다고 기술하며 그물층은 언급하지 않아, 다발층 쪽을 지지"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "central-autonomic-control-micturition",
+      "name_ko": "중추자율신경조절과 배뇨조절 (시상하부척수로, 다리뇌배뇨중추, Onuf핵)",
+      "name_en": "Central autonomic control and micturition (hypothalamospinal, pontine micturition centre, Onuf's nucleus)",
+      "category_ko": "자율신경계통",
+      "summary_ko": "시상하부의 척수하행 자율신경조절과, 다리뇌배뇨중추·Onuf핵을 통한 방광 저장·배뇨의 조정.",
+      "origin_ko": "표시할 반구",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "시상하부 → 중간외측세포기둥(Budge의 섬모척수중추, C8-T2)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "실방핵을 '자율신경계의 총사령관'이라 부를 만큼, 실방핵·등쪽안쪽핵·가쪽시상하부구역의 신경세포가 하행 시상하부척수로를 거쳐 교차 없이 중간뇌·다리뇌를 지나 C8-T2 중간외측세포기둥(Budge의 섬모척수중추)에 끝난다. 실방핵은 미주신경등쪽운동핵·의문핵·가슴(교감)·엉치(부교감) 전신경절세포기둥에도 직접 투사한다.",
+          "missing_ko": "시상하부(실방핵·등쪽안쪽핵·가쪽시상하부구역, 참고); 시상하부척수로(참고); 중간외측세포기둥(Budge 섬모척수중추, C8-T2, 참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Khan 2023 StatPearls (B); Fowler 2008 Nature Reviews Neuroscience (A)"
+        },
+        {
+          "order": 2,
+          "title_ko": "방광벽 신장수용기(들신경) → 수도관주위회색질(중계)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-pag"
+          ],
+          "structure_names_ko": "수도관주위회색질(PAG)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "방광이 늘어나면 방광벽 신장수용기가 골반신경 들신경을 거쳐 엉치척수로 신호를 보내고, 엉치척수 등쪽뿔(제1층)의 신경세포가 척수그물로·척수시상로를 거쳐 수도관주위회색질로 올라가 고리를 형성한다.",
+          "missing_ko": "방광벽 신장수용기(참고); 골반신경·엉치척수(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Fowler 2008 Nature Reviews Neuroscience (A); Rahman 2023 StatPearls (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "수도관주위회색질(중계) → 다리뇌배뇨중추",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "bs-pag"
+          ],
+          "structure_names_ko": "수도관주위회색질(PAG)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "수도관주위회색질은 방광에서 다리뇌배뇨중추(Barrington핵)로 가는 들신호의 중계소 역할만 하며, PAG와 엉치척수 운동신경세포 사이에 직접 연결은 없다.",
+          "missing_ko": "다리뇌배뇨중추(Barrington핵, 참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Rahman 2023 StatPearls (B); Fowler 2008 Nature Reviews Neuroscience (A)"
+        },
+        {
+          "order": 4,
+          "title_ko": "다리뇌배뇨중추(Barrington핵) → 엉치 부교감 전신경절신경세포(S2-S4)",
+          "neuronOrder": 3,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "아세틸콜린(부교감 전신경절)",
+          "description_ko": "다리뇌등쪽가쪽덮개에 있는 다리뇌배뇨중추(Barrington핵, Holstege의 M구역)가 그물척수로를 거쳐 양쪽 엉치 중간외측핵과 맞교차핵(Onuf핵을 억제하는 사이신경세포가 있는 곳)으로 투사한다. 이 핵의 자극은 부교감신경세포를 활성화해 배뇨근을 수축시키고, 동시에 바깥요도조임근을 닫아두는 몸신경을 간접적으로 억제한다.",
+          "missing_ko": "다리뇌배뇨중추(Barrington핵, 참고); 엉치 부교감 전신경절신경세포(S2-S4, 참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Fowler 2008 Nature Reviews Neuroscience (A); Rahman 2023 StatPearls (B)"
+        },
+        {
+          "order": 5,
+          "title_ko": "다리뇌배뇨중추(억제경로) → Onuf핵 → 바깥요도조임근",
+          "neuronOrder": 4,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "아세틸콜린(음부신경, 배뇨 중에는 억제됨)",
+          "description_ko": "맞교차핵의 억제성 사이신경세포가 엉치앞뿔의 Onuf핵 운동신경세포에 작용해 바깥요도조임근을 이완시킨다. Onuf핵은 음부신경을 통해 바깥요도조임근을 아세틸콜린성으로 지배하며, 시상하부와 가쪽다리뇌그물형성 등에서 위신경축 들신경도 받는다.",
+          "missing_ko": "다리뇌배뇨중추(Barrington핵, 참고); Onuf핵(엉치 앞뿔, 참고); 음부신경(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Rahman 2023 StatPearls (B); Lanzotti 2023 StatPearls (B)"
+        }
+      ],
+      "lesions": [],
+      "conflicts": []
+    },
+    {
+      "id": "circadian-retinohypothalamic-scn-pineal",
+      "name_ko": "일주기 경로: 망막시상하부로 → 시각교차위핵 → 솔방울샘 멜라토닌",
+      "name_en": "Circadian pathway: ipRGC to SCN to pineal melatonin",
+      "category_ko": "신경내분비 / 자율신경계통",
+      "summary_ko": "빛에 의한 광동조부터 시각교차위핵(중심시계)을 거쳐 솔방울샘 멜라토닌 분비를 조절하는 일주기 경로.",
+      "origin_ko": "표시할 반구",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "내인성감광망막절신경세포(ipRGC) → 시각교차위핵(SCN)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "망막시상하부로의 상당 부분이 시각교차에서 교차해 양쪽 시각교차위핵에 모두 분포한다",
+          "neurotransmitter_ko": "",
+          "description_ko": "멜라놉신을 지닌 내인성감광망막절신경세포가 망막시상하부로를 거쳐 시각교차위핵에 직접 끝나, SCN 신경세포를 바깥의 명암주기에 동조시킨다. 사람에서도 이 로는 SCN의 배쪽부분에 끝난다.",
+          "missing_ko": "내인성감광망막절신경세포(ipRGC, 참고); 망막시상하부로(참고); 시각교차위핵(SCN, 참고)",
+          "sources": "Soehner 2026 NPP (A); Ilahi 2023 StatPearls (B); Nieuwenhuys 2008 Springer (A)"
+        },
+        {
+          "order": 2,
+          "title_ko": "시각교차위핵(SCN) → 실방핵(PVN)",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "시각교차위핵이 실방핵 배쪽앞부분에 직접투사하며, 시각교차위곁구역(SPZ)과 등쪽안쪽시상하부핵(DMH)을 통한 간접투사로 보강된다.",
+          "missing_ko": "시각교차위핵(SCN, 참고); 실방핵·시각교차위곁구역·등쪽안쪽시상하부핵(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Ilahi 2023 StatPearls (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "실방핵 → 위등척수 중간외측세포기둥",
+          "neuronOrder": 3,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "실방핵과 등쪽안쪽시상하부핵의 긴 하행축삭이 뇌줄기와 척수의 자율신경중추로 내려가 위등척수 중간외측세포기둥에 끝난다. 솔방울샘으로 가는 투사는 척수 중간외측세포기둥 앞부분의 교감신경절이전신경세포를 포함한다.",
+          "missing_ko": "실방핵·등쪽안쪽시상하부핵(참고); 시상하부척수섬유(참고); 중간외측세포기둥(위등척수, 참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Khan 2023 StatPearls (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "중간외측세포기둥(전신경절) → 위목교감신경절(SCG)",
+          "neuronOrder": 4,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "아세틸콜린(전신경절)",
+          "description_ko": "제2등급(전신경절) 신경세포가 T1 수준에서 척수를 나와 목교감신경줄기로 들어가 위로 올라가 C3-C4 높이의 위목교감신경절에서 시냅스한다.",
+          "missing_ko": "중간외측세포기둥(참고); 목교감신경줄기(참고); 위목교감신경절(SCG, 참고)",
+          "sources": "Khan 2023 StatPearls (B); Nieuwenhuys 2008 Springer (A)"
+        },
+        {
+          "order": 5,
+          "title_ko": "위목교감신경절(신경절이후) → 솔방울샘",
+          "neuronOrder": 5,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "노르에피네프린(신경절이후)",
+          "description_ko": "위목교감신경절의 신경절이후신경세포가 솔방울신경을 거쳐 솔방울샘 솔방울세포에 끝나며, 시각교차위핵이 이 경로를 통해 솔방울샘의 멜라토닌 분비를 조절한다.",
+          "missing_ko": "위목교감신경절(참고); 솔방울신경(nervi conarii, 참고); 솔방울샘(참고)",
+          "sources": "Nieuwenhuys 2008 Springer (A); Ilahi 2023 StatPearls (B); Khan 2023 StatPearls (B)"
+        }
+      ],
+      "lesions": [],
+      "conflicts": []
+    }
+  ]
+}

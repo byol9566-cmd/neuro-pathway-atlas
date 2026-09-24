@@ -1,0 +1,1685 @@
+{
+  "pathways": [
+    {
+      "id": "pupillary-light-reflex",
+      "name_ko": "동공빛반사",
+      "name_en": "Pupillary light reflex",
+      "category_ko": "뇌신경/뇌줄기 반사",
+      "summary_ko": "빛을 비추면 망막에서 시작된 신호가 시신경·시각로를 거쳐 덮개앞핵에 이르고, 양쪽 에딩거-웨스트팔핵과 섬모체신경절을 통해 양쪽 동공을 수축시키는 반사. 직접빛반사(같은쪽)와 공감빛반사(반대쪽)가 함께 일어나며, 임상적으로 시신경(구심로)과 눈돌림신경(원심로) 병변을 구별하는 데 쓰인다.",
+      "origin_ko": "빛을 비춘 눈",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "망막신경절세포 → 덮개앞핵",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "tr-optic-tract"
+          ],
+          "structure_names_ko": "시각로",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "시신경교차 (코쪽 망막 섬유만 교차)",
+          "neurotransmitter_ko": "",
+          "description_ko": "망막신경절세포(1차 뉴런)의 축삭이 시신경(II)·시신경교차·시각로를 거쳐 덮개앞핵에 닿는다. 시신경교차에서 코쪽 망막 섬유만 반대쪽으로 교차하고 관자쪽 섬유는 같은쪽에 남아, 결과적으로 양쪽 덮개앞핵에 신호가 전달된다.",
+          "missing_ko": "망막신경절세포·시신경·시신경교차·덮개앞핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Akova 2025 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "덮개앞핵 → 에딩거-웨스트팔핵",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "뒤맞교차",
+          "neurotransmitter_ko": "",
+          "description_ko": "덮개앞핵(2차 뉴런)의 축삭이 뒤맞교차를 지나 양쪽 에딩거-웨스트팔핵에 시냅스한다. 같은쪽으로 가는 섬유는 직접빛반사, 반대쪽으로 교차하는 섬유는 공감빛반사를 담당한다.",
+          "missing_ko": "덮개앞핵·뒤맞교차·에딩거-웨스트팔핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); McDougal 2015 Comprehensive Physiology (A); Feroze 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "에딩거-웨스트팔핵 → 섬모체신경절",
+          "neuronOrder": 3,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "에딩거-웨스트팔핵(3차, 전신경절 부교감신경세포)의 축삭이 눈돌림신경(III), 특히 그 아래분지를 통해 주행하여 섬모체신경절에서 절후신경세포와 시냅스한다. 각 에딩거-웨스트팔핵은 같은쪽 눈의 동공을 조절한다.",
+          "missing_ko": "에딩거-웨스트팔핵·눈돌림신경·섬모체신경절은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); McDougal 2015 Comprehensive Physiology (A); Akova 2025 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "섬모체신경절 → 동공조임근",
+          "neuronOrder": 4,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "섬모체신경절의 절후 부교감신경세포(4차)에서 나온 축삭이 짧은섬모체신경을 통해 동공조임근에 도달하여 동공을 수축시킨다.",
+          "missing_ko": "섬모체신경절·짧은섬모체신경·동공조임근은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); McDougal 2015 Comprehensive Physiology (A); Simakurthy 2026 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "시신경 (구심로, 한쪽)",
+          "deficit_ko": "상대성 구심동공반응장애(RAPD, 마르쿠스 건 동공): 손상된 눈에 빛을 비추면 반대쪽 눈에 비출 때보다 동공 수축이 약하거나 역설적으로 확대된다 — 손상된 눈의 구심 신호가 약하기 때문",
+          "side_ko": "같은쪽 (병측 시신경 쪽에 구심성 결손)",
+          "sources": "Simakurthy 2026 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "덮개앞올리브핵 또는 위둔덕팔 (한쪽)",
+          "deficit_ko": "시각 소실 없이도 나타나는 덮개(tectal) 편측 RAPD — 동공 섬유가 시각처리영역 이전에 분지하기 때문",
+          "side_ko": "반대쪽",
+          "sources": "Simakurthy 2026 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "중간뇌수도관 인근 등쪽 중간뇌 병변(신경매독) — 에딩거-웨스트팔핵으로 가는 등쪽 빛반사섬유는 손상되고 배쪽 근거리반사섬유는 보존",
+          "deficit_ko": "아가일 로버트슨 동공: 작고 불규칙한 양쪽 동공, 빛-근거리 해리(빛반사 소실, 근거리 조절 시 즉시 수축)",
+          "side_ko": "양쪽",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Dichter 2024 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "시신경 한쪽 완전 손상",
+          "deficit_ko": "손상된 눈에 빛을 비추면 양쪽 눈 모두 동공수축이 없음(구심로 차단) — 손상되지 않은 눈에 빛을 비추면 양쪽 모두 정상적으로 수축",
+          "side_ko": "양쪽 (원심로는 정상이나, 손상측에서 오는 구심신호가 양쪽 에딩거-웨스트팔핵 모두에 도달하지 못함)",
+          "sources": "Akova 2025 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "눈돌림신경(원심로) 한쪽 손상",
+          "deficit_ko": "손상된 눈에 빛을 비추면 온전한 구심로를 통해 양쪽 에딩거-웨스트팔핵이 모두 활성화되지만, 손상측 원심로가 차단되어 반대쪽(정상측) 동공만 수축한다",
+          "side_ko": "같은쪽 (눈돌림신경 병변측에 원심성 결손)",
+          "sources": "Akova 2025 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "덮개앞올리브핵(PON)이 양쪽 에딩거-웨스트팔핵에 동등하게 투사하는지, 아니면 주로 반대쪽으로 투사하는지",
+          "positions": [
+            {
+              "source": "brainstem-reflexes.json 기존 인용 (StatPearls)",
+              "grade": "?",
+              "summary_ko": "동공빛반사 섬유는 덮개앞핵에서 시냅스한 뒤 뒤맞교차를 통해 같은쪽·반대쪽 에딩거-웨스트팔핵 모두로 간다는 기존 서술"
+            },
+            {
+              "source": "McDougal 2015 Comprehensive Physiology",
+              "grade": "A",
+              "summary_ko": "원숭이 신경로추적 연구에서 덮개앞올리브핵은 뒤맞교차를 통해 주로 반대쪽 에딩거-웨스트팔핵으로 투사한다(양쪽에 동등하지 않음)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "horizontal-vestibulo-ocular-reflex",
+      "name_ko": "수평 안뜰눈반사 (VOR)",
+      "name_en": "Horizontal vestibulo-ocular reflex (VOR)",
+      "category_ko": "뇌신경/뇌줄기 반사 (안구운동)",
+      "summary_ko": "머리가 한쪽으로 돌 때 두 눈을 반대 방향으로 같은 속도로 돌려 시선을 고정하는 3-뉴런 반사활. 안쪽세로다발(MLF)이 두 눈의 움직임을 묶는다.",
+      "origin_ko": "머리가 도는 쪽",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "수평반고리관 → 안뜰핵(위·안쪽)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-vestibular-other",
+            "bs-vestibular-medial"
+          ],
+          "structure_names_ko": "가쪽·아래·위안뜰핵, 안쪽안뜰핵",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "머리가 도는 쪽 수평반고리관의 유모세포가 흥분하면, 안뜰신경절(Scarpa 신경절)의 두극세포(1차 뉴런)가 안뜰신경(VIII)을 통해 다리뇌-숨뇌 이음부의 안뜰핵복합체, 주로 위·안쪽안뜰핵에 시냅스한다.",
+          "missing_ko": "안뜰신경절·안뜰신경은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Cullen 2012 Trends in Neurosciences (A); Jefferies 2025 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "안쪽안뜰핵(거대세포부) → 반대쪽 갓돌림신경핵",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "bs-vestibular-medial",
+            "bs-abducens"
+          ],
+          "structure_names_ko": "안쪽안뜰핵, 갓돌림신경핵 (VI)",
+          "side": "반대쪽",
+          "decussation": true,
+          "decussation_where_ko": "다리뇌/숨뇌 정중선 — 안쪽안뜰핵(거대세포부, MVmc)의 흥분성 뉴런이 반대쪽 갓돌림신경핵으로 교차",
+          "neurotransmitter_ko": "",
+          "description_ko": "안쪽·위안뜰핵(2차 뉴런)의 흥분성 축삭이 정중선을 건너 반대쪽 갓돌림신경핵을 흥분시킨다. Nieuwenhuys는 이 교차 투사가 특히 안쪽안뜰핵의 거대세포부(MVmc)에서 나온다고 더 세분화해 기술한다.",
+          "missing_ko": "",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Cullen 2012 Trends in Neurosciences (A); Jefferies 2025 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "갓돌림신경핵사이뉴런 → 눈돌림신경핵(안쪽곧은근 아핵)",
+          "neuronOrder": 3,
+          "structure_ids": [
+            "bs-abducens",
+            "tr-mlf",
+            "bs-oculomotor"
+          ],
+          "structure_names_ko": "갓돌림신경핵 (VI), 안쪽세로다발 (MLF), 눈돌림신경핵 (III)",
+          "side": "같은쪽",
+          "decussation": true,
+          "decussation_where_ko": "반대쪽 갓돌림신경핵의 핵사이뉴런이 다리뇌 안에서 다시 정중선을 건너 안쪽세로다발(MLF)을 타고 올라감",
+          "neurotransmitter_ko": "",
+          "description_ko": "반대쪽 갓돌림신경핵의 핵사이뉴런 축삭이 다리뇌에서 다시 정중선을 건너 머리가 도는 쪽의 안쪽세로다발(MLF)을 타고 올라가 같은쪽 눈돌림신경핵의 안쪽곧은근 아핵을 흥분시킨다. 결과적으로 두 눈이 머리 회전과 반대 방향으로 함께 움직인다.",
+          "missing_ko": "",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Jefferies 2025 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "안뜰핵/카할사이핵 → 반대쪽 흥분·같은쪽 억제 (push-pull)",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "tr-mlf"
+          ],
+          "structure_names_ko": "안쪽세로다발 (MLF)",
+          "side": "반대쪽 흥분/같은쪽 억제",
+          "decussation": true,
+          "decussation_where_ko": "MLF·데이테르스 상행로·배쪽뒤판로·소뇌위팔결합 등 여러 상행 안뜰눈신경로가 뇌줄기 내에서 교차",
+          "neurotransmitter_ko": "억제성 경로는 글리신(안구 관련) 또는 GABA(제4·3신경핵 관련)",
+          "description_ko": "안뜰핵 및 카할사이핵 영역의 뉴런이 카할사이핵·배쪽뒤판로·MLF·데이테르스 상행로·소뇌위팔결합을 통해 자극된 쪽 반대의 바깥눈근육 신경핵을 흥분시키고, 동시에 같은쪽의 대항근 신경핵은 억제한다(밀당 방식). 안쪽안뜰핵(거대세포부)에서 시작하는 이 억제경로는 같은쪽 갓돌림신경핵에서 끝난다.",
+          "missing_ko": "카할사이핵·배쪽뒤판로·데이테르스 상행로·소뇌위팔결합은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Dougherty 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "안쪽세로다발 (MLF), 한쪽",
+          "deficit_ko": "핵사이눈근육마비(INO): 병변쪽 눈의 모음(내전) 장애와 반대쪽 눈의 벌림(외전) 시 눈떨림이 수평 주시/VOR에서 나타남",
+          "side_ko": "같은쪽 모음 장애, 반대쪽 눈떨림",
+          "sources": "Jefferies 2025 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "갓돌림신경핵 (신경섬유가 아닌 핵 자체)",
+          "deficit_ko": "병변쪽을 향한 양쪽 수평 주시마비 — 반대쪽 눈돌림신경핵으로 가는 핵사이섬유도 함께 손상되기 때문",
+          "side_ko": "병변쪽으로의 양쪽 주시마비",
+          "sources": "Jefferies 2025 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "양쪽 VOR 경로 (말초 안뜰기관 또는 중심 안뜰눈신경회로)",
+          "deficit_ko": "진동시(oscillopsia): 망막상이 안정되지 못해 머리를 움직일 때 시야가 흔들려 보임",
+          "side_ko": "양쪽",
+          "sources": "Somisetty 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "수평 VOR 3-뉴런활을 이끄는 안뜰핵이 정확히 어느 것인지",
+          "positions": [
+            {
+              "source": "Jefferies 2025 StatPearls [Internet], StatPearls Publishing",
+              "grade": "B",
+              "summary_ko": "위·안쪽안뜰핵이 수평반고리관 입력을 주로 받아, 반대쪽 갓돌림신경핵과 (MLF를 통해) 같은쪽 눈돌림신경핵으로 교차·비교차 투사한다"
+            },
+            {
+              "source": "Dougherty 2023 StatPearls [Internet], StatPearls Publishing",
+              "grade": "B",
+              "summary_ko": "반고리관 유래 VOR 신호는 그냥 '같은쪽 안뜰핵'에서 온다고만 기술하고, 데이테르스 상행로 등 여러 경로를 어느 안뜰기관 자극이든 구분 없이 나열"
+            }
+          ]
+        },
+        {
+          "issue_ko": "수평반고리관 신호를 갓돌림·눈돌림신경핵으로 중계하는 안뜰핵의 세부 아핵",
+          "positions": [
+            {
+              "source": "brainstem-reflexes.json 기존 인용 (StatPearls, S5/S7)",
+              "grade": "?",
+              "summary_ko": "S5는 위·안쪽안뜰핵 전반을 지목하고, S7은 그냥 '같은쪽 안뜰핵'이라고만 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "수평반고리관 섬유는 구체적으로 안쪽안뜰핵의 거대세포부(MVmc) 안 두 흥분성 뉴런군에서 끝난다고, 두 StatPearls 서술보다 더 정밀한 아핵 수준으로 지목"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "horizontal-conjugate-gaze-saccade-circuit",
+      "name_ko": "수평 공동주시(도약안구운동) 회로",
+      "name_en": "Horizontal conjugate gaze / saccade circuit",
+      "category_ko": "겉질-뇌줄기 안구운동 회로",
+      "summary_ko": "빠르고 공동된 수평 도약안구운동(saccade)을 만드는 회로로, 이마엽눈영역이 활성화된 반구 반대쪽으로 시선을 돌리며, 갓돌림·눈돌림신경핵을 MLF로 연결한다.",
+      "origin_ko": "활성화된 이마엽눈영역(FEF)이 있는 반구",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "이마엽눈영역 → 반대쪽 다리뇌곁정중그물형성(PPRF)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "반대쪽",
+          "decussation": true,
+          "decussation_where_ko": "겉질숨뇌섬유가 반대쪽 PPRF로 가는 도중 교차",
+          "neurotransmitter_ko": "",
+          "description_ko": "이마엽눈영역(겉질)에서 나온 겉질숨뇌섬유가 반대쪽 다리뇌곁정중그물형성(PPRF, 수평도약운동 담당)과 안쪽세로다발 문측사이핵(riMLF, 수직도약운동 담당)으로 투사한다. 이마엽눈영역이 PPRF와 riMLF에 각각 얼마나 강하게 입력하는지는 출처 간 쟁점이다(판정 시트 참고).",
+          "missing_ko": "이마엽눈영역·PPRF·riMLF는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Feroze 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "PPRF → 같은쪽 갓돌림신경핵",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "bs-abducens"
+          ],
+          "structure_names_ko": "갓돌림신경핵 (VI)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "다리뇌곁정중그물형성(PPRF, 수평주시중추)이 같은쪽 갓돌림신경핵을 직접 흥분시켜 같은쪽 눈의 가쪽곧은근을 수축시킨다. PPRF는 갓돌림신경핵의 문측, 다리뇌그물형성 꼬리쪽의 안쪽 부분에 있다.",
+          "missing_ko": "PPRF는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Feroze 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "갓돌림신경핵사이뉴런 → 반대쪽 눈돌림신경핵(안쪽곧은근 아핵)",
+          "neuronOrder": 3,
+          "structure_ids": [
+            "bs-abducens",
+            "tr-mlf",
+            "bs-oculomotor"
+          ],
+          "structure_names_ko": "갓돌림신경핵 (VI), 안쪽세로다발 (MLF), 눈돌림신경핵 (III)",
+          "side": "반대쪽",
+          "decussation": true,
+          "decussation_where_ko": "갓돌림신경핵 안 흥분성 핵사이뉴런이 다리뇌에서 교차한 뒤 반대쪽 MLF를 타고 올라감",
+          "neurotransmitter_ko": "",
+          "description_ko": "갓돌림신경핵 안의 흥분성 핵사이뉴런 축삭이 정중선을 건너 반대쪽 안쪽세로다발(MLF)을 타고 올라가 눈돌림신경핵의 안쪽곧은근 아핵을 흥분시킨다. 그 결과 이마엽눈영역이 향한 반대쪽으로 두 눈이 함께 움직인다(수평주시).",
+          "missing_ko": "",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Feroze 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "카할사이핵·riMLF → 눈돌림·활차신경핵 (수직주시)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-oculomotor"
+          ],
+          "structure_names_ko": "눈돌림신경핵 (III)",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "위주시 섬유는 뒤맞교차에서 교차; 아래주시 섬유는 riMLF에서 안쪽으로 향해 같은 교차점을 갖지 않음",
+          "neurotransmitter_ko": "",
+          "description_ko": "위둔덕 근처의 카할사이핵과 안쪽세로다발 문측사이핵(riMLF)이 수직·회전 주시를 담당하며, 눈돌림·활차신경핵의 운동뉴런에 짧은분출뉴런을 보낸다. Nieuwenhuys는 riMLF에서 나가는 흥분성 투사는 주로 같은쪽이고, 반대쪽으로 가는 억제성 세포군은 riMLF가 아니라 카할사이핵에 있다고 더 정밀하게 구분한다(판정 시트 참고).",
+          "missing_ko": "카할사이핵·riMLF·활차신경핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Feroze 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "안쪽세로다발(MLF), 한쪽",
+          "deficit_ko": "핵사이눈근육마비(INO): 반대쪽 갓돌림신경핵과 같은쪽 눈돌림신경핵 사이 연결이 끊겨, MLF 병변과 같은쪽 눈의 모음(내전)이 느려지거나 되지 않고 벌리는(외전) 반대쪽 눈에서 분리성 눈떨림이 나타남",
+          "side_ko": "같은쪽 모음 장애",
+          "sources": "Feroze 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "같은쪽 PPRF(수평주시중추)와 인접 MLF의 동시 병변",
+          "deficit_ko": "1.5 증후군: 반대쪽 눈의 벌림(외전)만 남고 그 외 모든 수평 눈운동이 소실",
+          "side_ko": "같은쪽 수평주시마비 + 같은쪽 핵사이눈근육마비, 반대쪽 벌림만 보존",
+          "sources": "Feroze 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "등쪽 중간뇌/덮개앞 (수직주시중추 압박, 파리노증후군)",
+          "deficit_ko": "위주시마비, 폭주-되당김 눈떨림, 동공 빛-근거리 해리(빛반사 저하, 근거리반응 보존)의 세 가지 징후; 아래주시와 안뜰눈반사는 대개 보존",
+          "side_ko": "양쪽",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Feroze 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "이마엽눈영역(겉질), 한쪽",
+          "deficit_ko": "반대쪽으로의 양안 주시마비, 눈과 머리가 병변쪽으로 편위; 대개 수일 내 자연 회복",
+          "side_ko": "반대쪽 주시마비 (눈은 병변쪽으로 편위)",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "이마엽눈영역이 수평도약운동을 주로 PPRF로의 직접투사를 통해 이끄는지",
+          "positions": [
+            {
+              "source": "brainstem-reflexes.json 기존 인용 (StatPearls)",
+              "grade": "?",
+              "summary_ko": "이마엽눈영역이 수평도약운동을 위해 반대쪽 PPRF로, 수직도약운동을 위해 riMLF로 신호를 보낸다는 기존 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "PPRF(수평도약생성기)로 가는 이마엽눈영역 입력은 약한 반면, riMLF(수직도약생성기)는 이마엽눈영역의 두 아영역과 보조눈영역 모두로부터 강하게 입력받는다"
+            }
+          ]
+        },
+        {
+          "issue_ko": "riMLF가 눈돌림·활차운동신경으로 보내는 투사의 좌우 배치",
+          "positions": [
+            {
+              "source": "brainstem-reflexes.json 기존 인용 (StatPearls)",
+              "grade": "?",
+              "summary_ko": "아래주시 경로는 riMLF에서 안쪽으로 나가고 위주시 섬유는 가쪽으로 나가 뒤맞교차에서 교차한다는 서술로, 위·아래주시 모두 양측성 구성을 암시"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "riMLF에서 눈돌림·활차운동신경핵으로 가는 흥분성 투사는 주로 같은쪽이며, 반대쪽으로 가는 억제성 세포군은 riMLF가 아니라 카할사이핵에 위치한다"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corneal-blink-reflex",
+      "name_ko": "각막(깜박임) 반사",
+      "name_en": "Corneal (blink) reflex",
+      "category_ko": "뇌신경/뇌줄기 반사",
+      "summary_ko": "각막에 기계적·유해 자극이 가해지면 양쪽 눈꺼풀이 보호적으로 닫히는 반사. 삼차신경(V1)이 구심로, 얼굴신경(VII)이 원심로를 이룬다.",
+      "origin_ko": "자극을 받은 각막(눈)",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "각막 감각 → 삼차신경절 → 삼차신경핵",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-spinal-trigeminal"
+          ],
+          "structure_names_ko": "삼차신경척수핵",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "각막의 자유신경종말·기계수용기에서 온 구심신호가 코섬모체신경의 긴섬모체가지와 삼차신경 눈신경가지(V1)를 거쳐 삼차신경절(가짜단극세포, 1차 뉴런)을 지나 뇌줄기로 들어간다. 종착 핵이 삼차신경척수핵인지 주감각핵인지는 출처마다 다르다(판정 시트 참고).",
+          "missing_ko": "각막·코섬모체신경·삼차신경절·삼차신경 주감각핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Kimura 1972 Journal of Neurology, Neurosurgery, and Psychiatry (A); Lee 2025 Frontiers in Surgery (A)"
+        },
+        {
+          "order": 2,
+          "title_ko": "삼차신경핵 사이뉴런 → 양쪽 얼굴신경핵",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "bs-spinal-trigeminal",
+            "bs-facial"
+          ],
+          "structure_names_ko": "삼차신경척수핵, 얼굴신경핵 (VII)",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "삼차신경척수핵/주감각핵의 2차 사이뉴런이 양쪽 얼굴신경핵으로 투사",
+          "neurotransmitter_ko": "",
+          "description_ko": "삼차신경척수핵과 주감각핵의 2차 사이뉴런이 양쪽 얼굴신경핵에 투사한다. 빠르고 대개 같은쪽인 초기(R1) 반응은 주감각핵과 삼차신경척수핵이 함께 중계하고, 느리고 양쪽성인 후기(R2) 반응은 다리뇌·숨뇌의 깜박임중추가 중계한다.",
+          "missing_ko": "삼차신경 주감각핵·다리뇌/숨뇌 깜박임중추는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Lee 2025 Frontiers in Surgery (A); Peterson 2026 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "얼굴신경핵 → 눈둘레근 (양쪽)",
+          "neuronOrder": 3,
+          "structure_ids": [
+            "bs-facial"
+          ],
+          "structure_names_ko": "얼굴신경핵 (VII)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "양쪽 얼굴신경핵의 운동뉴런 축삭이 얼굴신경(VII)을 통해 갓돌림신경핵을 감싸고 돌아 붓꼭지구멍으로 나간 뒤 양쪽 눈둘레근을 수축시켜 눈을 감는다. 등쪽 아핵이 이마근과 눈둘레근을 지배한다.",
+          "missing_ko": "얼굴신경·눈둘레근은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Peterson 2026 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "삼차신경 (말초, 구심로)",
+          "deficit_ko": "병측 자극 시 초기(R1) 반사 결손(감각 소실); 중심(뇌줄기) 병변은 대신 양쪽 결손을 일으킴",
+          "side_ko": "같은쪽",
+          "sources": "Peterson 2026 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "가쪽숨뇌/삼차신경척수핵 (Wallenberg 증후군, 아래소뇌동맥 폐색)",
+          "deficit_ko": "병측 각막 자극 시 후기(R2) 반사가 양쪽에서 소실 — 반사를 중계하는 삼차신경척수핵이 손상되기 때문",
+          "side_ko": "병측 자극 시 양쪽 결손",
+          "sources": "Peterson 2026 StatPearls [Internet], StatPearls Publishing (B); Kimura 1972 Journal of Neurology, Neurosurgery, and Psychiatry (A)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "각막반사 구심로가 삼차신경 주감각핵에서 중계되는지, 삼차신경척수핵에서 중계되는지",
+          "positions": [
+            {
+              "source": "Peterson 2026 StatPearls [Internet], StatPearls Publishing",
+              "grade": "B",
+              "summary_ko": "각막 감각정보는 눈신경을 통해 뇌줄기의 삼차신경척수핵에서 바로 시냅스한다고 서술"
+            },
+            {
+              "source": "Lee 2025 Frontiers in Surgery",
+              "grade": "A",
+              "summary_ko": "각막 구심충격은 코섬모체신경·긴섬모체신경가지를 거쳐 다리뇌 문측의 삼차신경 주감각핵(chief sensory nucleus)에 이르고, 이후 양쪽 얼굴신경핵으로 투사한다고 서술"
+            },
+            {
+              "source": "Kimura 1972 Journal of Neurology, Neurosurgery, and Psychiatry",
+              "grade": "A",
+              "summary_ko": "가쪽숨뇌 병변 9예에서 후기(R2) 반사가 병측에서 선택적으로 지연되었고, 한쪽 자극으로 양쪽성 후기반사를 만드는 1차뉴런은 반대쪽으로 유의하게 넘어가지 않고 같은쪽 삼차신경척수핵에서 끝난다"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "각막 구심경로는 삼차신경척수로핵에서 끝난다고 서술해 Kimura와 일치하되, 초기(R1) 반사는 주감각핵과 척수핵의 사이뉴런이 함께 중계한다고 덧붙임"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jaw-jerk-reflex",
+      "name_ko": "턱반사",
+      "name_en": "Jaw jerk reflex",
+      "category_ko": "뇌신경/뇌줄기 반사 (단시냅스 신장반사)",
+      "summary_ko": "입을 약간 벌린 채 턱을 두드리면 깨물근(턱닫기근)이 반사적으로 수축하는 단시냅스 신장반사. 삼차신경 위·아래운동신경세포 병변 감별에 쓰인다.",
+      "origin_ko": "턱을 두드린 쪽",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "깨물근 신장수용기 → 중뇌삼차신경핵",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "깨물근 등 씹기근육의 신장수용기에서 오는 고유감각 구심섬유가 삼차신경절을 거치지 않고 곧바로 중뇌삼차신경핵 안의 가짜단극세포(1차 뉴런) 자체에 이른다. 이 핵은 세포체가 삼차신경절이 아니라 뇌줄기 안에 있는 유일한 예다.",
+          "missing_ko": "깨물근·중뇌삼차신경핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Ongerboer 1976 Journal of Neurology, Neurosurgery, and Psychiatry (A); Price 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "중뇌삼차신경핵 → 삼차신경운동핵 (양쪽)",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "중뇌삼차신경핵에서 나온 축삭이 양쪽 삼차신경운동핵으로 감",
+          "neurotransmitter_ko": "",
+          "description_ko": "중뇌삼차신경핵 뉴런의 축삭이 중뇌삼차로로 내려가다 갈라져 양쪽 삼차신경운동핵의 운동뉴런에 곧바로 시냅스한다(단시냅스). Nieuwenhuys는 일부 곁가지가 위삼차신경핵을 거쳐 간접적으로도 닿는다고 덧붙여, 순수 단시냅스인지에 쟁점이 있다(판정 시트 참고).",
+          "missing_ko": "삼차신경운동핵·위삼차신경핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Price 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "삼차신경운동핵 → 깨물근 (양쪽)",
+          "neuronOrder": 3,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "삼차신경운동핵(다리뇌 등가쪽 덮개, 다리뇌 중간부)의 운동뉴런 축삭이 삼차신경 아래턱가지(V3)를 통해 깨물근을 비롯한 씹기근육을 수축시킨다. 운동핵의 가쪽군이 턱닫기근을, 안쪽군이 턱벌리기근을 지배한다.",
+          "missing_ko": "삼차신경 아래턱가지·깨물근은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Price 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "중뇌 병변 (중뇌삼차신경핵을 포함하는, 고유감각·구심 다리로 제안된 부위)",
+          "deficit_ko": "턱반사가 지연되거나 소실되지만, (직접 신경/근육 자극으로 검사하는) 깨물근 근전도는 정상",
+          "side_ko": "같은쪽",
+          "sources": "Ongerboer 1976 Journal of Neurology, Neurosurgery, and Psychiatry (A)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "중뇌삼차신경핵→삼차신경운동핵 턱반사 연결이 순수 단시냅스인지",
+          "positions": [
+            {
+              "source": "brainstem-reflexes.json 기존 인용 (StatPearls)",
+              "grade": "?",
+              "summary_ko": "턱반사를 단시냅스 신장반사로, 중뇌삼차신경핵과 삼차신경운동핵 사이의 단일 직접 뇌줄기내 연결로 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "중뇌삼차신경핵 구심섬유의 곁가지(Probst로)가 가쪽군 턱닫기 운동뉴런을 직접, 그리고 위삼차신경핵을 거쳐 간접적으로도 지배해, 고전적 단시냅스 경로 외에 이시냅스 성분이 있음을 시사"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gag-pharyngeal-and-cough-reflex",
+      "name_ko": "구역(인두)반사 및 기침반사",
+      "name_en": "Gag (pharyngeal) reflex and cough reflex",
+      "category_ko": "뇌신경/뇌줄기 내장반사",
+      "summary_ko": "구역반사는 인두 뒤벽·편도오목·혀뿌리 자극 시 양쪽 인두근육이 수축하고 물렁입천장이 올라가 삼킴/흡인을 막는 반사이며, 기침반사는 주로 후두·기관의 미주신경 구심로를 통해 유발되는 강제 날숨 반사이다.",
+      "origin_ko": "자극을 받은 인두/후두 쪽",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "혀인두신경(IX) 감각섬유 → 같은쪽 고립로핵",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "인두 뒤벽·편도오목·혀뿌리의 감각이 혀인두신경(IX)의 위(목정맥)신경절(1차 뉴런)을 거쳐 같은쪽 고립로핵(미각영역이라고도 함)에 시냅스한다.",
+          "missing_ko": "혀인두신경·위신경절·고립로핵은 3D 데이터에 없음",
+          "sources": "Sivakumar 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "고립로핵 → 의문핵 (양쪽)",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "고립로핵의 2차 뉴런이 양쪽 의문핵에 투사(직접+공감 반사)",
+          "neurotransmitter_ko": "",
+          "description_ko": "고립로핵의 2차 뉴런이 양쪽 의문핵(문측 숨뇌의 운동핵)에 투사한다. 자극받은 쪽 인두근육 수축은 직접 구역반사, 반대쪽 수축은 공감 구역반사라 부른다.",
+          "missing_ko": "고립로핵·의문핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Sivakumar 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "의문핵 → 인두뒤벽 근육 (양쪽, 미주신경)",
+          "neuronOrder": 3,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "의문핵의 운동뉴런 축삭이 미주신경(X)을 통해 인두뒤벽근육을 양쪽에서 수축시킨다. 다만 붓인두근은 미주신경이 아니라 혀인두신경(IX) 자체가 지배한다는 점이 출처 간 쟁점이다(판정 시트 참고).",
+          "missing_ko": "미주신경·인두근육·붓인두근은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Sivakumar 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "연구개 감각(삼차신경, 대체 구심로) → 삼차신경척수핵",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-spinal-trigeminal"
+          ],
+          "structure_names_ko": "삼차신경척수핵",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "연구개를 자극했을 때는 삼차신경(V)이 구역반사의 대체 구심로가 되어, 연구개의 감각신호가 삼차신경척수핵을 거쳐 전달된다.",
+          "missing_ko": "",
+          "sources": "Sivakumar 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 5,
+          "title_ko": "후두·기관 점막 미주신경 구심섬유(기침) → 꼬리쪽 고립로핵",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "글루탐산 (고립로핵 신경세포로의 구심시냅스)",
+          "description_ko": "후두·기관 점막의 미주신경(X) Aδ·C 구심섬유가 글루탐산성으로 꼬리쪽 고립로핵(기침 유발의 1차 감각 중계소)에서 끝난다. 혀인두·미주신경의 일반내장구심섬유는 목동맥팽대(경동맥동)·대동맥활 수용기, 기관지, 배안내장의 정보도 함께 전달한다.",
+          "missing_ko": "후두·기관·고립로핵은 3D 데이터에 없음",
+          "sources": "Brown 2026 Physiological Reports (A); Nieuwenhuys 2008 Springer (4th ed.) (A)"
+        },
+        {
+          "order": 6,
+          "title_ko": "꼬리쪽 고립로핵 → 의문핵(성문닫힘)·꼬리쪽 배호흡근육군(날숨)",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "고립로핵 투사가 양쪽 성문닫힘·날숨 운동을 조율",
+          "neurotransmitter_ko": "",
+          "description_ko": "꼬리쪽 고립로핵의 Tac1 발현 뉴런이 미주신경성 기침 관련 입력을 통합해 의문핵(성문닫힘)과 꼬리쪽 배호흡근육군(날숨 구동)으로 투사하여, 양쪽 성문닫힘과 날숨근 활동을 조율한다.",
+          "missing_ko": "꼬리쪽 배호흡근육군은 3D 데이터에 없음",
+          "sources": "Brown 2026 Physiological Reports (A); Nieuwenhuys 2008 Springer (4th ed.) (A)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "혀인두신경(IX), 한쪽",
+          "deficit_ko": "병측을 자극해도 구역반응이 나타나지 않음(구심로 손상)",
+          "side_ko": "같은쪽",
+          "sources": "Sivakumar 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "미주신경(X), 한쪽",
+          "deficit_ko": "어느 쪽을 자극하든 연구개가 병측으로 들리며 편위됨(원심로 손상)",
+          "side_ko": "같은쪽 (구개가 병변쪽으로 편위)",
+          "sources": "Sivakumar 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "양쪽 아래뇌신경(IX, X, XI, XII) 침범 (구연수마비)",
+          "deficit_ko": "구역반사 소실과 함께 삼킴곤란, 침흘림, 구음장애가 동반",
+          "side_ko": "양쪽",
+          "sources": "Sivakumar 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "구역반사 원심로에서 붓인두근을 지배하는 신경",
+          "positions": [
+            {
+              "source": "brainstem-reflexes.json 기존 인용",
+              "grade": "?",
+              "summary_ko": "인두뒤벽근육/붓인두근을 의문핵→미주신경(X) 경로가 함께 지배하는 것으로 묶어서 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "붓인두근은 다른 인두뒤벽근육과 달리 혀인두신경(IX) 자체가 지배하며, 미주신경/의문핵 경로가 아니라고 명시"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baroreceptor-reflex",
+      "name_ko": "압력수용기반사",
+      "name_en": "Baroreceptor reflex",
+      "category_ko": "자율신경/뇌줄기 내장반사",
+      "summary_ko": "동맥혈압을 빠르게 되먹임 조절하는 반사. 목동맥팽대·대동맥활의 압력수용기 신호가 고립로핵을 거쳐 배가쪽숨뇌의 교감·부교감 경로로 나뉘어 심박수·심장수축력·혈관저항을 조절한다.",
+      "origin_ko": "혈압 변화를 감지한 목동맥팽대/대동맥활 쪽",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "목동맥팽대·대동맥활 압력수용기 → 같은쪽 고립로핵",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "글루탐산 (2차 고립로핵 뉴런으로의 시냅스)",
+          "description_ko": "목동맥팽대 압력수용기 구심섬유는 혀인두신경(IX)의 가지인 목동맥동신경(세포체는 바위신경절)을 통해, 대동맥활·심폐 압력수용기 구심섬유는 주로 미주신경(X, 세포체는 결절신경절)을 통해 같은쪽 고립로핵에 글루탐산성으로 시냅스한다.",
+          "missing_ko": "목동맥팽대·대동맥활·고립로핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Colombari 2026 Current Hypertension Reports (A); Denault 2026 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "고립로핵 → 꼬리쪽 배가쪽숨뇌(CVLM)",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "글루탐산",
+          "description_ko": "고립로핵이 글루탐산성 흥분성 투사를 꼬리쪽 배가쪽숨뇌(CVLM)로 보낸다. 고립로핵-CVLM-RVLM 회로는 대체로 같은쪽 숨뇌 사슬로 기술되지만, 최종 자율신경 출력은 양쪽에서 함께 조절된다.",
+          "missing_ko": "꼬리쪽 배가쪽숨뇌는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Denault 2026 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "꼬리쪽 배가쪽숨뇌(GABA성) → 입쪽 배가쪽숨뇌(RVLM)",
+          "neuronOrder": 3,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "GABA",
+          "description_ko": "CVLM의 GABA성 뉴런이 입쪽 배가쪽숨뇌(RVLM)를 억제한다. 혈압이 오르면 압력수용기 활동 증가로 고립로핵과 CVLM이 흥분해 RVLM이 억제되고, 그 결과 교감긴장이 줄어 혈관이 확장되고 심박수가 감소해 혈압이 낮아진다.",
+          "missing_ko": "입쪽 배가쪽숨뇌는 3D 데이터에 없음",
+          "sources": "Colombari 2026 Current Hypertension Reports (A); Nieuwenhuys 2008 Springer (4th ed.) (A)"
+        },
+        {
+          "order": 4,
+          "title_ko": "입쪽 배가쪽숨뇌(RVLM) → 척수 중간가쪽세포기둥(교감절전뉴런)",
+          "neuronOrder": 4,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "글루탐산 (RVLM에서 척수 절전신경세포로)",
+          "description_ko": "RVLM의 교감흥분성 전운동뉴런 축삭이 숨뇌척수로를 통해 척수 중간가쪽세포기둥의 교감절전신경세포를 흥분시킨다. 압력수용기반사가 활성화되어 RVLM이 억제되면 이 경로의 흥분성 구동이 줄어 교감긴장이 낮아진다.",
+          "missing_ko": "척수 중간가쪽세포기둥은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Denault 2026 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 5,
+          "title_ko": "고립로핵(부교감 갈래) → 의문핵·미주신경 등쪽운동핵",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "고립로핵이 이와 별도로 심장 부교감(미주) 신경세포에 흥분성 투사를 보낸다. 이 심장운동신경세포가 의문핵에 있는지 미주신경 등쪽운동핵에 있는지는 출처 간 쟁점이다(판정 시트 참고). 이 경로를 통해 미주신경(X)이 심박수를 낮춘다.",
+          "missing_ko": "의문핵·미주신경 등쪽운동핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Denault 2026 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "lesions": [],
+      "conflicts": [
+        {
+          "issue_ko": "압력반사의 부교감(심박수 저하) 출력을 담당하는 미주신경핵이 어디인지",
+          "positions": [
+            {
+              "source": "brainstem-reflexes.json 기존 인용 (StatPearls)",
+              "grade": "?",
+              "summary_ko": "고립로핵이 의문핵 안의 심장 부교감신경세포에 흥분성 투사를 보내고, 이들이 미주신경을 통해 심장에 부교감 출력을 준다고 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "고립로핵에서 심박수를 늦추는 심장운동신경세포로 가는 짧은 경로는 의문핵이 아니라 미주신경 등쪽핵에 연결된다고 서술"
+            }
+          ]
+        },
+        {
+          "issue_ko": "Nieuwenhuys 서술 내에서 압력수용기 구심섬유가 고립로핵의 '꼬리쪽'에서 끝나는지 '입쪽'에서 끝나는지 (같은 책 안의 상충)",
+          "positions": [
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "미주·혀인두신경의 내장감각섬유(압력수용기 포함)는 고립로핵의 꼬리쪽에서 끝난다고 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "목동맥팽대·오름대동맥의 압력수용기는 고립로핵 일반내장 부분의 입쪽에서 연결되고 화학수용기가 더 꼬리쪽에서 끝난다고 서술 — 앞의 서술과 상충"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "accommodation-convergence-near-reflex",
+      "name_ko": "조절-폭주(근거리) 반사",
+      "name_en": "Accommodation-convergence (near) reflex",
+      "category_ko": "뇌신경/뇌줄기-겉질 반사 (동시운동)",
+      "summary_ko": "가까운 물체를 볼 때 폭주(안쪽곧은근 수축)·조절(섬모체근 수축)·동공수축이 함께 일어나는 동시운동. 가까운 물체를 두 눈으로 또렷하게 맞추는 데 쓰인다.",
+      "origin_ko": "바라보는 근거리 목표(양쪽 눈에서 함께 일어남)",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "망막신경절세포 → 겉질·덮개앞 경유 → 눈돌림/에딩거-웨스트팔핵",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "tr-optic-tract",
+            "thal-lgn",
+            "bs-superior-colliculus",
+            "bs-oculomotor"
+          ],
+          "structure_names_ko": "시각로, 가쪽무릎핵 (LGN), 위둔덕, 눈돌림신경핵 (III)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "시각교차의 교차는 공유하지만 근거리반사 고유의 추가 교차지점은 출처에 명시되지 않음",
+          "neurotransmitter_ko": "",
+          "description_ko": "망막신경절세포(1차 뉴런)의 신호가 시신경·시각교차·시각로·가쪽무릎핵·시각방사를 거쳐 시각겉질에 이르고, 시각연합겉질이 위둔덕과 덮개앞 영역으로 투사해 눈돌림신경핵과 에딩거-웨스트팔핵에 닿는다. 근거리반사의 구심로는 빛반사보다 겉질을 포함해 훨씬 길고 복잡하다.",
+          "missing_ko": "시각겉질·시각연합겉질·덮개앞 영역·에딩거-웨스트팔핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); McDougal 2015 Comprehensive Physiology (A); Motlagh 2022 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "눈돌림신경핵(안쪽곧은근 아핵)·에딩거-웨스트팔핵 → 안쪽곧은근·섬모체신경절",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "bs-oculomotor"
+          ],
+          "structure_names_ko": "눈돌림신경핵 (III)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "눈돌림신경핵의 안쪽곧은근 아핵이 양쪽 안쪽곧은근을 수축시켜 폭주(모음)를 일으키고, 동시에 에딩거-웨스트팔핵(빛반사 중추보다 배쪽에 위치한 근거리반응 중추)이 부교감신경을 통해 섬모체신경절에서 동공조임근 수축을 조율한다. 빛반사와 근거리반사 모두에서 덮개앞 영역·부교감눈돌림신경핵·섬모체신경절이 연속된 중계소를 이룬다.",
+          "missing_ko": "안쪽곧은근·에딩거-웨스트팔핵·섬모체신경절은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Motlagh 2022 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "에딩거-웨스트팔핵(근거리반응) → 섬모체근 (조절)",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "에딩거-웨스트팔핵의 절전 부교감신경세포가 눈돌림신경·섬모체신경절·짧은섬모체신경을 거쳐 양쪽 섬모체근을 수축시킨다. 섬모체근이 두꺼워지면 수정체 초점거리가 짧아져 굴절력이 커져 가까운 물체에 초점이 맞는다.",
+          "missing_ko": "섬모체근은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Motlagh 2022 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "등쪽 중간뇌 (빛-근거리 해리)",
+          "deficit_ko": "빛반사는 장애되지만 근거리(조절)반사는 보존됨 — 근거리반응 중추가 빛반사를 담당하는 덮개앞핵보다 배쪽에 있어 등쪽 병변에서 보존되기 때문",
+          "side_ko": "양쪽",
+          "sources": "Motlagh 2022 StatPearls [Internet], StatPearls Publishing (B); Nieuwenhuys 2008 Springer (4th ed.) (A)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "근거리반응(폭주) 중뇌중추가 빛반사 덮개앞핵보다 배쪽에 있는지",
+          "positions": [
+            {
+              "source": "brainstem-reflexes.json 기존 인용 (StatPearls)",
+              "grade": "?",
+              "summary_ko": "근거리반응 중뇌중추가 빛반사를 담당하는 덮개앞핵보다 더 배쪽에 있다고 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "근거리반응 중추의 등배 위치를 명시하는 대신, 폭주유발 동공수축 경로를 빛반사 경로와 독립적(아가일 로버트슨 해리와 일치)이며 '고전적 눈돌림신경핵 바깥의 작은 신경세포군'에서 끝난다고 서술"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sympathetic-pathway-to-the-eye-horner-syndrome",
+      "name_ko": "눈으로 가는 교감신경 경로와 호너증후군 국소화",
+      "name_en": "Sympathetic pathway to the eye and Horner syndrome localisation",
+      "category_ko": "자율신경(교감) 경로",
+      "summary_ko": "동공확대근·위눈꺼풀판근(Müller근)·얼굴 땀샘/혈관에 지속적인 교감긴장을 주는 3-뉴런 교감사슬. 세 단계 중 어디가 끊기든 호너증후군(눈꺼풀처짐·축동·무한증)이 나타나며, 동반 결손의 양상으로 병변 단계를 국소화한다.",
+      "origin_ko": "교감신경이 지배하는 눈/얼굴 쪽",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "가쪽뒤 시상하부(1차 중심뉴런) → 척수 섬모체척수중추(C8-T2)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "가쪽뒤 시상하부에서 시작한 1차(중심) 뉴런이 교차 없이 같은쪽으로 중뇌·다리뇌 뇌줄기 덮개를 지나 내려가 C8-T2 척수 중간가쪽세포기둥(Budge의 섬모체척수중추)에서 끝난다.",
+          "missing_ko": "시상하부·척수 중간가쪽세포기둥은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Kanagalingam 2015 Eye and Brain (A); Khan 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "섬모체척수중추(2차 절전뉴런) → 위목교감신경절",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "C8-T2 척수 중간가쪽세포기둥의 2차(절전) 뉴런이 T1 높이에서 척수를 나와 목교감신경줄기를 타고 폐 꼭대기를 지나 올라가 C3-C4 높이의 위목교감신경절에서 절후뉴런과 시냅스한다.",
+          "missing_ko": "목교감신경줄기·위목교감신경절은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); McDougal 2015 Comprehensive Physiology (A); Khan 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "위목교감신경절(3차 절후뉴런) → 동공확대근·위눈꺼풀판근/얼굴땀샘",
+          "neuronOrder": 3,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "위목교감신경절의 3차(절후) 뉴런 중 땀·혈관운동 가지는 바깥목동맥을 따라 얼굴 땀샘·혈관으로 가고, 나머지는 속목동맥주위신경얼기를 타고 올라가 해면정맥동(갓돌림신경과 잠시 동행)과 눈확위틈을 지나 긴섬모체신경이 되어 동공확대근과 위눈꺼풀판근(Müller근)에 이른다.",
+          "missing_ko": "속목동맥신경얼기·해면정맥동·긴섬모체신경·동공확대근·위눈꺼풀판근은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); McDougal 2015 Comprehensive Physiology (A); Khan 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "1차 뉴런 (시상하부-척수 중간가쪽세포기둥) — 예: 뇌졸중, 가쪽숨뇌증후군(Wallenberg), Arnold-Chiari 기형, 높은 척수손상",
+          "deficit_ko": "몸 같은쪽 전체에 걸친 무한증을 동반할 수 있는 호너증후군 — 이 섬유들이 갈라지기 전에 중심에서 시작하기 때문",
+          "side_ko": "같은쪽",
+          "sources": "Khan 2023 StatPearls [Internet], StatPearls Publishing (B); Kanagalingam 2015 Eye and Brain (A)"
+        },
+        {
+          "site_ko": "2차 뉴런 (목교감신경줄기/가슴문) — 예: Pancoast 종양, 목갈비뼈, 팔신경얼기 손상, 신경모세포종",
+          "deficit_ko": "같은쪽 얼굴에 국한된 무한증을 동반하는 호너증후군",
+          "side_ko": "같은쪽",
+          "sources": "Khan 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "3차 뉴런 (위목교감신경절-눈) — 예: 목동맥박리, 해면정맥동 병변, 군발두통/Raeder증후군",
+          "deficit_ko": "같은쪽 눈썹 부근의 작은 영역에 국한된 무한증을 동반하는 호너증후군 — 땀·혈관운동 섬유가 이 지점 이전에 이미 갈라져 나갔기 때문",
+          "side_ko": "같은쪽",
+          "sources": "Khan 2023 StatPearls [Internet], StatPearls Publishing (B)"
+        },
+        {
+          "site_ko": "교감신경경로 (어느 단계든) — 호너증후군 전체",
+          "deficit_ko": "부분 눈꺼풀처짐(위눈꺼풀판근 신경차단, 눈돌림신경 마비보다 가벼움), 축동(부교감긴장이 억제되지 않아 생김); 빛·조절 동공반응은 교감신경에 의존하지 않으므로 정상",
+          "side_ko": "같은쪽",
+          "sources": "Khan 2023 StatPearls [Internet], StatPearls Publishing (B); Kanagalingam 2015 Eye and Brain (A)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "척수 섬모체척수중추로 내려가는 1차(중심) 교감섬유의 기원이 시상하부로 확인되는지",
+          "positions": [
+            {
+              "source": "brainstem-reflexes.json 기존 인용",
+              "grade": "?",
+              "summary_ko": "1차 뉴런이 시상하부에서 시작해 교차 없이 중뇌·다리뇌를 지나 C8-T2 척수 중간가쪽세포기둥(Budge의 섬모체척수중추)에서 끝난다고 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "숨뇌·척수의 가쪽 부분을 지나 내려가는 섬유가 교감신경 섬모체척수중추에서 시냅스한다고 서술하되, 이 섬유들의 기원은 알려지지 않았다고 명시"
+            }
+          ]
+        },
+        {
+          "issue_ko": "위목교감신경절에서 동공확대근으로 가는 3차(절후) 섬유의 경로",
+          "positions": [
+            {
+              "source": "brainstem-reflexes.json 기존 인용",
+              "grade": "?",
+              "summary_ko": "절후섬유가 속목동맥주위신경얼기를 타고 올라가 해면정맥동에서 갓돌림신경(VI)과 잠시 합류한 뒤 삼차신경 눈신경가지와 함께 눈확위틈을 지나 긴섬모체신경이 된다고 서술하며, 섬모체신경절은 언급하지 않음"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "이 절후축삭이 속목동맥 가지를 따라가며 동공확대근을 지배하기 전에 섬모체신경절을 지난다고 서술 — StatPearls 서술에는 없는 세부사항"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visual-pathway",
+      "name_ko": "시각전도로",
+      "name_en": "Visual pathway",
+      "category_ko": "특수감각 - 시각",
+      "summary_ko": "망막에서 일차시각겉질(및 여러 피질하 표적)로 시각정보를 전달해 의식적 지각, 망막위치지도, 시각운동반사를 가능하게 하는 경로.",
+      "origin_ko": "자극(빛)을 받은 눈/망막",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "망막신경절세포 → 시신경교차",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "망막신경절세포의 축삭이 눈속·눈확속·관속·머리속 구간의 시신경(II)을 이루어 시신경교차에 이른다.",
+          "missing_ko": "망막신경절세포·시신경·시신경교차는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Mehra 2023 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "시신경교차 → 시각로",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "시신경교차 — 코쪽(교차) 반망막 섬유는 반대쪽으로, 관자쪽(비교차) 반망막 섬유는 같은쪽으로 유지",
+          "neurotransmitter_ko": "",
+          "description_ko": "시신경교차에서 코쪽(비측) 반망막 섬유는 반대쪽으로 교차하고 관자쪽(측두측) 반망막 섬유는 같은쪽에 남는 부분교차가 일어난다. 전체 시신경섬유의 약 53%가 교차하고 47%는 비교차로 알려져 있으며, 그 결과 좌측 시야 정보는 모두 우반구로, 우측 시야 정보는 모두 좌반구로 모인다.",
+          "missing_ko": "시신경교차는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Mehra 2023 StatPearls [Internet] (B); Wolberg 2024 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "시각로 → 가쪽무릎핵(LGN)",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "tr-optic-tract",
+            "thal-lgn"
+          ],
+          "structure_names_ko": "시각로, 가쪽무릎핵 (LGN)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "교차는 앞 단계(시신경교차)에서 이미 일어남",
+          "neurotransmitter_ko": "",
+          "description_ko": "시각로는 각 눈의 관자쪽 반망막(같은쪽)과 반대쪽 눈의 코쪽 반망막(교차) 섬유를 함께 담아 한쪽 시야 절반의 정보를 실어나르며, 사이뇌 가쪽을 돌아 대부분 가쪽무릎핵(LGN)에서 끝난다.",
+          "missing_ko": "",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Mehra 2023 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "가쪽무릎핵(LGN) → 시각방사 → 일차시각겉질(V1)",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "thal-lgn"
+          ],
+          "structure_names_ko": "가쪽무릎핵 (LGN)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "가쪽무릎핵은 소세포·대세포·과립세포층으로 나뉘며, 같은쪽 망막신경절세포에서 온 축삭은 2·3·5층에, 반대쪽에서 온 축삭은 1·4·6층에 시냅스한다. LGN 뉴런은 속섬유막을 지나는 시각방사(무릎수질줄무늬로: 마이어고리·중심다발·바움고리)를 통해 일차시각겉질(V1, 줄무늬겉질)에 닿는다.",
+          "missing_ko": "시각방사·일차시각겉질(V1)은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Casanova 2023 Frontiers in Neuroscience (A); Mehra 2023 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 5,
+          "title_ko": "아래시각방사(마이어고리) → 칼카린고랑 아래둑(혀이랑) — 위쪽 시야",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "아래시각방사는 가쪽뇌실 관자뿔의 지붕을 따라 앞으로 간 뒤 관자엽을 통과하는 마이어고리를 이루어 칼카린고랑의 아래둑(혀이랑)에서 끝나며, 시야의 위쪽 사분면 정보를 반대쪽 V1 아래둑에 실어나른다.",
+          "missing_ko": "마이어고리·칼카린고랑·혀이랑은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Wolberg 2024 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 6,
+          "title_ko": "위시각방사(마루엽 경유) → 칼카린고랑 위둑(쐐기이랑) — 아래쪽 시야",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "위시각방사는 마루엽을 지나 뒤로 가서 칼카린고랑 위둑(쐐기이랑)에서 끝나며, 시야의 아래쪽 사분면 정보를 반대쪽 V1 위둑에 실어나른다.",
+          "missing_ko": "칼카린고랑·쐐기이랑은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Wolberg 2024 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 7,
+          "title_ko": "일차시각겉질(V1, Brodmann 17) — 망막위치지도",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "일차시각겉질(V1)은 칼카린고랑을 따라 망막위치에 대응하여 지도화되어 있다. 중심오목(중심시야)은 V1 뒤쪽의 비교적 넓은 영역에, 망막 코쪽 주변부(관자쪽 단안시야)는 겉질의 맨 앞쪽 끝에 대응한다.",
+          "missing_ko": "일차시각겉질(V1)은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Wolberg 2024 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 8,
+          "title_ko": "시각로 가지(무릎핵외 경로) → 위둔덕·덮개앞핵·시각교차위핵·시상베개",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-superior-colliculus",
+            "thal-pulvinar"
+          ],
+          "structure_names_ko": "위둔덕, 시상베개",
+          "side": "반대쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "일부 망막신경절세포 축삭은 가쪽무릎핵을 거치지 않고 곧바로 위둔덕·덮개앞핵·시각교차위핵으로 가지를 낸다. 위둔덕을 거쳐 시상베개로 이어지는 이 무릎핵외 경로는 빛반사 등 여러 생리기능과 무의식적 시각(맹시)에 관여한다고 알려져 있다.",
+          "missing_ko": "덮개앞핵·시각교차위핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Casanova 2023 Frontiers in Neuroscience (A); Wolberg 2024 StatPearls [Internet] (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "시신경, 시신경교차보다 앞쪽",
+          "deficit_ko": "같은쪽 눈에 국한된 시력 소실 (한눈멀기)",
+          "side_ko": "같은쪽",
+          "sources": "Akova 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "site_ko": "시신경교차 (예: 뇌하수체종양, 앞교통동맥꽈리)",
+          "deficit_ko": "양쪽 관자쪽 반맹",
+          "side_ko": "양쪽",
+          "sources": "Akova 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "site_ko": "교차뒤 경로 (시각로·LGN·시각방사·뒤통수엽겉질)",
+          "deficit_ko": "동측반맹",
+          "side_ko": "반대쪽",
+          "sources": "Wolberg 2024 StatPearls [Internet] (B)"
+        },
+        {
+          "site_ko": "아래시각방사(마이어고리, 관자엽 경유)",
+          "deficit_ko": "위쪽 사분맹 (\"하늘의 파이\")",
+          "side_ko": "반대쪽",
+          "sources": "Wolberg 2024 StatPearls [Internet] (B)"
+        },
+        {
+          "site_ko": "위시각방사 (마루엽 경유)",
+          "deficit_ko": "아래쪽 사분맹 (\"바닥의 파이\")",
+          "side_ko": "반대쪽",
+          "sources": "Wolberg 2024 StatPearls [Internet] (B)"
+        },
+        {
+          "site_ko": "뒤통수극 (전형적으로 뒤대뇌동맥 영역 경색)",
+          "deficit_ko": "황반보존 동측반맹 — 중심(약 5°-25°) 시야는 보존되어 불완전한 반맹이 됨",
+          "side_ko": "반대쪽",
+          "sources": "Wolberg 2024 StatPearls [Internet] (B)"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "central-auditory-pathway",
+      "name_ko": "중심청각전도로",
+      "name_en": "Central auditory pathway",
+      "category_ko": "특수감각 - 청각",
+      "summary_ko": "달팽이에서 청각겉질까지 소리(주파수·강도·양쪽귀 시간/강도차)를 전달하는 경로. 위올리브복합체부터는 광범위하게 양쪽(양쪽귀)으로 표상되며, 달팽이로 되돌아가는 내림원심조절도 포함한다.",
+      "origin_ko": "소리를 받은 귀(달팽이) 쪽",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "나선신경절 → 달팽이신경핵",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "달팽이 안 나선신경절의 양극세포(1차 뉴런) 축삭이 청각(달팽이)신경, 즉 안뜰달팽이신경(VIII)의 일부를 이루어 같은쪽 배·등쪽 달팽이신경핵에 음위(주파수)순서로 시냅스한다.",
+          "missing_ko": "나선신경절·청각신경·달팽이신경핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Peterson 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "달팽이신경핵 → 덧다리로 → 위올리브복합체",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "덧다리로(사다리체)에서 대부분 반대쪽 위올리브복합체로 교차, 일부는 같은쪽에 남음",
+          "neurotransmitter_ko": "",
+          "description_ko": "달팽이신경핵 뉴런의 축삭이 덧다리로(사다리체)를 이루어 대부분 반대쪽 위올리브복합체로 교차하고 일부는 같은쪽에 남는다. 앞쪽 배달팽이신경핵의 방추세포는 같은쪽 가쪽위올리브핵과 양쪽 안쪽위올리브핵으로 투사한다.",
+          "missing_ko": "덧다리로·위올리브복합체는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Peterson 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "위올리브복합체(안쪽·가쪽위올리브핵) — 양쪽귀 비교로 소리방향 계산",
+          "neuronOrder": 3,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "위올리브복합체가 좌우 귀에서 온 입력을 비교해 소리의 공간적 위치를 계산한다. 안쪽위올리브핵은 저주파에서 최대인 양쪽귀 시간차를, 가쪽위올리브핵은 고주파에서 최대인 양쪽귀 강도차를 암호화한다.",
+          "missing_ko": "위올리브복합체는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Peterson 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "위올리브복합체 → 가쪽섬유띠 → 아래둔덕",
+          "neuronOrder": 3,
+          "structure_ids": [
+            "bs-inferior-colliculus"
+          ],
+          "structure_names_ko": "아래둔덕",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "양쪽 위올리브핵이 가쪽섬유띠(양쪽 핵)를 거쳐 양쪽 아래둔덕으로 투사한다. 안쪽위올리브핵의 투사는 같은쪽뿐이나 가쪽위올리브핵의 투사는 양쪽으로 나간다.",
+          "missing_ko": "가쪽섬유띠는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Peterson 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 5,
+          "title_ko": "아래둔덕 → 아래둔덕팔 → 안쪽무릎핵(MGN)",
+          "neuronOrder": 4,
+          "structure_ids": [
+            "bs-inferior-colliculus",
+            "thal-mgn"
+          ],
+          "structure_names_ko": "아래둔덕, 안쪽무릎핵 (MGN)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "아래둔덕 뉴런의 축삭이 아래둔덕팔(중간뇌 표면의 뚜렷한 다발)을 통해 양쪽 안쪽무릎핵에 닿는다.",
+          "missing_ko": "아래둔덕팔은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Peterson 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 6,
+          "title_ko": "안쪽무릎핵(MGN) → 청각방사 → 가로관자이랑(Heschl 이랑)",
+          "neuronOrder": 5,
+          "structure_ids": [
+            "thal-mgn"
+          ],
+          "structure_names_ko": "안쪽무릎핵 (MGN)",
+          "side": "양쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "안쪽무릎핵 뉴런이 속섬유막의 렌즈밑부분을 지나는 청각방사를 통해 위관자겉질의 가로관자이랑(Heschl 이랑, 일차청각겉질)에 닿는다. 청각경로는 위올리브복합체부터 대부분 양쪽(양쪽귀) 정보를 받아 정확한 소리 위치 판단을 돕는다.",
+          "missing_ko": "청각방사·가로관자이랑은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Peterson 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 7,
+          "title_ko": "안쪽·가쪽올리브달팽이신경세포(원심계) → 겉·속털세포",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽 (교차형/비교차형)",
+          "decussation": true,
+          "decussation_where_ko": "반대쪽(교차형) 또는 같은쪽(비교차형) 위올리브복합체에서 기원하는 두 원심 경로로 구분",
+          "neurotransmitter_ko": "",
+          "description_ko": "위올리브복합체의 안쪽올리브달팽이(MOC) 신경세포는 바깥털세포에 직접 시냅스하고, 가쪽올리브달팽이(LOC) 신경세포는 속털세포 밑 1형 청각신경 구심섬유의 가지돌기에 시냅스한다. 이 원심섬유는 반대쪽(교차형) 또는 같은쪽(비교차형) 위올리브복합체에서 기원해 올리브달팽이다발을 이루어 안뜰신경을 통해 달팽이로 들어간다.",
+          "missing_ko": "겉·속털세포·올리브달팽이다발은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Lopez-Poveda 2018 Frontiers in Neurology (A); Peterson 2025 StatPearls [Internet] (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "달팽이신경핵보다 위쪽(예: 가쪽섬유띠·아래둔덕·MGN·청각겉질)의 한쪽 병변",
+          "deficit_ko": "임상적으로 뚜렷한 한쪽 청력손실은 없음 — 위올리브복합체부터는 경로가 양쪽(양쪽귀)으로 표상되기 때문",
+          "side_ko": "양쪽",
+          "sources": "Peterson 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "site_ko": "청각신경/다리뇌소뇌각 (예: 청신경집종/전정신경집종)",
+          "deficit_ko": "첫 증상으로 청력저하가 나타나고, 종양이 커지면 이명·현훈·눈떨림·안면마비·각막반사저하·목소리변화·삼킴곤란·조화운동장애·구음장애가 같은쪽에 추가됨",
+          "side_ko": "같은쪽",
+          "sources": "Peterson 2025 StatPearls [Internet] (B)"
+        }
+      ],
+      "conflicts": []
+    },
+    {
+      "id": "central-vestibular-pathways",
+      "name_ko": "중심안뜰(전정)전도로",
+      "name_en": "Central vestibular pathways",
+      "category_ko": "특수감각 - 평형",
+      "summary_ko": "속귀 미로에서 머리움직임·중력 정보를 안뜰핵으로 전달하고, 이를 소뇌·척수·바깥눈근육신경핵·시상·겉질로 분배해 시선안정, 자세조절, 의식적 공간지각을 가능하게 하는 경로.",
+      "origin_ko": "머리 움직임을 감지한 안뜰기관(속귀) 쪽",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "안뜰신경절(양극세포) → 네 안뜰핵/소뇌",
+          "neuronOrder": 1,
+          "structure_ids": [
+            "bs-vestibular-medial",
+            "bs-vestibular-other"
+          ],
+          "structure_names_ko": "안쪽안뜰핵, 가쪽·아래·위안뜰핵",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "안뜰신경절(Scarpa 신경절)의 양극세포(1차 뉴런) 축삭이 안뜰달팽이신경(VIII)을 통해 다리뇌-숨뇌 이음부의 네 안뜰핵(위·안쪽·가쪽·아래안뜰핵)에 시냅스하거나, 아래소뇌다리(옆섬유체)를 통해 소뇌로 곧바로 투사한다.",
+          "missing_ko": "안뜰신경절·안뜰달팽이신경은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Cullen 2012 Trends in Neurosciences (A); Jefferies 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "1차 안뜰구심섬유/안뜰핵 → 옆섬유체 → 소뇌(엽결절엽·벌레)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "1차 안뜰구심섬유와 안뜰핵 뉴런이 아래소뇌다리의 옆섬유체를 거쳐 엽결절엽과 인접한 벌레(안뜰소뇌)에 이른다. 안뜰소뇌의 조롱박세포는 다시 다른 안뜰핵들과 Y군으로 되돌아가는 원심투사를 보낸다.",
+          "missing_ko": "옆섬유체·엽결절엽·벌레는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Jefferies 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "가쪽안뜰핵 → 가쪽안뜰척수로 → 척수운동신경세포(폄근)",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "bs-vestibular-other"
+          ],
+          "structure_names_ko": "가쪽·아래·위안뜰핵",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "가쪽안뜰핵에서 시작한 가쪽안뜰척수로가 교차 없이 같은쪽으로 척수 앞쪽을 따라 모든 척수 수준까지 내려가 팔다리·몸통 폄근의 운동신경세포를 활성화한다.",
+          "missing_ko": "가쪽안뜰척수로는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Jefferies 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "안쪽안뜰핵 → MLF/안쪽안뜰척수로 → 목척수 운동신경세포",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "bs-vestibular-medial",
+            "tr-mlf"
+          ],
+          "structure_names_ko": "안쪽안뜰핵, 안쪽세로다발 (MLF)",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "MLF 안에서 교차하는 성분(교차안뜰척수로)이 있어 전체적으로 양쪽성 효과",
+          "neurotransmitter_ko": "",
+          "description_ko": "안쪽안뜰핵에서 시작한 안쪽안뜰척수로(같은쪽)와 교차안뜰척수로(반대쪽으로 교차)가 함께 MLF 안이나 그 옆을 내려가 목척수 수준의 운동신경세포(예: 목빗근)에 이르러, 머리를 움직일 때 목 근육을 양쪽에서 함께 조절한다.",
+          "missing_ko": "안쪽안뜰척수로·목빗근은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Jefferies 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 5,
+          "title_ko": "위·안쪽안뜰핵(안뜰눈반사활) → 반대쪽 갓돌림신경핵·같은쪽 눈돌림신경핵",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "bs-vestibular-medial",
+            "tr-mlf",
+            "bs-abducens",
+            "bs-oculomotor"
+          ],
+          "structure_names_ko": "안쪽안뜰핵, 안쪽세로다발 (MLF), 갓돌림신경핵 (VI), 눈돌림신경핵 (III)",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "MLF를 통해 반대쪽 갓돌림신경핵으로 교차",
+          "neurotransmitter_ko": "",
+          "description_ko": "위·안쪽안뜰핵의 2차 뉴런이 MLF를 통해 머리회전 반대쪽 갓돌림신경핵(가쪽곧은근)을 흥분시키고, 핵사이뉴런을 거쳐 같은쪽 눈돌림신경핵(안쪽곧은근)도 흥분시키는 3-뉴런 안뜰눈반사활을 이룬다.",
+          "missing_ko": "",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Cullen 2012 Trends in Neurosciences (A); Jefferies 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 6,
+          "title_ko": "안뜰핵 → MLF/중심덮개로 → 시상 배쪽뒤핵(VPL/VPM)",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "thal-vpl",
+            "thal-vpm"
+          ],
+          "structure_names_ko": "배쪽뒤가쪽핵 (VPL), 배쪽뒤안쪽핵 (VPM)",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "안쪽안뜰핵에서 오는 반대쪽 투사가 등정중이음부에서 교차, 위안뜰핵에서 오는 양쪽 입력도 함께 도착",
+          "neurotransmitter_ko": "",
+          "description_ko": "위·안쪽·아래안뜰핵의 일부 뉴런이 등정중이음부에서 교차해 중간뇌덮개와 Forel 영역을 지나 시상에서 끝난다. 사람에서는 배쪽뒤가쪽핵(VPL)·배쪽뒤안쪽핵(VPM) 부근으로 지목되었으나, 원숭이에서는 이보다 더 세분화된 배쪽뒤위핵(VPS)·배쪽뒤아래핵(VPI)의 테두리에서 양쪽성으로 끝난다는 서술도 있어 정확한 표적색핵은 출처마다 다르다(판정 시트 참고).",
+          "missing_ko": "중심덮개로·Forel 영역·VPS/VPI는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Jefferies 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 7,
+          "title_ko": "시상 배쪽뒤핵 → 속섬유막 뒤다리 → 마루섬엽안뜰겉질(OP2)/일차몸감각겉질",
+          "neuronOrder": 3,
+          "structure_ids": [
+            "thal-vpl",
+            "thal-vpm"
+          ],
+          "structure_names_ko": "배쪽뒤가쪽핵 (VPL), 배쪽뒤안쪽핵 (VPM)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "시상 배쪽뒤핵이 안뜰·고유감각·시각입력을 통합해 속섬유막 뒤다리를 지나 일차몸감각겉질과, 특히 마루섬엽안뜰겉질(사람 OP2 영역)로 원심섬유를 보낸다. 사람의 안뜰겉질 표상이 OP2를 중심으로 한 하나의 뚜렷한 핵심영역인지, 경계가 불분명한 광범위한 그물망인지는 출처 간 쟁점이다(판정 시트 참고).",
+          "missing_ko": "마루섬엽안뜰겉질(OP2)은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Ibitoye 2023 Cerebral Cortex (A); Jefferies 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 8,
+          "title_ko": "원심 안뜰신경세포 → 양쪽 미로의 유모세포",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "양쪽",
+          "decussation": true,
+          "decussation_where_ko": "각 미로로 가는 투사가 뇌줄기 양쪽의 세포군에서 대칭적으로 기원",
+          "neurotransmitter_ko": "",
+          "description_ko": "갓돌림신경핵과 위안뜰핵 사이 그물형성에 있는 원심 안뜰신경세포가 안뜰신경의 원심섬유를 통해 1형 유모세포의 신경종말잔(칼릭스)과 2형 유모세포에 직접 시냅스한다. 한쪽 미로로 가는 투사는 뇌줄기 양쪽의 세포군에서 대칭적으로 기원한다.",
+          "missing_ko": "유모세포·신경종말잔은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "엽결절엽(안뜰소뇌)",
+          "deficit_ko": "시선유지장애, 매끄런추적장애, 눈떨림, 넓은보행(만취보행) 형태의 몸통조화운동장애",
+          "side_ko": "같은쪽",
+          "sources": "Jefferies 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "site_ko": "안쪽세로다발(MLF)",
+          "deficit_ko": "핵사이눈근육마비: 수평주시 시 같은쪽 눈의 모음 장애와 반대쪽 눈의 벌림 시 눈떨림",
+          "side_ko": "같은쪽",
+          "sources": "Jefferies 2025 StatPearls [Internet] (B)"
+        },
+        {
+          "site_ko": "가쪽안뜰척수로(LVST)",
+          "deficit_ko": "몸통불안정, 낙상, 옆으로 쏠림, 폄근긴장저하 등 자세조절 장애",
+          "side_ko": "같은쪽",
+          "sources": "Jefferies 2025 StatPearls [Internet] (B)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "사람 안뜰겉질 표상이 OP2를 중심으로 한 뚜렷한 핵심영역인지, 경계가 불분명한 광범위 그물망인지",
+          "positions": [
+            {
+              "source": "Ibitoye 2023 Cerebral Cortex",
+              "grade": "A",
+              "summary_ko": "안뜰겉질처리가 마루섬엽안뜰겉질에 가장 뚜렷하게 모이며, OP2를 사람 안뜰겉질그물망의 '핵심' 영역으로 서술"
+            },
+            {
+              "source": "Arvaniti 2024 Brain Sciences",
+              "grade": "A",
+              "summary_ko": "겉질전기자극 증거는 안뜰겉질이 뚜렷하고 경계가 분명한 한 곳이 아니라 광범위한 그물망 형태라는 것을 보인다고 서술"
+            }
+          ]
+        },
+        {
+          "issue_ko": "'안쪽안뜰척수로(MVST)'가 MLF를 통해 양쪽으로 가는 단일 로인지, 같은쪽 성분과 별도의 '교차안뜰척수로'로 나뉘는지",
+          "positions": [
+            {
+              "source": "special-senses.json 기존 인용",
+              "grade": "?",
+              "summary_ko": "안쪽안뜰핵에서 기원한 MVST가 MLF를 통해 양쪽으로 가서 주로 목척수 수준에 투사한다는 기존 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "MLF 안이나 그 옆을 내려가는 것은 실제로 두 개의 별도 섬유로이며, 안쪽안뜰척수로 자체는 같은쪽으로만 가고 별도로 명명된 교차안뜰척수로가 반대쪽 교차성분을 담당한다"
+            }
+          ]
+        },
+        {
+          "issue_ko": "안뜰시상투사가 도달하는 시상핵이 VPL/VPM/VPI(배쪽뒤복합체)인지, 원숭이의 VPS/VPI 테두리인지",
+          "positions": [
+            {
+              "source": "special-senses.json 기존 인용",
+              "grade": "?",
+              "summary_ko": "시상 내 안뜰신호는 주로 배쪽뒤복합체(VPL·VPM·VPI로 구성)에서 처리된다는 기존 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "원숭이에서 안뜰시상섬유는 배쪽뒤위핵(VPS)과 배쪽뒤아래핵(VPI)을 둘러싼 테두리 및 중심가쪽판내핵에서 양쪽성으로 끝나며, VPL/VPM 자체에서 끝나는 것은 아니라고 서술"
+            }
+          ]
+        },
+        {
+          "issue_ko": "사람 안뜰겉질 표상이 핵심영역인지 그물망인지 (같은 쟁점의 두 번째 인용쌍)",
+          "positions": [
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "여러 안뜰겉질영역들이 서로 연결되어 있고 PIVC가 이 그물망의 중심적 위치를 차지한다고 서술해, 뚜렷한 핵심영역이 있다는 쪽과 부합"
+            },
+            {
+              "source": "special-senses.json 기존 인용",
+              "grade": "?",
+              "summary_ko": "겉질전기자극 증거는 안뜰겉질이 뚜렷하고 제한된, 경계가 분명한 한 곳이 아니라 광범위한 그물망 형태라고 서술"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gustatory-pathway",
+      "name_ko": "미각전도로",
+      "name_en": "Gustatory pathway",
+      "category_ko": "특수감각 - 미각",
+      "summary_ko": "혀·입천장·후두덮개의 미각수용기에서 세 뇌신경(VII·IX·X)을 통해 뇌줄기·시상·미각겉질로 미각정보를 전달하는 경로. 사람에서는 대부분 교차 없이 같은쪽으로 올라간다.",
+      "origin_ko": "맛을 감지한 혀/입안 쪽",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "혀·입천장·후두덮개의 미각신경절(VII·IX·X) → 고립로핵(입쪽 미각영역)",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "혀 앞 2/3(고삭신경, 무릎신경절)·혀 뒤 1/3(혀인두신경, 아래신경절)·후두덮개(미주신경, 결절신경절)의 미각신경이 각각 1차신경세포를 거쳐 같은쪽 고립로핵의 입쪽(미각) 부분에 시냅스한다.",
+          "missing_ko": "무릎신경절·아래신경절·결절신경절·고립로핵은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Gibbons 2023 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "고립로핵(미각영역) → 시상 배쪽뒤안쪽핵 소세포부(VPMpc)",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "thal-vpm"
+          ],
+          "structure_names_ko": "배쪽뒤안쪽핵 (VPM)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "고립로핵 입쪽(미각) 부분의 2차 뉴런 축삭이 교차하지 않고 같은쪽으로 올라가 시상 배쪽뒤안쪽핵의 소세포부(VPMpc)에서 끝난다. 미각로는 사람을 포함한 영장류에서 뇌다리곁핵을 거치지 않고 고립로핵에서 곧바로 시상으로 가는 점이 특징이며, 미각을 제외한 대부분의 감각로는 교차한다는 것과 대비된다.",
+          "missing_ko": "VPMpc는 3D 데이터에 VPM으로만 표시됨",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Carleton 2010 Trends in Neurosciences (A); Gibbons 2023 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "시상 배쪽뒤안쪽핵(VPMpc) → 이마덮개·앞섬엽·중심뒤이랑 입쪽부(BA3B)",
+          "neuronOrder": 3,
+          "structure_ids": [
+            "thal-vpm"
+          ],
+          "structure_names_ko": "배쪽뒤안쪽핵 (VPM)",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "VPMpc 뉴런의 축삭이 속섬유막 뒤다리를 지나 같은쪽으로 이마덮개·앞섬엽겉질·중심뒤이랑 입쪽부(Brodmann 3B)에서 끝나 미각겉질을 이룬다. 이 3차 시상겉질투사가 완전히 같은쪽인지 반대쪽 성분도 있는지는 출처 간 쟁점이다(판정 시트 참고).",
+          "missing_ko": "이마덮개·앞섬엽겉질은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Carleton 2010 Trends in Neurosciences (A); Gibbons 2023 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 4,
+          "title_ko": "미각겉질 → 뒤가쪽 안구전두엽겉질 (맛-냄새 통합)",
+          "neuronOrder": 3,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "미각겉질(섬엽/덮개)에서 나온 2차 겉질-겉질섬유가 뒤가쪽 안구전두엽겉질(OFC)로 가서 맛과 냄새 정보를 통합해 음식 보상 판단에 관여한다.",
+          "missing_ko": "안구전두엽겉질은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Gibbons 2023 StatPearls [Internet] (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "고삭신경/얼굴신경 (예: 다리뇌소뇌각의 안뜰신경집종)",
+          "deficit_ko": "혀 앞 2/3의 미각소실",
+          "side_ko": "같은쪽",
+          "sources": "Gibbons 2023 StatPearls [Internet] (B)"
+        }
+      ],
+      "conflicts": [
+        {
+          "issue_ko": "3차(및 2차) 미각 시상겉질투사가 완전히 같은쪽인지, 반대쪽으로 가는 성분도 있는지",
+          "positions": [
+            {
+              "source": "Gibbons 2023 StatPearls [Internet]",
+              "grade": "B",
+              "summary_ko": "3차 섬유는 같은쪽으로만 속섬유막 뒤다리를 지나 이마덮개·앞섬엽·BA3B 입쪽부에서 끝난다고 서술, 교차 언급 없음"
+            },
+            {
+              "source": "Obiefuna 2023 StatPearls [Internet]",
+              "grade": "B",
+              "summary_ko": "고립로핵 입쪽(미각) 부분에서 나온 축삭이 시상 VPM으로 가서 결국 겉질(관자엽 앞섬엽·이마덮개)에서 교차·비교차 양쪽 모두로 끝난다고 서술"
+            },
+            {
+              "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+              "grade": "A",
+              "summary_ko": "고립로핵 입쪽(미각) 부분은 시상으로 가는 비교차 상행로를 낸다고 서술하고, 미각을 대부분 감각로가 교차한다는 일반규칙에서 제외되는 예외로 명시해 같은쪽-전용 입장을 지지"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "olfactory-pathway",
+      "name_ko": "후각전도로",
+      "name_en": "Olfactory pathway",
+      "category_ko": "특수감각 - 후각",
+      "summary_ko": "코안 후각상피의 냄새정보를 후각망울을 거쳐 겉질·피질하 후각구조로 곧바로 전달하는 경로로, 다른 모든 특수감각과 달리 필수적인 시상 중계 없이 겉질에 도달한다.",
+      "origin_ko": "냄새를 맡은 쪽 코/후각망울",
+      "steps": [
+        {
+          "order": 1,
+          "title_ko": "후각수용체신경세포 → 같은쪽 후각망울의 후각소구",
+          "neuronOrder": 1,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "후각상피의 후각수용체신경세포(1차 뉴런) 축삭이 벌집뼈의 벌집판을 지나는 후각신경(I) 섬유를 이루어 같은쪽 후각망울 표면의 후각소구에서 승모세포·솔세포의 가지돌기와 시냅스한다. 같은 냄새수용체를 발현하는 신경세포들의 축삭은 소수의 표적 후각소구로 수렴한다.",
+          "missing_ko": "후각상피·후각신경·후각망울·후각소구는 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Branigan 2023 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 2,
+          "title_ko": "승모세포·솔세포 → (가쪽)후각로 → 앞후각핵·후각결절·조롱박겉질·편도체·속후각겉질",
+          "neuronOrder": 2,
+          "structure_ids": [
+            "lim-amygdala"
+          ],
+          "structure_names_ko": "편도체",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "후각망울의 승모세포·솔세포 축삭이 후각로(가쪽후각로)를 이루어 같은쪽으로 앞후각핵·후각결절·조롱박(이상)겉질·편도체(주로 겉질핵)·속후각겉질까지 널리 투사한다. 냄새 정보는 시상을 거치지 않고 단 2개의 시냅스만으로 후각겉질에 도달하는 것이 특징이다.",
+          "missing_ko": "후각로·앞후각핵·후각결절·조롱박겉질·속후각겉질은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Dikecligil 2024 Annual Review of Psychology (A); Branigan 2023 StatPearls [Internet] (B)"
+        },
+        {
+          "order": 3,
+          "title_ko": "가쪽후각로(승모세포 축삭) → 삼층구조 조롱박겉질",
+          "neuronOrder": 2,
+          "structure_ids": [],
+          "structure_names_ko": "",
+          "side": "같은쪽",
+          "decussation": false,
+          "decussation_where_ko": "",
+          "neurotransmitter_ko": "",
+          "description_ko": "승모세포 축삭이 후각망울의 일차 겉질 입력을 이루는 주된 근원으로, 가쪽후각로를 거쳐 조롱박겉질 1층(층Ia)에서 피라미드세포 꼭대기가지돌기에 흥분성 시냅스를 만든다. 조롱박겉질은 관자엽 안쪽아래, 시신경교차 근처에 위치하며 층 I·II·III의 3층 구조를 이룬다.",
+          "missing_ko": "조롱박겉질은 3D 데이터에 없음",
+          "sources": "Nieuwenhuys 2008 Springer (4th ed.) (A); Purves 2001 Sinauer Associates (B)"
+        }
+      ],
+      "lesions": [
+        {
+          "site_ko": "후각상피·후각망울 (예: 바이러스성 상기도감염, SARS-CoV-2 포함)",
+          "deficit_ko": "후각소실(무취증); 흔히 미각 증상도 함께 호소하지만 실제 미각계 손상이 아니라 후각소실에서 비롯되는 경우가 많음",
+          "side_ko": "양쪽",
+          "sources": "Obiefuna 2023 StatPearls [Internet] (B)"
+        }
+      ],
+      "conflicts": []
+    }
+  ]
+}

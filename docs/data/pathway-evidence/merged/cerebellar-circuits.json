@@ -1,0 +1,643 @@
+{
+ "id": "cerebellar-circuits",
+ "name": "Cerebellar circuits: cortico-ponto-cerebellar, olivocerebellar, and cerebellothalamocortical output",
+ "category": "cerebellar / motor coordination loop",
+ "function": "Coordinate timing, accuracy, and learning of movement by comparing intended and actual motor output",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Cerebral cortex (corticopontine neurons)",
+   "courseVia": [
+    "corticopontine tract",
+    "pontine nuclei",
+    "pontocerebellar fibers",
+    "middle cerebellar peduncle (MCP)"
+   ],
+   "terminatesIn": "Contralateral cerebellar cortex (mossy fiber input)",
+   "laterality": "contralateral (relative to the cerebellar hemisphere reached)",
+   "decussation": {
+    "present": true,
+    "where": "pontocerebellar fibers cross in the pons before entering the contralateral middle cerebellar peduncle"
+   },
+   "neurotransmitter": "glutamate (mossy fiber input)",
+   "evidence": [
+    {
+     "source": "PMC12072475",
+     "grade": "A",
+     "quote": "the pontocerebellar projections, which transmit information from the contralateral cerebral cortex, via the pontine nuclei, to the cerebellum",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK538167",
+     "grade": "B",
+     "quote": "Later, projections of the axons of the corticopontine and the pontocerebellar fibers will develop the middle cerebellar peduncle and connect the cerebral cortex with the cerebellum.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK538167",
+     "grade": "B",
+     "quote": "Mossy fibers use glutamate, while the climbing fibers use aspartate as their main excitatory neurotransmitter to provide excitatory signals to the Purkinje cells.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Mossy fibres are excitatory; most use glutamate as their neurotransmitter.",
+     "species": "human",
+     "page": 817,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Mossy fibres enter the cerebellum through the restiform body and the middle cerebellar peduncle.",
+     "species": "human",
+     "page": 817,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The pontocerebellar projection is mainly crossed; most of its fibres decussate in the pes pontis.",
+     "species": "human",
+     "page": 832,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 1,
+   "cellBodies": "Mossy fiber terminals",
+   "courseVia": [
+    "granular layer of cerebellar cortex"
+   ],
+   "terminatesIn": "Granule cells, whose parallel fiber axons synapse on Purkinje cell dendrites in the molecular layer",
+   "laterality": "ipsilateral (within the cerebellar cortex)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate",
+   "evidence": [
+    {
+     "source": "NBK542242",
+     "grade": "B",
+     "quote": "In the cerebellar cortex, mossy fibers synapse on granule cells in the deepest, granular layer of the cortex; the granule cells' axons extend throughout the outermost, molecular layer as parallel fibers, forming synapses on large numbers of Purkinje cell dendrites.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK542242",
+     "grade": "B",
+     "quote": "Thus each mossy fiber has a small effect on a large number of Purkinje cells, while each climbing fiber has a significant impact on a single cell.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Granule cell axons ascend toward the molecular layer, where they split into two branches that run parallel to the transverse fissures and, therefore, are called parallel fibres.",
+     "species": "human",
+     "page": 813,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Parallel fibres may reach a length of 10 mm or more and terminate with excitatory (glutamatergic) synapses on the spiny branchlets of Purkinje cell dendrites",
+     "species": "human",
+     "page": 813,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 1,
+   "cellBodies": "Inferior olivary nucleus (principal, medial and dorsal accessory olives)",
+   "courseVia": [
+    "olivocerebellar climbing fibers",
+    "contralateral inferior cerebellar peduncle (ICP)"
+   ],
+   "terminatesIn": "Purkinje cell bodies (climbing fiber synapse) in the cerebellar cortex",
+   "laterality": "contralateral",
+   "decussation": {
+    "present": true,
+    "where": "climbing fiber axons cross to ascend through the contralateral inferior cerebellar peduncle"
+   },
+   "neurotransmitter": "aspartate (climbing fiber excitatory transmitter per S4)",
+   "evidence": [
+    {
+     "source": "NBK542242",
+     "grade": "B",
+     "quote": "After receiving motor and sensory inputs, the axons of inferior olive neurons branch into several climbing and mossy fibers (CF and MF) that ascend through the contralateral ICP to the cerebellar cortex.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK542242",
+     "grade": "B",
+     "quote": "The thicker climbing fibers synapse directly in the Purkinje cell layer, usually on the Purkinje cell bodies.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK538167",
+     "grade": "B",
+     "quote": "They represent the terminal ending of the olivocerebellar tracts.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Climbing fibres originate in the medulla oblongata from the contralateral inferior olive, ascend in the restiform body and distribute to the Purkinje cells",
+     "species": "human",
+     "page": 817,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Each adult Purkinje cell is innervated by a single climbing fibre, which terminates with multiple, excitatory (glutamatergic) synapses on the smooth, proximal branches of its dendritic tree.",
+     "species": "human",
+     "page": 817,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC4347949",
+     "grade": "A",
+     "quote": "the climbing fiber input carries an error signal weakening the strength of a subset of parallel fibers/Purkinje neuron synapses in the cerebellar cortex",
+     "species": "not stated (general theoretical statement; Marr-Albus model, originally derived from animal cerebellar physiology)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 2,
+   "cellBodies": "Purkinje cells of the cerebellar cortex",
+   "courseVia": [
+    "axons through the granular layer into the cerebellar white matter"
+   ],
+   "terminatesIn": "Deep cerebellar (intracerebellar) nuclei: fastigial, interposed (globose/emboliform), and dentate",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK538167",
+     "grade": "B",
+     "quote": "The axons are long, pass through the granular layer, enter the white matter, acquire a myelin sheath, and terminate in the intracerebellar nuclei.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK538167",
+     "grade": "B",
+     "quote": "From medial to lateral, the deep nuclei are the fastigial, interposed (consisting of globose and emboliform nuclei), and dentate nuclei, which is the largest nuclei.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Purkinje cells are inhibitory and use gamma-aminobutyric acid (GABA) as their neurotransmitter",
+     "species": "human",
+     "page": 813,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Purkinje cell axons traverse the white matter and terminate on neurons of the cerebellar and certain vestibular nuclei.",
+     "species": "human",
+     "page": 813,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Four cerebellar nuclei can be distinguished, which are arranged into two groups of interconnected nuclei: a medial and caudal group, consisting of the fastigial (medial) and the globose (posterior interposed) nuclei",
+     "species": "human",
+     "page": 821,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC4347949",
+     "grade": "A",
+     "quote": "Purkinje cells send inhibitory projections to deep cerebellar nuclei that in turn send excitatory projections to thalamic nuclei.",
+     "species": "human (TMS study of cerebellum-brain inhibition, CBI)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 3,
+   "cellBodies": "Dentate and interposed (globose/emboliform) nuclei",
+   "courseVia": [
+    "superior cerebellar peduncle (SCP)",
+    "decussation at the level of the inferior colliculus in the midbrain"
+   ],
+   "terminatesIn": "Contralateral red nucleus and thalamus (dentato-rubro-thalamic and interposito-rubral tracts)",
+   "laterality": "contralateral",
+   "decussation": {
+    "present": true,
+    "where": "decussation of the superior cerebellar peduncle at the level of the inferior colliculus"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK538167",
+     "grade": "B",
+     "quote": "Fibers from the dentate, emboliform, and globose nuclei leave the cerebellum through the superior cerebellar peduncle.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC12072475",
+     "grade": "A",
+     "quote": "The SCPs enter the midbrain caudally to the inferior colliculus and trochlear nerves, decussate at the level of the inferior colliculus, and project to the midbrain nuclei and thalamus.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC12072475",
+     "grade": "A",
+     "quote": "It carries tracts from the dentate and interpositus nuclei (globose and emboliform nuclei) that will mainly end in the contralateral red nuclei and thalamus",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC12072475",
+     "grade": "A",
+     "quote": "Some of these tracts are the dentato-rubro-thalamic and the interposito-rubral tracts and will participate in modifying and coordinating motor skills and muscle activity from the same side of the body",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The output of the emboliform, globose and dentate nuclei is directed through the superior cerebellar peduncle (brachium conjunctivum).",
+     "species": "human",
+     "page": 824,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The emboliform nucleus (anterior interposed nucleus), which receives Purkinje cell axons of the C1,C 3 and Y zones, projects to the contralateral magnocellular red nucleus and to the thalamus",
+     "species": "human",
+     "page": 824,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC4347949",
+     "grade": "A",
+     "quote": "inhibition of the dentatothalamic excitatory projection leads to decrease in M1 excitability",
+     "species": "human (TMS study of cerebellum-brain inhibition, CBI)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC4347949",
+     "grade": "A",
+     "quote": "the sensorimotor, lateral premotor, supplementary motor, anterior cingulate, and insular cortices, striatum, ventral thalamus, red nucleus, and cerebellum including the dentate nuclei",
+     "species": "human (resting-state functional connectivity study)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC5490180",
+     "grade": "A",
+     "quote": "the pathway coming from the contralateral dentate nucleus, through the contralateral brachium conjunctivum crossing the midline, turning around the ipsilateral red nucleus, and descending in the ipsilateral central tegmental tract to the inferior olive",
+     "species": "human",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "neuronOrder": 1,
+   "cellBodies": "Fastigial nucleus (vestibulocerebellar output)",
+   "courseVia": [
+    "inferior cerebellar peduncle"
+   ],
+   "terminatesIn": "Vestibular nuclei / reticular formation",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK538167",
+     "grade": "B",
+     "quote": "Fibers from the fastigial nucleus exit through the inferior cerebellar peduncle.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "neuronOrder": 1,
+   "cellBodies": "Interposed and dentate nuclei feedback fibers",
+   "courseVia": [
+    "descend ipsilaterally through the pontomedullary tegmentum"
+   ],
+   "terminatesIn": "Contralateral inferior olivary nuclei (cerebello-olivary feedback pathway)",
+   "laterality": "contralateral",
+   "decussation": {
+    "present": true,
+    "where": "crosses to reach the contralateral inferior olive"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "PMC12072475",
+     "grade": "A",
+     "quote": "Some fibers from the interpositus and dentate nuclei exit the SCP and descend ipsilaterally through the pontomedullary tegmentum to reach the contralateral inferior olivary nuclei.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Descending pathways to the inferior olive take their origin from the parvocellular red nucleus (the central tegmental tract) and the nuclei of the mesodiencephalic border (the medial tegmental tract)",
+     "species": "human",
+     "page": 822,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The central tegmental tract connects the parvocellular red nucleus with the principal olive",
+     "species": "human",
+     "page": 827,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "gives rise to the central tegmental tract, which takes its origin from the dorsomedial aspect of the red nucleus",
+     "species": "human",
+     "page": 217,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "It terminates in the principal nucleus of the inferior olive.",
+     "species": "human",
+     "page": 217,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "One of these tracts, the central tegmental tract , forms a fleece of myelinated fibres around the olive, which is known as the amiculum",
+     "species": "human",
+     "page": 205,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Cerebellar hemisphere",
+   "deficit": "Ataxia, dysmetria, intention tremor, dysdiadochokinesia ipsilateral to the lesion",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Jimsheleishvili 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Each cerebellar hemisphere controls the same side of the body, thus if damaged the symptoms will occur ipsilaterally."
+    },
+    {
+     "source": "Paracuellos-Ayala 2025 International Journal of Molecular Sciences",
+     "grade": "A",
+     "quote": "the pontocerebellar projections, which transmit information from the contralateral cerebral cortex, via the pontine nuclei, to the cerebellum"
+    },
+    {
+     "source": "Paracuellos-Ayala 2025 International Journal of Molecular Sciences",
+     "grade": "A",
+     "quote": "It carries tracts from the dentate and interpositus nuclei (globose and emboliform nuclei) that will mainly end in the contralateral red nuclei and thalamus"
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "Dentato-rubro-olivary pathway (dentate nucleus, red nucleus, inferior olivary nucleus) - Guillain-Mollaret triangle",
+   "deficit": "Hypertrophic olivary degeneration with palatal myoclonus, tremor, and ataxia",
+   "side": "variable (unilateral or bilateral depending on which limb of the triangle is disrupted)",
+   "evidence": [
+    {
+     "source": "Bektas 2026 Journal of Neurosurgery: Case Lessons",
+     "grade": "A",
+     "quote": "Hypertrophic olivary degeneration (HOD) is a rare form of transsynaptic degeneration resulting from disruption of the dentato-rubro-olivary pathway, also known as the Guillain-Mollaret triangle (GMT)."
+    },
+    {
+     "source": "Bektas 2026 Journal of Neurosurgery: Case Lessons",
+     "grade": "A",
+     "quote": "Schematic illustration of the dentato-rubro-olivary pathway (GMT), demonstrating the anatomical relationship between the dentate nucleus, red nucleus, and inferior olivary nucleus."
+    },
+    {
+     "source": "Bektas 2026 Journal of Neurosurgery: Case Lessons",
+     "grade": "A",
+     "quote": "HOD is characterized by delayed onset degeneration and hypertrophy of the inferior olivary nucleus and is typically associated with symptoms such as palatal myoclonus, tremor, and ataxia after injury to the GMT pathway"
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "Cerebellar hemisphere",
+   "deficit": "Ataxia, dysmetria, intention tremor, dysdiadochokinesia ipsilateral to the lesion",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "There is loss of precision in muscle contraction; movements overshoot or undershoot (dysmetria), and an intention tremor is often present."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "Bilateral, axial ataxia dominates if the vermis is injured."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "Symptoms from damage to the hemisphere and the interposed and dentate nuclei are lateralized to the ipsilateral side due to the double decussation of the superior cerebellar peduncle and the pyramidal tract."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "site": "Dentato-rubro-olivary pathway (dentate nucleus, red nucleus, inferior olivary nucleus) - Guillain-Mollaret triangle",
+   "deficit": "Hypertrophic olivary degeneration with palatal myoclonus, tremor, and ataxia",
+   "side": "variable (unilateral or bilateral depending on which limb of the triangle is disrupted)",
+   "evidence": [
+    {
+     "source": "Tilikete 2017 Frontiers in Neurology",
+     "grade": "A",
+     "quote": "the pathway coming from the contralateral dentate nucleus, through the contralateral brachium conjunctivum crossing the midline, turning around the ipsilateral red nucleus, and descending in the ipsilateral central tegmental tract to the inferior olive"
+    },
+    {
+     "source": "Tilikete 2017 Frontiers in Neurology",
+     "grade": "A",
+     "quote": "Hypertrophic degeneration of the inferior olive is mainly observed in patients developing palatal tremor (PT) or oculopalatal tremor (OPT)."
+    },
+    {
+     "source": "Tilikete 2017 Frontiers in Neurology",
+     "grade": "A",
+     "quote": "HOD on MRI is unilateral or bilateral in case of symptomatic PT and bilateral in case of PAPT"
+    },
+    {
+     "source": "Tilikete 2017 Frontiers in Neurology",
+     "grade": "A",
+     "quote": "In symptomatic PT, HOD usually appears contralateral in case of cerebellar lesion and ipsilateral in case of lateralized central tegmental tract lesion"
+    }
+   ],
+   "file": "upgrade-motor-somatosensory.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Neurotransmitter of the climbing-fibre-to-Purkinje-cell synapse",
+   "positions": [
+    {
+     "source": "S4 (original motor.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S4 of motor.json): climbing fibres use aspartate as their main excitatory neurotransmitter",
+     "quote": "Mossy fibers use glutamate, while the climbing fibers use aspartate as their main excitatory neurotransmitter to provide excitatory signals to the Purkinje cells."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys describes the climbing-fibre-to-Purkinje-cell synapse as excitatory and glutamatergic, not aspartatergic",
+     "quote": "Each adult Purkinje cell is innervated by a single climbing fibre, which terminates with multiple, excitatory (glutamatergic) synapses on the smooth, proximal branches of its dendritic tree."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "issue": "Level at which the superior cerebellar peduncle (dentate/interposed nuclei output) decussates",
+   "positions": [
+    {
+     "source": "S16 (original motor.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (PMC review, S16 of motor.json): the superior cerebellar peduncle decussates at the level of the inferior colliculus",
+     "quote": "The SCPs enter the midbrain caudally to the inferior colliculus and trochlear nerves, decussate at the level of the inferior colliculus, and project to the midbrain nuclei and thalamus."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states this pathway decussates at the pontomesencephalic border, not at the level of the inferior colliculus",
+     "quote": "This pathway decussates at the pontomesencephalic border and splits into ascending and descending branches"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The red-nucleus-to-inferior-olive limb of the Guillain-Mollaret triangle travels via the central tegmental tract; this specific tract name was not found stated in the opened sources.",
+   "file": "motor.json"
+  },
+  {
+   "text": "Purkinje cell output onto the deep cerebellar nuclei is inhibitory and GABAergic; the opened sources describe the anatomical projection but do not explicitly name GABA as the transmitter at this synapse.",
+   "file": "motor.json"
+  },
+  {
+   "text": "The cerebellar hemisphere lesion is 'ipsilateral' because of a double decussation: the corticopontocerebellar pathway crosses once (cortex to contralateral cerebellum) and the cerebellar output via the superior cerebellar peduncle crosses again (back toward the original, ipsilateral, side) -- this synthesis follows from the two crossing steps documented above but no single opened source states the 'double crossing' explanation in those words.",
+   "file": "motor.json"
+  }
+ ],
+ "sources": {
+  "PMC12072475": {
+   "label": "Paracuellos-Ayala 2025 International Journal of Molecular Sciences",
+   "grade": "A",
+   "title": "Involvement of the Cerebellar Peduncles in FMR1 Premutation Carriers: A Pictorial Review of Their Anatomy, Imaging, and Pathology",
+   "doi": "10.3390/ijms26094402",
+   "pmcid": "PMC12072475",
+   "isbn": null,
+   "nbk": ""
+  },
+  "NBK538167": {
+   "label": "Jimsheleishvili 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Cerebellum",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK538167"
+  },
+  "NBK542242": {
+   "label": "Paul 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Superior and Inferior Olivary Nucleus (Superior and Inferior Olivary Complex)",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK542242"
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  },
+  "PMC4347949": {
+   "label": "Manto 2012 Cerebellum (London, England)",
+   "grade": "A",
+   "title": "Consensus Paper: Roles of the Cerebellum in Motor Control—The Diversity of Ideas on Cerebellar Involvement in Movement",
+   "doi": "10.1007/s12311-011-0331-9",
+   "pmcid": "PMC4347949",
+   "isbn": null,
+   "nbk": ""
+  },
+  "PMC5490180": {
+   "label": "Tilikete 2017 Frontiers in Neurology",
+   "grade": "A",
+   "title": "Hypertrophic Olivary Degeneration and Palatal or Oculopalatal Tremor",
+   "doi": "10.3389/fneur.2017.00302",
+   "pmcid": "PMC5490180",
+   "isbn": null,
+   "nbk": ""
+  }
+ }
+}

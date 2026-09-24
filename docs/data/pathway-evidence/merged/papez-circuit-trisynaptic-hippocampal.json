@@ -1,0 +1,676 @@
+{
+ "id": "papez-circuit-trisynaptic-hippocampal",
+ "name": "Papez circuit and hippocampal trisynaptic circuit",
+ "category": "limbic",
+ "function": "Limbic circuitry for episodic memory and emotional processing, linking the hippocampal formation, hypothalamus, thalamus and cingulate cortex",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Subiculum",
+   "courseVia": [
+    "postcommissural fornix"
+   ],
+   "terminatesIn": "medial mammillary nucleus (mammillary body)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate (not directly stated in sources; unsourced)",
+   "evidence": [
+    {
+     "source": "PMC10164017",
+     "grade": "A",
+     "quote": "The hippocampus then connects to the mammillary bodies via the fornix (FX).",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The main bundle of the fornix or postcommissural fornix finally traverses the hypothalamus, where most of its fibres terminate in the mamillary body.",
+     "species": "human",
+     "page": 383,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The fornix is a large, compact, arch-shaped bundle that originates from the hippocampal formation and projects to the septal region and hypothalamus.",
+     "species": "human",
+     "page": 298,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC10804970",
+     "grade": "A",
+     "quote": "the subiculum is the primary source of hippocampal projections to sites including the mammillary bodies and anterior thalamic nuclei",
+     "species": "cross-species synthesis (discussed alongside human diffusion-MRI tractography findings)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC10804970",
+     "grade": "A",
+     "quote": "surgically lesioning the part of the descending postcommissural fornix that conveys hippocampal inputs to the mammillary bodies",
+     "species": "rat",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Medial mammillary nucleus",
+   "courseVia": [
+    "mammillothalamic tract"
+   ],
+   "terminatesIn": "anterior thalamic nuclei (ventral/anterior thalamus)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "PMC10164017",
+     "grade": "A",
+     "quote": "The mammillary bodies project to the ventral thalamus via the mammillothalamic tract (MTT).",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "PMC10164017",
+     "grade": "A",
+     "quote": "The mammillothalamic is a projection bundle that arises from the mammillary bodies, projects dorsally, and cranially, toward the thalamus.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The mamillothalamic tract, which passes to the anterior thalamic nucleus, forms part of the so-called Papez circuit.",
+     "species": "human",
+     "page": 298,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The fasciculus mamillaris princeps, containing the efferents of the mamillary nuclei, constitutes a large compact bundle that passes dorsally for a short distance and then splits into two components, the large mamillothalamic and smaller mamillotegmental",
+     "species": "human",
+     "page": 298,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The anterior nuclear group receives the mamillothalamic tract.",
+     "species": "human",
+     "page": 270,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC10804970",
+     "grade": "A",
+     "quote": "This tract emanates from the mammillary bodies to enter the rostral thalamus.",
+     "species": "human (discussed in the context of thalamic stroke patients)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC10804970",
+     "grade": "A",
+     "quote": "pathology in a rostral thalamic zone centred around the mammillothalamic tract provides the best predictor of memory loss",
+     "species": "human",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Anterior thalamic nuclei",
+   "courseVia": [
+    "anterior thalamic radiation",
+    "anterior limb of the internal capsule"
+   ],
+   "terminatesIn": "cingulate gyrus (anterior cingulate / prefrontal cortex)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "PMC10164017",
+     "grade": "A",
+     "quote": "the ATR fibers connect the thalamic midline and anterior nuclear groups with the frontal lobe by traversing through the anterior limbs of bilateral internal capsules",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "PMC10164017",
+     "grade": "A",
+     "quote": "The ventral thalamus links back into the prefrontal cortex and anterior cingulate gyrus via the thalamo-cingulate projections (TC) to complete the Papez circuit",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The anterior and lateral dorsal nuclei are reciprocally connected with the limbic cortex of the cingulate gyrus, retrosplenial area and pre- and parasubiculum",
+     "species": "human",
+     "page": 270,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The fibres originating from the anterior nuclei reach the temporal lobe via the cingulum and terminate in the subicular complex and, more specifically, in the presubiculum",
+     "species": "human",
+     "page": 387,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "This projection forms part of the so-called circuit of Papez, which will be discussed below.",
+     "species": "human",
+     "page": 387,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC10804970",
+     "grade": "A",
+     "quote": "the anterior cingulate cortex is principally interconnected with AM",
+     "species": "rat",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 4,
+   "cellBodies": "Cingulate gyrus",
+   "courseVia": [
+    "cingulum bundle"
+   ],
+   "terminatesIn": "parahippocampal gyrus / entorhinal cortex",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "PMC10164017",
+     "grade": "A",
+     "quote": "The CB is the longest limbic pathway of the Papez circuit generating a large loop connecting the prefrontal projections of the cingulate gyrus to the hippocampus in the parahippocampal gyrus of the temporal lobe",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The cingulum consists of a bundle of short and long association fibres that surround the corpus callosum.",
+     "species": "human",
+     "page": 383,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Passing through the core of the cingulate and parahippocampal gyri, it extends from the septal area to the uncal region in the temporal lobe",
+     "species": "human",
+     "page": 383,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC10804970",
+     "grade": "A",
+     "quote": "This complex tract contains fibres from numerous brain sites, including the anterior thalamic projections to the cingulate and retrosplenial cortices, as well as to the hippocampal formation",
+     "species": "cross-species (rat and macaque tract-tracing synthesis)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 5,
+   "cellBodies": "Entorhinal cortex (layer II, weakly layer V)",
+   "courseVia": [
+    "perforant path"
+   ],
+   "terminatesIn": "dentate gyrus granule cells",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate (not directly stated for this step; unsourced)",
+   "evidence": [
+    {
+     "source": "PMC12513980",
+     "grade": "A",
+     "quote": "The outer two thirds are targeted mainly by layer II (and more weakly by layer V) of the entorhinal cortex via the perforant path",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The fibres passing from the entorhinal cortex to the dentate gyrus form a large pathway known as the temporo-ammonic or perforant path",
+     "species": "human",
+     "page": 379,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "They originate principally from large stellate cells situated in layer II of the entorhinal cortex and perforate through the subiculum and the zone of the obliterated hippocampal fissure.",
+     "species": "human",
+     "page": 379,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "After entering the dentate gyrus, these fibres ramify in the outer two thirds of the molecular layer of that structure, where they form excitatory synapses onto the dendritic spines of granule cells",
+     "species": "human",
+     "page": 379,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "neuronOrder": 6,
+   "cellBodies": "Dentate gyrus granule cells",
+   "courseVia": [
+    "mossy fibres"
+   ],
+   "terminatesIn": "CA3 pyramidal neurons",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate",
+   "evidence": [
+    {
+     "source": "PMC12513980",
+     "grade": "A",
+     "quote": "It contains the axons of the granule cells (i.e., the mossy fibers) and is the site at which they form the en passant synapses on the proximal dendrites of CA3 pyramids",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The axons of the granule cells in the dentate gyrus pass as mossy fibres to the stratum radiatum of field CA3, in which they form a separate sublayer known as the stratum lucidum .",
+     "species": "human",
+     "page": 382,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The mossy fibre varicosities contain large amounts of Zn 2+ and opioid peptides that are coreleased with the primary neurotransmitter glutamate",
+     "species": "human",
+     "page": 382,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "neuronOrder": 7,
+   "cellBodies": "CA3 pyramidal neurons",
+   "courseVia": [
+    "Schaffer collaterals"
+   ],
+   "terminatesIn": "CA1 pyramidal neurons",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": true,
+    "where": "some Schaffer collateral/associational fibres cross via the hippocampal commissure to the contralateral hippocampus"
+   },
+   "neurotransmitter": "glutamate",
+   "evidence": [
+    {
+     "source": "PMC12513980",
+     "grade": "A",
+     "quote": "The collaterals of the giant CA3 pyramids which target the CA1 region have been named Schaffer collaterals after the first neuroanatomist to describe them",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "These collaterals are collectively known as Schaffer collaterals .",
+     "species": "human",
+     "page": 382,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Physiological experiments have shown that the Schaffer collaterals exert an excitatory action on CA1 pyramidal cells",
+     "species": "human",
+     "page": 382,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 8,
+   "neuronOrder": 8,
+   "cellBodies": "CA1 pyramidal neurons",
+   "courseVia": [
+    "alveus/fimbria"
+   ],
+   "terminatesIn": "subiculum, closing the trisynaptic loop",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate",
+   "evidence": [
+    {
+     "source": "PMC12947615",
+     "grade": "A",
+     "quote": "Canonical pathways encompass the classic trisynaptic loop from the entorhinal cortex (EC) to dentate gyrus (DG), CA3, CA1, and subiculum (SUB).",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The CA1 pyramidal cells project massively to the subiculum",
+     "species": "human",
+     "page": 382,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "All of these projections originate from pyramidal neurons and are considered to be excitatory in nature.",
+     "species": "human",
+     "page": 382,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "these may form the final link (7) in a second route, along which the hippocampo-entorhinal circuit is closed",
+     "species": "human",
+     "page": 382,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Mammillary bodies, anterior/mediodorsal thalamic nuclei, mammillothalamic tract (thiamine deficiency)",
+   "deficit": "Wernicke-Korsakoff syndrome: severe anterograde amnesia and executive dysfunction",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Singh 2026 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "In Korsakoff syndrome, injury involving the mammillary bodies, anterior and mediodorsal thalamic nuclei, mammillothalamic pathways, and connected hippocampal and frontal networks contributes to severe impairment of episodic memory and executive function."
+    }
+   ],
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "site": "Bilateral medial temporal lobe (hippocampus, amygdala, surrounding cortex) surgical excision",
+   "deficit": "Dense, global anterograde amnesia (patient H.M. / Henry Molaison)",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Murray 2024 Hippocampus",
+     "grade": "A",
+     "quote": "The original account by Scoville and Milner (1957) described that in the 10 patients studied, including H.M., the severe anterograde memory impairments occurred only after bilateral MTL excisions that included much of the amygdala, hippocampus, and surrounding cortex."
+    }
+   ],
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "site": "Mammillary bodies, anterior/mediodorsal thalamic nuclei, mammillothalamic tract (thiamine deficiency)",
+   "deficit": "Wernicke-Korsakoff syndrome: severe anterograde amnesia and executive dysfunction",
+   "side": "bilateral",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "site": "Bilateral medial temporal lobe (hippocampus, amygdala, surrounding cortex) surgical excision",
+   "deficit": "Dense, global anterograde amnesia (patient H.M. / Henry Molaison)",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "bilateral damage limited to the hippocampal formation is sufficient to produce enduring memory impairment."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "site": "Isolated hippocampal CA1 field (patient RB; hypotensive episode during coronary bypass surgery)",
+   "deficit": "Substantial, long-lasting anterograde memory impairment, milder than global medial-temporal amnesia",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "The only pathology that could be associated with his memory disturbance was complete loss of neurons in the hippocampal CA1 field."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "site": "Mammillary bodies, anterior/mediodorsal thalamic nuclei, mammillothalamic tract (thiamine deficiency)",
+   "deficit": "Wernicke-Korsakoff syndrome: severe anterograde amnesia and executive dysfunction",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Aggleton 2022 Neuroscience & Biobehavioral Reviews",
+     "grade": "A",
+     "quote": "pathology in the anterior thalamic nuclei may be the best predictor of the severe memory loss in this syndrome"
+    }
+   ],
+   "file": "upgrade-limbic.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Role of the subiculum in the trisynaptic/hippocampal circuit",
+   "positions": [
+    {
+     "source": "Gao 2026 Hippocampus",
+     "grade": "A",
+     "claim": "Subiculum is the classic fourth output stage terminating the trisynaptic pathway",
+     "quote": "the subiculum has been considered the “fourth leg” and output region of the trisynaptic pathway"
+    },
+    {
+     "source": "Gao 2026 Hippocampus",
+     "grade": "A",
+     "claim": "Subiculum is better characterised as an integration hub receiving and redistributing hippocampal, thalamic and cortical afferents rather than a simple output relay",
+     "quote": "recent evidence highlights the subiculum as a site of integration, receiving and redistributing outputs from the hippocampus, anterior thalamus, retrosplenial cortex, and entorhinal cortex"
+    }
+   ],
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "issue": "Role of the subiculum in the trisynaptic/hippocampal circuit",
+   "positions": [
+    {
+     "source": "S3",
+     "grade": "?",
+     "claim": "Subiculum is the classic fourth output stage terminating the trisynaptic pathway",
+     "quote": "the subiculum has been considered the “fourth leg” and output region of the trisynaptic pathway"
+    },
+    {
+     "source": "S3",
+     "grade": "?",
+     "claim": "Subiculum is better characterised as an integration hub receiving and redistributing hippocampal, thalamic and cortical afferents rather than a simple output relay",
+     "quote": "recent evidence highlights the subiculum as a site of integration, receiving and redistributing outputs from the hippocampus, anterior thalamus, retrosplenial cortex, and entorhinal cortex"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys describes a second, parallel closing route of the intrinsic hippocampal circuit (deep-layer entorhinal cells receiving CA1/subicular efferents and sending ascending collaterals back to superficial entorhinal layers), rather than a single serial subiculum-to-entorhinal loop",
+     "quote": "these may form the final link (7) in a second route, along which the hippocampo-entorhinal circuit is closed"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "issue": "Whether the anterior thalamus reaches the parahippocampal/entorhinal region only via a cingulate-cortex relay, or also via thalamic fibres running directly within the cingulum to the subicular complex",
+   "positions": [
+    {
+     "source": "original batch (step 3-4 structure)",
+     "grade": "?",
+     "claim": "Original batch models the Papez loop as anterior thalamus -> synapse in cingulate gyrus -> cingulum -> parahippocampal/entorhinal cortex (serial relay through cingulate cortex)",
+     "quote": "n/a (structural claim, not a quoted source)"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states that fibres originating from the anterior thalamic nuclei travel within the cingulum itself directly to the subicular complex/presubiculum, without necessarily requiring a synaptic relay in cingulate cortex first",
+     "quote": "The fibres originating from the anterior nuclei reach the temporal lobe via the cingulum and terminate in the subicular complex and, more specifically, in the presubiculum"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "issue": "Validity and boundaries of the Papez circuit / limbic system concept itself",
+   "positions": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Papez (1937) proposed, on theoretical grounds, a discrete anatomical circuit centred on the hippocampal formation and cingulate gyrus as the substrate of emotion",
+     "quote": "In 1937, Papez [99] published a notable paper in which he claimed on theoretical grounds that a circuit, of which the hippocampal formation and the cingulate gyrus form important components, constitutes the neural substrate of emotional behaviour."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Modern reviewers criticise the limbic-system concept as lacking an adequate empirical definition and having boundaries that have shifted repeatedly since Papez, so the 'circuit' should not be read as a single, sharply bounded anatomical loop",
+     "quote": "An adequate empirical definition of the limbic system is lacking"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "issue": "Role of the subiculum in the trisynaptic/hippocampal circuit (serial output stage vs. parallel integration hub)",
+   "positions": [
+    {
+     "source": "Aggleton 2022 Neuroscience & Biobehavioral Reviews",
+     "grade": "A",
+     "claim": "Subiculum neurons that project onward to retrosplenial/cingulate cortex (area 29) also send axon collaterals directly to the mammillary bodies, so the subiculum is not simply a serial relay terminating the loop but a branch point feeding two Papez-circuit routes in parallel",
+     "quote": "many of the same subiculum neurons that innervate area 29 have collaterals that also innervate the mammillary bodies"
+    }
+   ],
+   "file": "upgrade-limbic.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The perforant path and mossy fibre / Schaffer collateral synapses use glutamate as their principal neurotransmitter (physiological convention; not explicitly stated with a citation in the opened sources for every step).",
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "text": "Some fornix and hippocampal commissural fibres decussate, allowing bilateral hippocampal communication (general anatomical convention; not explicitly quoted from an opened source for this batch).",
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "text": "The perforant path and mossy fibre / Schaffer collateral synapses use glutamate as their principal neurotransmitter for the entorhinal-to-CA1 legs specifically stated in each step's neurotransmitter field is partially RESOLVED by S1 for the mossy fibre synapse (Zn2+ and opioid peptides co-released with glutamate, p.382) and for the Schaffer collateral synapse's excitatory action (p.382); the entorhinal-to-dentate-gyrus (perforant path) synapse's transmitter is still not explicitly named glutamate in the opened text.",
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "text": "Some fornix and hippocampal commissural fibres decussate, allowing bilateral hippocampal communication: S1 confirms a 'hippocampal commissure' exists (p.382, ch12) but the specific claim that Schaffer-collateral/associational fibres are among the decussating components was not found stated in those exact terms.",
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "text": "Wernicke-Korsakoff syndrome specifically (thiamine deficiency damaging mammillary bodies/anterior thalamus/mammillothalamic tract) was not found described in the opened Nieuwenhuys chapters (ch08, ch10, ch12, ch14); the only amnestic-syndrome case discussions found in S1 concern surgical/ischaemic hippocampal damage (patients HM and RB), not thiamine-deficiency mammillary pathology.",
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "text": "Steps 5-8 of the trisynaptic hippocampal loop (entorhinal cortex -> dentate gyrus -> CA3 -> CA1 -> subiculum) are outside the scope of Aggleton, Nelson & O'Mara 2022 (S1/PMC10804970), which reviews the diencephalic Papez circuit (fornix, mammillothalamic tract, anterior thalamic radiation, cingulum bundle) but does not describe intrahippocampal trisynaptic connectivity in quotable detail; no A-grade replacement quote for these steps was found in this session.",
+   "file": "upgrade-limbic.json"
+  },
+  {
+   "text": "The specific claim that anterior thalamic efferents reach the cingulate gyrus via the anterior limb of the internal capsule (as opposed to the fornix) was not found stated in this direction in S1; the source instead describes the internal capsule as a route taken in some species by afferents traveling toward the anterior thalamic nuclei, not efferents leaving them for cingulate cortex.",
+   "file": "upgrade-limbic.json"
+  }
+ ],
+ "sources": {
+  "PMC10164017": {
+   "label": "Kamali 2023 Brain Topography",
+   "grade": "A",
+   "title": "The Cortico-Limbo-Thalamo-Cortical Circuits: An Update to the Original Papez Circuit of the Human Limbic System",
+   "doi": "10.1007/s10548-023-00955-y",
+   "pmcid": "PMC10164017",
+   "isbn": null,
+   "nbk": ""
+  },
+  "PMC12513980": {
+   "label": "Zhao 2025 Anatomical Science International",
+   "grade": "A",
+   "title": "Hippocampal architecture viewed through the eyes of methodological development",
+   "doi": "10.1007/s12565-025-00878-7",
+   "pmcid": "PMC12513980",
+   "isbn": null,
+   "nbk": ""
+  },
+  "PMC12947615": {
+   "label": "Gao 2026 Hippocampus",
+   "grade": "A",
+   "title": "Non-Canonical Subiculum Circuit Organization and Function",
+   "doi": "10.1002/hipo.70087",
+   "pmcid": "PMC12947615",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  },
+  "PMC10804970": {
+   "label": "Aggleton 2022 Neuroscience & Biobehavioral Reviews",
+   "grade": "A",
+   "title": "Time to retire the serial Papez circuit: Implications for space, memory, and attention",
+   "doi": "10.1016/j.neubiorev.2022.104813",
+   "pmcid": "PMC10804970",
+   "isbn": null,
+   "nbk": ""
+  }
+ }
+}

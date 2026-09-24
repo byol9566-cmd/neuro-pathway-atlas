@@ -1,0 +1,498 @@
+{
+ "id": "visual-pathway",
+ "name": "Visual pathway",
+ "category": "special sense - vision",
+ "function": "Conveys visual information from the retina to the primary visual cortex (and to subcortical targets) for conscious perception, retinotopic mapping and visuomotor reflexes.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Retinal ganglion cells (RGCs) in the retina",
+   "courseVia": [
+    "intraocular, intraorbital, intracanalicular and intracranial segments of the optic nerve (CN II)"
+   ],
+   "terminatesIn": "optic chiasm",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK549840",
+     "grade": "B",
+     "quote": "The optic tracts consist of the axons originating from the retinal ganglion cells (RGCs) in the retina.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The axons of the ganglion cells pass over the inner surface of the retina and converge towards the posterior pole of the eye, where they pierce through foramina in the sclera and then constitute the optic nerve.",
+     "species": "human",
+     "page": 758,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 1,
+   "cellBodies": "Retinal ganglion cell axons (continuing from step 1)",
+   "courseVia": [
+    "optic chiasm"
+   ],
+   "terminatesIn": "optic tract",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": true,
+    "where": "optic chiasm - nasal (crossed) hemiretinal fibers decussate; temporal (uncrossed) hemiretinal fibers remain ipsilateral"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK549840",
+     "grade": "B",
+     "quote": "The optic chiasm is an area of partial decussation, in which primarily the nasal retinal fibers traveling through the left and right optic nerves decussate to the contralateral optic chiasm and optic tract.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK558929",
+     "grade": "B",
+     "quote": "It has been shown that around 53% of the total optic nerve fibers cross at the optic chiasma, and 47% of the optic nerve fibers do not cross.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK558929",
+     "grade": "B",
+     "quote": "By crossing at the optic chiasm, all fibers recording the left visual field of both eyes project to the right hemisphere, and the same applies to the right visual field.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Within the optic chiasm a partial decussation takes place: fibres from the nasal halves of the retinae, including the projection of the monocular visual field, cross to the opposite side; those from the temporal halves of the retinas remain uncrossed",
+     "species": "human",
+     "page": 758,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "After this partial decussation, the axons of the retinal ganglion cells continue without interruption behind the chiasm as the two diverging optic tracts.",
+     "species": "human",
+     "page": 758,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 1,
+   "cellBodies": "Retinal ganglion cell axons (continuing in the optic tract)",
+   "courseVia": [
+    "optic tract, coursing posterolaterally through the ambient cistern"
+   ],
+   "terminatesIn": "lateral geniculate nucleus (LGN) of the thalamus",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": "decussation already occurred at the chiasm"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK549840",
+     "grade": "B",
+     "quote": "Each optic tract carries one-half of the visual field, consisting of afferent (sensory) information from temporal hemi-retinal fibers ipsilaterally and nasal hemi-retinal fibers contralaterally.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "These arch around the lateral sides of the diencephalon until they reach the lateral geniculate bodies, where most of their fibres terminate.",
+     "species": "human",
+     "page": 758,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 2,
+   "cellBodies": "Lateral geniculate nucleus (LGN) neurons - parvocellular, magnocellular and koniocellular layers",
+   "courseVia": [
+    "optic radiations (geniculocalcarine tract): Meyer's loop, central bundle, Baum's loop",
+    "internal capsule"
+   ],
+   "terminatesIn": "primary visual cortex (V1, striate cortex, calcarine cortex)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK549840",
+     "grade": "B",
+     "quote": "Parvocellular (P) and magnocellular (M) cells of the LGN separate into six layers, in which fibers originating from ipsilateral RGCs synapse onto layers 2, 3, and 5, while contralateral neural information synapses onto layers 1, 4, and 6.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK549840",
+     "grade": "B",
+     "quote": "The left and right LGN serve as points of neural origin for optic radiations (Meyer’s loop, central bundle, and Baum’s loop) that travel to the primary visual striate cortex (V1) and several extrastriate locations of the cortex, primarily through the internal capsule.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC10498387",
+     "grade": "A",
+     "quote": "it is now well established that the four dorsal layers (parvocellular) of the dLGN receive signals about form and color from X-type ganglion cells and the two ventral layers (magnocellular), receive signals about movement from Y-type ganglion cells.",
+     "species": "primate",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC10498387",
+     "grade": "A",
+     "quote": "Ventral to each of the magno- and parvocellular layers lie the koniocellular layers, which contain a heterogenous group of neurons whose functions remain to be fully determined.",
+     "species": "primate",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Layer M1 and layers P4 and P6 receive fibres from the contralateral eye, and layer M2 and layers P3 and P5 receive fibres from the ipsilateral eye",
+     "species": "human",
+     "page": 758,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The efferent fibres of the lateral geniculate body constitute the optic radiation or geniculocalcarine tract, which terminates in the primary visual cortex.",
+     "species": "human",
+     "page": 761,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 2,
+   "cellBodies": "LGN neurons projecting the inferior optic radiation",
+   "courseVia": [
+    "inferior optic radiation along the roof of the lateral ventricle's temporal horn (Meyer's loop) through the temporal lobe"
+   ],
+   "terminatesIn": "inferior bank of the calcarine sulcus (lingual gyrus) - carries superior visual field information",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK558929",
+     "grade": "B",
+     "quote": "The inferior radiation first courses anteriorly, along the roof of the lateral ventricle's temporal horn, before turning laterally and projecting through the temporal lobe as a Meyer loop.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The upper quadrant of the visual field is represented in the contralateral V1 cortex of the lower bank of the calcarine sulcus",
+     "species": "human",
+     "page": 761,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "neuronOrder": 2,
+   "cellBodies": "LGN neurons projecting the superior optic radiation",
+   "courseVia": [
+    "superior optic radiation through the parietal lobe"
+   ],
+   "terminatesIn": "superior bank of the calcarine sulcus (cuneus) - carries inferior visual field information",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK558929",
+     "grade": "B",
+     "quote": "The superior pathway courses posteriorly through the parietal lobe before contacting the visual cortex.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK558929",
+     "grade": "B",
+     "quote": "The superior bank of the calcarine sulcus receives visual data from the inferior fields, and the inferior bank is responsible for the superior visual field.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "the lower quadrant is represented in the upper bank of this sulcus",
+     "species": "human",
+     "page": 761,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "neuronOrder": 2,
+   "cellBodies": "Primary visual cortex (V1) neurons",
+   "courseVia": [
+    "calcarine sulcus"
+   ],
+   "terminatesIn": "V1 (Brodmann area 17), retinotopically organized",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK558929",
+     "grade": "B",
+     "quote": "The LGN contains an array of axons distributed in 6 laminae or layers that receive the signal from either the ipsilateral or contralateral eye. Such a retinotopic organization is crucial to properly merge binocular images at the occipital cortex.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The fovea, i.e. the retinal areas concerned with central vision, projects to a relatively large area in the posterior part of the primary visual cortex.",
+     "species": "human",
+     "page": 761,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The nasal periphery of the retina, concerned with the temporal, monocular periphery of the visual field, projects to the extreme anterior part of the visual cortex",
+     "species": "human",
+     "page": 761,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 8,
+   "neuronOrder": 1,
+   "cellBodies": "Subset of retinal ganglion cell axons (extrageniculate branch)",
+   "courseVia": [
+    "optic tract branch bypassing the LGN"
+   ],
+   "terminatesIn": "superior colliculus, pretectal nuclei, suprachiasmatic nuclei (and, via the superior colliculus, the pulvinar - retino-tecto-pulvinar route)",
+   "laterality": "contralateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK558929",
+     "grade": "B",
+     "quote": "Simultaneously, some fibers from the optic tract also communicate with the superior colliculus, pretectal nuclei, and suprachiasmatic nuclei, which are involved in multiple physiologic functions, including the light reflex.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC10498387",
+     "grade": "A",
+     "quote": "Moreover, pulvinar is considered to play an important role in unconscious vision or blindsight",
+     "species": "primate",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "some fibres continue in a mediocaudal direction and pass via the brachium of the superior colliculus to the superior colliculus, the pretectal region and the terminal nuclei of the accessory optic system",
+     "species": "human",
+     "page": 758,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Several retinocortical pathways to nonprimary visual areas avoid the lateral geniculate body and synapse in the superior colliculus and the pulvinar.",
+     "species": "human",
+     "page": 760,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The retinogeniculocortical projection and the extrageniculate and extrastriate visual pathways.",
+     "species": "human",
+     "page": 760,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "optic nerve, anterior to the optic chiasm",
+   "deficit": "monocular blindness (vision loss confined to the affected eye)",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Akova 2025 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "A lesion of the optic nerve anterior to the optic chiasm produces vision loss in the ipsilateral eye."
+    }
+   ],
+   "file": "special-senses.json"
+  },
+  {
+   "site": "optic chiasm (e.g. pituitary tumor, anterior communicating artery aneurysm)",
+   "deficit": "bitemporal hemianopia",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Akova 2025 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Lesions of the optic chiasm result in bitemporal hemianopia. The most common causes are pituitary tumors, given the close relationship of the chiasm to the pituitary gland, and aneurysms of the anterior communicating artery."
+    }
+   ],
+   "file": "special-senses.json"
+  },
+  {
+   "site": "retrochiasmal pathway (optic tract, LGN, optic radiation or occipital cortex)",
+   "deficit": "homonymous hemianopia",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Wolberg 2024 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "By crossing at the optic chiasm, all fibers recording the left visual field of both eyes project to the right hemisphere, and the same applies to the right visual field."
+    }
+   ],
+   "file": "special-senses.json"
+  },
+  {
+   "site": "inferior optic radiation via Meyer's loop (temporal lobe)",
+   "deficit": "superior quadrantanopia (\"pie in the sky\")",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Wolberg 2024 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "For instance, right-sided Meyer loop (inferior radiation) damage would cause vision loss in the superior-left quadrant bilaterally (pie in the sky)."
+    }
+   ],
+   "file": "special-senses.json"
+  },
+  {
+   "site": "superior optic radiation through the parietal lobe",
+   "deficit": "inferior quadrantanopia (\"pie on the floor\")",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Wolberg 2024 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "The damage to the right optic radiation passing through the parietal lobe causes vision loss in the inferior left quadrant bilaterally (pie on the floor defect)."
+    }
+   ],
+   "file": "special-senses.json"
+  },
+  {
+   "site": "occipital pole (posterior calcarine cortex), classically posterior cerebral artery territory infarct",
+   "deficit": "homonymous hemianopia with macular sparing",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Wolberg 2024 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Sparing of the macula permits a centrally localized (about 5°-25°) region of functional vision in the side affected with HH, leading to an incomplete HH."
+    }
+   ],
+   "file": "special-senses.json"
+  }
+ ],
+ "conflicts": [],
+ "unsourced": [
+  {
+   "text": "The retino-tecto-pulvinar route bypassing the LGN is commonly termed the 'extrageniculate' visual pathway.",
+   "file": "special-senses.json"
+  },
+  {
+   "text": "Retinotopic mapping assigns the fovea/macula to the occipital pole and peripheral fields to progressively more anterior calcarine cortex.",
+   "file": "special-senses.json"
+  }
+ ],
+ "sources": {
+  "NBK549840": {
+   "label": "Mehra 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Optic Tract",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK549840"
+  },
+  "NBK558929": {
+   "label": "Wolberg 2024 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Homonymous Hemianopsia",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK558929"
+  },
+  "PMC10498387": {
+   "label": "Casanova 2023 Frontiers in Neuroscience",
+   "grade": "A",
+   "title": "The dorsal lateral geniculate nucleus and the pulvinar as essential partners for visual cortical functions",
+   "doi": "10.3389/fnins.2023.1258393",
+   "pmcid": "PMC10498387",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

@@ -1,0 +1,483 @@
+{
+ "id": "extrapyramidal-descending-tracts",
+ "name": "Extrapyramidal descending tracts: rubrospinal, vestibulospinal, reticulospinal, and tectospinal",
+ "category": "extrapyramidal / descending motor",
+ "function": "Regulate posture, muscle tone, and reflexive orientation independent of the pyramidal (corticospinal/corticobulbar) system",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Red nucleus, midbrain tegmentum",
+   "courseVia": [
+    "ventral tegmental decussation (caudal midbrain)",
+    "dorsolateral part of the lateral funiculus"
+   ],
+   "terminatesIn": "Ventral horn lamina V, VI, and VII; synapses with alpha and gamma motor neurons of flexor muscles",
+   "laterality": "contralateral",
+   "decussation": {
+    "present": true,
+    "where": "ventral tegmental decussation in the caudal midbrain"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "The rubrospinal tract originates from the red nucleus of the midbrain tegmentum. It crosses the midline in ventral tegmental decussation located in the caudal midbrain.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "The tract forms a contralateral tract in the dorsolateral part of the lateral funiculus and lies in the ventrolateral part of the spinal cord.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "The rubrospinal tract synapses in these laminae with alpha and gamma motor neurons that stimulate the flexor muscles.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK559135",
+     "grade": "B",
+     "quote": "The rubrospinal tract carries signals from the red nucleus to the spinal motor neurons.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In humans the magnocellular red nucleus is relatively small",
+     "species": "human",
+     "page": 217,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "This tract decussates at the level of the red nucleus and terminates in cranial motor nuclei, on interneurons in the lateral tegmental field, the lateral reticular nucleus",
+     "species": "human",
+     "page": 849,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 1,
+   "cellBodies": "Medial vestibular nucleus (Schwalbe nucleus), medulla",
+   "courseVia": [
+    "medial vestibulospinal tract"
+   ],
+   "terminatesIn": "Limb motor neurons, especially neck and forelimb (upper-body) musculature",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "The medial vestibulospinal tract originates in the medial vestibular nuclei, or Schwalbe nucleus, in the medulla and terminates in the limb motor neurons.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "They are responsible for innervating upper-body musculature, especially muscles of the neck and forelimbs.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 1,
+   "cellBodies": "Lateral vestibular nucleus (Deiter's nucleus), pons",
+   "courseVia": [
+    "lateral vestibulospinal tract"
+   ],
+   "terminatesIn": "Rexed laminae VII and VIII (premotor interneurons and alpha/gamma motor neurons of extensor muscles)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "The lateral vestibulospinal tract originates in the lateral vestibular nuclei, or Deiter's nucleus of the pons, and ipsilaterally courses down to the Rexed's laminae VII and VIII.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "These laminae contain premotor interneurons and other alpha and gamma motor neurons responsible for innervating the extensor muscles that oppose gravity and inhibiting the flexor muscles.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "The vestibulospinal tract plays a crucial role in maintaining an erect posture.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The lateral vestibulospinal tract takes up a more lateral position at the border of the anterior and lateral funiculi.",
+     "species": "human",
+     "page": 191,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 1,
+   "cellBodies": "Pontine reticular formation (medial reticulospinal tract)",
+   "courseVia": [
+    "ipsilateral anterior funiculus"
+   ],
+   "terminatesIn": "Alpha and gamma motor neurons of extensor muscles, ventromedial spinal cord",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "The medial (pontine) reticulospinal tract originates in the pontine reticular formation and projects down to the ventromedial spinal cord via the ipsilateral anterior funiculus, which contains alpha and gamma motor neurons of the extensor muscles.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "showed that recovery after pyramidal lesions probably involves marked upregulation in reticulospinal control of hand motor nuclei.",
+     "species": "macaque",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "In the intact macaque, these inputs overlap with those from the corticospinal system",
+     "species": "macaque",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "However, 6 months after a unilateral pyramidal lesion, there were considerably higher levels of reticulospinal excitation of forelimb flexor and intrinsic hand motoneurons",
+     "species": "macaque",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "descends from this region in the medial longitudinal fascicle, through the anterior funiculus, to terminate bilaterally in laminae VIII and VII of the intermediate zone",
+     "species": "human",
+     "page": 875,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "These fibres do not terminate, or do so only very sparingly, in the motoneuronal cell groups",
+     "species": "human",
+     "page": 875,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 1,
+   "cellBodies": "Medullary reticular formation (lateral reticulospinal tract)",
+   "courseVia": [
+    "bilateral lateral funiculus"
+   ],
+   "terminatesIn": "Motor neurons in the spinal cord",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "The lateral (medullary) reticulospinal tract ordinates in the medullary reticular formation and projects to motor neurons in the spinal cord via the bilateral lateral funiculus.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "showed that recovery after pyramidal lesions probably involves marked upregulation in reticulospinal control of hand motor nuclei.",
+     "species": "macaque",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC6415323",
+     "grade": "A",
+     "quote": "However, 6 months after a unilateral pyramidal lesion, there were considerably higher levels of reticulospinal excitation of forelimb flexor and intrinsic hand motoneurons",
+     "species": "macaque",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "neuronOrder": 1,
+   "cellBodies": "Superior colliculus, midbrain",
+   "courseVia": [
+    "courses ventromedial to the periaqueductal gray matter"
+   ],
+   "terminatesIn": "Contralateral anterior gray horn lamina VI, VII, and VIII of cervical and upper thoracic spinal segments",
+   "laterality": "contralateral",
+   "decussation": {
+    "present": true,
+    "where": "crosses before terminating in the contralateral anterior gray horn"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "The tectospinal tract originates from the superior colliculus of the midbrain and receives stimulation from the retina and cortical visual association areas, courses ventromedial to the periaqueductal gray (PAG) matter",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "and terminates in the contralateral anterior gray horn lamina VI, VII, and VIII of cervical and upper thoracic segments of the spinal cord.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK554542",
+     "grade": "B",
+     "quote": "It serves a critical function in the orientation of the head, neck, eyes, and upper extremities in response to sudden movement, loud noises, and bright lights.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Among the efferent pathways the tectospinal tractis quite prominent.",
+     "species": "human",
+     "page": 215,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Its coarse fibres radiate from the intermediate layers of the superior colliculus to the midline, where they cross in the dorsal tegmental decussation",
+     "species": "human",
+     "page": 215,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Above the red nucleus (intercollicular level), sparing the red nucleus",
+   "deficit": "Decorticate posturing: flexion of the upper extremities, extension of the lower extremities",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Knight 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "It is, however, accepted that decorticate typically requires an injury more rostral than decerebrate posturing. In most literature, this level is considered the red nucleus at the intercollicular level of the midbrain."
+    },
+    {
+     "source": "Knight 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "The red nucleus is anatomically at the intercollicular level, and thus lesions above the red nucleus tend to cause decortication and lesions below, decerebration."
+    },
+    {
+     "source": "Lee 2022 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Decorticate rigidity occurs when an injury at the superior border of the red nucleus disturbs descending corticospinal and rubrospinal tracts."
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "At or below the red nucleus (superior border of the pons)",
+   "deficit": "Decerebrate posturing: extension and internal rotation of all extremities, elbow extension, forearm pronation",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Knight 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Decerebrate posturing has been demonstrated in monkeys with a transecting lesion at the level between the superior and inferior colliculi within the midbrain. This is also described as being at or below the level of the red nucleus."
+    },
+    {
+     "source": "Lee 2022 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Decerebrate rigidity occurs when an injury at the superior border of the pons disconnects the posterior aspect of the brainstem and the spinal cord from the rest of the brain."
+    },
+    {
+     "source": "Knight 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Through animal models and human studies, it has been shown that the vestibulospinal tract plays a major role in decerebrate posturing."
+    }
+   ],
+   "file": "motor.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Whether the reticulospinal tract terminates directly on (or otherwise functionally engages) forelimb/hand motor neurons",
+   "positions": [
+    {
+     "source": "S9 (original motor.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S9 of motor.json; not reopened this session): the medial (pontine) reticulospinal tract terminates on alpha and gamma motor neurons of extensor muscles",
+     "quote": "The medial (pontine) reticulospinal tract originates in the pontine reticular formation and projects down to the ventromedial spinal cord via the ipsilateral anterior funiculus, which contains alpha and gamma motor neurons of the extensor muscles."
+    },
+    {
+     "source": "S1 (upgrade-lib-nieuwenhuys-motor-somatosensory.json; not reopened this session)",
+     "grade": "?",
+     "claim": "Nieuwenhuys (upgrade-lib-nieuwenhuys-motor-somatosensory.json S1; not reopened this session): fibres of the medial reticulospinal system terminate bilaterally in laminae VII/VIII of the intermediate zone and do not terminate, or do so only very sparingly, directly on motoneurons",
+     "quote": "These fibres do not terminate, or do so only very sparingly, in the motoneuronal cell groups"
+    },
+    {
+     "source": "Lemon 2019 F1000Res",
+     "grade": "A",
+     "claim": "Lemon 2019 (macaque, physiological rather than anatomical evidence): reticulospinal excitatory input to forelimb flexor and intrinsic hand motoneurons is present even in the intact animal and increases substantially after a unilateral pyramidal (corticospinal) lesion, showing the reticulospinal system does functionally excite hand-related motoneurons, in tension with anatomical accounts of only sparse direct motoneuronal termination",
+     "quote": "However, 6 months after a unilateral pyramidal lesion, there were considerably higher levels of reticulospinal excitation of forelimb flexor and intrinsic hand motoneurons"
+    }
+   ],
+   "file": "upgrade-lib-lemon2019-haber2016.json"
+  },
+  {
+   "issue": "Existence of a distinct rubrospinal tract in the human spinal cord",
+   "positions": [
+    {
+     "source": "S9 (original motor.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S9 of motor.json): the rubrospinal tract originates from the red nucleus and crosses in the ventral tegmental decussation to descend to spinal motor neurons",
+     "quote": "The rubrospinal tract originates from the red nucleus of the midbrain tegmentum. It crosses the midline in ventral tegmental decussation located in the caudal midbrain."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states that the rubrospinal tract, although present as a distinct bundle in most mammals, cannot be recognized in the human spinal cord",
+     "quote": "The rubrospinal tract, which is present in most mammals as a distinct bundle of coarse fibres ventral to the lateral pyramidal tract, cannot be recognized in the human spinal cord"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys further states that only a rubrobulbar tract probably exists in the human brain, while a rubrospinal tract has never been substantiated",
+     "quote": "A rubrobulbar tract probably exists in the human brain, but the presence of a rubrospinal tract has never been substantiated."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "issue": "Termination pattern of the medial (pontine) reticulospinal tract",
+   "positions": [
+    {
+     "source": "S9 (original motor.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S9 of motor.json): this tract terminates on alpha and gamma motor neurons of the extensor muscles",
+     "quote": "The medial (pontine) reticulospinal tract originates in the pontine reticular formation and projects down to the ventromedial spinal cord via the ipsilateral anterior funiculus, which contains alpha and gamma motor neurons of the extensor muscles."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states that fibres of this system terminate bilaterally in laminae VII and VIII of the intermediate zone and do not terminate, or do so only very sparingly, directly in the motoneuronal cell groups",
+     "quote": "These fibres do not terminate, or do so only very sparingly, in the motoneuronal cell groups"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "Lemon 2019 does not mention the rubrospinal, vestibulospinal, or tectospinal tracts at all, and so provides no evidence either way on whether a distinct rubrospinal tract exists in the human spinal cord (the conflict recorded in the original StatPearls batch and in the Nieuwenhuys upgrade batch is unaffected by this source).",
+   "file": "upgrade-lib-lemon2019-haber2016.json"
+  },
+  {
+   "text": "Lemon 2019 discusses 'the reticulospinal tract' as a single primate system providing excitatory input to hand and forelimb motoneurons; it does not distinguish a medial (pontine) from a lateral (medullary) reticulospinal tract, so the evidence attached above to both step 4 and step 5 cannot be assigned to one subdivision over the other on this source alone.",
+   "file": "upgrade-lib-lemon2019-haber2016.json"
+  }
+ ],
+ "sources": {
+  "NBK554542": {
+   "label": "Lee 2022 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Extrapyramidal System",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK554542"
+  },
+  "NBK559135": {
+   "label": "Knight 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Decerebrate and Decorticate Posturing",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK559135"
+  },
+  "PMC6415323": {
+   "label": "Lemon 2019 F1000Res",
+   "grade": "A",
+   "title": "Recent advances in our understanding of the primate corticospinal system",
+   "doi": "10.12688/f1000research.17445.1",
+   "pmcid": "PMC6415323",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

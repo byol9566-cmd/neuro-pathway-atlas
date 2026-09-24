@@ -1,0 +1,269 @@
+{
+ "id": "jaw-jerk-reflex",
+ "name": "Jaw jerk reflex",
+ "category": "Cranial nerve / brainstem reflex (monosynaptic stretch reflex)",
+ "function": "Monosynaptic stretch reflex of the masseter (jaw-closing) muscles evoked by tapping the chin with the mouth slightly open; used clinically to distinguish upper vs lower motor neuron trigeminal lesions.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Mesencephalic trigeminal nucleus (unique: pseudounipolar afferent cell bodies lie within this brainstem nucleus itself rather than in the trigeminal ganglion)",
+   "courseVia": [
+    "stretch receptors of the muscles of mastication (masseter) via proprioceptive afferents that bypass the trigeminal ganglion"
+   ],
+   "terminatesIn": "Cell body within the mesencephalic nucleus itself, which relays directly to the motor trigeminal nucleus",
+   "laterality": "ipsilateral afferent input, then bilateral efferent relay (see below)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "This nucleus is unique in that the fibers do not have a cell body in the trigeminal ganglion",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "receives information about stretch sensation from the muscles of mastication, and serves as the afferent limb of the jaw jerk reflex",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC492220",
+     "grade": "A",
+     "quote": "It is suggested that the afferent limb of the human jaw reflex passes through the mesencephalic trigeminal nucleus.",
+     "species": "human",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Muscle spindle afferents from facial and masticatory muscles are an exception: their cell bodies are located in the mesencephalic nucleus of the trigeminal nerve in the upper brain stem.",
+     "species": "human",
+     "page": 688,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Unlike other primary afferents, the Ia muscle-spindle afferents from the jaw muscles, which enter the brain stem in the trigeminal nerve, arise from cells located within the central nervous system.",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "These cells constitute the mesencephalic nucleus of the trigeminal nerve, located alongside the central grey matter of the mesencephalon.",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Mesencephalic trigeminal nucleus neuron directly synapsing (monosynaptic) onto motor trigeminal nucleus",
+   "courseVia": [
+    "direct intrabrainstem relay between the mesencephalic nucleus and the motor V nucleus"
+   ],
+   "terminatesIn": "Motor trigeminal nucleus (bilaterally)",
+   "laterality": "bilateral (afferent stretch information is relayed bilaterally to the trigeminal motor nuclei)",
+   "decussation": {
+    "present": true,
+    "where": "relay from the mesencephalic nucleus to the trigeminal motor nuclei is bilateral"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "In this reflex, there is an interplay between the mesencephalic nucleus and motor V nucleus",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "pseudounipolar afferent fibers from stretch receptors relay information directly to the cell body in the nucleus, which is then relayed bilaterally to the trigeminal motor nuclei, which project to cause contraction of the masseter",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The axons of these cells descend into the mesencephalic tract of the trigeminal nerve and then bifurcate.",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "One branch terminates on the motoneurons of the trigeminal motor nucleus.",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The axons of neurons located in the mesencephalic nucleus of the trigeminal nerve join the motor root (portio minor) of the trigeminal nerve and send branches to the motoneurons innervating the jaw muscles, located in the motor nucleus of the trigeminal nerve.",
+     "species": "human",
+     "page": 705,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Excitatory pathways from the mesencephalic nucleus thus have access to motoneurons innervating jaw closers from both sides.",
+     "species": "human",
+     "page": 863,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Motor trigeminal nucleus (dorsolateral pontine tegmentum, mid-pons)",
+   "courseVia": [
+    "mandibular division of the trigeminal nerve (CN V3)"
+   ],
+   "terminatesIn": "Masseter muscle (and other muscles of mastication)",
+   "laterality": "bilateral contraction",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "pseudounipolar afferent fibers from stretch receptors relay information directly to the cell body in the nucleus, which is then relayed bilaterally to the trigeminal motor nuclei, which project to cause contraction of the masseter",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The main branches of these neurons are the Ia afferents from the masticatory muscles.",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "They exit the brain stem, together with the axons of the motoneurons innervating the masticatory muscles, into the portio minor of the trigeminal nerve, which joins the mandibular division of the trigeminal nerve",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The motor nucleus of the trigeminal nerve can be divided into a lateral group, containing motoneurons innervating jaw closing muscles, and a medial group with the motoneurons of the jaw openers",
+     "species": "human",
+     "page": 863,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Mesencephalic lesions (affecting the mesencephalic trigeminal nucleus, the proposed afferent/proprioceptive limb of the jaw jerk)",
+   "deficit": "Jaw reflexes delayed or absent, while masseter electromyograms (the efferent motor limb, tested by direct nerve/muscle stimulation) remain normal",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Ongerboer 1976 Journal of Neurology, Neurosurgery, and Psychiatry",
+     "grade": "A",
+     "quote": "In the former group jaw reflexes were abnormal, being delayed or absent, whereas masseter electromyograms were normal."
+    }
+   ],
+   "file": "upgrade-brainstem-senses.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Whether the mesencephalic-nucleus-to-motor-trigeminal jaw-jerk relay is purely monosynaptic",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json#S11",
+     "grade": "?",
+     "claim": "The jaw jerk reflex is described as a monosynaptic stretch reflex, with a single, direct intrabrainstem relay between the mesencephalic nucleus and the motor V nucleus (StatPearls S11).",
+     "quote": "In this reflex, there is an interplay between the mesencephalic nucleus and motor V nucleus"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys describes collaterals of the mesencephalic-nucleus afferents (descending as Probst's tract) that innervate jaw-closer motoneurons both directly AND indirectly by synapsing first in the supratrigeminal nucleus, implying a disynaptic component alongside the classic monosynaptic one.",
+     "quote": "These collaterals innervate motoneurons of jaw closers in the lateral group, both directly and by synapsing in the supratrigeminal nucleus"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The jaw jerk reflex is typically absent or minimal in healthy individuals, and an exaggerated (brisk) jaw jerk is classically taught to indicate an upper motor neuron lesion above the level of the trigeminal motor nucleus (e.g., pseudobulbar palsy from bilateral corticobulbar tract lesions); this clinical exaggeration/localization detail was not found stated in the opened source, which covered only the underlying anatomy.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "S5's full body text describing exact lesion locations, latency measurements and the pontine-lesion group findings in detail is present only as scanned page images on the PMC HTML page with no OCR; only the abstract text could be opened and quoted verbatim in this session.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "The jaw jerk reflex is typically absent or minimal in healthy individuals, and an exaggerated (brisk) jaw jerk is classically taught to indicate an upper motor neuron lesion above the level of the trigeminal motor nucleus (e.g. pseudobulbar palsy from bilateral corticobulbar tract lesions); this clinical exaggeration/localization detail was not found stated in Nieuwenhuys, which covered only the underlying anatomy.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "text": "Nieuwenhuys additionally describes the mesencephalic-nucleus afferents as carrying a second modality (pressure mechanoreceptors of the periodontal ligaments, via the caudal part of the nucleus) alongside the muscle-spindle afferents that mediate the jaw jerk itself; this periodontal-pressure component is not part of the jaw-jerk stretch-reflex arc described in the original StatPearls-sourced pathway.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "sources": {
+  "NBK539823": {
+   "label": "Price 2023 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Trigeminal Nucleus",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK539823"
+  },
+  "PMC492220": {
+   "label": "Ongerboer 1976 Journal of Neurology, Neurosurgery, and Psychiatry",
+   "grade": "A",
+   "title": "Jaw reflexes and masseter electromyograms in mesencephalic and pontine lesions",
+   "doi": "10.1136/jnnp.39.1.90",
+   "pmcid": "PMC492220",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

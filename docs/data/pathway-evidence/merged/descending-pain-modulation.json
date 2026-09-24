@@ -1,0 +1,589 @@
+{
+ "id": "descending-pain-modulation",
+ "name": "Descending pain modulation (PAG–RVM–dorsal horn and PAG–locus coeruleus pathways)",
+ "category": "descending modulatory / analgesia",
+ "function": "Midbrain and brainstem circuits that inhibit (or facilitate) nociceptive transmission at the dorsal horn, via serotonergic PAG–raphe magnus–enkephalinergic interneuron and noradrenergic PAG–locus coeruleus routes.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Periaqueductal gray (PAG), midbrain – receives ascending nociceptive input from dorsal horn lamina I, II, V via spinothalamic/spinobulbar pathways",
+   "courseVia": [
+    "ascending spinothalamic and spinobulbar pathways to PAG"
+   ],
+   "terminatesIn": "Periaqueductal gray (dorsal, dorsolateral, lateral, ventrolateral columns)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate (ascending); serotonin, norepinephrine, dopamine, enkephalin, GABA within PAG circuitry",
+   "evidence": [
+    {
+     "source": "NBK554391",
+     "grade": "B",
+     "quote": "Initial pain signals ascend through the dorsal horn, specifically through lamina I (superficial dorsal horn), lamina II (substantia gelatinosa), and lamina V (deep dorsal horn)",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK554391",
+     "grade": "B",
+     "quote": "Those signals, via the spinothalamic and spinobulbar pathways, further ascend to the PAG and other structures to be relayed to the non-specific medial thalamus",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK554391",
+     "grade": "B",
+     "quote": "The PAG has two major descending pathways involving the rostral ventromedial medulla (RVMM) and the locus coeruleus (LC)",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The mesencephalic periaqueductal grey receives afferents from spinal laminae I, VI, VII and VIII, and projects to the intralaminar thalamic nuclei",
+     "species": "human",
+     "page": 702,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "Nociceptive projection neurons in the spinal cord transmit information to a number of regions of the brainstem and diencephalon, including the thalamus, periaqueductal gray, parabrachial region, and bulbar reticular formation",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "The spinoreticular and spinothalamic tracts ascend together in the ventrolateral spinal cord and brainstem",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "PAG neurons projecting to raphe nuclei (rostral ventromedial medulla, including nucleus raphe magnus)",
+   "courseVia": [
+    "PAG → raphe nuclei (glutamatergic) → descending raphespinal fibers to dorsal horn"
+   ],
+   "terminatesIn": "Dorsal horn – enkephalinergic interneurons that inhibit C-fiber pain afferents",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "serotonin (PAG–RVM–dorsal horn pathway); glutamate (PAG→raphe activation); enkephalin (dorsal horn interneurons)",
+   "evidence": [
+    {
+     "source": "NBK554391",
+     "grade": "B",
+     "quote": "The serotonergic PAG- RVMM pathway is considered the key endogenous modulator of pain, constituting a primary target for supraspinal opioid analgesia",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK554391",
+     "grade": "B",
+     "quote": "Specifically, the PAG activates the raphe nuclei via glutamate, and the raphe nuclei activate enkephalin neurons, causing inhibitory signals to c-fiber pain afferents",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The nucleus raphe magnus contains numerous serotoninergic neurons, and it has been demonstrated that its cells project massively to the superficial dorsal horn",
+     "species": "human",
+     "page": 703,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "The PAG has excitatory connections with the NRM",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "A striking feature of the raphe nuclei is that a large proportion of the neurons contain 5-HT",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "Projections to the spinal cord originate from the nuclei raphe magnus, pallidus, obscurus, and pontis.",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "Neurotransmitters involved in the antinociceptive actions of the pathway from the PAG through the NRM and adjacent reticular formation include endogenous opiates, 5-HT, and NE",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "Presumably, the actions on different classes of 5-hydroxytryptamine (5-HT) receptors are mediated by release of 5-HT from raphespinal axons, and those on adrenoceptors are mediated by NE, released from noradrenergic axons descending from the locus ceruleus/parabrachial complex or the A5 group.",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC2894733",
+     "grade": "A",
+     "quote": "The PAG projects to the RVM, which in turn sends its output to dorsal horn laminae important in nociceptive function.",
+     "species": "not stated (review; general PAG-RVM circuit anatomy, established mainly by rat/cat tracing studies cited in the text)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC2894733",
+     "grade": "A",
+     "quote": "The PAG does not project directly to the spinal cord.",
+     "species": "not stated (review; general PAG-RVM circuit anatomy)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC2894733",
+     "grade": "A",
+     "quote": "Instead, its principle descending projection is to the RVM, which can be considered the output of the midline pain-modulation system.",
+     "species": "not stated (review; general PAG-RVM circuit anatomy)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC2894733",
+     "grade": "A",
+     "quote": "It includes the nucleus raphe magnus and adjacent reticular formation, and projects diffusely to dorsal horn laminae important in nociceptive processing, including superficial layers and deep dorsal horn.",
+     "species": "not stated (review; general RVM anatomy)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC2894733",
+     "grade": "A",
+     "quote": "ON-cells entered a period of activity, and OFF-cells a period of silence.",
+     "species": "rat (Fields et al. 1983 single-unit recording, as cited in this review)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC2894733",
+     "grade": "A",
+     "quote": "it is the OFF-cells that function as the antinociceptive output from the RVM",
+     "species": "rat (RVM single-unit recording/pharmacology literature cited in this review)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC2894733",
+     "grade": "A",
+     "quote": "it was possible to show that ON-cells are the facilitating output from the RVM.",
+     "species": "rat (RVM single-unit recording/microinjection literature cited in this review)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC2894733",
+     "grade": "A",
+     "quote": "At least some cells of each class project to the spinal cord, and specifically to the dorsal horn.",
+     "species": "rat (RVM-to-dorsal-horn tract-tracing literature cited in this review)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC2894733",
+     "grade": "A",
+     "quote": "at least some NEUTRAL-cells, but apparently no ON-cells or OFF-cells are serotonergic.",
+     "species": "rat (RVM neurochemistry literature cited in this review)",
+     "page": null,
+     "file": "upgrade-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 2,
+   "cellBodies": "Locus coeruleus (lateral floor of fourth ventricle / upper dorsolateral pons)",
+   "courseVia": [
+    "PAG → locus coeruleus → descending noradrenergic fibers to dorsal horn"
+   ],
+   "terminatesIn": "Dorsal horn – presynaptic alpha-2 adrenergic receptors on nociceptive afferents",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "norepinephrine",
+   "evidence": [
+    {
+     "source": "NBK513270",
+     "grade": "B",
+     "quote": "The locus coeruleus is a nucleus in the lateral floor of the fourth ventricle and upper dorsolateral pons",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK513270",
+     "grade": "B",
+     "quote": "Norepinephrine (noradrenaline) is a neurotransmitter predominantly released from the locus coeruleus",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK554391",
+     "grade": "B",
+     "quote": "The PAG -LC pathway propagates by norepinephrine (NE), exerting an antinociceptive effect in the dorsal horn via the presynaptic alpha-2 receptor",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Noradrenergic cells situated in rhombencephalic catecholaminergic cell groups A5, A6 and A7, which also project to the superficial dorsal horn, contribute to the descending pain-inhibiting system",
+     "species": "human",
+     "page": 703,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "Noradrenergic projections to all regions of the spinal cord arise almost entirely from the dorsolateral pontine catecholamine cell groups A5, A6, and A7.",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "In monkeys and cats, bilateral projections descend from the locus ceruleus and subcerulear region to innervate laminae I, II, and V, primarily contralaterally",
+     "species": "monkey, cat",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "Another dense input to the dorsal horn originates from the ipsilateral Kolliker-Fuse nucleus",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 3,
+   "cellBodies": "Dorsal horn inhibitory interneurons (enkephalinergic and other opioid/GABA/glycinergic types) activated by A-beta afferents and by descending PAG/RVM input",
+   "courseVia": [
+    "local dorsal horn circuitry"
+   ],
+   "terminatesIn": "Presynaptic and postsynaptic inhibition of dorsal horn projection neurons of the anterolateral system",
+   "laterality": "ipsilateral (segmental)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "endogenous opioids (enkephalin), GABA, glycine",
+   "evidence": [
+    {
+     "source": "NBK539789",
+     "grade": "B",
+     "quote": "Local stimulation of A-delta and A-beta also serves to modulate transmission of pain information via excitation of interneurons. These interneurons serve an inhibitory effect on dorsal horn projection neurons which signal to the anterolateral system",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK539789",
+     "grade": "B",
+     "quote": "The ascending information may also prompt neurons of the rostral ventral medulla and midbrain periaqueductal gray to engage descending feedback systems that regulate the output from the spinal cord, and thus modulate pain sensation",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK539789",
+     "grade": "B",
+     "quote": "This occurs via the release of hormones and chemicals (e.g., endogenous opioids, GABA, glycine) that can have analgesic properties to limit pain sensation",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The first of these is the “gate control mechanism”, which was first described by Melzack and Wall",
+     "species": "human",
+     "page": 702,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Opiates exert their influence on nociceptive transmission both at the level of the periaqueductal grey and at the termination of the primary afferents.",
+     "species": "human",
+     "page": 703,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Specific nociceptive neurons in lamina I are selectively inhibited by morphine",
+     "species": "human",
+     "page": 703,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "Inhibition in the nociceptive circuits of the dorsal horn is mediated by a number of neurotransmitters, including inhibitory amino acids, such as GABA and glycine",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "GABA is involved in both pre- and postsynaptic inhibition and glycine in postsynaptic inhibition",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "Presynaptic receptors that mediate presynaptic inhibition include GABAA and GABAB receptors",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Periaqueductal gray – clinical/experimental stimulation and dysfunction (not a classic named eponymous syndrome)",
+   "deficit": "Stimulation of PAG reduces anesthetic/analgesic requirement (antinociception); reduced PAG activation is associated with chronic pain states such as low back pain and complex regional pain syndrome",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Mokhtar 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Initial recognition of this structure stemmed from the observation that stimulation of the PAG before surgery resulted in decreased anesthetic requirements"
+    },
+    {
+     "source": "Mokhtar 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "lower activation of the PAG in chronic pain states, such as lower back pain and complex regional pain syndrome, as well as distractions from pain with upregulation of the PAG"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Periaqueductal gray – clinical/experimental stimulation and dysfunction (not a classic named eponymous syndrome)",
+   "deficit": "Stimulation of PAG reduces anesthetic/analgesic requirement (antinociception); reduced PAG activation is associated with chronic pain states such as low back pain and complex regional pain syndrome",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "This system was first noticed after discovering that electrical stimulation of the mesencephalic periaqueductal grey produces profound analgesia"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Anatomical source of the noradrenergic descending pain-inhibitory projection to the dorsal horn",
+   "positions": [
+    {
+     "source": "S8 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S8): the noradrenergic route is specifically the PAG-locus coeruleus (LC) pathway",
+     "quote": "The PAG -LC pathway propagates by norepinephrine (NE), exerting an antinociceptive effect in the dorsal horn via the presynaptic alpha-2 receptor"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys attributes the descending noradrenergic pain-inhibiting projection to a broader set of rhombencephalic catecholaminergic cell groups, A5, A6 and A7 (of which the locus coeruleus corresponds only to A6), rather than to the locus coeruleus alone",
+     "quote": "Noradrenergic cells situated in rhombencephalic catecholaminergic cell groups A5, A6 and A7, which also project to the superficial dorsal horn, contribute to the descending pain-inhibiting system"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "issue": "Whether the descending RVM/NRM output to the dorsal horn is purely serotonergic",
+   "positions": [
+    {
+     "source": "S8 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S8): the serotonergic PAG-RVM pathway is the key endogenous modulator of pain (not reopened this session)",
+     "quote": "The serotonergic PAG- RVMM pathway is considered the key endogenous modulator of pain, constituting a primary target for supraspinal opioid analgesia"
+    },
+    {
+     "source": "upgrade-motor-somatosensory S1 (not reopened this session)",
+     "grade": "?",
+     "claim": "upgrade-motor-somatosensory.json (S1 of that batch) reports that the functionally characterized RVM output neurons (ON-cells, which facilitate pain, and OFF-cells, which inhibit it) are specifically NOT serotonergic; only some functionally silent NEUTRAL-cells are (not reopened this session)",
+     "quote": "at least some NEUTRAL-cells, but apparently no ON-cells or OFF-cells are serotonergic."
+    },
+    {
+     "source": "Willis 1997 J Clin Neurophysiol",
+     "grade": "A",
+     "claim": "Willis and Westlund attribute the raphe nuclei's antinociceptive output to a mixture of endogenous opiates, 5-HT, AND norepinephrine acting together through the PAG-NRM-reticular formation pathway -- not to serotonin alone",
+     "quote": "Neurotransmitters involved in the antinociceptive actions of the pathway from the PAG through the NRM and adjacent reticular formation include endogenous opiates, 5-HT, and NE"
+    },
+    {
+     "source": "Willis 1997 J Clin Neurophysiol",
+     "grade": "A",
+     "claim": "Willis and Westlund do specifically tie 5-HT release in the dorsal horn to raphespinal (i.e. raphe-derived, including NRM) axons as distinct from the separately-mediated noradrenergic (locus ceruleus/A5) component, supporting a serotonergic raphespinal projection while treating it as one of several parallel descending transmitter systems rather than the sole RVM output",
+     "quote": "Presumably, the actions on different classes of 5-hydroxytryptamine (5-HT) receptors are mediated by release of 5-HT from raphespinal axons, and those on adrenoceptors are mediated by NE, released from noradrenergic axons descending from the locus ceruleus/parabrachial complex or the A5 group."
+    }
+   ],
+   "file": "upgrade-lib-willis1997.json"
+  },
+  {
+   "issue": "Anatomical source of the noradrenergic descending pain-inhibitory projection to the dorsal horn: locus coeruleus alone vs. a broader A5/A6/A7 cell-group system",
+   "positions": [
+    {
+     "source": "S8 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S8): the noradrenergic route is specifically the PAG-locus coeruleus (LC) pathway (not reopened this session)",
+     "quote": "The PAG -LC pathway propagates by norepinephrine (NE), exerting an antinociceptive effect in the dorsal horn via the presynaptic alpha-2 receptor"
+    },
+    {
+     "source": "upgrade-lib-nieuwenhuys S1 (not reopened this session)",
+     "grade": "?",
+     "claim": "Nieuwenhuys (upgrade batch S1) attributes the descending noradrenergic pain-inhibiting projection to the broader rhombencephalic catecholaminergic cell groups A5, A6 and A7, of which locus coeruleus corresponds only to A6 (not reopened this session)",
+     "quote": "Noradrenergic cells situated in rhombencephalic catecholaminergic cell groups A5, A6 and A7, which also project to the superficial dorsal horn, contribute to the descending pain-inhibiting system"
+    },
+    {
+     "source": "Willis 1997 J Clin Neurophysiol",
+     "grade": "A",
+     "claim": "Willis and Westlund independently confirm the broader A5/A6/A7 framing: noradrenergic projections to the spinal cord arise almost entirely from the dorsolateral pontine catecholamine cell groups A5, A6, and A7 (locus ceruleus = A6, subceruleus and Kolliker-Fuse nucleus also contributing), not from locus ceruleus alone",
+     "quote": "Noradrenergic projections to all regions of the spinal cord arise almost entirely from the dorsolateral pontine catecholamine cell groups A5, A6, and A7."
+    },
+    {
+     "source": "Willis 1997 J Clin Neurophysiol",
+     "grade": "A",
+     "claim": "Willis and Westlund further note that within this broader system the laterality differs by nucleus of origin: locus ceruleus/subceruleus projections are bilateral but primarily contralateral, whereas the Kolliker-Fuse nucleus contributes a separate, purely ipsilateral input to the dorsal horn",
+     "quote": "Another dense input to the dorsal horn originates from the ipsilateral Kolliker-Fuse nucleus"
+    }
+   ],
+   "file": "upgrade-lib-willis1997.json"
+  },
+  {
+   "issue": "Neurotransmitter identity of the RVM neurons that project descending output to the dorsal horn in the PAG-RVM-dorsal horn pathway",
+   "positions": [
+    {
+     "source": "?",
+     "grade": "?",
+     "claim": "The serotonergic PAG-RVM pathway is considered the key endogenous modulator of pain (existing claim already on file in somatosensory.json, pathway descending-pain-modulation, step 2, citing StatPearls source S8 'Neuroanatomy, Periaqueductal Gray'; that source was not re-opened in this session, so it is described here rather than re-quoted).",
+     "quote": ""
+    },
+    {
+     "source": "Heinricher 2009 Brain Research Reviews",
+     "grade": "A",
+     "claim": "The functionally characterized RVM output neurons that mediate descending control (ON-cells, which facilitate nociception, and OFF-cells, which inhibit it) are specifically reported as NOT serotonergic; only some of the functionally silent NEUTRAL-cells are serotonergic.",
+     "quote": "at least some NEUTRAL-cells, but apparently no ON-cells or OFF-cells are serotonergic."
+    }
+   ],
+   "file": "upgrade-motor-somatosensory.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "No classic eponymous lesion–deficit correlation (comparable to Brown-Séquard, syringomyelia, lateral medullary syndrome, or tabes dorsalis for the other pathways) for isolated damage to the PAG–RVM or PAG–locus coeruleus descending pain-modulation pathways was found in the texts opened this session; the clinical correlations located concern chronic pain states and deep-brain-stimulation/analgesia research rather than a discrete stroke or trauma syndrome.",
+   "file": "somatosensory.json"
+  },
+  {
+   "text": "GABAergic and glycinergic interneurons in the substantia gelatinosa mediate presynaptic and postsynaptic inhibition of nociceptive afferents as part of the gate-control mechanism; a fully explicit sourced quote naming GABA/glycine acting presynaptically at the primary afferent terminal (rather than just listed among analgesic chemicals) was not located in the texts opened this session.",
+   "file": "somatosensory.json"
+  },
+  {
+   "text": "GABAergic and glycinergic interneurons in the substantia gelatinosa mediate presynaptic and postsynaptic inhibition of nociceptive afferents as part of the gate-control mechanism; Nieuwenhuys names and attributes the 'gate control mechanism' to Melzack and Wall but does not explicitly state which transmitter acts presynaptically at the primary afferent terminal.",
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "sources": {
+  "NBK554391": {
+   "label": "Mokhtar 2023 StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Periaqueductal Gray",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK554391"
+  },
+  "NBK513270": {
+   "label": "Khroud 2022 StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Locus Coeruleus",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK513270"
+  },
+  "NBK539789": {
+   "label": "Chen 2023 StatPearls Publishing",
+   "grade": "B",
+   "title": "Physiology, Pain",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK539789"
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  },
+  "PMC7859971": {
+   "label": "Willis 1997 J Clin Neurophysiol",
+   "grade": "A",
+   "title": "Neuroanatomy of the pain system and of the pathways that modulate pain",
+   "doi": "10.1097/00004691-199701000-00002",
+   "pmcid": "PMC7859971",
+   "isbn": null,
+   "nbk": null
+  },
+  "PMC2894733": {
+   "label": "Heinricher 2009 Brain Research Reviews",
+   "grade": "A",
+   "title": "Descending control of nociception: specificity, recruitment and plasticity",
+   "doi": "10.1016/j.brainresrev.2008.12.009",
+   "pmcid": "PMC2894733",
+   "isbn": null,
+   "nbk": ""
+  }
+ }
+}

@@ -1,0 +1,386 @@
+{
+ "id": "hypothalamo-pituitary-axes",
+ "name": "Hypothalamo-pituitary axes (magnocellular neurohypophyseal and parvocellular adenohypophyseal / HPA axis)",
+ "category": "neuroendocrine",
+ "function": "Neuroendocrine control of water balance, lactation/uterine contraction (posterior pituitary) and anterior pituitary trophic hormone release, including the stress (HPA) axis",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Magnocellular neurons of the supraoptic nucleus (SON) and paraventricular nucleus (PVN)",
+   "courseVia": [
+    "hypothalamo-hypophyseal tract"
+   ],
+   "terminatesIn": "posterior pituitary (neurohypophysis) capillaries",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "oxytocin and arginine vasopressin (ADH)",
+   "evidence": [
+    {
+     "source": "NBK525993",
+     "grade": "B",
+     "quote": "The paraventricular and supraoptic nuclei both produce the peptides oxytocin and ADH, which are released from neuronal axons into the capillaries of the posterior pituitary.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "NBK538239",
+     "grade": "B",
+     "quote": "Magnocellular neurons in the paraventricular and supraoptic nuclei produce arginine vasopressin.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "PMC13381638",
+     "grade": "A",
+     "quote": "In humans, PVN neurons display a similar magnocellular/parvocellular organization, with magnocellular cells releasing OT and VP systemically and parvocellular cells regulating neuroendocrine and autonomic processes.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The magnocellular nuclei of the anterior hypothalamus, i.e. the supraoptic and (magnocellular) paraventricular nuclei, give rise to axons that descend through the infundibular stalk to the posterior lobe of the pituitary.",
+     "species": "human",
+     "page": 296,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "These axons, which together form the supraoptico-paraventriculo-hypophyseal tract, transport colloid droplets containing the hormones oxytocin and vasopressin to the posterior pituitary lobe or neurohypophysis, where they are released into the blood.",
+     "species": "human",
+     "page": 296,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 1,
+   "cellBodies": "Parvocellular neurosecretory neurons of the paraventricular nucleus (PVN)",
+   "courseVia": [
+    "tuberoinfundibular tract to the median eminence, then hypophyseal portal system"
+   ],
+   "terminatesIn": "anterior pituitary (adenohypophysis) corticotropes",
+   "laterality": "midline/bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "corticotropin-releasing hormone (CRH), thyrotropin-releasing hormone, gonadotropin-releasing hormone",
+   "evidence": [
+    {
+     "source": "PMC13381638",
+     "grade": "A",
+     "quote": "PNCs synthesize hypophysiotropic hormones—including corticotropin-releasing hormone (CRH), thyrotropin-releasing hormone (TRH), gonadotropin-releasing hormone (GnRH), and somatostatin—and project to the median eminence, where they release these hormones into the hypophyseal portal system.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "NBK525993",
+     "grade": "B",
+     "quote": "The arcuate nucleus releases hormones secreted by axon terminals into the hypothalamohypophysial venous portal system to control anterior pituitary hormone release.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Parvocellular neurons in the hypothalamic paraventricular nucleus (PVH), which produce corticotropin-releasing hormone (CRH).",
+     "species": "human",
+     "page": 310,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In rats, CRH-producing cells are located in a distinct subnucleus of the PVH, but in humans they are scattered throughout the nucleus",
+     "species": "human (explicit human/rat comparison)",
+     "page": 310,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Most of the CRH-producing neurons in the PVH project to the neurohemal contact zone in the median eminence (ME).",
+     "species": "human",
+     "page": 310,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The cells of the infundibular nucleus are involved in controlling secretion of the anterior pituitary hormones by regulating hormones that stimulate or inhibit the liberation of hormones produced in the pituitary.",
+     "species": "human",
+     "page": 296,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC4867107",
+     "grade": "A",
+     "quote": "discrete populations of CRH neurons located in the dorsomedial parvocellular (mp) division of the paraventricular nucleus (PVN) are the prime-movers of the stress response",
+     "species": "cross-species synthesis (rodent and human HPA physiology review)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC4867107",
+     "grade": "A",
+     "quote": "These neurons project to the median eminence, where CRH as well as other peptides (e.g., vasopressin (AVP)) are released into the hypophysial portal plexus of veins.",
+     "species": "cross-species synthesis (rodent and human HPA physiology review)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 2,
+   "cellBodies": "Anterior pituitary corticotrope cells",
+   "courseVia": [
+    "systemic/hypophyseal portal circulation"
+   ],
+   "terminatesIn": "adrenal cortex",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "adrenocorticotropic hormone (ACTH)",
+   "evidence": [
+    {
+     "source": "NBK538239",
+     "grade": "B",
+     "quote": "Corticotropin-releasing hormone (CRH), synthesized and secreted by the paraventricular nucleus of the hypothalamus, stimulates the anterior pituitary to release ACTH.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "NBK538239",
+     "grade": "B",
+     "quote": "ACTH then acts on the adrenal cortex to promote cortisol synthesis and secretion.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Corticotrope cells in the anterior pituitary gland (APG) that produce adrenocorticotrope hormone (ACTH).",
+     "species": "human",
+     "page": 310,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Attaining the anterior pituitary via the hypothalamo-hypophyseal portal circulation, CRH stimulates the secretion of ACTH from the corticotropes and ACTH in turn stimulates the release of adrenal glucocorticoids.",
+     "species": "human",
+     "page": 310,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC4867107",
+     "grade": "A",
+     "quote": "At the adrenal cortex, ACTH acts on melanocortin 2 receptors (MC2R) in the zona fasciculata",
+     "species": "cross-species synthesis (rodent and human HPA physiology review)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 3,
+   "cellBodies": "Adrenal cortex (zona fasciculata) endocrine cells",
+   "courseVia": [
+    "systemic circulation"
+   ],
+   "terminatesIn": "hypothalamus and anterior pituitary (negative feedback) and peripheral target tissues",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "cortisol (glucocorticoid)",
+   "evidence": [
+    {
+     "source": "NBK538239",
+     "grade": "B",
+     "quote": "This hormone functions as the primary glucocorticoid synthesized and released by the zona fasciculata of the adrenal cortex.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "NBK538239",
+     "grade": "B",
+     "quote": "Cortisol exerts negative feedback on both the hypothalamus and anterior pituitary, inhibiting the secretion of CRH and ACTH, respectively.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Elements in the adrenal cortex (AC) producing the so-called stress hormones, i.e. the glucocorticoids (GCS) corticosterone and cortisol.",
+     "species": "human",
+     "page": 310,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Adrenal corticosteroids exert a selective negative feedback effect on the synthesis of CRH in the PVH and on the hippocampus",
+     "species": "human",
+     "page": 312,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC4867107",
+     "grade": "A",
+     "quote": "At the adrenal cortex, ACTH acts on melanocortin 2 receptors (MC2R) in the zona fasciculata",
+     "species": "cross-species synthesis (rodent and human HPA physiology review)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC4867107",
+     "grade": "A",
+     "quote": "Control of glucocorticoid release is mediated by glucocorticoid feedback at varying levels of the HPA axis, serving to limit prolonged exposure to catabolic actions of glucocorticoids",
+     "species": "cross-species synthesis (rodent and human HPA physiology review)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [],
+ "conflicts": [
+  {
+   "issue": "Which adrenal cortical zone is stimulated by ACTH to produce cortisol",
+   "positions": [
+    {
+     "source": "Kaur 2025 StatPearls [Internet]",
+     "grade": "B",
+     "claim": "ACTH stimulates the zona fasciculata to produce the primary glucocorticoid cortisol",
+     "quote": "This hormone functions as the primary glucocorticoid synthesized and released by the zona fasciculata of the adrenal cortex."
+    },
+    {
+     "source": "Bear 2022 StatPearls [Internet]",
+     "grade": "B",
+     "claim": "ACTH stimulates the adrenal cortex zona reticularis to produce the stress-response hormone cortisol",
+     "quote": "ACTH travels through systemic circulation to stimulate the adrenal cortex (zona reticularis) production of the stress-response hormone cortisol."
+    }
+   ],
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "issue": "Which adrenal cortical zone is stimulated by ACTH to produce cortisol",
+   "positions": [
+    {
+     "source": "S14",
+     "grade": "?",
+     "claim": "ACTH stimulates the zona fasciculata to produce the primary glucocorticoid cortisol",
+     "quote": "This hormone functions as the primary glucocorticoid synthesized and released by the zona fasciculata of the adrenal cortex."
+    },
+    {
+     "source": "S13",
+     "grade": "?",
+     "claim": "ACTH stimulates the adrenal cortex zona reticularis to produce the stress-response hormone cortisol",
+     "quote": "ACTH travels through systemic circulation to stimulate the adrenal cortex (zona reticularis) production of the stress-response hormone cortisol."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys does not name a specific zone at all, simply describing glucocorticoid-producing 'elements in the adrenal cortex (AC)' collectively, without distinguishing zona fasciculata from zona reticularis",
+     "quote": "Elements in the adrenal cortex (AC) producing the so-called stress hormones, i.e. the glucocorticoids (GCS) corticosterone and cortisol."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "issue": "Which adrenal cortical zone is stimulated by ACTH to produce cortisol",
+   "positions": [
+    {
+     "source": "Herman 2016 Comprehensive Physiology",
+     "grade": "A",
+     "claim": "ACTH acts via the melanocortin 2 receptor (MC2R) specifically on the zona fasciculata to drive glucocorticoid (cortisol) synthesis; this peer-reviewed physiology review names only the zona fasciculata in this role and does not mention the zona reticularis, resolving the original conflict between two StatPearls chapters in favour of the zona fasciculata",
+     "quote": "At the adrenal cortex, ACTH acts on melanocortin 2 receptors (MC2R) in the zona fasciculata"
+    }
+   ],
+   "file": "upgrade-limbic.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "Non-neurosecretory parvocellular preautonomic neurons (PANs) of the PVN also send descending projections to autonomic centres in the brainstem and spinal cord (this pathway is more directly evidenced in the central autonomic control pathway entry of this batch).",
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "text": "Non-neurosecretory parvocellular preautonomic neurons (PANs) of the PVN also send descending projections to autonomic centres in the brainstem and spinal cord: this is now well supported in the companion central-autonomic-control-micturition pathway of this same batch (PVH 'master controller of the autonomic system' quote, ch10 p.298), but that quote describes the PVN generally rather than a distinct 'PAN' cell type by that name.",
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "text": "Step 1 (magnocellular SON/PVN oxytocin and vasopressin release into the posterior pituitary) is not covered by Herman et al. 2016 (S6/PMC4867107), which is a dedicated review of the parvocellular HPA stress axis and does not discuss the magnocellular neurohypophyseal system; no quotable statement on this step was found in this source.",
+   "file": "upgrade-limbic.json"
+  }
+ ],
+ "sources": {
+  "NBK525993": {
+   "label": "Bear 2022 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Hypothalamus",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK525993"
+  },
+  "NBK538239": {
+   "label": "Kaur 2025 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Physiology, Cortisol",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK538239"
+  },
+  "PMC13381638": {
+   "label": "Zhou 2026 Frontiers in Systems Neuroscience",
+   "grade": "A",
+   "title": "From synaptic transmission to neural circuits: multilevel effects of stress on the hippocampus, bed nucleus of the stria terminalis, and paraventricular hypothalamic nucleus",
+   "doi": "10.3389/fnsys.2026.1829622",
+   "pmcid": "PMC13381638",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  },
+  "PMC4867107": {
+   "label": "Herman 2016 Comprehensive Physiology",
+   "grade": "A",
+   "title": "Regulation of the Hypothalamic-Pituitary-Adrenocortical Stress Response",
+   "doi": "10.1002/cphy.c150015",
+   "pmcid": "PMC4867107",
+   "isbn": null,
+   "nbk": ""
+  }
+ }
+}

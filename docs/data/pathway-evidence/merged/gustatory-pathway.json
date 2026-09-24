@@ -1,0 +1,332 @@
+{
+ "id": "gustatory-pathway",
+ "name": "Gustatory pathway",
+ "category": "special sense - taste",
+ "function": "Conveys taste (gustatory) information from receptors on the tongue, palate and epiglottis via three cranial nerves to the brainstem, thalamus and gustatory cortex, largely without crossing the midline in humans.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Geniculate ganglion (CN VII, chorda tympani - anterior two-thirds of tongue); inferior (petrosal) ganglion of CN IX (posterior one-third of tongue); nodose ganglion of CN X (epiglottis)",
+   "courseVia": [
+    "chorda tympani and greater petrosal branches of the facial nerve (CN VII)",
+    "glossopharyngeal nerve (CN IX)",
+    "vagus nerve (CN X)"
+   ],
+   "terminatesIn": "nucleus of the solitary tract (rostral, gustatory portion), medulla",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK545236",
+     "grade": "B",
+     "quote": "Its central processes enter the brainstem at the pontomedullary junction and travel caudally to the medulla oblongata, where they synapse at the nucleus solitarius.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK545236",
+     "grade": "B",
+     "quote": "Specifically, the synapse occurs in the rostral part of the nucleus solitarius, known as the gustatory region of the nucleus.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Special visceral afferents that innervate taste buds in the fungiform papillae of the anterior half of the tongue and foliate papillae along its lateral edges course in the chorda tympani and the intermediate nerve, usually included with the facial nerve.",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Taste buds of the palate and the pharynx are innervated by the vagus nerve.",
+     "species": "human",
+     "page": 707,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The nucleus of the solitary tract can be subdivided into a rostral gustatory portion, which receives gustatory afferents from the facial, glossopharyngeal and vagal nerves, and a caudal portion, which receives general visceral afferents from these nerves.",
+     "species": "human",
+     "page": 709,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The first relay for taste is located in the nucleus of the solitary tract in the lower brain stem.",
+     "species": "human",
+     "page": 684,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Second-order neurons in the rostral (gustatory) nucleus of the solitary tract",
+   "courseVia": [
+    "ascending ipsilateral projection from the solitary nucleus"
+   ],
+   "terminatesIn": "parvicellular division of the ventral posteromedial nucleus (VPMpc) of the thalamus",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK545236",
+     "grade": "B",
+     "quote": "Next, the second-order fibers ascend ipsilaterally to the parvicellular division of the ventral posteromedial nucleus (VPMpc) of the thalamus, where the next synapse occurs.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC2902637",
+     "grade": "A",
+     "quote": "The rodent and primate taste systems differ in that for rodents, fibres from the rNST projects ipsilaterally to the PBN, whereas the primates rNST fibres project directly to the parvocellular division of the ventroposterior medial nucleus of the thalamus (VPMpc).",
+     "species": "rodent (rat) and non-human primate, comparative",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The rostral, gustatory portion of the solitary nucleus gives rise to an uncrossed ascending pathway terminating in the caudal half of the parvocellular VPM",
+     "species": "human",
+     "page": 707,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The uncrossed gustatory pathway, from the rostral solitary nucleus to the caudal half of the parvocellular medial ventroposterior nucleus of the thalamus (VPp), ascends near the dorsal trigeminothalamic tract.",
+     "species": "human",
+     "page": 709,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Most of these connections, with the exception of the pathway for taste, are crossed.",
+     "species": "human",
+     "page": 684,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "VPMpc thalamic neurons",
+   "courseVia": [
+    "posterior limb of the internal capsule"
+   ],
+   "terminatesIn": "frontal operculum, anterior insular cortex, and rostral Brodmann area 3B",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK545236",
+     "grade": "B",
+     "quote": "The third-order fibers travel ipsilaterally through the posterior limb of the internal capsule to terminate in the frontal operculum, anterior insular cortex, and in the rostral part of the Brodmann area 3B.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC2902637",
+     "grade": "A",
+     "quote": "The gustatory fibres from the VPMpc terminate in the primary gustatory cortex (GC).",
+     "species": "rodent (rat) and non-human primate, comparative",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The parvocellular VPM projects to the gustatory cortex, located in the rostral, granular cortex of the insula and the inner frontal operculum",
+     "species": "human",
+     "page": 707,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "VPp projects to the rostral insula and the frontal operculum, and to the base of the postcentral gyrus.",
+     "species": "human",
+     "page": 709,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 3,
+   "cellBodies": "Gustatory (insular/opercular) cortex neurons",
+   "courseVia": [
+    "secondary cortico-cortical fibers"
+   ],
+   "terminatesIn": "posterolateral orbitofrontal cortex (integration of taste and smell, food reward)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK545236",
+     "grade": "B",
+     "quote": "Additionally, secondary fibers travel from the gustatory cortex to the posterolateral portion of the orbitofrontal cortex (OFC).",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Secondary projections from the gustatory cortex were traced to the dysgranular insular cortex and the lateral orbitofrontal cortex",
+     "species": "human",
+     "page": 707,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "chorda tympani / facial nerve (e.g. vestibular schwannoma at the cerebellopontine angle)",
+   "deficit": "loss of taste in the anterior two-thirds of the tongue",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Gibbons 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "A vestibular schwannoma (also referred to as an acoustic neuroma), which is a benign tumor that grows into the cerebellopontine angle (CPA), can cause loss of taste in the anterior two-thirds of the tongue on the ipsilateral side."
+    }
+   ],
+   "file": "special-senses.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Whether the third-order gustatory thalamocortical projection remains entirely ipsilateral, or also has a crossed component reaching contralateral gustatory cortex.",
+   "positions": [
+    {
+     "source": "Gibbons 2023 StatPearls [Internet]",
+     "grade": "B",
+     "claim": "Third-order fibers travel ipsilaterally from VPMpc to the frontal operculum, anterior insula and Brodmann area 3B, with no stated crossing.",
+     "quote": "The third-order fibers travel ipsilaterally through the posterior limb of the internal capsule to terminate in the frontal operculum, anterior insular cortex, and in the rostral part of the Brodmann area 3B."
+    },
+    {
+     "source": "Obiefuna 2023 StatPearls [Internet]",
+     "grade": "B",
+     "claim": "Axons from the rostral gustatory solitary nucleus project to the thalamic VPM and ultimately terminate in gustatory cortex both crossed and uncrossed.",
+     "quote": "Axons from the rostral gustatory solitary nucleus project to the ventral posterior medial nucleus of the thalamus VPM and ultimately terminate, both crossed and uncrossed, at the neocortex, the gustatory cortex (the anterior insula of the temporal lobe and frontal opercular region)."
+    }
+   ],
+   "file": "special-senses.json"
+  },
+  {
+   "issue": "Whether the third-order (and second-order) gustatory thalamocortical projection remains entirely ipsilateral/uncrossed, or also has a crossed component reaching contralateral gustatory cortex.",
+   "positions": [
+    {
+     "source": "special-senses.json S10 (not re-cited here; carried over for comparison)",
+     "grade": "?",
+     "claim": "Third-order fibers travel ipsilaterally from VPMpc to the frontal operculum, anterior insula and Brodmann area 3B, with no stated crossing.",
+     "quote": "The third-order fibers travel ipsilaterally through the posterior limb of the internal capsule to terminate in the frontal operculum, anterior insular cortex, and in the rostral part of the Brodmann area 3B."
+    },
+    {
+     "source": "special-senses.json S11 (not re-cited here; carried over for comparison)",
+     "grade": "?",
+     "claim": "Axons from the rostral gustatory solitary nucleus project to the thalamic VPM and ultimately terminate in gustatory cortex both crossed and uncrossed.",
+     "quote": "Axons from the rostral gustatory solitary nucleus project to the ventral posterior medial nucleus of the thalamus VPM and ultimately terminate, both crossed and uncrossed, at the neocortex, the gustatory cortex (the anterior insula of the temporal lobe and frontal opercular region)."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "The rostral, gustatory portion of the solitary nucleus gives rise to an UNCROSSED ascending pathway to the thalamus, and taste is explicitly the one sensory modality exempted from the general rule that these connections are crossed - supporting the ipsilateral-only position over the crossed-and-uncrossed position.",
+     "quote": "The rostral, gustatory portion of the solitary nucleus gives rise to an uncrossed ascending pathway terminating in the caudal half of the parvocellular VPM"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-senses.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The second-order ascending gustatory fibers from the nucleus of the solitary tract to VPMpc travel via the ipsilateral central tegmental tract.",
+   "file": "special-senses.json"
+  },
+  {
+   "text": "In primates, including humans, the central gustatory pathway reaches the thalamus (VPMpc) directly from the nucleus of the solitary tract, whereas in rodents an obligatory relay in the pontine parabrachial nucleus intervenes before the thalamus.",
+   "file": "special-senses.json"
+  },
+  {
+   "text": "S6 (Carleton, Accolla & Simon 2010) does not mention a 'central tegmental tract' anywhere in the text opened; it describes the primate route only as rNST fibres projecting 'directly' to VPMpc (in contrast to the rodent's obligatory pontine parabrachial-nucleus relay), without naming the specific fiber tract used. The 'central tegmental tract' label for this route, mentioned in the task brief, was not found stated in this source and is not cited here.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "S6 does not state the word 'ipsilateral' in connection with the primate NTS-to-VPMpc-to-cortex route specifically (it uses 'ipsilaterally' only for the rodent NTS-to-PBN leg); the ipsilaterality of the primate route is implied by 'projects directly' but not asserted verbatim for primates in the opened text, so it is not attached as a direct quote for that specific claim.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "S6 does not mention the insula or frontal operculum by name (it says fibres terminate in 'the primary gustatory cortex (GC)' without specifying its subregions), so the specific frontal-operculum/anterior-insula/BA3B terminations remain sourced only from the existing StatPearls source (S10) in special-senses.json.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "Nieuwenhuys does not name a 'central tegmental tract' for the second-order ascending gustatory fibres; it states only that the uncrossed pathway from the rostral solitary nucleus 'ascends near the dorsal trigeminothalamic tract', so the specific central-tegmental-tract claim remains unsourced from this text.",
+   "file": "upgrade-lib-nieuwenhuys-senses.json"
+  },
+  {
+   "text": "This text does not explicitly contrast a primate direct NTS-to-VPMpc route with an obligatory rodent pontine parabrachial relay for the gustatory (rostral solitary nucleus) pathway specifically; it does state that the caudal, GENERAL VISCEROSENSORY portion of the solitary nucleus (not the rostral gustatory portion) reaches the thalamus only indirectly, via an extra synapse in the parabrachial nuclei, which is consistent with but does not directly confirm the primate/rodent contrast.",
+   "file": "upgrade-lib-nieuwenhuys-senses.json"
+  }
+ ],
+ "sources": {
+  "NBK545236": {
+   "label": "Gibbons 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Neural Taste Pathway",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK545236"
+  },
+  "PMC2902637": {
+   "label": "Carleton 2010 Trends in Neurosciences",
+   "grade": "A",
+   "title": "Coding in the mammalian gustatory system",
+   "doi": "10.1016/j.tins.2010.04.002",
+   "pmcid": "PMC2902637",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

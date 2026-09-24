@@ -1,0 +1,377 @@
+{
+ "id": "sympathetic-pathway-to-the-eye-horner-syndrome",
+ "name": "Sympathetic pathway to the eye and Horner syndrome localisation",
+ "category": "Autonomic (sympathetic) pathway",
+ "function": "Three-neuron sympathetic chain providing tonic sympathetic drive to the dilator pupillae, superior tarsal (Muller) muscle, and facial sweat glands/vasculature; interruption at any of the three neuron levels produces Horner syndrome (ptosis, miosis, anhidrosis), and the pattern of associated deficits localises the lesion to the first-, second-, or third-order neuron.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Posterolateral hypothalamus (first-order/central neuron)",
+   "courseVia": [
+    "descends uncrossed through the midbrain and pons/brainstem tegmentum to the intermediolateral cell column"
+   ],
+   "terminatesIn": "Intermediolateral cell columns at spinal levels C8-T2 (ciliospinal center of Budge)",
+   "laterality": "ipsilateral, uncrossed",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK500000",
+     "grade": "B",
+     "quote": "The first-order neurons originate in the hypothalamus and descend uncrossed through the midbrain and pons, terminating in the intermediolateral cell columns at the C8 through T2 levels of the spinal cord, known as the ciliospinal center of Budge",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC5398733",
+     "grade": "A",
+     "quote": "First-order neurons are located in the posterolateral hypothalamus",
+     "species": "human",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "PMC5398733",
+     "grade": "A",
+     "quote": "sympathetic fibers pass through the lateral brain stem and extend to the ciliospinal center of Budge and Waller in the intermediolateral gray column of the spinal cord at C8–T1",
+     "species": "human",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The centre for pupillary dilation is located in the intermediolateral cell column of the upper thoracic cord.",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Ciliospinal center of Budge, intermediolateral cell column C8-T2 (second-order/preganglionic neuron)",
+   "courseVia": [
+    "exits spinal cord at T1",
+    "cervical sympathetic chain, ascending over the lung apex"
+   ],
+   "terminatesIn": "Superior cervical ganglion (C3-C4 level)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK500000",
+     "grade": "B",
+     "quote": "Second-order preganglionic neurons exit the spinal cord at the T1 level and enter the cervical sympathetic chain, where they ascend to synapse in the superior cervical ganglion at the C3 through C4 levels",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC4919817",
+     "grade": "A",
+     "quote": "The preganglionic sympathetic neurons that innervate the eye are located in the intermediolateral cell column (IML) in the C8-T2 segments of the spinal cord, a region termed the ciliospinal center of Budge (and Waller).",
+     "species": "human/primate (review synthesis)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "PMC4919817",
+     "grade": "A",
+     "quote": "The axons of these preganglionic neurons project to the sympathetic chain ganglia and travel in the sympathetic trunk to the superior cervical ganglion.",
+     "species": "human/primate (review synthesis)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The preganglionic sympathetic fibres originating from this so-called centrum ciliospinale ascend through the sympathetic trunk and synapse in the superior cervical ganglion with postganglionic elements.",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Superior cervical ganglion (third-order/postganglionic neuron)",
+   "courseVia": [
+    "sudomotor/vasomotor branches follow the external carotid artery (face/sweat glands); other fibers ascend within the carotid plexus along the internal carotid artery, through the cavernous sinus (joining CN VI briefly), then the superior orbital fissure with the ophthalmic division of CN V, continuing as the long ciliary nerves"
+   ],
+   "terminatesIn": "Dilator pupillae and superior tarsal (Muller) muscle (via long ciliary nerves); sweat glands/vasculature of the face (via external carotid plexus)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK500000",
+     "grade": "B",
+     "quote": "Third-order postganglionic fibers divide into sudomotor and vasomotor branches that follow the external carotid artery and innervate the sweat glands and blood vessels of the face",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK500000",
+     "grade": "B",
+     "quote": "The remaining fibers ascend within the carotid plexus along the internal carotid artery and enter the cavernous sinus, where they join the abducens nerve (cranial nerve VI)",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC4919817",
+     "grade": "A",
+     "quote": "The axons of these postganglionic neurons project from the superior cervical ganglion as the internal carotid nerves to the level of the cavernous sinuses where they form the carotid plexus around the carotid arteries.",
+     "species": "human/primate (review synthesis)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "PMC4919817",
+     "grade": "A",
+     "quote": "Many of the fibers destined for the eye form the sympathetic root of the ciliary ganglion, which runs along with the ophthalmic artery to enter the orbit.",
+     "species": "human/primate (review synthesis)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The axons of the latter accompany the branches of the internal carotid artery and traverse the ciliary ganglion before they innervate the dilatator pupillae muscle of the iris.",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "First-order neuron (hypothalamus to C8-T2 intermediolateral cell column) — e.g. stroke, lateral medullary (Wallenberg) syndrome, Arnold-Chiari malformation, high spinal cord trauma",
+   "deficit": "Horner syndrome with anhidrosis potentially involving the entire ipsilateral side of the body, because these fibers arise centrally before dividing",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Khan 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "First-order neuron lesions may cause anhidrosis involving the ipsilateral side of the body because these fibers arise centrally"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Second-order neuron (cervical sympathetic chain/thoracic outlet) — e.g. Pancoast tumor, cervical rib, brachial plexus trauma, neuroblastoma",
+   "deficit": "Horner syndrome with anhidrosis typically confined to the ipsilateral face",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Khan 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Second-order neuron lesions typically affect the ipsilateral face"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Third-order neuron (superior cervical ganglion to eye) — e.g. carotid dissection, cavernous sinus lesion, cluster headache/Raeder syndrome",
+   "deficit": "Horner syndrome with anhidrosis limited to a small area near the ipsilateral brow, because the vasomotor/sudomotor fibers have already branched off before this point",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Khan 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Third-order postganglionic neuron lesions produce limited facial anhidrosis, usually confined to the area adjacent to the ipsilateral brow, because the vasomotor and sudomotor fibers have already branched from the pathway"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Sympathetic pathway (any level) — Horner syndrome overall",
+   "deficit": "Partial ptosis (from denervation of the superior tarsal/Muller muscle, milder than CN III ptosis), miosis (unopposed parasympathetic tone on the dilator pupillae), with pupillary light and accommodation responses remaining normal since they do not depend on sympathetic innervation",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Khan 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "The sympathetic nervous system mediates pupillary dilation. Disruption of this pathway leaves parasympathetic innervation unopposed, resulting in pupillary constriction. Pupillary responses to light and accommodation remain normal because these systems do not depend on sympathetic innervation"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "First-order neuron (hypothalamus to C8-T2 intermediolateral cell column) — e.g. stroke, lateral medullary (Wallenberg) syndrome, Arnold-Chiari malformation, high spinal cord trauma",
+   "deficit": "Horner syndrome with anhidrosis potentially involving the entire ipsilateral side of the body, because these fibers arise centrally before dividing",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Kanagalingam 2015 Eye and Brain",
+     "grade": "A",
+     "quote": "Among 33 consecutive patients with lateral medullary infarction, Horner syndrome was found in 91%, ipsilateral ataxia in 85%, and contralateral hypalgesia in 85%."
+    },
+    {
+     "source": "Kanagalingam 2015 Eye and Brain",
+     "grade": "A",
+     "quote": "Wallenberg syndrome most often is caused by thrombotic occlusion of the ipsilateral vertebral artery"
+    }
+   ],
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "site": "Sympathetic pathway (any level) — Horner syndrome overall",
+   "deficit": "Partial ptosis (from denervation of the superior tarsal/Muller muscle, milder than CN III ptosis), miosis (unopposed parasympathetic tone on the dilator pupillae), with pupillary light and accommodation responses remaining normal since they do not depend on sympathetic innervation",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Kanagalingam 2015 Eye and Brain",
+     "grade": "A",
+     "quote": "Horner syndrome consists of unilateral ptosis, an ipsilateral miotic but normally reactive pupil, and in some cases, ipsilateral facial anhidrosis"
+    }
+   ],
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "site": "First-order neuron (hypothalamus to C8-T2 intermediolateral cell column) — e.g. stroke, lateral medullary (Wallenberg) syndrome, Arnold-Chiari malformation, high spinal cord trauma",
+   "deficit": "Horner syndrome with anhidrosis potentially involving the entire ipsilateral side of the body, because these fibers arise centrally before dividing",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "Fibres descending through the lateral part of the medulla oblongata and of the spinal cord synapse in the sympathetic ciliospinal centre. The origin of these fibres is unknown."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Second-order neuron (cervical sympathetic chain/thoracic outlet) — e.g. Pancoast tumor, cervical rib, brachial plexus trauma, neuroblastoma",
+   "deficit": "Horner syndrome with anhidrosis typically confined to the ipsilateral face",
+   "side": "ipsilateral",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Third-order neuron (superior cervical ganglion to eye) — e.g. carotid dissection, cavernous sinus lesion, cluster headache/Raeder syndrome",
+   "deficit": "Horner syndrome with anhidrosis limited to a small area near the ipsilateral brow, because the vasomotor/sudomotor fibers have already branched off before this point",
+   "side": "ipsilateral",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Sympathetic pathway (any level) — Horner syndrome overall",
+   "deficit": "Partial ptosis (from denervation of the superior tarsal/Muller muscle, milder than CN III ptosis), miosis (unopposed parasympathetic tone on the dilator pupillae), with pupillary light and accommodation responses remaining normal since they do not depend on sympathetic innervation",
+   "side": "ipsilateral",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Whether the central (first-order) sympathetic fibres descending to the ciliospinal centre have a confirmed hypothalamic origin",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json#S16",
+     "grade": "?",
+     "claim": "The first-order neurons originate in the hypothalamus and descend uncrossed through the midbrain and pons, terminating in the intermediolateral cell columns at the C8 through T2 levels of the spinal cord (the ciliospinal center of Budge).",
+     "quote": "The first-order neurons originate in the hypothalamus and descend uncrossed through the midbrain and pons, terminating in the intermediolateral cell columns at the C8 through T2 levels of the spinal cord, known as the ciliospinal center of Budge"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states that fibres descending through the lateral part of the medulla and spinal cord synapse in the sympathetic ciliospinal centre, but explicitly says the origin of these descending fibres is unknown.",
+     "quote": "Fibres descending through the lateral part of the medulla oblongata and of the spinal cord synapse in the sympathetic ciliospinal centre. The origin of these fibres is unknown."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "issue": "Route taken by third-order (postganglionic) sympathetic fibres from the superior cervical ganglion to the dilator pupillae",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json#S16",
+     "grade": "?",
+     "claim": "Postganglionic fibres ascend within the carotid plexus along the internal carotid artery, enter the cavernous sinus (joining CN VI briefly), then pass through the superior orbital fissure with the ophthalmic division of CN V, continuing as the long ciliary nerves — with no mention of the ciliary ganglion.",
+     "quote": "The remaining fibers ascend within the carotid plexus along the internal carotid artery and enter the cavernous sinus, where they join the abducens nerve (cranial nerve VI)"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states these postganglionic axons accompany branches of the internal carotid artery and traverse the ciliary ganglion itself before innervating the dilator pupillae, a detail absent from the StatPearls account.",
+     "quote": "The axons of the latter accompany the branches of the internal carotid artery and traverse the ciliary ganglion before they innervate the dilatator pupillae muscle of the iris."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The first-order sympathetic tract is commonly taught to descend within the dorsolateral brainstem tegmentum in close proximity to the spinothalamic tract, which is why lateral medullary (Wallenberg) infarcts classically produce an ipsilateral Horner syndrome together with contralateral body pain/temperature loss; the opened source lists lateral medullary syndrome as a cause but does not itself describe this specific tract adjacency.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "S1 (McDougal & Gamlin) does not use the term 'Horner syndrome' anywhere in the sections opened, and does not explicitly name the superior tarsal (Muller) muscle among the third-order neuron's targets; it discusses the dilator pupillae pathway and ciliary-ganglion sympathetic root but Muller's muscle innervation specifically was not found stated verbatim in the opened text.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "Neither S1 nor S2 explicitly states the specific anatomical adjacency of the descending first-order sympathetic tract to the spinothalamic tract in the lateral medulla (the classic explanation for why Wallenberg syndrome combines Horner syndrome with contralateral pain/temperature loss); S2 confirms the clinical association (91% Horner in lateral medullary infarction) but not this specific tract-adjacency mechanism in the text opened.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "The first-order sympathetic tract is commonly taught to descend within the dorsolateral brainstem tegmentum in close proximity to the spinothalamic tract, explaining why lateral medullary (Wallenberg) infarcts classically produce ipsilateral Horner syndrome together with contralateral body pain/temperature loss. Nieuwenhuys confirms only that descending fibres to the ciliospinal centre travel through 'the lateral part of the medulla oblongata', without describing adjacency to the spinothalamic tract, and states the origin of these fibres is unknown (see conflicts).",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "sources": {
+  "NBK500000": {
+   "label": "Khan 2023 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Horner Syndrome",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK500000"
+  },
+  "PMC5398733": {
+   "label": "Kanagalingam 2015 Eye and Brain",
+   "grade": "A",
+   "title": "Horner syndrome: clinical perspectives",
+   "doi": "10.2147/EB.S63633",
+   "pmcid": "PMC5398733",
+   "isbn": null,
+   "nbk": ""
+  },
+  "PMC4919817": {
+   "label": "McDougal 2015 Comprehensive Physiology",
+   "grade": "A",
+   "title": "Autonomic control of the eye",
+   "doi": "10.1002/cphy.c140014",
+   "pmcid": "PMC4919817",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

@@ -1,0 +1,510 @@
+{
+ "id": "anterolateral-system-spinothalamic-tract",
+ "name": "Anterolateral system / spinothalamic tract",
+ "category": "ascending somatosensory / pain, temperature and crude touch",
+ "function": "Carries nociceptive, thermal, crude touch and pressure information from the body to the thalamus; includes spinothalamic, spinoreticular and spinotectal (spinomesencephalic) components.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Dorsal root ganglion (pseudounipolar neurons)",
+   "courseVia": [
+    "peripheral nerve",
+    "lateral dorsal root entry zone",
+    "Lissauer's tract (ascends/descends 1–2 segments)"
+   ],
+   "terminatesIn": "Dorsal horn grey matter – substantia gelatinosa / laminae I, II, V",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK507824",
+     "grade": "B",
+     "quote": "The axons of the central process of the first-order neurons enter the spinal cord through the lateral dorsal root entry zone to enter the Lissauer tract and synapses with second-order neurons in the substantia gelatinosa, located in the grey matter of the spinal cord",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK554391",
+     "grade": "B",
+     "quote": "Initial pain signals ascend through the dorsal horn, specifically through lamina I (superficial dorsal horn), lamina II (substantia gelatinosa), and lamina V (deep dorsal horn)",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "The neurotransmitters contained in the terminals of nociceptive afferent fibers in the dorsal horn include excitatory amino acids, particularly glutamate",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "In monkeys, a large fraction of spinothalamic tract cells is located in the lumbar and sacral enlargements, and these cells are concentrated in the marginal zone and neck of the dorsal horn in laminae I and IV-VI",
+     "species": "monkey",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Dorsal horn (substantia gelatinosa / laminae I, II, V)",
+   "courseVia": [
+    "anterior white commissure (decussation)",
+    "anterolateral/ventrolateral white matter of spinal cord",
+    "spinal lemniscus in brainstem"
+   ],
+   "terminatesIn": "Ventral posterolateral nucleus (VPL) of thalamus (spinothalamic component); also reticular formation (spinoreticular) and tectum/periaqueductal region (spinotectal/spinomesencephalic)",
+   "laterality": "contralateral",
+   "decussation": {
+    "present": true,
+    "where": "Anterior white commissure, a few spinal segments above the level of entry"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK507824",
+     "grade": "B",
+     "quote": "The axons of the second-order neurons cross over the spinal cord to the opposite side two segments above the level of entry via the anterior white commissure, unlike the posterior medial lemniscus pathway, which decussates in the brainstem",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK507824",
+     "grade": "B",
+     "quote": "The spinothalamic tract is part of the anterolateral system, which also encompasses the spinoreticulothalamic tract (SRTT) and the spinotectal tract (SpTT)",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC10567534",
+     "grade": "A",
+     "quote": "The lateral spinothalamic tract transmits the most advanced form of sensation: pain generated from the free nerve ending and heat sensation from the thermoreceptor of the skin",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC10567534",
+     "grade": "A",
+     "quote": "The fibers enter the cord through the dorsal horn and decussate to the contralateral side (early decussation)",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Most of the fibres joining the anterolateral fasciculus cross in the ventral white commissure, but a distinct ipsilateral component exists.",
+     "species": "human",
+     "page": 698,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The spinothalamic tract takes its origin from multiple laminae and from all levels of the spinal cord.",
+     "species": "human",
+     "page": 699,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "They terminate diffusely in the centrolateral intralaminar nucleus, in the adjoining lateral paralaminar region of the mediodorsal nucleus, and more sparsely, in other intralaminar and midline nuclei of the thalamus",
+     "species": "human",
+     "page": 700,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "The axons of spinothalamic neurons often decussate through the ventral white commissure at a very short distance from the cell body",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "The axons cross the midline in the ventral gray commissure at a level near that of the cell bodies of the neurons.",
+     "species": "monkey",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "The particular nuclei of termination include the VPL, VPI, and POm nuclei in the lateral thalamus and CL and other intralaminar nuclei, as well as VMpo in the medial thalamus.",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "A projection from lamina I has been traced to a medial thalamic nucleus, the posterior part of the ventral medial nucleus, VMpo",
+     "species": "not stated",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "In anesthetized monkeys, a much larger percentage of nociceptive neurons is situated in the VPL nucleus",
+     "species": "monkey",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Ventral posterolateral nucleus (VPL) of thalamus",
+   "courseVia": [
+    "thalamocortical fibers",
+    "posterior limb of internal capsule"
+   ],
+   "terminatesIn": "Primary somatosensory cortex (postcentral gyrus)",
+   "laterality": "ipsilateral (to thalamus; contralateral to body side of origin)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK507824",
+     "grade": "B",
+     "quote": "The spinothalamic tract of the anterolateral system terminates in the ventral posterolateral nucleus (VPL) of the thalamus, the third-order neurons of this pathway",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC7859971",
+     "grade": "A",
+     "quote": "Their projection to the SI cortex, implies that the SI cortex is also involved in the discriminative aspects of pain sensation.",
+     "species": "monkey",
+     "page": null,
+     "file": "upgrade-lib-willis1997.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Spinal cord hemisection (Brown-Séquard syndrome), spinothalamic tract",
+   "deficit": "Loss of pain and temperature sensation a couple of segments below the lesion",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Spinothalamic tract deficit leads to loss of pain and temperature sensations on one side of the body at about two levels below the lesion but on the contralateral side"
+    },
+    {
+     "source": "Shams 2024 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Ascending anterior spinothalamic tracts containing afferents of pain, temperature, and crude touch are transected, leading to contralateral hemisensory loss of these modalities"
+    },
+    {
+     "source": "Kang 2023 Korean Journal of Neurotrauma",
+     "grade": "A",
+     "quote": "damage to the early decussating spinothalamic tract results in the loss of crude touch, pressure, temperature, and pain sensations on the opposite side below the affected level."
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Syringomyelia (central cavitation, anterior white commissure)",
+   "deficit": "Bilateral, dermatomal (\"cape-like\") loss of pain and temperature with preserved touch/vibration",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "bilateral loss of pain and temperature in a dermatomal fashion can be present in syringomyelia where the anterior white commissure becomes obliterated due to cavitation in the central spinal cord"
+    },
+    {
+     "source": "Shenoy 2024 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Consequently, there is a loss of pain and temperature sensation with preserved touch and vibratory sense, leading to segmental dissociated sensory loss"
+    },
+    {
+     "source": "Ku 2026 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Syringomyelia, defined as cavitation of the cervical spinal cord originating in the central canal, initially affects crossing spinothalamic fibers within the anterior white commissure, producing a characteristic loss of pain and temperature sensation"
+    },
+    {
+     "source": "Kang 2023 Korean Journal of Neurotrauma",
+     "grade": "A",
+     "quote": "In patients with syringomyelia, a fluid-filled cavity develops within the central canal of the spinal cord, leading to the obstruction of the ventral white commissure"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Lateral medullary syndrome (Wallenberg; PICA/vertebral artery occlusion), spinothalamic tract",
+   "deficit": "Contralateral loss of pain and temperature over body, plus ipsilateral facial pain/temperature loss from spinal trigeminal tract involvement",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Lateral medullary syndrome caused by occlusion of posterior inferior cerebellar artery affects the spinothalamic tract as STT runs in the lateral aspect of the medulla, resulting in loss of pain and temperature sensations over the entire contralateral side of the body"
+    },
+    {
+     "source": "Easton-Carr 2026 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Spinothalamic tract: Contralateral pain and temperature loss affecting the arm, body, and leg"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Thalamic lesion, VPL nucleus",
+   "deficit": "Initial loss of all contralateral sensation followed by central (thalamic) pain – Déjérine-Roussy syndrome",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "A lesion localized to a ventral posterolateral in the thalamus will lead to an initial loss of all sensations from the contralateral side of the body, including pain"
+    },
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "this is referred to as thalamic pain syndrome (Déjérine-Roussy syndrome)"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Anterior spinal artery syndrome",
+   "deficit": "Bilateral pain and temperature loss below the lesion with preserved vibration/proprioception",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Patients with anterior spinal artery syndrome present with pain and temperature loss bilaterally below the level of the lesion"
+    },
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "vibratory and proprioceptive senses are preserved due to posterior column sparing"
+    }
+   ],
+   "file": "somatosensory.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Number of spinal segments the second-order fibers ascend in Lissauer's tract before decussating in the anterior white commissure",
+   "positions": [
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "claim": "Second-order fibers cross two segments above the level of entry",
+     "quote": "The axons of the second-order neurons cross over the spinal cord to the opposite side two segments above the level of entry via the anterior white commissure, unlike the posterior medial lemniscus pathway, which decussates in the brainstem"
+    },
+    {
+     "source": "Ku 2026 StatPearls Publishing",
+     "grade": "B",
+     "claim": "Second-order fibers ascend 1 to 3 spinal cord levels through Lissauer's tract before/around decussation",
+     "quote": "Axons of 2nd-order neurons from the spinothalamic tract decussate at the anterior white commissure and ascend 1 to 3 spinal cord levels through the Lissauer tract"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "issue": "Which spinal grey-matter laminae give rise to the second-order (spinothalamic) projection neurons",
+   "positions": [
+    {
+     "source": "S8 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S8): the relay occurs in the substantia gelatinosa, i.e. laminae I, II and V",
+     "quote": "Initial pain signals ascend through the dorsal horn, specifically through lamina I (superficial dorsal horn), lamina II (substantia gelatinosa), and lamina V (deep dorsal horn)"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states the spinothalamic tract arises from lamina I and laminae IV-IX, with most cells actually located in lamina I, the lamina IV/V border zone, lamina VI, and scattered in laminae VII and VIII -- a broader and different set of laminae than I, II, V",
+     "quote": "Most spinothalamic tract cells occur in lamina I (50% [51]), in the lamina IV/V border zone and lamina VI mostly laterally, and scattered in laminae VII and VIII."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "issue": "Primary thalamic relay nucleus for spinothalamic pain and temperature fibres",
+   "positions": [
+    {
+     "source": "S3 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S3): the ventral posterolateral nucleus (VPL) is the thalamic relay and gives rise to the third-order neurons of this pathway",
+     "quote": "The spinothalamic tract of the anterolateral system terminates in the ventral posterolateral nucleus (VPL) of the thalamus, the third-order neurons of this pathway"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys identifies a separate, dedicated nucleus -- the posterior ventromedial nucleus (VMpo) -- as the main relay for pain and temperature; VPL receives only scattered spinothalamic terminations",
+     "quote": "The main relay nucleus for the conduction of pain and temperature is the VMpo"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "issue": "How many spinal segments spinothalamic (second-order) fibers ascend in Lissauer's tract / the dorsal horn before decussating in the anterior/ventral white commissure",
+   "positions": [
+    {
+     "source": "S3 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S3): second-order fibers cross two segments above the level of entry (not reopened this session)",
+     "quote": "The axons of the second-order neurons cross over the spinal cord to the opposite side two segments above the level of entry via the anterior white commissure, unlike the posterior medial lemniscus pathway, which decussates in the brainstem"
+    },
+    {
+     "source": "S4 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S4): fibers ascend 1 to 3 spinal cord levels through the Lissauer tract before decussating (not reopened this session)",
+     "quote": "Axons of 2nd-order neurons from the spinothalamic tract decussate at the anterior white commissure and ascend 1 to 3 spinal cord levels through the Lissauer tract"
+    },
+    {
+     "source": "Willis 1997 J Clin Neurophysiol",
+     "grade": "A",
+     "claim": "Willis and Westlund state that spinothalamic axons decussate through the ventral white commissure at a very short distance from the cell body -- essentially at, not several segments above, the level of origin -- and that the crossing occurs at a level near that of the cell bodies of the neurons of origin",
+     "quote": "The axons of spinothalamic neurons often decussate through the ventral white commissure at a very short distance from the cell body"
+    }
+   ],
+   "file": "upgrade-lib-willis1997.json"
+  },
+  {
+   "issue": "Primary thalamic relay nucleus for spinothalamic pain and temperature fibers: VPL vs VMpo",
+   "positions": [
+    {
+     "source": "S3 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S3): the ventral posterolateral nucleus (VPL) is the thalamic relay and gives rise to the third-order neurons of this pathway (not reopened this session)",
+     "quote": "The spinothalamic tract of the anterolateral system terminates in the ventral posterolateral nucleus (VPL) of the thalamus, the third-order neurons of this pathway"
+    },
+    {
+     "source": "upgrade-lib-nieuwenhuys S1 (not reopened this session)",
+     "grade": "?",
+     "claim": "Nieuwenhuys (upgrade batch, S1 of that batch) identifies VMpo as the main relay nucleus for pain and temperature, with only scattered spinothalamic terminations reaching VPL (not reopened this session)",
+     "quote": "The main relay nucleus for the conduction of pain and temperature is the VMpo"
+    },
+    {
+     "source": "Willis 1997 J Clin Neurophysiol",
+     "grade": "A",
+     "claim": "Willis and Westlund describe multiple parallel thalamic targets rather than a single dedicated relay: VPL, VPI and POm in the lateral thalamus, CL and other intralaminar nuclei, plus VMpo in the medial thalamus all receive spinothalamic terminations",
+     "quote": "The particular nuclei of termination include the VPL, VPI, and POm nuclei in the lateral thalamus and CL and other intralaminar nuclei, as well as VMpo in the medial thalamus."
+    },
+    {
+     "source": "Willis 1997 J Clin Neurophysiol",
+     "grade": "A",
+     "claim": "Willis and Westlund note the VMpo projection specifically arises from lamina I and is a separate, medial-thalamus target from VPL",
+     "quote": "A projection from lamina I has been traced to a medial thalamic nucleus, the posterior part of the ventral medial nucleus, VMpo"
+    },
+    {
+     "source": "Willis 1997 J Clin Neurophysiol",
+     "grade": "A",
+     "claim": "Willis and Westlund report that in anesthetized monkeys the VPL nucleus itself contains a much larger proportion of nociceptive neurons than in awake monkeys, supporting a substantial (not merely scattered) VPL role in pain processing, in tension with Nieuwenhuys's characterization of VPL input as scattered",
+     "quote": "In anesthetized monkeys, a much larger percentage of nociceptive neurons is situated in the VPL nucleus"
+    }
+   ],
+   "file": "upgrade-lib-willis1997.json"
+  },
+  {
+   "issue": "Which spinal grey-matter laminae give rise to the second-order (spinothalamic) projection neurons",
+   "positions": [
+    {
+     "source": "S8 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S8): the relay occurs in the substantia gelatinosa, i.e. laminae I, II and V (not reopened this session)",
+     "quote": "Initial pain signals ascend through the dorsal horn, specifically through lamina I (superficial dorsal horn), lamina II (substantia gelatinosa), and lamina V (deep dorsal horn)"
+    },
+    {
+     "source": "Willis 1997 J Clin Neurophysiol",
+     "grade": "A",
+     "claim": "Willis and Westlund report (for monkeys) spinothalamic cells concentrated in laminae I and IV-VI, a broader and different set than I, II, V",
+     "quote": "In monkeys, a large fraction of spinothalamic tract cells is located in the lumbar and sacral enlargements, and these cells are concentrated in the marginal zone and neck of the dorsal horn in laminae I and IV-VI"
+    }
+   ],
+   "file": "upgrade-lib-willis1997.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "Substance P and glutamate are the principal neurotransmitters of first-order nociceptive afferents synapsing in the dorsal horn (standard teaching; no explicit sourced quote naming the neurotransmitter at spinothalamic synapses was found in the texts opened this session).",
+   "file": "somatosensory.json"
+  },
+  {
+   "text": "The spinoreticulothalamic component projects to intralaminar thalamic nuclei, including the centrolateral (CL) nucleus, providing a diffuse/poorly localized pain pathway; the closest sourced statement found only mentions projection to a 'non-specific medial thalamus' (S8) without naming the intralaminar or centrolateral nucleus specifically.",
+   "file": "somatosensory.json"
+  },
+  {
+   "text": "Substance P and glutamate are the principal neurotransmitters of first-order nociceptive afferents synapsing in the dorsal horn (standard teaching; no explicit sourced quote naming the neurotransmitter at spinothalamic synapses was found in Nieuwenhuys ch.16).",
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "sources": {
+  "NBK507824": {
+   "label": "Al-Chalabi 2023 StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Spinothalamic Tract",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK507824"
+  },
+  "NBK554391": {
+   "label": "Mokhtar 2023 StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Periaqueductal Gray",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK554391"
+  },
+  "PMC10567534": {
+   "label": "Kang 2023 Korean Journal of Neurotrauma",
+   "grade": "A",
+   "title": "Functional Anatomy of the Spinal Tracts Based on Evolutionary Perspectives",
+   "doi": "10.13004/kjnt.2023.19.e43",
+   "pmcid": "PMC10567534",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  },
+  "PMC7859971": {
+   "label": "Willis 1997 J Clin Neurophysiol",
+   "grade": "A",
+   "title": "Neuroanatomy of the pain system and of the pathways that modulate pain",
+   "doi": "10.1097/00004691-199701000-00002",
+   "pmcid": "PMC7859971",
+   "isbn": null,
+   "nbk": null
+  }
+ }
+}

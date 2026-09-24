@@ -1,0 +1,397 @@
+{
+ "id": "pupillary-light-reflex",
+ "name": "Pupillary light reflex",
+ "category": "Cranial nerve / brainstem reflex",
+ "function": "Constricts the pupil in response to light to regulate retinal illumination; direct and consensual bilateral response used clinically to localize afferent (optic nerve) vs efferent (oculomotor) lesions.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Retinal ganglion cells (afferent limb begins with photoreceptor-driven signal in retina)",
+   "courseVia": [
+    "optic nerve (CN II)",
+    "optic chiasm",
+    "optic tract"
+   ],
+   "terminatesIn": "Pretectal nucleus (bypasses lateral geniculate nucleus)",
+   "laterality": "bilateral (nasal fibers decussate to contralateral pretectal nucleus; temporal fibers stay ipsilateral)",
+   "decussation": {
+    "present": true,
+    "where": "optic chiasm (nasal retinal fibers only)"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK553169",
+     "grade": "B",
+     "quote": "Nasal retinal fibers decussate at the optic chiasm and project to the contralateral pretectal nucleus, whereas temporal retinal fibers project to the ipsilateral pretectal nucleus",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Within the optic chiasm a partial decussation takes place: fibres from the nasal halves of the retinae, including the projection of the monocular visual field, cross to the opposite side; those from the temporal halves of the retinas remain uncrossed",
+     "species": "human",
+     "page": 758,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Axons of retinal ganglion cells, which pass via the optic nerve and tract to the pretectal region, particularly the olivary pretectal nucleus",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Melanopsin-containing ganglion cells are responsible for the retained pupillary light reflex and circadian responses in transgenic mice, lacking both rod and cone photoreceptors",
+     "species": "mouse",
+     "page": 757,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Pretectal nucleus (midbrain, level of superior colliculus)",
+   "courseVia": [
+    "posterior commissure"
+   ],
+   "terminatesIn": "Edinger-Westphal nucleus, both sides",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": true,
+    "where": "posterior commissure"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK441892",
+     "grade": "B",
+     "quote": "The pupillary light reflex fibers synapse at the pretectal nucleus and the pass to the Edinger-Westphal nucleus of the same side and the contralateral side through the posterior commissure",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC4919817",
+     "grade": "A",
+     "quote": "These results demonstrate that, in macaques, there is a direct projection from the pretectum to EW, that it arises from only one retinorecipient pretectal nucleus, the PON, and that the PON projects predominantly contralaterally to the EW by way of the posterior commissure",
+     "species": "macaque monkey",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Axons of neurons of the olivary pretectal nucleus project to the Edinger-Westphal nuclei of both sides. Their fibres decussate in the posterior commissure",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The pretectal efferents to the ipsilateral accessory oculomotor nucleus provide for the direct pupillary light reflex, those to the contralateral nucleus for the consensual pupillary light reflex.",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Edinger-Westphal nucleus (preganglionic parasympathetic)",
+   "courseVia": [
+    "oculomotor nerve (CN III)",
+    "inferior division of CN III"
+   ],
+   "terminatesIn": "Ciliary ganglion (synapse with postganglionic neurons)",
+   "laterality": "ipsilateral (each Edinger-Westphal nucleus drives ipsilateral pupil)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK553169",
+     "grade": "B",
+     "quote": "These axons travel through the oculomotor nerve to synapse with postganglionic neurons in the ciliary ganglion. The short ciliary nerves arising from the ciliary ganglion then stimulate the pupillary sphincter muscle, producing pupillary constriction",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK557675",
+     "grade": "B",
+     "quote": "The preganglionic motor neuron connects the Edinger-Westphal nucleus to the ciliary ganglion. These fibers pass through the inferior division of the oculomotor nerve",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC4919817",
+     "grade": "A",
+     "quote": "Within the ciliary ganglion, postganglionic neurons are contacted by the cholinergic, nicotinic synapses of parasympathetic preganglionic axon terminals",
+     "species": "human/primate (review synthesis)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Axons of the parasympathetic preganglionic neurons of the accessory oculomotor nuclei, which pass with the oculomotor nerves to the ciliary ganglia. Here they synapse with postganglionic neurons.",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 4,
+   "cellBodies": "Ciliary ganglion (postganglionic parasympathetic neurons)",
+   "courseVia": [
+    "short ciliary nerves"
+   ],
+   "terminatesIn": "Sphincter pupillae muscle",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557675",
+     "grade": "B",
+     "quote": "The postganglionic motor neurons innervate the sphincter pupillae via short ciliary nerves",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC4919817",
+     "grade": "A",
+     "quote": "The axons of these postganglionic neurons leave the ciliary ganglion to enter the eye via the short ciliary nerves.",
+     "species": "human/primate (review synthesis)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Postganglionic neurons whose axons innervate the sphincter pupillae muscle of the iris.",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Optic nerve (afferent limb, one side)",
+   "deficit": "Relative afferent pupillary defect (RAPD / Marcus Gunn pupil): light swung into the affected eye produces less constriction (or paradoxical dilation) than light into the healthy eye, because the affected eye's afferent signal is weaker",
+   "side": "ipsilateral (afferent defect on the side of the diseased optic nerve)",
+   "evidence": [
+    {
+     "source": "Simakurthy 2026 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "This paradoxical dilation occurs because the affected eye transmits a weaker afferent signal, thereby reducing pupillomotor input"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Olivary pretectal nucleus or brachium of the superior colliculus (unilateral)",
+   "deficit": "Tectal (unilateral) RAPD that can occur without vision loss, because the pupillary fibers branch off the visual pathway before the visually processing areas",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Simakurthy 2026 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Unilateral lesions of the olivary pretectal area or the brachium of the superior colliculus can cause a tectal MGP, which is contralateral in nature and can present without vision loss due to the pupillary fibers branching off before reaching the visually processing areas"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Dorsal midbrain lesion near the Sylvian aqueduct (neurosyphilis) affecting the dorsal efferent pupillary light-reflex fibers on the Edinger-Westphal nucleus while sparing the more ventral near-reflex fibers",
+   "deficit": "Argyll Robertson pupil: small, irregular bilateral pupils with light-near dissociation (absent light reflex, prompt constriction on near accommodation)",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Dichter 2024 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "dorsal midbrain lesion that interrupts the pupillary light reflex pathway but spares the more ventral pupillary near the reflex pathway"
+    },
+    {
+     "source": "Dichter 2024 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "The patient with Argyll Robertson pupils will show small, irregular pupils with light-near dissociation: absent light reflex, prompt constriction with near accommodation"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Optic nerve, unilateral, complete",
+   "deficit": "No pupillary constriction in either eye when light is directed into the affected eye (afferent limb interrupted); light into the unaffected eye still produces bilateral constriction",
+   "side": "bilateral (efferent output unaffected, but afferent signal from the damaged side cannot reach either Edinger-Westphal nucleus)",
+   "evidence": [
+    {
+     "source": "Akova 2025 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Pupillary constriction is absent in both eyes when light is directed into the affected eye, as the retinal signal cannot reach central processing centers"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Oculomotor nerve (efferent limb, one side)",
+   "deficit": "Light into the affected eye still activates both Edinger-Westphal nuclei via intact afferents, but only the contralateral (unaffected) pupil constricts because the efferent path on the affected side is disrupted",
+   "side": "ipsilateral (efferent deficit on the side of the CN III lesion)",
+   "evidence": [
+    {
+     "source": "Akova 2025 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Light directed into the eye with a damaged oculomotor nerve produces a retinal signal that reaches both Edinger-Westphal nuclei, but only the contralateral pupil constricts because the efferent pathway on the affected side is disrupted"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Optic nerve (afferent limb, one side)",
+   "deficit": "Relative afferent pupillary defect (RAPD / Marcus Gunn pupil): light swung into the affected eye produces less constriction (or paradoxical dilation) than light into the healthy eye, because the affected eye's afferent signal is weaker",
+   "side": "ipsilateral (afferent defect on the side of the diseased optic nerve)",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Olivary pretectal nucleus or brachium of the superior colliculus (unilateral)",
+   "deficit": "Tectal (unilateral) RAPD that can occur without vision loss, because the pupillary fibers branch off the visual pathway before the visually processing areas",
+   "side": "contralateral",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Dorsal midbrain lesion near the Sylvian aqueduct (neurosyphilis) affecting the dorsal efferent pupillary light-reflex fibers on the Edinger-Westphal nucleus while sparing the more ventral near-reflex fibers",
+   "deficit": "Argyll Robertson pupil: small, irregular bilateral pupils with light-near dissociation (absent light reflex, prompt constriction on near accommodation)",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "The neural pathway for this convergence-induced pupillary constriction is believed to be independent of that for light-induced pupillary constriction, since the two reflexes are dissociated in the clinical phenomenon, known as the Argyll Robertson sign."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Optic nerve, unilateral, complete",
+   "deficit": "No pupillary constriction in either eye when light is directed into the affected eye (afferent limb interrupted); light into the unaffected eye still produces bilateral constriction",
+   "side": "bilateral (efferent output unaffected, but afferent signal from the damaged side cannot reach either Edinger-Westphal nucleus)",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Oculomotor nerve (efferent limb, one side)",
+   "deficit": "Light into the affected eye still activates both Edinger-Westphal nuclei via intact afferents, but only the contralateral (unaffected) pupil constricts because the efferent path on the affected side is disrupted",
+   "side": "ipsilateral (efferent deficit on the side of the CN III lesion)",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Whether the pretectal olivary nucleus (PON) projects equally to BOTH Edinger-Westphal nuclei ('same side and the contralateral side', per the existing StatPearls source S4 in brainstem-reflexes.json) or predominantly to the CONTRALATERAL Edinger-Westphal nucleus.",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json S4 (not re-cited here; carried over for comparison)",
+     "grade": "?",
+     "claim": "The pupillary light reflex fibers synapse at the pretectal nucleus and then pass to the Edinger-Westphal nucleus of the same side and the contralateral side through the posterior commissure (existing claim, StatPearls).",
+     "quote": "The pupillary light reflex fibers synapse at the pretectal nucleus and the pass to the Edinger-Westphal nucleus of the same side and the contralateral side through the posterior commissure"
+    },
+    {
+     "source": "McDougal 2015 Comprehensive Physiology",
+     "grade": "A",
+     "claim": "In tract-tracing studies in macaques, the pretectal olivary nucleus projects predominantly (not equally) to the contralateral Edinger-Westphal nucleus via the posterior commissure; almost all retrogradely labeled PON cells were contralateral to the EW injection site.",
+     "quote": "the PON projects predominantly contralaterally to the EW by way of the posterior commissure"
+    }
+   ],
+   "file": "upgrade-brainstem-senses.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "Melanopsin-containing intrinsically photosensitive retinal ganglion cells (ipRGCs) are the primary drivers of the pupillary light reflex and can sustain a sluggish reflex even when rod/cone photoreceptor input is lost; this ipRGC-specific mechanism was not found stated in the opened sources.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "The precise ratio of crossed (nasal) to uncrossed (temporal) retinal fibers at the chiasm is commonly cited as approximately 53:47; one opened source (S2) gives this figure for a related context (Marcus Gunn pupil pathophysiology) but it was not independently corroborated in a second opened source specifically for the pupillary light reflex chain.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "Human-specific confirmation that melanopsin-containing intrinsically photosensitive retinal ganglion cells (ipRGCs) can sustain a sluggish pupillary light reflex when rod/cone photoreceptor input is lost was not found in Nieuwenhuys; the source gives only the analogous finding in transgenic mice lacking rods and cones (see step 1 evidence, species mouse).",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "text": "The precise ratio of crossed (nasal) to uncrossed (temporal) retinal fibres at the chiasm (commonly cited as approximately 53:47) was not found stated numerically in Nieuwenhuys; the source confirms only that nasal fibres cross and temporal fibres remain uncrossed, without giving a ratio.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "sources": {
+  "NBK553169": {
+   "label": "Akova 2025 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Pupillary Light Reflexes and Pathway",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK553169"
+  },
+  "NBK441892": {
+   "label": "Feroze 2023 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Parinaud Syndrome",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK441892"
+  },
+  "NBK557675": {
+   "label": "Simakurthy 2026 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Marcus Gunn Pupil",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK557675"
+  },
+  "PMC4919817": {
+   "label": "McDougal 2015 Comprehensive Physiology",
+   "grade": "A",
+   "title": "Autonomic control of the eye",
+   "doi": "10.1002/cphy.c140014",
+   "pmcid": "PMC4919817",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

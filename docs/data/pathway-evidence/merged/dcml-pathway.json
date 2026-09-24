@@ -1,0 +1,362 @@
+{
+ "id": "dcml-pathway",
+ "name": "Dorsal column–medial lemniscus (posterior column–medial lemniscus) pathway",
+ "category": "ascending somatosensory / discriminative touch and proprioception",
+ "function": "Conveys conscious proprioception, vibration, fine (discriminative) touch and 2-point discrimination from skin and joints to the primary somatosensory cortex.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Dorsal root ganglion (pseudounipolar neurons)",
+   "courseVia": [
+    "peripheral nerve",
+    "dorsal root (medial division, medial dorsal root entry zone)",
+    "fasciculus gracilis (below T6) or fasciculus cuneatus (T6 and above)"
+   ],
+   "terminatesIn": "Nucleus gracilis (lower body) or nucleus cuneatus (upper body) in caudal medulla",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK507888",
+     "grade": "B",
+     "quote": "most of the central axonal processes leave the dorsal horn gray matter without synapsing and enter the dorsal funiculus, thereby constituting either the fasciculus gracilis or the fasciculus cuneatus",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK507888",
+     "grade": "B",
+     "quote": "The fasciculus gracilis carries sensory information associated with the DCML pathway from the lower extremities and terminates and synapses at the nucleus gracilis in the caudal medulla",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC10567534",
+     "grade": "A",
+     "quote": "The gracile fasciculus conveys sensory information from the lower body (T7 and below) and synapses with the gracile nucleus. The cuneate fasciculus conveys sensory information from the upper body (C2–T7) and synapses to the cuneate nucleus",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Root fibres from sacral and lumbar dorsal roots ascend into the fasciculus gracilis; root fibres from cervical roots ascend into the fasciculus cuneatus, to terminate in the corresponding dorsal column nuclei.",
+     "species": "human",
+     "page": 691,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Fibres from sacral and lumbar roots ascend medially, in the fasciculus gracilis; those from cervical roots ascend laterally, in the fasciculus cuneatus.",
+     "species": "human",
+     "page": 694,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The dorsal column nuclei consist of the medial nucleus gracilis and the more laterally located medial and lateral cuneate nuclei.",
+     "species": "human",
+     "page": 694,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Nucleus gracilis / nucleus cuneatus (caudal medulla, dorsal column nuclei)",
+   "courseVia": [
+    "internal arcuate fibers (decussate)",
+    "medial lemniscus"
+   ],
+   "terminatesIn": "Ventral posterolateral nucleus (VPL) of thalamus",
+   "laterality": "contralateral",
+   "decussation": {
+    "present": true,
+    "where": "Internal arcuate fibers cross the midline in the caudal medulla (sensory decussation)"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK526040",
+     "grade": "B",
+     "quote": "The arcuate fibers decussate at the caudal medulla and ascend via the medial lemniscus contralaterally in the brainstem until synapsing at the ventral posterolateral nucleus of the thalamus",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK507888",
+     "grade": "B",
+     "quote": "The internal arcuate fibers are axons that emerge ventrally from the dorsal column nuclei, course ventromedially through the medullary tegmentum, and ultimately cross the midline. This is where the DCML pathway decussates",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC10567534",
+     "grade": "A",
+     "quote": "Axons originating from the gracile and cuneate nuclei cross to the opposite side through the internal arcuate fibers and form the medial lemniscus (late decussation)",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Fibres from the dorsal column nuclei decussate in the caudal medulla oblongata and ascend into the medial lemniscus to the lateral ventroposterior nucleus of the thalamus.",
+     "species": "human",
+     "page": 691,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The dorsal column nuclei project to the contralateral VPL through the medial lemniscus.",
+     "species": "human",
+     "page": 696,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Ventral posterolateral nucleus (VPL) of thalamus",
+   "courseVia": [
+    "thalamocortical fibers",
+    "posterior limb of internal capsule"
+   ],
+   "terminatesIn": "Primary somatosensory cortex (postcentral gyrus, Brodmann areas 3, 1, 2)",
+   "laterality": "ipsilateral (to thalamus; contralateral to body side of origin)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK507888",
+     "grade": "B",
+     "quote": "The VPL neurons are the third-order neurons of the pathway, and their axons project laterally out of the thalamus and course somatotopically through the posterior limb of the internal capsule, terminating in the primary somatosensory cortex of the postcentral gyrus",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK542181",
+     "grade": "B",
+     "quote": "The posterior third of the posterior limb contains major somatosensory relays from the thalamus to the primary somatosensory cortex",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The lateral ventroposterior nucleus innervates areas 3 b and 1 of the primary somatosensory cortex and the secondary somatosensory cortex (S2).",
+     "species": "human",
+     "page": 692,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Posterior spinal artery territory (posterior/dorsal columns)",
+   "deficit": "Loss of vibration and proprioception (posterior cord syndrome), with sparing of pain, temperature and motor function",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Posterior cord syndrome (PCS) is characterized by loss of vibration and proprioception sensation, and the posterior spinal artery supplies reflexes below the level of the lesion through the posterior column pathway"
+    },
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "motor strength, pain, and temperature sensations are spared in PCS because the spinothalamic and cortical motor tracts are unaffected, and their vascular supply comes from the anterior spinal artery"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Spinal cord hemisection (Brown-Séquard syndrome), dorsal columns",
+   "deficit": "Loss of fine touch, vibration, 2-point discrimination and conscious proprioception",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Shams 2024 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Ipsilateral modalities of fine touch, vibration, 2-point discrimination, and conscious proprioception are affected due to injury to the dorsal columns ascending within the dorsomedial spinal cord"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Tabes dorsalis (tertiary neurosyphilis; degeneration of dorsal columns/dorsal roots)",
+   "deficit": "Sensory ataxia, impaired vibratory and positional sense, loss of reflexes; tabetic gait",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Bhandari 2024 StatPearls Publishing",
+     "grade": "B",
+     "quote": "This condition is a form of tertiary or late neurosyphilis characterized by a slow, progressive degeneration of the dorsal columns and dorsal roots of the spinal cord"
+    },
+    {
+     "source": "Bhandari 2024 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Other neurological findings encompass absent lower extremity reflexes, impaired vibratory and positional sensation, deficits in touch, pain, and optic function"
+    },
+    {
+     "source": "Kang 2023 Korean Journal of Neurotrauma",
+     "grade": "A",
+     "quote": "Below the affected region, they experience a loss of discriminatory touch and vibration bilaterally, as well as difficulties in conveying conscious proprioception, resulting in a characteristic gait disturbance known as tabetic gait"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Subacute combined degeneration (vitamin B12 deficiency), posterior column pathway",
+   "deficit": "Paresthesia, loss of vibratory sensation and proprioception",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Another degenerative disease affecting the posterior column pathway is subacute combined degeneration of the spinal cord (SCD), resulting from severe vitamin B12 deficiency"
+    },
+    {
+     "source": "Al-Chalabi 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Symptoms related to damage in the posterior column pathway include paresthesia, loss of vibratory sensation, and proprioception"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Medial medullary syndrome (paramedian anterior spinal artery occlusion), medial lemniscus",
+   "deficit": "Loss of conscious proprioception, vibration, fine touch and 2-point discrimination",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Navarro-Orozco 2025 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Medial medullary syndrome results from infarction of the medial medulla oblongata due to occlusion of the paramedian branches of the anterior spinal artery"
+    },
+    {
+     "source": "Navarro-Orozco 2025 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Damage to the medial lemniscus causes loss of conscious proprioception, vibration, fine touch, and 2-point discrimination on the contralateral side of the body"
+    }
+   ],
+   "file": "somatosensory.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Level of the boundary between the fasciculus gracilis (lower body) and the fasciculus cuneatus (upper body)",
+   "positions": [
+    {
+     "source": "S7 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S7): a fairly sharp segmental cutoff -- gracile fasciculus carries the lower body (T7 and below), cuneate fasciculus the upper body (C2-T7)",
+     "quote": "The gracile fasciculus conveys sensory information from the lower body (T7 and below) and synapses with the gracile nucleus. The cuneate fasciculus conveys sensory information from the upper body (C2–T7) and synapses to the cuneate nucleus"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys describes a gradual transition rather than a sharp cutoff: sacral/lumbar fibres in the gracile fasciculus, cervical fibres in the cuneate fasciculus, with a small contingent of thoracic fibres occupying an intermediate position between the two",
+     "quote": "Fibres from sacral and lumbar roots ascend medially, in the fasciculus gracilis; those from cervical roots ascend laterally, in the fasciculus cuneatus. A small contingent of thoracic fibres takes an intermediate position"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "issue": "Whether dorsal column lesions actually abolish conscious touch localization and position sense in humans",
+   "positions": [
+    {
+     "source": "S13 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S13): dorsal column/posterior column damage causes loss of fine touch, vibration, 2-point discrimination and conscious proprioception",
+     "quote": "Ipsilateral modalities of fine touch, vibration, 2-point discrimination, and conscious proprioception are affected due to injury to the dorsal columns ascending within the dorsomedial spinal cord"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states that in patients with dorsal column lesions the localization of tactile stimuli and position sense is mostly intact, implying other ascending spinal systems (e.g. the anterolateral fasciculus) also contribute to these modalities",
+     "quote": "In patients with lesions of the dorsal columns the localization of tactile stimuli and position sense is mostly intact"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "Glutamate is the excitatory neurotransmitter used at first- and second-order synapses of the DCML pathway (widely stated in standard neuroanatomy texts, but no opened source in this session gave an explicit sourced quote naming the neurotransmitter).",
+   "file": "somatosensory.json"
+  },
+  {
+   "text": "Glutamate is the excitatory neurotransmitter used at first- and second-order synapses of the DCML pathway (widely stated in standard neuroanatomy texts, but no explicit sourced quote naming the neurotransmitter was found in Nieuwenhuys ch.16).",
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "sources": {
+  "NBK507888": {
+   "label": "Al-Chalabi 2023 StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Posterior Column (Dorsal Column)",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK507888"
+  },
+  "PMC10567534": {
+   "label": "Kang 2023 Korean Journal of Neurotrauma",
+   "grade": "A",
+   "title": "Functional Anatomy of the Spinal Tracts Based on Evolutionary Perspectives",
+   "doi": "10.13004/kjnt.2023.19.e43",
+   "pmcid": "PMC10567534",
+   "isbn": null,
+   "nbk": ""
+  },
+  "NBK526040": {
+   "label": "Navarro-Orozco 2025 StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Medial Lemniscus (Reils Band, Reils Ribbon)",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK526040"
+  },
+  "NBK542181": {
+   "label": "Emos 2023 StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Internal Capsule",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK542181"
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

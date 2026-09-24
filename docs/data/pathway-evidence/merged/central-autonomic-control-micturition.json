@@ -1,0 +1,420 @@
+{
+ "id": "central-autonomic-control-micturition",
+ "name": "Central autonomic control and micturition (hypothalamospinal, pontine micturition centre, Onuf's nucleus)",
+ "category": "autonomic",
+ "function": "Descending hypothalamic control of spinal sympathetic outflow, and pontine coordination of bladder storage/voiding",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Hypothalamus (posterior/lateral hypothalamic neurons; first-order sympathetic neurons)",
+   "courseVia": [
+    "descending hypothalamospinal tract, uncrossed through midbrain and pons"
+   ],
+   "terminatesIn": "intermediolateral cell column (ciliospinal center of Budge, C8-T2)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK500000",
+     "grade": "B",
+     "quote": "The first-order neurons originate in the hypothalamus and descend uncrossed through the midbrain and pons, terminating in the intermediolateral cell columns at the C8 through T2 levels of the spinal cord, known as the ciliospinal center of Budge.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "the paraventricular nucleus, referred to as “master controller of the autonomic system”",
+     "species": "human",
+     "page": 298,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "projects directly to the dorsal vagal motor nucleus, nucleus ambiguus, and thoracic (sympathetic) and sacral (parasympathetic) preganglionic cell columns",
+     "species": "human",
+     "page": 298,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Apart from the paraventricular nucleus, the dorsomedial nucleus and lateral hypothalamic area also provide descending connections to the autonomic nuclei of the lower brain stem and spinal cord",
+     "species": "human",
+     "page": 303,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC2897743",
+     "grade": "A",
+     "quote": "The paraventricular nucleus of the hypothalamus projects non-specifically to all autonomic preganglionic motor neurons in the spinal cord, including the sacral parasympathetic and sphincter motor nuclei",
+     "species": "general descending hypothalamic-spinal autonomic control claim; not specific to the C8-T2 ciliospinal centre of Budge named in this step",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 1,
+   "cellBodies": "Bladder wall stretch receptors (afferent limb)",
+   "courseVia": [
+    "pelvic afferents to sacral cord, then spinoreticular/spinothalamic ascent to the periaqueductal gray (PAG)"
+   ],
+   "terminatesIn": "periaqueductal gray (relay)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557419",
+     "grade": "B",
+     "quote": "The central PAG receives afferents from the sacral cord, which in turn sends projections to the PMC.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "NBK557419",
+     "grade": "B",
+     "quote": "When the urinary bladder becomes distended, the stretch receptors of the bladder wall transmits an afferent signal to the pons, which subsequent",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The traditional view of co-ordinated reflex micturition holds that micturition is mediated by a spinal cord-brain stem-spinal cord reflex loop, initiated by input from pelvic nerve afferents signaling bladder distension",
+     "species": "human/cat (comparative account)",
+     "page": 879,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The reflex loop is closed by an ascending pathway from spinal neurons located within the terminal plexus of pelvic and pudendal nerve afferents in sacral lamina I that terminates in the periaqueductal grey",
+     "species": "human/cat (comparative account)",
+     "page": 879,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC2897743",
+     "grade": "A",
+     "quote": "Ascending afferent input from the spinal cord might pass through relay neurons in the periaqueductal grey (PAG) before reaching the pontine micturition centre.",
+     "species": "general (comparative cat/rat/human review)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 2,
+   "cellBodies": "Periaqueductal gray (PAG)",
+   "courseVia": [
+    "PAG-to-PMC projection (relay only, no direct PAG-to-sacral-motoneuron connection)"
+   ],
+   "terminatesIn": "pontine micturition centre (Barrington's nucleus, PMC)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557419",
+     "grade": "B",
+     "quote": "PAG serves only as a relay station during transmission of afferents from the bladder to the PMC.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "NBK557419",
+     "grade": "B",
+     "quote": "In fact, no direct connections exist between PAG and the sacral cord motoneurons.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "and a projection of the periaqueductal grey to the pontine micturition region",
+     "species": "cat (Blok and Holstege tracing study)",
+     "page": 879,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC2897743",
+     "grade": "A",
+     "quote": "Neurons in the PMC receive input from the PAG and from the anterior and caudal hypothalamus, but few or no other inputs; in turn, they send descending axons back to the parasympathetic nucleus in the spinal cord.",
+     "species": "rat",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 3,
+   "cellBodies": "Barrington's nucleus (pontine micturition centre, PMC)",
+   "courseVia": [
+    "reticulospinal projection to sacral cord"
+   ],
+   "terminatesIn": "sacral parasympathetic preganglionic neurons (S2-S4)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "acetylcholine (parasympathetic preganglionic)",
+   "evidence": [
+    {
+     "source": "NBK557419",
+     "grade": "B",
+     "quote": "The PMC, also known as Barrington's nucleus, is located in the brainstem and works with other regions of the brain to coordinate micturition.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "NBK557419",
+     "grade": "B",
+     "quote": "It achieves this through activation of parasympathetic neurons, triggering the detrusor muscle to contract and indirectly inhibits the somatic nerves that maintain the external sphincter closed in contraction.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "NBK538533",
+     "grade": "B",
+     "quote": "Pre-ganglionic parasympathetic nerve fibers exit the spinal cord primarily between S2 to S4.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The pontine micturition region (M-region of Holstege, Barrington’s nucleus [17]) is located in the dorsolateral pontine tegmentum.",
+     "species": "cat (location established experimentally in the cat; presented as the general mammalian pontine micturition centre)",
+     "page": 879,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "It projects bilaterally to the sacral intermediolateral nucleus and the commissural nucleus, which contains the interneurons inhibiting Onuf’s nucleus",
+     "species": "human",
+     "page": 879,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The detrusor muscle is innervated by an intra- and juxtamural cholinergic plexus, which is postganglionic to parasympathetic preganglionic fibres from the sacral intermediolateral nucleus",
+     "species": "human",
+     "page": 878,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Stimulation of the pontine micturition region results in micturition.",
+     "species": "human",
+     "page": 879,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The presence of a pontine micturition region has been confirmed in PET-studies carried out by Blok et al.",
+     "species": "human",
+     "page": 879,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC2897743",
+     "grade": "A",
+     "quote": "Excitation of the PMC activates descending pathways that cause urethral relaxation and, some seconds later, activation of the sacral parasympathetic outflow.",
+     "species": "general (comparative cat/rat/human review)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 4,
+   "cellBodies": "Barrington's nucleus (PMC), via inhibitory projection",
+   "courseVia": [
+    "descending inhibitory pathway to Onuf's nucleus"
+   ],
+   "terminatesIn": "Onuf's nucleus (sacral anterior horn) and external urethral sphincter (via pudendal nerve)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "acetylcholine (somatic pudendal output); inhibited during voiding",
+   "evidence": [
+    {
+     "source": "NBK557419",
+     "grade": "B",
+     "quote": "External urethral sphincter relaxation is mediated indirectly by suppressing Onuf's nucleus located in the sacral spinal cord.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "NBK538533",
+     "grade": "B",
+     "quote": "These neurons arise from Onuf's nucleus, located in the anterior horn of the sacral region of the spinal cord, and coalesce to become the pudendal nerve, which utilizes acetylcholine to contract the external urethral sphincter through stimulation of a nicotinic receptor at that site.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The external urethral sphincter is innervated by a subset of motoneurons of Onuf’s nucleus.",
+     "species": "human",
+     "page": 878,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "This nucleus is located in the sacral anterior horn",
+     "species": "human",
+     "page": 878,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Relaxation of the urethral sphincter is produced by inhibitory interneurons located in the commissural nucleus that terminate on the motoneurons of Onuf’s nucleus",
+     "species": "human",
+     "page": 879,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In addition, Onuf’s nucleus receives supraspinal afferents from the hypothalamus, the lateral pontine reticular formation",
+     "species": "human",
+     "page": 879,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "A column of small motoneurons extending from S1 caudally, which contains Onuf’s nucleus",
+     "species": "human",
+     "page": 844,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC2897743",
+     "grade": "A",
+     "quote": "Somatic cholinergic motor nerves that supply the striated muscles of the external urethral sphincter arise in S2–S4 motor neurons in Onuf's nucleus and reach the periphery through the pudendal nerves",
+     "species": "general (comparative cat/rat/human review)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [],
+ "conflicts": [],
+ "unsourced": [
+  {
+   "text": "The exact synaptic neurotransmitter used at hypothalamic (PVN/lateral hypothalamic) neurons projecting onto preganglionic sympathetic neurons of the intermediolateral column was not explicitly stated with a quotable citation in the sources opened this session.",
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "text": "Direct hypothalamic (PVN) projections specifically onto the sacral parasympathetic nucleus controlling the detrusor muscle (as distinct from the Barrington's-nucleus route) are described in classic neuroanatomy teaching but were not found with an openable, quotable source in this session.",
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "text": "Pontine stroke damaging Barrington's nucleus is classically associated with voiding dysfunction (e.g., Shukla R et al., BMJ Case Rep 2014, cited by S16) but the case report itself was not opened in full text this session, so this lesion claim is left unsourced rather than cited.",
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "text": "The exact synaptic neurotransmitter used at hypothalamic (PVN/lateral hypothalamic) neurons projecting onto preganglionic sympathetic neurons of the intermediolateral column was not explicitly named in the opened Nieuwenhuys text either (only that the projection exists and is 'non-specific'/direct).",
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "text": "Pontine stroke damaging Barrington's nucleus causing voiding dysfunction as a discrete lesion case was not found in the opened Nieuwenhuys chapters; the source instead documents the PMC's normal anatomy and its confirmation via human PET studies (Blok et al.), not a lesion case.",
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "text": "The exact hypothalamic origin and C8-T2 ciliospinal-centre-of-Budge routing described in step 1 (the oculosympathetic/Horner pathway, reused for this micturition entry in the original batch) is not specifically confirmed by Fowler, Griffiths & de Groat 2008 (S7/PMC2897743); the new S7 quote supports a related but more general claim that the PVN projects non-specifically to spinal autonomic and sphincter motor neurons, not the specific C8-T2 ciliospinal pathway.",
+   "file": "upgrade-limbic.json"
+  },
+  {
+   "text": "Direct hypothalamic (PVN) projections specifically onto the sacral parasympathetic nucleus controlling the detrusor muscle, as distinct from the Barrington's-nucleus route, are described qualitatively in S7 ('projects non-specifically to all autonomic preganglionic motor neurons...including the sacral parasympathetic and sphincter motor nuclei') but without further mechanistic detail.",
+   "file": "upgrade-limbic.json"
+  }
+ ],
+ "sources": {
+  "NBK500000": {
+   "label": "Khan 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Horner Syndrome",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK500000"
+  },
+  "NBK557419": {
+   "label": "Rahman 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Pontine Micturition Center",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK557419"
+  },
+  "NBK538533": {
+   "label": "Lanzotti 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Physiology, Bladder",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK538533"
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  },
+  "PMC2897743": {
+   "label": "Fowler 2008 Nature Reviews Neuroscience",
+   "grade": "A",
+   "title": "The neural control of micturition",
+   "doi": "10.1038/nrn2401",
+   "pmcid": "PMC2897743",
+   "isbn": null,
+   "nbk": ""
+  }
+ }
+}

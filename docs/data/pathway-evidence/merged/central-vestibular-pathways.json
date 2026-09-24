@@ -1,0 +1,616 @@
+{
+ "id": "central-vestibular-pathways",
+ "name": "Central vestibular pathways",
+ "category": "special sense - balance/equilibrium",
+ "function": "Conveys head-motion and gravity information from the labyrinth to the vestibular nuclei, which distribute it to the cerebellum, spinal cord, extraocular motor nuclei, thalamus and cortex for gaze stabilization, postural control and conscious spatial orientation.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Bipolar neurons of the vestibular (Scarpa) ganglion",
+   "courseVia": [
+    "vestibulocochlear nerve (CN VIII)"
+   ],
+   "terminatesIn": "the four vestibular nuclei (superior, medial, lateral, inferior) at the pontomedullary junction, or directly to the cerebellum",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "Bipolar neurons of the Scarpa ganglion convey afferent signals from the otolith organs and semicircular canals through cranial nerve VIII (vestibulocochlear nerve) to the brainstem at the pontomedullary junction.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "These fibers synapse in the 4 vestibular nuclei—superior, medial, lateral, and inferior—or project directly to the cerebellum via the inferior cerebellar peduncle (juxtarestiform body).",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC4000483",
+     "grade": "A",
+     "quote": "Vestibular signals from the labyrinth of the inner ear are transferred to the vestibular nuclei (VN) via the vestibular afferents of the VIII nerve.",
+     "species": "monkey/primate (review synthesis, mostly macaque electrophysiology)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "PMC4000483",
+     "grade": "A",
+     "quote": "In turn, the central neurons of the vestibular nuclei project to the neural structures that control eye movements, posture, and balance, as well as to upstream structures involved in the computation of self-motion",
+     "species": "monkey/primate (review synthesis, mostly macaque electrophysiology)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The first-order elements are bipolar neurons, the somata of which constitute the vestibular ganglion, located in the internal auditory meatus.",
+     "species": "human",
+     "page": 716,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "It comprises four cell masses, the superior, lateral, medial and descending (or inferior) vestibular nuclei",
+     "species": "human",
+     "page": 719,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Vestibular rootfibres reach the cerebellum via the superior vestibular nucleus.",
+     "species": "human",
+     "page": 718,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 1,
+   "cellBodies": "Primary vestibular afferents / vestibular nuclei neurons",
+   "courseVia": [
+    "juxtarestiform body (part of the inferior cerebellar peduncle)"
+   ],
+   "terminatesIn": "flocculonodular lobe and adjacent vermis (vestibulocerebellum)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "The vestibulocerebellum, comprising the flocculonodular lobe and adjacent vermis, maintains an exclusive functional connection with the vestibular system.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "This region receives primary afferent input directly from the Scarpa ganglion and secondary projections from the vestibular nuclei through the juxtarestiform body of the inferior cerebellar peduncle.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Primary vestibular afferents reach the cerebellum through the juxtarestiform body.",
+     "species": "human",
+     "page": 721,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The cerebellovestibular fibres arise from Purkinje cells located in the flocculonodular lobe, the uvula and the anterior vermis, and from the fastigial nucleus",
+     "species": "human",
+     "page": 721,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Purkinje cells of the vestibulocerebellum (nodulus and adjoining uvula, flocculus and ventral paraflocculus) project to the other vestibular nuclei and group Y.",
+     "species": "human",
+     "page": 720,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 2,
+   "cellBodies": "Lateral vestibular nucleus neurons",
+   "courseVia": [
+    "lateral vestibulospinal tract (LVST), anterior spinal cord"
+   ],
+   "terminatesIn": "spinal motor neurons at all levels (extensor muscles of limbs and trunk)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "The LVST originates from the lateral vestibular nucleus and descends ipsilaterally through the anterior spinal cord to all levels, facilitating activation of extensor muscles in the limbs and trunk.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The lateral vestibulospinal tract takes its origin from the lateral vestibular nucleus.",
+     "species": "human",
+     "page": 725,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The main component of the lateral vestibulospinal tract descends to lumbar levels.",
+     "species": "human",
+     "page": 726,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The lateral vestibulospinal tract is an uncrossed pathway from the lateral vestibular nucleus located lateral to the MLF in the centre of the bulbar reticular formation, that descends along the entire spinal cord",
+     "species": "human",
+     "page": 726,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 2,
+   "cellBodies": "Medial vestibular nucleus neurons",
+   "courseVia": [
+    "medial longitudinal fasciculus (MLF)",
+    "medial vestibulospinal tract (MVST)"
+   ],
+   "terminatesIn": "cervical spinal cord motor neurons (neck musculature, e.g. sternocleidomastoid)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": true,
+    "where": "medial longitudinal fasciculus"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "The MVST arises from the medial vestibular nucleus and travels bilaterally via the MLF, projecting primarily to cervical spinal levels.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Two other fibre systems, corresponding to the medial and the crossed vestibulospinal tracts, descend in or adjacent to the MLF",
+     "species": "human",
+     "page": 730,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The medial vestibulospinal tract is located ipsilaterally in the dorsolateral bulbar MLF and consists of mediumsized and small fibres.",
+     "species": "human",
+     "page": 730,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Fibres of the crossed vestibulospinal tract decussate at their level of origin and become located next to the midline in the MLF.",
+     "species": "human",
+     "page": 730,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 2,
+   "cellBodies": "Superior and medial vestibular nucleus neurons (vestibulo-ocular reflex arc)",
+   "courseVia": [
+    "medial longitudinal fasciculus (MLF)"
+   ],
+   "terminatesIn": "contralateral abducens nucleus (CN VI, lateral rectus) and ipsilateral oculomotor nucleus (CN III, medial rectus)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": true,
+    "where": "crosses to the contralateral abducens nucleus via the MLF"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "Activation of the superior and medial vestibular nuclei during head rotation generates impulses that cross to the contralateral abducens nucleus, stimulating the lateral rectus muscle, while interneuronal projections via the MLF activate the ipsilateral oculomotor nucleus to contract the medial rectus.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC4000483",
+     "grade": "A",
+     "quote": "The most direct pathway that mediates the VOR comprises a three neuron arc: vestibular nerve afferents project to central neurons in the vestibular nuclei (i.e., VOR neurons), which in turn project to extraocular motoneurons.",
+     "species": "monkey/primate (review synthesis, mostly macaque electrophysiology)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The three-neuron arc of the vestibulo-ocular reflex connecting the semicircular canals with the extraocular muscles.",
+     "species": "human",
+     "page": 728,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Horizontal canal fibres terminate on two groups of excitatory neurons located in the MVmc, projecting to the contralateral abducens nucleus and the ipsilateral medial rectus pool of motoneurons in the nucleus of the oculomotor nerve",
+     "species": "human",
+     "page": 729,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "neuronOrder": 2,
+   "cellBodies": "Vestibular nuclei neurons (vestibulo-thalamic projection)",
+   "courseVia": [
+    "medial longitudinal fasciculus and central tegmental tracts"
+   ],
+   "terminatesIn": "ventral posterior complex of the thalamus (ventral posterolateral, ventral posteromedial, ventral posteroinferior nuclei)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": true,
+    "where": "contralateral projections from the medial vestibular nucleus via the MLF and central tegmental tract, in addition to bilateral input from the superior vestibular nuclei"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "The thalamus functions as a central relay for vestibular processing, receiving bilateral input from the superior vestibular nuclei and contralateral projections from the medial vestibular nucleus via the MLF and central tegmental tracts.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "Within the thalamus, vestibular signals are primarily processed in the ventral posterior complex, which comprises the ventral posterolateral, ventral posteromedial, and ventral posteroinferior nuclei.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "However, there is evidence that cells located within the superior, medial and inferior vestibular nuclei give rise to fibres that terminate in the thalamus.",
+     "species": "human",
+     "page": 730,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "They decussate in the isthmus region and pass diffusely through the midbrain tegmentum and the fields of Forel to terminate in the thalamus.",
+     "species": "human",
+     "page": 730,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In primates the vestibulothalamic fibres terminate bilaterally in the shell surrounding the ventral posterior nuclei (ventral posterior superior nucleus, VPS, and ventral posterior inferior nucleus, VPI)",
+     "species": "primate",
+     "page": 730,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "neuronOrder": 3,
+   "cellBodies": "Ventral posterior thalamic nuclei",
+   "courseVia": [
+    "posterior limb of the internal capsule"
+   ],
+   "terminatesIn": "parieto-insular vestibular cortex (posterior insula / parietal operculum, human area OP2) and primary somatosensory cortex",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "These nuclei integrate vestibular, proprioceptive, and visual inputs and transmit efferent fibers through the posterior limb of the internal capsule to the primary somatosensory cortex.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "Vestibular input relayed through the thalamus is transmitted to higher-order cortical centers, most prominently converging in the parieto-insular vestibular cortex.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC9890474",
+     "grade": "A",
+     "quote": "OP2 is a core region within the human cortical vestibular network on the basis of its location",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Similar vestibular cortical areas also were localized in the human brain using fMRI after bilateral galvanic stimulation of the labyrinth",
+     "species": "human",
+     "page": 731,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The PIVC was located in the left parieto-temporal junction, superficial to Heschl’s gyrus and caudal to the parietal speech areas.",
+     "species": "human",
+     "page": 731,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The different vestibular cortical areas are interconnected; the PIVC occupies a central position in this network",
+     "species": "human",
+     "page": 731,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 8,
+   "neuronOrder": 1,
+   "cellBodies": "Efferent vestibular neurons interposed between the abducens and superior vestibular nuclei, embedded in the reticular formation",
+   "courseVia": [
+    "efferent fibres of the vestibular nerve"
+   ],
+   "terminatesIn": "hair cells (calyces of type I hair cells, and directly on type II hair cells) of both labyrinths",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": true,
+    "where": "bilaterally symmetrical origin from cell groups on each side of the brain stem, projecting to one labyrinth"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "It should be noted that the vestibular nerve, in addition to afferent fibres, also carries a number of efferent fibres.",
+     "species": "human",
+     "page": 721,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The projection to one labyrinth has a bilaterally symmetrical origin from the cell groups on each side of the brain stem",
+     "species": "human",
+     "page": 721,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In the cat about 20% of the efferent vestibular neurons give off axons that terminate on hair cells of both labyrinths",
+     "species": "cat",
+     "page": 721,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "flocculonodular lobe (vestibulocerebellum)",
+   "deficit": "gaze-holding deficits, disrupted smooth tracking, nystagmus, and truncal ataxia (broad-based, \"drunken\" gait)",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Jefferies 2025 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Lesions involving these regions, particularly within the flocculonodular lobe, produce gaze-holding deficits, disrupted smooth tracking, nystagmus, and truncal ataxia, often presenting as a broad-based or “drunken” gait."
+    }
+   ],
+   "file": "special-senses.json"
+  },
+  {
+   "site": "medial longitudinal fasciculus (MLF)",
+   "deficit": "internuclear ophthalmoplegia: impaired adduction of the ipsilateral eye with abducting nystagmus of the contralateral eye on horizontal gaze",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Jefferies 2025 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "The characteristic manifestation of internuclear ophthalmoplegia is impaired adduction of the ipsilateral eye, accompanied by abducting nystagmus of the contralateral eye during horizontal gaze."
+    }
+   ],
+   "file": "special-senses.json"
+  },
+  {
+   "site": "lateral vestibulospinal tract (LVST)",
+   "deficit": "compromised postural control with truncal instability, falls, lateropulsion, and extensor hypotonia",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Jefferies 2025 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Damage to the LVST compromises postural control, producing truncal instability, falls, or lateropulsion."
+    }
+   ],
+   "file": "special-senses.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Whether the human cortical vestibular representation is a single, discrete 'core' parieto-insular region (homologous to non-human primate PIVC / human area OP2) or a widespread, poorly-demarcated network.",
+   "positions": [
+    {
+     "source": "Ibitoye 2023 Cerebral Cortex",
+     "grade": "A",
+     "claim": "Vestibular cortical processing converges most prominently on a discrete parieto-insular vestibular cortex, and OP2 is described as a 'core' region of the human cortical vestibular network.",
+     "quote": "OP2 is homologous to the nonhuman primate parieto-insular vestibular cortex (PIVC)—a “core” cortical vestibular region"
+    },
+    {
+     "source": "Arvaniti 2024 Brain Sciences",
+     "grade": "A",
+     "claim": "Electrical cortical stimulation evidence indicates the vestibular cortex is an extensive network rather than one discrete, well-demarcated cortical location.",
+     "quote": "It seems that the vestibular cortex has the form of an extensive network rather than a discrete, limited, and well-demarcated cortical location."
+    }
+   ],
+   "file": "special-senses.json"
+  },
+  {
+   "issue": "Whether the 'medial vestibulospinal tract (MVST)' itself is a single tract that travels bilaterally via the MLF to cervical levels (existing claim), or whether the book's 'medial vestibulospinal tract' is specifically the ipsilateral component of TWO separate tracts (a medial, ipsilateral one and a separate 'crossed vestibulospinal tract') that together produce the net bilateral effect on neck motoneurons.",
+   "positions": [
+    {
+     "source": "special-senses.json S7 (not re-cited here; carried over for comparison)",
+     "grade": "?",
+     "claim": "The MVST arises from the medial vestibular nucleus and travels bilaterally via the MLF, projecting primarily to cervical spinal levels.",
+     "quote": "The MVST arises from the medial vestibular nucleus and travels bilaterally via the MLF, projecting primarily to cervical spinal levels."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Two distinct fibre systems descend in or next to the MLF for the vestibulocollic reflex: the medial vestibulospinal tract itself is located ipsilaterally, while a separate, distinctly-named crossed vestibulospinal tract carries the decussating, excitatory component.",
+     "quote": "The medial vestibulospinal tract is located ipsilaterally in the dorsolateral bulbar MLF and consists of mediumsized and small fibres."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-senses.json"
+  },
+  {
+   "issue": "Which thalamic nuclei receive the vestibulothalamic projection: the ventral posterior complex defined as VPL/VPM/VPI (existing claim), or the ventral posterior superior (VPS) and ventral posterior inferior (VPI) nuclei described for primates in this textbook.",
+   "positions": [
+    {
+     "source": "special-senses.json S7 (not re-cited here; carried over for comparison)",
+     "grade": "?",
+     "claim": "Within the thalamus, vestibular signals are primarily processed in the ventral posterior complex, which comprises the ventral posterolateral, ventral posteromedial, and ventral posteroinferior nuclei.",
+     "quote": "Within the thalamus, vestibular signals are primarily processed in the ventral posterior complex, which comprises the ventral posterolateral, ventral posteromedial, and ventral posteroinferior nuclei."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "In primates, vestibulothalamic fibres terminate bilaterally in the shell surrounding the ventral posterior superior nucleus (VPS) and ventral posterior inferior nucleus (VPI), and in the central lateral intralaminar nucleus, not in VPL/VPM proper.",
+     "quote": "In primates the vestibulothalamic fibres terminate bilaterally in the shell surrounding the ventral posterior nuclei (ventral posterior superior nucleus, VPS, and ventral posterior inferior nucleus, VPI)"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-senses.json"
+  },
+  {
+   "issue": "Whether the human cortical vestibular representation is a single, discrete 'core' parieto-insular region (homologous to non-human primate PIVC / human area OP2) or a widespread, poorly-demarcated network (existing conflict between S9 and S8 in special-senses.json).",
+   "positions": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "The different vestibular cortical areas are interconnected, and the PIVC occupies a central position within this network, consistent with a discrete core region.",
+     "quote": "The different vestibular cortical areas are interconnected; the PIVC occupies a central position in this network"
+    },
+    {
+     "source": "special-senses.json S8 (not re-cited here; carried over for comparison)",
+     "grade": "?",
+     "claim": "Electrical cortical stimulation evidence indicates the vestibular cortex is an extensive network rather than one discrete, well-demarcated cortical location.",
+     "quote": "It seems that the vestibular cortex has the form of an extensive network rather than a discrete, limited, and well-demarcated cortical location."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-senses.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "An efferent vestibular system, analogous to the auditory olivocochlear efferents, projects from the brainstem back onto vestibular hair cells to modulate afferent sensitivity.",
+   "file": "special-senses.json"
+  },
+  {
+   "text": "S3 confirms the generic three-neuron VOR arc (afferents -> vestibular nucleus VOR neurons -> extraocular motoneurons) but, in the sections opened, does not itself specify the medial longitudinal fasciculus, the identity of the abducens/oculomotor nuclei, or which vestibular nuclei (superior/medial) are involved; those specifics remain sourced only from the existing StatPearls source (S7) in the original file.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "For the vestibulo-thalamic projection, Nieuwenhuys describes the crossing/route as decussating 'in the isthmus region' and passing 'through the midbrain tegmentum and the fields of Forel' rather than naming a 'central tegmental tract'; whether this route is synonymous with the central tegmental tract cited in the existing claim (S7) is not stated in the text opened.",
+   "file": "upgrade-lib-nieuwenhuys-senses.json"
+  }
+ ],
+ "sources": {
+  "NBK557380": {
+   "label": "Jefferies 2025 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Vestibular Pathways",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK557380"
+  },
+  "PMC9890474": {
+   "label": "Ibitoye 2023 Cerebral Cortex",
+   "grade": "A",
+   "title": "The human vestibular cortex: functional anatomy of OP2, its connectivity and the effect of vestibular disease",
+   "doi": "10.1093/cercor/bhac085",
+   "pmcid": "PMC9890474",
+   "isbn": null,
+   "nbk": ""
+  },
+  "PMC4000483": {
+   "label": "Cullen 2012 Trends in Neurosciences",
+   "grade": "A",
+   "title": "The vestibular system: multimodal integration and encoding of self-motion for motor control",
+   "doi": "10.1016/j.tins.2012.04.003",
+   "pmcid": "PMC4000483",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

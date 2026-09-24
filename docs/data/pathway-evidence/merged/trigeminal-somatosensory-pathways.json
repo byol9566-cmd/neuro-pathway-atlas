@@ -1,0 +1,354 @@
+{
+ "id": "trigeminal-somatosensory-pathways",
+ "name": "Trigeminal somatosensory pathways",
+ "category": "ascending somatosensory / face and oral cavity",
+ "function": "Transmits pain, temperature, touch, vibration, 2-point discrimination and proprioception from the face and muscles of mastication via three sensory nuclei (principal/chief sensory, spinal trigeminal, mesencephalic) to VPM and the somatosensory cortex.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Trigeminal (semilunar/Gasserian) ganglion (pseudounipolar neurons); mesencephalic nucleus neurons (unique – cell bodies lie within the CNS, not the ganglion)",
+   "courseVia": [
+    "ophthalmic (V1), maxillary (V2), mandibular (V3) divisions",
+    "trigeminal nerve root entering brainstem at mid-pons"
+   ],
+   "terminatesIn": "Chief/principal sensory nucleus, spinal trigeminal nucleus, or mesencephalic nucleus depending on modality",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "Except for the fibers projecting to the mesencephalic nucleus, the sensory fibers from V1, V2, and V3 travel along axons from pseudounipolar neurons to their cell bodies in the trigeminal ganglion",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "The afferent fibers of that neuron then enter the brainstem at the mid-pons and travel to either the chief/principal sensory nucleus or descend via the spinal trigeminal tract to synapse in the spinal trigeminal nucleus",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "This nucleus is unique in that the fibers do not have a cell body in the trigeminal ganglion. Instead, pseudounipolar afferent fibers from stretch receptors relay information directly to the cell body in the nucleus, which is then relayed bilaterally to the trigeminal motor nuclei",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Somatosensory fibres of the trigeminal nerve enter the pons in the sensory root (portio major) and are distributed to the principal sensory nucleus and the spinal trigeminal nucleus.",
+     "species": "human",
+     "page": 703,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Unlike other primary afferents, the Ia muscle-spindle afferents from the jaw muscles, which enter the brain stem in the trigeminal nerve, arise from cells located within the central nervous system.",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The axons of these cells descend into the mesencephalic tract of the trigeminal nerve and then bifurcate.",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "One branch terminates on the motoneurons of the trigeminal motor nucleus.",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Chief/principal sensory nucleus (touch/proprioception/vibration/2-point discrimination) or spinal trigeminal nucleus, pars caudalis (pain/temperature/crude touch)",
+   "courseVia": [
+    "dorsal trigeminothalamic tract (DTTT, ipsilateral, from chief sensory nucleus)",
+    "ventral trigeminothalamic tract (VTTT, decussates, from chief sensory nucleus and spinal trigeminal nucleus)"
+   ],
+   "terminatesIn": "Ventral posteromedial nucleus (VPM) of thalamus",
+   "laterality": "bilateral (DTTT ipsilateral; VTTT contralateral)",
+   "decussation": {
+    "present": true,
+    "where": "Fibers of the ventral trigeminothalamic tract decussate near their nucleus of origin (chief sensory nucleus or spinal trigeminal nucleus) before ascending to VPM"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "It is responsible for 2-point discrimination, conscious proprioception, vibration, and fine touch",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "This tract conveys information only from the ipsilateral chief sensory nucleus (2-point discrimination, conscious proprioception, vibration, and fine touch) to the ipsilateral VPM",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "fibers that synapse in the chief sensory nucleus (i.e., 2-point discrimination, conscious proprioception, vibration, and fine touch) can decussate and form the VTTT to the contralateral ventral posteromedial nucleus of the thalamus, or they can ascend as the DTTT",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "This specific tract conveys fast pain and temperature from one side of the face to the contralateral ventral posteromedial nucleus of the thalamus (VPM) and eventually to the primary sensory cortex",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "sensory information from the lateral face projects more caudally to the pars caudalis, the middle (cheek and eye) to the pars interopolaris, and the central face (mouth and nose) to the pars oralis",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "It is responsible for pain, temperature, and crude touch",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The principal sensory nucleus of the trigeminal nerve projects bilaterally to the VPM as the trigeminal component of the medial lemniscus and the uncrossed dorsal trigeminothalamic tract",
+     "species": "human",
+     "page": 696,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The entire principal sensory nucleus gives rise to a crossed pathway joining the medial lemniscus as the trigeminal lemniscus",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The uncrossed dorsal trigeminothalamic tract arises from the dorsal part of the principal sensory nucleus and conducts information from the intraoral cavity",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The termination of the uncrossed trigeminothalamic is found in the medial VPM, lateral to the gustatory parvocellular VPM.",
+     "species": "human",
+     "page": 706,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Ventral posteromedial nucleus (VPM) of thalamus",
+   "courseVia": [
+    "thalamocortical fibers"
+   ],
+   "terminatesIn": "Primary somatosensory cortex (postcentral gyrus, Brodmann areas 3, 1, 2)",
+   "laterality": "ipsilateral (to thalamus; contralateral to face side of origin for pain/temperature)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK539823",
+     "grade": "B",
+     "quote": "This nucleus contains third-order neuronal cell bodies and sends that information somatotopically via third-order neuronal fibers to the postcentral gyrus (Brodmann areas 3, 1, and 2) of the primary sensory cortex",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "VPM projects laterally in the primary somatosensory cortex (S1).",
+     "species": "human",
+     "page": 705,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Spinal trigeminal nucleus (rostral vs caudal portion)",
+   "deficit": "\"Onion-skin\" pattern of facial sensory loss – rostral lesions affect mouth/nose, caudal lesions affect lateral face",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Price 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "a lesion of the spinal trigeminal nucleus will result in an “onion skin” shaped loss of sensation."
+    },
+    {
+     "source": "Price 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "a lesion in the rostral portion of the spinal trigeminal nucleus will lead to loss of sensation of the mouth and nose, whereas a lesion in the caudal portion will result in loss of sensation of the lateral face"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Trigeminal ganglion or any of the three sensory nuclei",
+   "deficit": "Loss of facial sensation",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Price 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "A unilateral transection or lesion of the trigeminal ganglion or the three nuclei will result in loss of sensation to the ipsilateral face"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Unilateral corticobulbar lesion",
+   "deficit": "Muscles of mastication are spared due to bilateral cortical input to motor trigeminal nucleus",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Price 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "a unilateral cortical lesion does not affect the muscles of mastication; this is because the motor nucleus receives bilateral cortical input"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Lateral medullary syndrome (Wallenberg), caudal spinal trigeminal nucleus/tract",
+   "deficit": "Ipsilateral facial sensory loss (pain/temperature), with contralateral body pain/temperature loss from spinothalamic tract involvement",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Easton-Carr 2026 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Caudal trigeminal nucleus and tract: Ipsilateral facial sensation abnormalities, primarily involving pain and temperature"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Sjöqvist tractotomy of the spinal trigeminal tract at the rostral border of the pars caudalis",
+   "deficit": "Effective elimination of pain and temperature sensitivity in the ipsilateral face, with sparing of tactile sense",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "The essential role of the caudal subnucleus in pain and temperature transmission from the face is exemplified by Sjöqvist’s tractotomy of the spinal tract at the level of the rostral border of the pars caudalis"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "which effectively eliminates pain and temperature sensitivity in the ipsilateral face, leaving the tactile sense intact."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Level at which crossed trigeminothalamic fibres decussate",
+   "positions": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Fibres from the principal sensory nucleus and the pars oralis and interpolaris of the spinal trigeminal nucleus decussate at the level of the pons",
+     "quote": "Fibres from the principal sensory nucleus and the pars oralis and interpolaris of the spinal nucleus of the trigeminal nerve decussate at the level of the pons and join the medial lemniscus as the trigeminal lemniscus."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Fibres from the pars caudalis (pain/temperature) instead cross in the caudal medulla oblongata before joining the spinothalamic tract -- a different decussation level than the other trigeminal subnuclei",
+     "quote": "The caudal subnucleus gives rise to ascending fibres, which cross in the caudal medulla oblongata and join the spinothalamic tract"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "issue": "Thalamic termination of pars caudalis (pain/temperature) trigeminothalamic fibres",
+   "positions": [
+    {
+     "source": "S5 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S5): this tract conveys fast pain and temperature to the contralateral ventral posteromedial nucleus (VPM)",
+     "quote": "This specific tract conveys fast pain and temperature from one side of the face to the contralateral ventral posteromedial nucleus of the thalamus (VPM) and eventually to the primary sensory cortex"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states that pars caudalis trigeminothalamic fibres join the spinothalamic tract and terminate mainly in the intralaminar nuclei, the posterior ventromedial nucleus (VMpo), the caudal medial dorsal nucleus and the shell of the ventroposterior complex -- not primarily VPM",
+     "quote": "Trigeminothalamic fibres from all layers of the subnucleus caudalis of the spinal nucleus of the trigeminal nerve join the spinothalamic tract to terminate in the intralaminar nuclei, the posterior ventromedial nucleus (VMpo), the caudal medial dorsal nucleus (MD) and the shell of the ventroposterior complex."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "Willis and Westlund 1997 (PMC7859971) contains NO body-text discussion of the trigeminal system at all -- the word 'trigeminal' appears in this article only inside the References list, as part of the titles of other papers being cited (e.g. Cechetto et al. 1985, Craig 1992). The review's scope is the spinal pain system (spinothalamic, spinomesencephalic, spinoreticular, spinolimbic, spinocervical, postsynaptic dorsal column pathways) and its descending modulation; it does not treat the trigeminal principal sensory nucleus, spinal trigeminal nucleus subdivisions, mesencephalic nucleus, DTTT/VTTT, or VPM. No claim in any step of this pathway, and none of the trigeminal-decussation-level conflict the task asked to sharpen (per-subnucleus decussation level, e.g. pons vs caudal medulla), could be sourced from this text. This entire pathway is therefore left with empty evidence arrays in this batch.",
+   "file": "upgrade-lib-willis1997.json"
+  }
+ ],
+ "sources": {
+  "NBK539823": {
+   "label": "Price 2023 StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Trigeminal Nucleus",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK539823"
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

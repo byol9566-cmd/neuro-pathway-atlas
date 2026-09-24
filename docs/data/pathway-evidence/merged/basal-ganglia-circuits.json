@@ -1,0 +1,978 @@
+{
+ "id": "basal-ganglia-circuits",
+ "name": "Basal ganglia circuits: direct, indirect, and hyperdirect pathways",
+ "category": "extrapyramidal / motor modulation loop",
+ "function": "Gate and modulate initiation, amplitude, and suppression of voluntary movement via cortico-striato-pallido-thalamo-cortical loops",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Cerebral cortex (motor, frontal, parietal lobes, layers III and V)",
+   "courseVia": [
+    "corticostriatal projection"
+   ],
+   "terminatesIn": "Striatum (caudate and putamen) medium spiny neurons",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate",
+   "evidence": [
+    {
+     "source": "NBK559127",
+     "grade": "B",
+     "quote": "It starts with excitatory glutamate-driven input from the cortex to the striatum (caudate nucleus and putamen).",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK537141",
+     "grade": "B",
+     "quote": "These excitatory glutamatergic projections from layers III and V of the cortical lobes, including the motor, frontal, and parietal lobes provide the basal ganglia with information about conscious intentions.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "In remarkable contrast, dense terminal labeling from the SMA was seen in the striatum, especially the putamen, as in the control case",
+     "species": "macaque monkey",
+     "page": 6,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "Afferent projections to the striatum are derived from three major sources",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "Corticostriatal terminals, which are primarily from the layer-five and deep-layer-three pyramidal neurons are distributed in a patchy manner.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "Cortical fibers primarily project to the dendritic spines, form asymmetric terminals, and are glutamatergic.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "Thalamic projections terminate primarily onto dendrites, and are excitatory and also glutamatergic.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The corticostriate fibres, which use the excitatory amino acid glutamate as their neurotransmitter",
+     "species": "human",
+     "page": 446,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Striatal medium spiny neurons expressing D1 dopamine receptors (direct pathway)",
+   "courseVia": [
+    "direct pathway striatal projection"
+   ],
+   "terminatesIn": "Globus pallidus internus (GPi) / substantia nigra pars reticulata (SNpr)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "GABA",
+   "evidence": [
+    {
+     "source": "NBK537141",
+     "grade": "B",
+     "quote": "The neurons that express the D1-family of receptors send projections to the GPi/SNpr to form the Direct pathway while those expressing D2-family of receptors send projections to the GPe as part of the Indirect pathway.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK559127",
+     "grade": "B",
+     "quote": "The activation of the striatum sends D1-dopamine receptor driven inhibitory GABAergic signals to the GPi.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "There are two general types of MSNs: one that co-contains substance P and GABA; and one that co-contains enkephalin and GABA.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "Substance P-containing MSNs project primarily to the GPi and SN, while the enkephalin-containing cells project primarily to the GPe.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "On the basis of this data and electrophysiological data, the projection cells of the striatum are considered inhibitory.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The striatal efferents passing to the GPi arise from medium-sized spiny neurons (MSNs) that co-contain GABA and substance P, whereas the striatal projections to the GPe arise from MSNs that co-contain GABA and enkephalin.",
+     "species": "human",
+     "page": 453,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The D1 class receptors are preferentially expressed in the substance P-containing MSNs forming part of the direct circuit, whereas the D2 class receptors are specifically expressed on the enkephalin-containing MSNs",
+     "species": "human",
+     "page": 453,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The vast majority of the striatopallidal and striatonigral fibres are known to contain GABA and to exert an inhibitory influence.",
+     "species": "human",
+     "page": 446,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The direct circuit is composed of excitatory corticostriatal, inhibitory striatopallidal, inhibitory pallidothalamic and excitatory thalamocortical projections.",
+     "species": "human",
+     "page": 472,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "GPi / SNpr inhibitory neurons",
+   "courseVia": [
+    "direct pathway pallidothalamic projection"
+   ],
+   "terminatesIn": "Ventral anterior (VA) and ventrolateral (VL) nuclei of the thalamus",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "GABA",
+   "evidence": [
+    {
+     "source": "NBK537141",
+     "grade": "B",
+     "quote": "The GPi/SNpr has GABAergic inhibitory neurons that project to the VA and VL of the thalamus both of which send excitatory projections to the motor cortex.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK559127",
+     "grade": "B",
+     "quote": "The inactivation of the GPi allows excitatory glutamate signals to be generated in the thalamus (also called disinhibition of the thalamus), relaying fibers to multiple areas in the motor cortex.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "Then, another corollary signal through the cortico-striato-GPi direct pathway disinhibits part of the thalamic and cortical target areas and releases the desired motor program alone.",
+     "species": "macaque monkey",
+     "page": 8,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "The outputs from the GPi and SNr are to the thalamus, which then projects back to the cortex, completing the “direct” cortico-basal ganglia circuit.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Both the pallidothalamic and nigrothalamic projections are known to be GABAergic",
+     "species": "human",
+     "page": 446,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "All large neurons within both pallidal segments are GABAergic, inhibitory projection neurons.",
+     "species": "human",
+     "page": 441,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The elements in the external segment project to the subthalamic nucleus, whereas those in the internal segment project to the thalamus, the lateral habenular nucleus and the pedunculopontine nucleus in the caudal mesencephalic tegmentum.",
+     "species": "human",
+     "page": 441,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "They are glutamatergic and activate cortical neurons. As a result of these data the following concept was developed",
+     "species": "human",
+     "page": 446,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 2,
+   "cellBodies": "Striatal medium spiny neurons expressing D2 dopamine receptors (indirect pathway)",
+   "courseVia": [
+    "indirect pathway striatal projection"
+   ],
+   "terminatesIn": "Globus pallidus externus (GPe)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "GABA",
+   "evidence": [
+    {
+     "source": "NBK537141",
+     "grade": "B",
+     "quote": "The dorsal striatal neurons expressing the D2-family of dopamine receptors are inhibited by dopamine from the SN. These D2R neurons send inhibitory GABAergic connections to the GPe.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK559127",
+     "grade": "B",
+     "quote": "the activation of the D2-dopamine receptor in the striatum leads to the firing of the globus pallidus externus (GPe). Subsequently, the GPe sends inhibitory signals to the STN.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "Substance P-containing MSNs project primarily to the GPi and SN, while the enkephalin-containing cells project primarily to the GPe.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The indirect circuit includes an excitatory corticostriatal projection that terminates onto striatal medium spiny projection neurons that co-contain GABA and enkephalin along with dopamine D2-class receptors",
+     "species": "human",
+     "page": 472,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 3,
+   "cellBodies": "GPe inhibitory neurons",
+   "courseVia": [
+    "pallidosubthalamic projection"
+   ],
+   "terminatesIn": "Subthalamic nucleus (STN)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "GABA",
+   "evidence": [
+    {
+     "source": "NBK537141",
+     "grade": "B",
+     "quote": "The GPe inhibits the subthalamic nucleus, which excites the GPi/SNpr, completing the Indirect pathway.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "The GPe and parts of the VP project to the subthalamic nucleus (STN). The STN, in turn, provides inputs to the GPi. This pathway is considered the indirect pathway.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "Importantly, the STN also projects back to the GPe.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The efferents of the GPe, which are also GABAergic and inhibitory, project in a topographically organized fashion to the subthalamic nucleus (STN)",
+     "species": "human",
+     "page": 453,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "an inhibitory projection from the GPe to the subthalamic nucleus (STN) and an excitatory projection from STN to the GPi",
+     "species": "human",
+     "page": 472,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "neuronOrder": 4,
+   "cellBodies": "Subthalamic nucleus neurons (indirect pathway relay)",
+   "courseVia": [
+    "subthalamopallidal projection"
+   ],
+   "terminatesIn": "GPi / SNpr",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate",
+   "evidence": [
+    {
+     "source": "NBK537141",
+     "grade": "B",
+     "quote": "It sends glutaminergic projections to GPi and substantia nigra.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC13353100",
+     "grade": "A",
+     "quote": "During periods of STN disinhibition, STN activity exerts a strong glutamatergic drive onto the GPi (6) and, retrogradely, onto the GPe.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "The subthalamic nucleus (STN) receives input from the cerebral cortex, especially from the motor-related areas of the frontal lobe and, in turn, sends output to the internal segment of the globus pallidus (GPi), a major output station of the basal ganglia",
+     "species": "macaque monkey",
+     "page": 2,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "It has been shown that electrical stimulation in the motor-related areas, including the primary motor cortex (MI) and the supplementary motor area (SMA), induces an early, short-latency excitation in GPi neurons, followed by an inhibition and then a late, long-latency excitation",
+     "species": "macaque monkey",
+     "page": 2,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "Several lines of pharmacophysiological evidence suggest that the early excitation may be derived from the hyperdirect pathway.",
+     "species": "macaque monkey",
+     "page": 1,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "Based on several pharmacophysiological findings, the early excitation is considered to be derived from the cortico-STNGPi pathway",
+     "species": "macaque monkey",
+     "page": 2,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "The present results define that the cortically-driven early excitation in GPi neurons is mediated by the hyperdirect pathway.",
+     "species": "macaque monkey",
+     "page": 1,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "Finally, the third corollary signal transmitted by way of the cortico-striato-GPe-STN-GPi indirect pathway again inhibits the thalamic and cortical target areas extensively.",
+     "species": "macaque monkey",
+     "page": 8,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "The GPe and parts of the VP project to the subthalamic nucleus (STN). The STN, in turn, provides inputs to the GPi. This pathway is considered the indirect pathway.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The STN also receives a glutamatergic excitatory input from the cerebral cortex.",
+     "species": "human",
+     "page": 453,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The subthalamic efferents have an excitatory effect on pallidal and nigra neurons and use glutamate as their neurotransmitter",
+     "species": "human",
+     "page": 453,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The subthalamic neurons are excitatory and use glutamate as their neurotransmitter",
+     "species": "human",
+     "page": 442,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "cortical activation of the inhibitory, GABA and enkephalin-containing MSNs reduces the output of GPe activity, resulting in a decreased inhibition or disinhibition of STN neurons, which causes an increase in the glutamatergic activation of GPe/SNr.",
+     "species": "human",
+     "page": 455,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Cortical activation of the indirect circuit produces disinhibition of subthalamic neurons, resulting in an increase of the subthalamic activation of the GPi.",
+     "species": "human",
+     "page": 472,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "neuronOrder": 1,
+   "cellBodies": "Sensorimotor cortex (hyperdirect pathway)",
+   "courseVia": [
+    "hyperdirect corticosubthalamic projection"
+   ],
+   "terminatesIn": "Subthalamic nucleus (dorsal STN) directly, bypassing the striatum",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate (excitatory)",
+   "evidence": [
+    {
+     "source": "PMC13353100",
+     "grade": "A",
+     "quote": "In parallel, the STN receives direct excitatory input from the sensorimotor cortex via the hyperdirect pathway.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "This pathway links the motor-related areas of the frontal lobe directly to the subthalamic nucleus (STN) without relay at the striatum.",
+     "species": "macaque monkey",
+     "page": 1,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "This pathway connects the motor-related areas of the frontal lobe to the GPi, an output station of the basal ganglia, at short latency via the STN without relay at the striatum and is involved in motor information processing in the basal ganglia.",
+     "species": "macaque monkey",
+     "page": 8,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "the hyperdirect pathway conveys excitatory signals from the frontal motor-related areas toward the GPi, bypassing the striatum, with shorter conduction time than signals through the striatum that arise from both the direct and the indirect pathways",
+     "species": "macaque monkey",
+     "page": 8,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "By mapping cortically evoked orthodromic responses, the SMArecipient territory was identified in the STN, mainly within its medial aspect",
+     "species": "macaque monkey",
+     "page": 3,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "After the BDA injections into the SMA forelimb region (monkey G), anterogradely labeled axon terminals were so largely decreased in the STN",
+     "species": "macaque monkey",
+     "page": 6,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "These anatomical data clearly indicated that cortico-STN projection originating from the SMA forelimb region was selectively eliminated without affecting either the corticostriatal projection or the cortico-STN projections from SMA regions with other representations than the forelimb.",
+     "species": "macaque monkey",
+     "page": 6,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "When a voluntary movement is about to be initiated by the motor cortical mechanism, a corollary signal conveyed through the cortico-STN-GPi hyperdirect pathway first inhibits large areas of the thalamic and cortical target structures",
+     "species": "macaque monkey",
+     "page": 8,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "it is most likely that the hyperdirect pathway exerts a powerful excitatory effect on the GPi to suppress involuntary and unnecessary movements prior to the selected motor action.",
+     "species": "macaque monkey",
+     "page": 8,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "According to functional magnetic resonance imaging studies using human subjects, the cortico-STN projection conveys stop signals to inhibit motor responses",
+     "species": "human",
+     "page": 8,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "10.1371/journal.pone.0039149",
+     "grade": "A",
+     "quote": "However, no apparent motor deficits were observed in either monkey M or monkey G.",
+     "species": "macaque monkey",
+     "page": 8,
+     "file": "upgrade-lib-inoue2012.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "In addition to connections with the basal ganglia, the STN also receives a direct projection from all parts of the frontal cortex.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "This is referred to as the hyperdirect pathway.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The subthalamic neurons receive an excitatory, glutamatergic input from the cortex and an inhibitory, GABAergic input from the external pallidal segment.",
+     "species": "human",
+     "page": 442,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 8,
+   "neuronOrder": 1,
+   "cellBodies": "Substantia nigra pars compacta (SNpc) dopaminergic neurons (nigrostriatal pathway)",
+   "courseVia": [
+    "nigrostriatal pathway"
+   ],
+   "terminatesIn": "Putamen and caudate nucleus of the striatum, modulating D1- and D2-expressing neurons oppositely",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "dopamine",
+   "evidence": [
+    {
+     "source": "NBK537141",
+     "grade": "B",
+     "quote": "The dopaminergic projections of the SNpc synapse on the putamen and the caudate nuclei of the striatum.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK537141",
+     "grade": "B",
+     "quote": "A tonic release of dopamine preferentially modulates the D1 receptor, and this is a powerful modulator of the nigrostriatal pathway.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK537141",
+     "grade": "B",
+     "quote": "Therefore, dopamine will depolarize this population of striatal neurons and increase activity in the Direct pathway.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "The dopaminergic system includes the SNc, the ventral tegmental area (VTA), and the retrorubral group.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "PMC4826773",
+     "grade": "A",
+     "quote": "Dopamine (DA) neurons from the SNc and the VTA project to the DS and VS, respectively.",
+     "species": "primate",
+     "page": null,
+     "file": "upgrade-lib-lemon2019-haber2016.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The dopaminergic neurons in the pars compacta give rise to a large nigrostriatal system, which reciprocates the striatonigral projection.",
+     "species": "human",
+     "page": 443,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The striatonigral fibres contain GABA and substance P and inhibit the neurons in the SNc.",
+     "species": "human",
+     "page": 455,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Substantia nigra pars compacta dopaminergic neurons",
+   "deficit": "Parkinson disease: bradykinesia, resting tremor, postural instability, shuffling gait (hypokinetic)",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Young 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "This disease is a result of neurodegeneration of the SNpc dopaminergic neurons."
+    },
+    {
+     "source": "Young 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "This loss of dopamine depresses the nigrostriatal pathway. With decreased dopaminergic input the striatum exerts less positive motor activity and more negative motor inhibition."
+    },
+    {
+     "source": "Lee 2022 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "PD is characterized by generalized extrapyramidal hypertonia, static tremor, and akinesia."
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "Caudate and putamen (striatum)",
+   "deficit": "Huntington disease: chorea (hyperkinetic) from interruption of the indirect pathway, plus cognitive and psychiatric dysfunction",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Young 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "This creates an abnormally long Huntington gene which leads to neuronal death in the caudate and the putamen."
+    },
+    {
+     "source": "Young 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "The indirect pathway is interrupted and leads to a hyperkinetic presentation."
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "Subthalamic nucleus",
+   "deficit": "Hemiballismus: violent, involuntary flinging movements of the ipsilateral (to the lesion side, i.e. contralateral body side) arm and leg",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Rocha 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "characterized by intermittent, sudden, violent, involuntary, flinging, or ballistic high amplitude movements involving the ipsilateral arm and leg caused by dysfunction in the central nervous system of the contralateral side."
+    },
+    {
+     "source": "Young 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Commonly, a lesion in the contralateral subthalamic nuclei causes hemiballism."
+    },
+    {
+     "source": "Young 2023 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Given that the subthalamus is part of the indirect pathway this lesion reduces or eliminates indirect pathway signaling, leading to a relative overabundance of activity in the direct pathway."
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "Subthalamic nucleus",
+   "deficit": "Hemiballismus: violent, involuntary flinging movements of the ipsilateral (to the lesion side, i.e. contralateral body side) arm and leg",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Inoue 2012 PLoS ONE",
+     "grade": "A",
+     "quote": "Lesions or blockade of STN neuron activity induced involuntary movements, hemiballism"
+    }
+   ],
+   "file": "upgrade-lib-inoue2012.json"
+  },
+  {
+   "site": "Substantia nigra pars compacta dopaminergic neurons",
+   "deficit": "Parkinson disease: bradykinesia, resting tremor, postural instability, shuffling gait (hypokinetic)",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "Parkinson’s disease (PD) or paralysis agitans is a common neurodegenerative disorder that usually begins during the fifth or sixth decade of life."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "The disease is characterized by progressive slowness of movement (bradykinesia), muscular rigidity, tremor and disturbances in posture and gait."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "The neuropathological hallmark of PD is the massive loss of the pigmented, dopaminergic neurons in the pars compacta of the substantia nigra, which leads to a reduction in the dopamine content in the striatum, most severely in the putamen"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "loss of dopaminergic input from the substantia nigra to the striatum decreases activity in the direct circuit and increases activity in the indirect circuit"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "Thus, the resultant reduced cortical motor output explains the hypokinetic features of PD."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "site": "Caudate and putamen (striatum)",
+   "deficit": "Huntington disease: chorea (hyperkinetic) from interruption of the indirect pathway, plus cognitive and psychiatric dysfunction",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "Huntington’s chorea is a rare autosomal dominant disease of middle age, characterized by rapid, jerky, involuntary movements of the face, arms and legs and by progressive mental deterioration."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "It has been reported that in the earlier stages of the disease the striatal projection neurons participating in the indirect circuit are preferentially lost"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "This inhibition of the STN neurons in turn reduces inhibition or disinhibits thalamocortical neurons in V A and VL and, ultimately, increases the excitatory input to the motor cortical areas, which could explain the choreatic movements"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "site": "Subthalamic nucleus",
+   "deficit": "Hemiballismus: violent, involuntary flinging movements of the ipsilateral (to the lesion side, i.e. contralateral body side) arm and leg",
+   "side": "contralateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "Hemibalism is a disorder characterized by vigorous involuntary movements of the extremities with a repetitive, stereotypical character on one side of the body."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "The hyperkinesia is known to be caused by focal (commonly vascular) lesions of the contralateral STN"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "It is assumed that the STN lesions reduce the excitation of inhibitory GPi neurons, which in turn causes a hyperactivity of disinhibited thalamocortical projection neurons"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Origin of the late excitation component recorded in GPi neurons following motor-cortex (SMA) stimulation",
+   "positions": [
+    {
+     "source": "Inoue 2012 PLoS ONE",
+     "grade": "A",
+     "claim": "The late excitation is ascribable to the late excitation in the STN and is probably mediated by the cortico-striato-GPe-STN-GPi indirect pathway",
+     "quote": "This late excitation is ascribable to the late excitation in the STN and is probably mediated by the cortico-striato-external pallidal segment (GPe)-STN-GPi indirect pathway."
+    },
+    {
+     "source": "Inoue 2012 PLoS ONE",
+     "grade": "A",
+     "claim": "Alternatively, the late excitation seen in the STN may just be part of a prolonged excitation driven directly by the cortico-STN (hyperdirect) projection itself, not a separate indirect-pathway relay",
+     "quote": "it has also been suggested that the late excitation in the STN is part of the prolonged excitation induced by the cortico-STN projection"
+    }
+   ],
+   "file": "upgrade-lib-inoue2012.json"
+  },
+  {
+   "issue": "Whether the direct cortex-to-subthalamic-nucleus projection is named and adopted as the 'hyperdirect pathway'",
+   "positions": [
+    {
+     "source": "S1 (upgrade-lib-nieuwenhuys-motor-somatosensory.json; not reopened this session)",
+     "grade": "?",
+     "claim": "Nieuwenhuys (upgrade-lib-nieuwenhuys-motor-somatosensory.json S1; not reopened this session): the word 'hyperdirect' never appears in the running body text of the basal ganglia chapter -- it occurs exactly once, inside a bibliography reference title -- even though the underlying cortex-to-STN projection is described and sourced anatomically",
+     "quote": "The subthalamic neurons receive an excitatory, glutamatergic input from the cortex and an inhibitory, GABAergic input from the external pallidal segment."
+    },
+    {
+     "source": "Haber 2016 Dialogues Clin Neurosci",
+     "grade": "A",
+     "claim": "Haber 2016 explicitly names and defines this same cortex-to-STN projection as the 'hyperdirect pathway' in its own running text",
+     "quote": "This is referred to as the hyperdirect pathway."
+    }
+   ],
+   "file": "upgrade-lib-lemon2019-haber2016.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The thalamocortical projection from VA/VL to motor cortex is glutamatergic; the opened sources describe it only as 'excitatory' without explicitly naming glutamate as the transmitter.",
+   "file": "motor.json"
+  },
+  {
+   "text": "The existing step 7 wording localizes hyperdirect cortico-STN termination to the 'dorsal STN'; Inoue et al. 2012 does not support this term for the SMA (forelimb)-recipient hyperdirect territory it studied -- it instead localizes that territory to the medial aspect of the STN ('the SMArecipient territory was identified in the STN, mainly within its medial aspect', p.3). This source cannot be used to confirm 'dorsal STN' as the hyperdirect termination site; it may reflect a different cortical subregion (e.g. MI vs SMA) not directly traced here.",
+   "file": "upgrade-lib-inoue2012.json"
+  },
+  {
+   "text": "Inoue et al. 2012 performed vector injection, immunotoxin ablation, and anterograde/retrograde tracing only for the supplementary motor area (SMA); although electrical stimulation of the primary motor cortex (MI) is mentioned as also evoking the same triphasic GPi response pattern, no anatomical tracing or ablation data specific to an MI-to-STN hyperdirect projection was found in the opened text, so an MI-specific version of this claim cannot be sourced from this paper.",
+   "file": "upgrade-lib-inoue2012.json"
+  },
+  {
+   "text": "No data in this source address the direct pathway's own conduction latency or the striatal synaptic delay numerically; the 'shorter conduction time' claim for the hyperdirect pathway relative to the direct/indirect pathways is stated qualitatively only (p.8) and could not be corroborated with a quantitative latency comparison from this text.",
+   "file": "upgrade-lib-inoue2012.json"
+  },
+  {
+   "text": "The opened Haber 2016 text does not explicitly state that subthalamic nucleus efferents (to GPi/SNr) use glutamate as their neurotransmitter; it only states that STN receives glutamatergic cortical input, not what transmitter its own outputs use.",
+   "file": "upgrade-lib-lemon2019-haber2016.json"
+  },
+  {
+   "text": "The thalamocortical projection from VA/VL to motor cortex is glutamatergic; the opened sources describe it only as 'excitatory' without explicitly naming glutamate as the transmitter (unchanged by this batch).",
+   "file": "upgrade-lib-lemon2019-haber2016.json"
+  },
+  {
+   "text": "The word 'hyperdirect' is never used in the running body text of Nieuwenhuys ch.14 -- it occurs exactly once in the whole chapter, inside a bibliography reference title (Nambu et al. 2002, cited but not adopted as chapter terminology) -- even though the underlying anatomical fact (a direct glutamatergic cortex-to-STN projection bypassing the striatum) is described and sourced above.",
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "sources": {
+  "NBK559127": {
+   "label": "Rocha 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Hemiballismus",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK559127"
+  },
+  "NBK537141": {
+   "label": "Young 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Basal Ganglia",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK537141"
+  },
+  "PMC13353100": {
+   "label": "Macêdo 2026 Tremor and Other Hyperkinetic Movements",
+   "grade": "A",
+   "title": "A Distributed Oscillatory Network Model of Parkinsonian Tremor: Integrating Basal Ganglia and Cerebello-Thalamic Circuits",
+   "doi": "10.5334/tohm.1198",
+   "pmcid": "PMC13353100",
+   "isbn": null,
+   "nbk": ""
+  },
+  "10.1371/journal.pone.0039149": {
+   "label": "Inoue 2012 PLoS ONE",
+   "grade": "A",
+   "title": "Immunotoxin-Mediated Tract Targeting in the Primate Brain: Selective Elimination of the Cortico-Subthalamic \"Hyperdirect\" Pathway",
+   "doi": "10.1371/journal.pone.0039149",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": ""
+  },
+  "PMC4826773": {
+   "label": "Haber 2016 Dialogues Clin Neurosci",
+   "grade": "A",
+   "title": "Corticostriatal circuitry",
+   "doi": "10.31887/DCNS.2016.18.1/shaber",
+   "pmcid": "PMC4826773",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

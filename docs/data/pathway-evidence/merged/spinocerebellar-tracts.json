@@ -1,0 +1,389 @@
+{
+ "id": "spinocerebellar-tracts",
+ "name": "Spinocerebellar tracts (dorsal/posterior spinocerebellar, cuneocerebellar, ventral/anterior spinocerebellar)",
+ "category": "ascending somatosensory / unconscious proprioception to cerebellum",
+ "function": "Relay unconscious proprioceptive information from muscle spindles and Golgi tendon organs of the trunk and limbs to the cerebellum for coordination of posture and movement.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Dorsal root ganglion (pseudounipolar neurons); axons collateralize to Clarke's nucleus/column (C8–L3) for the trunk and lower limb",
+   "courseVia": [
+    "peripheral nerve",
+    "dorsal root",
+    "collateral to posterior grey horn (Clarke's column, C8–L3)"
+   ],
+   "terminatesIn": "Clarke's nucleus (dorsal nucleus of Clarke), C8–L3",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK556013",
+     "grade": "B",
+     "quote": "The first-order neuron for the dorsal spinocerebellar tract transmits impulses to a specific location in the posterior gray horn known as Clarke’s nucleus. This set of nuclei range from the C8-L3 portions of the spinal cord, collectively referred to as Clarke’s column",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Clarkes’s column and the spinal border cells receive dorsal root afferents and give rise to spinocerebellar pathways",
+     "species": "human",
+     "page": 189,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "An important contingent of sacral and lumbar root fibres, carrying proprioceptive information from the lower limbs, leaves the dorsal columns to terminate in the spinal grey matter, particularly in Clarke’s dorsal column, which gives rise to the dorsal spinocerebellar tract",
+     "species": "human",
+     "page": 694,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Clarke's nucleus/column (dorsal/posterior spinocerebellar tract, trunk & lower limb) or accessory cuneate nucleus in medulla (cuneocerebellar tract, upper limb equivalent)",
+   "courseVia": [
+    "dorsal (posterior) spinocerebellar tract, ipsilateral lateral funiculus",
+    "inferior cerebellar peduncle",
+    "cuneate fasciculus → accessory cuneate nucleus → inferior cerebellar peduncle (cuneocerebellar tract)"
+   ],
+   "terminatesIn": "Ipsilateral cerebellar cortex (vermis and paravermis of anterior lobe) as mossy fibers",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK556013",
+     "grade": "B",
+     "quote": "The DSCT ascends on the ipsilateral side, enters the cerebellum via the inferior peduncle, and terminates as mossy fibers in the cerebellar cortex. Specifically, the information transmits to the vermis and paravermis in the anterior lobe of the cerebellum",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC10567534",
+     "grade": "A",
+     "quote": "This tract does not decussate and ascends through the same-side lateral funiculus, and terminates in the ipsilateral cerebellar cortex through the inferior cerebellar peduncle",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC10567534",
+     "grade": "A",
+     "quote": "The cuneocerebellar tract has the same function as the posterior spinocerebellar tract, conveying unconscious proprioception from muscles and tendons in the upper extremities",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC10567534",
+     "grade": "A",
+     "quote": "This tract passes through the cuneate fasciculus in the posterior funiculus and continues into the same-side accessory cuneate nucleus of the medulla. From the accessory cuneate nucleus, it extends further into the cerebellum via the inferior cerebellar peduncle",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The large, myelinated axons of Clarke’s column occupy the dorsolateral periphery of the lateral funiculus as the uncrossed dorsal spinocerebellar tract",
+     "species": "human",
+     "page": 191,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Joined by fibres originating from the reticular formation, the external cuneate nucleus and the contralateral inferior olive, it constitutes the restiform body",
+     "species": "human",
+     "page": 205,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "composed of the dorsal spinocerebellar tract and of external arcuate fibres from the reticular nuclei of the lateral and anterior funiculus",
+     "species": "human",
+     "page": 209,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The restiform body is an afferent system, containing the spinocerebellar and olivocerebellar tracts and other afferents from the medulla oblongata.",
+     "species": "human",
+     "page": 809,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The lateral cuneate nucleus and group Z, a collection of large neurons rostral to the gracile nucleus, both receive information from muscle spindle afferents.",
+     "species": "human",
+     "page": 695,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Muscle spindle afferents from the forelimb ascend in the dorsal columns and terminate in a somatotopical pattern in the lateral cuneate nucleus.",
+     "species": "human",
+     "page": 695,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The main projection of the lateral cuneate nucleus is to the cerebellum.",
+     "species": "human",
+     "page": 695,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "A rough localization in the paravermal region of the hind limb in the ventral lobules of the anterior lobe",
+     "species": "human",
+     "page": 832,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Spinocerebellar fibres distribute to the anterior lobe and certain lobules of the posterior lobe (lobulus simplex, pyramis, lobulus gracilis and the lateral belly of the biventral lobule, the paramedian lobule of comparative anatomy",
+     "species": "human",
+     "page": 817,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 2,
+   "cellBodies": "Ventral (anterior) spinocerebellar tract neurons (lumbosacral cord)",
+   "courseVia": [
+    "decussation near level of origin",
+    "ascends contralaterally",
+    "superior cerebellar peduncle",
+    "decussates again within the cerebellum"
+   ],
+   "terminatesIn": "Ipsilateral cerebellar cortex (double decussation restores ipsilateral termination)",
+   "laterality": "ipsilateral (net; achieved via double decussation)",
+   "decussation": {
+    "present": true,
+    "where": "Decussates once near Clarke's nucleus/level of origin, then decussates again within the cerebellum via the superior cerebellar peduncle"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK556013",
+     "grade": "B",
+     "quote": "the DSCT stays ipsilateral throughout the entire tract, while the VSCT decussates twice. The VSCT decussates first at the level of Clarke’s nucleus and rises contralaterally from the input to the brain.",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC10567534",
+     "grade": "A",
+     "quote": "The anterior spinocerebellar tract conveys unconscious proprioception to the lower extremities. It originates in the lumbosacral segment and decussates to the opposite side, ascending to enter the superior cerebellar peduncle. Within the cerebellum, it decussates and terminates in the ipsilateral cerebellar cortex",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "PMC10567534",
+     "grade": "A",
+     "quote": "This is one of the exceptions among the primitive tracts in which decussation occurs but controls the ipsilateral side",
+     "species": "human",
+     "page": null,
+     "file": "somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The latter stems from contralateral spinal border cells of the lumbar cord",
+     "species": "human",
+     "page": 191,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The ventral spinocerebellar tract leaves the area of the anterolateral fascicle in the rostral metencephalon, and passes rostral to the entrance of the trigeminal nerve to enter the cerebellum along the superior cerebellar peduncle.",
+     "species": "human",
+     "page": 211,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Friedreich ataxia (degeneration of spinocerebellar tract, DRG, dorsal column, lateral corticospinal tract)",
+   "deficit": "Ataxia, loss of proprioception, spastic paralysis, loss of deep tendon reflexes",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Koh 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "This disease is characterized by degeneration of the spinocerebellar tract, dorsal root ganglia, dorsal column, and lateral corticospinal tracts"
+    },
+    {
+     "source": "Koh 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Patients typically present with ataxia, loss of proprioception, spastic paralysis, and a loss of deep tendon reflexes"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Tabes dorsalis (demyelination of dorsal columns, dorsal roots and dorsal spinocerebellar tract)",
+   "deficit": "Ataxia and sensory loss",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Koh 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Tabes dorsalis is characterized by slow demyelination of the dorsal columns and the dorsal roots of the spinal cord. Demyelination causes damage to different tracts, such as the dorsal column medial lemniscus pathway, and the dorsal spinocerebellar tract"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Vitamin E deficiency (dorsal column and spinocerebellar tract demyelination)",
+   "deficit": "Ataxia and proprioceptive/hematologic abnormalities",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Koh 2023 StatPearls Publishing",
+     "grade": "B",
+     "quote": "A vitamin E deficiency could lead to hematological and neurological issues such as hemolytic anemia and demyelination of the dorsal column and the spinocerebellar tract"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Spinal cord hemisection (Brown-Séquard syndrome), spinocerebellar tracts",
+   "deficit": "Ipsilateral loss of proprioception (dorsal spinocerebellar tract); ventral spinocerebellar tract input is bilateral and less affected by hemisection",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Shams 2024 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Dorsal and ventral spinocerebellar tracts within the lateral region of the spinal cord carry ipsilateral afferents mediating proprioception. Hemisection of the dorsal spinocerebellar tract leads to ipsilateral loss of proprioception, whereas the ventral spinocerebellar tract contains bilateral afferent proprioceptive inputs"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "site": "Lateral medullary syndrome (Wallenberg), spinocerebellar tract and inferior cerebellar peduncle",
+   "deficit": "Ipsilateral ataxia and lateropulsion",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Easton-Carr 2026 StatPearls Publishing",
+     "grade": "B",
+     "quote": "Spinocerebellar tracts and the inferior cerebellar peduncle: Ipsilateral ataxia and lateral pulsion"
+    }
+   ],
+   "file": "somatosensory.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Functional content carried by the ventral/anterior spinocerebellar tract (VSCT/ASCT): proprioceptive sensory information vs. motor/efferent-copy information",
+   "positions": [
+    {
+     "source": "Koh 2023 StatPearls Publishing",
+     "grade": "B",
+     "claim": "The VSCT relays motor information rather than proprioceptive information, unlike the DSCT",
+     "quote": "The DSCT has a tract that runs parallel with it: the ventral spinocerebellar tract (VSCT). Instead of relaying proprioceptive information, the VSCT relays motor information"
+    },
+    {
+     "source": "Kang 2023 Korean Journal of Neurotrauma",
+     "grade": "A",
+     "claim": "The anterior spinocerebellar tract conveys unconscious proprioception (to the lower extremities)",
+     "quote": "The anterior spinocerebellar tract conveys unconscious proprioception to the lower extremities. It originates in the lumbosacral segment and decussates to the opposite side, ascending to enter the superior cerebellar peduncle"
+    },
+    {
+     "source": "Shams 2024 StatPearls Publishing",
+     "grade": "B",
+     "claim": "The ventral spinocerebellar tract carries (bilateral) afferent proprioceptive inputs",
+     "quote": "whereas the ventral spinocerebellar tract contains bilateral afferent proprioceptive inputs"
+    }
+   ],
+   "file": "somatosensory.json"
+  },
+  {
+   "issue": "Precise segmental extent of Clarke's column (dorsal nucleus of Clarke)",
+   "positions": [
+    {
+     "source": "S6 (original somatosensory.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S6): Clarke's column ranges specifically from spinal segments C8 to L3",
+     "quote": "This set of nuclei range from the C8-L3 portions of the spinal cord, collectively referred to as Clarke’s column"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys describes Clarke's column only in non-numeric terms, as located at 'thoracic and high lumbar levels', without giving C8 or L3 as exact boundaries",
+     "quote": "is a discrete, roundish collection of large neurons, located medially at the base of the dorsal horn at thoracic and high lumbar levels"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "Nieuwenhuys describes the ventral (anterior) spinocerebellar tract's origin and course anatomically (arising from contralateral spinal border cells of the lumbar cord) but does not explicitly characterize whether its content is proprioceptive sensory information or motor/efference-copy signalling, so this source cannot adjudicate the existing conflict about the tract's functional content.",
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  },
+  {
+   "text": "Nieuwenhuys does not explicitly state that the ventral spinocerebellar tract decussates a second time within the cerebellum itself; only a general principle that cerebellar hemisphere signs are ipsilateral 'due to the double decussation of the superior cerebellar peduncle and the pyramidal tract' was found (Nieuwenhuys ch.20, p.834), which concerns cerebellar output rather than the VSCT specifically.",
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "sources": {
+  "NBK556013": {
+   "label": "Koh 2023 StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Spinocerebellar Dorsal Tract",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK556013"
+  },
+  "PMC10567534": {
+   "label": "Kang 2023 Korean Journal of Neurotrauma",
+   "grade": "A",
+   "title": "Functional Anatomy of the Spinal Tracts Based on Evolutionary Perspectives",
+   "doi": "10.13004/kjnt.2023.19.e43",
+   "pmcid": "PMC10567534",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

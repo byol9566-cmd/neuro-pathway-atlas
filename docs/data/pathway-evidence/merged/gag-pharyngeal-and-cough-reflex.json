@@ -1,0 +1,360 @@
+{
+ "id": "gag-pharyngeal-and-cough-reflex",
+ "name": "Gag (pharyngeal) reflex and cough reflex",
+ "category": "Cranial nerve / brainstem visceral reflex",
+ "function": "Gag reflex: bilateral pharyngeal muscle contraction and soft palate elevation to prevent swallowing/aspiration of foreign material, evoked by touching the posterior pharyngeal wall, tonsillar pillars, or tongue base. Cough reflex: forced expiratory maneuver to expel airway irritants, evoked mainly via vagal afferents from the larynx/trachea.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Glossopharyngeal (CN IX) sensory neurons, cell bodies at the superior (jugular) ganglion",
+   "courseVia": [
+    "CN IX, entering at the jugular foramen"
+   ],
+   "terminatesIn": "Ipsilateral nucleus of the solitary tract (nucleus solitarius / gustatory nucleus)",
+   "laterality": "ipsilateral (afferent limb from the stimulated side)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK554502",
+     "grade": "B",
+     "quote": "These sensations are carried by CN IX, which acts as the afferent limb of the reflex to the ipsilateral nucleus solitarius (also referred to as the gustatory nucleus) after synapsing at the superior ganglion located in the jugular foramen",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Nucleus of the solitary tract",
+   "courseVia": [
+    "projections to nucleus ambiguus"
+   ],
+   "terminatesIn": "Nucleus ambiguus (motor nucleus, rostral medulla)",
+   "laterality": "bilateral (direct + consensual gag reflex both elicited)",
+   "decussation": {
+    "present": true,
+    "where": "solitary-tract second-order neurons project to the nucleus ambiguus on both sides, producing a consensual (contralateral) as well as direct (ipsilateral) response"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK554502",
+     "grade": "B",
+     "quote": "These nuclei send fibers to the nucleus ambiguus, a motor nucleus in the rostral medulla. Efferent nerve fibers to the pharyngeal musculature traverse from the nucleus ambiguus through CN X, resulting in the bilateral contraction of the posterior pharyngeal muscles",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK554502",
+     "grade": "B",
+     "quote": "Contraction of the pharyngeal musculature ipsilateral to the side of the stimulus is known as the direct gag reflex, and contraction of the musculature on the contralateral side is known as the consensual gag reflex",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Motoneurons of the ambiguus nucleus innervating pharyngeal muscles, which are involved in the second phase, receive input from the nucleus of the solitary tract.",
+     "species": "human",
+     "page": 869,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Nucleus ambiguus",
+   "courseVia": [
+    "vagus nerve (CN X)"
+   ],
+   "terminatesIn": "Posterior pharyngeal muscles / stylopharyngeus",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK554502",
+     "grade": "B",
+     "quote": "These nuclei send fibers to the nucleus ambiguus, a motor nucleus in the rostral medulla. Efferent nerve fibers to the pharyngeal musculature traverse from the nucleus ambiguus through CN X, resulting in the bilateral contraction of the posterior pharyngeal muscles",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The glossopharyngeal nerve innervates the stylopharyngeus muscle. Together with the vagus nerve it gives rise to the nervous plexus of the pharynx and the oesophagus.",
+     "species": "rat",
+     "page": 868,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 1,
+   "cellBodies": "Trigeminal afferents from the soft palate (alternate afferent limb for gag reflex when the soft palate rather than posterior pharynx/tongue base is stimulated)",
+   "courseVia": [
+    "CN V",
+    "nucleus of the spinal tract of the trigeminal nerve"
+   ],
+   "terminatesIn": "Spinal trigeminal nucleus",
+   "laterality": "ipsilateral afferent",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK554502",
+     "grade": "B",
+     "quote": "Stimulation of the soft palate can also elicit the gag reflex; in this case, the sensory limb is the trigeminal nerve (CN V). Here, sensory stimulation of the soft palate travels through the nucleus of the spinal tract of the trigeminal nerve",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 1,
+   "cellBodies": "Vagal (CN X) sensory (Adelta and C-fiber) afferents from the laryngotracheal mucosa (cough reflex)",
+   "courseVia": [
+    "vagus nerve"
+   ],
+   "terminatesIn": "Caudal nucleus tractus solitarius (nTS)",
+   "laterality": "ipsilateral afferent",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate (afferent synapse onto nTS neurons)",
+   "evidence": [
+    {
+     "source": "PMC13447969",
+     "grade": "A",
+     "quote": "Glutamatergic vagal afferents (Aδ and C fibres) terminate in the caudal nucleus tractus solitarius (nTS), the primary sensory hub for cough initiation",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "General visceral afferents, which innervate the baroreceptors of the carotid sinus and the arch of the aorta, chemoreceptors of the glomus caroticum, the heart, the bronchi and the abdominal viscera, are contained in the glossopharyngeal and vagus nerves",
+     "species": "human",
+     "page": 707,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The caudal portion of the solitary nucleus constitutes an important centre for the regulation of visceral, cardiovascular and respiratory functions",
+     "species": "human",
+     "page": 707,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "neuronOrder": 2,
+   "cellBodies": "Caudal nucleus tractus solitarius (Tac1-expressing neurons integrate vagal cough-related input)",
+   "courseVia": [
+    "medullary projections to nucleus ambiguus and to the caudal ventral respiratory group"
+   ],
+   "terminatesIn": "Nucleus ambiguus (glottic closure) and caudal ventral respiratory group (expiratory drive)",
+   "laterality": "bilateral coordination of glottic closure and expiratory effort",
+   "decussation": {
+    "present": true,
+    "where": "nTS projections to medullary respiratory/motor circuits coordinate bilateral glottic and expiratory muscle activity"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "PMC13447969",
+     "grade": "A",
+     "quote": "efferently projected to medullary circuits that control glottic closure (nucleus ambiguus) and expiratory drive (caudal ventral respiratory group)",
+     "species": "mouse",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Neurons of the ventral respiratory group are located near the ambiguus nucleus.",
+     "species": "human",
+     "page": 904,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Inspiratory neurons are located in its rostral part; they project to motoneurons of the phrenic nerve at C3/C4 that innervate the diaphragm, the main inspiratory muscle.",
+     "species": "human",
+     "page": 905,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The caudally located expiratory neurons project to spinal interneurons for motoneurons innervating abdominal muscles.",
+     "species": "human",
+     "page": 905,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Glossopharyngeal nerve (CN IX), unilateral",
+   "deficit": "No gag response when the affected side is touched (afferent limb damaged)",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Sivakumar 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "If the glossopharyngeal (IX) nerve is damaged on 1 side, there is no response when touched"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Vagus nerve (CN X), unilateral",
+   "deficit": "Soft palate elevates and deviates toward the affected side regardless of which side is touched (efferent limb damaged)",
+   "side": "ipsilateral (palate deviates toward the lesion)",
+   "evidence": [
+    {
+     "source": "Sivakumar 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "If the vagus (X) nerve is damaged and either side is touched, the soft palate elevates and moves toward the affected side"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Bilateral lower cranial nerve (IX, X, XI, XII) involvement (bulbar palsy)",
+   "deficit": "Absent gag reflex together with dysphagia, drooling, and dysarthria",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Sivakumar 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Bulbar palsy symptoms can include a lack of a gag reflex, difficulty swallowing (dysphagia), excessive drooling, and slurred speech (dysarthria), most commonly caused by a brainstem stroke or tumor"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Glossopharyngeal nerve (CN IX), unilateral",
+   "deficit": "No gag response when the affected side is touched (afferent limb damaged)",
+   "side": "ipsilateral",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Vagus nerve (CN X), unilateral",
+   "deficit": "Soft palate elevates and deviates toward the affected side regardless of which side is touched (efferent limb damaged)",
+   "side": "ipsilateral (palate deviates toward the lesion)",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Bilateral lower cranial nerve (IX, X, XI, XII) involvement (bulbar palsy)",
+   "deficit": "Absent gag reflex together with dysphagia, drooling, and dysarthria",
+   "side": "bilateral",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Motor innervation of the stylopharyngeus muscle in the gag-reflex efferent limb",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json (existing step 3, terminatesIn field)",
+     "grade": "?",
+     "claim": "The pathway groups 'posterior pharyngeal muscles / stylopharyngeus' together as the shared efferent target of the nucleus ambiguus via CN X (vagus).",
+     "quote": "Efferent nerve fibres to the pharyngeal musculature traverse from the nucleus ambiguus through CN X, resulting in the bilateral contraction of the posterior pharyngeal muscles"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states that the stylopharyngeus muscle specifically is innervated by the glossopharyngeal nerve (CN IX) itself, not by the vagus/nucleus ambiguus route used for the other posterior pharyngeal muscles.",
+     "quote": "The glossopharyngeal nerve innervates the stylopharyngeus muscle. Together with the vagus nerve it gives rise to the nervous plexus of the pharynx and the oesophagus."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "Cough-reflex afferents below the vocal folds are classically taught to travel mainly via the internal branch of the superior laryngeal nerve and the recurrent laryngeal nerve (both vagal branches); the opened cough review source described vagal Aδ/C afferents generally but a specific quote naming these individual laryngeal nerve branches was not captured.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "Absence of the gag reflex alone is a poor predictor of aspiration risk in stroke patients (sensitivity around 39% in one cited study), which is a clinically important caveat to the anatomy but is a testing-performance statistic rather than an anatomical claim, included here only as context.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "The specific afferent limb from the jugular (superior) ganglion of CN IX to the ipsilateral nucleus solitarius for pharyngeal touch/gag sensation was not found described in Nieuwenhuys in these terms; the source discusses glossopharyngeal general visceral and gustatory afferents to the solitary tract but not gag-specific mechanosensation from the posterior pharyngeal wall.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "text": "The alternate trigeminal (soft palate) afferent limb for the gag reflex, via the spinal trigeminal nucleus, was not found described in Nieuwenhuys.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "text": "Cough-reflex afferents below the vocal folds are classically taught to travel mainly via the internal branch of the superior laryngeal nerve and the recurrent laryngeal nerve (both vagal branches); Nieuwenhuys was not found to name these individual laryngeal nerve branches, only vagal 'general visceral afferents...contained in the glossopharyngeal and vagus nerves' more broadly (see step 5 evidence).",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "text": "Absence of the gag reflex alone is a poor predictor of aspiration risk in stroke patients, a clinically important testing-performance caveat not addressed by Nieuwenhuys, which covers only anatomy.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "sources": {
+  "NBK554502": {
+   "label": "Sivakumar 2023 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Physiology, Gag Reflex",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK554502"
+  },
+  "PMC13447969": {
+   "label": "Brown 2026 Physiological Reports",
+   "grade": "A",
+   "title": "Physiological mechanisms and therapeutic targets in chronic cough",
+   "doi": "10.14814/phy2.71036",
+   "pmcid": "PMC13447969",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

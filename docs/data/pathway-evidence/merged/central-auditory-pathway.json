@@ -1,0 +1,429 @@
+{
+ "id": "central-auditory-pathway",
+ "name": "Central auditory pathway",
+ "category": "special sense - hearing",
+ "function": "Conveys sound information (frequency, intensity, and interaural timing/intensity cues for spatial localization) from the cochlea to the auditory cortex, with extensive bilateral (binaural) representation and descending efferent modulation of the cochlea.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Spiral ganglion (bipolar neurons) in the cochlea",
+   "courseVia": [
+    "auditory (cochlear) nerve, part of CN VIII"
+   ],
+   "terminatesIn": "cochlear nucleus (dorsal and ventral)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK532311",
+     "grade": "B",
+     "quote": "Ipsilateral auditory nerve Ipsilateral cochlear nucleus Superior olivary complex",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The axons of the type 1 cells of the spiral ganglion bifurcate in the centre of the ventral cochlear nucleus, dividing it into the anterior and posterior ventral nucleus, and distribute in a tonotopical manner to both the dorsal and the ventral cochlear nuclei",
+     "species": "human",
+     "page": 738,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Cochlear nucleus neurons",
+   "courseVia": [
+    "trapezoid body"
+   ],
+   "terminatesIn": "superior olivary complex (predominantly contralateral, with a smaller ipsilateral component)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": true,
+    "where": "trapezoid body - most fibers decussate to the contralateral superior olivary complex"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK532311",
+     "grade": "B",
+     "quote": "The majority of fibers decussate to the contralateral superior olivary complex, while a smaller subset remains on the ipsilateral side.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The trapezoid body crosses in the ventral part of the tegmentum.",
+     "species": "human",
+     "page": 737,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The terminations of the axons of the globular bushy cells in the central portion of the ventral cochlear nucleus envelop the cells of the contralateral nucleus of the trapezoid body with their calyces",
+     "species": "human",
+     "page": 740,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The spherical bushy cells located in the anterior portion of the ventral cochlear nucleus project to the ipsilateral lateral superior olivary nucleus and to the medial superior olivary nucleus of both sides",
+     "species": "human",
+     "page": 738,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Superior olivary complex neurons (medial superior olive/MSO and lateral superior olive/LSO)",
+   "courseVia": [],
+   "terminatesIn": "interaural comparison for sound localization (local processing before ascending further)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK532311",
+     "grade": "B",
+     "quote": "Spatial location is encoded within the superior olivary complex through comparison of auditory inputs from the right and left sides of the head.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK532311",
+     "grade": "B",
+     "quote": "This interaural timing difference enables the superior olivary complex to determine the spatial location of a sound.",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The medial superior olive receives a projection to its lateral half from the ipsilateral cochlear nuclei and to its medial half from the contralateral side.",
+     "species": "human",
+     "page": 739,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The lateral superior olive receives tonotopically arranged projections from the ipsilateral and contralateral cochlear nuclei.",
+     "species": "human",
+     "page": 739,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The highly specific spatial organization of afferents to cells in the medial superior olivary nucleus has to do with its role in interpreting interaural time differences, which are maximal at low frequencies.",
+     "species": "human",
+     "page": 740,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "For the localization of sound, interaural level differences, which are maximal at high frequencies, are encoded in the lateral superior olive",
+     "species": "human",
+     "page": 740,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 3,
+   "cellBodies": "Superior olivary complex neurons",
+   "courseVia": [
+    "lateral lemniscus (bilateral nuclei)"
+   ],
+   "terminatesIn": "inferior colliculus (bilateral)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": "further crossing occurs at the level of the lemniscal/collicular commissures"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK532311",
+     "grade": "B",
+     "quote": "Contralateral and ipsilateral lateral lemniscus nuclei Contralateral and ipsilateral inferior colliculus",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Both superior olivary nuclei project in turn to the dorsal nucleus of the lateral lemniscus and the inferior colliculus; the projection of the medial superior olive is an ipsilateral one, and the projections of the lateral superior olive are bilateral",
+     "species": "human",
+     "page": 738,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 4,
+   "cellBodies": "Inferior colliculus neurons",
+   "courseVia": [
+    "brachium of the inferior colliculus"
+   ],
+   "terminatesIn": "medial geniculate nucleus (MGN) of the thalamus (bilateral)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK532311",
+     "grade": "B",
+     "quote": "Contralateral and ipsilateral inferior colliculus Contralateral and ipsilateral medial geniculate nuclei",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The brachium of the inferior colliculus, a prominent bundle visible on the surface of the midbrain, connects the inferior colliculus with the medial geniculate body",
+     "species": "human",
+     "page": 738,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "neuronOrder": 5,
+   "cellBodies": "Medial geniculate nucleus neurons",
+   "courseVia": [
+    "acoustic (auditory) radiation"
+   ],
+   "terminatesIn": "transverse temporal gyrus (Heschl's gyrus, primary auditory cortex)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK532311",
+     "grade": "B",
+     "quote": "Contralateral and ipsilateral medial geniculate nuclei Contralateral and ipsilateral transverse temporal gyrus (auditory region)",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "NBK532311",
+     "grade": "B",
+     "quote": "Most of the auditory pathway is binaural, receiving input from both right and left auditory systems. This bilateral organization facilitates precise localization of auditory stimuli",
+     "species": "human",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The final link in the auditory system is formed by the auditory radiation through which the medial geniculate body is connected with the superior temporal cortex.",
+     "species": "human",
+     "page": 738,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Passing laterally, this radiation traverses the sublenticular portion of the internal capsule.",
+     "species": "human",
+     "page": 738,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The primary auditory cortex (known as its core area) corresponds roughly to the transverse gyrus of Heschl.",
+     "species": "human",
+     "page": 738,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "neuronOrder": 1,
+   "cellBodies": "Medial olivocochlear (MOC) neurons in the medial superior olivary nuclei; lateral olivocochlear (LOC) neurons in the lateral superior olivary nuclei (descending efferent limb)",
+   "courseVia": [
+    "olivocochlear bundle, via the vestibular nerve into the cochlea"
+   ],
+   "terminatesIn": "outer hair cells (MOC, direct synapse) / dendrites of type I auditory-nerve afferents beneath inner hair cells (LOC)",
+   "laterality": "bilateral (crossed and uncrossed components)",
+   "decussation": {
+    "present": true,
+    "where": "originally described as 'crossed' (from the contralateral superior olivary complex) versus 'uncrossed' efferents (from the ipsilateral superior olivary complex)"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "PMC5879449",
+     "grade": "A",
+     "quote": "Medial-olivocochlear (MOC) efferents originate in the medial superior olivary nuclei and terminate directly upon outer hair cells (OHCs)",
+     "species": "animal",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC5879449",
+     "grade": "A",
+     "quote": "lateral olivocochlear (LOC) efferents originate in the lateral superior olivary nuclei and terminate on the dendrites of type I auditory nerve afferent fibers, beneath inner hair cells (IHCs)",
+     "species": "animal",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "PMC5879449",
+     "grade": "A",
+     "quote": "who originally classified them into crossed and uncrossed types, depending on whether they originated in the contralateral or the ipsilateral SOC, respectively.",
+     "species": "animal",
+     "page": null,
+     "file": "special-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The final link in this descending system is formed by the olivocochlear bundle, which originates from the superior olivary complex.",
+     "species": "human",
+     "page": 745,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The medial system originates from large periolivary neurons located medial to the superior olives (medial nucleus of the trapezoid body).",
+     "species": "human",
+     "page": 745,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Its coarse axons project bilaterally to the cochlea, where they form large synaptic terminals at the base of the outer hair cells",
+     "species": "human",
+     "page": 745,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Most fibres of the lateral olivocochlear system take their origin from small neurons located within the lateral superior olive",
+     "species": "human",
+     "page": 745,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The crossed projection of the small neurons is topically organized; shell cells project diffusely over the entire length of the ipsilateral cochlea",
+     "species": "human",
+     "page": 745,
+     "file": "upgrade-lib-nieuwenhuys-senses.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "central auditory pathway rostral to the cochlear nucleus (unilateral, e.g. lateral lemniscus, inferior colliculus, MGN or auditory cortex)",
+   "deficit": "no clinically significant unilateral hearing loss, because the pathway is bilaterally (binaurally) represented from the level of the superior olivary complex rostrally",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Peterson 2025 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Most of the auditory pathway is binaural, receiving input from both right and left auditory systems. This bilateral organization facilitates precise localization of auditory stimuli"
+    }
+   ],
+   "file": "special-senses.json"
+  },
+  {
+   "site": "auditory nerve / cerebellopontine angle (e.g. acoustic neuroma / vestibular schwannoma)",
+   "deficit": "hearing loss as the initial symptom, with additional deficits (tinnitus, vertigo, nystagmus, facial drooping, decreased corneal reflex, hoarseness, dysphagia, ataxia, dysarthria) as the tumor enlarges",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Peterson 2025 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Additional deficits develop ipsilateral to the lesion as the tumor progresses, including tinnitus, vertigo, nystagmus, facial drooping, decreased corneal reflex, hoarseness, dysphagia, ataxia, and dysarthria."
+    }
+   ],
+   "file": "special-senses.json"
+  }
+ ],
+ "conflicts": [],
+ "unsourced": [
+  {
+   "text": "The acoustic (auditory) radiation travels through the sublenticular portion of the posterior limb of the internal capsule en route from the medial geniculate nucleus to Heschl's gyrus.",
+   "file": "special-senses.json"
+  },
+  {
+   "text": "Unilateral lesions of the central auditory pathway rarely cause frank deafness specifically because each central relay from the superior olivary complex onward receives convergent input from both ears.",
+   "file": "special-senses.json"
+  },
+  {
+   "text": "Nieuwenhuys' Auditory System chapter does not state explicitly why unilateral lesions rostral to the cochlear nucleus rarely cause frank unilateral deafness (i.e. does not use the word 'unilateral' together with 'deafness'); the bilateral/binaural convergence of the pathway from the superior olivary complex rostrally is documented (see step evidence), but the clinical inference about deafness itself was not found stated in the text opened.",
+   "file": "upgrade-lib-nieuwenhuys-senses.json"
+  }
+ ],
+ "sources": {
+  "NBK532311": {
+   "label": "Peterson 2025 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Auditory Pathway",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK532311"
+  },
+  "PMC5879449": {
+   "label": "Lopez-Poveda 2018 Frontiers in Neurology",
+   "grade": "A",
+   "title": "Olivocochlear Efferents in Animals and Humans: From Anatomy to Clinical Relevance",
+   "doi": "10.3389/fneur.2018.00197",
+   "pmcid": "PMC5879449",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

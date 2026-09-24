@@ -1,0 +1,607 @@
+{
+ "id": "ascending-arousal-system-flip-flop",
+ "name": "Ascending arousal system and the sleep-wake flip-flop switch",
+ "category": "diffuse modulatory / arousal",
+ "function": "Maintenance of cortical arousal and wakefulness, and the reciprocal switching between wake- and sleep-promoting circuits",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Pedunculopontine (PPT) and laterodorsal tegmental (LDT) cholinergic nuclei (midbrain/pons)",
+   "courseVia": [
+    "ascending cholinergic projection of the reticular activating system"
+   ],
+   "terminatesIn": "thalamus (and cortex)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "acetylcholine",
+   "evidence": [
+    {
+     "source": "NBK549835",
+     "grade": "B",
+     "quote": "The lateral and dorsal pedunculopontine tegmentum contains primarily cholinergic neurons in neighboring groups within the midbrain and pons.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "NBK549835",
+     "grade": "B",
+     "quote": "Cholinergic neurons project to the thalamus and cortex, promoting desynchronization of the brain,",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Two cell masses, the laterodorsal tegmental (LDT) and pedunculopontine tegmental (PPT) nuclei, both situated in the tegmentum of the caudal midbrain and rostral pons.",
+     "species": "human",
+     "page": 306,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "These nuclei contain numerous neurons that use acetylcholine as a neurotransmitter.",
+     "species": "human",
+     "page": 306,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The dorsal branch, which includes numerous cholinergic fibres from the LDT and PPT, passes to the thalamus itself and the reticular thalamic nucleus",
+     "species": "human",
+     "page": 308,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Fibres ascending from the mesopontine cholinergic (LDT, PPT), noradrenergic (LC), and serotoninergic (DR, CS) cell groups and from other parts of the reticular formation together form an ascending arousal system (AAS).",
+     "species": "human",
+     "page": 308,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "Cholinergic neurons that project to the forebrain are found in the pedunculopontine and laterodorsal tegmental nuclei (PPT and LDT).",
+     "species": "cross-species synthesis (rodent-based model applied to human sleep-wake circuitry)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC5325713",
+     "grade": "A",
+     "quote": "PPT/LDT cholinergic neurons innervate many subcortical regions that influence arousal, but unlike the BF cholinergic neurons, their innervation of the cortex is sparse.",
+     "species": "cross-species synthesis (rodent-based model applied to human sleep-wake circuitry)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 1,
+   "cellBodies": "Locus coeruleus (noradrenergic)",
+   "courseVia": [
+    "ascending noradrenergic projection"
+   ],
+   "terminatesIn": "cortex, thalamus, hypothalamus and basal forebrain",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "norepinephrine",
+   "evidence": [
+    {
+     "source": "NBK549835",
+     "grade": "B",
+     "quote": "The locus coeruleus is located within the upper dorsolateral pons of the brainstem. It is activated directly by orexin from the lateral hypothalamus, and in response, releases norepinephrine.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Noradrenergic neurons clustered in the locus coeruleus (LC), in the rostral pontine tegmentum",
+     "species": "human",
+     "page": 306,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "The monoaminergic cell groups at the mesopontine level which project to the forebrain include the noradrenergic locus coeruleus (LC) and the serotoninergic dorsal and median raphe nuclei",
+     "species": "cross-species synthesis (rodent-based model applied to human sleep-wake circuitry)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 1,
+   "cellBodies": "Dorsal and median raphe nuclei (serotonergic)",
+   "courseVia": [
+    "ascending serotonergic projection"
+   ],
+   "terminatesIn": "forebrain, cortex, basal forebrain",
+   "laterality": "bilateral (midline nuclei)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "serotonin",
+   "evidence": [
+    {
+     "source": "NBK549835",
+     "grade": "B",
+     "quote": "The raphe nuclei are located midline throughout the brainstem within the pons, midbrain, and medulla. The majority of neurons located in the raphe nuclei are serotonergic.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Mesencephalic serotoninergic neurons in the dorsal raphe (DR) and central superior (CS) nuclei.",
+     "species": "human",
+     "page": 306,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The ventral branch of the ascending arousal system, which consists mainly of serotoninergic and noradrenergic fibres, enters the hypothalamus.",
+     "species": "human",
+     "page": 308,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "The monoaminergic cell groups at the mesopontine level which project to the forebrain include the noradrenergic locus coeruleus (LC) and the serotoninergic dorsal and median raphe nuclei",
+     "species": "cross-species synthesis (rodent-based model applied to human sleep-wake circuitry)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 1,
+   "cellBodies": "Tuberomammillary nucleus (TMN, histaminergic, posterior hypothalamus)",
+   "courseVia": [
+    "ascending histaminergic projection"
+   ],
+   "terminatesIn": "cortex and forebrain (wake-promoting)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "histamine",
+   "evidence": [
+    {
+     "source": "PMC13195008",
+     "grade": "A",
+     "quote": "VLPO-related inhibitory output targets multiple wake-promoting nuclei—including the histaminergic tuberomammillary nucleus (TMN), noradrenergic locus coeruleus (LC), serotonergic raphe nuclei, and cholinergic neurons of the basal forebrain—thereby lowering cortical arousal and stabilizing sleep states",
+     "species": "human (review synthesising rodent and human data)",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "A group of histaminergic cells clustered in the tuberomamillary nucleus (TMN) in the posterior hypothalamus",
+     "species": "human",
+     "page": 306,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The TMN neurons contain several other neurotransmitters and modulators in addition to histamine, including GABA, galanin, and substance P",
+     "species": "human",
+     "page": 306,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "Histaminergic neurons in the tuberomammillary nucleus (TMN) have similar projection targets and firing patterns",
+     "species": "cross-species synthesis (rodent-based model applied to human sleep-wake circuitry)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "Axons from these cell groups predominantly target the lateral hypothalamus, basal forebrain and cerebral cortex, where they terminate extensively, particularly in the prefrontal cortex.",
+     "species": "cross-species synthesis (rodent-based model applied to human sleep-wake circuitry)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 1,
+   "cellBodies": "Orexin/hypocretin neurons of the lateral hypothalamus",
+   "courseVia": [
+    "widespread ascending and descending projections"
+   ],
+   "terminatesIn": "locus coeruleus, tuberomammillary nucleus, raphe nuclei, basal forebrain and cortex",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "orexin (hypocretin)",
+   "evidence": [
+    {
+     "source": "NBK549835",
+     "grade": "B",
+     "quote": "these centers are activated by the lateral hypothalamus (LH), which releases the neuropeptide orexin in response to the light hitting the eyes, which then stimulates arousal and the transition from sleep to waking.",
+     "species": "human",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "A group of diffusely arranged neurons in the intermediate region of the hypothalamus characterized by presence of the neuropeptide orexin (also known as hypocretin)",
+     "species": "human",
+     "page": 308,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "noradrenergic and serotoninergic fibres of the ventral branch of the ascending arousal system are joined by histaminergic fibres from the TMN, orexinergic fibres from the PFG, and further rostrally by numerous axons from the cholinergic BT",
+     "species": "human",
+     "page": 308,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "There is evidence that degeneration or agenesis of the orexinergic hypothalamic neurons in humans",
+     "species": "human",
+     "page": 308,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "the lateral hypothalamus contains neurons producing the orexin neuropeptides (orexin-A and –B, also known as hypocretin-1 and 2)",
+     "species": "rat",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "They send axons to the entire cerebral cortex, as well as to the brainstem and basal forebrain, with particularly intense input to the TMN and the LC",
+     "species": "rat",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 6,
+   "neuronOrder": 1,
+   "cellBodies": "Ventrolateral preoptic nucleus (VLPO), GABA/galanin co-expressing and non-galanin GABAergic neurons",
+   "courseVia": [
+    "inhibitory descending/ascending GABAergic projections (flip-flop switch)"
+   ],
+   "terminatesIn": "tuberomammillary nucleus, locus coeruleus, raphe nuclei, basal forebrain and vlPAG/LDT-PPT (reciprocal inhibition of arousal nuclei)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "GABA and galanin",
+   "evidence": [
+    {
+     "source": "PMC13195008",
+     "grade": "A",
+     "quote": "sleep–wake control has classically been conceptualized through the “flip-flop switch” model, in which sleep-promoting preoptic neurons and arousal-promoting systems engage in reciprocal inhibition to permit rapid and stable state transitions",
+     "species": "human (review synthesising rodent and human data)",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "PMC13195008",
+     "grade": "A",
+     "quote": "including GABA/galanin co-expressing neurons, non-galanin GABAergic neurons, and glutamatergic neurons—contribute differentially to non-rapid eye movement (NREM) sleep, rapid eye movement (REM)-associated processes",
+     "species": "rat",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The VLPO sends descending projections to the various components of the ascending arousal system",
+     "species": "rat (VLPO characterised in this passage from Sherin et al.'s rat studies)",
+     "page": 309,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Because the VLPO neurons synthesize GABA and galanin, their descending projections are likely to be inhibitory.",
+     "species": "rat (VLPO characterised in this passage from Sherin et al.'s rat studies)",
+     "page": 309,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Thus a reciprocal inhibitory interaction likely exists between the sleep-promoting VLPO and the monoaminergic wake-promoting centres in the caudal hypothalamus and brain stem.",
+     "species": "human (general synthesis, based partly on rodent tracing data)",
+     "page": 309,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "When VLPO neurons fire rapidly during sleep, they would inhibit the monoaminergic cell groups, thus disinhibiting and reinforcing their own firing.",
+     "species": "cross-species (Saper et al. model, quoted verbatim by Nieuwenhuys)",
+     "page": 309,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Similarly, when monoamine neurons fire at a high rate during wakefulness, they would inhibit the VLPO, thereby disinhibiting their own firing",
+     "species": "cross-species (Saper et al. model, quoted verbatim by Nieuwenhuys)",
+     "page": 309,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "VLPO neurons, containing the inhibitory neurotransmitters GABA and galanin, innervate other components of the ascending arousal system as well, including the LC, raphe system, periaqueductal gray matter, parabrachial nucleus, and lateral hypothalamic area",
+     "species": "rat",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "We propose that this mutually antagonistic relationship can give rise to behavior similar to that seen with a flip-flop switch",
+     "species": "cross-species synthesis (rodent-based model applied to human sleep-wake circuitry)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC5325713",
+     "grade": "A",
+     "quote": "VLPO and MnPO sleep-active neurons are GABAergic, and VLPO neurons also produce the neuropeptide galanin.",
+     "species": "rat",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC5325713",
+     "grade": "A",
+     "quote": "One model proposes that this mutual inhibition generates patterns of activity akin to an electrical flip-flop switch",
+     "species": "cross-species synthesis (rodent-based model applied to human sleep-wake circuitry)",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  },
+  {
+   "order": 7,
+   "neuronOrder": 1,
+   "cellBodies": "Ventrolateral periaqueductal gray (vlPAG) GABAergic REM-off neurons",
+   "courseVia": [
+    "projections to pontine LDT/PPT cholinergic REM-promoting circuitry"
+   ],
+   "terminatesIn": "laterodorsal tegmental (LDT) and pedunculopontine tegmental (PPT) nuclei",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "GABA (vlPAG output); dopaminergic neurons also present in vlPAG per brief",
+   "evidence": [
+    {
+     "source": "PMC13195008",
+     "grade": "A",
+     "quote": "inhibition of vlPAG GABAergic REM-off neurons disinhibits pontine REM-promoting circuitry, thereby facilitating REM expression",
+     "species": "rat",
+     "page": null,
+     "file": "limbic-arousal-autonomic.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "However, at onset of REM sleep, noradrenergic and serotoninergic neurons are inhibited by a local GABAergic element, which leads to disinhibition of the cholinergic neurons.",
+     "species": "human (general model synthesis)",
+     "page": 309,
+     "file": "upgrade-lib-nieuwenhuys-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "GABAergic neurons in the ventrolateral periaqueductal gray matter and the adjacent lateral pontine tegmentum (vlPAG/LPT; shown in gold) fire during non-REM states to inhibit entry into REM sleep.",
+     "species": "rat",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    },
+    {
+     "source": "PMC3026325",
+     "grade": "A",
+     "quote": "Injections of retrograde tracers into the SLD identified major GABAergic inputs from the ventrolateral periaqueductal gray matter (vlPAG) and adjacent lateral pontine tegmentum (LPT)",
+     "species": "rat",
+     "page": null,
+     "file": "upgrade-limbic.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Bilateral paramedian midbrain/pontine tegmentum and ascending reticular activating system",
+   "deficit": "Coma: sustained unresponsiveness with eyes closed, unarousable to vigorous stimulation",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Benghanem 2020 Critical Care",
+     "grade": "A",
+     "quote": "Acute impairments of consciousness include coma which is defined as a “state of unresponsiveness in which the patient lies with eyes closed and cannot be aroused to respond appropriately to stimuli even with vigorous stimulation”"
+    }
+   ],
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "site": "Bilateral paramedian midbrain/pontine tegmentum and ascending reticular activating system",
+   "deficit": "Coma: sustained unresponsiveness with eyes closed, unarousable to vigorous stimulation",
+   "side": "bilateral",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "site": "Bilateral paramedian midbrain/pontine tegmentum and ascending reticular activating system",
+   "deficit": "Coma: sustained unresponsiveness with eyes closed, unarousable to vigorous stimulation",
+   "side": "bilateral",
+   "evidence": [],
+   "file": "upgrade-limbic.json"
+  },
+  {
+   "site": "Basal forebrain (large lesions)",
+   "deficit": "EEG slow waves and coma",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Scammell 2017 Neuron",
+     "grade": "A",
+     "quote": "large BF lesions can produce EEG slow waves and even coma"
+    }
+   ],
+   "file": "upgrade-limbic.json"
+  },
+  {
+   "site": "Parabrachial nucleus (PB)",
+   "deficit": "Coma or persistent vegetative state",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Scammell 2017 Neuron",
+     "grade": "A",
+     "quote": "injury to the PB region produces coma or\npersistent vegetative state in both animals and humans"
+    }
+   ],
+   "file": "upgrade-limbic.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Identity of the GABAergic nucleus responsible for suppressing the mesopontine cholinergic (LDT/PPT) REM-generating system outside of REM sleep",
+   "positions": [
+    {
+     "source": "S10 (original batch)",
+     "grade": "?",
+     "claim": "Original batch (Saper-review-derived) attributes tonic REM-off inhibition specifically to GABAergic neurons of the ventrolateral periaqueductal gray matter and adjacent lateral pontine tegmentum (vlPAG/LPT)",
+     "quote": "GABAergic neurons in the ventrolateral periaqueductal gray matter and the adjacent lateral pontine tegmentum (vlPAG/LPT; shown in gold) fire during non-REM states to inhibit entry into REM sleep."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys instead attributes tonic REM-off suppression of LDT/PPT to the noradrenergic locus coeruleus and serotoninergic dorsal/central-superior raphe cells themselves, with REM onset triggered by an unspecified 'local GABAergic element' inhibiting those monoaminergic cells, rather than naming the vlPAG as the GABAergic REM-off nucleus",
+     "quote": "There is evidence that normally the noradrenergic LC and serotoninergic DR and CS are tonically active and inhibit the mesopontine cholinergic system."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "issue": "Downstream target of vlPAG/LPT GABAergic REM-off neurons: LDT/PPT cholinergic nuclei versus the sublaterodorsal nucleus (SLD)",
+   "positions": [
+    {
+     "source": "Saper 2010 Neuron",
+     "grade": "A",
+     "claim": "vlPAG/LPT GABAergic REM-off neurons inhibit REM sleep by projecting to the sublaterodorsal nucleus (SLD), which forms the mutually-inhibitory core REM switch with the vlPAG/LPT, rather than projecting directly to the LDT/PPT cholinergic cell groups named in the existing step",
+     "quote": "Injections of retrograde tracers into the SLD identified major GABAergic inputs from the ventrolateral periaqueductal gray matter (vlPAG) and adjacent lateral pontine tegmentum (LPT)"
+    }
+   ],
+   "file": "upgrade-limbic.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "Dopaminergic neurons of the ventrolateral periaqueductal gray (vlPAG) are described in current sleep literature as an additional wake-promoting monoaminergic group; the vlPAG dopamine cell group's projections to hypothalamus/basal forebrain specifically were not found described with a quotable, openable source in this session.",
+   "file": "limbic-arousal-autonomic.json"
+  },
+  {
+   "text": "Dopaminergic neurons of the ventrolateral periaqueductal gray (vlPAG) as an additional wake-promoting monoaminergic group, and their specific projections to hypothalamus/basal forebrain, were not found described in the opened Nieuwenhuys hypothalamus (ch10) or reticular-formation (ch22) chapters; the vlPAG's role as a discrete GABAergic REM-off nucleus, named as such, was likewise not found (see conflict above).",
+   "file": "upgrade-lib-nieuwenhuys-limbic.json"
+  },
+  {
+   "text": "Dopaminergic neurons of the ventrolateral periaqueductal gray (vlPAG) as an additional wake-promoting monoaminergic group, and their specific projections to hypothalamus/basal forebrain, were not found described with a quotable statement in S4 or S5 in this session.",
+   "file": "upgrade-limbic.json"
+  },
+  {
+   "text": "The generic 'bilateral paramedian midbrain/pontine tegmentum' coma lesion claim from the original batch was not itself re-confirmed verbatim in S4/S5, although both sources support closely related coma-producing lesions of the basal forebrain and parabrachial nucleus (see new lesion entries above).",
+   "file": "upgrade-limbic.json"
+  }
+ ],
+ "sources": {
+  "NBK549835": {
+   "label": "Arguinchona 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Reticular Activating System",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK549835"
+  },
+  "PMC13195008": {
+   "label": "Wang 2026 Frontiers in Neuroscience",
+   "grade": "A",
+   "title": "The ventrolateral preoptic nucleus: a multisystem integrator in sleep-wake regulation",
+   "doi": "10.3389/fnins.2026.1773131",
+   "pmcid": "PMC13195008",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  },
+  "PMC3026325": {
+   "label": "Saper 2010 Neuron",
+   "grade": "A",
+   "title": "Sleep State Switching",
+   "doi": "10.1016/j.neuron.2010.11.032",
+   "pmcid": "PMC3026325",
+   "isbn": null,
+   "nbk": ""
+  },
+  "PMC5325713": {
+   "label": "Scammell 2017 Neuron",
+   "grade": "A",
+   "title": "Neural Circuitry of Wakefulness and Sleep",
+   "doi": "10.1016/j.neuron.2017.01.014",
+   "pmcid": "PMC5325713",
+   "isbn": null,
+   "nbk": ""
+  }
+ }
+}

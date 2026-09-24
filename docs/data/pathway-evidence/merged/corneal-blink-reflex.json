@@ -1,0 +1,350 @@
+{
+ "id": "corneal-blink-reflex",
+ "name": "Corneal (blink) reflex",
+ "category": "Cranial nerve / brainstem reflex",
+ "function": "Protective bilateral eyelid closure (blink) triggered by mechanical or noxious stimulation of the cornea.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Trigeminal ganglion (pseudounipolar neurons of the ophthalmic division, V1)",
+   "courseVia": [
+    "long ciliary branches of the nasociliary nerve",
+    "ophthalmic division of the trigeminal nerve (CN V1)"
+   ],
+   "terminatesIn": "Principal (chief) sensory nucleus of CN V per S10, OR spinal trigeminal nucleus per S9 (see conflicts)",
+   "laterality": "ipsilateral (afferent limb from the stimulated cornea)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK534247",
+     "grade": "B",
+     "quote": "Sensory information is transmitted via the ophthalmic nerve to synapse within the spinal trigeminal nucleus in the brainstem",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC12237997",
+     "grade": "A",
+     "quote": "an afferent impulse from either free nerve endings or mechanoreceptors within the corneal epithelium is sent by way of nasociliary nerve and its long ciliary nerve branches of the ophthalmic division of the trigeminal nerve (CN V) to the principal sensory nucleus",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC494041",
+     "grade": "A",
+     "quote": "the neurones of the first order responsible for the bilateral late reflex on unilateral stimulation terminate in the ipsilateral spinal nucleus of the trigeminal nerve without significant crossing over to the same structure on the other side.",
+     "species": "human",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Its afferent pathway consists of sensory fibres innervating the cornea, that terminate in the nucleus of the spinal tract of the trigeminal nerve",
+     "species": "human",
+     "page": 865,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The ipsilateral, short latency orbicularis oculi reflex (R1 component) synapses in the nucleus of the spinal tract of the trigeminal nerve.",
+     "species": "human",
+     "page": 865,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Second-order neurons in the spinal trigeminal nucleus (S9) / principal sensory nucleus (S10)",
+   "courseVia": [
+    "bilateral projection to the facial motor nuclei"
+   ],
+   "terminatesIn": "Facial motor nucleus, both sides",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": true,
+    "where": "second-order trigeminal interneurons project bilaterally to the facial motor nuclei"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK534247",
+     "grade": "B",
+     "quote": "Neurons in the spinal trigeminal nucleus project to the facial nucleus, forming synapses with the facial nerve",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC12237997",
+     "grade": "A",
+     "quote": "Axons then project bilaterally to facial motor nucleus, which initiating the efferent motor response via the temporal and zygomatic branches of the facial nerve (CN VII), leading to the contraction of orbicularis oculi muscles and coordinated eye closure (blink)",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The early, ipsilateral (R1) component of the blink reflex is relayed by interneurons located in the principal and spinal trigeminal nuclei",
+     "species": "human",
+     "page": 866,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The late, bilateral (R2) component of the blink reflex is relayed by interneurons in the pontine and medullary blink centres",
+     "species": "human",
+     "page": 866,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The medullary blink centre receives trigeminal input via multi-synaptic pathways relaying in the tectum and the reticular formation.",
+     "species": "human",
+     "page": 867,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The pontine blink centre receives a projection from the rubrobulbar and spinal tract. This connection is used by the cerebellum in conditioning the blink reflex",
+     "species": "human",
+     "page": 867,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Facial motor nucleus (both sides)",
+   "courseVia": [
+    "facial nerve (CN VII), encircling the abducens nucleus, exiting at the stylomastoid foramen"
+   ],
+   "terminatesIn": "Orbicularis oculi muscle, both eyes",
+   "laterality": "bilateral (early-stage response is predominantly ipsilateral via A-beta fibers; late-stage response is bilateral)",
+   "decussation": {
+    "present": false,
+    "where": "efferent limb itself does not cross further; bilaterality arises from the bilateral second-order projection above"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK534247",
+     "grade": "B",
+     "quote": "The late-stage reflex activates facial nerves bilaterally, producing simultaneous blinking of both eyes",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The blink reflex protects the eyeball by closing the eyelids through contraction of the orbicularis oculi muscle.",
+     "species": "human",
+     "page": 865,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The dorsal subnucleus innervates the frontalis and orbicularis oculi muscles.",
+     "species": "human",
+     "page": 865,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Trigeminal nerve (peripheral, afferent limb)",
+   "deficit": "Ipsilateral early-stage blink deficit on stimulation of the affected side (sensory loss); central lesions instead cause bilateral deficits",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Peterson 2026 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Peripheral lesions produce ipsilateral reflex deficits, whereas central lesions result in bilateral deficits"
+    },
+    {
+     "source": "Peterson 2026 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "In stage-specific testing, lesions of the trigeminal nerve typically manifest as ipsilateral deficits in the early stage, whereas lesions of the facial nerve produce ipsilateral deficits in both the early and late stages"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Lateral medulla / spinal trigeminal nucleus (Wallenberg syndrome, PICA occlusion)",
+   "deficit": "Absent late-stage blink response bilaterally upon corneal stimulation of the affected side, because the spinal trigeminal nucleus relaying the reflex is disrupted",
+   "side": "bilateral deficit upon stimulation of the affected (ipsilateral) side",
+   "evidence": [
+    {
+     "source": "Peterson 2026 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "A common lesion that alters the blink response is Wallenberg syndrome, caused by a lateral medullary infarct"
+    },
+    {
+     "source": "Peterson 2026 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Relaying the blink reflex depends on the spinal trigeminal nucleus located in the lateral medulla"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Lateral medulla / spinal trigeminal nucleus (Wallenberg syndrome, PICA occlusion)",
+   "deficit": "Absent late-stage blink response bilaterally upon corneal stimulation of the affected side, because the spinal trigeminal nucleus relaying the reflex is disrupted",
+   "side": "bilateral deficit upon stimulation of the affected (ipsilateral) side",
+   "evidence": [
+    {
+     "source": "Kimura 1972 Journal of Neurology, Neurosurgery, and Psychiatry",
+     "grade": "A",
+     "quote": "An afferent delay of the late reflex on the side of the lesion in the presence of a normal early reflex was seen in all but two cases."
+    },
+    {
+     "source": "Kimura 1972 Journal of Neurology, Neurosurgery, and Psychiatry",
+     "grade": "A",
+     "quote": "An afferent delay of the late reflex in the presence of a normal or nearly normal early reflex is consistent with a lateral medullary lesion implicating the spinal tract and nucleus."
+    }
+   ],
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "site": "Trigeminal nerve (peripheral, afferent limb)",
+   "deficit": "Ipsilateral early-stage blink deficit on stimulation of the affected side (sensory loss); central lesions instead cause bilateral deficits",
+   "side": "ipsilateral",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Lateral medulla / spinal trigeminal nucleus (Wallenberg syndrome, PICA occlusion)",
+   "deficit": "Absent late-stage blink response bilaterally upon corneal stimulation of the affected side, because the spinal trigeminal nucleus relaying the reflex is disrupted",
+   "side": "bilateral deficit upon stimulation of the affected (ipsilateral) side",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Whether corneal reflex afferents relay in the principal (chief) sensory trigeminal nucleus or the spinal trigeminal nucleus",
+   "positions": [
+    {
+     "source": "Peterson 2026 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "claim": "Corneal sensory information synapses directly in the spinal trigeminal nucleus in the brainstem, and this nucleus (located in the lateral medulla) is what relays the reflex.",
+     "quote": "Sensory information is transmitted via the ophthalmic nerve to synapse within the spinal trigeminal nucleus in the brainstem"
+    },
+    {
+     "source": "Lee 2025 Frontiers in Surgery",
+     "grade": "A",
+     "claim": "The corneal afferent impulse is sent via the nasociliary/long ciliary nerves of CN V1 to the principal sensory nucleus (aka chief sensory nucleus) of CN V, located in the rostral pons, which then projects bilaterally to the facial motor nucleus.",
+     "quote": "an afferent impulse from either free nerve endings or mechanoreceptors within the corneal epithelium is sent by way of nasociliary nerve and its long ciliary nerve branches of the ophthalmic division of the trigeminal nerve (CN V) to the principal sensory nucleus"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "issue": "Whether corneal reflex afferents relay in the principal (chief) sensory trigeminal nucleus or the spinal trigeminal nucleus (conflict already present in the original brainstem-reflexes.json between its S9 and S10)",
+   "positions": [
+    {
+     "source": "Kimura 1972 Journal of Neurology, Neurosurgery, and Psychiatry",
+     "grade": "A",
+     "claim": "In nine patients with lateral medullary (Wallenberg) lesions, the late (R2) blink component was selectively delayed on the lesioned side, and the first-order neurons carrying the bilateral late reflex on unilateral stimulation terminate in the ipsilateral spinal trigeminal nucleus without significant crossing to the other side, directly implicating the spinal trigeminal nucleus/tract as the relay for the late component.",
+     "quote": "An afferent delay of the late reflex in the presence of a normal or nearly normal early reflex is consistent with a lateral medullary lesion implicating the spinal tract and nucleus."
+    }
+   ],
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "issue": "Whether corneal reflex afferents relay in the principal (chief) sensory trigeminal nucleus or the spinal trigeminal nucleus",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json#S9",
+     "grade": "?",
+     "claim": "Corneal sensory information synapses directly in the spinal trigeminal nucleus in the brainstem (StatPearls S9).",
+     "quote": "Sensory information is transmitted via the ophthalmic nerve to synapse within the spinal trigeminal nucleus in the brainstem"
+    },
+    {
+     "source": "brainstem-reflexes.json#S10",
+     "grade": "?",
+     "claim": "The corneal afferent impulse is sent via the nasociliary/long ciliary nerves of CN V1 to the principal sensory nucleus of CN V, in the rostral pons (StatPearls S10).",
+     "quote": "an afferent impulse from either free nerve endings or mechanoreceptors within the corneal epithelium is sent by way of nasociliary nerve and its long ciliary nerve branches of the ophthalmic division of the trigeminal nerve (CN V) to the principal sensory nucleus"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states the corneal afferent pathway terminates in the nucleus of the spinal tract of the trigeminal nerve, agreeing with S9; however, the early (R1) blink component is relayed by interneurons located in BOTH the principal and spinal trigeminal nuclei together, not the spinal nucleus alone.",
+     "quote": "Its afferent pathway consists of sensory fibres innervating the cornea, that terminate in the nucleus of the spinal tract of the trigeminal nerve"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "A commonly taught reconciliation of the above conflict is that the fast, largely ipsilateral early blink component is mediated via an oligosynaptic route through the principal sensory nucleus, while the slower, bilateral late component is mediated via a polysynaptic route through the spinal trigeminal nucleus; this reconciling explanation was not itself found stated verbatim in either opened source and is offered here only as an unsourced note, not a citable claim.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "S4's full body text (definitions of R1 vs R2 latency values, subject numbers beyond the abstract, and exact lesion localization details) is present only as scanned page images on the PMC HTML page with no OCR; only the abstract text could be opened and quoted verbatim in this session.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "A commonly taught reconciliation is that the fast, largely ipsilateral early (R1) blink component is mediated via an oligosynaptic route through the principal sensory nucleus, while the slower, bilateral late (R2) component is mediated via a polysynaptic route through the spinal trigeminal nucleus. Nieuwenhuys instead describes the R1 component as relayed by interneurons in 'the principal and spinal trigeminal nuclei' jointly and the R2 component as relayed by separate 'pontine and medullary blink centres', a somewhat different scheme than the commonly taught reconciliation.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "sources": {
+  "NBK534247": {
+   "label": "Peterson 2026 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Corneal Reflex",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK534247"
+  },
+  "PMC12237997": {
+   "label": "Lee 2025 Frontiers in Surgery",
+   "grade": "A",
+   "title": "Intra-operative blink reflex neurophysiological monitoring in posterior skull base neurosurgery",
+   "doi": "10.3389/fsurg.2025.1485459",
+   "pmcid": "PMC12237997",
+   "isbn": null,
+   "nbk": ""
+  },
+  "PMC494041": {
+   "label": "Kimura 1972 Journal of Neurology, Neurosurgery, and Psychiatry",
+   "grade": "A",
+   "title": "Orbicularis oculi reflex in the Wallenberg syndrome: alteration of the late reflex by lesions of the spinal tract and nucleus of the trigeminal nerve",
+   "doi": "10.1136/jnnp.35.2.228",
+   "pmcid": "PMC494041",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

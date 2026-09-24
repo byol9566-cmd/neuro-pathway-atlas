@@ -1,0 +1,410 @@
+{
+ "id": "horizontal-vestibulo-ocular-reflex",
+ "name": "Horizontal vestibulo-ocular reflex (VOR)",
+ "category": "Brainstem reflex / oculomotor",
+ "function": "Generates conjugate eye movements equal and opposite to horizontal head rotation to stabilize the retinal image (gaze stabilization) during head motion.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Bipolar (primary afferent) neurons of the Scarpa (vestibular) ganglion, receiving input from horizontal semicircular canal hair cells",
+   "courseVia": [
+    "vestibular division of cranial nerve VIII"
+   ],
+   "terminatesIn": "Vestibular nuclear complex (superior and medial vestibular nuclei) at the pontomedullary junction",
+   "laterality": "ipsilateral (afferents and first synapse are on the side of the stimulated canal)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "Bipolar neurons of the Scarpa ganglion convey afferent signals from the otolith organs and semicircular canals through cranial nerve VIII (vestibulocochlear nerve) to the brainstem at the pontomedullary junction",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK558926",
+     "grade": "B",
+     "quote": "These send signals through the vestibular nerves to Scarpa's ganglion and thence to the ipsilateral vestibular nucleus",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC4000483",
+     "grade": "A",
+     "quote": "Vestibular signals from the labyrinth of the inner ear are transferred to the vestibular nuclei (VN) via the vestibular afferents of the VIII nerve.",
+     "species": "monkey/primate (review synthesis, mostly macaque electrophysiology)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The first-order elements are bipolar neurons, the somata of which constitute the vestibular ganglion, located in the internal auditory meatus.",
+     "species": "human",
+     "page": 716,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The central processes of the bipolar cells constitute the vestibular part of the eighth cranial nerve, which enters the brain stem at the level of the pontomedullary junction.",
+     "species": "human",
+     "page": 716,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "A lateral rotation of the head excites the ipsilateral horizontal canal by a displacement of the endolymphe in the direction of the ampulla.",
+     "species": "human",
+     "page": 729,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Superior and medial vestibular nuclei (second-order/excitatory limb)",
+   "courseVia": [
+    "crossing fibers at the pontine/medullary midline",
+    "medial longitudinal fasciculus (ascending)"
+   ],
+   "terminatesIn": "Contralateral abducens nucleus",
+   "laterality": "contralateral (excitatory projection crosses to the abducens nucleus opposite the stimulated ear)",
+   "decussation": {
+    "present": true,
+    "where": "at the level of the vestibular nuclei / pons, crossing to the contralateral abducens nucleus"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "Activation of the superior and medial vestibular nuclei during head rotation generates impulses that cross to the contralateral abducens nucleus, stimulating the lateral rectus muscle, while interneuronal projections via the MLF activate the ipsilateral oculomotor nucleus to contract the medial rectus",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "During head rotation, such as to the left, vestibular impulses are transmitted from the left semicircular canal to the left vestibular nuclei. These nuclei send excitatory projections to the right abducens nucleus, activating the right lateral rectus muscle",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK545297",
+     "grade": "B",
+     "quote": "Using first-order sensory neurons of cranial nerve V, most of the semicircular canal inputs synapse at the superior and medial nuclei",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC4000483",
+     "grade": "A",
+     "quote": "The most direct pathway that mediates the VOR comprises a three neuron arc: vestibular nerve afferents project to central neurons in the vestibular nuclei (i.e., VOR neurons), which in turn project to extraocular motoneurons.",
+     "species": "monkey/primate (review synthesis, mostly macaque electrophysiology)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "This reflex stabilizes the retinal image by producing compensatory conjugate eye movements for head movements perceived by the labyrinths.",
+     "species": "human",
+     "page": 729,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Horizontal canal fibres terminate on two groups of excitatory neurons located in the MVmc, projecting to the contralateral abducens nucleus and the ipsilateral medial rectus pool of motoneurons in the nucleus of the oculomotor nerve",
+     "species": "human",
+     "page": 729,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Abducens internuclear neurons (in the contralateral abducens nucleus)",
+   "courseVia": [
+    "contralateral medial longitudinal fasciculus (crossing back toward the side of head rotation)"
+   ],
+   "terminatesIn": "Oculomotor medial rectus subnucleus (ipsilateral to the original stimulated ear/side of head turn)",
+   "laterality": "contralateral to the abducens nucleus of origin, i.e. back to the side of the original head rotation",
+   "decussation": {
+    "present": true,
+    "where": "abducens internuclear neurons cross within the pons to ascend in the contralateral MLF"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK557380",
+     "grade": "B",
+     "quote": "Concurrently, interneurons ascend in the MLF to stimulate the left oculomotor nucleus, coordinating conjugate eye movement opposite to the head turn",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The excitatory pathway to the ipsilateral medial rectus motoneurons ascends in the ascending tract of Deiters, located in the lateral wing of the MLF",
+     "species": "human",
+     "page": 729,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "It is duplicated by an internuclear pathway, which arises from the contralateral abducens nucleus, and then recrosses to ascend in the MLF.",
+     "species": "human",
+     "page": 729,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 2,
+   "cellBodies": "Vestibular nuclei / interstitial nucleus of Cajal region (ascending pathways carrying vestibulo-ocular signals)",
+   "courseVia": [
+    "interstitial nucleus of Cajal",
+    "ventral tegmental tract",
+    "medial longitudinal fasciculus",
+    "ascending tract of Deiters",
+    "brachium conjunctivum"
+   ],
+   "terminatesIn": "Nucleus of the extraocular-muscle nerve contralateral to the stimulated side (excitatory), with inhibition of the nucleus controlling the ipsilateral antagonist muscle",
+   "laterality": "contralateral excitation / ipsilateral inhibition (push-pull organization)",
+   "decussation": {
+    "present": true,
+    "where": "multiple ascending vestibulo-ocular tracts (MLF, ascending tract of Deiters, ventral tegmental tract, brachium conjunctivum) cross in the brainstem"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK558926",
+     "grade": "B",
+     "quote": "via the interstitial nucleus of Cajal, the ventral tegmental tract, the medial longitudinal fasciculus, the ascending tract of Deiters, and the brachium conjunctivum to ultimately stimulate the nucleus of the nerve controlling the relevant extraocular muscle contralaterally",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK558926",
+     "grade": "B",
+     "quote": "and inhibit the nucleus of the nerve controlling the opposing extraocular muscle on the side ipsilateral to the stimulation",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The corresponding inhibitory pathway takes its origin from the MVmc and terminates in the ipsilateral abducens nucleus.",
+     "species": "human",
+     "page": 729,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "This inhibitory pathway, like some of the inhibitory vestibulospinal pathways, uses glycine as a neurotransmitter; the ascending inhibitory pathways to the fourth and third nuclei are GABAergic",
+     "species": "human",
+     "page": 729,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The lateral vestibulospinal tract takes its origin from the lateral vestibular nucleus.",
+     "species": "human",
+     "page": 725,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Medial longitudinal fasciculus (unilateral)",
+   "deficit": "Internuclear ophthalmoplegia: impaired adduction of the ipsilateral eye with abducting nystagmus of the contralateral eye during horizontal gaze/VOR",
+   "side": "ipsilateral adduction deficit, contralateral nystagmus",
+   "evidence": [
+    {
+     "source": "Jefferies 2025 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "The characteristic manifestation of internuclear ophthalmoplegia is impaired adduction of the ipsilateral eye, accompanied by abducting nystagmus of the contralateral eye during horizontal gaze"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Abducens nucleus (as opposed to the abducens nerve fascicle)",
+   "deficit": "Horizontal gaze palsy of both eyes toward the side of the lesion, because interneuronal fibers to the contralateral oculomotor nucleus are also interrupted",
+   "side": "bilateral gaze deficit toward the side of the lesion",
+   "evidence": [
+    {
+     "source": "Jefferies 2025 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Lesions affecting the abducens nucleus, rather than the nerve itself, produce a horizontal gaze palsy involving both eyes toward the side of the lesion"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Bilateral VOR pathway (peripheral vestibular apparatus or central vestibulo-ocular circuitry)",
+   "deficit": "Oscillopsia: the visual scene appears to move with head movement because retinal image stabilization fails",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Somisetty 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Oscillopsia results in blurred vision when the head is in motion and objects appear to jiggle and bounce since they do not stay fixed at one point in the retina"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Medial longitudinal fasciculus (unilateral)",
+   "deficit": "Internuclear ophthalmoplegia: impaired adduction of the ipsilateral eye with abducting nystagmus of the contralateral eye during horizontal gaze/VOR",
+   "side": "ipsilateral adduction deficit, contralateral nystagmus",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Abducens nucleus (as opposed to the abducens nerve fascicle)",
+   "deficit": "Horizontal gaze palsy of both eyes toward the side of the lesion, because interneuronal fibers to the contralateral oculomotor nucleus are also interrupted",
+   "side": "bilateral gaze deficit toward the side of the lesion",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Bilateral VOR pathway (peripheral vestibular apparatus or central vestibulo-ocular circuitry)",
+   "deficit": "Oscillopsia: the visual scene appears to move with head movement because retinal image stabilization fails",
+   "side": "bilateral",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Which vestibular nucleus/nuclei drive the horizontal VOR three-neuron arc",
+   "positions": [
+    {
+     "source": "Jefferies 2025 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "claim": "The superior and medial vestibular nuclei specifically receive most horizontal semicircular canal input and relay it (crossed) to the contralateral abducens nucleus and (via the MLF) to the ipsilateral oculomotor nucleus.",
+     "quote": "Activation of the superior and medial vestibular nuclei during head rotation generates impulses that cross to the contralateral abducens nucleus, stimulating the lateral rectus muscle, while interneuronal projections via the MLF activate the ipsilateral oculomotor nucleus to contract the medial rectus"
+    },
+    {
+     "source": "Dougherty 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "claim": "Semicircular-canal VOR signals are described only as coming from 'the ipsilateral vestibular nucleus' generically, and the ascending tract of Deiters (classically associated with the lateral vestibular/Deiters' nucleus) is listed as one of several tracts carrying vestibulo-ocular signals regardless of which vestibular organ was stimulated, without singling out the superior/medial nuclei for the horizontal canal component.",
+     "quote": "via the interstitial nucleus of Cajal, the ventral tegmental tract, the medial longitudinal fasciculus, the ascending tract of Deiters, and the brachium conjunctivum to ultimately stimulate the nucleus of the nerve controlling the relevant extraocular muscle contralaterally"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "issue": "Precise vestibular-nucleus subdivision relaying horizontal semicircular canal signals to the abducens/oculomotor nuclei",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json#S5/S7",
+     "grade": "?",
+     "claim": "StatPearls (S5) attributes the relay to the superior and medial vestibular nuclei generally; StatPearls (S7) attributes it only to 'the ipsilateral vestibular nucleus' generically.",
+     "quote": "Activation of the superior and medial vestibular nuclei during head rotation generates impulses that cross to the contralateral abducens nucleus"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys localizes the horizontal-canal VOR relay specifically to two groups of excitatory neurons within the magnocellular medial vestibular nucleus (MVmc), a more precise sub-nuclear locus than either StatPearls position.",
+     "quote": "Horizontal canal fibres terminate on two groups of excitatory neurons located in the MVmc, projecting to the contralateral abducens nucleus and the ipsilateral medial rectus pool of motoneurons in the nucleus of the oculomotor nerve"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The horizontal VOR normally has a gain close to 1.0 (compensatory eye velocity approximately equal and opposite to head velocity); this quantitative detail was not found stated in the opened sources.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "The lateral vestibular nucleus (Deiters' nucleus) is classically taught to give rise to the lateral vestibulospinal tract rather than the horizontal canal VOR pathway itself; the opened sources did not explicitly separate the ascending tract of Deiters' canal-vs-otolith contributions.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "S3 (Cullen 2012) states the VOR is mediated by a 'three neuron arc' from vestibular afferents, through vestibular-nucleus (VOR) neurons, to extraocular motoneurons, but in the text opened it does not explicitly name the medial longitudinal fasciculus, the abducens nucleus, or the oculomotor nucleus, nor does it state that the second-order projection specifically crosses the midline to the contralateral abducens nucleus; that anatomical specificity is not confirmed by this particular source and remains sourced only from the existing StatPearls sources (S5-S7) in brainstem-reflexes.json.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "The horizontal VOR normally has a gain close to 1.0 (compensatory eye velocity approximately equal and opposite to head velocity); this quantitative detail was not found stated in Nieuwenhuys.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "text": "Nieuwenhuys uses the term 'vestibular ganglion' rather than the eponym 'Scarpa ganglion' for the first-order bipolar neurons; the eponym itself was not found in the opened chapter.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "sources": {
+  "NBK557380": {
+   "label": "Jefferies 2025 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Vestibular Pathways",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK557380"
+  },
+  "NBK558926": {
+   "label": "Dougherty 2023 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Vestibular Dysfunction",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK558926"
+  },
+  "NBK545297": {
+   "label": "Somisetty 2023 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Neuroanatomy, Vestibulo-ocular Reflex",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK545297"
+  },
+  "PMC4000483": {
+   "label": "Cullen 2012 Trends in Neurosciences",
+   "grade": "A",
+   "title": "The vestibular system: multimodal integration and encoding of self-motion for motor control",
+   "doi": "10.1016/j.tins.2012.04.003",
+   "pmcid": "PMC4000483",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

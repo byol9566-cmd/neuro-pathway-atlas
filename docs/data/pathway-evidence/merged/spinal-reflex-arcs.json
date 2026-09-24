@@ -1,0 +1,433 @@
+{
+ "id": "spinal-reflex-arcs",
+ "name": "Spinal reflex arcs: myotatic, inverse myotatic, and withdrawal reflexes",
+ "category": "spinal segmental reflex",
+ "function": "Rapid, involuntary regulation of muscle length, tension, and protective withdrawal from noxious stimuli",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Dorsal root ganglion (Ia afferent neuron from the muscle spindle)",
+   "courseVia": [
+    "dorsal root",
+    "dorsal horn gray matter"
+   ],
+   "terminatesIn": "Alpha motor neuron of the homonymous (agonist) muscle, lamina IX of the ventral horn (monosynaptic)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate",
+   "evidence": [
+    {
+     "source": "NBK551629",
+     "grade": "B",
+     "quote": "The myotatic reflex is monosynaptic and induced by sudden passive stretch of muscle fibers. The response produces contraction in the agonist muscle or muscle group, with simultaneous relaxation of the antagonist muscle or muscle group.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK551629",
+     "grade": "B",
+     "quote": "After entry into the spinal cord, the group Ia afferent axon travels anteriorly through the spinal cord gray matter toward the ipsilateral ventral horn, where direct synaptic contact occurs with an α motor neuron, utilizing glutamate within lamina IX of the spinal cord.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK562238",
+     "grade": "B",
+     "quote": "The Ia afferent sensory fibers in the muscle spindles produce action potentials in response to the stretch. These Ia afferent fibers go to the spinal cord at the dorsal root and monosynaptically stimulate the alpha motor neuron.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The first link in the myotatic or stretch reflex is the Ia muscle spindle afferents.",
+     "species": "human",
+     "page": 189,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Ia afferents terminate directly on motoneurons innervating the same muscle.",
+     "species": "human",
+     "page": 189,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Ia inhibitory interneuron, dorsal horn lamina III",
+   "courseVia": [
+    "propriospinal tract (fasciculus proprius)"
+   ],
+   "terminatesIn": "Alpha motor neuron of the antagonist muscle, lamina IX of the anterior horn",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "acetylcholine at the interneuron synapse; glycine at the antagonist alpha-motor-neuron synapse (reciprocal inhibition)",
+   "evidence": [
+    {
+     "source": "NBK551629",
+     "grade": "B",
+     "quote": "A second synaptic pathway involves an inhibitory interneuron, utilizing acetylcholine within lamina III of the dorsal horn.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK551629",
+     "grade": "B",
+     "quote": "The interneuron exits the gray matter laterally, ascends or descends through the white matter of the propriospinal tract (also termed the fasciculus proprius), and reenters the gray matter to synapse with and inhibit a separate α motor neuron within lamina IX of the anterior horn.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK551629",
+     "grade": "B",
+     "quote": "Glycinergic transmission mediates inhibition at the level of the antagonist muscle group.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK562238",
+     "grade": "B",
+     "quote": "The antagonistic muscle is inhibited during the reflex while the agonist muscle contracts. This action occurs polysynaptically through the Ia inhibitory interneuron, which inhibits alpha motor neurons to the antagonistic muscle.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Collaterals of the Ia fibres terminate on inhibitory (gamma-aminobutyric acid, GABA, -containing) Ia interneurons located in lamina VII, just dorsal to the motor nuclei.",
+     "species": "human",
+     "page": 189,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "These neurons project to motoneurons innervating the antagonist muscles.",
+     "species": "human",
+     "page": 189,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 1,
+   "cellBodies": "Golgi tendon organ afferent (Ib) at the musculotendinous junction",
+   "courseVia": [
+    "dorsal root, spinal interneurons"
+   ],
+   "terminatesIn": "Inhibitory postsynaptic potentials onto agonist alpha motor neurons and excitatory postsynaptic potentials onto antagonist alpha motor neurons (inverse myotatic / Ib reflex)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK541028",
+     "grade": "B",
+     "quote": "Golgi tendon organs regulate the inverse myotatic reflex, mediated through Ib afferents and gamma efferents.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK541028",
+     "grade": "B",
+     "quote": "This reflex helps control sustained tonic contraction following the stretch reflex by inhibiting the agonist muscles (via inhibitory postsynaptic potentials) and stimulating the corresponding antagonist muscles (via excitatory postsynaptic potentials).",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "I b primary afferents carry information from Golgi tendon organs",
+     "species": "human",
+     "page": 189,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "I b fibres inhibit the motoneurons innervating this muscle via I b inhibitory interneurons in the ventral intermediate grey.",
+     "species": "human",
+     "page": 189,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "the effect of the Golgi tendon organs is not limited to autogenic inhibition, but also may produce excitatory effects in particular muscle groups",
+     "species": "human",
+     "page": 189,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 1,
+   "cellBodies": "Cutaneous nociceptive afferent (A-delta fiber)",
+   "courseVia": [
+    "dorsal horn interneurons (polysynaptic)"
+   ],
+   "terminatesIn": "Excitatory interneurons in the dorsal and ventral horns activating flexor muscles for withdrawal (e.g. biceps femoris, tibialis anterior)",
+   "laterality": "ipsilateral (flexor withdrawal); contralateral extension is the classically described crossed-extensor component",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "PMC12558665",
+     "grade": "A",
+     "quote": "Excitatory interneurons in the dorsal and ventral horns also initiate a withdrawal reflex, activating proximal (e.g., biceps femoris) and distal (e.g., tibialis anterior) muscles.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "PMC12558665",
+     "grade": "A",
+     "quote": "High-intensity stimulation (1.5-2x threshold) of the plantar arch or sural nerve preferentially activates A-delta fibres, which transmit nociceptive signals to the dorsal horn.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The pathway of the flexor reflex is more complicated and includes two or more spinal interneurons.",
+     "species": "human",
+     "page": 189,
+     "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 0,
+   "cellBodies": "Clinical tendon-reflex root levels (myotatic reflex arcs commonly tested)",
+   "courseVia": [
+    "biceps: musculocutaneous nerve",
+    "triceps: radial nerve",
+    "patellar: femoral nerve",
+    "Achilles: tibial nerve"
+   ],
+   "terminatesIn": "Segmental spinal cord levels: biceps C5-C6, triceps C7 (C6-C8), patellar L2-L4, Achilles S1 (S1-S2)",
+   "laterality": "ipsilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK551629",
+     "grade": "B",
+     "quote": "The afferent limb is formed by the musculocutaneous nerve, which conveys stretch sensation to the spinal cord via dorsal rootlets from C5 to C6.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK562238",
+     "grade": "B",
+     "quote": "Biceps Reflex Muscle involved: biceps brachii Nerve supply: musculocutaneous Segmental innervation: C5-C6",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK551629",
+     "grade": "B",
+     "quote": "The afferent limb consists of the radial nerve and dorsal nerve roots from C6 to C8, predominantly C7.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK562238",
+     "grade": "B",
+     "quote": "Triceps Reflex Muscle involved: triceps brachii Nerve supply: radial Segmental innervation: C7-C8",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK551629",
+     "grade": "B",
+     "quote": "The afferent limb consists of the femoral nerve and dorsal nerve roots from L2 to L4, predominantly L4.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK562238",
+     "grade": "B",
+     "quote": "Patellar Reflex (knee-jerk) Muscle involved: quadriceps femoris Nerve supply: femoral Segmental innervation: L2-L4",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK551629",
+     "grade": "B",
+     "quote": "The afferent limb passes through the tibial nerve to the dorsal nerve roots of S1 to S2, predominantly S1.",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    },
+    {
+     "source": "NBK562238",
+     "grade": "B",
+     "quote": "Achilles Reflex (ankle-jerk) Muscles involved: gastrocnemius, soleus Nerve supply: tibial Segmental innervation: S1-S2",
+     "species": null,
+     "page": null,
+     "file": "motor.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Upper motor neuron / descending motor pathway",
+   "deficit": "Hyperreflexia of deep tendon reflexes, disinhibition of the stretch reflex arc",
+   "side": "variable (contralateral for supraspinal lesions, bilateral/below-level for spinal lesions)",
+   "evidence": [
+    {
+     "source": "Margetis 2026 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Loss of inhibitory input from the descending motor pathways results in disinhibition of spinal reflex circuits. This phenomenon leads to exaggerated deep tendon reflexes, such as an increased knee-jerk response during physical examination."
+    },
+    {
+     "source": "Chauhan 2026 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Hyperreflexia, defined as a reflex score of 3 or 4, is a corroborative finding in patients with upper motor neuron lesions, indicating central nervous system injury."
+    },
+    {
+     "source": "Walkowski 2022 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Lesions involving the cerebral cortex, brainstem, or descending motor tracts are classified as upper motor neuron lesions. These lesions lead to increased reflexes (grades 3-4) due to a loss of inhibition from the descending motor pathways."
+    }
+   ],
+   "file": "motor.json"
+  },
+  {
+   "site": "Lower motor neuron / reflex arc (afferent or efferent limb)",
+   "deficit": "Hyporeflexia or absent deep tendon reflex",
+   "side": "ipsilateral",
+   "evidence": [
+    {
+     "source": "Chauhan 2026 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "Hyporeflexia, defined as a reflex score of 0 or 1, is a finding consistent with lower motor neuron lesions, indicating pathology within the peripheral nervous system."
+    },
+    {
+     "source": "Walkowski 2022 StatPearls [Internet]",
+     "grade": "B",
+     "quote": "A lesion affecting the anterior horn of the spinal cord at that level, or the motor fiber itself, is classified as a lower motor neuron lesion. These lesions cause decreased reflexes (grades 0-1) due to damage to the alpha motor neurons."
+    }
+   ],
+   "file": "motor.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Location and neurotransmitter of the Ia inhibitory interneuron mediating reciprocal inhibition of the antagonist muscle",
+   "positions": [
+    {
+     "source": "S8 (original motor.json batch; not reopened this session)",
+     "grade": "?",
+     "claim": "Original batch (StatPearls, S8 of motor.json): the inhibitory interneuron uses acetylcholine and is located in lamina III of the dorsal horn",
+     "quote": "A second synaptic pathway involves an inhibitory interneuron, utilizing acetylcholine within lamina III of the dorsal horn."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states the Ia inhibitory interneuron is GABAergic and located in lamina VII, just dorsal to the motor nuclei -- a different transmitter and a different laminar location",
+     "quote": "Collaterals of the Ia fibres terminate on inhibitory (gamma-aminobutyric acid, GABA, -containing) Ia interneurons located in lamina VII, just dorsal to the motor nuclei."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The crossed extensor reflex (contralateral limb extension accompanying ipsilateral flexor withdrawal, mediated by commissural interneurons crossing the spinal midline) is a classic teaching point but was not found described in those terms in any opened source; only the ipsilateral flexor-withdrawal component was sourced (S14).",
+   "file": "motor.json"
+  },
+  {
+   "text": "The crossed extensor reflex (contralateral limb extension accompanying ipsilateral flexor withdrawal, mediated by commissural interneurons crossing the spinal midline) is a classic teaching point but was not found described in those terms for LIMB reflexes. Nieuwenhuys does describe an analogous but distinct CERVICAL commissural circuit: 'Commissural interneurons are located in lamina VIII. Their axons cross in the anterior white commissure.' and 'Cervical lamina VIII commissural interneurons use glycine to inhibit contralateral neck motoneurons' (ch.06, p.190-191) -- a glycinergic crossed-inhibitory circuit for the neck, not a generalized crossed-extensor pathway for the limbs.",
+   "file": "upgrade-lib-nieuwenhuys-motor-somatosensory.json"
+  }
+ ],
+ "sources": {
+  "NBK551629": {
+   "label": "Chauhan 2026 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Neuroanatomy, Spinal Cord Myotatic Reflex",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK551629"
+  },
+  "NBK562238": {
+   "label": "Rodriguez-Beato 2023 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Physiology, Deep Tendon Reflexes",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK562238"
+  },
+  "NBK541028": {
+   "label": "Walkowski 2022 StatPearls [Internet]",
+   "grade": "B",
+   "title": "Monosynaptic Reflex",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK541028"
+  },
+  "PMC12558665": {
+   "label": "Murphy 2025 European Journal of Pain",
+   "grade": "A",
+   "title": "Recommendations for the Neurophysiological Assessment of Conditioned Pain Modulation: A Systematic Review of Nociceptive Blink Reflex and Nociceptive Withdrawal Reflex Protocols",
+   "doi": "10.1002/ejp.70149",
+   "pmcid": "PMC12558665",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

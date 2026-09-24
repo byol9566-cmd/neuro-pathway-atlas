@@ -1,0 +1,346 @@
+{
+ "id": "horizontal-conjugate-gaze-saccade-circuit",
+ "name": "Horizontal conjugate gaze / saccade circuit",
+ "category": "Cortical-brainstem oculomotor circuit",
+ "function": "Generates fast, conjugate horizontal eye movements (saccades) directed opposite to the initiating frontal eye field, coordinating the abducens and oculomotor nuclei via the MLF.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Frontal eye field (cortex)",
+   "courseVia": [
+    "corticobulbar projection to the pons"
+   ],
+   "terminatesIn": "Contralateral paramedian pontine reticular formation (PPRF) for horizontal saccades (rostral interstitial nucleus of the MLF, riMLF, for vertical saccades)",
+   "laterality": "contralateral (FEF drives PPRF on the opposite side, producing gaze toward the opposite side)",
+   "decussation": {
+    "present": true,
+    "where": "corticobulbar fibers cross en route to the contralateral PPRF"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK441970",
+     "grade": "B",
+     "quote": "Saccades are initiated by the frontal eye field (FEF), which sends signals to the contralateral paramedian pontine reticular formation (PPRF) for horizontal saccades and the rostral interstitial nucleus of the medial longitudinal fasciculus (riMLF) for vertical saccades",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Of the gaze centres, the riMLF is innervated by both subdivisions of the frontal eye field and the supplementary eye field.",
+     "species": "human",
+     "page": 787,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Paramedian pontine reticular formation (horizontal gaze center)",
+   "courseVia": [
+    "direct projection to ipsilateral abducens nucleus"
+   ],
+   "terminatesIn": "Ipsilateral abducens nucleus, driving the lateral rectus of the same side",
+   "laterality": "ipsilateral (PPRF activates the abducens nucleus on its own side)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK441970",
+     "grade": "B",
+     "quote": "The paramedian pontine reticular formation activates the ipsilateral abducens nucleus which sends signals to the Lateral rectus muscle of the same side and via abducent excitatory interneurons (after decussation) to the contralateral medial rectus subnucleus of the oculomotor nucleus through the medial longitudinal fasciculus",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "For horizontal eye movements these cells are located in the medial part of the nucleus reticularis pontis caudalis, in the so-called pontine paramedian reticular formation (PPRF), rostral to the abducens nucleus.",
+     "species": "human",
+     "page": 771,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "EBC’s project to the ipsilateral abducens nucleus; the projection of the IBS’s is crossed.",
+     "species": "human",
+     "page": 771,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Abducens internuclear (excitatory) interneurons within the abducens nucleus",
+   "courseVia": [
+    "decussate in the pons, ascend in the contralateral medial longitudinal fasciculus"
+   ],
+   "terminatesIn": "Contralateral medial rectus subnucleus of the oculomotor nucleus",
+   "laterality": "contralateral (crosses to drive the medial rectus subnucleus on the other side), producing horizontal gaze opposite to the initiating frontal eye field",
+   "decussation": {
+    "present": true,
+    "where": "abducens excitatory interneurons decussate before ascending in the MLF"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK441970",
+     "grade": "B",
+     "quote": "The paramedian pontine reticular formation activates the ipsilateral abducens nucleus which sends signals to the Lateral rectus muscle of the same side and via abducent excitatory interneurons (after decussation) to the contralateral medial rectus subnucleus of the oculomotor nucleus through the medial longitudinal fasciculus",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The medial rectus muscle is innervated by the oculomotor nerve. Its motoneurons receive their excitatory input through an internuclear pathway, originating from interneurons in the abducens nucleus",
+     "species": "human",
+     "page": 771,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 1,
+   "cellBodies": "Interstitial nucleus of Cajal and rostral interstitial nucleus of the MLF (riMLF), vertical/torsional gaze centers near the superior colliculus",
+   "courseVia": [
+    "fibers for downward gaze directed medially from riMLF; fibers for upward gaze directed laterally from the MLF"
+   ],
+   "terminatesIn": "Oculomotor and trochlear nuclei bilaterally (vertical gaze); upgaze fibers decussate in the posterior commissure",
+   "laterality": "bilateral, with upgaze fibers crossing in the posterior commissure and downgaze fibers directed medially without the same crossing point",
+   "decussation": {
+    "present": true,
+    "where": "upward-gaze fibers decussate in the posterior commissure; downward-gaze fibers are directed medially from the riMLF"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK441892",
+     "grade": "B",
+     "quote": "It occurs because of the involvement of the vertical gaze centers, which are in proximity to the Superior colliculus, with some of the main nuclei being the interstitial nuclei of Cajal and the rostral interstitial nucleus of the Medial Longitudinal Fasciculus (riMLF)",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK441892",
+     "grade": "B",
+     "quote": "the pathways for downward gaze are directed medially from the rostral interstitial nucleus of the Medial Longitudinal Fasciculus (MLF); whereas, the fibers for upward gaze are directed laterally from the Medial Longitudinal Fasciculus and decussate in the posterior commissure",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Short lead burst neurons for motoneurons of the oculomotor and trochlear nerves lie in the rostral interstitial nucleus of the medial longitudinal fascicle (riMLF).",
+     "species": "human",
+     "page": 771,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The riMLF is a wing-shaped nucleus located dorsal to the rostral pole of the red nucleus and rostral to the interstitial nucleus of Cajal.",
+     "species": "human",
+     "page": 771,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The projection of the riMLF to the motoneurons of the oculomotor and trochlear nerve nuclei is mainly ipsilateral.",
+     "species": "human",
+     "page": 771,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Recently, inhibitory neurons with projections to the contralateral inferior rectus and inferior oblique motor pools have been located to the interstitial nucleus of Cajal",
+     "species": "human",
+     "page": 771,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Medial longitudinal fasciculus (unilateral)",
+   "deficit": "Internuclear ophthalmoplegia: the MLF lesion blocks the connection between the contralateral sixth-nerve nucleus and the ipsilateral third-nerve nucleus, so the cardinal sign is impaired/slowed adduction on the same side as the MLF lesion, with dissociated nystagmus of the abducting eye",
+   "side": "ipsilateral adduction deficit",
+   "evidence": [
+    {
+     "source": "Feroze 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Internuclear ophthalmoplegia occurs due to a lesion in the medial longitudinal fasciculus (MLF) by blocking the connection between the contralateral sixth nerve nucleus and the ipsilateral third nerve nucleus, thus affecting horizontal gaze"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Combined lesion of the PPRF (horizontal gaze center) and the adjacent MLF on the same side",
+   "deficit": "One-and-a-half syndrome: loss of all horizontal eye movements except abduction of the contralateral eye",
+   "side": "ipsilateral horizontal gaze palsy plus ipsilateral INO; only contralateral abduction preserved",
+   "evidence": [
+    {
+     "source": "Feroze 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "This syndrome is characterized by the loss of all horizontal movements except abduction in the contralateral eye"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Dorsal midbrain / pretectum compressing the vertical gaze centers (Parinaud syndrome)",
+   "deficit": "Triad of upgaze palsy, convergence-retraction nystagmus, and pupillary light-near dissociation (hyporeflexia to light with preserved near response); downgaze and the vestibulo-ocular reflex are classically spared",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Feroze 2023 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "Parinaud syndrome is classically described by the triad of upgaze palsy, convergence retraction nystagmus, and pupillary hyporeflexia"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Medial longitudinal fasciculus (unilateral)",
+   "deficit": "Internuclear ophthalmoplegia: the MLF lesion blocks the connection between the contralateral sixth-nerve nucleus and the ipsilateral third-nerve nucleus, so the cardinal sign is impaired/slowed adduction on the same side as the MLF lesion, with dissociated nystagmus of the abducting eye",
+   "side": "ipsilateral adduction deficit",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Combined lesion of the PPRF (horizontal gaze center) and the adjacent MLF on the same side",
+   "deficit": "One-and-a-half syndrome: loss of all horizontal eye movements except abduction of the contralateral eye",
+   "side": "ipsilateral horizontal gaze palsy plus ipsilateral INO; only contralateral abduction preserved",
+   "evidence": [],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Dorsal midbrain / pretectum compressing the vertical gaze centers (Parinaud syndrome)",
+   "deficit": "Triad of upgaze palsy, convergence-retraction nystagmus, and pupillary light-near dissociation (hyporeflexia to light with preserved near response); downgaze and the vestibulo-ocular reflex are classically spared",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "Clinicopathological evidence indicates that Parinaud’s syndrome (vertical gaze paralysis) results from damage to the riMLF or its efferent fibres"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "site": "Frontal eye field (cortical, unilateral)",
+   "deficit": "Paralysis of conjugate gaze to the opposite side, with deviation of the eyes and head toward the side of the lesion; spontaneous recovery usually occurs within days",
+   "side": "contralateral gaze palsy (deviation toward the ipsilateral, lesioned side)",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "In human patients, lesions including the frontal eye field produce paralysis of conjugate gaze to the opposite side, with deviation of eyes and head to the side of the lesion."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Whether the frontal eye field drives horizontal saccades mainly via a direct projection to the PPRF",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json#S8",
+     "grade": "?",
+     "claim": "Saccades are initiated by the frontal eye field (FEF), which sends signals to the contralateral paramedian pontine reticular formation (PPRF) for horizontal saccades and to the riMLF for vertical saccades.",
+     "quote": "Saccades are initiated by the frontal eye field (FEF), which sends signals to the contralateral paramedian pontine reticular formation (PPRF) for horizontal saccades"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states that the PPRF (horizontal saccade generator) receives only weak innervation from the frontal eye field, whereas the riMLF (vertical saccade generator) is strongly innervated by both subdivisions of the FEF and the supplementary eye field.",
+     "quote": "The innervation of the PPRF is weak and does not target the saccade generator."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "issue": "Laterality of the riMLF's projection to the oculomotor/trochlear motoneurons for vertical gaze",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json#S4",
+     "grade": "?",
+     "claim": "The pathways for downward gaze are directed medially from the riMLF, whereas fibres for upward gaze are directed laterally and decussate in the posterior commissure, implying a bilaterally organized upgaze/downgaze split.",
+     "quote": "the pathways for downward gaze are directed medially from the rostral interstitial nucleus of the Medial Longitudinal Fasciculus (MLF); whereas, the fibers for upward gaze are directed laterally from the Medial Longitudinal Fasciculus and decussate in the posterior commissure"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys states the riMLF's excitatory projection to the oculomotor/trochlear motoneurons is 'mainly ipsilateral', with a separate, contralaterally-projecting inhibitory population localized to the interstitial nucleus of Cajal rather than to the riMLF itself.",
+     "quote": "The projection of the riMLF to the motoneurons of the oculomotor and trochlear nerve nuclei is mainly ipsilateral."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The interstitial nucleus of Cajal is also described in general neuroanatomy as an eye-position integrator that helps hold gaze steady after a saccade (velocity-to-position integration); this specific integrator role was not found stated in the opened sources.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "The exact cytoarchitectural boundaries separating the riMLF from the adjacent interstitial nucleus of Cajal within the mesencephalic reticular formation were not detailed in the opened sources beyond their shared proximity to the superior colliculus.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "The interstitial nucleus of Cajal is also described in general neuroanatomy as an eye-position integrator that helps hold gaze steady after a saccade (velocity-to-position integration); Nieuwenhuys instead names the nucleus prepositus hypoglossi as the neural integrator for horizontal eye movements and the interstitial nucleus of Cajal as the integrator for vertical/rotatory eye movements, without using the term 'velocity-to-position integration' verbatim.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "text": "The exact cytoarchitectural boundaries separating the riMLF from the adjacent interstitial nucleus of Cajal were not detailed beyond their being located dorsal to the rostral red nucleus and rostral/adjacent to each other.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "sources": {
+  "NBK441970": {
+   "label": "Feroze 2023 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Internuclear Ophthalmoplegia",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK441970"
+  },
+  "NBK441892": {
+   "label": "Feroze 2023 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Parinaud Syndrome",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK441892"
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

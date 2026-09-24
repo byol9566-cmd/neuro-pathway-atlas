@@ -1,0 +1,254 @@
+{
+ "id": "accommodation-convergence-near-reflex",
+ "name": "Accommodation-convergence (near) reflex",
+ "category": "Cranial nerve / brainstem-cortical reflex (synkinesis)",
+ "function": "Coordinated synkinesis of convergence (medial rectus contraction), lens accommodation (ciliary muscle contraction), and pupillary constriction to bring a near object into sharp binocular focus.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Retinal ganglion cells (afferent limb shared with the visual/pupillary light pathway)",
+   "courseVia": [
+    "optic nerve",
+    "optic chiasm",
+    "optic tract",
+    "lateral geniculate nucleus",
+    "optic radiations to visual cortex",
+    "visual association cortex projections to superior colliculus and pretectal areas"
+   ],
+   "terminatesIn": "Oculomotor and Edinger-Westphal nuclei (via cortical/pretectal relay)",
+   "laterality": "bilateral cortical processing feeding a bilateral near-response output",
+   "decussation": {
+    "present": false,
+    "where": "afferent limb shares the visual pathway's chiasmal decussation but the near-reflex-specific supranuclear relay is described as cortical/pretectal without an additional named crossing point"
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK542189",
+     "grade": "B",
+     "quote": "Like the pupillary light reflex, the afferent limb of the reflex is through the optic nerve, and the efferent limb involves the Edinger-Westphal nucleus and the oculomotor nerve",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK542189",
+     "grade": "B",
+     "quote": "The supranuclear control over the near reflex differs from the light reflex. It includes cortical areas surrounding the visual cortex and frontal eye fields. The midbrain center for the near reflex is more ventral than the light reflex",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC4919817",
+     "grade": "A",
+     "quote": "These collective processes, termed convergence, ocular accommodation, and miosis respectively, are classically referred to as the near response or the near triad.",
+     "species": "human/primate (review synthesis)",
+     "page": null,
+     "file": "upgrade-brainstem-senses.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The pathway for the accommodation reflex, i.e. increase in the curvature of the lens for near vision, is (as far as its mesencephalic centres and efferent limbs are concerned) closely comparable to the pathway for the light reflex.",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "However, the afferent limb of the accommodation reflex includes the visual cortex and is thus much longer and much more complex than that of the light reflex",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In addition to the response to light, pupillary constriction also occurs following the initiation of ocular convergence.",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Oculomotor nucleus (medial rectus subnucleus) and Edinger-Westphal nucleus, midbrain near-response center (more ventral than the pretectal light-reflex center)",
+   "courseVia": [
+    "oculomotor nerve (CN III)",
+    "inferior division to medial rectus; parasympathetic fibers to ciliary ganglion"
+   ],
+   "terminatesIn": "Medial rectus muscles (convergence) and, via the ciliary ganglion/short ciliary nerves, the sphincter pupillae and ciliary muscle",
+   "laterality": "bilateral (both medial recti contract for convergence; both pupils constrict)",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK542189",
+     "grade": "B",
+     "quote": "The oculomotor nucleus stimulates contraction of the medial recti bilaterally, which results in convergence. Simultaneously, the Edinger-Westphal nucleus coordinates parasympathetic pupillary constriction via the ciliary ganglion",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK542189",
+     "grade": "B",
+     "quote": "This action involves contraction of the medial rectus muscles of both eyes, with the relaxation of lateral recti resulting in the adduction of both eyes",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "In both pathways the pretectal region, the accessory oculomotor nucleus and the ciliary ganglion represent successive relay stations.",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 2,
+   "cellBodies": "Edinger-Westphal nucleus (parasympathetic preganglionic, near-response ventral subdivision)",
+   "courseVia": [
+    "oculomotor nerve",
+    "ciliary ganglion",
+    "short ciliary nerves"
+   ],
+   "terminatesIn": "Ciliary muscle (lens accommodation)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK542189",
+     "grade": "B",
+     "quote": "Contraction of bilateral ciliary muscles results in the thickening of the lens, which shortens the focal length and increases its refractive power",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The final link on the efferent side of the accommodation pathway is formed by the postganglionic fibres to the ciliary muscle.",
+     "species": "human",
+     "page": 791,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [
+  {
+   "site": "Dorsal midbrain (light-near dissociation)",
+   "deficit": "Light reflex is impaired while the near/accommodation reflex remains intact, because the midbrain near-response center is more ventral than the pretectal nucleus controlling the light reflex and is spared by dorsal lesions",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Motlagh 2022 StatPearls [Internet], StatPearls Publishing",
+     "grade": "B",
+     "quote": "This action occurs because the midbrain center for the near reflex is more ventral than the pretectal nucleus, which controls the light reflex"
+    }
+   ],
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "site": "Dorsal midbrain (light-near dissociation)",
+   "deficit": "Light reflex is impaired while the near/accommodation reflex remains intact, because the midbrain near-response center is more ventral than the pretectal nucleus controlling the light reflex and is spared by dorsal lesions",
+   "side": "bilateral",
+   "evidence": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "quote": "The neural pathway for this convergence-induced pupillary constriction is believed to be independent of that for light-induced pupillary constriction, since the two reflexes are dissociated in the clinical phenomenon, known as the Argyll Robertson sign."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "conflicts": [
+  {
+   "issue": "Localization of the midbrain near-response (convergence) centre relative to the pretectal light-reflex centre",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json#S15",
+     "grade": "?",
+     "claim": "The midbrain center for the near reflex is more ventral than the pretectal nucleus, which controls the light reflex.",
+     "quote": "This action occurs because the midbrain center for the near reflex is more ventral than the pretectal nucleus, which controls the light reflex"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys does not describe the near-response centre in terms of dorsoventral position relative to the pretectal nucleus; instead it characterizes the convergence-induced pupillary pathway as independent of the light pathway (consistent with the Argyll Robertson dissociation) and terminating on 'a group of small neurons outside the classical oculomotor nucleus'.",
+     "quote": "This pathway terminates on a group of small neurons outside the classical oculomotor nucleus"
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "The near-response is sometimes localized to a specific 'supraoculomotor area' or dedicated near-response neuron population adjacent to the oculomotor complex in primate physiology studies; this specific cell group name was not found stated in the opened source, which described the relay only as cortical/pretectal projections to the oculomotor and Edinger-Westphal nuclei.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "The normal accommodative convergence/accommodation (AC/A) ratio is commonly cited as 3 to 5 prism diopters per diopter of accommodation; this figure does appear in the opened source but its precise clinical measurement methodology was not detailed further.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "S1 (McDougal & Gamlin) does not name a specific dedicated 'supraoculomotor area' or near-response neuron population; it describes the near-triad definition and general oculomotor/EW efferent targets but the precise supranuclear near-response generator was not found stated in this opened source beyond the pretectal/cortical relay already cited from other sources in the original file.",
+   "file": "upgrade-brainstem-senses.json"
+  },
+  {
+   "text": "The near-response is sometimes localized to a specific 'supraoculomotor area' or dedicated near-response neuron population adjacent to the oculomotor complex in primate physiology studies; Nieuwenhuys names only 'a group of small neurons outside the classical oculomotor nucleus' without using the term 'supraoculomotor area'.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "text": "The normal accommodative convergence/accommodation (AC/A) ratio (commonly cited as 3 to 5 prism diopters per diopter of accommodation) was not found stated in Nieuwenhuys.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "sources": {
+  "NBK542189": {
+   "label": "Motlagh 2022 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Physiology, Accommodation",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK542189"
+  },
+  "PMC4919817": {
+   "label": "McDougal 2015 Comprehensive Physiology",
+   "grade": "A",
+   "title": "Autonomic control of the eye",
+   "doi": "10.1002/cphy.c140014",
+   "pmcid": "PMC4919817",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}

@@ -1,0 +1,328 @@
+{
+ "id": "baroreceptor-reflex",
+ "name": "Baroreceptor reflex",
+ "category": "Autonomic / brainstem visceral reflex",
+ "function": "Rapid, short-term negative-feedback regulation of arterial blood pressure via reflex adjustment of heart rate, cardiac contractility, and vascular resistance.",
+ "steps": [
+  {
+   "order": 1,
+   "neuronOrder": 1,
+   "cellBodies": "Carotid sinus baroreceptor afferents: cell bodies in the petrosal ganglion of CN IX; aortic arch baroreceptor afferents: cell bodies in the nodose ganglion of CN X",
+   "courseVia": [
+    "carotid sinus nerve (branch of glossopharyngeal nerve, CN IX)",
+    "vagus nerve (CN X)"
+   ],
+   "terminatesIn": "Nucleus tractus solitarius (NTS)",
+   "laterality": "ipsilateral afferent limb",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate (onto second-order NTS neurons)",
+   "evidence": [
+    {
+     "source": "NBK538172",
+     "grade": "B",
+     "quote": "Carotid sinus afferents travel along the carotid sinus nerve, a branch of the glossopharyngeal nerve, and have their cell bodies in the petrosal ganglion. Aortic and cardiopulmonary afferents travel primarily through the vagus nerve, with their cell bodies located in the nodose ganglion",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC13319144",
+     "grade": "A",
+     "quote": "Baroreceptors in the carotid sinus send impulses along the carotid sinus nerve",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "General visceral afferents, which innervate the baroreceptors of the carotid sinus and the arch of the aorta, chemoreceptors of the glomus caroticum, the heart, the bronchi and the abdominal viscera, are contained in the glossopharyngeal and vagus nerves",
+     "species": "human",
+     "page": 707,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Viscerosensory fibres of the vagal and glossopharyngeal nerves, which innervate baroreceptors, terminate in the caudal nucleus of the solitary tract.",
+     "species": "human",
+     "page": 904,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Baroreceptors in the carotid sinus and the ascending aorta connect with the rostral part of the general visceral portion of the nucleus of the solitary tract; chemoreceptors sensitive to O2 and CO 2 concentrations terminate more caudally.",
+     "species": "human",
+     "page": 905,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 2,
+   "neuronOrder": 2,
+   "cellBodies": "Nucleus tractus solitarius (NTS)",
+   "courseVia": [
+    "excitatory glutamatergic projection to the caudal ventrolateral medulla (CVLM)"
+   ],
+   "terminatesIn": "Caudal ventrolateral medulla (CVLM)",
+   "laterality": "bilateral autonomic integration",
+   "decussation": {
+    "present": false,
+    "where": "NTS-to-CVLM-to-RVLM circuitry is generally described as an ipsilateral medullary chain, with bilateral autonomic output"
+   },
+   "neurotransmitter": "glutamate",
+   "evidence": [
+    {
+     "source": "NBK538172",
+     "grade": "B",
+     "quote": "The NTS sends excitatory projections to the caudal ventrolateral medulla, whose inhibitory neurons project to the rostral ventrolateral medulla",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "An inhibitory pathway from the nucleus of the solitary tract (red) terminates on a group of excitatory neurons in the ventrolateral superficial reticular formation, at the level of the noradrenergic A1 group. Ascending axons from these cells terminate in C1.",
+     "species": "human",
+     "page": 904,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "It projects to vasomotor interneurons in the caudal ventrolateral medulla, involved in the maintenance of blood pressure, to vagal parasympathetic premotor neurons controlling heart rate",
+     "species": "human",
+     "page": 707,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 3,
+   "neuronOrder": 3,
+   "cellBodies": "Caudal ventrolateral medulla (CVLM), GABAergic neurons",
+   "courseVia": [
+    "inhibitory GABAergic projection to the rostral ventrolateral medulla (RVLM)"
+   ],
+   "terminatesIn": "Rostral ventrolateral medulla (RVLM)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "GABA",
+   "evidence": [
+    {
+     "source": "PMC13319144",
+     "grade": "A",
+     "quote": "The CVLM contains a population of GABAergic neurons that receive excitatory drive from the NTS and project to the RVLM, forming the central inhibitory limb of the arterial baroreflex",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "PMC13319144",
+     "grade": "A",
+     "quote": "When baroreceptor activity increases (due to elevated BP), NTS activates CVLM, which in turn inhibits RVLM activity. This inhibition reduces sympathetic outflow, leading to vasodilation and decreased heart rate, thus lowering BP",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "The C1 group is inhibited by more caudally located GABAergic neurons in the VLSM",
+     "species": "human",
+     "page": 905,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "These inhibitory neurons receive an input from baroreceptor-activated cells of the nucleus of the solitary tract, thus causing inhibition of vasomotor tone.",
+     "species": "human",
+     "page": 905,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 4,
+   "neuronOrder": 4,
+   "cellBodies": "Rostral ventrolateral medulla (RVLM) sympathetic premotor neurons",
+   "courseVia": [
+    "bulbospinal projection to intermediolateral cell column of the spinal cord"
+   ],
+   "terminatesIn": "Sympathetic preganglionic neurons (intermediolateral cell column)",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "glutamate (RVLM to spinal preganglionic neurons)",
+   "evidence": [
+    {
+     "source": "NBK538172",
+     "grade": "B",
+     "quote": "The NTS sends excitatory projections to the caudal ventrolateral medulla, whose inhibitory neurons project to the rostral ventrolateral medulla—a major source of excitatory drive to sympathetic preganglionic neurons",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Presympathetic neurons in the VLSM, 50% of which correspond to the adrenergic C1 group, project to the thoracic intermediolateral column",
+     "species": "human",
+     "page": 905,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Crossed solitariospinal fibres descend from the caudal part of the nucleus to terminate in the autonomic centres of the spinal cord",
+     "species": "human",
+     "page": 707,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  },
+  {
+   "order": 5,
+   "neuronOrder": 2,
+   "cellBodies": "Nucleus tractus solitarius (parallel parasympathetic branch)",
+   "courseVia": [
+    "excitatory projection to cardiac parasympathetic (vagal) neurons"
+   ],
+   "terminatesIn": "Nucleus ambiguus (cardiac parasympathetic neurons) and dorsal motor nucleus of the vagus",
+   "laterality": "bilateral",
+   "decussation": {
+    "present": false,
+    "where": ""
+   },
+   "neurotransmitter": "",
+   "evidence": [
+    {
+     "source": "NBK538172",
+     "grade": "B",
+     "quote": "The NTS also sends excitatory projections to cardiac parasympathetic neurons in the nucleus ambiguus. These neurons provide parasympathetic output to the heart through the vagus nerve",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "NBK538172",
+     "grade": "B",
+     "quote": "The NTS integrates afferent input from arterial and cardiopulmonary receptors and projects to autonomic centers, including the caudal ventrolateral medulla, dorsal motor nucleus of the vagus, and nucleus ambiguus",
+     "species": "human",
+     "page": null,
+     "file": "brainstem-reflexes.json"
+    },
+    {
+     "source": "9783540346845",
+     "grade": "A",
+     "quote": "Short pathways connect the nucleus of the solitary tract with cardiomotor neurons in the dorsal vagal nucleus, subserving slowing down the heart rate.",
+     "species": "human",
+     "page": 905,
+     "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+    }
+   ]
+  }
+ ],
+ "lesions": [],
+ "conflicts": [
+  {
+   "issue": "Which vagal nucleus provides the parasympathetic (cardioinhibitory) output of the baroreflex",
+   "positions": [
+    {
+     "source": "brainstem-reflexes.json#S14",
+     "grade": "?",
+     "claim": "The NTS sends excitatory projections to cardiac parasympathetic neurons in the nucleus ambiguus, which provide parasympathetic output to the heart through the vagus nerve.",
+     "quote": "The NTS also sends excitatory projections to cardiac parasympathetic neurons in the nucleus ambiguus. These neurons provide parasympathetic output to the heart through the vagus nerve"
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Nieuwenhuys attributes the short NTS-to-cardiomotor pathway that slows the heart rate specifically to the dorsal vagal nucleus (dorsal motor nucleus of the vagus), not the nucleus ambiguus.",
+     "quote": "Short pathways connect the nucleus of the solitary tract with cardiomotor neurons in the dorsal vagal nucleus, subserving slowing down the heart rate."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "issue": "Apparent internal tension in Nieuwenhuys over whether baroreceptor afferents terminate in the 'caudal' or a 'rostral' part of the nucleus of the solitary tract",
+   "positions": [
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Viscerosensory (baroreceptor) fibres of the vagus and glossopharyngeal nerves terminate in the caudal nucleus of the solitary tract.",
+     "quote": "Viscerosensory fibres of the vagal and glossopharyngeal nerves, which innervate baroreceptors, terminate in the caudal nucleus of the solitary tract."
+    },
+    {
+     "source": "Nieuwenhuys 2008 Springer (4th ed.)",
+     "grade": "A",
+     "claim": "Baroreceptors connect with the rostral part of the general visceral portion of the nucleus of the solitary tract, while chemoreceptors terminate more caudally.",
+     "quote": "Baroreceptors in the carotid sinus and the ascending aorta connect with the rostral part of the general visceral portion of the nucleus of the solitary tract; chemoreceptors sensitive to O2 and CO 2 concentrations terminate more caudally."
+    }
+   ],
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "unsourced": [
+  {
+   "text": "Carotid sinus baroreceptors are sometimes described as more sensitive over the normal physiological blood-pressure range than aortic arch baroreceptors; this comparative sensitivity claim was not found explicitly stated in the opened sources.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "Baroreceptor resetting (rightward shift of the pressure-response curve) in chronic hypertension is mentioned by the sources in general terms; the specific molecular/ion-channel mechanism of resetting was not detailed beyond PIEZO1/PIEZO2 mechanotransduction.",
+   "file": "brainstem-reflexes.json"
+  },
+  {
+   "text": "Carotid sinus baroreceptors are sometimes described as more sensitive over the normal physiological blood-pressure range than aortic arch baroreceptors; this comparative sensitivity claim was not found stated in Nieuwenhuys.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "text": "The specific eponymous ganglia (petrosal ganglion of CN IX, nodose ganglion of CN X) for baroreceptor afferent cell bodies were not found named in the opened Nieuwenhuys chapters; 'nodose ganglion' appears only in a reference-list citation, not in the running text.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  },
+  {
+   "text": "Nieuwenhuys uses the terms 'ventrolateral superficial medulla oblongata (VLSM)' and the adrenergic/noradrenergic cell groups A1 and C1 rather than the modern 'CVLM'/'RVLM' terminology used in the existing pathway; the two schemes appear to correspond (A1-region inhibitory neurons ≈ CVLM, C1 group ≈ RVLM) but this equivalence is not stated explicitly by the source itself.",
+   "file": "upgrade-lib-nieuwenhuys-brainstem.json"
+  }
+ ],
+ "sources": {
+  "NBK538172": {
+   "label": "Denault 2026 StatPearls [Internet], StatPearls Publishing",
+   "grade": "B",
+   "title": "Physiology, Baroreceptors",
+   "doi": "",
+   "pmcid": "",
+   "isbn": null,
+   "nbk": "NBK538172"
+  },
+  "PMC13319144": {
+   "label": "Colombari 2026 Current Hypertension Reports",
+   "grade": "A",
+   "title": "Neural Control of Tissue Perfusion: Emerging Evidence and Beyond",
+   "doi": "10.1007/s11906-026-01378-3",
+   "pmcid": "PMC13319144",
+   "isbn": null,
+   "nbk": ""
+  },
+  "9783540346845": {
+   "label": "Nieuwenhuys 2008 Springer (4th ed.)",
+   "grade": "A",
+   "title": "The Human Central Nervous System",
+   "doi": null,
+   "pmcid": null,
+   "isbn": "9783540346845",
+   "nbk": null
+  }
+ }
+}
