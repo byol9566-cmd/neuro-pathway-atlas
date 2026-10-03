@@ -212,6 +212,14 @@ dl.keys dt { font-family: var(--mono); font-size: 12px; color: var(--accent); wh
 .mark-r { left: 6px; top: 50%; } .mark-l { right: 6px; top: 50%; } .mark-a { top: 4px; left: 50%; } .mark-p { bottom: 4px; left: 50%; }
 .section-slider { writing-mode: vertical-lr; direction: rtl; width: 22px; margin: 8px 4px; accent-color: var(--accent); }
 
+/* folded structure / pathway groups */
+.item.pathway.text-only strong { color: var(--text-2); font-weight: 500; }
+#search { margin-bottom: 4px; }
+.group .fold { margin-left: 6px; width: 22px; height: 22px; padding: 0; border: 0; background: none; color: var(--text-3); font-size: 16px; line-height: 1; transform: rotate(90deg); transition: transform 0.25s var(--ease); }
+.group.collapsed .fold { transform: none; }
+.group.collapsed .list { display: none; }
+.group > label { display: flex; align-items: center; }
+
 /* ---------- loading / first screen ---------- */
 #loading { position: absolute; inset: 0; z-index: 20; display: grid; place-items: center; background: radial-gradient(ellipse at 50% 46%, #131315 0%, #070708 58%, #020203 100%); transition: opacity 0.6s var(--ease-ui); }
 #loading.leaving { opacity: 0; pointer-events: none; }

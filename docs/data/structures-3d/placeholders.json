@@ -1,0 +1,1617 @@
+{
+ "items": [
+  {
+   "id": "end-ant-pituitary",
+   "en": "Anterior pituitary",
+   "placeable": true,
+   "bilateral": false,
+   "centreMni": [
+    0,
+    4,
+    -32
+   ],
+   "radiiMm": [
+    7,
+    5,
+    5
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Adenohypophysis occupies the anterior/larger part of the gland within the sella turcica, just below the hypothalamus/infundibulum. Sella position relative to the AC-PC plane is standard neurosurgical knowledge; adult gland height ~6mm, AP ~8-10mm, width ~10-15mm."
+  },
+  {
+   "id": "end-post-pituitary",
+   "en": "Posterior pituitary",
+   "placeable": true,
+   "bilateral": false,
+   "centreMni": [
+    0,
+    -1,
+    -32
+   ],
+   "radiiMm": [
+    3,
+    3,
+    3
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Neurohypophysis is the small posterior part of the gland, directly below the infundibulum/median eminence. Size and relative position are from standard pituitary anatomy."
+  },
+  {
+   "id": "end-median-eminence",
+   "en": "Median eminence and hypophyseal portal system",
+   "placeable": true,
+   "bilateral": false,
+   "centreMni": [
+    0,
+    -3,
+    -18
+   ],
+   "radiiMm": [
+    3,
+    3,
+    3
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Floor of the third ventricle at the top of the infundibulum, just above the posterior pituitary. No specific MNI-coordinate paper found; location reasoned from hypothalamic floor/infundibular recess anatomy."
+  },
+  {
+   "id": "end-pineal",
+   "en": "Pineal gland",
+   "placeable": true,
+   "bilateral": false,
+   "centreMni": [
+    0,
+    -29,
+    9
+   ],
+   "radiiMm": [
+    3,
+    4,
+    3
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Pineal sits in the roof of the third ventricle between the thalami, posterior to the habenular commissure and anterior to the quadrigeminal cistern; commonly cited stereotactic location is close to (0,-29,9). Adult pineal gland ~5-8mm long. No single open-access paper quote located in the time available."
+  },
+  {
+   "id": "sp-cord",
+   "en": "Spinal cord",
+   "placeable": true,
+   "bilateral": false,
+   "centreMni": [
+    0,
+    -38,
+    -267
+   ],
+   "radiiMm": [
+    6,
+    5,
+    212
+   ],
+   "source": "De Leener B, Fonov VS, Collins DL, Callot V, Stikov N, Cohen-Adad J. PAM50: Unbiased multimodal template of the brainstem and spinal cord aligned with the ICBM152 space. NeuroImage 2018;165:170-179. DOI 10.1016/j.neuroimage.2017.10.041 (PMID 29061527)",
+   "quote": "",
+   "confidence": "medium",
+   "note": "PAM50 is explicitly co-registered to ICBM152 (=MNI152) space, which is the published convention this uses; paper is subscription-access so no verbatim quote. z extent here is a reasoned approximation along the brainstem's inferior axis: cervicomedullary junction ~z=-55, conus medullaris terminus ~z=-480 (whole cord ~45cm). Per-segment-group z ranges are given on the C/T/L/S items below; this item is the full-column envelope."
+  },
+  {
+   "id": "sp-iml",
+   "en": "Intermediolateral cell column",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    3,
+    -37,
+    -286
+   ],
+   "radiiMm": [
+    1.5,
+    1.5,
+    147
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Sympathetic preganglionic column confined to the lateral horn, T1-L2 (approx z -140 to -433 on the column axis above, per PAM50/Gray's Anatomy segment-vertebra correspondence). x=3mm lateral of midline for the lateral horn location."
+  },
+  {
+   "id": "sp-sacral-parasympathetic",
+   "en": "Sacral parasympathetic nucleus",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    3,
+    -36,
+    -470
+   ],
+   "radiiMm": [
+    1.5,
+    1.5,
+    6
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Parasympathetic preganglionic nucleus confined to S2-S4 lateral horn, within the sacral cord's compressed z range near the conus medullaris (~z -464 to -476 on the column axis above)."
+  },
+  {
+   "id": "bs-accessory",
+   "en": "Spinal accessory nucleus",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    4,
+    -40,
+    -87
+   ],
+   "radiiMm": [
+    2,
+    2,
+    32
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Ventral horn motor column for SCM/trapezius, spanning roughly C1-C6 (z approx -55 to -119 on the column axis above), lateral part of the ventral horn."
+  },
+  {
+   "id": "sp-clarke",
+   "en": "Clarke column",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    2.5,
+    -35,
+    -291
+   ],
+   "radiiMm": [
+    1.5,
+    1.5,
+    151
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Dorsal nucleus of Clarke, present C8-L3 at the base of the dorsal horn (z approx -140 to -442 on the column axis above)."
+  },
+  {
+   "id": "so-retina",
+   "en": "Retina",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    32,
+    53,
+    -30
+   ],
+   "radiiMm": [
+    11,
+    9,
+    11
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Right globe centre approximated at (32,48,-18) (orbit, lateral/anterior to AC); retina lines the posterior ~3/4 of the 24mm-diameter globe so its centroid is shifted posterior relative to the globe centre. No dedicated orbit-MNI atlas paper consulted; reasoned from standard orbital anatomy.",
+   "agentValues": {
+    "centreMni": [
+     32,
+     42,
+     -18
+    ],
+    "radiiMm": [
+     11,
+     9,
+     11
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 눈알 중심은 MNI에서 대략 (±32, 57, −30); 망막은 뒤쪽 2/3 → 중심을 뒤로 4mm"
+  },
+  {
+   "id": "so-cornea",
+   "en": "Cornea",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    32,
+    67,
+    -30
+   ],
+   "radiiMm": [
+    6,
+    1.5,
+    5
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Anterior-most point of the globe (globe radius ~12mm from centre at y=48); cornea horizontal diameter ~11-12mm, central thickness <1mm.",
+   "agentValues": {
+    "centreMni": [
+     32,
+     61,
+     -18
+    ],
+    "radiiMm": [
+     6,
+     1,
+     5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 앞극 y≈+69"
+  },
+  {
+   "id": "so-nasal-retina",
+   "en": "Nasal hemiretina",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    25,
+    53,
+    -30
+   ],
+   "radiiMm": [
+    5,
+    9,
+    10
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Medial (nasal) half of the retina shell, same globe as so-retina but shifted toward midline; captures the temporal visual field.",
+   "agentValues": {
+    "centreMni": [
+     24,
+     42,
+     -18
+    ],
+    "radiiMm": [
+     5,
+     9,
+     10
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 망막 안쪽 절반"
+  },
+  {
+   "id": "so-temporal-retina",
+   "en": "Temporal hemiretina",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    39,
+    53,
+    -30
+   ],
+   "radiiMm": [
+    5,
+    9,
+    10
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Lateral (temporal) half of the retina shell, shifted away from midline relative to so-retina.",
+   "agentValues": {
+    "centreMni": [
+     40,
+     42,
+     -18
+    ],
+    "radiiMm": [
+     5,
+     9,
+     10
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 망막 가쪽 절반"
+  },
+  {
+   "id": "so-olfactory-epithelium",
+   "en": "Olfactory epithelium",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    5,
+    30,
+    -44
+   ],
+   "radiiMm": [
+    4,
+    8,
+    3
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Narrow strip on the superior nasal septum/superior concha and cribriform-plate roof, below/anterior to the olfactory bulb.",
+   "agentValues": {
+    "centreMni": [
+     6,
+     22,
+     -30
+    ],
+    "radiiMm": [
+     4,
+     8,
+     3
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 체판 바로 아래 비강 천장"
+  },
+  {
+   "id": "so-olfactory-bulb",
+   "en": "Olfactory bulb",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    7,
+    32,
+    -36
+   ],
+   "radiiMm": [
+    3,
+    8,
+    2.5
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Sits in the olfactory fossa on the cribriform plate beneath orbitofrontal cortex; coordinates close to those used in several olfactory fMRI ROI studies. No single paper quoted verbatim in the time available.",
+   "agentValues": {
+    "centreMni": [
+     7,
+     22,
+     -26
+    ],
+    "radiiMm": [
+     3,
+     4,
+     2
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 후각고랑 아래, 체판 위: z≈−35~−40, y +25~+45로 길쭉"
+  },
+  {
+   "id": "so-cochlea",
+   "en": "Cochlea",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    36,
+    -30,
+    -27
+   ],
+   "radiiMm": [
+    4.5,
+    3.5,
+    3
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Petrous temporal bone, near the internal auditory canal, approx pons level. Dedicated inner-ear MRI coordinate-system papers exist (e.g. PMC11458053, PMC11845522) but they define their own local temporal-bone coordinate frames, not MNI; exact MNI numbers here are reasoned estimates from standard skull-base anatomy.",
+   "agentValues": {
+    "centreMni": [
+     24,
+     -32,
+     -14
+    ],
+    "radiiMm": [
+     4.5,
+     3,
+     2.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 속귀길(IAC)은 x≈±30; 달팽이는 그 가쪽 바위뼈 안 x≈±36, z≈−27"
+  },
+  {
+   "id": "so-organ-corti",
+   "en": "Organ of Corti",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    36,
+    -30,
+    -27
+   ],
+   "radiiMm": [
+    3,
+    2.5,
+    2
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Sub-structure of the cochlear duct; location approximated to the cochlea centroid (so-cochlea).",
+   "agentValues": {
+    "centreMni": [
+     24,
+     -32,
+     -14
+    ],
+    "radiiMm": [
+     3,
+     2,
+     1.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 달팽이 안"
+  },
+  {
+   "id": "so-tectorial-membrane",
+   "en": "Tectorial membrane",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    36,
+    -30,
+    -27
+   ],
+   "radiiMm": [
+    3,
+    2.5,
+    2
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Sub-structure of the cochlear duct; location approximated to the cochlea centroid.",
+   "agentValues": {
+    "centreMni": [
+     24,
+     -32,
+     -14
+    ],
+    "radiiMm": [
+     3,
+     2,
+     1.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 달팽이 안"
+  },
+  {
+   "id": "so-stria-vascularis",
+   "en": "Stria vascularis",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    37,
+    -30,
+    -27
+   ],
+   "radiiMm": [
+    3.5,
+    2.5,
+    2
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Lateral wall of the cochlear duct; approximated to the cochlea centroid with a slight lateral offset.",
+   "agentValues": {
+    "centreMni": [
+     25,
+     -32,
+     -14
+    ],
+    "radiiMm": [
+     3.5,
+     2,
+     1.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 달팽이 안"
+  },
+  {
+   "id": "so-basilar-membrane",
+   "en": "Basilar membrane",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    36,
+    -30,
+    -27
+   ],
+   "radiiMm": [
+    4,
+    3,
+    2
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Spirals the length of the cochlear duct; approximated to the cochlea centroid/extent.",
+   "agentValues": {
+    "centreMni": [
+     24,
+     -32,
+     -14
+    ],
+    "radiiMm": [
+     4,
+     2.5,
+     1.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 달팽이 안"
+  },
+  {
+   "id": "so-horizontal-canal",
+   "en": "Horizontal semicircular canal",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    40,
+    -34,
+    -20
+   ],
+   "radiiMm": [
+    3.5,
+    3.5,
+    1.5
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Lateral/horizontal canal of the bony labyrinth, posterosuperior to the cochlea, oriented roughly in the axial plane.",
+   "agentValues": {
+    "centreMni": [
+     26,
+     -37,
+     -8
+    ],
+    "radiiMm": [
+     3,
+     3,
+     1.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 안뜰 가쪽·위"
+  },
+  {
+   "id": "so-anterior-canal",
+   "en": "Anterior semicircular canal",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    37,
+    -30,
+    -16
+   ],
+   "radiiMm": [
+    3,
+    1.5,
+    3.5
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Superior canal of the bony labyrinth, oriented roughly in a parasagittal plane, superior to the horizontal canal.",
+   "agentValues": {
+    "centreMni": [
+     25,
+     -35,
+     -2
+    ],
+    "radiiMm": [
+     3,
+     1.5,
+     3
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 바위뼈 능선 쪽, 가장 위"
+  },
+  {
+   "id": "so-posterior-canal",
+   "en": "Posterior semicircular canal",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    42,
+    -38,
+    -22
+   ],
+   "radiiMm": [
+    1.5,
+    3.5,
+    3.5
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Oriented roughly orthogonal to the anterior canal, posterior part of the bony labyrinth.",
+   "agentValues": {
+    "centreMni": [
+     28,
+     -39,
+     -6
+    ],
+    "radiiMm": [
+     1.5,
+     3,
+     3
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 가장 뒤·가쪽"
+  },
+  {
+   "id": "so-utricle",
+   "en": "Utricle",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    38,
+    -33,
+    -22
+   ],
+   "radiiMm": [
+    2,
+    2,
+    1.5
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Otolith organ in the vestibule, between the canals and the cochlea.",
+   "agentValues": {
+    "centreMni": [
+     25,
+     -35,
+     -10
+    ],
+    "radiiMm": [
+     2,
+     2,
+     1.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 안뜰"
+  },
+  {
+   "id": "so-saccule",
+   "en": "Saccule",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    36,
+    -31,
+    -24
+   ],
+   "radiiMm": [
+    1.5,
+    1.5,
+    1.5
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Otolith organ just below the utricle, closest of the vestibular organs to the cochlea.",
+   "agentValues": {
+    "centreMni": [
+     24,
+     -34,
+     -13
+    ],
+    "radiiMm": [
+     1.5,
+     1.5,
+     1.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 안뜰, 달팽이 쪽"
+  },
+  {
+   "id": "so-carotid-baroreceptor",
+   "en": "Carotid sinus baroreceptor",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    28,
+    -20,
+    -102
+   ],
+   "radiiMm": [
+    5,
+    5,
+    8
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Wall of the carotid sinus at the common-carotid bifurcation, approx C3-C4 vertebral level; z extrapolated well below the typical MNI brain FOV along the same AC-based axis used for the spinal cord/neck items.",
+   "agentValues": {
+    "centreMni": [
+     24,
+     -20,
+     -88
+    ],
+    "radiiMm": [
+     5,
+     5,
+     8
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 온목동맥 갈림, C3~C4 높이"
+  },
+  {
+   "id": "so-carotid-body",
+   "en": "Carotid body chemoreceptor",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    27,
+    -22,
+    -104
+   ],
+   "radiiMm": [
+    3,
+    3,
+    4
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Small (~5x3x1.5mm) chemoreceptor adjacent to the carotid bifurcation, just medial/posterior to the carotid sinus baroreceptor.",
+   "agentValues": {
+    "centreMni": [
+     22,
+     -23,
+     -90
+    ],
+    "radiiMm": [
+     3,
+     3,
+     4
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 갈림 뒤"
+  },
+  {
+   "id": "pn-trigeminal-ganglion",
+   "en": "Trigeminal ganglion",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    20,
+    -10,
+    -32
+   ],
+   "radiiMm": [
+    4,
+    6,
+    3
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Meckel's cave, middle cranial fossa, petrous apex, roughly at pons level. A targeted search for a stereotactic coordinate paper (e.g. gamma-knife trigeminal neuralgia series, PMC6744789) described isocenter placement on Meckel's cave but did not report numeric MNI/Leksell coordinates; location is reasoned from standard skull-base anatomy.",
+   "agentValues": {
+    "centreMni": [
+     25,
+     -22,
+     -30
+    ],
+    "radiiMm": [
+     4,
+     5,
+     2.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: Meckel 동굴: 해면정맥굴 뒤가쪽, 바위뼈 끝 x≈±18~22, y≈−5~−12"
+  },
+  {
+   "id": "pn-geniculate-ganglion",
+   "en": "Geniculate ganglion",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    35,
+    -28,
+    -22
+   ],
+   "radiiMm": [
+    1.5,
+    1.5,
+    1.5
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Genu of the facial nerve within the facial canal, petrous temporal bone, anterosuperior to the vestibule.",
+   "agentValues": {
+    "centreMni": [
+     24,
+     -28,
+     -20
+    ],
+    "radiiMm": [
+     1.5,
+     1.5,
+     1.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: IAC 바닥 가쪽, 얼굴신경 무릎"
+  },
+  {
+   "id": "pn-nodose-ganglion",
+   "en": "Inferior vagal ganglion (nodose)",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    18,
+    -26,
+    -64
+   ],
+   "radiiMm": [
+    3,
+    3,
+    8
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Just inferior to the jugular foramen, lateral to the carotid sheath in the upper neck; ganglion is elongated (~2cm).",
+   "agentValues": {
+    "centreMni": [
+     16,
+     -28,
+     -58
+    ],
+    "radiiMm": [
+     3,
+     3,
+     10
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 목정맥구멍(z≈−52) 바로 아래"
+  },
+  {
+   "id": "pn-petrosal-ganglion",
+   "en": "Inferior glossopharyngeal ganglion (petrosal)",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    15,
+    -30,
+    -52
+   ],
+   "radiiMm": [
+    2,
+    2,
+    3
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "At/just below the jugular foramen, medial and slightly superior to the nodose ganglion."
+  },
+  {
+   "id": "pn-vestibular-ganglion",
+   "en": "Vestibular ganglion (Scarpa)",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    31,
+    -30,
+    -26
+   ],
+   "radiiMm": [
+    3,
+    2,
+    2
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Within the internal auditory canal near its fundus, between the cochlear and vestibular end-organs.",
+   "agentValues": {
+    "centreMni": [
+     22,
+     -32,
+     -18
+    ],
+    "radiiMm": [
+     3,
+     2,
+     2
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: IAC 안"
+  },
+  {
+   "id": "pn-spiral-ganglion",
+   "en": "Spiral ganglion",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    36,
+    -30,
+    -27
+   ],
+   "radiiMm": [
+    3,
+    2.5,
+    2
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Within the modiolus (bony core) of the cochlea, slightly medial to the cochlea's overall centroid.",
+   "agentValues": {
+    "centreMni": [
+     21,
+     -33,
+     -15
+    ],
+    "radiiMm": [
+     3,
+     2,
+     2
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 달팽이 축"
+  },
+  {
+   "id": "pn-superior-cervical",
+   "en": "Superior cervical ganglion",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    22,
+    -30,
+    -88
+   ],
+   "radiiMm": [
+    3,
+    3,
+    12
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "medium",
+   "note": "Largest sympathetic chain ganglion, at approx C2-C3 vertebral level behind the carotid bifurcation/angle of mandible; fusiform, ~20-25mm long. z extrapolated below the typical MNI FOV.",
+   "agentValues": {
+    "centreMni": [
+     20,
+     -32,
+     -80
+    ],
+    "radiiMm": [
+     2,
+     2,
+     11
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: C2~C3 높이(큰구멍 z≈−52, C2 몸통 ≈−80)"
+  },
+  {
+   "id": "pn-ciliary-ganglion",
+   "en": "Ciliary ganglion",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    29,
+    38,
+    -28
+   ],
+   "radiiMm": [
+    1.5,
+    1.5,
+    1.5
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Posterior orbit, between the optic nerve and lateral rectus, in the posterior third of the orbit (orbital apex approx y=20, globe centre approx y=48).",
+   "agentValues": {
+    "centreMni": [
+     26,
+     30,
+     -20
+    ],
+    "radiiMm": [
+     1.5,
+     1.5,
+     1.5
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 눈확 뒤쪽, 시각신경 가쪽"
+  },
+  {
+   "id": "pn-pterygopalatine",
+   "en": "Pterygopalatine ganglion",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    24,
+    20,
+    -44
+   ],
+   "radiiMm": [
+    3,
+    3,
+    3
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Pterygopalatine fossa, posterior to the middle nasal concha, below the orbital floor.",
+   "agentValues": {
+    "centreMni": [
+     18,
+     15,
+     -35
+    ],
+    "radiiMm": [
+     3,
+     3,
+     3
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 날개입천장오목, 눈확 끝 아래"
+  },
+  {
+   "id": "pn-submandibular",
+   "en": "Submandibular ganglion",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    33,
+    12,
+    -76
+   ],
+   "radiiMm": [
+    2,
+    2,
+    2
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Floor of the mouth on the lingual nerve near the submandibular duct, well inferior to the skull base.",
+   "agentValues": {
+    "centreMni": [
+     30,
+     8,
+     -60
+    ],
+    "radiiMm": [
+     2,
+     2,
+     2
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 아래턱뼈 몸통 높이 z≈−70~−80"
+  },
+  {
+   "id": "pn-otic",
+   "en": "Otic ganglion",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    24,
+    -6,
+    -50
+   ],
+   "radiiMm": [
+    2,
+    2,
+    2
+   ],
+   "source": "estimate",
+   "quote": "",
+   "confidence": "low",
+   "note": "Infratemporal fossa just below the foramen ovale, medial to the mandibular nerve.",
+   "agentValues": {
+    "centreMni": [
+     24,
+     -10,
+     -42
+    ],
+    "radiiMm": [
+     2,
+     2,
+     2
+    ]
+   },
+   "reviewNote": "메인 세션이 해부학적 위치 기준으로 보정: 타원구멍 바로 아래"
+  },
+  {
+   "id": "bs-rvlm",
+   "en": "Rostral ventrolateral medulla",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    7,
+    -38,
+    -45
+   ],
+   "radiiMm": [
+    3,
+    4,
+    4
+   ],
+   "source": "estimate",
+   "confidence": "low",
+   "note": "메인 세션 추정: 숨뇌 머리쪽 배가쪽, 아래올리브 뒤가쪽"
+  },
+  {
+   "id": "bs-cvlm",
+   "en": "Caudal ventrolateral medulla",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    7,
+    -40,
+    -52
+   ],
+   "radiiMm": [
+    3,
+    3,
+    3
+   ],
+   "source": "estimate",
+   "confidence": "low",
+   "note": "메인 세션 추정: RVLM 바로 꼬리쪽"
+  },
+  {
+   "id": "bs-gigantocellular",
+   "en": "Gigantocellular reticular nucleus",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    2,
+    -36,
+    -42
+   ],
+   "radiiMm": [
+    2.5,
+    5,
+    6
+   ],
+   "source": "estimate",
+   "confidence": "low",
+   "note": "메인 세션 추정: 숨뇌 안쪽 그물체"
+  },
+  {
+   "id": "bs-reticulotegmental",
+   "en": "Reticulotegmental nucleus of the pons",
+   "placeable": true,
+   "bilateral": true,
+   "centreMni": [
+    2,
+    -30,
+    -30
+   ],
+   "radiiMm": [
+    2.5,
+    3,
+    3
+   ],
+   "source": "estimate",
+   "confidence": "low",
+   "note": "메인 세션 추정: 다리뇌 덮개, 안쪽세로다발 배쪽"
+  }
+ ],
+ "notPlaceable": [
+  {
+   "id": "ef-extrafusal",
+   "en": "Extrafusal muscle fibers",
+   "reason": "Skeletal muscle tissue, distributed across essentially all skeletal muscles; not a single object."
+  },
+  {
+   "id": "ef-pharynx-larynx",
+   "en": "Pharyngeal and laryngeal striated muscles",
+   "reason": "Muscle group, several distinct muscles in the pharynx/larynx; not one object."
+  },
+  {
+   "id": "ef-flexor",
+   "en": "Flexor muscles",
+   "reason": "Generic muscle-function group spanning many limb/trunk muscles outside the head/neck."
+  },
+  {
+   "id": "ef-heart-vessels",
+   "en": "Heart and blood vessels",
+   "reason": "Thoracic organ plus the entire vascular tree; distributed and outside head/neck."
+  },
+  {
+   "id": "ef-neck-muscles",
+   "en": "Neck and axial muscles",
+   "reason": "Muscle group spanning many distinct neck/trunk muscles."
+  },
+  {
+   "id": "ef-extensor",
+   "en": "Extensor muscles",
+   "reason": "Generic muscle-function group spanning many limb/trunk muscles outside the head/neck."
+  },
+  {
+   "id": "ef-tongue-muscles",
+   "en": "Tongue muscles",
+   "reason": "Muscle group (several intrinsic/extrinsic tongue muscles), not a single object."
+  },
+  {
+   "id": "ef-viscera",
+   "en": "Thoracoabdominal viscera",
+   "reason": "Distributed smooth muscle/gland targets across many thoracic and abdominal organs, outside head/neck."
+  },
+  {
+   "id": "ef-masticatory-muscles",
+   "en": "Muscles of mastication",
+   "reason": "Muscle group (temporalis, masseter, pterygoids), not a single object."
+  },
+  {
+   "id": "ef-medial-rectus",
+   "en": "Medial rectus muscle",
+   "reason": "Individual extraocular muscle; muscles are excluded as a category for this placeholder set regardless of how discrete they are."
+  },
+  {
+   "id": "ef-sphincter-pupillae",
+   "en": "Sphincter pupillae",
+   "reason": "Muscle (iris sphincter); excluded as a muscle."
+  },
+  {
+   "id": "ef-sweat-gland",
+   "en": "Sweat glands",
+   "reason": "Gland class distributed over the entire skin surface, outside head/neck."
+  },
+  {
+   "id": "ef-lateral-rectus",
+   "en": "Lateral rectus muscle",
+   "reason": "Individual extraocular muscle; excluded as a muscle."
+  },
+  {
+   "id": "ef-facial-muscles",
+   "en": "Muscles of facial expression",
+   "reason": "Muscle group covering the face, not a single object."
+  },
+  {
+   "id": "ef-scm-trapezius",
+   "en": "Sternocleidomastoid and trapezius",
+   "reason": "Two large, elongated muscles spanning neck/shoulder/back; excluded as muscles."
+  },
+  {
+   "id": "ef-bladder",
+   "en": "Detrusor muscle",
+   "reason": "Smooth muscle of the bladder wall, outside head/neck; excluded as a muscle."
+  },
+  {
+   "id": "ef-genital",
+   "en": "Genital vascular and ejaculatory effectors",
+   "reason": "Distributed smooth-muscle/vascular effectors outside head/neck."
+  },
+  {
+   "id": "ef-dilator-pupillae",
+   "en": "Dilator pupillae",
+   "reason": "Muscle (iris dilator); excluded as a muscle."
+  },
+  {
+   "id": "ef-ciliary-muscle",
+   "en": "Ciliary muscle",
+   "reason": "Muscle; excluded as a muscle (distinct from the ciliary ganglion, which is placed)."
+  },
+  {
+   "id": "ef-orbicularis-oculi",
+   "en": "Orbicularis oculi",
+   "reason": "Muscle; excluded as a muscle."
+  },
+  {
+   "id": "ef-stapedius",
+   "en": "Stapedius muscle",
+   "reason": "Muscle; excluded as a muscle category item even though it has a single small location."
+  },
+  {
+   "id": "ef-tensor-tympani",
+   "en": "Tensor tympani muscle",
+   "reason": "Muscle; excluded as a muscle category item."
+  },
+  {
+   "id": "ef-intrafusal",
+   "en": "Intrafusal muscle fibers",
+   "reason": "Muscle-fiber type distributed within muscle spindles throughout the body."
+  },
+  {
+   "id": "ef-urethral-sphincter",
+   "en": "Urethral sphincters",
+   "reason": "Muscle group outside head/neck; excluded as a muscle."
+  },
+  {
+   "id": "end-adipose",
+   "en": "Adipose tissue",
+   "reason": "Distributed tissue throughout the body, outside head/neck."
+  },
+  {
+   "id": "end-stomach",
+   "en": "Stomach",
+   "reason": "Abdominal organ, outside head/neck."
+  },
+  {
+   "id": "end-intestine",
+   "en": "Intestine",
+   "reason": "Abdominal organ, distributed and outside head/neck."
+  },
+  {
+   "id": "ef-superior-oblique",
+   "en": "Superior oblique muscle",
+   "reason": "Individual extraocular muscle; excluded as a muscle."
+  },
+  {
+   "id": "ef-extraocular-iii",
+   "en": "CN III extraocular muscles and levator",
+   "reason": "Muscle group (several muscles); excluded as muscles."
+  },
+  {
+   "id": "ef-lacrimal-nasal",
+   "en": "Lacrimal nasal and palatal glands",
+   "reason": "Multiple distinct exocrine glands grouped together; glands in the body are excluded as a category."
+  },
+  {
+   "id": "ef-submandibular-sublingual",
+   "en": "Submandibular and sublingual glands",
+   "reason": "Exocrine glands; excluded as glands (distinct from the submandibular ganglion, which is placed)."
+  },
+  {
+   "id": "ef-parotid",
+   "en": "Parotid gland",
+   "reason": "Exocrine gland; excluded as a gland."
+  },
+  {
+   "id": "end-adrenal-medulla",
+   "en": "Adrenal medulla",
+   "reason": "Endocrine tissue in the abdomen, outside head/neck."
+  },
+  {
+   "id": "end-adrenal-cortex",
+   "en": "Adrenal cortex",
+   "reason": "Endocrine tissue in the abdomen, outside head/neck."
+  },
+  {
+   "id": "end-pancreas",
+   "en": "Endocrine pancreas",
+   "reason": "Distributed islet tissue within an abdominal organ, outside head/neck."
+  },
+  {
+   "id": "pn-drg",
+   "en": "Dorsal root ganglion",
+   "reason": "DRGs as a class exist at every spinal level from C2 to Co1; not a single location without naming a specific level (e.g. a named segment's DRG would be placeable, but no segment-specific DRG appears in this dataset)."
+  },
+  {
+   "id": "pn-cn10",
+   "en": "Vagus nerve",
+   "reason": "Nerve extending along its course from the medulla to the abdomen; not a single location."
+  },
+  {
+   "id": "pn-sympathetic-chain",
+   "en": "Sympathetic chain ganglia",
+   "reason": "Chain of ganglia running the length of the vertebral column; not a single location (the superior cervical ganglion, its most cranial member, is placed separately)."
+  },
+  {
+   "id": "pn-cn7",
+   "en": "Facial nerve",
+   "reason": "Nerve along its course from the pons to the face; not a single location."
+  },
+  {
+   "id": "pn-cn9",
+   "en": "Glossopharyngeal nerve",
+   "reason": "Nerve along its course; not a single location."
+  },
+  {
+   "id": "pn-cn3",
+   "en": "Oculomotor nerve",
+   "reason": "Nerve along its course from midbrain to orbit; not a single location."
+  },
+  {
+   "id": "pn-cn8-vestibular",
+   "en": "Vestibular nerve",
+   "reason": "Nerve along its course from the labyrinth to the brainstem; not a single location (distinct from the vestibular ganglion, which is placed)."
+  },
+  {
+   "id": "pn-pelvic-splanchnic",
+   "en": "Pelvic splanchnic nerves",
+   "reason": "Nerves along their course in the pelvis; outside head/neck."
+  },
+  {
+   "id": "pn-cn2",
+   "en": "Optic nerve",
+   "reason": "Nerve along its course from the retina to the chiasm; not a single location."
+  },
+  {
+   "id": "pn-dorsal-root",
+   "en": "Dorsal root",
+   "reason": "Nerve root present at every spinal segment; not a single location."
+  },
+  {
+   "id": "pn-intramural-ganglia",
+   "en": "Intramural parasympathetic ganglia",
+   "reason": "Distributed within the walls of many different target organs; no single location."
+  },
+  {
+   "id": "pn-white-ramus",
+   "en": "White ramus communicans",
+   "reason": "Repeats at every thoracolumbar spinal segment; not a single location."
+  },
+  {
+   "id": "pn-cn5",
+   "en": "Trigeminal nerve",
+   "reason": "Nerve along its course from the pons to the face; not a single location (the trigeminal ganglion is placed separately)."
+  },
+  {
+   "id": "pn-cn5-v3",
+   "en": "Mandibular trigeminal nerve",
+   "reason": "Nerve along its course; not a single location."
+  },
+  {
+   "id": "pn-prevertebral-ganglia",
+   "en": "Prevertebral ganglia",
+   "reason": "Distributed group (celiac, superior/inferior mesenteric ganglia) in the abdomen, outside head/neck; no single location."
+  },
+  {
+   "id": "pn-cn6",
+   "en": "Abducens nerve",
+   "reason": "Nerve along its course; not a single location."
+  },
+  {
+   "id": "pn-ventral-root",
+   "en": "Ventral root",
+   "reason": "Nerve root present at every spinal segment; not a single location."
+  },
+  {
+   "id": "pn-gray-ramus",
+   "en": "Gray ramus communicans",
+   "reason": "Repeats at every spinal segment; not a single location."
+  },
+  {
+   "id": "pn-splanchnic",
+   "en": "Splanchnic nerves",
+   "reason": "Nerves along their course in the thorax/abdomen, outside head/neck."
+  },
+  {
+   "id": "pn-cn1",
+   "en": "Olfactory nerve",
+   "reason": "Fila olfactoria distributed across the cribriform plate; not a single discrete object."
+  },
+  {
+   "id": "pn-cn8-cochlear",
+   "en": "Cochlear nerve",
+   "reason": "Nerve along its course from the cochlea to the brainstem; not a single location."
+  },
+  {
+   "id": "pn-short-ciliary",
+   "en": "Short ciliary nerves",
+   "reason": "Small nerve branches along their course in the orbit; not a single location."
+  },
+  {
+   "id": "pn-pudendal",
+   "en": "Pudendal nerve",
+   "reason": "Nerve along its course in the pelvis; outside head/neck."
+  },
+  {
+   "id": "pn-cn4",
+   "en": "Trochlear nerve",
+   "reason": "Nerve along its course; not a single location."
+  },
+  {
+   "id": "pn-cn5-v1",
+   "en": "Ophthalmic trigeminal nerve",
+   "reason": "Nerve along its course; not a single location."
+  },
+  {
+   "id": "pn-cn11",
+   "en": "Accessory nerve",
+   "reason": "Nerve along its course from the spinal cord/medulla to the neck; not a single location (the spinal accessory nucleus is placed separately)."
+  },
+  {
+   "id": "pn-cn12",
+   "en": "Hypoglossal nerve",
+   "reason": "Nerve along its course; not a single location."
+  },
+  {
+   "id": "so-nociceptor",
+   "en": "Nociceptor free nerve endings",
+   "reason": "Receptor class distributed throughout the body."
+  },
+  {
+   "id": "so-muscle-spindle",
+   "en": "Muscle spindle",
+   "reason": "Receptor class distributed within skeletal muscles throughout the body."
+  },
+  {
+   "id": "so-thermoreceptor",
+   "en": "Thermoreceptors",
+   "reason": "Receptor class distributed throughout the body."
+  },
+  {
+   "id": "so-skin-mechanoreceptors",
+   "en": "Cutaneous mechanoreceptors",
+   "reason": "Receptor class distributed over the entire skin surface."
+  },
+  {
+   "id": "so-ampulla-cupula",
+   "en": "Ampulla crista and cupula",
+   "reason": "Generic class covering three separate ampullae, one per semicircular canal; no single location without specifying which canal."
+  },
+  {
+   "id": "so-otolith-macula",
+   "en": "Otolith macula",
+   "reason": "Generic class covering two separate maculae (utricular and saccular); no single location without specifying which (the utricle and saccule are each placed separately)."
+  },
+  {
+   "id": "so-golgi-tendon",
+   "en": "Golgi tendon organ",
+   "reason": "Receptor class distributed within tendons throughout the body."
+  },
+  {
+   "id": "so-joint-receptors",
+   "en": "Joint receptors",
+   "reason": "Receptor class distributed within joints throughout the body."
+  },
+  {
+   "id": "so-taste-buds",
+   "en": "Taste buds",
+   "reason": "Distributed across the tongue, soft palate and epiglottis; not a single location."
+  },
+  {
+   "id": "so-aortic-baroreceptor",
+   "en": "Aortic arch baroreceptor",
+   "reason": "Located on the aortic arch in the thorax, outside head/neck."
+  },
+  {
+   "id": "so-merkel",
+   "en": "Merkel discs",
+   "reason": "Receptor class distributed throughout the skin."
+  },
+  {
+   "id": "so-ruffini",
+   "en": "Ruffini endings",
+   "reason": "Receptor class distributed throughout the skin/joint capsules."
+  },
+  {
+   "id": "so-meissner",
+   "en": "Meissner corpuscles",
+   "reason": "Receptor class distributed throughout glabrous skin."
+  },
+  {
+   "id": "so-pacinian",
+   "en": "Pacinian corpuscles",
+   "reason": "Receptor class distributed throughout skin/deep tissue."
+  },
+  {
+   "id": "so-hair-follicle",
+   "en": "Hair follicle receptors",
+   "reason": "Receptor class distributed over hairy skin throughout the body."
+  },
+  {
+   "id": "sp-dorsal-horn",
+   "en": "Spinal dorsal horn",
+   "reason": "Present at every spinal segment along the entire cord length; not a single location."
+  },
+  {
+   "id": "sp-ventral-horn",
+   "en": "Spinal ventral horn",
+   "reason": "Present at every spinal segment along the entire cord length; not a single location."
+  },
+  {
+   "id": "sp-anterior-white-commissure",
+   "en": "Spinal anterior white commissure",
+   "reason": "Present at every spinal segment along the entire cord length; not a single location."
+  },
+  {
+   "id": "sp-substantia-gelatinosa",
+   "en": "Substantia gelatinosa",
+   "reason": "Rexed lamina II present at every spinal segment along the entire cord length; not a single location."
+  },
+  {
+   "id": "sp-lamina-v",
+   "en": "Spinal dorsal horn lamina V",
+   "reason": "Rexed lamina V present at every spinal segment along the entire cord length; not a single location."
+  }
+ ],
+ "_review": "2026-10-03 메인 세션 검토: 에이전트 좌표 38개 중 28개 보정(눈·속귀·삼차신경절·목 구조가 10~15mm 어긋남). 전부 추정값이며 문헌 좌표 아님 — 뷰어에서 [자리표시]로 표시. 뇌하수체·솔방울샘·척수 분절(PAM50 기준)은 그대로."
+}

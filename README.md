@@ -38,6 +38,11 @@ cd viewer   && npm test                            # 경로 로직 + content 무
 cd viewer   && npx playwright install chromium && npm run e2e   # 브라우저 시나리오
 ```
 
+## 데이터 규모 (2026-10-03)
+
+- 구조 187개(`content/structures.json`): NextBrain 라벨 148, Harvard AAN 핵 3, MNI 좌표 타원체 자리표시 39(눈·속귀·뇌하수체·신경절·척수 분절 — 추정 좌표, 화면에 "근사" 표시). 만든 방법은 `docs/data/structures-3d/README.md`.
+- 경로·기전 247개(`content/pathways.json`, `pipeline/integrate_pathways.py`로 성연 데이터셋에서 변환): 194개는 3D 구조가 켜지고 53개는 설명만. 전부 `reviewStatus: draft` — 설명 문장은 공개 문헌 근거(`docs/data/pathway-evidence/`)로 다시 쓰는 중.
+
 ## 화면 구성
 
 3D가 화면 전체를 차지하고 유리 패널이 그 위에 떠 있다(디자인 방향과 근거: `docs/design-direction.md`).

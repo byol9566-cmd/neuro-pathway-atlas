@@ -114,6 +114,29 @@ def load_aan_mask(filename: str):
     return fine, spacing / factor, origin
 
 
+AAN_COMBINED = "AAN_Brainstem_MNI152_1mm_v2p0.nii"
+_aan_combined = None
+
+
+def load_aan_labels(labels: list[int]):
+    """Same as load_aan_mask, but from the combined v2.0 volume (one label id per nucleus, see its LUT)."""
+    global _aan_combined
+    if _aan_combined is None:
+        img = nib.as_closest_canonical(nib.load(DATA_DIR / "aan" / AAN_COMBINED))
+        _aan_combined = (img.affine, np.asanyarray(img.dataobj).astype(np.int32))
+    affine, data = _aan_combined
+    assert np.allclose(affine[:3, :3], np.diag(np.diag(affine[:3, :3]))), affine
+    mask = np.isin(data, labels)
+    if not mask.any():
+        raise ValueError(f"AAN labels {labels} are empty")
+    box = ndimage.find_objects(mask.astype(np.uint8))[0]
+    start = np.array([s.start for s in box])
+    spacing, factor = float(affine[0, 0]), 4
+    fine = np.kron(mask[box], np.ones((factor,) * 3, dtype=bool))
+    origin = affine[:3, 3] + start * spacing + (0.5 / factor - 0.5) * spacing
+    return fine, spacing / factor, origin
+
+
 def open_edge_count(mesh) -> int:
     """Edges used by a single face, i.e. actual holes. (Decimation may also pinch an edge between four
     faces, which breaks `is_watertight` but is invisible when rendered.)"""
@@ -166,9 +189,25 @@ def build_structure(structure: dict, nb: NextBrain):
         line_r = None if line is None else line * np.array([-1.0, 1.0, 1.0])
         out.append((f"{sid}.R", mesh_r, mesh_record(f"{sid}.R", structure, "R", mesh_r, line=line_r, **kw)))
 
+    if src["atlas"] == "mni":
+        # no atlas gives the shape, but the position and size are known: an ellipsoid at MNI coordinates,
+        # given for the right side when bilateral (the left is its mirror image)
+        center = np.array(src["centreMni"], dtype=float)
+        mesh = meshing.ellipsoid(center, src["radiiMm"])
+        vol = float(mesh.volume)
+        if src.get("bilateral"):
+            out.append((f"{sid}.R", mesh, mesh_record(f"{sid}.R", structure, "R", mesh, volume_mm3=vol, approx=True)))
+            mesh_l = meshing.mirror_x(mesh)
+            out.append((f"{sid}.L", mesh_l, mesh_record(f"{sid}.L", structure, "L", mesh_l, volume_mm3=vol, approx=True)))
+        else:
+            out.append((f"{sid}.M", mesh, mesh_record(f"{sid}.M", structure, "M", mesh, volume_mm3=vol, approx=True)))
+        return out
+
     if src["atlas"] == "aan":
-        for side, filename in src["files"].items():
-            mask, spacing, origin = load_aan_mask(filename)
+        # either one file per side (v2.0 per-nucleus files) or label ids in the combined volume
+        sources = src.get("files") or {side: labels for side, labels in src["labels"].items()}
+        for side, what in sources.items():
+            mask, spacing, origin = load_aan_mask(what) if isinstance(what, str) else load_aan_labels(what)
             cleaned, stats, mesh = build_from_mask(
                 mask, spacing, origin, sigma_mm=0.6, faces_per_mm2=6, max_faces=4000, closing_iters=0
             )
@@ -187,14 +226,26 @@ def build_structure(structure: dict, nb: NextBrain):
 
     labels = nb.expand_labels(src)
     mask, spacing, origin = nb.label_mask(labels, stride=src.get("stride", 1))
+    if not mask.any():
+        raise ValueError(f"{sid}: labels {labels} have no voxels in the atlas")
     cleaned, stats = meshing.clean_mask(mask)
     vol = cleaned.sum() * spacing**3
     placeholder = src.get("placeholder")
-    if placeholder and vol < PLACEHOLDER_BELOW_MM3:
+    if vol < PLACEHOLDER_BELOW_MM3 and (placeholder or mask.any()):
+        # too few voxels for a surface: an ellipsoid at the label's centroid. Explicit radii if the
+        # content gives them, otherwise a sphere a little larger than the label's own volume so the
+        # nucleus is at least visible (small nuclei of the reviewer's list land here)
         center = np.argwhere(mask).mean(axis=0) * spacing + origin
-        mesh = meshing.ellipsoid(center, placeholder["radiiMm"])
+        if placeholder:
+            radii = placeholder["radiiMm"]
+        else:
+            r = max(1.0, (3.0 * max(vol, 0.5) / (4.0 * np.pi)) ** (1.0 / 3.0) * 1.5)
+            radii = [r, r, r]
+        mesh = meshing.ellipsoid(center, radii)
         add_pair(mesh, volume_mm3=mask.sum() * spacing**3, approx=True, stats=stats)
         return out
+    if not mask.any():
+        raise ValueError(f"{sid}: labels {labels} have no voxels")
 
     sigma = 0.5 if src.get("stride", 1) > 1 else (0.2 if vol < 30 else 0.3)
     mesh = meshing.mask_to_mesh(cleaned, spacing, origin, smooth_sigma_mm=sigma)
@@ -228,10 +279,15 @@ def main(argv=None):
     print(f"nextbrain loaded: {nb.data.shape} @ {nb.spacing} mm, {len(nb.present)} labels ({time.time() - t0:.1f}s)")
 
     scene = trimesh.Scene()
-    mesh_records, structure_records = [], []
+    mesh_records, structure_records, skipped = [], [], []
     for s in structures:
         t = time.time()
-        built = build_structure(s, nb)
+        try:
+            built = build_structure(s, nb)
+        except ValueError as err:
+            print(f"  !! skipped {s['id']}: {err}")
+            skipped.append(s["id"])
+            continue
         for mesh_id, mesh, rec in built:
             mesh.vertex_normals  # noqa: B018 -- compute so the GLB carries smooth normals
             scene.add_geometry(mesh, node_name=mesh_id, geom_name=mesh_id)
@@ -254,6 +310,8 @@ def main(argv=None):
         kept = first.get("cleanup", {}).get("keptFraction")
         print(f"  {s['id']:24s} {first['volumeMm3']:9.1f} mm3  {first['faces']:6d} faces  kept={kept}  {time.time() - t:4.1f}s{flag}")
 
+    if skipped:
+        print(f"skipped {len(skipped)} structures with no usable voxels: {', '.join(skipped)}")
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     raw = OUT_DIR / "atlas.raw.glb"
     final = OUT_DIR / "atlas.glb"

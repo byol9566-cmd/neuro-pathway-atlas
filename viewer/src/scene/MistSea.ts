@@ -183,9 +183,13 @@ export class MistSea {
   private readonly hit = new THREE.Vector3();
   private surgeLeft = 0;
 
+  /** world y of the resting surface */
+  readonly seaLevel: number;
+
   constructor(private readonly center: THREE.Vector3, renderer: THREE.WebGLRenderer) {
     this.waves = new WaveField(renderer, 384, 0.978); // fades within a couple of seconds
     const seaLevel = center.y - SEA_DROP;
+    this.seaLevel = seaLevel;
     this.plane = new THREE.Plane(new THREE.Vector3(0, 1, 0), -seaLevel);
 
     const geometry = new THREE.PlaneGeometry(SHEET_RADIUS * 2, SHEET_RADIUS * 2, 300, 300).rotateX(-Math.PI / 2);

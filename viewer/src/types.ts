@@ -54,6 +54,7 @@ export interface PathwayStep {
   description: LocalizedText;
   neuronOrder?: number;
   decussation?: boolean;
+  transmitter?: string;
   structures: PathwayStructureRef[];
   missing?: LocalizedText;
 }
@@ -66,6 +67,16 @@ export interface Pathway {
   origin: LocalizedText;
   defaultOriginSide: OriginSide;
   reviewStatus: 'draft' | 'reviewed';
+  /** how the reviewer's dataset grounds it (lecture-grounded, lecture-hypothesis, ...) */
+  evidenceStatus?: string;
+  processType?: string;
+  /** at least one step lights up a mesh; the others are text-only mechanisms */
+  has3d?: boolean;
   steps: PathwayStep[];
-  lesions: { level: LocalizedText; deficit: LocalizedText }[];
+  lesions: { level: LocalizedText; deficit: LocalizedText; side?: string }[];
+}
+
+export interface PathwayCategory {
+  id: string;
+  name: LocalizedText;
 }

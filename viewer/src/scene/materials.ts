@@ -6,14 +6,18 @@ export type MeshState = 'normal' | 'ghost' | 'involved' | 'active';
 export const ghostFocusDistance = { value: 500 };
 /** 0..1 master fade used by the intro; shared by every ghost and halo material */
 export const sceneReveal = { value: 1 };
+/** world y of the mist sea: ghosts sink into it (the spinal cord runs far below the brain) */
+export const sceneFloor = { value: -1e9 };
 
 const GHOST_VERT = /* glsl */ `
   varying vec3 vNormal;
   varying vec3 vView;
   varying float vDepth;
+  varying float vWorldY;
   #include <clipping_planes_pars_vertex>
   void main() {
     vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+    vWorldY = (modelMatrix * vec4(position, 1.0)).y;
     vNormal = normalize(normalMatrix * normal);
     vView = normalize(-mvPosition.xyz);
     vDepth = -mvPosition.z;
@@ -32,9 +36,11 @@ const GHOST_FRAG = /* glsl */ `
   uniform float uHover;
   uniform float uFocusDistance;
   uniform float uReveal;
+  uniform float uFloorY;
   varying vec3 vNormal;
   varying vec3 vView;
   varying float vDepth;
+  varying float vWorldY;
   #include <clipping_planes_pars_fragment>
   void main() {
     #include <clipping_planes_fragment>
@@ -48,6 +54,8 @@ const GHOST_FRAG = /* glsl */ `
     float fade = mix(1.0, mix(0.06, 1.0, behindFocus), zoomedIn);
     // close up, dozens of outlines cross the view at once: thin them so the subject stays the brightest thing
     fade *= mix(1.0, 0.55, zoomedIn);
+    // whatever reaches below the mist sea dissolves into it over ~12 cm
+    fade *= smoothstep(uFloorY - 120.0, uFloorY + 10.0, vWorldY);
     float alpha = ((uBase + uRim * rim) * fade + uHover * (0.1 + 0.3 * rim)) * uReveal;
     // the rim itself leans towards starlight so the outline reads as lit from behind
     vec3 color = mix(uColor, vec3(0.92, 0.95, 1.0), rim * 0.55 + uHover * 0.4);
@@ -68,6 +76,7 @@ export function ghostMaterial(color: THREE.Color, shell: boolean): THREE.ShaderM
       uHover: { value: 0 },
       uFocusDistance: ghostFocusDistance,
       uReveal: sceneReveal,
+      uFloorY: sceneFloor,
     },
     transparent: true,
     depthWrite: false,

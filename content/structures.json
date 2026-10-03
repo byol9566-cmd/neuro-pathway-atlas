@@ -1,75 +1,4243 @@
 {
   "_comment": "구조 정의. tract=신경로(중심선 자동 계산), centerline=신경로는 아니지만 길쭉해서 경로선이 무게중심 대신 중심선을 따라가야 하는 구조. source.labels / labelRanges 는 NextBrain argmax 라벨 id (docs/data/nextbrain-argmax-labels.tsv). 한국어 용어는 초안 — 도메인 담당자 검수 필요.",
   "groups": {
-    "shell": { "name": { "ko": "윤곽", "en": "Outline" }, "color": "#9fb3c8" },
-    "cortex": { "name": { "ko": "대뇌겉질", "en": "Cerebral cortex" }, "color": "#d9a77a" },
-    "thalamus": { "name": { "ko": "시상", "en": "Thalamus" }, "color": "#5b8def" },
-    "basal-ganglia": { "name": { "ko": "바닥핵·중뇌핵", "en": "Basal ganglia & midbrain nuclei" }, "color": "#9b6bd6" },
-    "limbic": { "name": { "ko": "둘레계통", "en": "Limbic system" }, "color": "#e0719e" },
-    "brainstem-nuclei": { "name": { "ko": "뇌줄기 핵", "en": "Brainstem nuclei" }, "color": "#e8893a" },
-    "tracts": { "name": { "ko": "신경로", "en": "Tracts" }, "color": "#e6d36a" },
-    "cerebellum": { "name": { "ko": "소뇌", "en": "Cerebellum" }, "color": "#58b89a" }
+    "shell": {
+      "name": {
+        "ko": "윤곽",
+        "en": "Outline"
+      },
+      "color": "#9fb3c8"
+    },
+    "cortex": {
+      "name": {
+        "ko": "대뇌겉질",
+        "en": "Cerebral cortex"
+      },
+      "color": "#d9a77a"
+    },
+    "thalamus": {
+      "name": {
+        "ko": "시상",
+        "en": "Thalamus"
+      },
+      "color": "#5b8def"
+    },
+    "basal-ganglia": {
+      "name": {
+        "ko": "바닥핵·중뇌핵",
+        "en": "Basal ganglia & midbrain nuclei"
+      },
+      "color": "#9b6bd6"
+    },
+    "limbic": {
+      "name": {
+        "ko": "둘레계통",
+        "en": "Limbic system"
+      },
+      "color": "#e0719e"
+    },
+    "brainstem-nuclei": {
+      "name": {
+        "ko": "뇌줄기 핵",
+        "en": "Brainstem nuclei"
+      },
+      "color": "#e8893a"
+    },
+    "tracts": {
+      "name": {
+        "ko": "신경로",
+        "en": "Tracts"
+      },
+      "color": "#e6d36a"
+    },
+    "cerebellum": {
+      "name": {
+        "ko": "소뇌",
+        "en": "Cerebellum"
+      },
+      "color": "#58b89a"
+    },
+    "hypothalamus": {
+      "name": {
+        "ko": "시상하부",
+        "en": "Hypothalamus"
+      },
+      "color": "#ae8d66"
+    },
+    "spinal-cord": {
+      "name": {
+        "ko": "척수",
+        "en": "Spinal cord"
+      },
+      "color": "#81977c"
+    },
+    "peripheral": {
+      "name": {
+        "ko": "말초신경·신경절",
+        "en": "Peripheral nerves and ganglia"
+      },
+      "color": "#82a6b1"
+    },
+    "sensory-organs": {
+      "name": {
+        "ko": "감각기관·수용기",
+        "en": "Sensory organs and receptors"
+      },
+      "color": "#ac9984"
+    },
+    "effectors": {
+      "name": {
+        "ko": "근육·샘·효과기",
+        "en": "Effectors"
+      },
+      "color": "#b88f94"
+    },
+    "cellular": {
+      "name": {
+        "ko": "세포·시냅스 개념구조",
+        "en": "Cellular and synaptic concepts"
+      },
+      "color": "#a4a4a4"
+    },
+    "neuroendocrine": {
+      "name": {
+        "ko": "신경내분비 기관",
+        "en": "Neuroendocrine organs"
+      },
+      "color": "#9f97bb"
+    }
   },
   "structures": [
-    { "id": "shell-cerebrum", "group": "shell", "name": { "ko": "대뇌반구", "en": "Cerebral hemisphere" }, "source": { "atlas": "nextbrain", "shell": "cerebrum" } },
-    { "id": "shell-brainstem", "group": "shell", "name": { "ko": "뇌줄기", "en": "Brainstem" }, "source": { "atlas": "nextbrain", "shell": "brainstem" } },
-    { "id": "shell-cerebellum", "group": "shell", "name": { "ko": "소뇌", "en": "Cerebellum" }, "source": { "atlas": "nextbrain", "shell": "cerebellum" } },
-
-    { "id": "ctx-postcentral", "group": "cortex", "name": { "ko": "중심뒤이랑 (일차몸감각겉질)", "en": "Postcentral gyrus (S1)" }, "source": { "atlas": "nextbrain", "labels": [2022], "stride": 2 } },
-    { "id": "ctx-precentral", "group": "cortex", "name": { "ko": "중심앞이랑 (일차운동겉질)", "en": "Precentral gyrus (M1)" }, "source": { "atlas": "nextbrain", "labels": [2024], "stride": 2 } },
-    { "id": "ctx-cingulate", "centerline": true, "group": "cortex", "name": { "ko": "띠이랑", "en": "Cingulate gyrus" }, "source": { "atlas": "nextbrain", "labels": [2002, 2010, 2023, 2026], "stride": 2 } },
-    { "id": "ctx-parahippocampal", "centerline": true, "group": "cortex", "name": { "ko": "해마곁이랑·속후각겉질", "en": "Parahippocampal gyrus & entorhinal cortex" }, "source": { "atlas": "nextbrain", "labels": [2006, 2016], "stride": 2 } },
-
-    { "id": "thal-vpl", "group": "thalamus", "name": { "ko": "배쪽뒤가쪽핵 (VPL)", "en": "Ventral posterolateral nucleus" }, "source": { "atlas": "nextbrain", "labels": [394, 458] } },
-    { "id": "thal-vpm", "group": "thalamus", "name": { "ko": "배쪽뒤안쪽핵 (VPM)", "en": "Ventral posteromedial nucleus" }, "source": { "atlas": "nextbrain", "labels": [395, 423] } },
-    { "id": "thal-vl", "group": "thalamus", "name": { "ko": "배쪽가쪽핵 (VL)", "en": "Ventral lateral nucleus" }, "source": { "atlas": "nextbrain", "labels": [314, 350, 381, 382] } },
-    { "id": "thal-va", "group": "thalamus", "name": { "ko": "배쪽앞핵 (VA)", "en": "Ventral anterior nucleus" }, "source": { "atlas": "nextbrain", "labels": [222, 283] } },
-    { "id": "thal-md", "group": "thalamus", "name": { "ko": "등쪽안쪽핵 (MD)", "en": "Mediodorsal nucleus" }, "source": { "atlas": "nextbrain", "labels": [282, 312, 313, 379, 380] } },
-    { "id": "thal-anterior", "group": "thalamus", "name": { "ko": "시상앞핵군 (AV·AD·AM)", "en": "Anterior nuclear group" }, "source": { "atlas": "nextbrain", "labels": [219, 220, 252] } },
-    { "id": "thal-lp-ld", "group": "thalamus", "name": { "ko": "가쪽뒤핵·가쪽등쪽핵 (LP·LD)", "en": "Lateral posterior & lateral dorsal nuclei" }, "source": { "atlas": "nextbrain", "labels": [378, 441] } },
-    { "id": "thal-pulvinar", "group": "thalamus", "name": { "ko": "시상베개", "en": "Pulvinar" }, "source": { "atlas": "nextbrain", "labels": [454, 508, 517, 519, 578, 811, 813] } },
-    { "id": "thal-cm-pf", "group": "thalamus", "name": { "ko": "중심정중핵·다발곁핵 (CM·Pf)", "en": "Centromedian & parafascicular nuclei" }, "source": { "atlas": "nextbrain", "labels": [396, 397, 398, 479] } },
-    { "id": "thal-lgn", "group": "thalamus", "name": { "ko": "가쪽무릎핵 (LGN)", "en": "Lateral geniculate nucleus" }, "source": { "atlas": "nextbrain", "labels": [484] } },
-    { "id": "thal-mgn", "group": "thalamus", "name": { "ko": "안쪽무릎핵 (MGN)", "en": "Medial geniculate nucleus" }, "source": { "atlas": "nextbrain", "labels": [504, 505] } },
-    { "id": "thal-reticular", "group": "thalamus", "name": { "ko": "시상그물핵", "en": "Thalamic reticular nucleus" }, "source": { "atlas": "nextbrain", "labels": [190, 191, 254] } },
-
-    { "id": "bg-caudate", "group": "basal-ganglia", "name": { "ko": "꼬리핵", "en": "Caudate nucleus" }, "source": { "atlas": "nextbrain", "labels": [48, 118, 393] } },
-    { "id": "bg-putamen", "group": "basal-ganglia", "name": { "ko": "조가비핵", "en": "Putamen" }, "source": { "atlas": "nextbrain", "labels": [79, 349] } },
-    { "id": "bg-gpe", "group": "basal-ganglia", "name": { "ko": "창백핵 바깥분절 (GPe)", "en": "Globus pallidus, external segment" }, "source": { "atlas": "nextbrain", "labels": [119] } },
-    { "id": "bg-gpi", "group": "basal-ganglia", "name": { "ko": "창백핵 속분절 (GPi)", "en": "Globus pallidus, internal segment" }, "source": { "atlas": "nextbrain", "labels": [206] } },
-    { "id": "bg-stn", "group": "basal-ganglia", "name": { "ko": "시상밑핵 (STN)", "en": "Subthalamic nucleus" }, "source": { "atlas": "nextbrain", "labels": [315, 316, 321] } },
-    { "id": "bg-sn", "group": "basal-ganglia", "name": { "ko": "흑색질", "en": "Substantia nigra" }, "source": { "atlas": "nextbrain", "labels": [310, 352] } },
-    { "id": "mb-red-nucleus", "group": "basal-ganglia", "name": { "ko": "적색핵", "en": "Red nucleus" }, "source": { "atlas": "nextbrain", "labels": [385] } },
-
-    { "id": "lim-hippocampus", "centerline": true, "group": "limbic", "name": { "ko": "해마", "en": "Hippocampus" }, "source": { "atlas": "nextbrain", "labelRanges": [[326, 326], [339, 347], [364, 375], [404, 411], [418, 422], [432, 432], [558, 576]] } },
-    { "id": "lim-amygdala", "group": "limbic", "name": { "ko": "편도체", "en": "Amygdala" }, "source": { "atlas": "nextbrain", "labels": [214, 215, 216, 217, 238, 240, 242, 277, 278, 279, 295, 301, 320, 377] } },
-    { "id": "lim-mammillary-body", "group": "limbic", "name": { "ko": "유두체", "en": "Mammillary body" }, "source": { "atlas": "nextbrain", "labels": [305, 306, 307, 308] } },
-    { "id": "tr-fornix", "group": "tracts", "tract": true, "name": { "ko": "뇌활 (해마술 포함)", "en": "Fornix (with fimbria)" }, "source": { "atlas": "nextbrain", "labels": [199, 461] } },
-    { "id": "tr-mtt", "group": "tracts", "tract": true, "name": { "ko": "유두시상로", "en": "Mammillothalamic tract" }, "source": { "atlas": "nextbrain", "labels": [276] } },
-
-    { "id": "tr-medial-lemniscus", "group": "tracts", "tract": true, "name": { "ko": "안쪽섬유띠", "en": "Medial lemniscus" }, "source": { "atlas": "nextbrain", "labels": [499] } },
-    { "id": "tr-mlf", "group": "tracts", "tract": true, "name": { "ko": "안쪽세로다발 (MLF)", "en": "Medial longitudinal fasciculus" }, "source": { "atlas": "nextbrain", "labels": [528] } },
-    { "id": "tr-scp", "group": "tracts", "tract": true, "name": { "ko": "위소뇌다리", "en": "Superior cerebellar peduncle" }, "source": { "atlas": "nextbrain", "labels": [471, 531] } },
-    { "id": "tr-optic-tract", "group": "tracts", "tract": true, "name": { "ko": "시각로", "en": "Optic tract" }, "source": { "atlas": "nextbrain", "labels": [208] } },
-
-    { "id": "bs-gracile", "group": "brainstem-nuclei", "name": { "ko": "널판핵", "en": "Gracile nucleus" }, "source": { "atlas": "nextbrain", "labels": [756] } },
-    { "id": "bs-cuneate", "group": "brainstem-nuclei", "name": { "ko": "쐐기핵", "en": "Cuneate nucleus" }, "source": { "atlas": "nextbrain", "labels": [755] } },
-    { "id": "bs-vestibular-medial", "group": "brainstem-nuclei", "name": { "ko": "안쪽안뜰핵", "en": "Medial vestibular nucleus" }, "source": { "atlas": "nextbrain", "labels": [694] } },
-    { "id": "bs-vestibular-other", "group": "brainstem-nuclei", "name": { "ko": "가쪽·아래·위안뜰핵", "en": "Lateral, inferior & superior vestibular nuclei" }, "source": { "atlas": "nextbrain", "labels": [683, 690, 703] } },
-    { "id": "bs-abducens", "group": "brainstem-nuclei", "name": { "ko": "갓돌림신경핵 (VI)", "en": "Abducens nucleus" }, "source": { "atlas": "nextbrain", "labels": [682] } },
-    { "id": "bs-oculomotor", "group": "brainstem-nuclei", "name": { "ko": "눈돌림신경핵 (III)", "en": "Oculomotor nucleus" }, "source": { "atlas": "nextbrain", "labels": [464], "placeholder": { "radiiMm": [1.4, 2.6, 2.2] } } },
-    { "id": "bs-facial", "group": "brainstem-nuclei", "name": { "ko": "얼굴신경핵 (VII)", "en": "Facial nucleus" }, "source": { "atlas": "nextbrain", "labels": [666] } },
-    { "id": "bs-spinal-trigeminal", "group": "brainstem-nuclei", "name": { "ko": "삼차신경척수핵", "en": "Spinal trigeminal nucleus" }, "source": { "atlas": "nextbrain", "labels": [669] } },
-    { "id": "bs-hypoglossal", "group": "brainstem-nuclei", "name": { "ko": "혀밑신경핵 (XII)", "en": "Hypoglossal nucleus" }, "source": { "atlas": "nextbrain", "labels": [724], "placeholder": { "radiiMm": [1.0, 1.2, 4.5] } } },
-    { "id": "bs-inferior-olive", "group": "brainstem-nuclei", "name": { "ko": "아래올리브핵", "en": "Inferior olivary nucleus" }, "source": { "atlas": "nextbrain", "labels": [654, 671, 685] } },
-    { "id": "bs-pontine-nuclei", "group": "brainstem-nuclei", "name": { "ko": "다리뇌핵", "en": "Pontine nuclei" }, "source": { "atlas": "nextbrain", "labels": [414] } },
-    { "id": "bs-pag", "group": "brainstem-nuclei", "name": { "ko": "수도관주위회색질 (PAG)", "en": "Periaqueductal gray" }, "source": { "atlas": "nextbrain", "labels": [465] } },
-    { "id": "bs-superior-colliculus", "group": "brainstem-nuclei", "name": { "ko": "위둔덕", "en": "Superior colliculus" }, "source": { "atlas": "nextbrain", "labels": [507] } },
-    { "id": "bs-inferior-colliculus", "group": "brainstem-nuclei", "name": { "ko": "아래둔덕", "en": "Inferior colliculus" }, "source": { "atlas": "nextbrain", "labels": [541] } },
-    { "id": "bs-lc-nextbrain", "group": "brainstem-nuclei", "name": { "ko": "청색반점 (NextBrain)", "en": "Locus coeruleus (NextBrain)" }, "source": { "atlas": "nextbrain", "labels": [589] } },
-    { "id": "bs-lc-aan", "group": "brainstem-nuclei", "name": { "ko": "청색반점 (Harvard AAN)", "en": "Locus coeruleus (Harvard AAN)" }, "source": { "atlas": "aan", "files": { "L": "AAN_LC_L_MNI152_1mm_v2p0.nii", "R": "AAN_LC_R_MNI152_1mm_v2p0.nii" } } },
-    { "id": "bs-dorsal-raphe-aan", "group": "brainstem-nuclei", "name": { "ko": "등쪽솔기핵 (Harvard AAN)", "en": "Dorsal raphe nucleus (Harvard AAN)" }, "source": { "atlas": "aan", "files": { "M": "AAN_DR_MNI152_1mm_v2p0.nii" } } },
-
-    { "id": "cb-dentate", "group": "cerebellum", "name": { "ko": "치아핵", "en": "Dentate nucleus" }, "source": { "atlas": "nextbrain", "labels": [721] } }
+    {
+      "id": "shell-cerebrum",
+      "group": "shell",
+      "name": {
+        "ko": "대뇌반구",
+        "en": "Cerebral hemisphere"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "shell": "cerebrum"
+      }
+    },
+    {
+      "id": "shell-brainstem",
+      "group": "shell",
+      "name": {
+        "ko": "뇌줄기",
+        "en": "Brainstem"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "shell": "brainstem"
+      }
+    },
+    {
+      "id": "shell-cerebellum",
+      "group": "shell",
+      "name": {
+        "ko": "소뇌",
+        "en": "Cerebellum"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "shell": "cerebellum"
+      }
+    },
+    {
+      "id": "ctx-postcentral",
+      "group": "cortex",
+      "name": {
+        "ko": "중심뒤이랑 (일차몸감각겉질)",
+        "en": "Postcentral gyrus (S1)"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2022
+        ],
+        "stride": 2
+      }
+    },
+    {
+      "id": "ctx-precentral",
+      "group": "cortex",
+      "name": {
+        "ko": "중심앞이랑 (일차운동겉질)",
+        "en": "Precentral gyrus (M1)"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2024
+        ],
+        "stride": 2
+      }
+    },
+    {
+      "id": "ctx-cingulate",
+      "centerline": true,
+      "group": "cortex",
+      "name": {
+        "ko": "띠이랑",
+        "en": "Cingulate gyrus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2002,
+          2010,
+          2023,
+          2026
+        ],
+        "stride": 2
+      }
+    },
+    {
+      "id": "ctx-parahippocampal",
+      "centerline": true,
+      "group": "cortex",
+      "name": {
+        "ko": "해마곁이랑·속후각겉질",
+        "en": "Parahippocampal gyrus & entorhinal cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2006,
+          2016
+        ],
+        "stride": 2
+      }
+    },
+    {
+      "id": "thal-vpl",
+      "group": "thalamus",
+      "name": {
+        "ko": "배쪽뒤가쪽핵 (VPL)",
+        "en": "Ventral posterolateral nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          394,
+          458
+        ]
+      }
+    },
+    {
+      "id": "thal-vpm",
+      "group": "thalamus",
+      "name": {
+        "ko": "배쪽뒤안쪽핵 (VPM)",
+        "en": "Ventral posteromedial nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          395,
+          423
+        ]
+      }
+    },
+    {
+      "id": "thal-vl",
+      "group": "thalamus",
+      "name": {
+        "ko": "배쪽가쪽핵 (VL)",
+        "en": "Ventral lateral nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          314,
+          350,
+          381,
+          382
+        ]
+      }
+    },
+    {
+      "id": "thal-va",
+      "group": "thalamus",
+      "name": {
+        "ko": "배쪽앞핵 (VA)",
+        "en": "Ventral anterior nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          222,
+          283
+        ]
+      }
+    },
+    {
+      "id": "thal-md",
+      "group": "thalamus",
+      "name": {
+        "ko": "등쪽안쪽핵 (MD)",
+        "en": "Mediodorsal nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          282,
+          312,
+          313,
+          379,
+          380
+        ]
+      }
+    },
+    {
+      "id": "thal-anterior",
+      "group": "thalamus",
+      "name": {
+        "ko": "시상앞핵군 (AV·AD·AM)",
+        "en": "Anterior nuclear group"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          219,
+          220,
+          252
+        ]
+      }
+    },
+    {
+      "id": "thal-lp-ld",
+      "group": "thalamus",
+      "name": {
+        "ko": "가쪽뒤핵·가쪽등쪽핵 (LP·LD)",
+        "en": "Lateral posterior & lateral dorsal nuclei"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          378,
+          441
+        ]
+      }
+    },
+    {
+      "id": "thal-pulvinar",
+      "group": "thalamus",
+      "name": {
+        "ko": "시상베개",
+        "en": "Pulvinar"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          454,
+          508,
+          517,
+          519,
+          578,
+          811,
+          813
+        ]
+      }
+    },
+    {
+      "id": "thal-cm-pf",
+      "group": "thalamus",
+      "name": {
+        "ko": "중심정중핵·다발곁핵 (CM·Pf)",
+        "en": "Centromedian & parafascicular nuclei"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          396,
+          397,
+          398,
+          479
+        ]
+      }
+    },
+    {
+      "id": "thal-lgn",
+      "group": "thalamus",
+      "name": {
+        "ko": "가쪽무릎핵 (LGN)",
+        "en": "Lateral geniculate nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          484
+        ]
+      }
+    },
+    {
+      "id": "thal-mgn",
+      "group": "thalamus",
+      "name": {
+        "ko": "안쪽무릎핵 (MGN)",
+        "en": "Medial geniculate nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          504,
+          505
+        ]
+      }
+    },
+    {
+      "id": "thal-reticular",
+      "group": "thalamus",
+      "name": {
+        "ko": "시상그물핵",
+        "en": "Thalamic reticular nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          190,
+          191,
+          254
+        ]
+      }
+    },
+    {
+      "id": "bg-caudate",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "꼬리핵",
+        "en": "Caudate nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          48,
+          118,
+          393
+        ]
+      }
+    },
+    {
+      "id": "bg-putamen",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "조가비핵",
+        "en": "Putamen"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          79,
+          349
+        ]
+      }
+    },
+    {
+      "id": "bg-gpe",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "창백핵 바깥분절 (GPe)",
+        "en": "Globus pallidus, external segment"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          119
+        ]
+      }
+    },
+    {
+      "id": "bg-gpi",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "창백핵 속분절 (GPi)",
+        "en": "Globus pallidus, internal segment"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          206
+        ]
+      }
+    },
+    {
+      "id": "bg-stn",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "시상밑핵 (STN)",
+        "en": "Subthalamic nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          315,
+          316,
+          321
+        ]
+      }
+    },
+    {
+      "id": "bg-sn",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "흑색질",
+        "en": "Substantia nigra"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          310,
+          352
+        ]
+      }
+    },
+    {
+      "id": "mb-red-nucleus",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "적색핵",
+        "en": "Red nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          385
+        ]
+      }
+    },
+    {
+      "id": "lim-hippocampus",
+      "centerline": true,
+      "group": "limbic",
+      "name": {
+        "ko": "해마",
+        "en": "Hippocampus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labelRanges": [
+          [
+            326,
+            326
+          ],
+          [
+            339,
+            347
+          ],
+          [
+            364,
+            375
+          ],
+          [
+            404,
+            411
+          ],
+          [
+            418,
+            422
+          ],
+          [
+            432,
+            432
+          ],
+          [
+            558,
+            576
+          ]
+        ]
+      }
+    },
+    {
+      "id": "lim-amygdala",
+      "group": "limbic",
+      "name": {
+        "ko": "편도체",
+        "en": "Amygdala"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          214,
+          215,
+          216,
+          217,
+          238,
+          240,
+          242,
+          277,
+          278,
+          279,
+          295,
+          301,
+          320,
+          377
+        ]
+      }
+    },
+    {
+      "id": "lim-mammillary-body",
+      "group": "limbic",
+      "name": {
+        "ko": "유두체",
+        "en": "Mammillary body"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          305,
+          306,
+          307,
+          308
+        ]
+      }
+    },
+    {
+      "id": "tr-fornix",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "뇌활 (해마술 포함)",
+        "en": "Fornix (with fimbria)"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          199,
+          461
+        ]
+      }
+    },
+    {
+      "id": "tr-mtt",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "유두시상로",
+        "en": "Mammillothalamic tract"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          276
+        ]
+      }
+    },
+    {
+      "id": "tr-medial-lemniscus",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "안쪽섬유띠",
+        "en": "Medial lemniscus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          499
+        ]
+      }
+    },
+    {
+      "id": "tr-mlf",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "안쪽세로다발 (MLF)",
+        "en": "Medial longitudinal fasciculus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          528
+        ]
+      }
+    },
+    {
+      "id": "tr-scp",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "위소뇌다리",
+        "en": "Superior cerebellar peduncle"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          471,
+          531
+        ]
+      }
+    },
+    {
+      "id": "tr-optic-tract",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "시각로",
+        "en": "Optic tract"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          208
+        ]
+      }
+    },
+    {
+      "id": "bs-gracile",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "널판핵",
+        "en": "Gracile nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          756
+        ]
+      }
+    },
+    {
+      "id": "bs-cuneate",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "쐐기핵",
+        "en": "Cuneate nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          755
+        ]
+      }
+    },
+    {
+      "id": "bs-vestibular-medial",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "안쪽안뜰핵",
+        "en": "Medial vestibular nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          694
+        ]
+      }
+    },
+    {
+      "id": "bs-vestibular-other",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "가쪽·아래·위안뜰핵",
+        "en": "Lateral, inferior & superior vestibular nuclei"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          683,
+          690,
+          703
+        ]
+      }
+    },
+    {
+      "id": "bs-abducens",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "갓돌림신경핵 (VI)",
+        "en": "Abducens nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          682
+        ]
+      }
+    },
+    {
+      "id": "bs-oculomotor",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "눈돌림신경핵 (III)",
+        "en": "Oculomotor nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          464
+        ],
+        "placeholder": {
+          "radiiMm": [
+            1.4,
+            2.6,
+            2.2
+          ]
+        }
+      }
+    },
+    {
+      "id": "bs-facial",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "얼굴신경핵 (VII)",
+        "en": "Facial nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          666
+        ]
+      }
+    },
+    {
+      "id": "bs-spinal-trigeminal",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "삼차신경척수핵",
+        "en": "Spinal trigeminal nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          669
+        ]
+      }
+    },
+    {
+      "id": "bs-hypoglossal",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "혀밑신경핵 (XII)",
+        "en": "Hypoglossal nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          724
+        ],
+        "placeholder": {
+          "radiiMm": [
+            1.0,
+            1.2,
+            4.5
+          ]
+        }
+      }
+    },
+    {
+      "id": "bs-inferior-olive",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "아래올리브핵",
+        "en": "Inferior olivary nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          654,
+          671,
+          685
+        ]
+      }
+    },
+    {
+      "id": "bs-pontine-nuclei",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "다리뇌핵",
+        "en": "Pontine nuclei"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          414
+        ]
+      }
+    },
+    {
+      "id": "bs-pag",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "수도관주위회색질 (PAG)",
+        "en": "Periaqueductal gray"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          465
+        ]
+      }
+    },
+    {
+      "id": "bs-superior-colliculus",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "위둔덕",
+        "en": "Superior colliculus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          507
+        ]
+      }
+    },
+    {
+      "id": "bs-inferior-colliculus",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "아래둔덕",
+        "en": "Inferior colliculus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          541
+        ]
+      }
+    },
+    {
+      "id": "bs-lc-nextbrain",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "청색반점 (NextBrain)",
+        "en": "Locus coeruleus (NextBrain)"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          589
+        ]
+      }
+    },
+    {
+      "id": "bs-lc-aan",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "청색반점 (Harvard AAN)",
+        "en": "Locus coeruleus (Harvard AAN)"
+      },
+      "source": {
+        "atlas": "aan",
+        "files": {
+          "L": "AAN_LC_L_MNI152_1mm_v2p0.nii",
+          "R": "AAN_LC_R_MNI152_1mm_v2p0.nii"
+        }
+      }
+    },
+    {
+      "id": "bs-dorsal-raphe-aan",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "등쪽솔기핵 (Harvard AAN)",
+        "en": "Dorsal raphe nucleus (Harvard AAN)"
+      },
+      "source": {
+        "atlas": "aan",
+        "files": {
+          "M": "AAN_DR_MNI152_1mm_v2p0.nii"
+        }
+      }
+    },
+    {
+      "id": "cb-dentate",
+      "group": "cerebellum",
+      "name": {
+        "ko": "치아핵",
+        "en": "Dentate nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          721
+        ]
+      }
+    },
+    {
+      "id": "bg-accumbens",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "측좌핵 (NAc)",
+        "en": "Nucleus accumbens"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          101
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "core_of_nucleus_accumbens"
+        ],
+        "note": "NextBrain only segments the core; shell subdivision not separately labeled."
+      }
+    },
+    {
+      "id": "bg-snr",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "흑색질 그물부 (SNr)",
+        "en": "Substantia nigra pars reticulata"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          310
+        ]
+      },
+      "subpartOf": "bg-sn",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "substantia_nigra__reticular_part"
+        ],
+        "note": "Existing bg-sn (53-list) merges labels 310+352; this uses the reticular-part label alone."
+      }
+    },
+    {
+      "id": "bg-snc",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "흑색질 치밀부 (SNc)",
+        "en": "Substantia nigra pars compacta"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          352
+        ]
+      },
+      "subpartOf": "bg-sn",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "substantia_nigra__compact_part"
+        ],
+        "note": "Existing bg-sn (53-list) merges labels 310+352; this uses the compact-part label alone."
+      }
+    },
+    {
+      "id": "bg-olfactory-tubercle",
+      "group": "basal-ganglia",
+      "name": {
+        "ko": "후각결절",
+        "en": "Olfactory tubercle"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          100
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "olfactory_tubercle"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-reticular-formation",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "그물체",
+        "en": "Reticular formation"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          527,
+          695,
+          844
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "pontine_reticular_formation",
+          "medullary_reticular_formation",
+          "reticular_formation_/_cuneiform_area"
+        ],
+        "note": "Combines pontine, medullary and midbrain cuneiform-area reticular labels; AAN mRt (7207) covers only the mesencephalic portion."
+      }
+    },
+    {
+      "id": "bs-ambiguus",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "의문핵",
+        "en": "Nucleus ambiguus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          693
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ambiguus_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-vta",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "배쪽피개영역 (VTA)",
+        "en": "Ventral tegmental area"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          435
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ventral_tegmental_area"
+        ],
+        "note": "AAN also has VTA (7204) as an alternative atlas source."
+      }
+    },
+    {
+      "id": "bs-trigeminal-motor",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "삼차신경 운동핵",
+        "en": "Motor trigeminal nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          630
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "motor_nucleus_of_trigeminal_nerve"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-solitary",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "고립로핵 (NTS)",
+        "en": "Nucleus of the solitary tract"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          717
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "solitary_nucleus"
+        ],
+        "note": "Solitary tract itself is label 687 (not included)."
+      }
+    },
+    {
+      "id": "bs-ppt-ldt",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "다리뇌 콜린성핵군 (PPT/LDT)",
+        "en": "Pedunculopontine and laterodorsal tegmental nuclei"
+      },
+      "source": {
+        "atlas": "aan",
+        "labels": {
+          "L": [
+            7302,
+            7306
+          ],
+          "R": [
+            7402,
+            7406
+          ]
+        }
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "LDTg",
+          "PTg (PPN)"
+        ],
+        "note": "PTg = pedunculopontine (PPN); LDTg = laterodorsal tegmental."
+      }
+    },
+    {
+      "id": "bs-pprf",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "다리뇌 정중곁그물체 (PPRF)",
+        "en": "Paramedian pontine reticular formation"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          527
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "pontine_reticular_formation"
+        ],
+        "note": "NextBrain has no paramedian-specific subdivision; AAN PnO (7209) is a possible alternative proxy."
+      }
+    },
+    {
+      "id": "bs-ew",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "에딩거-베스트팔핵 (EW)",
+        "en": "Edinger-Westphal nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          447
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "edinger-westphal_nucleus_(accessory_oculomotor_nucleus)"
+        ],
+        "note": "Very small volume (0.1 mm3) - may need a placeholder sphere like bs-oculomotor."
+      }
+    },
+    {
+      "id": "bs-lso",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "가쪽위올리브 (LSO)",
+        "en": "Lateral superior olive"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          660
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "lateral_superior_olivary_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-trochlear",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "도르래신경핵 (IV)",
+        "en": "Trochlear nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          520
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "trochlear_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-dorsal-vagal",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "미주신경 등쪽운동핵",
+        "en": "Dorsal motor nucleus of vagus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          725
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "dorsal_motor_nucleus_of_the_vagus_(vagal_nucleus)"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-cochlear",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "달팽이핵군",
+        "en": "Cochlear nuclei"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          689,
+          731
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ventral_cochlear_nucleus",
+          "dorsal_cochlear_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-avcn",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "앞배쪽달팽이핵 (AVCN)",
+        "en": "Anteroventral cochlear nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          689
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ventral_cochlear_nucleus"
+        ],
+        "note": "NextBrain does not split antero-/posteroventral cochlear nucleus."
+      }
+    },
+    {
+      "id": "bs-vestibular-lateral",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "가쪽안뜰핵 (Deiters)",
+        "en": "Lateral vestibular nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          690
+        ]
+      },
+      "subpartOf": "bs-vestibular-other",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "lateral_vestibular_nucleus"
+        ],
+        "note": "Existing bs-vestibular-other (53-list) already groups labels 683+690+703 together; this isolates 690 alone."
+      }
+    },
+    {
+      "id": "bs-pretectal",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "덮개앞핵군",
+        "en": "Pretectal nuclei"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          496
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "pretectal_region"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-trigeminal-mesencephalic",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "삼차신경 중뇌핵",
+        "en": "Mesencephalic trigeminal nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          645
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "mesencephalic_trigeminal_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-superior-olive",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "위올리브복합체",
+        "en": "Superior olivary complex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          649,
+          660
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "medial_superior_olive",
+          "lateral_superior_olivary_nucleus"
+        ],
+        "note": "Trapezoid body nucleus (647, MNTB) excluded as it is a separate new structure (bs-mntb)."
+      }
+    },
+    {
+      "id": "bs-mso",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "안쪽위올리브 (MSO)",
+        "en": "Medial superior olive"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          649
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "medial_superior_olive"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-mntb",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "사다리꼴체 안쪽핵 (MNTB)",
+        "en": "Medial nucleus of the trapezoid body"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          647
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "nucleus_of_trapezoid_body"
+        ],
+        "note": "Volume is essentially 0 in the label table; will likely need a placeholder radius."
+      }
+    },
+    {
+      "id": "bs-parabrachial",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "다리뇌팔핵",
+        "en": "Parabrachial nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          546,
+          581
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "lateral_parabrachial_nucleus",
+          "medial_parabrachial_nucleus"
+        ],
+        "note": "Label 401 'parabrachial_pigmented_nucleus' is a VTA (A10dc) subgroup, not the pontine parabrachial nucleus, and is excluded. AAN PBC (7208) is an alternative atlas source."
+      }
+    },
+    {
+      "id": "bs-trigeminal-principal",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "삼차신경 주감각핵",
+        "en": "Principal sensory trigeminal nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          659
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "principal_sensory_nucleus_of_trigeminal_nerve"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-external-cuneate",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "바깥쐐기핵",
+        "en": "External cuneate nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          726
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "external_(accessory/lateral)_cuneate_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "bs-pontine-reticular",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "다리뇌그물핵 (입쪽·꼬리쪽)",
+        "en": "Pontine reticular nuclei"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          527
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "pontine_reticular_formation"
+        ],
+        "note": "NextBrain does not split oralis/caudalis parts; AAN PnO (7209) covers only the oralis part."
+      }
+    },
+    {
+      "id": "bs-vestibular-inferior",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "아래안뜰핵",
+        "en": "Inferior vestibular nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          703
+        ]
+      },
+      "subpartOf": "bs-vestibular-other",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "spinal_(inferior)_vestibular_nucleus"
+        ],
+        "note": "Existing bs-vestibular-other (53-list) already groups labels 683+690+703 together; this isolates 703 alone."
+      }
+    },
+    {
+      "id": "bs-vestibular-superior",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "위안뜰핵",
+        "en": "Superior vestibular nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          683
+        ]
+      },
+      "subpartOf": "bs-vestibular-other",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "superior_vestibular_nucleus"
+        ],
+        "note": "Existing bs-vestibular-other (53-list) already groups labels 683+690+703 together; this isolates 683 alone."
+      }
+    },
+    {
+      "id": "cb-fastigial",
+      "group": "cerebellum",
+      "name": {
+        "ko": "꼭지핵",
+        "en": "Fastigial nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          715
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "fastigial_(medial)_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "cb-interposed",
+      "group": "cerebellum",
+      "name": {
+        "ko": "중간핵군 (마개핵·둥근핵)",
+        "en": "Interposed nuclei"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          751,
+          752
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "medial_interpositus_(globose)_nucleus",
+          "lateral_interpositus_(emboliform)_nucleus"
+        ],
+        "note": "Combines the globose (medial) and emboliform (lateral) interposed nuclei; see also separate cb-emboliform / cb-globose entries."
+      }
+    },
+    {
+      "id": "cb-emboliform",
+      "group": "cerebellum",
+      "name": {
+        "ko": "마개핵",
+        "en": "Emboliform nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          752
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "lateral_interpositus_(emboliform)_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "cb-globose",
+      "group": "cerebellum",
+      "name": {
+        "ko": "둥근핵",
+        "en": "Globose nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          751
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "medial_interpositus_(globose)_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "ctx-prefrontal",
+      "group": "cortex",
+      "name": {
+        "ko": "전전두겉질",
+        "en": "Prefrontal cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2028,
+          2027,
+          2003,
+          2032
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ctx-rh-superiorfrontal",
+          "ctx-rh-rostralmiddlefrontal",
+          "ctx-rh-caudalmiddlefrontal",
+          "ctx-rh-frontalpole"
+        ],
+        "note": "Dorsolateral/superior prefrontal gyri; orbitofrontal (ctx-orbitofrontal) and Broca's area (ctx-broca) are mapped separately and excluded here."
+      }
+    },
+    {
+      "id": "ctx-visual-v1",
+      "group": "cortex",
+      "name": {
+        "ko": "일차시각겉질 (V1, BA 17)",
+        "en": "Primary visual cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2021
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ctx-rh-pericalcarine"
+        ],
+        "note": "Pericalcarine gyrus straddles the calcarine sulcus, the standard V1/BA17 gyral proxy."
+      }
+    },
+    {
+      "id": "ctx-auditory-a1",
+      "group": "cortex",
+      "name": {
+        "ko": "일차청각겉질 (A1, 헤슐이랑)",
+        "en": "Primary auditory cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2034
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ctx-rh-transversetemporal"
+        ],
+        "note": "Heschl's gyrus = transverse temporal gyrus."
+      }
+    },
+    {
+      "id": "ctx-parietal-association",
+      "group": "cortex",
+      "name": {
+        "ko": "마루연합겉질 (BA 5·7 등)",
+        "en": "Parietal association cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2029,
+          2025
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ctx-rh-superiorparietal",
+          "ctx-rh-precuneus"
+        ],
+        "note": "BA5/7 approximated by superior parietal lobule and precuneus."
+      }
+    },
+    {
+      "id": "ctx-pma",
+      "group": "cortex",
+      "name": {
+        "ko": "전운동영역 (PMA, BA 6)",
+        "en": "Premotor cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2003
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ctx-rh-caudalmiddlefrontal"
+        ],
+        "note": "DK atlas has no separate BA6 label; caudal middle frontal gyrus is the conventional premotor proxy."
+      }
+    },
+    {
+      "id": "ctx-vmpfc",
+      "group": "cortex",
+      "name": {
+        "ko": "배쪽안쪽전전두겉질 (vmPFC)",
+        "en": "Ventromedial prefrontal cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2014
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ctx-rh-medialorbitofrontal"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "ctx-insula",
+      "group": "cortex",
+      "name": {
+        "ko": "섬겉질",
+        "en": "Insular cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2035
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ctx-rh-insula"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "ctx-gustatory",
+      "group": "cortex",
+      "name": {
+        "ko": "미각겉질 (앞섬겉질·이마덮개)",
+        "en": "Gustatory cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2035,
+          2018
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ctx-rh-insula",
+          "ctx-rh-parsopercularis"
+        ],
+        "note": "Anterior insula and frontal operculum approximate gustatory cortex."
+      }
+    },
+    {
+      "id": "ctx-wernicke",
+      "group": "cortex",
+      "name": {
+        "ko": "베르니케영역·언어이해망",
+        "en": "Wernicke area and comprehension network"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2030,
+          2031
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ctx-rh-superiortemporal",
+          "ctx-rh-supramarginal"
+        ],
+        "note": "Posterior superior temporal gyrus plus supramarginal gyrus approximate Wernicke's area."
+      }
+    },
+    {
+      "id": "ctx-inferior-temporal",
+      "group": "cortex",
+      "name": {
+        "ko": "아래관자겉질",
+        "en": "Inferior temporal cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2009
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ctx-rh-inferiortemporal"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "ctx-broca",
+      "group": "cortex",
+      "name": {
+        "ko": "브로카영역 (BA 44·45)",
+        "en": "Broca area"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2018,
+          2020
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ctx-rh-parsopercularis",
+          "ctx-rh-parstriangularis"
+        ],
+        "note": "BA44 = pars opercularis, BA45 = pars triangularis."
+      }
+    },
+    {
+      "id": "ctx-sma",
+      "group": "cortex",
+      "name": {
+        "ko": "보조운동영역 (SMA, BA 6)",
+        "en": "Supplementary motor area"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2017
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ctx-rh-paracentral"
+        ],
+        "note": "Medial BA6; paracentral lobule label is the conventional SMA gyral proxy."
+      }
+    },
+    {
+      "id": "ctx-visual-v2",
+      "group": "cortex",
+      "name": {
+        "ko": "이차시각겉질 (V2)",
+        "en": "Secondary visual cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2005,
+          2011
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ctx-rh-cuneus",
+          "ctx-rh-lateraloccipital"
+        ],
+        "note": "V2 surrounds V1; approximated by cuneus and lateral occipital gyri."
+      }
+    },
+    {
+      "id": "ctx-auditory-a2",
+      "group": "cortex",
+      "name": {
+        "ko": "이차청각겉질 (BA 42)",
+        "en": "Secondary auditory cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2030
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ctx-rh-superiortemporal"
+        ],
+        "note": "BA42/planum temporale region within superior temporal gyrus."
+      }
+    },
+    {
+      "id": "ctx-orbitofrontal",
+      "group": "cortex",
+      "name": {
+        "ko": "눈확이마겉질",
+        "en": "Orbitofrontal cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2012,
+          2014
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ctx-rh-lateralorbitofrontal",
+          "ctx-rh-medialorbitofrontal"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "ctx-fef",
+      "group": "cortex",
+      "name": {
+        "ko": "이마눈영역 (FEF, BA 8)",
+        "en": "Frontal eye field"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2003
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "low",
+        "labelNames": [
+          "ctx-rh-caudalmiddlefrontal"
+        ],
+        "note": "BA8 has no dedicated DK label; approximated by caudal middle frontal / precentral junction."
+      }
+    },
+    {
+      "id": "ctx-lip",
+      "group": "cortex",
+      "name": {
+        "ko": "가쪽마루사이고랑영역 (LIP)",
+        "en": "Lateral intraparietal area"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2029,
+          2008
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "low",
+        "labelNames": [
+          "ctx-rh-superiorparietal",
+          "ctx-rh-inferiorparietal"
+        ],
+        "note": "Human LIP homolog is not separately parcellated; approximated by the intraparietal sulcus border gyri."
+      }
+    },
+    {
+      "id": "ctx-vestibular",
+      "group": "cortex",
+      "name": {
+        "ko": "전정겉질 (마루·섬 영역)",
+        "en": "Vestibular cortical network"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2035,
+          2031
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "low",
+        "labelNames": [
+          "ctx-rh-insula",
+          "ctx-rh-supramarginal"
+        ],
+        "note": "Parieto-insular vestibular cortex (PIVC) approximated by posterior insula and supramarginal gyrus."
+      }
+    },
+    {
+      "id": "ctx-angular",
+      "group": "cortex",
+      "name": {
+        "ko": "모이랑 (BA 39, Dejerine 영역)",
+        "en": "Angular gyrus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2008
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ctx-rh-inferiorparietal"
+        ],
+        "note": "DK atlas subsumes angular gyrus within the inferior parietal label (no separate angular region)."
+      }
+    },
+    {
+      "id": "ctx-visual-v4",
+      "group": "cortex",
+      "name": {
+        "ko": "시각영역 V4",
+        "en": "Visual area V4"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2007,
+          2013
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "low",
+        "labelNames": [
+          "ctx-rh-fusiform",
+          "ctx-rh-lingual"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "ctx-visual-mt",
+      "group": "cortex",
+      "name": {
+        "ko": "중간관자시각영역 (MT/V5)",
+        "en": "Middle temporal visual area"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2015,
+          2011
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "ctx-rh-middletemporal",
+          "ctx-rh-lateraloccipital"
+        ],
+        "note": "MT/V5 sits at the temporo-occipital junction."
+      }
+    },
+    {
+      "id": "ctx-supramarginal",
+      "group": "cortex",
+      "name": {
+        "ko": "모서리위이랑 (BA 40)",
+        "en": "Supramarginal gyrus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2031
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ctx-rh-supramarginal"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "hyp-pvn",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "뇌실곁핵 (PVN)",
+        "en": "Paraventricular hypothalamic nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          194
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "paraventricular_nucleus_of_hypothalamus"
+        ],
+        "note": "Label 225 'paraventricular_nucleus' is the thalamic PVT, not this hypothalamic nucleus, and is excluded."
+      }
+    },
+    {
+      "id": "hyp-lha",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "가쪽시상하부영역 (LHA)",
+        "en": "Lateral hypothalamic area"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          228,
+          230,
+          297
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "juxtaparaventricular_lateral_hypothalamic_area",
+          "lateral_hypothalamic_area__tuberal_part",
+          "lateral__hypothalamic_area__posterior_part"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "hyp-hypothalamus",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "시상하부",
+        "en": "Hypothalamus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          147,
+          149,
+          150,
+          181,
+          192,
+          193,
+          194,
+          196,
+          207,
+          227,
+          228,
+          229,
+          230,
+          232,
+          243,
+          244,
+          245,
+          255,
+          256,
+          268,
+          275,
+          297
+        ]
+      },
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "preoptic_region_of_hth",
+          "lateral_preoptic_area",
+          "median_preoptic_nucleus",
+          "supraoptic_region_of_hth",
+          "medial_preoptic_nucleus",
+          "anterior_hypothalamic_nucleus",
+          "paraventricular_nucleus_of_hypothalamus",
+          "supraoptic_nucleus",
+          "periventricular_nucleus__supraoptic_portion",
+          "periventricular_nucleus__tuberal_portion",
+          "juxtaparaventricular_lateral_hypothalamic_area",
+          "dorsomedial_hypothalamic_nucleus",
+          "lateral_hypothalamic_area__tuberal_part",
+          "pallidohypothalamic_area",
+          "dorsal_part_of_ventromedial_hypothalamic_nucleus",
+          "ventral_part_of_ventromedial_hypothalamic_nucleus",
+          "arcuate_nucleus_of_hypothalamus",
+          "central_part_of_ventromedial_hypothalamic_nucleus",
+          "tuberomammillary_nucleus",
+          "lateral_tuberal_nuclei",
+          "posterior_hypothalamic_nucleus",
+          "lateral__hypothalamic_area__posterior_part"
+        ],
+        "note": "Aggregate of all discrete NextBrain hypothalamic nuclear labels; excludes mammillary body (separate existing lim-mammillary-body) and VTA (midbrain)."
+      }
+    },
+    {
+      "id": "hyp-arcuate",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "활꼴핵 (ARC)",
+        "en": "Arcuate nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          245
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "arcuate_nucleus_of_hypothalamus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "hyp-scn",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "시각교차위핵 (SCN, 일주기)",
+        "en": "Suprachiasmatic nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          160
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "suprachiasmatic_nucleus"
+        ],
+        "note": "Extremely small volume (0.4 mm3); may need a placeholder sphere."
+      }
+    },
+    {
+      "id": "hyp-vmn",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "배안쪽시상하부핵 (VMN)",
+        "en": "Ventromedial hypothalamic nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          243,
+          244,
+          255
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "dorsal_part_of_ventromedial_hypothalamic_nucleus",
+          "ventral_part_of_ventromedial_hypothalamic_nucleus",
+          "central_part_of_ventromedial_hypothalamic_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "hyp-preoptic",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "시각앞영역",
+        "en": "Preoptic area"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          147,
+          149,
+          150
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "preoptic_region_of_hth",
+          "lateral_preoptic_area",
+          "median_preoptic_nucleus"
+        ],
+        "note": "Medial preoptic nucleus (192) is mapped separately as hyp-medial-preoptic and excluded here."
+      }
+    },
+    {
+      "id": "hyp-son",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "시각위핵 (SON)",
+        "en": "Supraoptic nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          196
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "supraoptic_nucleus"
+        ],
+        "note": "Adjacent supraoptic_region_of_hth (181) and periventricular supraoptic portion (207) are broader surrounding regions, not included."
+      }
+    },
+    {
+      "id": "hyp-medial-preoptic",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "안쪽시각앞핵",
+        "en": "Medial preoptic nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          192
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "medial_preoptic_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "hyp-anterior",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "앞시상하부핵",
+        "en": "Anterior hypothalamic nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          193
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "anterior_hypothalamic_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "hyp-tmn",
+      "group": "hypothalamus",
+      "name": {
+        "ko": "결절유두핵 (TMN)",
+        "en": "Tuberomammillary nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          256
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "tuberomammillary_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "lim-amygdala-la",
+      "group": "limbic",
+      "name": {
+        "ko": "편도체 가쪽핵 (LA)",
+        "en": "Lateral amygdala"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          377
+        ]
+      },
+      "subpartOf": "lim-amygdala",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "lateral_nucleus"
+        ],
+        "note": "Already one of the 14 labels combined in existing lim-amygdala; isolated here as the LA subdivision alone."
+      }
+    },
+    {
+      "id": "ctx-anterior-cingulate",
+      "group": "limbic",
+      "name": {
+        "ko": "앞띠겉질 (ACC)",
+        "en": "Anterior cingulate cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2002,
+          2026
+        ]
+      },
+      "subpartOf": "ctx-cingulate",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ctx-rh-caudalanteriorcingulate",
+          "ctx-rh-rostralanteriorcingulate"
+        ],
+        "note": "Existing ctx-cingulate (53-list) combines all 4 cingulate labels (2002,2010,2023,2026); this is the anterior subset only."
+      }
+    },
+    {
+      "id": "lim-amygdala-ce",
+      "group": "limbic",
+      "name": {
+        "ko": "편도체 중심핵 (CeA)",
+        "en": "Central amygdala"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          277,
+          278
+        ]
+      },
+      "subpartOf": "lim-amygdala",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "medial_subdivision_of_central_nucleus",
+          "lateral_subdivision_of_central_nucleus"
+        ],
+        "note": "Both already among the 14 labels combined in existing lim-amygdala."
+      }
+    },
+    {
+      "id": "lim-ca1",
+      "group": "limbic",
+      "name": {
+        "ko": "해마 CA1",
+        "en": "Hippocampal CA1"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          339,
+          340,
+          341,
+          342,
+          343,
+          344,
+          345,
+          346,
+          562,
+          563,
+          564,
+          565
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "strata of uncal/rostral/caudal CA1 (oriens, pyramidale, radiatum, lacunosum-moleculare)"
+        ],
+        "note": "Assembled the same way as existing lim-hippocampus label ranges, isolating only CA1 strata."
+      }
+    },
+    {
+      "id": "ctx-entorhinal",
+      "group": "limbic",
+      "name": {
+        "ko": "속후각겉질",
+        "en": "Entorhinal cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          2006
+        ]
+      },
+      "subpartOf": "ctx-parahippocampal",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "ctx-rh-entorhinal"
+        ],
+        "note": "Already one of the 2 labels in existing ctx-parahippocampal (2006+2016); isolated here."
+      }
+    },
+    {
+      "id": "lim-amygdala-ba",
+      "group": "limbic",
+      "name": {
+        "ko": "편도체 바닥핵 (BA)",
+        "en": "Basal amygdala"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          216
+        ]
+      },
+      "subpartOf": "lim-amygdala",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "basolateral_nucleus_(basal_nucleus)"
+        ],
+        "note": "Already one of the 14 labels combined in existing lim-amygdala."
+      }
+    },
+    {
+      "id": "ctx-piriform",
+      "group": "limbic",
+      "name": {
+        "ko": "이상겉질",
+        "en": "Piriform cortex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          157
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "layer_iii_of_piriform_cortex"
+        ],
+        "note": "NextBrain only segments layer III of piriform cortex, not the whole cortex; used as the only available proxy."
+      }
+    },
+    {
+      "id": "lim-amygdala-bla",
+      "group": "limbic",
+      "name": {
+        "ko": "편도체 바닥가쪽복합체 (BLA)",
+        "en": "Basolateral amygdala complex"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          377,
+          216,
+          217
+        ]
+      },
+      "subpartOf": "lim-amygdala",
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "lateral_nucleus",
+          "basolateral_nucleus_(basal_nucleus)",
+          "ventral_division_of_basomedial_nucleus"
+        ],
+        "note": "LA + basal (BA) + accessory basal (AB) nuclei."
+      }
+    },
+    {
+      "id": "lim-dentate-gyrus",
+      "group": "limbic",
+      "name": {
+        "ko": "치아이랑",
+        "en": "Dentate gyrus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          364,
+          365,
+          367,
+          404,
+          405,
+          407,
+          558,
+          559,
+          561
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "molecular/granular/polyform layers of uncal, rostral and caudal dentate gyrus"
+        ],
+        "note": "Subset of the labels already combined in existing lim-hippocampus."
+      }
+    },
+    {
+      "id": "lim-ca3",
+      "group": "limbic",
+      "name": {
+        "ko": "해마 CA3",
+        "en": "Hippocampal CA3"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          372,
+          373,
+          374,
+          375,
+          418,
+          419,
+          420,
+          421,
+          571,
+          572,
+          573,
+          574
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "strata of uncal/rostral/caudal CA3 (oriens, pyramidale, lucidum, lacunosum-moleculare)"
+        ],
+        "note": "CA4/hilus pyramidal-cell labels (422,432,575) excluded as a distinct subfield. Subset of existing lim-hippocampus."
+      }
+    },
+    {
+      "id": "lim-subiculum",
+      "group": "limbic",
+      "name": {
+        "ko": "해마이행부",
+        "en": "Subiculum"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          326,
+          347,
+          576
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "uncal_subiculum",
+          "rostral_subiculum",
+          "caudal_subiculum"
+        ],
+        "note": "Subset of existing lim-hippocampus."
+      }
+    },
+    {
+      "id": "end-median-eminence",
+      "group": "neuroendocrine",
+      "name": {
+        "ko": "정중융기·뇌하수체 문맥계",
+        "en": "Median eminence and hypophyseal portal system"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          843
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "low",
+        "labelNames": [
+          "infundibular_stalk"
+        ],
+        "note": "No dedicated median-eminence label; approximated by the infundibular stalk it is continuous with."
+      }
+    },
+    {
+      "id": "end-pineal",
+      "group": "neuroendocrine",
+      "name": {
+        "ko": "솔방울샘",
+        "en": "Pineal gland"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          506
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "pineal_body"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "pn-cn2",
+      "group": "peripheral",
+      "name": {
+        "ko": "시각신경 (II)",
+        "en": "Optic nerve"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          114
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "optic_nerve"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "pn-cn3",
+      "group": "peripheral",
+      "name": {
+        "ko": "눈돌림신경 (III)",
+        "en": "Oculomotor nerve"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          386
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "root_of_oculomotor_nerve"
+        ],
+        "note": "Only the intracranial nerve root is segmented, not the full peripheral nerve trunk."
+      }
+    },
+    {
+      "id": "pn-cn7",
+      "group": "peripheral",
+      "name": {
+        "ko": "얼굴신경 (VII)",
+        "en": "Facial nerve"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          624
+        ]
+      },
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "root_of_facial_nerve"
+        ],
+        "note": "Only the intracranial nerve root is segmented, not the full peripheral nerve trunk."
+      }
+    },
+    {
+      "id": "bs-accessory",
+      "group": "spinal-cord",
+      "name": {
+        "ko": "더부신경 척수핵",
+        "en": "Spinal accessory nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          771
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "spinal_accessory_(supraspinal)_nucleus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "thal-relay",
+      "group": "thalamus",
+      "name": {
+        "ko": "시상 중계핵군",
+        "en": "Thalamic relay nuclei"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          394,
+          458,
+          395,
+          423,
+          314,
+          350,
+          381,
+          382,
+          222,
+          283,
+          282,
+          312,
+          313,
+          379,
+          380,
+          484,
+          504,
+          505
+        ]
+      },
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "VPL, VPM, VL, VA, MD, LGN, MGN label sets"
+        ],
+        "note": "Union of the specific relay-nucleus label sets already used individually by existing thal-vpl/vpm/vl/va/md/lgn/mgn entries."
+      }
+    },
+    {
+      "id": "tr-icp",
+      "group": "tracts",
+      "name": {
+        "ko": "아래소뇌다리",
+        "en": "Inferior cerebellar peduncle"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          697
+        ]
+      },
+      "tract": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "inferior_cerebellar_peduncle"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "tr-optic-chiasm",
+      "group": "tracts",
+      "name": {
+        "ko": "시각교차",
+        "en": "Optic chiasm"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          161
+        ]
+      },
+      "tract": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "optic_chiasm"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "tr-pyramid",
+      "group": "tracts",
+      "name": {
+        "ko": "숨뇌 피라미드",
+        "en": "Medullary pyramid"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          779
+        ]
+      },
+      "tract": true,
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "corticospinal_tract"
+        ],
+        "note": "NextBrain's single corticospinal_tract label spans the whole tract; used as proxy for its medullary pyramid segment."
+      }
+    },
+    {
+      "id": "tr-lateral-lemniscus",
+      "group": "tracts",
+      "name": {
+        "ko": "가쪽섬유띠",
+        "en": "Lateral lemniscus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          515
+        ]
+      },
+      "tract": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "lateral_lemniscus"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "tr-posterior-commissure",
+      "group": "tracts",
+      "name": {
+        "ko": "뒤맞교차",
+        "en": "Posterior commissure"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          472
+        ]
+      },
+      "tract": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "posterior_commissure"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "tr-spinal-trigeminal",
+      "group": "tracts",
+      "name": {
+        "ko": "삼차신경척수로",
+        "en": "Spinal trigeminal tract"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          677
+        ]
+      },
+      "tract": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "spinal_trigeminal_tract"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "tr-corticopontine",
+      "group": "tracts",
+      "name": {
+        "ko": "겉질다리뇌섬유",
+        "en": "Corticopontine fibers"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          827,
+          829
+        ]
+      },
+      "tract": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "parietotemporopontine_tract",
+          "frontopontine_tract"
+        ],
+        "note": "The two named corticopontine fiber components."
+      }
+    },
+    {
+      "id": "tr-pontocerebellar",
+      "group": "tracts",
+      "name": {
+        "ko": "다리뇌소뇌섬유",
+        "en": "Pontocerebellar fibers"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          415
+        ]
+      },
+      "tract": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "pontocerebellar_tract"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "tr-mcp",
+      "group": "tracts",
+      "name": {
+        "ko": "중간소뇌다리",
+        "en": "Middle cerebellar peduncle"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          543
+        ]
+      },
+      "tract": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "middle_cerebellar_peduncle"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "tr-cerebellothalamic",
+      "group": "tracts",
+      "name": {
+        "ko": "소뇌시상섬유",
+        "en": "Cerebellothalamic fibers"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          403
+        ]
+      },
+      "tract": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "cerebellothalamic_tract"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "tr-olfactory-tract",
+      "group": "tracts",
+      "name": {
+        "ko": "후각로",
+        "en": "Olfactory tract"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          113,
+          125
+        ]
+      },
+      "tract": true,
+      "approxArea": true,
+      "mapping": {
+        "confidence": "medium",
+        "labelNames": [
+          "lateral_olfactory_stria",
+          "lateral_olfactory_area"
+        ],
+        "note": "NextBrain does not segment the olfactory tract itself; approximated by the lateral olfactory stria/area it terminates in."
+      }
+    },
+    {
+      "id": "tr-anterior-commissure",
+      "group": "tracts",
+      "name": {
+        "ko": "앞맞교차",
+        "en": "Anterior commissure"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          130
+        ]
+      },
+      "tract": true,
+      "mapping": {
+        "confidence": "high",
+        "labelNames": [
+          "anterior_commissure"
+        ],
+        "note": ""
+      }
+    },
+    {
+      "id": "end-ant-pituitary",
+      "group": "neuroendocrine",
+      "name": {
+        "ko": "뇌하수체앞엽",
+        "en": "Anterior pituitary"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          0,
+          4,
+          -32
+        ],
+        "radiiMm": [
+          7,
+          5,
+          5
+        ],
+        "bilateral": false
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Adenohypophysis occupies the anterior/larger part of the gland within the sella turcica, just below the hypothalamus/infundibulum. Sella position relative to the AC-PC plane is standard neurosurgical knowledge; adult gland height ~6mm, AP ~8-10mm, width ~10-15mm."
+      }
+    },
+    {
+      "id": "end-post-pituitary",
+      "group": "neuroendocrine",
+      "name": {
+        "ko": "뇌하수체뒤엽",
+        "en": "Posterior pituitary"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          0,
+          -1,
+          -32
+        ],
+        "radiiMm": [
+          3,
+          3,
+          3
+        ],
+        "bilateral": false
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Neurohypophysis is the small posterior part of the gland, directly below the infundibulum/median eminence. Size and relative position are from standard pituitary anatomy."
+      }
+    },
+    {
+      "id": "sp-cord",
+      "group": "spinal-cord",
+      "name": {
+        "ko": "척수",
+        "en": "Spinal cord"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          0,
+          -38,
+          -267
+        ],
+        "radiiMm": [
+          6,
+          5,
+          212
+        ],
+        "bilateral": false
+      },
+      "placeholderNote": {
+        "source": "De Leener B, Fonov VS, Collins DL, Callot V, Stikov N, Cohen-Adad J. PAM50: Unbiased multimodal template of the brainstem and spinal cord aligned with the ICBM152 space. NeuroImage 2018;165:170-179. DOI 10.1016/j.neuroimage.2017.10.041 (PMID 29061527)",
+        "confidence": "medium",
+        "note": "PAM50 is explicitly co-registered to ICBM152 (=MNI152) space, which is the published convention this uses; paper is subscription-access so no verbatim quote. z extent here is a reasoned approximation along the brainstem's inferior axis: cervicomedullary junction ~z=-55, conus medullaris terminus ~z=-480 (whole cord ~45cm). Per-segment-group z ranges are given on the C/T/L/S items below; this item is the full-column envelope."
+      }
+    },
+    {
+      "id": "sp-iml",
+      "group": "spinal-cord",
+      "name": {
+        "ko": "중간가쪽세포기둥 (IML)",
+        "en": "Intermediolateral cell column"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          3,
+          -37,
+          -286
+        ],
+        "radiiMm": [
+          1.5,
+          1.5,
+          147
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Sympathetic preganglionic column confined to the lateral horn, T1-L2 (approx z -140 to -433 on the column axis above, per PAM50/Gray's Anatomy segment-vertebra correspondence). x=3mm lateral of midline for the lateral horn location."
+      }
+    },
+    {
+      "id": "sp-sacral-parasympathetic",
+      "group": "spinal-cord",
+      "name": {
+        "ko": "엉치부교감핵 (S2~4)",
+        "en": "Sacral parasympathetic nucleus"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          3,
+          -36,
+          -470
+        ],
+        "radiiMm": [
+          1.5,
+          1.5,
+          6
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Parasympathetic preganglionic nucleus confined to S2-S4 lateral horn, within the sacral cord's compressed z range near the conus medullaris (~z -464 to -476 on the column axis above)."
+      }
+    },
+    {
+      "id": "sp-clarke",
+      "group": "spinal-cord",
+      "name": {
+        "ko": "클라크기둥",
+        "en": "Clarke column"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          2.5,
+          -35,
+          -291
+        ],
+        "radiiMm": [
+          1.5,
+          1.5,
+          151
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Dorsal nucleus of Clarke, present C8-L3 at the base of the dorsal horn (z approx -140 to -442 on the column axis above)."
+      }
+    },
+    {
+      "id": "so-retina",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "망막",
+        "en": "Retina"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          32,
+          53,
+          -30
+        ],
+        "radiiMm": [
+          11,
+          9,
+          11
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Right globe centre approximated at (32,48,-18) (orbit, lateral/anterior to AC); retina lines the posterior ~3/4 of the 24mm-diameter globe so its centroid is shifted posterior relative to the globe centre. No dedicated orbit-MNI atlas paper consulted; reasoned from standard orbital anatomy."
+      }
+    },
+    {
+      "id": "so-cornea",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "각막",
+        "en": "Cornea"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          32,
+          67,
+          -30
+        ],
+        "radiiMm": [
+          6,
+          1.5,
+          5
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Anterior-most point of the globe (globe radius ~12mm from centre at y=48); cornea horizontal diameter ~11-12mm, central thickness <1mm."
+      }
+    },
+    {
+      "id": "so-nasal-retina",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "코쪽망막",
+        "en": "Nasal hemiretina"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          25,
+          53,
+          -30
+        ],
+        "radiiMm": [
+          5,
+          9,
+          10
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Medial (nasal) half of the retina shell, same globe as so-retina but shifted toward midline; captures the temporal visual field."
+      }
+    },
+    {
+      "id": "so-temporal-retina",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "관자쪽망막",
+        "en": "Temporal hemiretina"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          39,
+          53,
+          -30
+        ],
+        "radiiMm": [
+          5,
+          9,
+          10
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Lateral (temporal) half of the retina shell, shifted away from midline relative to so-retina."
+      }
+    },
+    {
+      "id": "so-olfactory-epithelium",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "후각상피",
+        "en": "Olfactory epithelium"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          5,
+          30,
+          -44
+        ],
+        "radiiMm": [
+          4,
+          8,
+          3
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Narrow strip on the superior nasal septum/superior concha and cribriform-plate roof, below/anterior to the olfactory bulb."
+      }
+    },
+    {
+      "id": "so-olfactory-bulb",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "후각망울",
+        "en": "Olfactory bulb"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          7,
+          32,
+          -36
+        ],
+        "radiiMm": [
+          3,
+          8,
+          2.5
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Sits in the olfactory fossa on the cribriform plate beneath orbitofrontal cortex; coordinates close to those used in several olfactory fMRI ROI studies. No single paper quoted verbatim in the time available."
+      }
+    },
+    {
+      "id": "so-cochlea",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "달팽이",
+        "en": "Cochlea"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          36,
+          -30,
+          -27
+        ],
+        "radiiMm": [
+          4.5,
+          3.5,
+          3
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Petrous temporal bone, near the internal auditory canal, approx pons level. Dedicated inner-ear MRI coordinate-system papers exist (e.g. PMC11458053, PMC11845522) but they define their own local temporal-bone coordinate frames, not MNI; exact MNI numbers here are reasoned estimates from standard skull-base anatomy."
+      }
+    },
+    {
+      "id": "so-organ-corti",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "코르티기관",
+        "en": "Organ of Corti"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          36,
+          -30,
+          -27
+        ],
+        "radiiMm": [
+          3,
+          2.5,
+          2
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Sub-structure of the cochlear duct; location approximated to the cochlea centroid (so-cochlea)."
+      }
+    },
+    {
+      "id": "so-tectorial-membrane",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "덮개막",
+        "en": "Tectorial membrane"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          36,
+          -30,
+          -27
+        ],
+        "radiiMm": [
+          3,
+          2.5,
+          2
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Sub-structure of the cochlear duct; location approximated to the cochlea centroid."
+      }
+    },
+    {
+      "id": "so-stria-vascularis",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "혈관줄무늬",
+        "en": "Stria vascularis"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          37,
+          -30,
+          -27
+        ],
+        "radiiMm": [
+          3.5,
+          2.5,
+          2
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Lateral wall of the cochlear duct; approximated to the cochlea centroid with a slight lateral offset."
+      }
+    },
+    {
+      "id": "so-basilar-membrane",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "바닥막",
+        "en": "Basilar membrane"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          36,
+          -30,
+          -27
+        ],
+        "radiiMm": [
+          4,
+          3,
+          2
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Spirals the length of the cochlear duct; approximated to the cochlea centroid/extent."
+      }
+    },
+    {
+      "id": "so-horizontal-canal",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "가쪽반고리관 (수평)",
+        "en": "Horizontal semicircular canal"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          40,
+          -34,
+          -20
+        ],
+        "radiiMm": [
+          3.5,
+          3.5,
+          1.5
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Lateral/horizontal canal of the bony labyrinth, posterosuperior to the cochlea, oriented roughly in the axial plane."
+      }
+    },
+    {
+      "id": "so-anterior-canal",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "앞반고리관",
+        "en": "Anterior semicircular canal"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          37,
+          -30,
+          -16
+        ],
+        "radiiMm": [
+          3,
+          1.5,
+          3.5
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Superior canal of the bony labyrinth, oriented roughly in a parasagittal plane, superior to the horizontal canal."
+      }
+    },
+    {
+      "id": "so-posterior-canal",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "뒤반고리관",
+        "en": "Posterior semicircular canal"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          42,
+          -38,
+          -22
+        ],
+        "radiiMm": [
+          1.5,
+          3.5,
+          3.5
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Oriented roughly orthogonal to the anterior canal, posterior part of the bony labyrinth."
+      }
+    },
+    {
+      "id": "so-utricle",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "타원주머니",
+        "en": "Utricle"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          38,
+          -33,
+          -22
+        ],
+        "radiiMm": [
+          2,
+          2,
+          1.5
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Otolith organ in the vestibule, between the canals and the cochlea."
+      }
+    },
+    {
+      "id": "so-saccule",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "둥근주머니",
+        "en": "Saccule"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          36,
+          -31,
+          -24
+        ],
+        "radiiMm": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Otolith organ just below the utricle, closest of the vestibular organs to the cochlea."
+      }
+    },
+    {
+      "id": "so-carotid-baroreceptor",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "목동맥팽대 압력수용기",
+        "en": "Carotid sinus baroreceptor"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          28,
+          -20,
+          -102
+        ],
+        "radiiMm": [
+          5,
+          5,
+          8
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Wall of the carotid sinus at the common-carotid bifurcation, approx C3-C4 vertebral level; z extrapolated well below the typical MNI brain FOV along the same AC-based axis used for the spinal cord/neck items."
+      }
+    },
+    {
+      "id": "so-carotid-body",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "목동맥소체 화학수용기",
+        "en": "Carotid body chemoreceptor"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          27,
+          -22,
+          -104
+        ],
+        "radiiMm": [
+          3,
+          3,
+          4
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Small (~5x3x1.5mm) chemoreceptor adjacent to the carotid bifurcation, just medial/posterior to the carotid sinus baroreceptor."
+      }
+    },
+    {
+      "id": "pn-trigeminal-ganglion",
+      "group": "peripheral",
+      "name": {
+        "ko": "삼차신경절",
+        "en": "Trigeminal ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          20,
+          -10,
+          -32
+        ],
+        "radiiMm": [
+          4,
+          6,
+          3
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Meckel's cave, middle cranial fossa, petrous apex, roughly at pons level. A targeted search for a stereotactic coordinate paper (e.g. gamma-knife trigeminal neuralgia series, PMC6744789) described isocenter placement on Meckel's cave but did not report numeric MNI/Leksell coordinates; location is reasoned from standard skull-base anatomy."
+      }
+    },
+    {
+      "id": "pn-geniculate-ganglion",
+      "group": "peripheral",
+      "name": {
+        "ko": "무릎신경절",
+        "en": "Geniculate ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          35,
+          -28,
+          -22
+        ],
+        "radiiMm": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Genu of the facial nerve within the facial canal, petrous temporal bone, anterosuperior to the vestibule."
+      }
+    },
+    {
+      "id": "pn-nodose-ganglion",
+      "group": "peripheral",
+      "name": {
+        "ko": "미주신경 아래신경절",
+        "en": "Inferior vagal ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          18,
+          -26,
+          -64
+        ],
+        "radiiMm": [
+          3,
+          3,
+          8
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Just inferior to the jugular foramen, lateral to the carotid sheath in the upper neck; ganglion is elongated (~2cm)."
+      }
+    },
+    {
+      "id": "pn-petrosal-ganglion",
+      "group": "peripheral",
+      "name": {
+        "ko": "혀인두신경 아래신경절",
+        "en": "Inferior glossopharyngeal ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          15,
+          -30,
+          -52
+        ],
+        "radiiMm": [
+          2,
+          2,
+          3
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "At/just below the jugular foramen, medial and slightly superior to the nodose ganglion."
+      }
+    },
+    {
+      "id": "pn-vestibular-ganglion",
+      "group": "peripheral",
+      "name": {
+        "ko": "안뜰신경절 (Scarpa)",
+        "en": "Vestibular ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          31,
+          -30,
+          -26
+        ],
+        "radiiMm": [
+          3,
+          2,
+          2
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Within the internal auditory canal near its fundus, between the cochlear and vestibular end-organs."
+      }
+    },
+    {
+      "id": "pn-spiral-ganglion",
+      "group": "peripheral",
+      "name": {
+        "ko": "나선신경절",
+        "en": "Spiral ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          36,
+          -30,
+          -27
+        ],
+        "radiiMm": [
+          3,
+          2.5,
+          2
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Within the modiolus (bony core) of the cochlea, slightly medial to the cochlea's overall centroid."
+      }
+    },
+    {
+      "id": "pn-superior-cervical",
+      "group": "peripheral",
+      "name": {
+        "ko": "위목신경절",
+        "en": "Superior cervical ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          22,
+          -30,
+          -88
+        ],
+        "radiiMm": [
+          3,
+          3,
+          12
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "medium",
+        "note": "Largest sympathetic chain ganglion, at approx C2-C3 vertebral level behind the carotid bifurcation/angle of mandible; fusiform, ~20-25mm long. z extrapolated below the typical MNI FOV."
+      }
+    },
+    {
+      "id": "pn-ciliary-ganglion",
+      "group": "peripheral",
+      "name": {
+        "ko": "섬모체신경절",
+        "en": "Ciliary ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          29,
+          38,
+          -28
+        ],
+        "radiiMm": [
+          1.5,
+          1.5,
+          1.5
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Posterior orbit, between the optic nerve and lateral rectus, in the posterior third of the orbit (orbital apex approx y=20, globe centre approx y=48)."
+      }
+    },
+    {
+      "id": "pn-pterygopalatine",
+      "group": "peripheral",
+      "name": {
+        "ko": "날개입천장신경절",
+        "en": "Pterygopalatine ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          24,
+          20,
+          -44
+        ],
+        "radiiMm": [
+          3,
+          3,
+          3
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Pterygopalatine fossa, posterior to the middle nasal concha, below the orbital floor."
+      }
+    },
+    {
+      "id": "pn-submandibular",
+      "group": "peripheral",
+      "name": {
+        "ko": "턱밑신경절",
+        "en": "Submandibular ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          33,
+          12,
+          -76
+        ],
+        "radiiMm": [
+          2,
+          2,
+          2
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Floor of the mouth on the lingual nerve near the submandibular duct, well inferior to the skull base."
+      }
+    },
+    {
+      "id": "pn-otic",
+      "group": "peripheral",
+      "name": {
+        "ko": "귀신경절",
+        "en": "Otic ganglion"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          24,
+          -6,
+          -50
+        ],
+        "radiiMm": [
+          2,
+          2,
+          2
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "Infratemporal fossa just below the foramen ovale, medial to the mandibular nerve."
+      }
+    },
+    {
+      "id": "bs-rvlm",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "입쪽배가쪽숨뇌 (RVLM)",
+        "en": "Rostral ventrolateral medulla"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          7,
+          -38,
+          -45
+        ],
+        "radiiMm": [
+          3,
+          4,
+          4
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "메인 세션 추정: 숨뇌 머리쪽 배가쪽, 아래올리브 뒤가쪽"
+      }
+    },
+    {
+      "id": "bs-cvlm",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "꼬리쪽배가쪽숨뇌 (CVLM)",
+        "en": "Caudal ventrolateral medulla"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          7,
+          -40,
+          -52
+        ],
+        "radiiMm": [
+          3,
+          3,
+          3
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "메인 세션 추정: RVLM 바로 꼬리쪽"
+      }
+    },
+    {
+      "id": "bs-gigantocellular",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "거대세포그물핵",
+        "en": "Gigantocellular reticular nucleus"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          2,
+          -36,
+          -42
+        ],
+        "radiiMm": [
+          2.5,
+          5,
+          6
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "메인 세션 추정: 숨뇌 안쪽 그물체"
+      }
+    },
+    {
+      "id": "bs-reticulotegmental",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "피개그물핵",
+        "en": "Reticulotegmental nucleus"
+      },
+      "source": {
+        "atlas": "mni",
+        "centreMni": [
+          2,
+          -30,
+          -30
+        ],
+        "radiiMm": [
+          2.5,
+          3,
+          3
+        ],
+        "bilateral": true
+      },
+      "placeholderNote": {
+        "source": "estimate",
+        "confidence": "low",
+        "note": "메인 세션 추정: 다리뇌 덮개, 안쪽세로다발 배쪽"
+      }
+    }
   ]
 }

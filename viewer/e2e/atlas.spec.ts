@@ -13,6 +13,19 @@ async function ready(page: Page) {
 
 const states = (page: Page) => page.evaluate(() => (window as any).__atlas.states() as Record<string, string>);
 const settle = (page: Page) => page.waitForTimeout(1500); // camera fly + route reveal
+/** Click a structure in the sidebar; long groups start folded, so unfold its group first the way a user would. */
+const pickStructure = async (page: Page, id: string) => {
+  const btn = page.locator(`[data-structure="${id}"]`);
+  const group = btn.locator('xpath=ancestor::section[contains(@class, "group")]');
+  if (await group.evaluate((g) => g.classList.contains('collapsed'))) await group.locator('.fold').click();
+  await btn.click();
+};
+const pickPathway = async (page: Page, id: string) => {
+  const btn = page.locator(`[data-pathway="${id}"]`);
+  const group = btn.locator('xpath=ancestor::section[contains(@class, "group")]');
+  if (await group.evaluate((g) => g.classList.contains('collapsed'))) await group.locator('.fold').click();
+  await btn.click();
+};
 const shot = async (page: Page, name: string) => {
   if (SHOTS) await page.screenshot({ path: `${SHOTS}/${name}.png` });
 };
@@ -31,7 +44,7 @@ test('loads every mesh and starts in explore mode', async ({ page }) => {
 
 test('DCML pathway highlights the contralateral chain and flips with the origin side', async ({ page }) => {
   await ready(page);
-  await page.locator('[data-pathway="dcml"]').click();
+  await pickPathway(page, 'dcml');
   let s = await states(page);
   expect(s['bs-gracile.R']).toBe('involved'); // default origin: right body
   expect(s['tr-medial-lemniscus.L']).toBe('involved');
@@ -65,7 +78,7 @@ test('selecting a structure isolates it; Escape returns to explore', async ({ pa
   await ready(page);
   await page.locator('#search').fill('VPL');
   await expect(page.locator('.structure:visible')).toHaveCount(1);
-  await page.locator('[data-structure="thal-vpl"]').click();
+  await pickStructure(page, 'thal-vpl');
   const s = await states(page);
   expect(s['thal-vpl.L']).toBe('active');
   expect(s['thal-vpl.R']).toBe('active');
@@ -80,7 +93,7 @@ test('selecting a structure isolates it; Escape returns to explore', async ({ pa
 test('remaining pathways render', async ({ page }) => {
   const errors = await ready(page);
   for (const [id, name] of [['papez', '05-papez'], ['hvor', '06-hvor']] as const) {
-    await page.locator(`[data-pathway="${id}"]`).click();
+    await pickPathway(page, id);
     const steps = await page.locator('.steps li').count();
     for (let i = 1; i < steps; i++) await page.getByRole('button', { name: '다음 →' }).click();
     await settle(page);
@@ -122,7 +135,7 @@ test('section panel shows the atlas labels at the chosen level and follows the s
   expect(await page.evaluate(() => (window as any).__atlas.section.labelAtMm(5.4, -18.4))).toBe(385);
 
   // selecting a structure moves the section to its level
-  await page.locator('[data-structure="bs-facial"]').click();
+  await pickStructure(page, 'bs-facial');
   await expect.poll(() => page.evaluate(() => (window as any).__atlas.section.z)).toBeLessThan(-40);
   await settle(page);
   await shot(page, '07-section-facial');
@@ -142,7 +155,7 @@ test.describe('phone layout', () => {
     expect(await fits()).toBe(true);
 
     // choosing a pathway swaps the lists for its description, right under the scene
-    await page.locator('[data-pathway="dcml"]').tap();
+    await pickPathway(page, 'dcml');
     await settle(page);
     await expect(page.locator('#sidebar')).toBeHidden();
     await expect(page.locator('#detail h2')).toBeInViewport();

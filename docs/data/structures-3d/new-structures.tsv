@@ -1,0 +1,350 @@
+id	group	en	ko	uses	note
+bg-accumbens	basal-ganglia	Nucleus accumbens	측좌핵 (NAc)	24	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bg-snr	basal-ganglia	Substantia nigra pars reticulata	흑색질 그물부 (SNr)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bg-snc	basal-ganglia	Substantia nigra pars compacta	흑색질 치밀부 (SNc)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bg-olfactory-tubercle	basal-ganglia	Olfactory tubercle	후각결절	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-reticular-formation	brainstem-nuclei	Reticular formation	그물체	31	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-ambiguus	brainstem-nuclei	Nucleus ambiguus	의문핵	15	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-vta	brainstem-nuclei	Ventral tegmental area	배쪽피개영역 (VTA)	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-solitary-caudal	brainstem-nuclei	Caudal solitary nucleus	꼬리쪽 고립로핵 (내장감각)	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-trigeminal-motor	brainstem-nuclei	Motor trigeminal nucleus	삼차신경 운동핵	7	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-solitary	brainstem-nuclei	Nucleus of the solitary tract	고립로핵 (NTS)	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-cvlm	brainstem-nuclei	Caudal ventrolateral medulla	꼬리쪽배가쪽숨뇌 (CVLM)	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-ppt-ldt	brainstem-nuclei	Pedunculopontine and laterodorsal tegmental nuclei	다리뇌 콜린성핵군 (PPT/LDT)	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-pprf	brainstem-nuclei	Paramedian pontine reticular formation	다리뇌 정중곁그물체 (PPRF)	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-ew	brainstem-nuclei	Edinger-Westphal nucleus	에딩거-베스트팔핵 (EW)	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-lso	brainstem-nuclei	Lateral superior olive	가쪽위올리브 (LSO)	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-rvlm	brainstem-nuclei	Rostral ventrolateral medulla	입쪽배가쪽숨뇌 (RVLM)	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-trochlear	brainstem-nuclei	Trochlear nucleus	도르래신경핵 (IV)	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-dorsal-vagal	brainstem-nuclei	Dorsal motor nucleus of vagus	미주신경 등쪽운동핵	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-cochlear	brainstem-nuclei	Cochlear nuclei	달팽이핵군	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-avcn	brainstem-nuclei	Anteroventral cochlear nucleus	앞배쪽달팽이핵 (AVCN)	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-vestibular-lateral	brainstem-nuclei	Lateral vestibular nucleus	가쪽안뜰핵 (Deiters)	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-rvm	brainstem-nuclei	Rostral ventromedial medulla	입쪽배안쪽숨뇌 (RVM)	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-pretectal	brainstem-nuclei	Pretectal nuclei	덮개앞핵군	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-trigeminal-mesencephalic	brainstem-nuclei	Mesencephalic trigeminal nucleus	삼차신경 중뇌핵	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-superior-salivatory	brainstem-nuclei	Superior salivatory nucleus	위침분비핵	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-superior-olive	brainstem-nuclei	Superior olivary complex	위올리브복합체	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-mso	brainstem-nuclei	Medial superior olive	안쪽위올리브 (MSO)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-mntb	brainstem-nuclei	Medial nucleus of the trapezoid body	사다리꼴체 안쪽핵 (MNTB)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-parabrachial	brainstem-nuclei	Parabrachial nucleus	다리뇌팔핵	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-trigeminal-principal	brainstem-nuclei	Principal sensory trigeminal nucleus	삼차신경 주감각핵	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-solitary-rostral	brainstem-nuclei	Rostral solitary nucleus	입쪽 고립로핵 (미각)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-inferior-salivatory	brainstem-nuclei	Inferior salivatory nucleus	아래침분비핵	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-external-cuneate	brainstem-nuclei	External cuneate nucleus	바깥쐐기핵	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-pontine-reticular	brainstem-nuclei	Pontine reticular nuclei	다리뇌그물핵 (입쪽·꼬리쪽)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-gigantocellular	brainstem-nuclei	Gigantocellular reticular nucleus	거대세포그물핵	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-reticulotegmental	brainstem-nuclei	Reticulotegmental nucleus	피개그물핵	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-vestibular-inferior	brainstem-nuclei	Inferior vestibular nucleus	아래안뜰핵	0	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+bs-vestibular-superior	brainstem-nuclei	Superior vestibular nucleus	위안뜰핵	0	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+cell-postsynaptic	cellular	Postsynaptic membrane and dendritic spine	시냅스뒤막·가지돌기가시	45	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-alpha-motor	cellular	Alpha motor neurons	알파운동뉴런	42	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-presynaptic	cellular	Presynaptic terminal	시냅스앞말단	40	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-vta-da	cellular	VTA dopamine neurons	VTA 도파민뉴런	28	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-pomc-cells	cellular	Arcuate POMC/CART neurons	활꼴핵 POMC/CART 뉴런	16	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-agrp-cells	cellular	Arcuate NPY/AgRP neurons	활꼴핵 NPY/AgRP 뉴런	16	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-inhibitory-interneuron	cellular	Spinal inhibitory interneurons	척수 억제성사이뉴런	15	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-rods	cellular	Retinal rods	막대세포	14	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-cones	cellular	Retinal cones	원뿔세포	14	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-vta-gaba	cellular	VTA GABA neurons	VTA 억제성 GABA 뉴런	14	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-gamma-motor	cellular	Gamma motor neurons	감마운동뉴런	13	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-cleft	cellular	Synaptic cleft	시냅스틈새	13	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-purkinje	cellular	Purkinje cells	푸르키네세포	12	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-granule	cellular	Cerebellar granule cells	소뇌 과립세포	10	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-taste-type2	cellular	Type II taste receptor cells	제2형 미각세포	10	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-aplysia-sensory	cellular	Aplysia siphon sensory neuron	군소 대롱감각뉴런	9	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-cpg	cellular	Spinal central pattern generator	척수 중앙패턴발생기 (CPG)	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-orn	cellular	Olfactory receptor neurons	후각수용뉴런 (ORN)	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-inner-hair	cellular	Inner hair cells	속유모세포	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-axon	cellular	Axon and axon hillock	축삭·축삭언덕	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-ganglion-retinal	cellular	Retinal ganglion cells	망막신경절세포	7	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-soma	cellular	Neuronal soma	신경세포 세포체	7	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-mc4r-cells	cellular	PVN MC4R-expressing neurons	PVN MC4R 발현 뉴런	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-excitatory-interneuron	cellular	Spinal excitatory interneurons	척수 흥분성사이뉴런	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-vesicle	cellular	Synaptic vesicle	시냅스소포	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-neocortical-l5	cellular	Neocortical layer V pyramidal cells	신피질 제5층 피라미드세포	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-v1-odc	cellular	V1 ocular dominance columns	V1 안구우세기둥	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-bipolar-on	cellular	ON bipolar cells	ON 두극세포	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-bipolar-off	cellular	OFF bipolar cells	OFF 두극세포	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-ganglion-p	cellular	Retinal P ganglion cells	망막 P 신경절세포	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-ganglion-k	cellular	Retinal K ganglion cells	망막 K 신경절세포	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-vestibular-hair	cellular	Vestibular hair cells	안뜰유모세포	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-gap-junction	cellular	Gap junction and connexons	틈새이음·커넥손	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-astrocyte	cellular	Astrocyte	별아교세포	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-aplysia-l7	cellular	Aplysia L7 motor neuron	군소 L7 운동뉴런	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-na-msn	cellular	Nucleus accumbens medium spiny neurons	측좌핵 중간가시뉴런 (MSN)	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-taste-type3	cellular	Type III taste receptor cells	제3형 미각세포	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-dense-core	cellular	Dense-core vesicle	치밀핵소포	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-engram	cellular	Engram cell assembly	기억흔적 세포집단	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-aplysia-gill	cellular	Aplysia gill muscle	군소 아가미근육	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-neocortical-l6	cellular	Neocortical layer VI	신피질 제6층	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-v1-l4cb	cellular	V1 layer IVC beta	V1 제4Cβ층	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-v1-l23	cellular	V1 layers II and III	V1 제2·3층	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-v1-blob	cellular	V1 cytochrome oxidase blob	V1 색상 블롭	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-v1-simple	cellular	V1 simple cells	V1 단순세포	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+thal-lgn-p	cellular	LGN parvocellular layers	LGN 작은세포층 (3~6)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+thal-lgn-k	cellular	LGN koniocellular layers	LGN 먼지세포층	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-orexin-cells	cellular	Lateral hypothalamic orexin neurons	LHA 오렉신/히포크레틴 뉴런	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-renshaw	cellular	Renshaw cells	렌쇼세포	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-ganglion-m	cellular	Retinal M ganglion cells	망막 M 신경절세포	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-amacrine-cells	cellular	Retinal amacrine cells	망막 무축삭세포 (AII 포함)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-taste-type1	cellular	Type I taste cells (lecture classification)	제1형 미각세포 (정리본 분류)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-olfactory-glomerulus	cellular	Olfactory glomeruli	후각 토리	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-mitral	cellular	Mitral cells	승모세포	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-outer-hair	cellular	Outer hair cells	바깥유모세포	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-aplysia-modulatory	cellular	Aplysia sensitization modulatory interneurons	군소 감작 조절사이뉴런 (L29 등)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-neocortical-l4	cellular	Neocortical layer IV	신피질 제4층	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-v1-l4ca	cellular	V1 layer IVC alpha	V1 제4Cα층	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-v1-complex	cellular	V1 complex cells	V1 복합세포	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+thal-lgn-m	cellular	LGN magnocellular layers	LGN 큰세포층 (1·2)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-golgi	cellular	Cerebellar Golgi cells	소뇌 골지세포	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-iprgc	cellular	Intrinsically photosensitive retinal ganglion cells	멜라놉신 망막신경절세포	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-horizontal-cells	cellular	Retinal horizontal cells	망막 수평세포	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-oligodendrocyte	cellular	Oligodendrocyte	희소돌기아교세포	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-schwann	cellular	Schwann cell	슈반세포	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cell-ranvier	cellular	Node of Ranvier	랑비에결절	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-vermis	cerebellum	Cerebellar vermis	소뇌벌레	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-paravermis	cerebellum	Paravermal cerebellum	소뇌벌레곁영역	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-fastigial	cerebellum	Fastigial nucleus	꼭지핵	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-cortex	cerebellum	Cerebellar cortex	소뇌겉질	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-lateral	cerebellum	Lateral cerebellar hemisphere	가쪽소뇌반구	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-interposed	cerebellum	Interposed nuclei	중간핵군 (마개핵·둥근핵)	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-flocculonodular	cerebellum	Flocculonodular lobe	타래결절엽	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+cb-emboliform	cerebellum	Emboliform nucleus	마개핵	1	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+cb-globose	cerebellum	Globose nucleus	둥근핵	1	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+ctx-prefrontal	cortex	Prefrontal cortex	전전두겉질	31	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-visual-v1	cortex	Primary visual cortex	일차시각겉질 (V1, BA 17)	17	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-auditory-a1	cortex	Primary auditory cortex	일차청각겉질 (A1, 헤슐이랑)	12	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-parietal-association	cortex	Parietal association cortex	마루연합겉질 (BA 5·7 등)	9	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-pma	cortex	Premotor cortex	전운동영역 (PMA, BA 6)	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-vmpfc	cortex	Ventromedial prefrontal cortex	배쪽안쪽전전두겉질 (vmPFC)	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-insula	cortex	Insular cortex	섬겉질	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-gustatory	cortex	Gustatory cortex	미각겉질 (앞섬겉질·이마덮개)	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-wernicke	cortex	Wernicke area and comprehension network	베르니케영역·언어이해망	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-inferior-temporal	cortex	Inferior temporal cortex	아래관자겉질	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-broca	cortex	Broca area	브로카영역 (BA 44·45)	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-sma	cortex	Supplementary motor area	보조운동영역 (SMA, BA 6)	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-visual-v2	cortex	Secondary visual cortex	이차시각겉질 (V2)	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-auditory-a2	cortex	Secondary auditory cortex	이차청각겉질 (BA 42)	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-orbitofrontal	cortex	Orbitofrontal cortex	눈확이마겉질	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-fef	cortex	Frontal eye field	이마눈영역 (FEF, BA 8)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-lip	cortex	Lateral intraparietal area	가쪽마루사이고랑영역 (LIP)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-vestibular	cortex	Vestibular cortical network	전정겉질 (마루·섬 영역)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-angular	cortex	Angular gyrus	모이랑 (BA 39, Dejerine 영역)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-visual-v4	cortex	Visual area V4	시각영역 V4	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-visual-mt	cortex	Middle temporal visual area	중간관자시각영역 (MT/V5)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-s1-ba3b	cortex	Somatosensory area 3b	몸감각겉질 BA 3b	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-s1-ba1	cortex	Somatosensory area 1	몸감각겉질 BA 1	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-s1-ba2	cortex	Somatosensory area 2	몸감각겉질 BA 2	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-supramarginal	cortex	Supramarginal gyrus	모서리위이랑 (BA 40)	0	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+ef-extrafusal	effectors	Extrafusal muscle fibers	방추밖근섬유	20	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-pharynx-larynx	effectors	Pharyngeal and laryngeal striated muscles	인두·후두 가로무늬근	13	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-flexor	effectors	Flexor muscles	굽힘근군	10	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-heart-vessels	effectors	Heart and blood vessels	심장·혈관	10	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-neck-muscles	effectors	Neck and axial muscles	목·몸통 근육군	9	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-extensor	effectors	Extensor muscles	폄근군	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-tongue-muscles	effectors	Tongue muscles	혀근육	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-viscera	effectors	Thoracoabdominal viscera	흉복부 내장·평활근·샘	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-masticatory-muscles	effectors	Muscles of mastication	씹기근	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-medial-rectus	effectors	Medial rectus muscle	안쪽곧은근	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-sphincter-pupillae	effectors	Sphincter pupillae	동공조임근	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-sweat-gland	effectors	Sweat glands	땀샘	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-lateral-rectus	effectors	Lateral rectus muscle	가쪽곧은근	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-facial-muscles	effectors	Muscles of facial expression	표정근	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-scm-trapezius	effectors	Sternocleidomastoid and trapezius	목빗근·등세모근	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-bladder	effectors	Detrusor muscle	방광배뇨근	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-genital	effectors	Genital vascular and ejaculatory effectors	생식기 혈관·사정효과기	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-dilator-pupillae	effectors	Dilator pupillae	동공확대근	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-ciliary-muscle	effectors	Ciliary muscle	섬모체근	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-orbicularis-oculi	effectors	Orbicularis oculi	눈둘레근	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-stapedius	effectors	Stapedius muscle	등자근	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-tensor-tympani	effectors	Tensor tympani muscle	고막긴장근	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-intrafusal	effectors	Intrafusal muscle fibers	방추속근섬유	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-urethral-sphincter	effectors	Urethral sphincters	요도조임근군	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+end-adipose	effectors	Adipose tissue	지방조직	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+end-stomach	effectors	Stomach	위 (그렐린 분비)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+end-intestine	effectors	Intestine	창자 (포만호르몬 분비)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-superior-oblique	effectors	Superior oblique muscle	위빗근	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-extraocular-iii	effectors	CN III extraocular muscles and levator	눈돌림신경 지배 눈근육·눈꺼풀올림근	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-lacrimal-nasal	effectors	Lacrimal nasal and palatal glands	눈물샘·코·입천장샘	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-submandibular-sublingual	effectors	Submandibular and sublingual glands	턱밑샘·혀밑샘	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ef-parotid	effectors	Parotid gland	귀밑샘	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-pvn	hypothalamus	Paraventricular hypothalamic nucleus	뇌실곁핵 (PVN)	18	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-lha	hypothalamus	Lateral hypothalamic area	가쪽시상하부영역 (LHA)	18	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-hypothalamus	hypothalamus	Hypothalamus	시상하부	12	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-arcuate	hypothalamus	Arcuate nucleus	활꼴핵 (ARC)	12	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-scn	hypothalamus	Suprachiasmatic nucleus	시각교차위핵 (SCN, 일주기)	6	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-vmn	hypothalamus	Ventromedial hypothalamic nucleus	배안쪽시상하부핵 (VMN)	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-preoptic	hypothalamus	Preoptic area	시각앞영역	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-son	hypothalamus	Supraoptic nucleus	시각위핵 (SON)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-medial-preoptic	hypothalamus	Medial preoptic nucleus	안쪽시각앞핵	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-anterior	hypothalamus	Anterior hypothalamic nucleus	앞시상하부핵	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-tmn	hypothalamus	Tuberomammillary nucleus	결절유두핵 (TMN)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-premammillary-dorsal	hypothalamus	Dorsal premammillary nucleus	등쪽유두앞핵	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+hyp-premammillary-ventral	hypothalamus	Ventral premammillary nucleus	배쪽유두앞핵	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+lim-amygdala-la	limbic	Lateral amygdala	편도체 가쪽핵 (LA)	16	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-anterior-cingulate	limbic	Anterior cingulate cortex	앞띠겉질 (ACC)	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+lim-amygdala-ce	limbic	Central amygdala	편도체 중심핵 (CeA)	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+lim-ca1	limbic	Hippocampal CA1	해마 CA1	7	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-entorhinal	limbic	Entorhinal cortex	속후각겉질	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+lim-amygdala-ba	limbic	Basal amygdala	편도체 바닥핵 (BA)	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+lim-amygdala-itc	limbic	Amygdala intercalated cell masses	편도체 사이삽입세포군 (ITC)	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-piriform	limbic	Piriform cortex	이상겉질	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+lim-amygdala-bla	limbic	Basolateral amygdala complex	편도체 바닥가쪽복합체 (BLA)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+ctx-perirhinal	limbic	Perirhinal cortex	후각곁겉질	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+lim-dentate-gyrus	limbic	Dentate gyrus	치아이랑	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+lim-ca3	limbic	Hippocampal CA3	해마 CA3	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+lim-subiculum	limbic	Subiculum	해마이행부	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+lim-amygdala-corticomedial	limbic	Corticomedial amygdala	편도체 겉질안쪽핵군	0	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+end-adrenal-medulla	neuroendocrine	Adrenal medulla	부신속질	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+end-ant-pituitary	neuroendocrine	Anterior pituitary	뇌하수체앞엽	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+end-post-pituitary	neuroendocrine	Posterior pituitary	뇌하수체뒤엽	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+end-median-eminence	neuroendocrine	Median eminence and hypophyseal portal system	정중융기·뇌하수체 문맥계	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+end-adrenal-cortex	neuroendocrine	Adrenal cortex	부신겉질	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+end-pineal	neuroendocrine	Pineal gland	솔방울샘	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+end-pancreas	neuroendocrine	Endocrine pancreas	이자 내분비부	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-drg	peripheral	Dorsal root ganglion	척수신경절 (DRG)	20	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn10	peripheral	Vagus nerve	미주신경 (X)	18	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-sympathetic-chain	peripheral	Sympathetic chain ganglia	교감신경줄기·척추옆신경절	12	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-nodose-ganglion	peripheral	Inferior vagal ganglion	미주신경 아래신경절	10	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-geniculate-ganglion	peripheral	Geniculate ganglion	무릎신경절	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-petrosal-ganglion	peripheral	Inferior glossopharyngeal ganglion	혀인두신경 아래신경절	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn7	peripheral	Facial nerve	얼굴신경 (VII)	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn9	peripheral	Glossopharyngeal nerve	혀인두신경 (IX)	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-vestibular-ganglion	peripheral	Vestibular ganglion	안뜰신경절 (Scarpa)	7	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn3	peripheral	Oculomotor nerve	눈돌림신경 (III)	7	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn8-vestibular	peripheral	Vestibular nerve	안뜰신경 (VIII)	7	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-superior-cervical	peripheral	Superior cervical ganglion	위목신경절	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-pelvic-splanchnic	peripheral	Pelvic splanchnic nerves	골반내장신경	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn2	peripheral	Optic nerve	시각신경 (II)	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-dorsal-root	peripheral	Dorsal root	뒤뿌리	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-spiral-ganglion	peripheral	Spiral ganglion	나선신경절	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-ciliary-ganglion	peripheral	Ciliary ganglion	섬모체신경절	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-intramural-ganglia	peripheral	Intramural parasympathetic ganglia	벽속부교감신경절	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-white-ramus	peripheral	White ramus communicans	백색교통가지	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn5	peripheral	Trigeminal nerve	삼차신경 (V)	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn5-v3	peripheral	Mandibular trigeminal nerve	아래턱신경 (V3)	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-trigeminal-ganglion	peripheral	Trigeminal ganglion	삼차신경절	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-prevertebral-ganglia	peripheral	Prevertebral ganglia	척추앞신경절군	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn6	peripheral	Abducens nerve	갓돌림신경 (VI)	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-ventral-root	peripheral	Ventral root	앞뿌리	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-gray-ramus	peripheral	Gray ramus communicans	회색교통가지	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-splanchnic	peripheral	Splanchnic nerves	내장신경	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn1	peripheral	Olfactory nerve	후각신경 (I)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn8-cochlear	peripheral	Cochlear nerve	달팽이신경 (VIII)	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-short-ciliary	peripheral	Short ciliary nerves	짧은섬모체신경	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-pudendal	peripheral	Pudendal nerve	음부신경	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-pterygopalatine	peripheral	Pterygopalatine ganglion	날개입천장신경절	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-submandibular	peripheral	Submandibular ganglion	턱밑신경절	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-otic	peripheral	Otic ganglion	귀신경절	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn4	peripheral	Trochlear nerve	도르래신경 (IV)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn5-v1	peripheral	Ophthalmic trigeminal nerve	눈신경 (V1)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn11	peripheral	Accessory nerve	더부신경 (XI)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+pn-cn12	peripheral	Hypoglossal nerve	혀밑신경 (XII)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-nociceptor	sensory-organs	Nociceptor free nerve endings	유해감수기·자유신경종말	9	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-muscle-spindle	sensory-organs	Muscle spindle	근방추	9	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-horizontal-canal	sensory-organs	Horizontal semicircular canal	가쪽반고리관 (수평)	8	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-utricle	sensory-organs	Utricle	타원주머니	7	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-thermoreceptor	sensory-organs	Thermoreceptors	온도수용기	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-retina	sensory-organs	Retina	망막	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-skin-mechanoreceptors	sensory-organs	Cutaneous mechanoreceptors	피부 기계수용기	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-basilar-membrane	sensory-organs	Basilar membrane	바닥막	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-ampulla-cupula	sensory-organs	Ampulla crista and cupula	팽대·팽대마루·팽대능선덮개	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-saccule	sensory-organs	Saccule	둥근주머니	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-otolith-macula	sensory-organs	Otolith macula	이석기관 평형반	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-carotid-baroreceptor	sensory-organs	Carotid sinus baroreceptor	목동맥팽대 압력수용기	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-golgi-tendon	sensory-organs	Golgi tendon organ	골지힘줄기관	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-joint-receptors	sensory-organs	Joint receptors	관절수용기	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-cornea	sensory-organs	Cornea	각막	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-nasal-retina	sensory-organs	Nasal hemiretina	코쪽망막	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-temporal-retina	sensory-organs	Temporal hemiretina	관자쪽망막	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-taste-buds	sensory-organs	Taste buds	맛봉오리	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-olfactory-epithelium	sensory-organs	Olfactory epithelium	후각상피	1	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+so-olfactory-bulb	sensory-organs	Olfactory bulb	후각망울	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-cochlea	sensory-organs	Cochlea	달팽이	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-organ-corti	sensory-organs	Organ of Corti	코르티기관	1	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+so-tectorial-membrane	sensory-organs	Tectorial membrane	덮개막	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-stria-vascularis	sensory-organs	Stria vascularis	혈관줄무늬	1	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+so-aortic-baroreceptor	sensory-organs	Aortic arch baroreceptor	대동맥활 압력수용기	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-carotid-body	sensory-organs	Carotid body chemoreceptor	목동맥소체 화학수용기	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-merkel	sensory-organs	Merkel discs	메르켈원반	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-ruffini	sensory-organs	Ruffini endings	루피니종말	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-meissner	sensory-organs	Meissner corpuscles	마이스너소체	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-pacinian	sensory-organs	Pacinian corpuscles	파치니소체	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-hair-follicle	sensory-organs	Hair follicle receptors	털집수용기	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+so-anterior-canal	sensory-organs	Anterior semicircular canal	앞반고리관	0	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+so-posterior-canal	sensory-organs	Posterior semicircular canal	뒤반고리관	0	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+sp-dorsal-horn	spinal-cord	Spinal dorsal horn	척수 뒤뿔	18	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-iml	spinal-cord	Intermediolateral cell column	중간가쪽세포기둥 (IML)	17	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-ventral-horn	spinal-cord	Spinal ventral horn	척수 앞뿔	12	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-sacral-parasympathetic	spinal-cord	Sacral parasympathetic nucleus	엉치부교감핵 (S2~4)	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+bs-accessory	spinal-cord	Spinal accessory nucleus	더부신경 척수핵	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-anterior-white-commissure	spinal-cord	Spinal anterior white commissure	척수 앞백색맞교차	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-cord	spinal-cord	Spinal cord	척수	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-substantia-gelatinosa	spinal-cord	Substantia gelatinosa	아교질 (Rexed II)	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-lamina-v	spinal-cord	Spinal dorsal horn lamina V	척수 뒤뿔 제5층	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+sp-clarke	spinal-cord	Clarke column	클라크기둥	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+thal-relay	thalamus	Thalamic relay nuclei	시상 중계핵군	11	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-internal-capsule-posterior	tracts	Posterior limb of internal capsule	속섬유막 뒤다리	7	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-icp	tracts	Inferior cerebellar peduncle	아래소뇌다리	5	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-spinoreticular	tracts	Spinoreticular tract	척수그물로	4	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-spinothalamic-lateral	tracts	Lateral spinothalamic tract	가쪽척수시상로	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-corticobulbar	tracts	Corticobulbar tract	겉질핵로 (겉질숨뇌로)	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-reticulospinal-pontine	tracts	Pontine reticulospinal tract	다리뇌그물척수로	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-optic-chiasm	tracts	Optic chiasm	시각교차	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-schaffer	tracts	Schaffer collaterals	샤퍼곁가지	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-arcuate	tracts	Arcuate fasciculus	활꼴다발	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-corpus-callosum	tracts	Corpus callosum	뇌들보	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-corona-radiata	tracts	Corona radiata	방사관	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-crus-cerebri	tracts	Crus cerebri	대뇌다리바닥	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-pyramid	tracts	Medullary pyramid	숨뇌 피라미드	3	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-reticulocerebellar	tracts	Reticulocerebellar fibers	그물소뇌섬유	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-trigeminothalamic	tracts	Trigeminothalamic tract	삼차시상로	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-corticospinal-lateral	tracts	Lateral corticospinal tract	가쪽겉질척수로	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-corticospinal-anterior	tracts	Anterior corticospinal tract	앞겉질척수로	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-rubrospinal	tracts	Rubrospinal tract	적색핵척수로	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-vestibulospinal-lateral	tracts	Lateral vestibulospinal tract	가쪽안뜰척수로	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-vestibulospinal-medial	tracts	Medial vestibulospinal tract	안쪽안뜰척수로	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-reticulospinal-medullary	tracts	Medullary reticulospinal tract	숨뇌그물척수로	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-corticoreticular	tracts	Corticoreticular tract	겉질그물로	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-corticorubral	tracts	Corticorubral tract	겉질적색핵로	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-cerebellovestibular	tracts	Cerebellovestibular fibers	소뇌안뜰섬유	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-cerebelloreticular	tracts	Cerebelloreticular fibers	소뇌그물섬유	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-tectocerebellar	tracts	Tectocerebellar fibers	덮개소뇌섬유	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-optic-radiation	tracts	Optic radiation	시각부챗살	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-auditory-radiation	tracts	Auditory radiation	청각부챗살	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-lateral-lemniscus	tracts	Lateral lemniscus	가쪽섬유띠	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-perforant-path	tracts	Perforant path	관통로	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-cingulum	tracts	Cingulum	띠다발	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-posterior-commissure	tracts	Posterior commissure	뒤맞교차	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-internal-capsule-retrolenticular	tracts	Retrolenticular internal capsule	속섬유막 렌즈핵뒤부분	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-internal-capsule-sublenticular	tracts	Sublenticular internal capsule	속섬유막 렌즈핵밑부분	2	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-gracile-fasciculus	tracts	Gracile fasciculus	널판다발	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-cuneate-fasciculus	tracts	Cuneate fasciculus	쐐기다발	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-internal-arcuate	tracts	Internal arcuate fibers	속활꼴섬유	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-spinothalamic-anterior	tracts	Anterior spinothalamic tract	앞척수시상로	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-spinal-trigeminal	tracts	Spinal trigeminal tract	삼차신경척수로	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-tectospinal	tracts	Tectospinal tract	덮개척수로	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-corticopontine	tracts	Corticopontine fibers	겉질다리뇌섬유	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-pontocerebellar	tracts	Pontocerebellar fibers	다리뇌소뇌섬유	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-mcp	tracts	Middle cerebellar peduncle	중간소뇌다리	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-spinocerebellar-dorsal	tracts	Dorsal spinocerebellar tract	뒤척수소뇌로	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-spinocerebellar-ventral	tracts	Ventral spinocerebellar tract	앞척수소뇌로	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-cuneocerebellar	tracts	Cuneocerebellar tract	쐐기소뇌로	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-trigeminocerebellar	tracts	Trigeminocerebellar tract	삼차소뇌로	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-olivocerebellar	tracts	Olivocerebellar fibers	올리브소뇌섬유	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-cerebellothalamic	tracts	Cerebellothalamic fibers	소뇌시상섬유	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-cerebellorubral	tracts	Cerebellorubral fibers	소뇌적색핵섬유	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-rubro-olivary	tracts	Rubro-olivary tract	적색핵올리브로	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-trapezoid-body	tracts	Trapezoid body	사다리꼴체	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-retinohypothalamic	tracts	Retinohypothalamic tract	망막시상하부로	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-olfactory-tract	tracts	Olfactory tract	후각로	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-hippocampal-mossy	tracts	Hippocampal mossy fibers	해마 이끼섬유	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-uncinate	tracts	Uncinate fasciculus	갈고리다발	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-superior-longitudinal	tracts	Superior longitudinal fasciculus	위세로다발	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-inferior-longitudinal	tracts	Inferior longitudinal fasciculus	아래세로다발	1	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+tr-inferior-frontooccipital	tracts	Inferior fronto-occipital fasciculus	아래이마뒤통수다발	1	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+tr-superior-frontooccipital	tracts	Superior fronto-occipital fasciculus (lecture term)	위이마뒤통수다발 (정리본 용어)	1	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.
+tr-anterior-commissure	tracts	Anterior commissure	앞맞교차	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-internal-capsule-genu	tracts	Genu of internal capsule	속섬유막 무릎	1	sourceRefs는 이 구조가 참여하는 경로의 출처 묶음. 원문 미명시 세부는 해당 경로 evidenceStatus·description에서 구분.
+tr-internal-capsule-anterior	tracts	Anterior limb of internal capsule	속섬유막 앞다리	0	구조명은 원문 구조/기능 표·그림의 해부학 맥락. 경로 참조와 별개로 보존.

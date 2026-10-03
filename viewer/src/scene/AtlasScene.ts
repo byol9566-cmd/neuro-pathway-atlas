@@ -5,7 +5,7 @@ import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.j
 import { acceleratedRaycast, computeBoundsTree, disposeBoundsTree } from 'three-mesh-bvh';
 import type { Manifest, ManifestMesh, ManifestStructure, Vec3 } from '../types';
 import { IntroParticles } from './IntroParticles';
-import { applySolidState, ghostFocusDistance, ghostMaterial, haloMaterial, sceneReveal, solidMaterial, type MeshState } from './materials';
+import { applySolidState, ghostFocusDistance, ghostMaterial, haloMaterial, sceneFloor, sceneReveal, solidMaterial, type MeshState } from './materials';
 import { PathwayCurve } from './pathwayCurve';
 import { MistSea, SETTLED_LEVEL } from './MistSea';
 
@@ -22,6 +22,9 @@ export interface AtlasEntry {
   ghost: THREE.ShaderMaterial;
   halo: THREE.Mesh | null;
   isShell: boolean;
+  /** drawn as an outline until chosen: cortical areas overlap each other on the same gyri, and the
+   *  spinal cord runs down through the mist sea */
+  isOutline: boolean;
   state: MeshState;
 }
 
@@ -115,6 +118,7 @@ export class AtlasScene {
     this.renderer.setClearColor('#030304');
     this.raycaster.firstHitOnly = true;
     this.background = new MistSea(BRAIN_CENTER, this.renderer);
+    sceneFloor.value = this.background.seaLevel;
 
     this.scene.add(new THREE.HemisphereLight('#e8ecff', '#2c2a4a', 1.1));
     const key = new THREE.DirectionalLight('#ffffff', 2.0);
@@ -180,11 +184,12 @@ export class AtlasScene {
       if (!info) return;
       const structure = structures.get(info.structureId)!;
       const isShell = structure.group === 'shell';
+      const isOutline = isShell || structure.group === 'cortex' || structure.group === 'spinal-cord';
       const baseColor = structureColor(manifest.groups[structure.group].color, indexInGroup.get(structure.id)!, isShell);
       if (!object.geometry.attributes.normal) object.geometry.computeVertexNormals();
       object.geometry.computeBoundsTree();
       const entry: AtlasEntry = {
-        info, structure, object, baseColor, isShell, state: 'normal', halo: null,
+        info, structure, object, baseColor, isShell, isOutline, state: 'normal', halo: null,
         solid: solidMaterial(baseColor), ghost: ghostMaterial(baseColor, isShell),
       };
       object.userData.entry = entry;
@@ -290,12 +295,12 @@ export class AtlasScene {
   setStates(stateOf: (entry: AtlasEntry) => MeshState) {
     for (const entry of this.entries.values()) {
       let state = stateOf(entry);
-      if (entry.isShell && state === 'normal') state = 'ghost';
+      if (entry.isOutline && state === 'normal') state = 'ghost';
       entry.state = state;
       const ghost = state === 'ghost';
       entry.object.material = ghost ? entry.ghost : entry.solid;
       // ghosts after solids; shells last so inner ghosts are not tinted twice by sort flips
-      entry.object.renderOrder = ghost ? (entry.isShell ? 20 : 10) : 0;
+      entry.object.renderOrder = ghost ? (entry.isShell ? 20 : entry.isOutline ? 15 : 10) : 0;
       this.setHalo(entry, state === 'active' && !entry.isShell);
     }
     this.applyVisibility();

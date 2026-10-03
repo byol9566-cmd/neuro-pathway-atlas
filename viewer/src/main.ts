@@ -3,7 +3,7 @@ import { pathwayMeshIds, pathwayRoute, stepMeshIds, type PathwayRoute } from './
 import { AtlasScene, type AtlasEntry, type ViewPreset } from './scene/AtlasScene';
 import { SectionPanel, type SectionHit, type SectionMeta } from './sections/SectionPanel';
 import './style.css';
-import type { Manifest, ManifestMesh, ManifestStructure, OriginSide, Pathway } from './types';
+import type { Manifest, ManifestMesh, ManifestStructure, OriginSide, Pathway, PathwayCategory } from './types';
 
 type Mode =
   | { kind: 'explore' }
@@ -12,6 +12,7 @@ type Mode =
 type PathwayMode = Extract<Mode, { kind: 'pathway' }>;
 
 const PATHWAYS = pathwaysJson.pathways as Pathway[];
+const CATEGORIES = ((pathwaysJson as { categories?: PathwayCategory[] }).categories ?? []) as PathwayCategory[];
 const SIDE_LABEL: Record<string, string> = { L: '왼쪽', R: '오른쪽', M: '정중' };
 const STEP_SECONDS = 4;
 const MAX_CALLOUTS = 6;
@@ -181,25 +182,43 @@ async function main() {
 
   // ---------- sidebar ----------
   const sidebar = $('#sidebar');
-  const search = el('input', { type: 'search', placeholder: '구조 검색 (한글/영문)', id: 'search' });
-  const pathwayList = el('div', { className: 'list' });
+  const search = el('input', { type: 'search', placeholder: '경로·구조 검색 (한글/영문)', id: 'search' });
+  const pathwayList = el('div', { className: 'groups' });
   const structureList = el('div', { className: 'groups' });
   const groupToggles: HTMLInputElement[] = [];
   sidebar.append(
     el('header', { className: 'brand' },
       el('span', { className: 'brand-star' }, '✦'),
       el('div', {}, el('h1', {}, '신경경로 아틀라스'), el('p', { className: 'badge' }, '시제품 · 내용 검수 전'))),
+    search,
     el('h2', {}, '신경경로'), pathwayList,
-    el('h2', {}, '구조'), search, structureList,
+    el('h2', {}, '구조'), structureList,
     attributionBlock(),
     licencesBlock(),
   );
 
-  for (const p of PATHWAYS) {
-    const btn = el('button', { className: 'item pathway' }, el('strong', {}, p.name.ko), el('small', {}, p.name.en ?? ''));
-    btn.dataset.pathway = p.id;
-    btn.onclick = () => startPathway(p);
-    pathwayList.append(btn);
+  // pathways grouped by category, in the order the content file gives; text-only mechanisms sort last
+  // within their category and are marked, so the reader knows nothing will light up
+  const categoryOrder = CATEGORIES.length ? CATEGORIES : [...new Set(PATHWAYS.map((p) => p.category))].map((id) => ({ id, name: { ko: id } }));
+  for (const cat of categoryOrder) {
+    const members = PATHWAYS.filter((p) => p.category === cat.id);
+    if (!members.length) continue;
+    const items = el('div', { className: 'list' });
+    for (const p of members) {
+      const btn = el('button', { className: 'item pathway' + (p.has3d === false ? ' text-only' : '') },
+        el('strong', {}, p.name.ko), el('small', {}, p.has3d === false ? `${p.name.en ?? ''} · 설명만` : p.name.en ?? ''));
+      btn.dataset.pathway = p.id;
+      btn.dataset.search = `${p.name.ko} ${p.name.en ?? ''}`.toLowerCase();
+      btn.onclick = () => startPathway(p);
+      items.append(btn);
+    }
+    const fold = el('button', { className: 'fold', type: 'button', title: '펼치기/접기', ariaLabel: `${cat.name.ko} 펼치기` }, '›');
+    const n3d = members.filter((p) => p.has3d !== false).length;
+    const section = el('section', { className: 'group' + (members.length > 8 ? ' collapsed' : '') },
+      el('label', {}, cat.name.ko, el('small', {}, n3d === members.length ? String(members.length) : `${n3d}+${members.length - n3d}`), fold), items);
+    section.dataset.category = cat.id;
+    fold.onclick = (e) => { e.preventDefault(); section.classList.toggle('collapsed'); };
+    pathwayList.append(section);
   }
 
   for (const [groupId, group] of Object.entries(manifest.groups)) {
@@ -221,21 +240,33 @@ async function main() {
     }
     const groupSwatch = el('span', { className: 'swatch' });
     groupSwatch.style.background = group.color;
-    structureList.append(el('section', { className: 'group' }, el('label', {}, toggle, groupSwatch, group.name.ko, el('small', {}, String(members.length))), items));
+    // long groups start folded; the chevron unfolds them, and so does selecting one of their structures
+    const fold = el('button', { className: 'fold', type: 'button', title: '펼치기/접기', ariaLabel: `${group.name.ko} 펼치기` }, '›');
+    const section = el('section', { className: 'group' + (members.length > 14 ? ' collapsed' : '') }, el('label', {}, toggle, groupSwatch, group.name.ko, el('small', {}, String(members.length)), fold), items);
+    section.dataset.group = groupId;
+    fold.onclick = (e) => { e.preventDefault(); section.classList.toggle('collapsed'); };
+    structureList.append(section);
   }
 
   const filterStructures = () => {
     const q = search.value.trim().toLowerCase();
-    for (const btn of structureList.querySelectorAll<HTMLElement>('.structure')) btn.hidden = !!q && !btn.dataset.search!.includes(q);
-    for (const g of structureList.querySelectorAll<HTMLElement>('.group')) g.hidden = !g.querySelector('.structure:not([hidden])');
+    for (const btn of sidebar.querySelectorAll<HTMLElement>('.item.structure, .item.pathway')) btn.hidden = !!q && !btn.dataset.search!.includes(q);
+    for (const g of sidebar.querySelectorAll<HTMLElement>('.group')) {
+      g.hidden = !g.querySelector('.item:not([hidden])');
+      if (q) g.classList.remove('collapsed'); // a search result must be visible
+    }
   };
   search.oninput = filterStructures;
 
   function renderSidebarState() {
     for (const b of sidebar.querySelectorAll<HTMLElement>('.item')) {
-      b.classList.toggle('current',
-        (mode.kind === 'pathway' && b.dataset.pathway === mode.pathwayId) ||
-        (mode.kind === 'structure' && b.dataset.structure === mode.structureId));
+      const current = (mode.kind === 'pathway' && b.dataset.pathway === mode.pathwayId) ||
+        (mode.kind === 'structure' && b.dataset.structure === mode.structureId);
+      b.classList.toggle('current', current);
+      if (current) {
+        b.closest('.group')?.classList.remove('collapsed');
+        b.scrollIntoView({ block: 'nearest' });
+      }
     }
   }
 
@@ -350,6 +381,7 @@ async function main() {
     const p = pathwayOf(m);
     detail.append(el('p', { className: 'eyebrow' }, '신경경로'), el('h2', {}, p.name.ko), el('p', { className: 'sub' }, p.name.en ?? ''));
     if (p.reviewStatus === 'draft') detail.append(el('p', { className: 'warn' }, '초안: 아직 전문가 검수를 거치지 않은 설명입니다.'));
+    if (p.has3d === false) detail.append(el('p', { className: 'missing' }, '이 항목은 3D로 표시할 구조가 없어 설명만 제공합니다.'));
     detail.append(el('p', {}, p.summary.ko));
 
     const sides = el('div', { className: 'segmented' });
