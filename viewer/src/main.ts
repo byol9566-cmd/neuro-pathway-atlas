@@ -498,6 +498,8 @@ async function main() {
   /** Colour of an atlas label in the 2D section, mirroring what the 3D scene is doing with it. */
   function paintLabel(label: number, side: 'L' | 'R'): [number, number, number] {
     const lut = sectionMeta!.labels[label].color;
+    // fluid spaces read as "empty": a deep translucent blue-black, distinct from unlabelled black
+    if (/ventricle|aqueduct|foramen|cistern|choroid/.test(sectionMeta!.labels[label].name)) return [18, 26, 44];
     const entry = scene.entries.get(`${labelToStructure.get(label)}.${side}`);
     if (!entry) {
       if (mode.kind === 'explore') return mixTo(lut, [50, 52, 62], 0.6);
@@ -532,12 +534,13 @@ async function main() {
       const brainstem = el('button', { title: '뇌줄기 확대' }, '뇌줄기');
       brainstem.onclick = () => { sectionZoom = 3.2; section!.centerOn(0, -32, sectionZoom); };
       const cut = el('input', { type: 'checkbox', id: 'section-cut' });
-      cut.onchange = () => scene.setSectionCut(cut.checked);
+      cut.onchange = () => { scene.setSectionCut(cut.checked); refreshCap(); };
       const close = el('button', { title: '단면 닫기' }, '×');
       close.onclick = closeSection;
       header.append(section.readoutElement, el('span', { className: 'spacer' }), zoomOut, zoomIn, brainstem,
         el('label', { className: 'cut', title: '3D에서 이 높이 위쪽을 잘라 냅니다' }, cut, '자르기'), close);
       section.onSliceChange = (z) => scene.setSectionPlane(z);
+      section.onPaint = () => refreshCap();
       section.onHover = (hit, x, y) => {
         tooltip.hidden = !hit;
         if (!hit) return;
@@ -557,10 +560,17 @@ async function main() {
     frameSubject();
   }
 
+  /** The cut face shows the current slice while the 3D cut is on. */
+  function refreshCap() {
+    if (!section || !sectionMeta || !scene.sectionCut || sectionRoot.hidden) return scene.setSectionCap(null);
+    scene.setSectionCap(section.capCanvas(), sectionMeta);
+  }
+
   function closeSection() {
     sectionRoot.hidden = true;
     scene.setSectionPlane(null);
     scene.setSectionCut(false);
+    scene.setSectionCap(null);
     const cut = document.querySelector<HTMLInputElement>('#section-cut');
     if (cut) cut.checked = false;
     sectionToggle.classList.remove('on');

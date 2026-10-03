@@ -98,6 +98,8 @@ export class AtlasScene {
   private hovered: AtlasEntry | null = null;
   private route: PathwayCurve | null = null;
   private readonly sectionPlane = new THREE.Group();
+  /** the slice image laid on the cut face */
+  private sectionCap: THREE.Mesh | null = null;
   private readonly cutPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 0);
   private cutEnabled = false;
   private fly: { fromTarget: THREE.Vector3; toTarget: THREE.Vector3; fromPos: THREE.Vector3; toPos: THREE.Vector3; t: number } | null = null;
@@ -361,6 +363,40 @@ export class AtlasScene {
     // RAS z is three.js y. The indicator sits a hair below the cut so the cut does not clip it away.
     this.sectionPlane.position.y = zMm - 0.05;
     this.cutPlane.constant = zMm;
+  }
+
+  /**
+   * Lay the 2D slice on the cut face so the structures around the pathway can be read in place.
+   * `canvas` is the slice in anatomical orientation (see SectionPanel.capCanvas); its pixel grid is
+   * `pixelMm` wide per pixel, covering RAS x in [xMin, -xMin] and y in [yMin, yMax].
+   */
+  setSectionCap(canvas: HTMLCanvasElement | null, extent?: { xMin: number; yMin: number; yMax: number; pixelMm: number }) {
+    if (this.sectionCap) {
+      this.sectionCap.removeFromParent();
+      (this.sectionCap.material as THREE.MeshBasicMaterial).map?.dispose();
+      (this.sectionCap.material as THREE.Material).dispose();
+      this.sectionCap.geometry.dispose();
+      this.sectionCap = null;
+    }
+    this.poke();
+    if (!canvas || !extent) return;
+    const texture = new THREE.CanvasTexture(canvas);
+    texture.colorSpace = THREE.SRGBColorSpace;
+    texture.minFilter = THREE.LinearFilter;
+    const w = canvas.width * extent.pixelMm;
+    const d = canvas.height * extent.pixelMm;
+    const cap = new THREE.Mesh(
+      new THREE.PlaneGeometry(w, d),
+      new THREE.MeshBasicMaterial({ map: texture, transparent: true, opacity: 0.92, side: THREE.DoubleSide, depthWrite: false }),
+    );
+    // PlaneGeometry lies in its local xy with the image top at +y; rotated flat, +y points to -z,
+    // which is RAS +y (anterior). Centre: x = 0 (midline), RAS y = middle of the slice.
+    cap.rotation.x = -Math.PI / 2;
+    cap.position.set(0, this.cutPlane.constant - 0.15, -(extent.yMin + extent.yMax) / 2);
+    cap.renderOrder = 25;
+    cap.raycast = () => {};
+    this.sectionCap = cap;
+    this.root.add(cap);
   }
 
   /** Cut away everything above the section plane so the level being viewed in 2D is exposed in 3D. */

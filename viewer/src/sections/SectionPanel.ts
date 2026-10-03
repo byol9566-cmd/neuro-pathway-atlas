@@ -52,6 +52,8 @@ export class SectionPanel {
   onHover: (hit: SectionHit | null, clientX: number, clientY: number) => void = () => {};
   onPick: (hit: SectionHit | null) => void = () => {};
   onSliceChange: (zMm: number) => void = () => {};
+  /** the slice on screen changed (new slice loaded or recoloured) */
+  onPaint: () => void = () => {};
 
   private readonly canvas = document.createElement('canvas');
   private readonly ctx: CanvasRenderingContext2D;
@@ -244,6 +246,44 @@ export class SectionPanel {
       }
     }
     this.ctx.putImageData(out, 0, 0);
+    this.onPaint();
+  }
+
+  /**
+   * The current slice in anatomical orientation for the 3D cut face: patient's left on the left,
+   * anterior at the top, unlabelled voxels transparent so empty space (outside the tissue, ventricles
+   * without a label) stays see-through. Pixel size = meta.pixelMm; width spans xMin..-xMin.
+   */
+  capCanvas(): HTMLCanvasElement | null {
+    const labels = this.current;
+    if (!labels) return null;
+    const { width, height } = this.meta;
+    const canvas = document.createElement('canvas');
+    canvas.width = width * 2;
+    canvas.height = height;
+    const ctx = canvas.getContext('2d')!;
+    const out = ctx.createImageData(width * 2, height);
+    const px = new Uint32Array(out.data.buffer);
+    const { L, R } = this.tables;
+    for (let row = 0; row < height; row++) {
+      const src = row * width;
+      const dst = row * width * 2;
+      for (let col = 0; col < width; col++) {
+        const label = labels[src + col];
+        if (!label) continue; // transparent
+        const edge = (col + 1 < width && labels[src + col + 1] !== label) || (row + 1 < height && labels[src + width + col] !== label);
+        let left = L[label];
+        let right = R[label];
+        if (edge) {
+          left = darken(left);
+          right = darken(right);
+        }
+        px[dst + col] = left; // atlas data are the left hemisphere: x from xMin up to the midline
+        px[dst + width * 2 - 1 - col] = right; // right hemisphere, mirrored
+      }
+    }
+    ctx.putImageData(out, 0, 0);
+    return canvas;
   }
 
   private displayScale() {
