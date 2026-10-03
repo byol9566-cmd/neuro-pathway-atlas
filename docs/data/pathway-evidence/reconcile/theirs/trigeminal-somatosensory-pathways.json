@@ -1,0 +1,622 @@
+{
+ "ours": "trigeminal-somatosensory-pathways",
+ "theirs": [
+  {
+   "id": "trigeminal-touch",
+   "category": "somatosensory",
+   "name": {
+    "ko": "얼굴 촉각 경로",
+    "en": "Trigeminal discriminative touch pathway"
+   },
+   "summary": {
+    "ko": "얼굴 분별촉각를 삼차신경 감각핵에서 중계하고 VPM을 통해 반대쪽 S1로 전달한다."
+   },
+   "origin": {
+    "ko": "자극을 받는 얼굴 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      18,
+      22
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      9,
+      16
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "trigeminal-touch-1",
+     "title": {
+      "ko": "삼차신경절 → 같은쪽 감각핵"
+     },
+     "description": {
+      "ko": "얼굴 분별촉각 입력이 삼차신경절을 지나 같은쪽 삼차신경 주감각핵에 전달된다. 주감각핵은 다리뇌, 척수핵은 숨뇌·상부척수로 이어진다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn5",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-trigeminal-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-trigeminal-principal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18,
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 (V) · 삼차신경절 · 삼차신경 주감각핵"
+     },
+     "neuronOrder": 1
+    },
+    {
+     "id": "trigeminal-touch-2",
+     "title": {
+      "ko": "삼차시상로 교차"
+     },
+     "description": {
+      "ko": "2차 뉴런 출력이 주로 교차해 반대쪽 삼차시상로로 올라간다. 구강의 일부 촉각은 양측 투사가 있어 모든 얼굴 감각을 완전 교차로 단정하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "thal-vpm",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-trigeminothalamic",
+       "side": "contra"
+      },
+      {
+       "id": "thal-vpm",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18,
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차시상로"
+     },
+     "neuronOrder": 2,
+     "decussation": true,
+     "decussationSite": {
+      "ko": "뇌줄기 삼차감각핵 출력 교차"
+     }
+    },
+    {
+     "id": "trigeminal-touch-3",
+     "title": {
+      "ko": "VPM → 얼굴 S1"
+     },
+     "description": {
+      "ko": "시상 중계뉴런이 반대쪽 S1의 얼굴 영역으로 투사한다."
+     },
+     "structures": [
+      {
+       "id": "ctx-postcentral",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-internal-capsule-posterior",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18,
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 뒤다리"
+     },
+     "neuronOrder": 3
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "삼차감각핵"
+     },
+     "deficit": {
+      "ko": "핵 수준 병변에서 같은쪽 얼굴의 해당 감각 장애"
+     },
+     "side": "ipsi"
+    },
+    {
+     "level": {
+      "ko": "교차 후 삼차시상로·VPM"
+     },
+     "deficit": {
+      "ko": "반대쪽 얼굴 감각 장애"
+     },
+     "side": "contra"
+    }
+   ],
+   "edges": [
+    {
+     "from": "trigeminal-touch-1",
+     "to": "trigeminal-touch-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "trigeminal-touch-2",
+     "to": "trigeminal-touch-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "trigeminal-pain",
+   "category": "somatosensory",
+   "name": {
+    "ko": "얼굴 통각·온도 경로",
+    "en": "Trigeminal pain and temperature pathway"
+   },
+   "summary": {
+    "ko": "얼굴 통각·온도를 삼차신경 감각핵에서 중계하고 VPM을 통해 반대쪽 S1로 전달한다."
+   },
+   "origin": {
+    "ko": "자극을 받는 얼굴 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      18,
+      22
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      9,
+      16
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "trigeminal-pain-1",
+     "title": {
+      "ko": "삼차신경절 → 같은쪽 감각핵"
+     },
+     "description": {
+      "ko": "얼굴 통각·온도 입력이 삼차신경절을 지나 같은쪽 삼차신경척수핵에 전달된다. 주감각핵은 다리뇌, 척수핵은 숨뇌·상부척수로 이어진다."
+     },
+     "structures": [
+      {
+       "id": "bs-spinal-trigeminal",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "pn-cn5",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-trigeminal-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-spinal-trigeminal",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-spinal-trigeminal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18,
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 (V) · 삼차신경절 · 삼차신경척수로"
+     },
+     "neuronOrder": 1
+    },
+    {
+     "id": "trigeminal-pain-2",
+     "title": {
+      "ko": "삼차시상로 교차"
+     },
+     "description": {
+      "ko": "2차 뉴런 출력이 주로 교차해 반대쪽 삼차시상로로 올라간다. 구강의 일부 촉각은 양측 투사가 있어 모든 얼굴 감각을 완전 교차로 단정하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "thal-vpm",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-trigeminothalamic",
+       "side": "contra"
+      },
+      {
+       "id": "thal-vpm",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18,
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차시상로"
+     },
+     "neuronOrder": 2,
+     "decussation": true,
+     "decussationSite": {
+      "ko": "뇌줄기 삼차감각핵 출력 교차"
+     }
+    },
+    {
+     "id": "trigeminal-pain-3",
+     "title": {
+      "ko": "VPM → 얼굴 S1"
+     },
+     "description": {
+      "ko": "시상 중계뉴런이 반대쪽 S1의 얼굴 영역으로 투사한다."
+     },
+     "structures": [
+      {
+       "id": "ctx-postcentral",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-internal-capsule-posterior",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18,
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 뒤다리"
+     },
+     "neuronOrder": 3
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "삼차감각핵"
+     },
+     "deficit": {
+      "ko": "핵 수준 병변에서 같은쪽 얼굴의 해당 감각 장애"
+     },
+     "side": "ipsi"
+    },
+    {
+     "level": {
+      "ko": "교차 후 삼차시상로·VPM"
+     },
+     "deficit": {
+      "ko": "반대쪽 얼굴 감각 장애"
+     },
+     "side": "contra"
+    }
+   ],
+   "edges": [
+    {
+     "from": "trigeminal-pain-1",
+     "to": "trigeminal-pain-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "trigeminal-pain-2",
+     "to": "trigeminal-pain-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "trigeminocerebellar",
+   "category": "cerebellar",
+   "name": {
+    "ko": "삼차소뇌 경로",
+    "en": "Trigeminocerebellar tract"
+   },
+   "summary": {
+    "ko": "얼굴·턱의 감각입력이 삼차핵 관련 소뇌연결을 통해 소뇌에 전달된다. 원문은 중계핵·다리 세부를 확정하지 않으므로 주행은 보완 초안이다."
+   },
+   "origin": {
+    "ko": "감각·운동정보를 보내는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      48,
+      49
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "trigeminocerebellar-1",
+     "title": {
+      "ko": "말초·척수 입력"
+     },
+     "description": {
+      "ko": "얼굴·턱의 감각입력이 삼차핵 관련 소뇌연결을 통해 소뇌에 전달된다. 원문은 중계핵·다리 세부를 확정하지 않으므로 주행은 보완 초안이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn5",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-trigeminal-mesencephalic",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 (V) · 삼차신경 중뇌핵"
+     }
+    },
+    {
+     "id": "trigeminocerebellar-2",
+     "title": {
+      "ko": "상행·소뇌다리"
+     },
+     "description": {
+      "ko": "해당 섬유가 소뇌다리를 통해 소뇌에 진입한다. 원문에 없는 세부 교차는 표준 해부학 보완으로 구분한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-trigeminocerebellar",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-icp",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차소뇌로 · 아래소뇌다리"
+     }
+    },
+    {
+     "id": "trigeminocerebellar-3",
+     "title": {
+      "ko": "소뇌겉질"
+     },
+     "description": {
+      "ko": "이끼섬유 관련 입력이 소뇌 과립·푸르키네 회로에 들어간다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-vermis",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-paravermis",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-granule",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌벌레 · 소뇌벌레곁영역 · 소뇌 과립세포"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "trigeminocerebellar-1",
+     "to": "trigeminocerebellar-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "trigeminocerebellar-2",
+     "to": "trigeminocerebellar-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

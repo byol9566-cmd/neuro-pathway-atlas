@@ -1,0 +1,441 @@
+{
+ "ours": "horizontal-conjugate-gaze-saccade-circuit",
+ "theirs": [
+  {
+   "id": "cortical-gaze-control",
+   "category": "oculomotor",
+   "name": {
+    "ko": "이마눈영역의 수의눈운동",
+    "en": "Frontal eye field control of voluntary gaze"
+   },
+   "summary": {
+    "ko": "FEF의 눈운동 기능을 뇌줄기 눈운동 출력과 연결하는 원문 요약이다."
+   },
+   "origin": {
+    "ko": "눈운동을 계획하는 대뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      20,
+      33
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      1,
+      67,
+      77
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cortical-gaze-control-1",
+     "title": {
+      "ko": "FEF·마루 계획"
+     },
+     "description": {
+      "ko": "FEF와 작업기억 관련 PFC/LIP 활동이 눈운동 계획에 관여한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-fef",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-prefrontal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-lip",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        20,
+        33
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        1,
+        67,
+        77
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 이마눈영역 (FEF, BA 8) · 전전두겉질 · 가쪽마루사이고랑영역 (LIP)"
+     }
+    },
+    {
+     "id": "cortical-gaze-control-2",
+     "title": {
+      "ko": "뇌줄기 눈운동 출력"
+     },
+     "description": {
+      "ko": "뇌줄기 III/IV/VI·핵사이망이 양눈 운동을 조절한다. FEF→PPRF 직접 주행·saccade별 교차세부는 원문의 기능표만으로 확정하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "contra"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "contra"
+      },
+      {
+       "id": "tr-mlf",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-mlf",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-pprf",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pprf",
+       "side": "contra"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "contra"
+      },
+      {
+       "id": "bs-trochlear",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-trochlear",
+       "side": "contra"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "contra"
+      },
+      {
+       "id": "tr-mlf",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-mlf",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        20,
+        33
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        1,
+        67,
+        77
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 다리뇌 정중곁그물체 (PPRF) · 도르래신경핵 (IV)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "cortical-gaze-control-1",
+     "to": "cortical-gaze-control-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cranial-vi-motor",
+   "category": "motor",
+   "name": {
+    "ko": "VI 가쪽곧은근 출력",
+    "en": "Abducens nerve motor output"
+   },
+   "summary": {
+    "ko": "뇌신경 운동핵→말초축삭→표적근육 연결."
+   },
+   "origin": {
+    "ko": "출력받는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      25
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cranial-vi-motor-1",
+     "title": {
+      "ko": "운동핵"
+     },
+     "description": {
+      "ko": "운동뉴런 세포체는 갓돌림신경핵 (VI)에 있다."
+     },
+     "structures": [
+      {
+       "id": "bs-abducens",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-abducens",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        25
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "cranial-vi-motor-2",
+     "title": {
+      "ko": "뇌신경 → 근육"
+     },
+     "description": {
+      "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn6",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-lateral-rectus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        25
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 갓돌림신경 (VI) · 가쪽곧은근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "bs-abducens 또는 신경"
+     },
+     "deficit": {
+      "ko": "지배근육의 운동장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "memo": "운동핵 기능표·원심축삭 요약; 근육별 아핵 배선은 전문 검수 필요.",
+   "edges": [
+    {
+     "from": "cranial-vi-motor-1",
+     "to": "cranial-vi-motor-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cranial-iii-motor",
+   "category": "motor",
+   "name": {
+    "ko": "III 눈운동 출력",
+    "en": "Oculomotor nerve motor output"
+   },
+   "summary": {
+    "ko": "뇌신경 운동핵→말초축삭→표적근육 연결."
+   },
+   "origin": {
+    "ko": "출력받는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      25
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cranial-iii-motor-1",
+     "title": {
+      "ko": "운동핵"
+     },
+     "description": {
+      "ko": "운동뉴런 세포체는 눈돌림신경핵 (III)에 있다."
+     },
+     "structures": [
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        25
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "cranial-iii-motor-2",
+     "title": {
+      "ko": "뇌신경 → 근육"
+     },
+     "description": {
+      "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn3",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extraocular-iii",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        25
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈돌림신경 (III) · 눈돌림신경 지배 눈근육·눈꺼풀올림근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "bs-oculomotor 또는 신경"
+     },
+     "deficit": {
+      "ko": "지배근육의 운동장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "memo": "운동핵 기능표·원심축삭 요약; 근육별 아핵 배선은 전문 검수 필요.",
+   "edges": [
+    {
+     "from": "cranial-iii-motor-1",
+     "to": "cranial-iii-motor-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

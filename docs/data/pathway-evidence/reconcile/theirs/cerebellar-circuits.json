@@ -1,0 +1,2216 @@
+{
+ "ours": "cerebellar-circuits",
+ "theirs": [
+  {
+   "id": "corticopontocerebellar",
+   "category": "cerebellar",
+   "name": {
+    "ko": "겉질–다리뇌–소뇌 입력",
+    "en": "Corticopontocerebellar pathway"
+   },
+   "summary": {
+    "ko": "대뇌겉질→같은쪽 다리뇌핵→반대쪽 소뇌로 입력이 들어간다."
+   },
+   "origin": {
+    "ko": "운동정보를 보내는 대뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      48,
+      50
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      72,
+      73
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "corticopontocerebellar-1",
+     "title": {
+      "ko": "겉질 → 같은쪽 다리뇌핵"
+     },
+     "description": {
+      "ko": "겉질다리뇌섬유가 같은쪽 다리뇌핵에서 중계된다."
+     },
+     "structures": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pontine-nuclei",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-corticopontine",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pontine-nuclei",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        50
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        72,
+        73
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 겉질다리뇌섬유"
+     }
+    },
+    {
+     "id": "corticopontocerebellar-2",
+     "title": {
+      "ko": "교차 → 중간소뇌다리"
+     },
+     "description": {
+      "ko": "다리뇌소뇌섬유가 교차해 반대쪽 MCP로 들어간다. 정리본 2차 p.73의 도착점 Cerebrum은 Cerebellum으로 정정했다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-pontocerebellar",
+       "side": "contra"
+      },
+      {
+       "id": "tr-mcp",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        50
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        72,
+        73
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 다리뇌소뇌섬유 · 중간소뇌다리"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "다리뇌 바닥 가로섬유 교차"
+     }
+    },
+    {
+     "id": "corticopontocerebellar-3",
+     "title": {
+      "ko": "소뇌겉질 이끼입력"
+     },
+     "description": {
+      "ko": "반대쪽 가쪽소뇌겉질로 이끼섬유 입력이 들어간다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-lateral",
+       "side": "contra"
+      },
+      {
+       "id": "cb-granule",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        50
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        72,
+        73
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽소뇌반구 · 소뇌 과립세포"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "corticopontocerebellar-1",
+     "to": "corticopontocerebellar-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "corticopontocerebellar-2",
+     "to": "corticopontocerebellar-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "dentatothalamocortical",
+   "category": "cerebellar",
+   "name": {
+    "ko": "치아핵–시상–운동겉질 출력",
+    "en": "Dentatothalamocortical pathway"
+   },
+   "summary": {
+    "ko": "치아핵 출력이 위소뇌다리에서 교차해 반대쪽 VL·운동겉질로 전달된다."
+   },
+   "origin": {
+    "ko": "출력을 보내는 소뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      46,
+      47,
+      48,
+      50,
+      51
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      72,
+      73
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "dentatothalamocortical-1",
+     "title": {
+      "ko": "푸르키네 → 치아핵"
+     },
+     "description": {
+      "ko": "가쪽소뇌 푸르키네세포가 치아핵을 억제성으로 조절한다. 소뇌 출력의 최종 중계는 깊은핵이다."
+     },
+     "structures": [
+      {
+       "id": "cb-dentate",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "cb-lateral",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-purkinje",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-dentate",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        46,
+        47,
+        48,
+        50
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        72,
+        73
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽소뇌반구 · 푸르키네세포"
+     },
+     "transmitter": "GABA"
+    },
+    {
+     "id": "dentatothalamocortical-2",
+     "title": {
+      "ko": "SCP 교차"
+     },
+     "description": {
+      "ko": "치아핵 축삭이 위소뇌다리를 따라 중뇌에서 교차한다."
+     },
+     "structures": [
+      {
+       "id": "tr-scp",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-scp",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-cerebellothalamic",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        46,
+        47,
+        48,
+        50
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        72,
+        73
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌시상섬유"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "중뇌 위소뇌다리교차"
+     }
+    },
+    {
+     "id": "dentatothalamocortical-3",
+     "title": {
+      "ko": "VL → M1"
+     },
+     "description": {
+      "ko": "반대쪽 VL 중계가 그쪽 M1·전운동망에 정보를 보낸다. VL과 몸감각 VPL을 혼동하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "thal-vl",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-vl",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-pma",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        46,
+        47,
+        48,
+        50
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        72,
+        73
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전운동영역 (PMA, BA 6)"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "소뇌반구·깊은핵"
+     },
+     "deficit": {
+      "ko": "같은쪽 팔다리 운동실조·거리조절장애·의도떨림"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "edges": [
+    {
+     "from": "dentatothalamocortical-1",
+     "to": "dentatothalamocortical-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "dentatothalamocortical-2",
+     "to": "dentatothalamocortical-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cerebellar-double-crossing",
+   "category": "cerebellar",
+   "name": {
+    "ko": "소뇌의 몸 같은쪽 영향·이중교차",
+    "en": "Cerebellar double crossing and ipsilateral body control"
+   },
+   "summary": {
+    "ko": "소뇌→시상겉질 교차와 CST 교차가 합쳐져 소뇌 병변은 같은쪽 팔다리에 주로 나타난다."
+   },
+   "origin": {
+    "ko": "운동을 조절하는 소뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      73,
+      75
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cerebellar-double-crossing-1",
+     "title": {
+      "ko": "소뇌 → 반대쪽 VL/M1"
+     },
+     "description": {
+      "ko": "위소뇌다리에서 교차해 반대쪽 운동겉질로 전달된다."
+     },
+     "structures": [
+      {
+       "id": "cb-dentate",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-scp",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "cb-dentate",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-scp",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        73,
+        75
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "decussation": true,
+     "decussationSite": {
+      "ko": "위소뇌다리교차"
+     }
+    },
+    {
+     "id": "cerebellar-double-crossing-2",
+     "title": {
+      "ko": "M1 → 피라미드 재교차"
+     },
+     "description": {
+      "ko": "해당 운동겉질의 CST가 피라미드교차에서 다시 건너 소뇌 기준 같은쪽 척수운동망에 이른다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-pyramid",
+       "side": "contra"
+      },
+      {
+       "id": "tr-corticospinal-lateral",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        73,
+        75
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 숨뇌 피라미드 · 가쪽겉질척수로 · 알파운동뉴런"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "피라미드교차"
+     }
+    },
+    {
+     "id": "cerebellar-double-crossing-3",
+     "title": {
+      "ko": "같은쪽 근육 영향"
+     },
+     "description": {
+      "ko": "두 번 교차한 경로가 소뇌와 같은쪽 근육운동을 조절한다. 전 소뇌 연결이 모두 이 경로 하나로 설명되지는 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ef-extrafusal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        73,
+        75
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 방추밖근섬유"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "cerebellar-double-crossing-1",
+     "to": "cerebellar-double-crossing-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "cerebellar-double-crossing-2",
+     "to": "cerebellar-double-crossing-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "olivocerebellar",
+   "category": "cerebellar",
+   "name": {
+    "ko": "올리브소뇌 오름섬유 입력",
+    "en": "Olivocerebellar climbing fiber pathway"
+   },
+   "summary": {
+    "ko": "아래올리브 출력이 교차하여 반대쪽 소뇌 푸르키네세포에 오름섬유 입력을 제공한다."
+   },
+   "origin": {
+    "ko": "출력을 보내는 아래올리브 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      47,
+      48,
+      49,
+      50
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      51,
+      73,
+      74
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "olivocerebellar-1",
+     "title": {
+      "ko": "아래올리브"
+     },
+     "description": {
+      "ko": "운동오류·시간 관련 정보를 아래올리브망이 처리한다."
+     },
+     "structures": [
+      {
+       "id": "bs-inferior-olive",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-inferior-olive",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        47,
+        48,
+        49,
+        50
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        73,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "olivocerebellar-2",
+     "title": {
+      "ko": "교차 → ICP"
+     },
+     "description": {
+      "ko": "올리브소뇌섬유가 교차하여 반대쪽 아래소뇌다리를 통해 소뇌로 들어간다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-olivocerebellar",
+       "side": "contra"
+      },
+      {
+       "id": "tr-icp",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        47,
+        48,
+        49,
+        50
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        73,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 올리브소뇌섬유 · 아래소뇌다리"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "숨뇌 올리브소뇌섬유 교차"
+     }
+    },
+    {
+     "id": "olivocerebellar-3",
+     "title": {
+      "ko": "푸르키네 복합스파이크"
+     },
+     "description": {
+      "ko": "오름섬유는 강한 흥분성 입력을 제공하며 복합스파이크·학습신호와 관련된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-purkinje",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        47,
+        48,
+        49,
+        50
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        73,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 푸르키네세포"
+     },
+     "transmitter": "glutamate"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "olivocerebellar-1",
+     "to": "olivocerebellar-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "olivocerebellar-2",
+     "to": "olivocerebellar-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cerebellorubral",
+   "category": "cerebellar",
+   "name": {
+    "ko": "소뇌적색핵 출력",
+    "en": "Cerebellorubral output"
+   },
+   "summary": {
+    "ko": "소뇌 입력·출력을 뇌줄기의 감각·운동 조절과 연결한다."
+   },
+   "origin": {
+    "ko": "연결을 시작하는 구조 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      49
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cerebellorubral-1",
+     "title": {
+      "ko": "출발점"
+     },
+     "description": {
+      "ko": "연결의 출발은 중간핵군 (마개핵·둥근핵)이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-interposed",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 중간핵군 (마개핵·둥근핵)"
+     }
+    },
+    {
+     "id": "cerebellorubral-2",
+     "title": {
+      "ko": "연결로 → 표적"
+     },
+     "description": {
+      "ko": "연결섬유가 적색핵에 정보를 전달한다. 소뇌적색핵 출력의 주된 교차는 위소뇌다리에 있다."
+     },
+     "structures": [
+      {
+       "id": "mb-red-nucleus",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-cerebellorubral",
+       "side": "contra"
+      },
+      {
+       "id": "mb-red-nucleus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌적색핵섬유"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "위소뇌다리교차"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "cerebellorubral-1",
+     "to": "cerebellorubral-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "rubro-olivary",
+   "category": "cerebellar",
+   "name": {
+    "ko": "적색핵올리브 연결",
+    "en": "Rubro-olivary connection"
+   },
+   "summary": {
+    "ko": "소뇌 입력·출력을 뇌줄기의 감각·운동 조절과 연결한다."
+   },
+   "origin": {
+    "ko": "연결을 시작하는 구조 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      63
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rubro-olivary-1",
+     "title": {
+      "ko": "출발점"
+     },
+     "description": {
+      "ko": "연결의 출발은 적색핵이다. 적색핵 작은세포부는 rubro-olivary, 큰세포부는 rubrospinal에 강조된다."
+     },
+     "structures": [
+      {
+       "id": "mb-red-nucleus",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "mb-red-nucleus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        63
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "rubro-olivary-2",
+     "title": {
+      "ko": "연결로 → 표적"
+     },
+     "description": {
+      "ko": "연결섬유가 아래올리브핵에 정보를 전달한다. 원문에 없는 정확한 섬유군·좌우는 전문 검수 대상이다."
+     },
+     "structures": [
+      {
+       "id": "bs-inferior-olive",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-rubro-olivary",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-inferior-olive",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        63
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 적색핵올리브로"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "rubro-olivary-1",
+     "to": "rubro-olivary-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cerebellar-mossy-circuit",
+   "category": "cerebellar",
+   "name": {
+    "ko": "소뇌 이끼–과립–평행섬유 회로",
+    "en": "Cerebellar mossy-granule-parallel fiber circuit"
+   },
+   "summary": {
+    "ko": "이끼입력이 과립세포·평행섬유를 통해 푸르키네세포를 흥분시키고 골지 억제회로로 조절된다."
+   },
+   "origin": {
+    "ko": "입력받는 소뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      47
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      73
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cerebellar-mossy-circuit-1",
+     "title": {
+      "ko": "이끼입력 → 과립세포"
+     },
+     "description": {
+      "ko": "뇌줄기·척수 입력이 이끼섬유로 과립세포와 깊은핵 관련망을 흥분시킨다."
+     },
+     "structures": [
+      {
+       "id": "cb-dentate",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "cb-granule",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-dentate",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-interposed",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-fastigial",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        47
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        73
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌 과립세포 · 중간핵군 (마개핵·둥근핵) · 꼭지핵"
+     },
+     "transmitter": "glutamate"
+    },
+    {
+     "id": "cerebellar-mossy-circuit-2",
+     "title": {
+      "ko": "과립세포 → 평행섬유 → 푸르키네"
+     },
+     "description": {
+      "ko": "과립세포 축삭이 분자층 평행섬유가 되어 푸르키네세포에 흥분입력을 제공한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-granule",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-purkinje",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        47
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        73
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌 과립세포 · 푸르키네세포"
+     },
+     "transmitter": "glutamate"
+    },
+    {
+     "id": "cerebellar-mossy-circuit-3",
+     "title": {
+      "ko": "골지 조절 가지"
+     },
+     "description": {
+      "ko": "골지세포 억제가 과립세포의 입력을 조절한다. 이는 직렬 다음 중계가 아니라 회로 내부 억제가지다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-golgi",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-granule",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        47
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        73
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌 골지세포 · 소뇌 과립세포"
+     },
+     "transmitter": "GABA"
+    }
+   ],
+   "lesions": [],
+   "topology": "microcircuit",
+   "edges": [
+    {
+     "from": "cerebellar-mossy-circuit-1",
+     "to": "cerebellar-mossy-circuit-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "cerebellar-mossy-circuit-2",
+     "to": "cerebellar-mossy-circuit-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cerebellar-purkinje-output",
+   "category": "cerebellar",
+   "name": {
+    "ko": "푸르키네–깊은핵 출력조절",
+    "en": "Purkinje control of deep cerebellar nuclei"
+   },
+   "summary": {
+    "ko": "소뇌겉질의 유일 출력세포인 푸르키네가 깊은핵 또는 안뜰핵에 억제성 출력을 보낸다."
+   },
+   "origin": {
+    "ko": "출력을 보내는 소뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      46,
+      47,
+      51
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      72,
+      74
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cerebellar-purkinje-output-1",
+     "title": {
+      "ko": "구역별 푸르키네 출력"
+     },
+     "description": {
+      "ko": "벌레·벌레곁·가쪽겉질의 출력은 서로 다른 핵군과 연결된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-vermis",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-paravermis",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-lateral",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-purkinje",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        46,
+        47
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        72,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌벌레 · 소뇌벌레곁영역 · 가쪽소뇌반구 · 푸르키네세포"
+     }
+    },
+    {
+     "id": "cerebellar-purkinje-output-2",
+     "title": {
+      "ko": "깊은핵 조절"
+     },
+     "description": {
+      "ko": "벌레는 꼭지핵, 벌레곁은 중간핵, 가쪽겉질은 치아핵에 강조된다. 푸르키네는 이 핵들을 GABA로 억제한다."
+     },
+     "structures": [
+      {
+       "id": "cb-dentate",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "cb-fastigial",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-interposed",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-dentate",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-emboliform",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-globose",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        46,
+        47
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        72,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 꼭지핵 · 중간핵군 (마개핵·둥근핵) · 마개핵 · 둥근핵"
+     },
+     "transmitter": "GABA"
+    },
+    {
+     "id": "cerebellar-purkinje-output-3",
+     "title": {
+      "ko": "뇌줄기·시상 출력"
+     },
+     "description": {
+      "ko": "깊은핵의 주요 흥분출력이 뇌줄기·시상운동망을 조절한다. 안뜰핵에 대한 푸르키네 직접출력은 예외가지다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-other",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-other",
+       "side": "contra"
+      },
+      {
+       "id": "mb-red-nucleus",
+       "side": "contra"
+      },
+      {
+       "id": "thal-vl",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-other",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-other",
+       "side": "contra"
+      },
+      {
+       "id": "mb-red-nucleus",
+       "side": "contra"
+      },
+      {
+       "id": "thal-vl",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        46,
+        47
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        72,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "벌레·꼭지핵"
+     },
+     "deficit": {
+      "ko": "자세 불안정·균형 장애"
+     }
+    },
+    {
+     "level": {
+      "ko": "벌레곁·가쪽소뇌반구"
+     },
+     "deficit": {
+      "ko": "주로 병변 같은쪽 운동실조·거리조절이상"
+     },
+     "side": "ipsi"
+    },
+    {
+     "level": {
+      "ko": "가쪽소뇌반구·치아핵"
+     },
+     "deficit": {
+      "ko": "정교한 수의운동·운동학습·일부 인지·정서조절 장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "topology": "parallel-zone-mapping",
+   "edges": [
+    {
+     "from": "cerebellar-purkinje-output-1",
+     "to": "cerebellar-purkinje-output-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "cerebellar-purkinje-output-2",
+     "to": "cerebellar-purkinje-output-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cerebellovestibular",
+   "category": "cerebellar",
+   "name": {
+    "ko": "소뇌안뜰 출력",
+    "en": "Cerebellovestibular output"
+   },
+   "summary": {
+    "ko": "소뇌 입력·출력을 뇌줄기의 감각·운동 조절과 연결한다."
+   },
+   "origin": {
+    "ko": "연결을 시작하는 구조 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      48
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cerebellovestibular-1",
+     "title": {
+      "ko": "출발점"
+     },
+     "description": {
+      "ko": "연결의 출발은 꼭지핵이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-fastigial",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 꼭지핵"
+     }
+    },
+    {
+     "id": "cerebellovestibular-2",
+     "title": {
+      "ko": "연결로 → 표적"
+     },
+     "description": {
+      "ko": "연결섬유가 안쪽안뜰핵에 정보를 전달한다. 원문에 없는 정확한 섬유군·좌우는 전문 검수 대상이다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-cerebellovestibular",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-cerebellovestibular",
+       "side": "contra"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌안뜰섬유"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "cerebellovestibular-1",
+     "to": "cerebellovestibular-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cerebellar-ltd",
+   "category": "learning",
+   "name": {
+    "ko": "평행섬유–푸르키네 LTD",
+    "en": "Parallel fiber-Purkinje long-term depression"
+   },
+   "summary": {
+    "ko": "평행섬유·오름섬유의 동시활성이 평행섬유–푸르키네 시냅스 강도를 낮춰 오류학습에 기여한다."
+   },
+   "origin": {
+    "ko": "학습하는 소뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      74
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cerebellar-ltd-1",
+     "title": {
+      "ko": "PF 입력"
+     },
+     "description": {
+      "ko": "평행섬유가 운동·감각 관련 정보를 푸르키네에 제공하며 단순스파이크와 관련된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-granule",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-purkinje",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌 과립세포 · 푸르키네세포"
+     }
+    },
+    {
+     "id": "cerebellar-ltd-2",
+     "title": {
+      "ko": "CF 오류입력과 결합"
+     },
+     "description": {
+      "ko": "아래올리브 유래 오름섬유가 푸르키네에 오류 관련 강한 입력을 보낸다. 여기서 기준은 소뇌이므로 아래올리브는 반대쪽이다."
+     },
+     "structures": [
+      {
+       "id": "bs-inferior-olive",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-inferior-olive",
+       "side": "contra"
+      },
+      {
+       "id": "cb-purkinje",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 푸르키네세포"
+     }
+    },
+    {
+     "id": "cerebellar-ltd-3",
+     "title": {
+      "ko": "PF–푸르키네 LTD"
+     },
+     "description": {
+      "ko": "조건에 맞는 PF/CF 결합활동이 PF–푸르키네 시냅스를 약화시킨다. NMDA 의존 해마 LTD와 동일 기전으로 합치지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-purkinje",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-postsynaptic",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 푸르키네세포 · 시냅스뒤막·가지돌기가시"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "cerebellar-ltd-1",
+     "to": "cerebellar-ltd-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "cerebellar-ltd-2",
+     "to": "cerebellar-ltd-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cerebelloreticular",
+   "category": "cerebellar",
+   "name": {
+    "ko": "소뇌그물 출력",
+    "en": "Cerebelloreticular output"
+   },
+   "summary": {
+    "ko": "소뇌 입력·출력을 뇌줄기의 감각·운동 조절과 연결한다."
+   },
+   "origin": {
+    "ko": "연결을 시작하는 구조 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      49
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cerebelloreticular-1",
+     "title": {
+      "ko": "출발점"
+     },
+     "description": {
+      "ko": "연결의 출발은 꼭지핵이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-fastigial",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 꼭지핵"
+     }
+    },
+    {
+     "id": "cerebelloreticular-2",
+     "title": {
+      "ko": "연결로 → 표적"
+     },
+     "description": {
+      "ko": "연결섬유가 그물체에 정보를 전달한다. 원문에 없는 정확한 섬유군·좌우는 전문 검수 대상이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-cerebelloreticular",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-cerebelloreticular",
+       "side": "contra"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌그물섬유 · 그물체"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "cerebelloreticular-1",
+     "to": "cerebelloreticular-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "reticulocerebellar",
+   "category": "cerebellar",
+   "name": {
+    "ko": "그물소뇌 입력",
+    "en": "Reticulocerebellar input"
+   },
+   "summary": {
+    "ko": "소뇌 입력·출력을 뇌줄기의 감각·운동 조절과 연결한다."
+   },
+   "origin": {
+    "ko": "연결을 시작하는 구조 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      49
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "reticulocerebellar-1",
+     "title": {
+      "ko": "출발점"
+     },
+     "description": {
+      "ko": "연결의 출발은 피개그물핵이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-reticulotegmental",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 피개그물핵"
+     }
+    },
+    {
+     "id": "reticulocerebellar-2",
+     "title": {
+      "ko": "연결로 → 표적"
+     },
+     "description": {
+      "ko": "연결섬유가 소뇌겉질에 정보를 전달한다. 원문에 없는 정확한 섬유군·좌우는 전문 검수 대상이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-reticulocerebellar",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-reticulocerebellar",
+       "side": "contra"
+      },
+      {
+       "id": "cb-cortex",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-cortex",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 그물소뇌섬유 · 소뇌겉질"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "reticulocerebellar-1",
+     "to": "reticulocerebellar-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "tectocerebellar",
+   "category": "cerebellar",
+   "name": {
+    "ko": "덮개소뇌 입력",
+    "en": "Tectocerebellar input"
+   },
+   "summary": {
+    "ko": "소뇌 입력·출력을 뇌줄기의 감각·운동 조절과 연결한다."
+   },
+   "origin": {
+    "ko": "연결을 시작하는 구조 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      49
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "tectocerebellar-1",
+     "title": {
+      "ko": "출발점"
+     },
+     "description": {
+      "ko": "연결의 출발은 위둔덕이다."
+     },
+     "structures": [
+      {
+       "id": "bs-superior-colliculus",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-superior-colliculus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "tectocerebellar-2",
+     "title": {
+      "ko": "연결로 → 표적"
+     },
+     "description": {
+      "ko": "연결섬유가 소뇌겉질에 정보를 전달한다. 원문에 없는 정확한 섬유군·좌우는 전문 검수 대상이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-tectocerebellar",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-tectocerebellar",
+       "side": "contra"
+      },
+      {
+       "id": "cb-cortex",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-cortex",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 덮개소뇌섬유 · 소뇌겉질"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "tectocerebellar-1",
+     "to": "tectocerebellar-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "corticorubral",
+   "category": "motor",
+   "name": {
+    "ko": "겉질적색핵 연결",
+    "en": "Corticorubral tract"
+   },
+   "summary": {
+    "ko": "감각·운동 정보가 그물체 또는 적색핵을 통해 하행 조절과 연결된다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      63
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "corticorubral-1",
+     "title": {
+      "ko": "기원"
+     },
+     "description": {
+      "ko": "원문에 제시된 중심앞이랑 (일차운동겉질)의 정보가 표적핵으로 전달된다."
+     },
+     "structures": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        63
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "corticorubral-2",
+     "title": {
+      "ko": "연결로 → 표적"
+     },
+     "description": {
+      "ko": "해당 연결로는 적색핵에 도달한다. 원문에 개별 축삭 교차가 없어 양측망으로 보류한다."
+     },
+     "structures": [
+      {
+       "id": "mb-red-nucleus",
+       "side": "ipsi"
+      },
+      {
+       "id": "mb-red-nucleus",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-corticorubral",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-corticorubral",
+       "side": "contra"
+      },
+      {
+       "id": "mb-red-nucleus",
+       "side": "ipsi"
+      },
+      {
+       "id": "mb-red-nucleus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        63
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 겉질적색핵로"
+     }
+    }
+   ],
+   "lesions": [],
+   "lateralityNote": "세부 교차 미제시; 양측 표시",
+   "edges": [
+    {
+     "from": "corticorubral-1",
+     "to": "corticorubral-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

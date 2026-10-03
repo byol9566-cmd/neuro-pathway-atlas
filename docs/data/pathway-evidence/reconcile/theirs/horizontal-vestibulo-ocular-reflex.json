@@ -1,0 +1,1250 @@
+{
+ "ours": "horizontal-vestibulo-ocular-reflex",
+ "theirs": [
+  {
+   "id": "hvor",
+   "category": "oculomotor",
+   "name": {
+    "ko": "수평 안뜰눈반사 (VOR)",
+    "en": "Horizontal vestibulo-ocular reflex"
+   },
+   "summary": {
+    "ko": "머리를 돌린 쪽 안뜰입력이 반대쪽 갓돌림핵과 같은쪽 눈돌림핵을 흥분시켜 양눈을 머리 회전 반대쪽으로 돌린다. 외직근 반사활과 핵사이뉴런을 포함한 내직근 가지의 뉴런 수를 구분한다."
+   },
+   "origin": {
+    "ko": "머리가 도는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      46,
+      48,
+      49,
+      50,
+      51,
+      74
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "hvor-1",
+     "title": {
+      "ko": "수평반고리관 → 안쪽안뜰핵"
+     },
+     "description": {
+      "ko": "회전 시작 시 같은쪽 수평반고리관 유모세포·안뜰신경절의 발화가 증가하고 반대쪽은 감소한다. 안뜰신경의 구심성 신호가 같은쪽 안쪽안뜰핵에 도달한다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "so-horizontal-canal",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-vestibular-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn8-vestibular",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        46,
+        48,
+        49,
+        50,
+        51,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽반고리관 (수평) · 안뜰신경절 (Scarpa) · 안뜰신경 (VIII)"
+     },
+     "neuronOrder": 1
+    },
+    {
+     "id": "hvor-2",
+     "title": {
+      "ko": "반대쪽 갓돌림신경핵"
+     },
+     "description": {
+      "ko": "안뜰핵 출력이 교차해 반대쪽 갓돌림신경핵을 흥분시킨다. 운동뉴런은 VI를 통해 반대쪽 가쪽곧은근을 수축시키며, 다른 핵사이뉴런은 다음 가지를 형성한다. 여기서 안뜰핵 출력뉴런은 2차, 갓돌림핵 운동·핵사이뉴런은 3차로 센다."
+     },
+     "structures": [
+      {
+       "id": "bs-abducens",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-abducens",
+       "side": "contra"
+      },
+      {
+       "id": "pn-cn6",
+       "side": "contra"
+      },
+      {
+       "id": "ef-lateral-rectus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        46,
+        48,
+        49,
+        50,
+        51,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 갓돌림신경 (VI) · 가쪽곧은근"
+     },
+     "neuronOrder": 3,
+     "decussation": true,
+     "decussationSite": {
+      "ko": "다리뇌의 교차 안뜰-갓돌림 연결"
+     }
+    },
+    {
+     "id": "hvor-3",
+     "title": {
+      "ko": "핵사이뉴런 → MLF"
+     },
+     "description": {
+      "ko": "반대쪽 갓돌림핵의 핵사이뉴런 축삭이 다시 교차하여 머리 회전쪽 MLF로 상행한다. 이 가지의 핵사이뉴런을 운동뉴런과 동일한 3차 뉴런으로 뭉뚱그리지 않는다."
+     },
+     "structures": [
+      {
+       "id": "tr-mlf",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-mlf",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        46,
+        48,
+        49,
+        50,
+        51,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "decussation": true,
+     "decussationSite": {
+      "ko": "다리뇌 갓돌림핵 핵사이축삭 교차"
+     }
+    },
+    {
+     "id": "hvor-4",
+     "title": {
+      "ko": "같은쪽 눈돌림핵 → 안쪽곧은근"
+     },
+     "description": {
+      "ko": "MLF가 같은쪽 눈돌림핵의 안쪽곧은근 운동뉴런을 흥분시킨다. III를 통해 같은쪽 안쪽곧은근이 수축하며 두 눈이 반대 방향으로 움직인다. 반대 작용근 이완은 별도 hvor-inhibition 경로에 저장한다."
+     },
+     "structures": [
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn3",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-medial-rectus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        46,
+        48,
+        49,
+        50,
+        51,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈돌림신경 (III) · 안쪽곧은근"
+     },
+     "neuronOrder": 4
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "MLF"
+     },
+     "deficit": {
+      "ko": "병변쪽 눈 모음 장애와 반대쪽 눈 벌림안진; 폭주는 흔히 보존되지만 항상 보존되는 것은 아니다."
+     },
+     "side": "ipsi",
+     "syndrome": "INO"
+    },
+    {
+     "level": {
+      "ko": "갓돌림신경핵"
+     },
+     "deficit": {
+      "ko": "병변쪽 수평주시마비"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "memo": "외직근 경로는 3개 뉴런·2개 중추 시냅스. 내직근 핵사이 가지에는 추가 중계가 있으므로 경로 전체를 단일 3뉴런으로 고정하지 않음.",
+   "edges": [
+    {
+     "from": "hvor-1",
+     "to": "hvor-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "hvor-2",
+     "to": "hvor-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "hvor-3",
+     "to": "hvor-4",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "hvor-inhibition",
+   "category": "oculomotor",
+   "name": {
+    "ko": "VOR의 길항근 억제 가지",
+    "en": "Antagonist inhibition during horizontal VOR"
+   },
+   "summary": {
+    "ko": "머리 회전쪽 가쪽곧은근과 반대쪽 안쪽곧은근의 활성이 감소한다."
+   },
+   "origin": {
+    "ko": "머리가 도는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      49
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "hvor-inhibition-1",
+     "title": {
+      "ko": "같은쪽 갓돌림핵 억제"
+     },
+     "description": {
+      "ko": "활성 안뜰망이 같은쪽 갓돌림핵의 출력을 낮춘다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "hvor-inhibition-2",
+     "title": {
+      "ko": "같은쪽 가쪽곧은근 이완"
+     },
+     "description": {
+      "ko": "VI 출력 감소로 회전쪽 가쪽곧은근이 이완한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn6",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-lateral-rectus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 갓돌림신경 (VI) · 가쪽곧은근"
+     }
+    },
+    {
+     "id": "hvor-inhibition-3",
+     "title": {
+      "ko": "반대쪽 안쪽곧은근 이완"
+     },
+     "description": {
+      "ko": "같은쪽 갓돌림핵 핵사이출력 감소에 따라 반대쪽 III의 안쪽곧은근 출력이 감소한다. 두 이완 가지는 병렬이다."
+     },
+     "structures": [
+      {
+       "id": "tr-mlf",
+       "side": "contra"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-mlf",
+       "side": "contra"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "contra"
+      },
+      {
+       "id": "pn-cn3",
+       "side": "contra"
+      },
+      {
+       "id": "ef-medial-rectus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈돌림신경 (III) · 안쪽곧은근"
+     }
+    }
+   ],
+   "lesions": [],
+   "topology": "branched",
+   "edges": [
+    {
+     "from": "hvor-inhibition-1",
+     "to": "hvor-inhibition-2",
+     "relation": "reduced-output"
+    },
+    {
+     "from": "hvor-inhibition-1",
+     "to": "hvor-inhibition-3",
+     "relation": "reduced-internuclear-output"
+    }
+   ],
+   "edgeSemantics": "explicit step-level branches; see descriptions for intervening nuclei",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vestibular-nystagmus",
+   "category": "oculomotor",
+   "name": {
+    "ko": "안뜰안진의 느린·빠른상",
+    "en": "Vestibular nystagmus"
+   },
+   "summary": {
+    "ko": "VOR 느린상이 시선을 보정하고 빠른 재설정이 반복된다. 안진 방향은 빠른상 방향이다."
+   },
+   "origin": {
+    "ko": "흥분이 상대적으로 큰 안뜰기관 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-plus-correction",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      50
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vestibular-nystagmus-1",
+     "title": {
+      "ko": "안뜰 불균형 → 느린상"
+     },
+     "description": {
+      "ko": "같은쪽 안뜰입력이 우세하면 VOR에 의해 눈이 반대쪽으로 천천히 이동한다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "contra"
+      },
+      {
+       "id": "tr-mlf",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "contra"
+      },
+      {
+       "id": "tr-mlf",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        50
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "vestibular-nystagmus-2",
+     "title": {
+      "ko": "빠른 재설정"
+     },
+     "description": {
+      "ko": "주시 재설정은 안뜰 우세쪽으로 나타난다. 한쪽 말초 기능소실의 급성 자발안진은 보통 정상쪽 빠른상을 보인다."
+     },
+     "structures": [
+      {
+       "id": "bs-abducens",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-pprf",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        50
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 다리뇌 정중곁그물체 (PPRF)"
+     },
+     "memo": "정리본의 왼쪽 수평관 소실→왼쪽 안진은 빠른상 명명과 충돌; 정상쪽 안진으로 교정."
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "한쪽 말초안뜰 기능 저하"
+     },
+     "deficit": {
+      "ko": "급성기에 느린상은 병변쪽, 빠른상은 정상쪽; 회복·중추병변에서는 예외 가능"
+     }
+    }
+   ],
+   "edges": [
+    {
+     "from": "vestibular-nystagmus-1",
+     "to": "vestibular-nystagmus-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "caloric-warm",
+   "category": "oculomotor",
+   "name": {
+    "ko": "따뜻한 물 온도안진",
+    "en": "Warm caloric vestibular response"
+   },
+   "summary": {
+    "ko": "정상 검사 배향에서 따뜻한 자극은 같은쪽 빠른상·반대쪽 느린상을 유발한다."
+   },
+   "origin": {
+    "ko": "따뜻한 물로 검사하는 귀 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      50
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "caloric-warm-1",
+     "title": {
+      "ko": "가온 → 구심증가"
+     },
+     "description": {
+      "ko": "외이도 가온이 안뜰기관에 온도차를 전달해 수평관 구심발화를 변화시킨다. 물을 반고리관 안에 직접 넣는 것은 아니다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-horizontal-canal",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn8-vestibular",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        50
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽반고리관 (수평) · 안뜰신경 (VIII)"
+     }
+    },
+    {
+     "id": "caloric-warm-2",
+     "title": {
+      "ko": "VOR 느린상"
+     },
+     "description": {
+      "ko": "같은쪽 안뜰 우세로 반대쪽 눈운동이 유발된다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "contra"
+      },
+      {
+       "id": "tr-mlf",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "contra"
+      },
+      {
+       "id": "tr-mlf",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        50
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "caloric-warm-3",
+     "title": {
+      "ko": "같은쪽 빠른상"
+     },
+     "description": {
+      "ko": "깨어 있는 정상상태에서는 검사귀 쪽 빠른 재설정이 나타난다. 혼수에서는 빠른상이 소실될 수 있다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-pprf",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        50
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 다리뇌 정중곁그물체 (PPRF)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "caloric-warm-1",
+     "to": "caloric-warm-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "caloric-warm-2",
+     "to": "caloric-warm-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "caloric-cold",
+   "category": "oculomotor",
+   "name": {
+    "ko": "차가운 물 온도안진",
+    "en": "Cold caloric vestibular response"
+   },
+   "summary": {
+    "ko": "정상 검사 배향에서 차가운 자극은 반대쪽 빠른상·같은쪽 느린상을 유발한다."
+   },
+   "origin": {
+    "ko": "차가운 물로 검사하는 귀 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      50
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "caloric-cold-1",
+     "title": {
+      "ko": "냉각 → 검사쪽 구심감소"
+     },
+     "description": {
+      "ko": "냉각에서 검사귀의 구심이 상대적으로 감소한다. 원문의 냉각→밀도 감소는 밀도 증가로 교정할 대상이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-horizontal-canal",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn8-vestibular",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        50
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽반고리관 (수평) · 안뜰신경 (VIII)"
+     }
+    },
+    {
+     "id": "caloric-cold-2",
+     "title": {
+      "ko": "반대쪽 상대우세 → 느린상"
+     },
+     "description": {
+      "ko": "반대쪽 안뜰핵 우세로 같은쪽 갓돌림핵·반대쪽 III가 모집되어 검사귀 쪽으로 느린상이 나타난다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "contra"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-mlf",
+       "side": "contra"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "contra"
+      },
+      {
+       "id": "bs-abducens",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-mlf",
+       "side": "contra"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        50
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "caloric-cold-3",
+     "title": {
+      "ko": "반대쪽 빠른상"
+     },
+     "description": {
+      "ko": "정상에서는 검사귀 반대 방향 빠른상이 나타난다. COWS는 빠른상 기준이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-pprf",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        50
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 다리뇌 정중곁그물체 (PPRF)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "caloric-cold-1",
+     "to": "caloric-cold-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "caloric-cold-2",
+     "to": "caloric-cold-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "semicircular-push-pull",
+   "category": "vestibular",
+   "name": {
+    "ko": "반고리관 밀기-당기기·회전 적응",
+    "en": "Semicircular canal push-pull responses"
+   },
+   "summary": {
+    "ko": "수평 회전 시작·유지·정지에서 양쪽 구심발화가 반대로 변한다."
+   },
+   "origin": {
+    "ko": "머리가 회전하는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      48
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "semicircular-push-pull-1",
+     "title": {
+      "ko": "회전 시작"
+     },
+     "description": {
+      "ko": "같은쪽 수평반고리관의 발화는 증가하고 반대쪽은 감소한다. 앞·뒤반고리관에는 대응되는 기능적 canal pair가 있어 단순 좌우 수평관 규칙을 일반화하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-horizontal-canal",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-horizontal-canal",
+       "side": "contra"
+      },
+      {
+       "id": "pn-cn8-vestibular",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn8-vestibular",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        48
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽반고리관 (수평) · 안뜰신경 (VIII)"
+     }
+    },
+    {
+     "id": "semicircular-push-pull-2",
+     "title": {
+      "ko": "등속회전 적응"
+     },
+     "description": {
+      "ko": "시간이 지나 내림프의 상대운동·cupula 편향이 감소하면 발화가 기저값에 가까워진다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-ampulla-cupula",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-ampulla-cupula",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        48
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 팽대·팽대마루·팽대능선덮개"
+     }
+    },
+    {
+     "id": "semicircular-push-pull-3",
+     "title": {
+      "ko": "회전 정지"
+     },
+     "description": {
+      "ko": "정지 직후 상대운동이 반전되어 시작할 때와 반대 발화 변화가 나타난다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-horizontal-canal",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-horizontal-canal",
+       "side": "contra"
+      },
+      {
+       "id": "pn-vestibular-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-vestibular-ganglion",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        48
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽반고리관 (수평) · 안뜰신경절 (Scarpa)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "semicircular-push-pull-1",
+     "to": "semicircular-push-pull-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "semicircular-push-pull-2",
+     "to": "semicircular-push-pull-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vor-adaptation",
+   "category": "learning",
+   "name": {
+    "ko": "VOR 시각오류 교정",
+    "en": "Visual error-based VOR adaptation"
+   },
+   "summary": {
+    "ko": "안뜰 이끼입력과 망막 미끄럼 관련 올리브 오름입력이 소뇌 학습을 통해 VOR 출력을 조정한다."
+   },
+   "origin": {
+    "ko": "오류를 조절하는 소뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      51,
+      74
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vor-adaptation-1",
+     "title": {
+      "ko": "안뜰 PF 입력"
+     },
+     "description": {
+      "ko": "안뜰핵–이끼–과립–평행섬유 입력이 푸르키네에 현재 운동정보를 전달한다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-granule",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-purkinje",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌 과립세포 · 푸르키네세포"
+     }
+    },
+    {
+     "id": "vor-adaptation-2",
+     "title": {
+      "ko": "시각오류 CF 입력"
+     },
+     "description": {
+      "ko": "망막의 영상 미끄럼 관련 정보가 올리브·오름섬유로 전달된다. 원문은 망막→올리브 중간핵을 명시하지 않아 추가 핵을 추정하지 않았다."
+     },
+     "structures": [
+      {
+       "id": "bs-inferior-olive",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "so-retina",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-retina",
+       "side": "contra"
+      },
+      {
+       "id": "bs-inferior-olive",
+       "side": "contra"
+      },
+      {
+       "id": "cb-purkinje",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 망막 · 푸르키네세포"
+     }
+    },
+    {
+     "id": "vor-adaptation-3",
+     "title": {
+      "ko": "출력 학습"
+     },
+     "description": {
+      "ko": "PF–푸르키네 가소성이 안뜰핵으로 가는 억제출력을 바꿔 반사 이득·시선을 조정한다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "cb-purkinje",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        74
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 푸르키네세포"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "vor-adaptation-1",
+     "to": "vor-adaptation-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "vor-adaptation-2",
+     "to": "vor-adaptation-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

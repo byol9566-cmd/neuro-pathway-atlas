@@ -1,0 +1,286 @@
+{
+ "pathways": [
+  {
+   "ours": "papez-circuit-trisynaptic-hippocampal",
+   "theirs": ["papez", "hippocampal-trisynaptic", "declarative-memory-input", "association-cingulum", "systems-consolidation", "spatial-memory"],
+   "origin_note": "동일: 양쪽 모두 '표시할(정보를 받는) 해마반구'를 기준으로 ipsi를 정의하며, Papez 고리 자체는 교차를 주장하지 않는 점에서 일치.",
+   "differences": [
+    {
+     "kind": "contradiction",
+     "their_pathway": "hippocampal-trisynaptic",
+     "their_step": "hippocampal-trisynaptic-3",
+     "their_claim_ko": "CA3(이끼섬유 다음 단계) → Schaffer곁가지 → CA1은 동측(ipsi)만 표시되어 교차 없는 단일반구 경로로 모델링됨.",
+     "their_evidence": "lecture-grounded; om-2 p.83-84",
+     "our_claim_ko": "CA3→Schaffer곁가지→CA1 단계를 laterality:bilateral, decussation:present(일부 Schaffer/연합섬유가 해마맞교차를 통해 반대측 해마로 건너간다)로 기술.",
+     "ours_evidence": [
+      {"source": "Nieuwenhuys 2008 Springer (4th ed.)", "grade": "A", "quote_head": "These collaterals are collectively known as Schaffer collaterals."}
+     ],
+     "severity": "high",
+     "note": "단, 우리 merged 파일 자체의 unsourced 항목에 'Schaffer/연합섬유가 해마맞교차의 교차 성분이라는 구체적 주장은 정확히 그 표현으로 확인되지 않음'이라고 적혀 있어, 이 decussation 주장은 우리 쪽에서도 근거가 약함(명시 인용 없음). 교차 방향에 대한 주장이 두 자료 간 다르다는 점은 분명하므로 기록함."
+    },
+    {
+     "kind": "granularity",
+     "their_pathway": "papez",
+     "their_step": "papez-5",
+     "their_claim_ko": "띠다발(cingulum)을 통해 해마곁·속후각겉질에 연결된 뒤 관통로를 통해 '해마'로 되돌아간다고만 기술하며, 닫히는 지점으로 subiculum을 명시하지 않음(subiculum은 papez-1에서 출력 기원으로만 언급).",
+     "their_evidence": "lecture-plus-existing-draft (메모: 완전한 파페츠 고리는 기존 데이터와 표준 해부학 보완); om-1 p.12,27,35,37,41 / om-2 p.78-80",
+     "our_claim_ko": "삼중시냅스 고리는 CA1→subiculum에서 닫히는 것으로 명시(8단계). 다만 subiculum의 역할 자체에 두 입장이 공존: (1) 고전적 4번째 출력단, (2) 해마·시상·겉질 입력을 재분배하는 통합 허브. 추가로 Nieuwenhuys는 CA1/subicular 출력을 받는 속후각 심층세포가 다시 표층으로 곁가지를 보내는 '두 번째 닫힘 경로'를, Aggleton은 subiculum 뉴런이 띠겉질(area 29)과 유두체 양쪽에 곁가지를 보내는 병렬 분기를 보고함.",
+     "ours_evidence": [
+      {"source": "Gao 2026 Hippocampus", "grade": "A", "quote_head": "the subiculum has been considered the \"fourth leg\" and output region of"},
+      {"source": "Aggleton 2022 Neuroscience & Biobehavioral Reviews", "grade": "A", "quote_head": "many of the same subiculum neurons that innervate area 29 have"}
+     ],
+     "severity": "medium",
+     "note": "모순은 아니며 세부도의 차이. 브리핑에서 지정한 'Papez 고리의 닫히는 경로와 subiculum' 항목에 해당."
+    },
+    {
+     "kind": "granularity",
+     "their_pathway": "papez",
+     "their_step": "papez (lesions)",
+     "their_claim_ko": "양쪽 해마·뇌활 손상 → 새 서술기억 형성 장애 (단일하게 뭉뚱그림).",
+     "their_evidence": "lecture-plus-existing-draft; om-1/om-2 (페이지 동일)",
+     "our_claim_ko": "손상 부위별로 증후군을 구분: (1) 양쪽 내측측두엽 광범위 절제(H.M.) → 전반적 전향기억상실, (2) 유두체/전시상/유두시상로(티아민 결핍) → Wernicke-Korsakoff 증후군(전향기억상실+집행기능장애), (3) 고립된 CA1 손상(환자 RB) → 상대적으로 경한 전향기억장애.",
+     "ours_evidence": [
+      {"source": "Murray 2024 Hippocampus", "grade": "A", "quote_head": "The original account by Scoville and Milner (1957) described that in the"},
+      {"source": "Nieuwenhuys 2008 Springer (4th ed.)", "grade": "A", "quote_head": "The only pathology that could be associated with his memory"}
+     ],
+     "severity": "low",
+     "note": "모순 아님, 세분화 차이."
+    }
+   ],
+   "additions": [
+    {"their_pathway": "declarative-memory-input", "summary_ko": "연합겉질(전전두·마루·아래관자)→해마곁/후각곁/속후각→해마 결합·출력 경로(서술기억 공고화 입력망); 우리 자료에 해당 단계 없음."},
+    {"their_pathway": "systems-consolidation", "summary_ko": "해마-겉질 상호작용에 따른 기억의 체계 공고화 모델(시간에 따른 ACC 의존성 증가); 우리 자료에 없음."},
+    {"their_pathway": "spatial-memory", "summary_ko": "속후각 격자세포-해마 장소세포 집단에 의한 공간항법/위치기억 부호화; 우리 자료에 없음."},
+    {"their_pathway": "association-cingulum", "summary_ko": "띠다발을 통한 동측 연합겉질 연결을 파페츠와 별도 항목으로 분리해 기술(내용은 papez-4/5와 중복)."}
+   ]
+  },
+  {
+   "ours": "amygdala-fear-circuit",
+   "theirs": ["fear-auditory-cued", "fear-contextual", "fear-return", "amygdala-thalamic-ltp"],
+   "origin_note": "표시 관례 차이: 성연 쪽은 양측성 회로로 보고 각 단계마다 ipsi/contra 구조를 둘 다 나열(교차를 주장하는 것은 아니고 '좌우 평행회로'를 함께 표시). 우리 쪽은 단계마다 laterality:ipsilateral 단일경로만 기술하고 반대측 사본을 별도로 표시하지 않음. 교차가 없다는 점 자체는 양쪽이 일치.",
+   "differences": [
+    {
+     "kind": "origin-definition",
+     "their_pathway": "fear-auditory-cued",
+     "their_step": "fear-auditory-cued-1",
+     "their_claim_ko": "MGN·A1·LA를 ipsi/contra 양쪽 모두에 표시하여 좌우 병렬회로로 모델링(청각입력이 본래 양측성이므로).",
+     "their_evidence": "lecture-grounded; om-2 p.104-107",
+     "our_claim_ko": "같은 단계를 laterality: ipsilateral 단일 표기로만 기술(반대측 사본 없음).",
+     "ours_evidence": [
+      {"source": "Cinca-Tomás 2026 iScience", "grade": "A", "quote_head": "consists of direct anatomical projections from visual thalamic nuclei to"}
+     ],
+     "severity": "low",
+     "note": "실제 교차(decussation) 주장은 양쪽 모두 없음(present:false). 표시 범위(한쪽만 vs 양쪽 병렬)의 차이일 뿐."
+    },
+    {
+     "kind": "granularity",
+     "their_pathway": "fear-auditory-cued",
+     "their_step": "fear-auditory-cued-4",
+     "their_claim_ko": "CeA 출력이 그물체·PAG·시상하부로 가는 것을 '뇌줄기·시상하부 공포반응'으로 뭉뚱그려 기술하며, 구체적 백질다발 이름(배측/복측 경로)은 명시하지 않음.",
+     "their_evidence": "lecture-grounded; om-2 p.104-107",
+     "our_claim_ko": "CeA(및 BLA) 출력을 배측 경로(stria terminalis, 즉 dorsal amygdalofugal pathway → 중격·시상하부)와 복측 경로(ventral amygdalofugal pathway → 중격·시상하부·내측등쪽시상핵)로 구분하고, 추가로 BNST를 경유하는 지속성 불안 경로를 별도 단계로 기술. CeA→PAG 직접투사도 별도 근거로 확인됨.",
+     "ours_evidence": [
+      {"source": "Nieuwenhuys 2008 Springer (4th ed.)", "grade": "A", "quote_head": "The stria terminalis , i.e. the dorsal amygdalofugal pathway, emerges"},
+      {"source": "AbuHasan 2023 StatPearls [Internet]", "grade": "B", "quote_head": "the ventral route via the ventral amygdalofugal pathway which terminates"},
+      {"source": "Janak 2015 Nature", "grade": "A", "quote_head": "cells with learning-induced synaptic enhancement project directly to"}
+     ],
+     "severity": "medium",
+     "note": "모순 아님. 브리핑이 지정한 '편도체 출력로(분계선조/배쪽편도이탈로)와 중심핵→PAG 투사' 항목에 해당. PAG를 향한 투사 자체는 성연 쪽(bs-pag 구조 포함)도 동일하게 포함하므로 그 부분은 일치."
+    },
+    {
+     "kind": "granularity",
+     "their_pathway": "fear-auditory-cued",
+     "their_step": "fear-auditory-cued (lesions)",
+     "their_claim_ko": "편도체 관련망 손상 → 공포표현·얼굴 공포 인식 등 장애 가능(쪽 명시 없음, 증후군 이름 없음).",
+     "their_evidence": "lecture-grounded; om-2 p.104-107",
+     "our_claim_ko": "양쪽 편도체/내측측두엽 손상 → Klüver-Bucy 증후군(과다구강행동·과다성욕·초변형증·유순·과식증·시각실인증·기억상실). 단, C급(Bala 2024)과 A급(Sah 2003) 출처 간 증상 목록이 다름(Sah는 공포·분노 소실/탐색증가/시각실인/과다구강·성욕/사회적상호작용 상실을 보고, 과식증·초변형증·기억상실은 언급 안 함).",
+     "ours_evidence": [
+      {"source": "Sah 2003 Physiological Reviews 83(3): 803-834", "grade": "A", "quote_head": "Monkeys with temporal lobe lesions exhibited an absence of anger and"}
+     ],
+     "severity": "low",
+     "note": "모순 아님, 세분화 차이."
+    }
+   ],
+   "additions": [
+    {"their_pathway": "fear-return", "summary_ko": "소거 후 공포 재발현 패러다임(재설치·자발적회복·renewal)과 vmPFC 관여; 우리 자료에 없음."},
+    {"their_pathway": "amygdala-thalamic-ltp", "summary_ko": "시상-LA 시냅스 LTP의 세포/분자기전(NMDA/VDCC, 시냅스후 발현, 시냅스전/후 GABA_B 억제성 관문); 우리 자료에 이 수준의 세포기전 기술 없음."}
+   ]
+  },
+  {
+   "ours": "dopamine-reward-pathways",
+   "theirs": ["mesolimbic-dopamine", "mesocortical-dopamine", "nigrostriatal", "vta-gaba-feedback"],
+   "origin_note": "성연 쪽 데이터셋 내부가 일관되지 않음: mesolimbic-dopamine/mesocortical-dopamine/vta-gaba-feedback은 origin을 '표시할 회로의 쪽(양측성 표시 기준)'으로 정의해 각 단계에 ipsi·contra 구조를 모두 나열하지만, nigrostriatal만 '도파민 출력을 내는 반구'로 정의해 ipsi만 표시. 우리 쪽은 전 단계 laterality: ipsilateral(세포체 기준 동측) 단일 표기로 nigrostriatal 쪽 정의와 더 가까움.",
+   "differences": [
+    {
+     "kind": "addition",
+     "their_pathway": "mesolimbic-dopamine",
+     "their_step": "mesolimbic-dopamine-1",
+     "their_claim_ko": "VTA 도파민뉴런이 국소 GABA 입력(cell-vta-gaba)과 흥분입력의 조절을 받는다고 명시.",
+     "their_evidence": "lecture-grounded; om-1 p.42,44 / om-2 p.109,110",
+     "our_claim_ko": "VTA 도파민뉴런을 중뇌둘레/중뇌겉질 투사의 세포체로만 기술하며 국소 GABA성 조절회로는 기술하지 않음.",
+     "ours_evidence": null,
+     "severity": "low",
+     "note": "같은 성연 데이터셋의 vta-gaba-feedback 항목에서 더 구체화됨 (아래 additions 참고)."
+    },
+    {
+     "kind": "granularity",
+     "their_pathway": "nigrostriatal",
+     "their_step": "nigrostriatal-2, nigrostriatal-3",
+     "their_claim_ko": "D1(Gs/olf, 직접경로 촉진)·D2(Gi, 간접경로 억제) 수용체의 반대 작용과, 도파민 소실 시 직접경로 약화+간접경로 항진으로 GPi→시상(VL)→일차운동겉질 경로의 시상겉질 운동출력이 감소한다는 고전 운동모형을 구체적으로 기술. evidenceStatus=lecture-plus-internal-correction(1차 자료 p.43의 '직접↑/간접↓' 표기가 2차 자료 p.71과 충돌해 2차 쪽으로 교정).",
+     "their_evidence": "lecture-plus-internal-correction; om-1 p.42-43 / om-2 p.71",
+     "our_claim_ko": "흑색질치밀부→선조체(putamen/caudate) 도파민 투사만 기술(laterality: ipsilateral, neurotransmitter: dopamine)하며, D1/D2 직접·간접경로 기전이나 도파민 소실의 회로효과는 전혀 모델링하지 않음. 파킨슨병 손상 항목도 lesions 배열에 없음 — unsourced 항목에 '흑질선조체 도파민뉴런 변성이 파킨슨병의 고전적 해부학적 기질이라는 것은 이 배치에서 인용 가능한 출처로 확인하지 못함'이라고만 기록.",
+     "ours_evidence": null,
+     "severity": "medium",
+     "note": "모순은 아님(비교 대상 자체가 우리 쪽에 없음). 성연 쪽의 '교정'은 자신들의 1차/2차 강의자료 간 내부 불일치를 2차 쪽으로 맞춘 것으로, 우리 A급 근거와 직접 충돌하지 않음. D1촉진/D2억제 및 도파민 소실 시 간접경로 항진이라는 설명 자체는 표준 고전 모형과 부합."
+    }
+   ],
+   "additions": [
+    {"their_pathway": "vta-gaba-feedback", "summary_ko": "NAc GABA성 MSN 출력이 VTA로 되먹임되고, VTA 국소 GABA세포가 도파민뉴런 발화를 억제하는 억제성 조절 루프; 우리 자료에 없음(우리 쪽은 VTA→NAc/PFC 원심성 투사만 기술)."}
+   ]
+  },
+  {
+   "ours": "ascending-arousal-system-flip-flop",
+   "theirs": ["aras", "locus-coeruleus-arousal", "raphe-arousal", "orexin-wake", "sleep-nrem", "sleep-rem", "rem-atonia", "thalamocortical-oscillation"],
+   "origin_note": "일치: 양쪽 모두 이 경로 전체를 본질적으로 양측(정중선 포함)성으로 간주. 성연 쪽은 각 단계에 ipsi/contra 구조를 모두 나열하고, 우리 쪽도 거의 모든 단계를 laterality: bilateral로 기술하며 decussation은 어느 쪽도 주장하지 않음.",
+   "differences": [
+    {
+     "kind": "granularity",
+     "their_pathway": "sleep-rem",
+     "their_step": "sleep-rem-1, sleep-rem-3 (및 sleep-nrem-1)",
+     "their_claim_ko": "REM ON은 '콜린성(PPT/LDT) 활동 증가 + LC/솔기 모노아민 감소'로, REM OFF는 '모노아민 관련 상태로 전환'이라고만 기술. 비REM을 주도하는 핵의 이름(VLPO)이나 flip-flop(상호억제) 스위치 모델, REM을 끄는 구체적 GABA성 핵(vlPAG 등)의 이름이 이 데이터셋 전체에 전혀 등장하지 않음.",
+     "their_evidence": "lecture-model-needs-expert-review (sleep-rem) / lecture-grounded (sleep-nrem, aras); om-2 p.89-91",
+     "our_claim_ko": "배쪽가쪽시각교차앞핵(VLPO; GABA/갈라닌 공발현 및 비-갈라닌 GABA성 뉴런)이 TMN·LC·솔기핵·바닥앞뇌·vlPAG/LDT-PPT에 억제성 투사를 보내 각성계와 상호억제(flip-flop) 관계를 형성하고, REM 개시 시 배쪽수도관주위회색질(vlPAG)의 GABA성 'REM-off' 뉴런이 억제되어 LDT/PPT 콜린성 REM-촉진 회로가 탈억제된다고 명시. 단, 우리 자료 내부에도 이견이 공존: Nieuwenhuys는 REM-off 기능을 vlPAG가 아니라 LC/솔기 자체(국소 GABA 요소에 의해 억제됨)에 돌리고, Saper 2010은 vlPAG/LPT의 하류 표적을 LDT/PPT가 아니라 교뇌 밑가쪽등쪽핵(SLD, sublaterodorsal nucleus)으로 봄.",
+     "ours_evidence": [
+      {"source": "Wang 2026 Frontiers in Neuroscience", "grade": "A", "quote_head": "sleep–wake control has classically been conceptualized through the \"flip-flop switch\""},
+      {"source": "Nieuwenhuys 2008 Springer (4th ed.)", "grade": "A", "quote_head": "Thus a reciprocal inhibitory interaction likely exists between the sleep-promoting"},
+      {"source": "Wang 2026 Frontiers in Neuroscience", "grade": "A", "quote_head": "inhibition of vlPAG GABAergic REM-off neurons disinhibits pontine REM-promoting"},
+      {"source": "Saper 2010 Neuron", "grade": "A", "quote_head": "Injections of retrograde tracers into the SLD identified major GABAergic inputs"}
+     ],
+     "severity": "high",
+     "note": "브리핑이 지정한 'REM-off 핵과 flip-flop(VLPO) 모델' 항목. 성연 쪽 이 경로(ascending-arousal-system-flip-flop) 데이터셋 전체에서 'VLPO'라는 명칭이 한 번도 나오지 않음 — 제목은 'flip-flop'인데 핵심 스위치 기전이 빠져 있음. 모순이라기보다 누락."
+    },
+    {
+     "kind": "addition",
+     "their_pathway": "sleep-rem",
+     "their_step": "sleep-rem-2",
+     "their_claim_ko": "REM 중 빠른 눈움직임을 일차시각겉질(V1) 등 겉질망의 활성 상태와 동반되는 것으로 기술하고, 동안신경·갓돌림신경을 표적 구조로 나열.",
+     "their_evidence": "lecture-model-needs-expert-review; om-2 p.90",
+     "our_claim_ko": "해당 사항 없음 — 우리 merged 자료는 REM 안구운동의 생성기전(뇌줄기 안구운동 버스트생성기 등)을 다루지 않음.",
+     "ours_evidence": null,
+     "severity": "low",
+     "note": "판단하지 않음; 비교할 우리 근거 자체가 없음."
+    }
+   ],
+   "additions": [
+    {"their_pathway": "rem-atonia", "summary_ko": "REM 관련 뇌줄기망→척수 억제성사이뉴런→알파운동뉴런 억제에 의한 REM 무긴장 기전과 REM 행동장애(RBD) 손상; 우리 자료는 vlPAG/LDT-PPT까지만 기술하고 척수 수준 무긴장 기전이나 RBD 손상 항목이 없음."},
+    {"their_pathway": "thalamocortical-oscillation", "summary_ko": "시상 중계핵-시상그물핵-겉질 재귀연결에 의한 EEG 동기화/진동 기전(시상겉질 루프); 우리 자료에 없음(우리 쪽은 각성계 핵 자체의 투사만 다룸)."}
+   ]
+  },
+  {
+   "ours": "hypothalamo-pituitary-axes",
+   "theirs": ["hypothalamic-anterior-pituitary", "hypothalamic-posterior-pituitary"],
+   "origin_note": "일치: 양쪽 모두 이 축을 정중선/양측 구조로 간주(성연 쪽 ipsi+contra 병렬 표시, 우리 쪽 laterality: bilateral/midline). 교차 주장 없음.",
+   "differences": [
+    {
+     "kind": "granularity",
+     "their_pathway": "hypothalamic-anterior-pituitary",
+     "their_step": "hypothalamic-anterior-pituitary-3",
+     "their_claim_ko": "ACTH·TSH·성선자극호르몬 등이 작용하는 표적샘을 모두 묶어 'end-adrenal-cortex(부신겉질)'로만 표시하고, 코르티솔을 만드는 구체적 구역(피질대)은 명시하지 않음.",
+     "their_evidence": "lecture-grounded; om-1 p.39",
+     "our_claim_ko": "ACTH가 부신겉질의 다발층(zona fasciculata)에 있는 멜라노코르틴2수용체(MC2R)에 작용해 코르티솔을 생성한다고 구역까지 특정. 우리 자료 내부에는 과거 B급 출처 간 충돌이 있었음(한쪽은 zona fasciculata, 다른 한쪽은 zona reticularis를 지목); A급 Herman 2016이 zona fasciculata로 해소함. Nieuwenhuys(A급)는 구역을 특정하지 않고 '부신겉질의 요소들'이라고만 기술.",
+     "ours_evidence": [
+      {"source": "Herman 2016 Comprehensive Physiology", "grade": "A", "quote_head": "At the adrenal cortex, ACTH acts on melanocortin 2 receptors (MC2R) in"}
+     ],
+     "severity": "medium",
+     "note": "모순 아님(성연 쪽은 구역을 아예 특정하지 않았을 뿐). 브리핑이 지정한 '코르티솔을 만드는 부신 구역(zona fasciculata)' 항목에 해당. 우리 자료의 B급 출처 하나(Bear 2022 StatPearls, zona reticularis)는 A급 Herman 2016과 충돌했지만 A급으로 해소되었으며, 성연 쪽 데이터에는 애초에 이 오류가 없음(구역 미명시)."
+    },
+    {
+     "kind": "granularity",
+     "their_pathway": "hypothalamic-anterior-pituitary",
+     "their_step": "hypothalamic-anterior-pituitary-3",
+     "their_claim_ko": "표적호르몬의 음성되먹임을 '시상하부·앞엽'으로만 기술.",
+     "their_evidence": "lecture-grounded; om-1 p.39",
+     "our_claim_ko": "코르티솔의 음성되먹임이 시상하부(PVH)와 뇌하수체앞엽뿐 아니라 해마에도 선택적으로 작용한다고 명시.",
+     "ours_evidence": [
+      {"source": "Nieuwenhuys 2008 Springer (4th ed.)", "grade": "A", "quote_head": "Adrenal corticosteroids exert a selective negative feedback effect on the"}
+     ],
+     "severity": "low",
+     "note": "모순 아님, 세분화 차이."
+    }
+   ],
+   "additions": []
+  },
+  {
+   "ours": "central-autonomic-control-micturition",
+   "theirs": ["autonomic-micturition", "parasympathetic-sacral"],
+   "origin_note": "표시 관례 차이만 있음: autonomic-micturition·parasympathetic-sacral 모두 '표시할 회로의 쪽' 또는 '출력받는 골반장기 쪽'을 기준으로 하며, 우리 쪽 laterality(ipsilateral/bilateral)와 실질적으로 충돌하지 않음.",
+   "differences": [
+    {
+     "kind": "granularity",
+     "their_pathway": "autonomic-micturition",
+     "their_step": "autonomic-micturition-2",
+     "their_claim_ko": "저장↔배뇨 상태 전환을 교감/부교감/체성 출력의 균형으로만 기술하며, 중추에서 이 균형을 조정하는 교뇌배뇨중추(Barrington 핵, PMC)나 PAG 중계는 전혀 이름을 붙이지 않음. 원문 자체가 중추 배뇨중계핵을 제시하지 않아 '임의의 추가핵을 만들지 않았다'고 명시(의도적 생략).",
+     "their_evidence": "lecture-grounded (autonomic-micturition-2는 lecture-plus-correction 그룹에 속함); om-2 p.100",
+     "our_claim_ko": "방광 신장수용기 구심신호가 PAG를 중계핵으로 거쳐(PAG→사천부 운동신경 직접연결은 없음) 교뇌배뇨중추(Barrington 핵, PMC)에 도달하고, PMC가 (1) 엉치부교감 전신경세포를 흥분시켜 배뇨근을 수축시키는 동시에 (2) 상 운동신경(Onuf 핵, 엉치앞뿔)을 억제해 외요도조임근을 이완시키는 이중 경로로 저장↔배뇨를 전환한다고 구체적으로 명시.",
+     "ours_evidence": [
+      {"source": "Fowler 2008 Nature Reviews Neuroscience", "grade": "A", "quote_head": "Neurons in the PMC receive input from the PAG and from the anterior and"},
+      {"source": "Nieuwenhuys 2008 Springer (4th ed.)", "grade": "A", "quote_head": "It projects bilaterally to the sacral intermediolateral nucleus and the"},
+      {"source": "Nieuwenhuys 2008 Springer (4th ed.)", "grade": "A", "quote_head": "Relaxation of the urethral sphincter is produced by inhibitory interneurons"}
+     ],
+     "severity": "medium",
+     "note": "브리핑이 지정한 '교뇌배뇨중추(Barrington)와 Onuf 핵' 항목. 모순은 아님 — 성연 쪽은 자료에 없는 내용을 추측해 넣지 않겠다고 밝히고 의도적으로 생략했으며, 이 경로 데이터셋 전체(autonomic-micturition, parasympathetic-sacral)에서 'Barrington', 'PMC', 'PAG', 'Onuf' 명칭이 한 번도 등장하지 않음."
+    },
+    {
+     "kind": "addition",
+     "their_pathway": "autonomic-micturition",
+     "their_step": "autonomic-micturition-1",
+     "their_claim_ko": "저장 상태에서 교감출력이 배뇨근 이완과 '방광목/근위요도 수축'을 돕는다고 기술(evidenceStatus=lecture-plus-correction; 원문의 '교감→내요도조임근 이완'이라는 표기를 교정해 반대로, 즉 수축으로 고쳤다고 memo에 명시).",
+     "their_evidence": "lecture-plus-correction; om-2 p.100",
+     "our_claim_ko": "해당 사항 없음 — 우리 merged 자료는 저장기 교감신경의 방광목/근위요도·배뇨근 효과기 수준 약리작용(알파/베타 수용체 등)을 다루지 않고, 하행 교감경로를 일반적인 시상하부→IML 기술(원래 호너증후군 문헌에서 가져온 설명)로만 다룸.",
+     "ours_evidence": null,
+     "severity": "low",
+     "note": "성연 쪽의 교정 내용(교감=저장 촉진, 방광목 수축) 자체는 표준 생리학과 부합하나 우리 자료에 이를 확인하거나 반박할 A급 근거가 없어 비교 불가. 판단하지 않음."
+    }
+   ],
+   "additions": [
+    {"their_pathway": "autonomic-micturition", "summary_ko": "저장-배뇨 상태 전환을 교감(배뇨근 이완+방광목 수축)·부교감(S2-4, 배뇨근 수축)·체성(음부신경, 외조임근 수축) 3계통 출력의 균형으로 기술하는 저장기 약리/효과기 수준 세부; 우리 자료에는 이 수준의 저장기 교감 효과기 기술이 없음."}
+   ]
+  },
+  {
+   "ours": "circadian-retinohypothalamic-scn-pineal",
+   "theirs": ["circadian-retina-scn", "scn-pineal"],
+   "origin_note": "부분 일치: circadian-retina-scn은 '빛을 받는 눈 쪽'(망막 기준), scn-pineal은 '표시할 회로의 쪽'(일반 표시 기준)으로 서로 다른 origin 정의를 쓰지만, SCN 단계부터는 둘 다 양측(ipsi+contra) 구조로 전환해 사실상 우리 쪽의 laterality: bilateral(1·2단계)과 일치. 전체적으로 SCN→PVN→IML→위목신경절→솔방울샘 연쇄의 구조·순서는 양쪽 데이터셋이 서로 잘 들어맞음(브리핑 지정 항목 중 가장 일치도가 높음).",
+   "differences": [
+    {
+     "kind": "origin-definition",
+     "their_pathway": "circadian-retina-scn",
+     "their_step": "circadian-retina-scn-2",
+     "their_claim_ko": "정중선 SCN을 '한쪽으로 고정하지 않고 양측망으로 표현'한다는 표시상의 선택으로 서술(해부학적 교차를 명시적 사실로 주장하지는 않음).",
+     "their_evidence": "lecture-grounded; om-1 p.38 / om-2 p.91",
+     "our_claim_ko": "ipRGC→망막시상하부로 단계 자체를 laterality: bilateral, decussation: present=true로 명시하며, 'RHT의 상당 성분이 시각교차에서 교차해 양쪽 SCN을 모두 신경분포한다'는 해부학적 교차 사실로 주장.",
+     "ours_evidence": [
+      {"source": "Nieuwenhuys 2008 Springer (4th ed.)", "grade": "A", "quote_head": "In rodents [338] as well as humans [82], this tract terminates in the"}
+     ],
+     "severity": "low",
+     "note": "결과(양쪽 SCN이 빛정보를 받음)는 일치. 표현 방식 차이일 뿐 — 성연 쪽은 '표시 관례', 우리 쪽은 '해부학적 교차'로 서술."
+    },
+    {
+     "kind": "granularity",
+     "their_pathway": "scn-pineal",
+     "their_step": "scn-pineal-2",
+     "their_claim_ko": "PVN–척수 중간가쪽세포기둥(IML)–위목신경절 연결을 한 단계로 묶어 기술(evidenceStatus 메모: '표준 신경해부학 보완'이며 SCN→솔방울샘 직결 단일축삭이 아님을 강조).",
+     "their_evidence": "lecture-partial-plus-standard-completion; om-1 p.38-39 / om-2 p.2,91",
+     "our_claim_ko": "PVN→IML(절전교감, 3단계)과 IML→위목신경절(절후교감, 4단계)을 별개 단계로 분리해 각각 근거를 제시.",
+     "ours_evidence": [
+      {"source": "Nieuwenhuys 2008 Springer (4th ed.)", "grade": "A", "quote_head": "The projection to the pineal includes sympathetic preganglionic neurons in"}
+     ],
+     "severity": "low",
+     "note": "모순 아님, 세분화 차이. 다단계 교감경로라는 핵심 주장(SCN이 솔방울샘에 직결되지 않음)은 양쪽이 동일하게 강조."
+    }
+   ],
+   "additions": [
+    {"their_pathway": "circadian-retina-scn", "summary_ko": "SCN 시계출력이 솔방울샘 경로 외에도 수면-각성·신경내분비 리듬 전반을 조정한다는 일반적 요약; 우리 자료는 SCN→솔방울샘 멜라토닌 축에만 범위를 한정."}
+   ]
+  }
+ ]
+}

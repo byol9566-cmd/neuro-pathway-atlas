@@ -1,0 +1,297 @@
+{
+ "ours": "sympathetic-pathway-to-the-eye-horner-syndrome",
+ "theirs": [
+  {
+   "id": "autonomic-pupil-dilation",
+   "category": "autonomic",
+   "name": {
+    "ko": "교감 동공확대",
+    "en": "Sympathetic pupillary dilation"
+   },
+   "summary": {
+    "ko": "시상하부–흉수–위목신경절–눈 교감출력이 동공확대근에 작용한다."
+   },
+   "origin": {
+    "ko": "출력받는 눈 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      25
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      19,
+      100
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "autonomic-pupil-dilation-1",
+     "title": {
+      "ko": "중추 교감명령"
+     },
+     "description": {
+      "ko": "시상하부 관련 출력이 흉수 교감 절전뉴런에 영향을 준다. 중추세부는 원문 미제시의 표준 보완이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "hyp-hypothalamus",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-iml",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        25
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        19,
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시상하부 · 중간가쪽세포기둥 (IML)"
+     }
+    },
+    {
+     "id": "autonomic-pupil-dilation-2",
+     "title": {
+      "ko": "위목신경절"
+     },
+     "description": {
+      "ko": "절전축삭이 위목신경절에서 중계한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-superior-cervical",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        25
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        19,
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 위목신경절"
+     }
+    },
+    {
+     "id": "autonomic-pupil-dilation-3",
+     "title": {
+      "ko": "눈 교감효과기"
+     },
+     "description": {
+      "ko": "절후출력이 동공확대근에 작용한다. III의 부교감 축삭과 동일한 신경성분으로 혼합하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ef-dilator-pupillae",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        25
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        19,
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 동공확대근"
+     },
+     "transmitter": "norepinephrine"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "autonomic-pupil-dilation-1",
+     "to": "autonomic-pupil-dilation-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "autonomic-pupil-dilation-2",
+     "to": "autonomic-pupil-dilation-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "sympathetic-head-neck",
+   "category": "autonomic",
+   "name": {
+    "ko": "머리·목 교감 출력",
+    "en": "Head and neck sympathetic pathway"
+   },
+   "summary": {
+    "ko": "상부흉추 절전입력이 위목신경절 등에 올라가 머리·목 혈관·샘·눈 관련 교감출력을 만든다."
+   },
+   "origin": {
+    "ko": "출력받는 머리·목 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-plus-correction",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      99
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "sympathetic-head-neck-1",
+     "title": {
+      "ko": "절전 상행"
+     },
+     "description": {
+      "ko": "상부 흉추의 절전축삭이 교감줄기를 따라 목신경절까지 상행한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-iml",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-white-ramus",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-sympathetic-chain",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-superior-cervical",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        99
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 중간가쪽세포기둥 (IML) · 백색교통가지 · 교감신경줄기·척추옆신경절 · 위목신경절"
+     }
+    },
+    {
+     "id": "sympathetic-head-neck-2",
+     "title": {
+      "ko": "신경절 → 머리·목"
+     },
+     "description": {
+      "ko": "절후출력은 동맥 주위얼기 등을 통해 머리·목으로 전달된다. 정리본의 머리·목은 모두 회색가지를 통과한다는 일반화는 채택하지 않았다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-superior-cervical",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-heart-vessels",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-dilator-pupillae",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        99
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 위목신경절 · 심장·혈관 · 동공확대근"
+     },
+     "transmitter": "norepinephrine"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "sympathetic-head-neck-1",
+     "to": "sympathetic-head-neck-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

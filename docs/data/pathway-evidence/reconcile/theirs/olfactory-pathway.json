@@ -1,0 +1,381 @@
+{
+ "ours": "olfactory-pathway",
+ "theirs": [
+  {
+   "id": "olfactory-central",
+   "category": "olfactory",
+   "name": {
+    "ko": "후각 중추경로",
+    "en": "Central olfactory pathway"
+   },
+   "summary": {
+    "ko": "후각수용뉴런→후각망울→일차후각겉질로 전달된다. 일차겉질 도달 전 시상 중계는 필수가 아니다."
+   },
+   "origin": {
+    "ko": "냄새를 받는 코 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      22
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      35,
+      37,
+      38
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "olfactory-central-1",
+     "title": {
+      "ko": "ORN → 후각신경 → 토리"
+     },
+     "description": {
+      "ko": "같은 수용체를 발현하는 ORN 축삭이 후각망울 토리에 수렴하여 승모/다발세포와 시냅스한다. ORN 자체 축삭이 후각신경이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-orn",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn1",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-olfactory-bulb",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-olfactory-glomerulus",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-mitral",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-olfactory-epithelium",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        35,
+        37,
+        38
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 후각수용뉴런 (ORN) · 후각신경 (I) · 후각망울 · 후각 토리 · 승모세포 · 후각상피"
+     },
+     "neuronOrder": 1
+    },
+    {
+     "id": "olfactory-central-2",
+     "title": {
+      "ko": "후각로 → 일차 표적"
+     },
+     "description": {
+      "ko": "후각망울 출력이 후각로를 통해 이상겉질·후각결절·편도체·속후각겉질 등으로 분산된다. 이들 사이를 순서대로 통과하는 것이 아니다."
+     },
+     "structures": [
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-olfactory-tract",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-piriform",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-olfactory-tubercle",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-entorhinal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        35,
+        37,
+        38
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 후각로 · 이상겉질 · 후각결절 · 속후각겉질"
+     },
+     "neuronOrder": 2
+    },
+    {
+     "id": "olfactory-central-3",
+     "title": {
+      "ko": "상위 인지·기억·내장 연결"
+     },
+     "description": {
+      "ko": "일차후각망은 눈확이마겉질·시상·시상하부·해마와 연결된다. 시상은 이 상위 처리의 일부에 참여할 수 있다."
+     },
+     "structures": [
+      {
+       "id": "thal-md",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-orbitofrontal",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-md",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-hypothalamus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        35,
+        37,
+        38
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈확이마겉질 · 시상하부"
+     }
+    }
+   ],
+   "lesions": [],
+   "topology": "branched-network",
+   "edges": [
+    {
+     "from": "olfactory-central-1",
+     "to": "olfactory-central-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "olfactory-central-2",
+     "to": "olfactory-central-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "olfactory-combinatorial-code",
+   "category": "olfactory",
+   "name": {
+    "ko": "후각의 조합·농도 부호화",
+    "en": "Olfactory combinatorial and concentration coding"
+   },
+   "summary": {
+    "ko": "수용체–토리 조합, 발화율·잠복기·모집 범위가 냄새 정체·농도를 부호화한다."
+   },
+   "origin": {
+    "ko": "냄새를 받는 코 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      37,
+      38
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "olfactory-combinatorial-code-1",
+     "title": {
+      "ko": "수용체 조합"
+     },
+     "description": {
+      "ko": "한 ORN은 주로 한 수용체 종류를 발현하며 수용체·냄새물질은 다대다 대응이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-orn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        37,
+        38
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 후각수용뉴런 (ORN)"
+     }
+    },
+    {
+     "id": "olfactory-combinatorial-code-2",
+     "title": {
+      "ko": "토리 수렴"
+     },
+     "description": {
+      "ko": "같은 수용체 ORN이 토리로 수렴한다. 농도 증가에 따라 발화율·잠복기·활성 범위가 달라진다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-olfactory-glomerulus",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-mitral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        37,
+        38
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 후각 토리 · 승모세포"
+     }
+    },
+    {
+     "id": "olfactory-combinatorial-code-3",
+     "title": {
+      "ko": "이상겉질 희소표현"
+     },
+     "description": {
+      "ko": "광범위 억제와 선택적 흥분이 분산된 냄새표현을 형성한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-piriform",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        37,
+        38
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 이상겉질"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "olfactory-combinatorial-code-1",
+     "to": "olfactory-combinatorial-code-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "olfactory-combinatorial-code-2",
+     "to": "olfactory-combinatorial-code-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

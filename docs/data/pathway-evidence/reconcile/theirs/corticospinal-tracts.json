@@ -1,0 +1,582 @@
+{
+ "ours": "corticospinal-tracts",
+ "theirs": [
+  {
+   "id": "corticospinal-lateral",
+   "category": "motor",
+   "name": {
+    "ko": "가쪽겉질척수 경로",
+    "en": "Lateral corticospinal tract"
+   },
+   "summary": {
+    "ko": "겉질 제5층 출력이 척수 운동망을 통해 수의운동을 조절한다."
+   },
+   "origin": {
+    "ko": "운동명령을 생성하는 대뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      21
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      65,
+      68,
+      69
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "corticospinal-lateral-1",
+     "title": {
+      "ko": "겉질 → 속섬유막 뒤다리"
+     },
+     "description": {
+      "ko": "M1·전운동·몸감각·마루영역 제5층에서 유래한 축삭이 방사관·속섬유막 뒤다리를 통과한다. 원문의 post. horn은 post. limb로 정정했다."
+     },
+     "structures": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-pma",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-neocortical-l5",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-corona-radiata",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-internal-capsule-posterior",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        21
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        65,
+        68,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전운동영역 (PMA, BA 6) · 신피질 제5층 피라미드세포 · 방사관 · 속섬유막 뒤다리"
+     }
+    },
+    {
+     "id": "corticospinal-lateral-2",
+     "title": {
+      "ko": "대뇌다리바닥 → 피라미드"
+     },
+     "description": {
+      "ko": "다리뇌를 지나 숨뇌 피라미드로 하행한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-crus-cerebri",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-pyramid",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        21
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        65,
+        68,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 대뇌다리바닥 · 숨뇌 피라미드"
+     }
+    },
+    {
+     "id": "corticospinal-lateral-3",
+     "title": {
+      "ko": "교차·척수 하행"
+     },
+     "description": {
+      "ko": "대부분(약 80~90%)이 피라미드교차를 통해 반대쪽 가쪽CST로 하행한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-corticospinal-lateral",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        21
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        65,
+        68,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽겉질척수로"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "숨뇌 아래쪽 피라미드교차"
+     }
+    },
+    {
+     "id": "corticospinal-lateral-4",
+     "title": {
+      "ko": "척수 운동망 → 근육"
+     },
+     "description": {
+      "ko": "사이뉴런과 일부 직접 알파운동뉴런 연결을 통해 근육을 조절한다. 가쪽CST는 특히 원위부 정교운동, 앞CST는 축성·근위부에 기여한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-ventral-horn",
+       "side": "contra"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        21
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        65,
+        68,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 방추밖근섬유"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "교차 위 CST"
+     },
+     "deficit": {
+      "ko": "반대쪽 UMN 소견·약화"
+     },
+     "side": "contra"
+    },
+    {
+     "level": {
+      "ko": "교차 아래 척수 가쪽CST"
+     },
+     "deficit": {
+      "ko": "같은쪽 병변 아래 UMN 소견"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "edges": [
+    {
+     "from": "corticospinal-lateral-1",
+     "to": "corticospinal-lateral-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "corticospinal-lateral-2",
+     "to": "corticospinal-lateral-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "corticospinal-lateral-3",
+     "to": "corticospinal-lateral-4",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "corticospinal-anterior",
+   "category": "motor",
+   "name": {
+    "ko": "앞겉질척수 경로",
+    "en": "Anterior corticospinal tract"
+   },
+   "summary": {
+    "ko": "겉질 제5층 출력이 척수 운동망을 통해 수의운동을 조절한다."
+   },
+   "origin": {
+    "ko": "운동명령을 생성하는 대뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      21
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      65,
+      68,
+      69
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "corticospinal-anterior-1",
+     "title": {
+      "ko": "겉질 → 속섬유막 뒤다리"
+     },
+     "description": {
+      "ko": "M1·전운동·몸감각·마루영역 제5층에서 유래한 축삭이 방사관·속섬유막 뒤다리를 통과한다. 원문의 post. horn은 post. limb로 정정했다."
+     },
+     "structures": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-pma",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-neocortical-l5",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-corona-radiata",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-internal-capsule-posterior",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        21
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        65,
+        68,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전운동영역 (PMA, BA 6) · 신피질 제5층 피라미드세포 · 방사관 · 속섬유막 뒤다리"
+     }
+    },
+    {
+     "id": "corticospinal-anterior-2",
+     "title": {
+      "ko": "대뇌다리바닥 → 피라미드"
+     },
+     "description": {
+      "ko": "다리뇌를 지나 숨뇌 피라미드로 하행한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-crus-cerebri",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-pyramid",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        21
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        65,
+        68,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 대뇌다리바닥 · 숨뇌 피라미드"
+     }
+    },
+    {
+     "id": "corticospinal-anterior-3",
+     "title": {
+      "ko": "교차·척수 하행"
+     },
+     "description": {
+      "ko": "앞CST는 피라미드교차에서 교차하지 않은 성분이다. 분절 수준 교차·양측 투사를 통해 몸통·근위부를 조절한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-corticospinal-anterior",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-corticospinal-anterior",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        21
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        65,
+        68,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 앞겉질척수로"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "척수 분절 수준 양측 투사; 개별 섬유별 상이"
+     },
+     "memo": "피라미드교차는 없음. 이 단계의 true는 일부 섬유의 척수 분절 교차를 가리킴."
+    },
+    {
+     "id": "corticospinal-anterior-4",
+     "title": {
+      "ko": "척수 운동망 → 근육"
+     },
+     "description": {
+      "ko": "사이뉴런과 일부 직접 알파운동뉴런 연결을 통해 근육을 조절한다. 가쪽CST는 특히 원위부 정교운동, 앞CST는 축성·근위부에 기여한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-ventral-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-ventral-horn",
+       "side": "contra"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        21
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        65,
+        68,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 방추밖근섬유"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "앞CST 및 관련 양측 축성운동망"
+     },
+     "deficit": {
+      "ko": "축성·근위부 조절 장애 가능; 양측 투사 때문에 일측 손상의 결손을 한쪽 마비로 고정하지 않음"
+     }
+    }
+   ],
+   "edges": [
+    {
+     "from": "corticospinal-anterior-1",
+     "to": "corticospinal-anterior-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "corticospinal-anterior-2",
+     "to": "corticospinal-anterior-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "corticospinal-anterior-3",
+     "to": "corticospinal-anterior-4",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

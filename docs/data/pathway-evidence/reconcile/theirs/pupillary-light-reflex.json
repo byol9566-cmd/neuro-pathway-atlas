@@ -1,0 +1,300 @@
+{
+ "ours": "pupillary-light-reflex",
+ "theirs": [
+  {
+   "id": "pupillary-light-reflex",
+   "category": "oculomotor",
+   "name": {
+    "ko": "동공빛반사",
+    "en": "Pupillary light reflex"
+   },
+   "summary": {
+    "ko": "한쪽 눈의 빛 입력이 양쪽 EW핵·III·섬모체신경절을 통해 양쪽 동공을 수축시킨다."
+   },
+   "origin": {
+    "ko": "빛을 비춘 눈"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      25
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      19
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "pupillary-light-reflex-1",
+     "title": {
+      "ko": "망막 → II → 덮개앞핵"
+     },
+     "description": {
+      "ko": "망막신경절세포 입력이 시각신경·시각교차·시각로를 거쳐 덮개앞영역으로 간다. LGN·V1은 반사에 필수 중계가 아니다."
+     },
+     "structures": [
+      {
+       "id": "tr-optic-tract",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-optic-tract",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "so-retina",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn2",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-optic-chiasm",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-optic-tract",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-optic-tract",
+       "side": "contra"
+      },
+      {
+       "id": "bs-pretectal",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pretectal",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        25
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        19
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 망막 · 시각신경 (II) · 시각교차 · 덮개앞핵군"
+     }
+    },
+    {
+     "id": "pupillary-light-reflex-2",
+     "title": {
+      "ko": "양쪽 EW핵"
+     },
+     "description": {
+      "ko": "덮개앞핵은 양쪽 EW핵에 투사한다. 교차 성분은 뒤맞교차 부근을 통해 양측 반사에 기여한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-ew",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-ew",
+       "side": "contra"
+      },
+      {
+       "id": "tr-posterior-commissure",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        25
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        19
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 에딩거-베스트팔핵 (EW) · 뒤맞교차"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "덮개앞핵의 양측 투사; 뒤맞교차 관련"
+     }
+    },
+    {
+     "id": "pupillary-light-reflex-3",
+     "title": {
+      "ko": "III → 섬모체신경절"
+     },
+     "description": {
+      "ko": "양쪽 EW의 절전 부교감축삭이 III를 따라 같은쪽 섬모체신경절에서 시냅스한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn3",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn3",
+       "side": "contra"
+      },
+      {
+       "id": "pn-ciliary-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-ciliary-ganglion",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        25
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        19
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈돌림신경 (III) · 섬모체신경절"
+     },
+     "transmitter": "acetylcholine"
+    },
+    {
+     "id": "pupillary-light-reflex-4",
+     "title": {
+      "ko": "짧은섬모체신경 → 동공조임근"
+     },
+     "description": {
+      "ko": "절후축삭이 짧은섬모체신경을 통해 동공조임근을 수축시킨다. 비춘 눈은 직접반사, 반대 눈은 간접반사다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-short-ciliary",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-short-ciliary",
+       "side": "contra"
+      },
+      {
+       "id": "ef-sphincter-pupillae",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-sphincter-pupillae",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        25
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        19
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 짧은섬모체신경 · 동공조임근"
+     },
+     "transmitter": "acetylcholine"
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "II 구심성 완전손상"
+     },
+     "deficit": {
+      "ko": "병변눈에 빛을 비추면 양쪽 반사가 소실; 정상눈에 비추면 양쪽 수축 가능"
+     }
+    },
+    {
+     "level": {
+      "ko": "III 부교감 원심성 손상"
+     },
+     "deficit": {
+      "ko": "손상눈의 직접·간접 수축 모두 장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "topology": "bilateral-fanout",
+   "edges": [
+    {
+     "from": "pupillary-light-reflex-1",
+     "to": "pupillary-light-reflex-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "pupillary-light-reflex-2",
+     "to": "pupillary-light-reflex-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "pupillary-light-reflex-3",
+     "to": "pupillary-light-reflex-4",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

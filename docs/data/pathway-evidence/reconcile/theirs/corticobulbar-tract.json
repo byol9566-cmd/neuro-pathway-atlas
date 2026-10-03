@@ -1,0 +1,871 @@
+{
+ "ours": "corticobulbar-tract",
+ "theirs": [
+  {
+   "id": "corticobulbar",
+   "category": "motor",
+   "name": {
+    "ko": "겉질핵 경로",
+    "en": "Corticobulbar pathway"
+   },
+   "summary": {
+    "ko": "겉질 얼굴·머리 운동영역이 속섬유막 무릎을 통해 뇌신경 운동핵에 투사한다."
+   },
+   "origin": {
+    "ko": "운동명령을 생성하는 대뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      22
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      69
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "corticobulbar-1",
+     "title": {
+      "ko": "M1 얼굴영역 → 속섬유막 무릎"
+     },
+     "description": {
+      "ko": "얼굴·머리 M1 출력이 속섬유막 무릎과 대뇌다리바닥으로 하행한다."
+     },
+     "structures": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-internal-capsule-genu",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-corticobulbar",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-crus-cerebri",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 무릎 · 겉질핵로 (겉질숨뇌로) · 대뇌다리바닥"
+     }
+    },
+    {
+     "id": "corticobulbar-2",
+     "title": {
+      "ko": "운동핵별 투사"
+     },
+     "description": {
+      "ko": "다수 운동핵은 양측성 입력을 받는다. 아래얼굴과 혀 내밀기의 혀밑핵 관련 출력은 반대쪽 우세다. 모든 구개·SCM 출력에 하나의 절대 ipsi/contra 규칙을 강제하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "bs-facial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-facial",
+       "side": "contra"
+      },
+      {
+       "id": "bs-hypoglossal",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-trigeminal-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-trigeminal-motor",
+       "side": "contra"
+      },
+      {
+       "id": "bs-facial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-facial",
+       "side": "contra"
+      },
+      {
+       "id": "bs-ambiguus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-ambiguus",
+       "side": "contra"
+      },
+      {
+       "id": "bs-hypoglossal",
+       "side": "contra"
+      },
+      {
+       "id": "bs-accessory",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-accessory",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 운동핵 · 의문핵 · 더부신경 척수핵"
+     }
+    },
+    {
+     "id": "corticobulbar-3",
+     "title": {
+      "ko": "뇌신경 LMN → 근육"
+     },
+     "description": {
+      "ko": "각 운동핵의 말초축삭이 해당 쪽 근육에 작용한다. 각 출력은 병렬이며 핵들을 순서대로 통과하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ef-masticatory-muscles",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-masticatory-muscles",
+       "side": "contra"
+      },
+      {
+       "id": "ef-facial-muscles",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-facial-muscles",
+       "side": "contra"
+      },
+      {
+       "id": "ef-pharynx-larynx",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-pharynx-larynx",
+       "side": "contra"
+      },
+      {
+       "id": "ef-tongue-muscles",
+       "side": "contra"
+      },
+      {
+       "id": "ef-scm-trapezius",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-scm-trapezius",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 씹기근 · 표정근 · 인두·후두 가로무늬근 · 혀근육 · 목빗근·등세모근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "얼굴 UMN"
+     },
+     "deficit": {
+      "ko": "반대쪽 아래얼굴 약화, 이마 상대보존"
+     },
+     "side": "contra"
+    },
+    {
+     "level": {
+      "ko": "얼굴핵·VII LMN"
+     },
+     "deficit": {
+      "ko": "같은쪽 위·아래얼굴 약화"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "topology": "parallel-targets",
+   "edges": [
+    {
+     "from": "corticobulbar-1",
+     "to": "corticobulbar-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "corticobulbar-2",
+     "to": "corticobulbar-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cranial-vii-motor",
+   "category": "motor",
+   "name": {
+    "ko": "VII 표정근 출력",
+    "en": "Facial motor output"
+   },
+   "summary": {
+    "ko": "뇌신경 운동핵→말초축삭→표적근육 연결."
+   },
+   "origin": {
+    "ko": "출력받는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      22
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cranial-vii-motor-1",
+     "title": {
+      "ko": "운동핵"
+     },
+     "description": {
+      "ko": "운동뉴런 세포체는 얼굴신경핵 (VII)에 있다."
+     },
+     "structures": [
+      {
+       "id": "bs-facial",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-facial",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        22
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "cranial-vii-motor-2",
+     "title": {
+      "ko": "뇌신경 → 근육"
+     },
+     "description": {
+      "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn7",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-facial-muscles",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        22
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 얼굴신경 (VII) · 표정근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "bs-facial 또는 신경"
+     },
+     "deficit": {
+      "ko": "지배근육의 운동장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "memo": "운동핵 기능표·원심축삭 요약; 근육별 아핵 배선은 전문 검수 필요.",
+   "edges": [
+    {
+     "from": "cranial-vii-motor-1",
+     "to": "cranial-vii-motor-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cranial-xii-motor",
+   "category": "motor",
+   "name": {
+    "ko": "XII 혀운동 출력",
+    "en": "Hypoglossal motor output"
+   },
+   "summary": {
+    "ko": "뇌신경 운동핵→말초축삭→표적근육 연결."
+   },
+   "origin": {
+    "ko": "출력받는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      23
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cranial-xii-motor-1",
+     "title": {
+      "ko": "운동핵"
+     },
+     "description": {
+      "ko": "운동뉴런 세포체는 혀밑신경핵 (XII)에 있다."
+     },
+     "structures": [
+      {
+       "id": "bs-hypoglossal",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-hypoglossal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "cranial-xii-motor-2",
+     "title": {
+      "ko": "뇌신경 → 근육"
+     },
+     "description": {
+      "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn12",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-tongue-muscles",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 혀밑신경 (XII) · 혀근육"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "bs-hypoglossal 또는 신경"
+     },
+     "deficit": {
+      "ko": "지배근육의 운동장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "memo": "운동핵 기능표·원심축삭 요약; 근육별 아핵 배선은 전문 검수 필요.",
+   "edges": [
+    {
+     "from": "cranial-xii-motor-1",
+     "to": "cranial-xii-motor-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cranial-v-motor",
+   "category": "motor",
+   "name": {
+    "ko": "V 씹기근 출력",
+    "en": "Trigeminal motor output"
+   },
+   "summary": {
+    "ko": "뇌신경 운동핵→말초축삭→표적근육 연결."
+   },
+   "origin": {
+    "ko": "출력받는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cranial-v-motor-1",
+     "title": {
+      "ko": "운동핵"
+     },
+     "description": {
+      "ko": "운동뉴런 세포체는 삼차신경 운동핵에 있다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-trigeminal-motor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 운동핵"
+     }
+    },
+    {
+     "id": "cranial-v-motor-2",
+     "title": {
+      "ko": "뇌신경 → 근육"
+     },
+     "description": {
+      "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn5-v3",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-masticatory-muscles",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아래턱신경 (V3) · 씹기근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "bs-trigeminal-motor 또는 신경"
+     },
+     "deficit": {
+      "ko": "지배근육의 운동장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "memo": "운동핵 기능표·원심축삭 요약; 근육별 아핵 배선은 전문 검수 필요.",
+   "edges": [
+    {
+     "from": "cranial-v-motor-1",
+     "to": "cranial-v-motor-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cranial-ix-x-motor",
+   "category": "motor",
+   "name": {
+    "ko": "IX·X 인두·후두 출력",
+    "en": "Glossopharyngeal and vagal branchial motor output"
+   },
+   "summary": {
+    "ko": "뇌신경 운동핵→말초축삭→표적근육 연결."
+   },
+   "origin": {
+    "ko": "출력받는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      23
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cranial-ix-x-motor-1",
+     "title": {
+      "ko": "운동핵"
+     },
+     "description": {
+      "ko": "운동뉴런 세포체는 의문핵에 있다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-ambiguus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 의문핵"
+     }
+    },
+    {
+     "id": "cranial-ix-x-motor-2",
+     "title": {
+      "ko": "뇌신경 → 근육"
+     },
+     "description": {
+      "ko": "운동축삭이 해당 표적근육을 지배한다. IX는 붓인두근, X는 대부분 인두·후두근을 지배하며 두 출력은 대안 가지다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn9",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-pharynx-larynx",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 혀인두신경 (IX) · 미주신경 (X) · 인두·후두 가로무늬근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "bs-ambiguus 또는 신경"
+     },
+     "deficit": {
+      "ko": "지배근육의 운동장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "memo": "운동핵 기능표·원심축삭 요약; 근육별 아핵 배선은 전문 검수 필요.",
+   "edges": [
+    {
+     "from": "cranial-ix-x-motor-1",
+     "to": "cranial-ix-x-motor-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cranial-xi-motor",
+   "category": "motor",
+   "name": {
+    "ko": "XI 목빗근·등세모근 출력",
+    "en": "Accessory nerve motor output"
+   },
+   "summary": {
+    "ko": "뇌신경 운동핵→말초축삭→표적근육 연결."
+   },
+   "origin": {
+    "ko": "출력받는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      23
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cranial-xi-motor-1",
+     "title": {
+      "ko": "운동핵"
+     },
+     "description": {
+      "ko": "운동뉴런 세포체는 더부신경 척수핵에 있다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-accessory",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 더부신경 척수핵"
+     }
+    },
+    {
+     "id": "cranial-xi-motor-2",
+     "title": {
+      "ko": "뇌신경 → 근육"
+     },
+     "description": {
+      "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn11",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-scm-trapezius",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 더부신경 (XI) · 목빗근·등세모근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "bs-accessory 또는 신경"
+     },
+     "deficit": {
+      "ko": "지배근육의 운동장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "memo": "운동핵 기능표·원심축삭 요약; 근육별 아핵 배선은 전문 검수 필요.",
+   "edges": [
+    {
+     "from": "cranial-xi-motor-1",
+     "to": "cranial-xi-motor-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

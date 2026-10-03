@@ -1,0 +1,306 @@
+{
+ "ours": "gustatory-pathway",
+ "theirs": [
+  {
+   "id": "gustatory-central",
+   "category": "gustatory",
+   "name": {
+    "ko": "미각 중추경로",
+    "en": "Central gustatory pathway"
+   },
+   "summary": {
+    "ko": "VII·IX·X 미각구심이 입쪽 고립로핵에서 중계되어 VPM·미각겉질 및 정서·시상하부망으로 전달된다."
+   },
+   "origin": {
+    "ko": "맛 자극을 받는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      22,
+      23
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      33,
+      34
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "gustatory-central-1",
+     "title": {
+      "ko": "맛봉오리 → 뇌신경 감각신경절"
+     },
+     "description": {
+      "ko": "혀 앞 2/3는 VII–무릎신경절, 뒤 1/3는 IX–아래신경절, 후두덮개 등은 X–아래신경절 경로다. 세 신경을 직렬로 통과하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-taste-buds",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn7",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-geniculate-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn9",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-petrosal-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-nodose-ganglion",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        22,
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        33,
+        34
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 맛봉오리 · 얼굴신경 (VII) · 무릎신경절 · 혀인두신경 (IX) · 혀인두신경 아래신경절 · 미주신경 (X) · 미주신경 아래신경절"
+     },
+     "neuronOrder": 1
+    },
+    {
+     "id": "gustatory-central-2",
+     "title": {
+      "ko": "입쪽 고립로핵"
+     },
+     "description": {
+      "ko": "미각구심이 고립로핵의 입쪽 영역에서 중계된다. 내장감각을 받는 꼬리쪽 영역과 구분한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-solitary-rostral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        22,
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        33,
+        34
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 입쪽 고립로핵 (미각)"
+     },
+     "neuronOrder": 2
+    },
+    {
+     "id": "gustatory-central-3",
+     "title": {
+      "ko": "시상 VPM → 미각겉질"
+     },
+     "description": {
+      "ko": "시상 VPM의 미각 중계영역을 거쳐 앞섬겉질·이마덮개에 도달한다. 원문은 좌우 교차를 명시하지 않으므로 양측망 표현으로 보류한다."
+     },
+     "structures": [
+      {
+       "id": "thal-vpm",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vpm",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-vpm",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vpm",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-gustatory",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-gustatory",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        22,
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        33,
+        34
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미각겉질 (앞섬겉질·이마덮개)"
+     },
+     "neuronOrder": 3
+    },
+    {
+     "id": "gustatory-central-4",
+     "title": {
+      "ko": "정서·섭식 연결"
+     },
+     "description": {
+      "ko": "고립로핵·미각겉질은 편도체·시상하부와 연결되어 섭식·회피반응에 관여한다. 마지막 단계는 중추 미각 주경로의 추가 병렬 가지다."
+     },
+     "structures": [
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "contra"
+      },
+      {
+       "id": "hyp-hypothalamus",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-hypothalamus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        22,
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        33,
+        34
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시상하부"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "미각구심·고립로핵·미각겉질"
+     },
+     "deficit": {
+      "ko": "미각저하·소실 가능"
+     },
+     "syndrome": "Ageusia"
+    }
+   ],
+   "topology": "primary-route-with-parallel-output",
+   "lateralityNote": "원문에 미각 중추교차 세부 없음; ipsi에서 both로 바뀌는 것은 교차 확정 표시가 아님.",
+   "edges": [
+    {
+     "from": "gustatory-central-1",
+     "to": "gustatory-central-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "gustatory-central-2",
+     "to": "gustatory-central-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "gustatory-central-3",
+     "to": "gustatory-central-4",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

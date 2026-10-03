@@ -1,0 +1,740 @@
+{
+ "ours": "baroreceptor-reflex",
+ "theirs": [
+  {
+   "id": "baroreflex-vagal",
+   "category": "autonomic",
+   "name": {
+    "ko": "압력반사 미주 가지",
+    "en": "Baroreflex vagal pathway"
+   },
+   "summary": {
+    "ko": "압력구심 NTS 입력이 심장 미주출력을 모집하여 심박수를 낮춘다."
+   },
+   "origin": {
+    "ko": "자극받는 압력수용기 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      53
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "baroreflex-vagal-1",
+     "title": {
+      "ko": "IX/X → NTS"
+     },
+     "description": {
+      "ko": "목동맥·대동맥 압력입력이 NTS에 도달한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn9",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-solitary-caudal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        53
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 혀인두신경 (IX) · 미주신경 (X) · 꼬리쪽 고립로핵 (내장감각)"
+     }
+    },
+    {
+     "id": "baroreflex-vagal-2",
+     "title": {
+      "ko": "심장 미주운동망"
+     },
+     "description": {
+      "ko": "NTS가 심장 미주출력(의문핵 중심)을 모집한다. 원문은 부교감 활성만 제시하여 심장표적 핵은 표준 보완이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-ambiguus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-ambiguus",
+       "side": "contra"
+      },
+      {
+       "id": "bs-dorsal-vagal",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-dorsal-vagal",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        53
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 의문핵 · 미주신경 등쪽운동핵"
+     }
+    },
+    {
+     "id": "baroreflex-vagal-3",
+     "title": {
+      "ko": "X → 심장 신경절·효과기"
+     },
+     "description": {
+      "ko": "심장 절전·절후 ACh 출력이 심박수를 낮춘다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "contra"
+      },
+      {
+       "id": "pn-intramural-ganglia",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-intramural-ganglia",
+       "side": "contra"
+      },
+      {
+       "id": "ef-heart-vessels",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        53
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미주신경 (X) · 벽속부교감신경절 · 심장·혈관"
+     },
+     "transmitter": "acetylcholine"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "baroreflex-vagal-1",
+     "to": "baroreflex-vagal-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "baroreflex-vagal-2",
+     "to": "baroreflex-vagal-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "baroreflex-sympathetic",
+   "category": "autonomic",
+   "name": {
+    "ko": "압력반사 교감억제 가지",
+    "en": "Baroreflex sympathetic inhibition"
+   },
+   "summary": {
+    "ko": "혈압상승→IX/X–NTS→CVLM→RVLM 억제→IML 교감출력 감소의 가지."
+   },
+   "origin": {
+    "ko": "자극받는 압력수용기 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      23
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      53
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "baroreflex-sympathetic-1",
+     "title": {
+      "ko": "압력수용기 구심"
+     },
+     "description": {
+      "ko": "목동맥팽대는 IX, 대동맥활은 X의 입력이 NTS로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-carotid-baroreceptor",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-aortic-baroreceptor",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn9",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-solitary-caudal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        53
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 목동맥팽대 압력수용기 · 대동맥활 압력수용기 · 혀인두신경 (IX) · 미주신경 (X) · 꼬리쪽 고립로핵 (내장감각)"
+     }
+    },
+    {
+     "id": "baroreflex-sympathetic-2",
+     "title": {
+      "ko": "NTS → CVLM"
+     },
+     "description": {
+      "ko": "NTS의 흥분성 입력이 CVLM 관련 억제뉴런을 모집한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-cvlm",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-cvlm",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        53
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 꼬리쪽배가쪽숨뇌 (CVLM)"
+     }
+    },
+    {
+     "id": "baroreflex-sympathetic-3",
+     "title": {
+      "ko": "CVLM → RVLM 억제"
+     },
+     "description": {
+      "ko": "CVLM의 GABA 출력이 RVLM 교감운동망을 억제한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-cvlm",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-cvlm",
+       "side": "contra"
+      },
+      {
+       "id": "bs-rvlm",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-rvlm",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        53
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 꼬리쪽배가쪽숨뇌 (CVLM) · 입쪽배가쪽숨뇌 (RVLM)"
+     },
+     "transmitter": "GABA"
+    },
+    {
+     "id": "baroreflex-sympathetic-4",
+     "title": {
+      "ko": "IML 교감출력 감소"
+     },
+     "description": {
+      "ko": "척수 IML·말초 교감출력이 감소하여 심혈관 작용이 낮아진다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-iml",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-iml",
+       "side": "contra"
+      },
+      {
+       "id": "pn-sympathetic-chain",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-sympathetic-chain",
+       "side": "contra"
+      },
+      {
+       "id": "ef-heart-vessels",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        53
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 중간가쪽세포기둥 (IML) · 교감신경줄기·척추옆신경절 · 심장·혈관"
+     }
+    }
+   ],
+   "lesions": [],
+   "topology": "bilateral-autonomic-network",
+   "edges": [
+    {
+     "from": "baroreflex-sympathetic-1",
+     "to": "baroreflex-sympathetic-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "baroreflex-sympathetic-2",
+     "to": "baroreflex-sympathetic-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "baroreflex-sympathetic-3",
+     "to": "baroreflex-sympathetic-4",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "visceral-afferent",
+   "category": "autonomic",
+   "name": {
+    "ko": "IX·X 내장감각 입력",
+    "en": "Glossopharyngeal and vagal visceral afferents"
+   },
+   "summary": {
+    "ko": "목동맥·심혈관·내장 감각이 IX/X를 통해 꼬리쪽 고립로핵에 전달된다."
+   },
+   "origin": {
+    "ko": "내장 구심을 받는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      18,
+      23
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "visceral-afferent-1",
+     "title": {
+      "ko": "말초 수용·신경절"
+     },
+     "description": {
+      "ko": "목동맥소체·팽대는 IX, 많은 흉복부 내장 감각은 X를 통해 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-carotid-baroreceptor",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-carotid-body",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-viscera",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn9",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-petrosal-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-nodose-ganglion",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 목동맥팽대 압력수용기 · 목동맥소체 화학수용기 · 흉복부 내장·평활근·샘 · 혀인두신경 (IX) · 미주신경 (X) · 혀인두신경 아래신경절 · 미주신경 아래신경절"
+     }
+    },
+    {
+     "id": "visceral-afferent-2",
+     "title": {
+      "ko": "꼬리쪽 NTS"
+     },
+     "description": {
+      "ko": "내장감각 구심이 꼬리쪽 고립로핵에서 중계되어 자율신경·호흡·내장반응에 연결된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-solitary-caudal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 꼬리쪽 고립로핵 (내장감각)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "visceral-afferent-1",
+     "to": "visceral-afferent-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vagal-parasympathetic",
+   "category": "autonomic",
+   "name": {
+    "ko": "X 내장 부교감 출력",
+    "en": "Vagal visceral parasympathetic output"
+   },
+   "summary": {
+    "ko": "절전 부교감뉴런→말초신경절→절후 ACh 출력으로 효과기를 조절한다."
+   },
+   "origin": {
+    "ko": "분비·내장출력을 받는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      19,
+      23
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      98,
+      100
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vagal-parasympathetic-1",
+     "title": {
+      "ko": "절전뉴런 → 뇌신경"
+     },
+     "description": {
+      "ko": "출발핵은 미주신경 등쪽운동핵이고 절전축삭은 해당 뇌신경을 따라간다. 분지·중계 세부는 원문에 없는 경우 생략한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-dorsal-vagal",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        19,
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        98,
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미주신경 등쪽운동핵 · 미주신경 (X)"
+     },
+     "transmitter": "acetylcholine"
+    },
+    {
+     "id": "vagal-parasympathetic-2",
+     "title": {
+      "ko": "부교감신경절"
+     },
+     "description": {
+      "ko": "절전 ACh가 신경절 Nn 수용체를 통해 절후뉴런을 활성화한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-intramural-ganglia",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        19,
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        98,
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 벽속부교감신경절"
+     },
+     "transmitter": "acetylcholine"
+    },
+    {
+     "id": "vagal-parasympathetic-3",
+     "title": {
+      "ko": "절후 → 효과기"
+     },
+     "description": {
+      "ko": "절후 ACh가 무스카린 수용체를 통해 샘 분비·내장 기능을 조절한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ef-viscera",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        19,
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        98,
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 흉복부 내장·평활근·샘"
+     },
+     "transmitter": "acetylcholine"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "vagal-parasympathetic-1",
+     "to": "vagal-parasympathetic-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "vagal-parasympathetic-2",
+     "to": "vagal-parasympathetic-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

@@ -1,0 +1,1341 @@
+{
+ "ours": "extrapyramidal-descending-tracts",
+ "theirs": [
+  {
+   "id": "rubrospinal",
+   "category": "motor",
+   "name": {
+    "ko": "적색핵척수 경로",
+    "en": "Rubrospinal tract"
+   },
+   "summary": {
+    "ko": "특히 상지 굽힘·운동 조절; 사람에서는 역할이 제한적에 관여한다."
+   },
+   "origin": {
+    "ko": "하행 출력을 내는 뇌줄기 핵 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      63
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "rubrospinal-1",
+     "title": {
+      "ko": "출발핵·입력"
+     },
+     "description": {
+      "ko": "출발핵은 적색핵이다. 겉질·감각·소뇌 입력의 조합으로 출력이 조절된다."
+     },
+     "structures": [
+      {
+       "id": "mb-red-nucleus",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "mb-red-nucleus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        63
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "rubrospinal-2",
+     "title": {
+      "ko": "하행로·교차"
+     },
+     "description": {
+      "ko": "정중선을 교차하여 적색핵척수로로 하행한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-rubrospinal",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        63
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 적색핵척수로"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "중뇌 배쪽피개교차"
+     }
+    },
+    {
+     "id": "rubrospinal-3",
+     "title": {
+      "ko": "척수 운동출력"
+     },
+     "description": {
+      "ko": "특히 상지 굽힘·운동 조절; 사람에서는 역할이 제한적에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-ventral-horn",
+       "side": "contra"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "contra"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        63
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "rubrospinal-1",
+     "to": "rubrospinal-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "rubrospinal-2",
+     "to": "rubrospinal-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "tectospinal",
+   "category": "motor",
+   "name": {
+    "ko": "덮개척수 경로",
+    "en": "Tectospinal tract"
+   },
+   "summary": {
+    "ko": "시각자극에 따른 머리·목 정향에 관여한다."
+   },
+   "origin": {
+    "ko": "하행 출력을 내는 뇌줄기 핵 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      60
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "tectospinal-1",
+     "title": {
+      "ko": "출발핵·입력"
+     },
+     "description": {
+      "ko": "출발핵은 위둔덕이다. 겉질·감각·소뇌 입력의 조합으로 출력이 조절된다."
+     },
+     "structures": [
+      {
+       "id": "bs-superior-colliculus",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-superior-colliculus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        60
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "tectospinal-2",
+     "title": {
+      "ko": "하행로·교차"
+     },
+     "description": {
+      "ko": "정중선을 교차하여 덮개척수로로 하행한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-tectospinal",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        60
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 덮개척수로"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "중뇌 등쪽피개교차"
+     }
+    },
+    {
+     "id": "tectospinal-3",
+     "title": {
+      "ko": "척수 운동출력"
+     },
+     "description": {
+      "ko": "시각자극에 따른 머리·목 정향에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-ventral-horn",
+       "side": "contra"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "contra"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        60
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "tectospinal-1",
+     "to": "tectospinal-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "tectospinal-2",
+     "to": "tectospinal-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vestibulospinal-medial",
+   "category": "motor",
+   "name": {
+    "ko": "안쪽안뜰척수 경로",
+    "en": "Medial vestibulospinal tract"
+   },
+   "summary": {
+    "ko": "양측 목·상부몸통 안정화에 관여한다."
+   },
+   "origin": {
+    "ko": "하행 출력을 내는 뇌줄기 핵 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      61
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vestibulospinal-medial-1",
+     "title": {
+      "ko": "출발핵·입력"
+     },
+     "description": {
+      "ko": "출발핵은 안쪽안뜰핵이다. 겉질·감각·소뇌 입력의 조합으로 출력이 조절된다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "vestibulospinal-medial-2",
+     "title": {
+      "ko": "하행로·교차"
+     },
+     "description": {
+      "ko": "양측으로 분산되어 하행한다. 양측 표시가 한 번의 특정 교차점을 뜻하지 않는다. MVST는 하행 MLF를 통해 목·상부흉부에 이른다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-vestibulospinal-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-vestibulospinal-medial",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 안쪽안뜰척수로"
+     }
+    },
+    {
+     "id": "vestibulospinal-medial-3",
+     "title": {
+      "ko": "척수 운동출력"
+     },
+     "description": {
+      "ko": "양측 목·상부몸통 안정화에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-ventral-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-ventral-horn",
+       "side": "contra"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "contra"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "vestibulospinal-medial-1",
+     "to": "vestibulospinal-medial-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "vestibulospinal-medial-2",
+     "to": "vestibulospinal-medial-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vestibulospinal-lateral",
+   "category": "motor",
+   "name": {
+    "ko": "가쪽안뜰척수 경로",
+    "en": "Lateral vestibulospinal tract"
+   },
+   "summary": {
+    "ko": "같은쪽 폄근 활성·굽힘근 억제를 통한 자세 유지에 관여한다."
+   },
+   "origin": {
+    "ko": "하행 출력을 내는 뇌줄기 핵 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      61
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vestibulospinal-lateral-1",
+     "title": {
+      "ko": "출발핵·입력"
+     },
+     "description": {
+      "ko": "출발핵은 가쪽안뜰핵 (Deiters)이다. 겉질·감각·소뇌 입력의 조합으로 출력이 조절된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-lateral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽안뜰핵 (Deiters)"
+     }
+    },
+    {
+     "id": "vestibulospinal-lateral-2",
+     "title": {
+      "ko": "하행로·교차"
+     },
+     "description": {
+      "ko": "주로 같은쪽으로 교차 없이 하행한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-vestibulospinal-lateral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽안뜰척수로"
+     }
+    },
+    {
+     "id": "vestibulospinal-lateral-3",
+     "title": {
+      "ko": "척수 운동출력"
+     },
+     "description": {
+      "ko": "같은쪽 폄근 활성·굽힘근 억제를 통한 자세 유지에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-ventral-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "vestibulospinal-lateral-1",
+     "to": "vestibulospinal-lateral-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "vestibulospinal-lateral-2",
+     "to": "vestibulospinal-lateral-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "reticulospinal-pontine",
+   "category": "motor",
+   "name": {
+    "ko": "다리뇌그물척수 경로",
+    "en": "Pontine reticulospinal tract"
+   },
+   "summary": {
+    "ko": "원문의 항중력·신장반사 촉진 모형에 관여한다."
+   },
+   "origin": {
+    "ko": "하행 출력을 내는 뇌줄기 핵 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      62
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "reticulospinal-pontine-1",
+     "title": {
+      "ko": "출발핵·입력"
+     },
+     "description": {
+      "ko": "출발핵은 다리뇌그물핵 (입쪽·꼬리쪽)이다. 겉질·감각·소뇌 입력의 조합으로 출력이 조절된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-pontine-reticular",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 다리뇌그물핵 (입쪽·꼬리쪽)"
+     }
+    },
+    {
+     "id": "reticulospinal-pontine-2",
+     "title": {
+      "ko": "하행로·교차"
+     },
+     "description": {
+      "ko": "양측으로 분산되어 하행한다. 양측 표시가 한 번의 특정 교차점을 뜻하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-reticulospinal-pontine",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-reticulospinal-pontine",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 다리뇌그물척수로"
+     }
+    },
+    {
+     "id": "reticulospinal-pontine-3",
+     "title": {
+      "ko": "척수 운동출력"
+     },
+     "description": {
+      "ko": "원문의 항중력·신장반사 촉진 모형에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-ventral-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-ventral-horn",
+       "side": "contra"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "contra"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "reticulospinal-pontine-1",
+     "to": "reticulospinal-pontine-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "reticulospinal-pontine-2",
+     "to": "reticulospinal-pontine-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "reticulospinal-medullary",
+   "category": "motor",
+   "name": {
+    "ko": "숨뇌그물척수 경로",
+    "en": "Medullary reticulospinal tract"
+   },
+   "summary": {
+    "ko": "원문의 신장반사·폄근 긴장 억제 모형에 관여한다."
+   },
+   "origin": {
+    "ko": "하행 출력을 내는 뇌줄기 핵 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      62
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "reticulospinal-medullary-1",
+     "title": {
+      "ko": "출발핵·입력"
+     },
+     "description": {
+      "ko": "출발핵은 거대세포그물핵이다. 겉질·감각·소뇌 입력의 조합으로 출력이 조절된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-gigantocellular",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 거대세포그물핵"
+     }
+    },
+    {
+     "id": "reticulospinal-medullary-2",
+     "title": {
+      "ko": "하행로·교차"
+     },
+     "description": {
+      "ko": "양측으로 분산되어 하행한다. 양측 표시가 한 번의 특정 교차점을 뜻하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-reticulospinal-medullary",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-reticulospinal-medullary",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 숨뇌그물척수로"
+     }
+    },
+    {
+     "id": "reticulospinal-medullary-3",
+     "title": {
+      "ko": "척수 운동출력"
+     },
+     "description": {
+      "ko": "원문의 신장반사·폄근 긴장 억제 모형에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-ventral-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-ventral-horn",
+       "side": "contra"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "contra"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "reticulospinal-medullary-1",
+     "to": "reticulospinal-medullary-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "reticulospinal-medullary-2",
+     "to": "reticulospinal-medullary-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "corticoreticular",
+   "category": "motor",
+   "name": {
+    "ko": "겉질그물 연결",
+    "en": "Corticoreticular tract"
+   },
+   "summary": {
+    "ko": "감각·운동 정보가 그물체 또는 적색핵을 통해 하행 조절과 연결된다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      62
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "corticoreticular-1",
+     "title": {
+      "ko": "기원"
+     },
+     "description": {
+      "ko": "원문에 제시된 전운동영역 (PMA, BA 6)의 정보가 표적핵으로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-pma",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-pma",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전운동영역 (PMA, BA 6)"
+     }
+    },
+    {
+     "id": "corticoreticular-2",
+     "title": {
+      "ko": "연결로 → 표적"
+     },
+     "description": {
+      "ko": "해당 연결로는 그물체에 도달한다. 원문에 개별 축삭 교차가 없어 양측망으로 보류한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-corticoreticular",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-corticoreticular",
+       "side": "contra"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 겉질그물로 · 그물체"
+     }
+    }
+   ],
+   "lesions": [],
+   "lateralityNote": "세부 교차 미제시; 양측 표시",
+   "edges": [
+    {
+     "from": "corticoreticular-1",
+     "to": "corticoreticular-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "decerebrate-rigidity",
+   "category": "motor",
+   "name": {
+    "ko": "제뇌경직의 교육모형",
+    "en": "Educational model of decerebrate rigidity"
+   },
+   "summary": {
+    "ko": "중뇌 수준 상위입력 상실과 신전근 하행조절 불균형으로 신전 자세가 나타나는 모형. 원문은 pontine reticulospinal·γ loop를 강조하며 뒤뿌리 절단 민감성을 제시한다."
+   },
+   "origin": {
+    "ko": "자세 이상을 관찰하는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-model-with-cautions",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      4,
+      64,
+      65,
+      75
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "decerebrate-rigidity-1",
+     "title": {
+      "ko": "상위조절·억제입력 손실"
+     },
+     "description": {
+      "ko": "중뇌 수준 상위입력 상실과 신전근 하행조절 불균형으로 신전 자세가 나타나는 모형. 원문은 pontine reticulospinal·γ loop를 강조하며 뒤뿌리 절단 민감성을 제시한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-reticular-formation",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-lateral",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-muscle-spindle",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        4,
+        64,
+        65,
+        75
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 그물체 · 가쪽안뜰핵 (Deiters) · 감마운동뉴런 · 근방추 · 알파운동뉴런 · 방추밖근섬유"
+     }
+    },
+    {
+     "id": "decerebrate-rigidity-2",
+     "title": {
+      "ko": "근긴장·자세 출력"
+     },
+     "description": {
+      "ko": "표의 원인–결과 관계를 저장한 교육모형이며 각 나열구조를 모두 직렬 중계한다고 뜻하지 않는다. 사람의 손상범위·시기와 동물 절단실험을 동일시하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        4,
+        64,
+        65,
+        75
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 알파운동뉴런 · 방추밖근섬유"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [],
+   "topology": "lesion-causal-model",
+   "edgeSemantics": "no directional edge asserted",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "decorticate-rigidity",
+   "category": "motor",
+   "name": {
+    "ko": "제피질경직의 교육모형",
+    "en": "Educational model of decorticate posturing"
+   },
+   "summary": {
+    "ko": "적색핵 위쪽 상위조절 손실에 대해 상지 굽힘·하지 폄 자세를 설명하는 모형. 원문은 보존된 rubrospinal과 신전근 하행망의 균형을 강조한다."
+   },
+   "origin": {
+    "ko": "자세 이상을 관찰하는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-model-with-cautions",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      4,
+      64,
+      65,
+      75
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "decorticate-rigidity-1",
+     "title": {
+      "ko": "상위조절·억제입력 손실"
+     },
+     "description": {
+      "ko": "적색핵 위쪽 상위조절 손실에 대해 상지 굽힘·하지 폄 자세를 설명하는 모형. 원문은 보존된 rubrospinal과 신전근 하행망의 균형을 강조한다."
+     },
+     "structures": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "mb-red-nucleus",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "mb-red-nucleus",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-rubrospinal",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-reticulospinal-pontine",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        4,
+        64,
+        65,
+        75
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 적색핵척수로 · 다리뇌그물척수로 · 알파운동뉴런 · 방추밖근섬유"
+     }
+    },
+    {
+     "id": "decorticate-rigidity-2",
+     "title": {
+      "ko": "근긴장·자세 출력"
+     },
+     "description": {
+      "ko": "표의 원인–결과 관계를 저장한 교육모형이며 각 나열구조를 모두 직렬 중계한다고 뜻하지 않는다. 사람의 손상범위·시기와 동물 절단실험을 동일시하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        4,
+        64,
+        65,
+        75
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 알파운동뉴런 · 방추밖근섬유"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [],
+   "topology": "lesion-causal-model",
+   "edgeSemantics": "no directional edge asserted",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

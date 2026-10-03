@@ -1,0 +1,470 @@
+{
+ "ours": "spinocerebellar-tracts",
+ "theirs": [
+  {
+   "id": "spinocerebellar-dorsal",
+   "category": "cerebellar",
+   "name": {
+    "ko": "뒤척수소뇌 경로",
+    "en": "Dorsal spinocerebellar tract"
+   },
+   "summary": {
+    "ko": "몸통·하지 고유감각이 클라크기둥에서 중계되어 같은쪽 아래소뇌다리로 전달된다."
+   },
+   "origin": {
+    "ko": "감각·운동정보를 보내는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      48,
+      49
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "spinocerebellar-dorsal-1",
+     "title": {
+      "ko": "말초·척수 입력"
+     },
+     "description": {
+      "ko": "몸통·하지 고유감각이 클라크기둥에서 중계되어 같은쪽 아래소뇌다리로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-clarke",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수신경절 (DRG) · 클라크기둥"
+     }
+    },
+    {
+     "id": "spinocerebellar-dorsal-2",
+     "title": {
+      "ko": "상행·소뇌다리"
+     },
+     "description": {
+      "ko": "해당 섬유가 소뇌다리를 통해 소뇌에 진입한다. 원문에 없는 세부 교차는 표준 해부학 보완으로 구분한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-spinocerebellar-dorsal",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-icp",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 뒤척수소뇌로 · 아래소뇌다리"
+     }
+    },
+    {
+     "id": "spinocerebellar-dorsal-3",
+     "title": {
+      "ko": "소뇌겉질"
+     },
+     "description": {
+      "ko": "이끼섬유 관련 입력이 소뇌 과립·푸르키네 회로에 들어간다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-vermis",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-paravermis",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-granule",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌벌레 · 소뇌벌레곁영역 · 소뇌 과립세포"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "spinocerebellar-dorsal-1",
+     "to": "spinocerebellar-dorsal-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "spinocerebellar-dorsal-2",
+     "to": "spinocerebellar-dorsal-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "spinocerebellar-ventral",
+   "category": "cerebellar",
+   "name": {
+    "ko": "앞척수소뇌 경로",
+    "en": "Ventral spinocerebellar tract"
+   },
+   "summary": {
+    "ko": "척수 운동망 관련 정보가 앞척수소뇌로를 통해 전달된다. 척수 교차 후 소뇌 진입 전후 재교차하여 주로 기원 몸 쪽 소뇌에 도달한다."
+   },
+   "origin": {
+    "ko": "감각·운동정보를 보내는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      48,
+      49
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "spinocerebellar-ventral-1",
+     "title": {
+      "ko": "말초·척수 입력"
+     },
+     "description": {
+      "ko": "척수 운동망 관련 정보가 앞척수소뇌로를 통해 전달된다. 척수 교차 후 소뇌 진입 전후 재교차하여 주로 기원 몸 쪽 소뇌에 도달한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-cord",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수신경절 (DRG) · 척수"
+     }
+    },
+    {
+     "id": "spinocerebellar-ventral-2",
+     "title": {
+      "ko": "상행·소뇌다리"
+     },
+     "description": {
+      "ko": "해당 섬유가 소뇌다리를 통해 소뇌에 진입한다. 원문에 없는 세부 교차는 표준 해부학 보완으로 구분한다."
+     },
+     "structures": [
+      {
+       "id": "tr-scp",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-spinocerebellar-ventral",
+       "side": "contra"
+      },
+      {
+       "id": "tr-scp",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 앞척수소뇌로"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "척수 교차 및 소뇌 진입 전후 재교차"
+     }
+    },
+    {
+     "id": "spinocerebellar-ventral-3",
+     "title": {
+      "ko": "소뇌겉질"
+     },
+     "description": {
+      "ko": "이끼섬유 관련 입력이 소뇌 과립·푸르키네 회로에 들어간다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-vermis",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-paravermis",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-granule",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌벌레 · 소뇌벌레곁영역 · 소뇌 과립세포"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "spinocerebellar-ventral-1",
+     "to": "spinocerebellar-ventral-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "spinocerebellar-ventral-2",
+     "to": "spinocerebellar-ventral-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cuneocerebellar",
+   "category": "cerebellar",
+   "name": {
+    "ko": "쐐기소뇌 경로",
+    "en": "Cuneocerebellar tract"
+   },
+   "summary": {
+    "ko": "상지 고유감각이 바깥쐐기핵에서 중계되어 같은쪽 아래소뇌다리로 전달된다."
+   },
+   "origin": {
+    "ko": "감각·운동정보를 보내는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      48,
+      49
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cuneocerebellar-1",
+     "title": {
+      "ko": "말초·척수 입력"
+     },
+     "description": {
+      "ko": "상지 고유감각이 바깥쐐기핵에서 중계되어 같은쪽 아래소뇌다리로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-external-cuneate",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수신경절 (DRG) · 바깥쐐기핵"
+     }
+    },
+    {
+     "id": "cuneocerebellar-2",
+     "title": {
+      "ko": "상행·소뇌다리"
+     },
+     "description": {
+      "ko": "해당 섬유가 소뇌다리를 통해 소뇌에 진입한다. 원문에 없는 세부 교차는 표준 해부학 보완으로 구분한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-cuneocerebellar",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-icp",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 쐐기소뇌로 · 아래소뇌다리"
+     }
+    },
+    {
+     "id": "cuneocerebellar-3",
+     "title": {
+      "ko": "소뇌겉질"
+     },
+     "description": {
+      "ko": "이끼섬유 관련 입력이 소뇌 과립·푸르키네 회로에 들어간다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-vermis",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-paravermis",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-granule",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        48,
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 소뇌벌레 · 소뇌벌레곁영역 · 소뇌 과립세포"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "cuneocerebellar-1",
+     "to": "cuneocerebellar-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "cuneocerebellar-2",
+     "to": "cuneocerebellar-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

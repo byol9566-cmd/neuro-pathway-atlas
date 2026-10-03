@@ -1,0 +1,1109 @@
+{
+ "ours": "central-auditory-pathway",
+ "theirs": [
+  {
+   "id": "auditory-central",
+   "category": "auditory",
+   "name": {
+    "ko": "청각 중추경로",
+    "en": "Central auditory pathway"
+   },
+   "summary": {
+    "ko": "달팽이→나선신경절→달팽이핵→양측 뇌줄기 청각망→MGN→청각겉질로 전달된다."
+   },
+   "origin": {
+    "ko": "소리를 받는 귀 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      37
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      43,
+      44,
+      45,
+      88
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "auditory-central-1",
+     "title": {
+      "ko": "유모세포 → 나선신경절 → VIII"
+     },
+     "description": {
+      "ko": "속유모세포의 글루탐산 출력이 나선신경절 발화를 유도하고 같은쪽 달팽이신경으로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-inner-hair",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-spiral-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn8-cochlear",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        37
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        43,
+        44,
+        45,
+        88
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속유모세포 · 나선신경절 · 달팽이신경 (VIII)"
+     },
+     "neuronOrder": 1
+    },
+    {
+     "id": "auditory-central-2",
+     "title": {
+      "ko": "같은쪽 달팽이핵"
+     },
+     "description": {
+      "ko": "신호가 같은쪽 달팽이핵군에서 중계된다. 주파수 배열이 유지된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-cochlear",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        37
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        43,
+        44,
+        45,
+        88
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 달팽이핵군"
+     },
+     "neuronOrder": 2
+    },
+    {
+     "id": "auditory-central-3",
+     "title": {
+      "ko": "양쪽 위올리브·가쪽섬유띠"
+     },
+     "description": {
+      "ko": "달팽이핵 이후 신호는 양측으로 분산된다. 위올리브를 거치는 가지와 우회하는 가지가 있어 단일 필수 직렬중계로 단정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-trapezoid-body",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-superior-olive",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-superior-olive",
+       "side": "contra"
+      },
+      {
+       "id": "tr-lateral-lemniscus",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-lateral-lemniscus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        37
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        43,
+        44,
+        45,
+        88
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 사다리꼴체 · 위올리브복합체 · 가쪽섬유띠"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "사다리꼴체 등 여러 뇌줄기 교차 연결"
+     }
+    },
+    {
+     "id": "auditory-central-4",
+     "title": {
+      "ko": "아래둔덕 → MGN"
+     },
+     "description": {
+      "ko": "양쪽 청각망 입력이 아래둔덕·MGN에 전달된다. 양측 표시는 한 축삭이 양쪽 핵을 순서대로 통과한다는 뜻이 아니다."
+     },
+     "structures": [
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "contra"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "contra"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        37
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        43,
+        44,
+        45,
+        88
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "auditory-central-5",
+     "title": {
+      "ko": "청각부챗살 → A1/A2"
+     },
+     "description": {
+      "ko": "MGN 출력이 주로 속섬유막 렌즈핵밑부분의 청각부챗살을 통해 헤슐이랑 A1 및 상위 청각영역으로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-internal-capsule-sublenticular",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-internal-capsule-sublenticular",
+       "side": "contra"
+      },
+      {
+       "id": "tr-auditory-radiation",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-auditory-radiation",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-auditory-a1",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-auditory-a1",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-auditory-a2",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-auditory-a2",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        37
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        43,
+        44,
+        45,
+        88
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 렌즈핵밑부분 · 청각부챗살 · 일차청각겉질 (A1, 헤슐이랑) · 이차청각겉질 (BA 42)"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "달팽이·달팽이신경"
+     },
+     "deficit": {
+      "ko": "같은쪽 감각신경성 난청"
+     },
+     "side": "ipsi"
+    },
+    {
+     "level": {
+      "ko": "달팽이핵보다 위 한쪽 중추"
+     },
+     "deficit": {
+      "ko": "양측 투사 때문에 완전한 일측성 난청보다 음원식별·처리 장애가 중요"
+     }
+    }
+   ],
+   "topology": "bilateral-network",
+   "edges": [
+    {
+     "from": "auditory-central-1",
+     "to": "auditory-central-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "auditory-central-2",
+     "to": "auditory-central-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "auditory-central-3",
+     "to": "auditory-central-4",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "auditory-central-4",
+     "to": "auditory-central-5",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network",
+   "externalReferenceIds": [
+    "primary-internal-capsule",
+    "primary-auditory-radiation"
+   ]
+  },
+  {
+   "id": "auditory-itd",
+   "category": "auditory",
+   "name": {
+    "ko": "양귀 시간차 음원식별 (ITD)",
+    "en": "Interaural time difference pathway"
+   },
+   "summary": {
+    "ko": "양쪽 AVCN의 흥분성 입력이 MSO에서 시간일치를 비교한다."
+   },
+   "origin": {
+    "ko": "소리가 더 먼저 도달하는 귀 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      45
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "auditory-itd-1",
+     "title": {
+      "ko": "양귀 AVCN"
+     },
+     "description": {
+      "ko": "양쪽 귀의 달팽이입력이 각 AVCN에 도달한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-avcn",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-avcn",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        45
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 앞배쪽달팽이핵 (AVCN)"
+     }
+    },
+    {
+     "id": "auditory-itd-2",
+     "title": {
+      "ko": "MSO 시간일치 검출"
+     },
+     "description": {
+      "ko": "MSO 뉴런이 양귀 흥분성 입력의 상대 도착시간을 비교한다. 원문 coincidence detector는 교육용 모형이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-mso",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-mso",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        45
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 안쪽위올리브 (MSO)"
+     }
+    },
+    {
+     "id": "auditory-itd-3",
+     "title": {
+      "ko": "상위 음원 정보"
+     },
+     "description": {
+      "ko": "시간차 정보가 상위 청각망에 전달되어 수평 음원위치를 추정하는 데 기여한다."
+     },
+     "structures": [
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "contra"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "contra"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-auditory-a1",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-auditory-a1",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        45
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차청각겉질 (A1, 헤슐이랑)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "auditory-itd-1",
+     "to": "auditory-itd-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "auditory-itd-2",
+     "to": "auditory-itd-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "auditory-iid",
+   "category": "auditory",
+   "name": {
+    "ko": "양귀 강도차 음원식별 (IID/ILD)",
+    "en": "Interaural level difference pathway"
+   },
+   "summary": {
+    "ko": "AVCN의 같은쪽 LSO 흥분과 반대쪽 MNTB–LSO 억제가 소리강도차를 비교한다."
+   },
+   "origin": {
+    "ko": "더 큰 소리를 받는 귀 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      45
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "auditory-iid-1",
+     "title": {
+      "ko": "AVCN 두 출력"
+     },
+     "description": {
+      "ko": "SBC 출력은 같은쪽 LSO를 흥분시킨다. GBC 출력은 교차해 반대쪽 MNTB에 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-avcn",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-lso",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-mntb",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        45
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 앞배쪽달팽이핵 (AVCN) · 가쪽위올리브 (LSO) · 사다리꼴체 안쪽핵 (MNTB)"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "사다리꼴체 경로"
+     }
+    },
+    {
+     "id": "auditory-iid-2",
+     "title": {
+      "ko": "MNTB → 반대쪽 LSO 억제"
+     },
+     "description": {
+      "ko": "MNTB의 억제성 출력이 자신과 같은쪽 LSO, 즉 귀 기준 반대쪽 LSO를 억제한다. MNTB–LSO는 추가 교차가 아니다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-mntb",
+       "side": "contra"
+      },
+      {
+       "id": "bs-lso",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        45
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 사다리꼴체 안쪽핵 (MNTB) · 가쪽위올리브 (LSO)"
+     },
+     "transmitter": "glycine"
+    },
+    {
+     "id": "auditory-iid-3",
+     "title": {
+      "ko": "양쪽 LSO의 상대활성"
+     },
+     "description": {
+      "ko": "귀 기준 같은쪽 LSO 흥분과 반대쪽 LSO 억제의 차이가 음원방향 정보에 기여한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-lso",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-lso",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        45
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽위올리브 (LSO)"
+     }
+    }
+   ],
+   "lesions": [],
+   "topology": "branched-comparison",
+   "edges": [
+    {
+     "from": "auditory-iid-1",
+     "to": "auditory-iid-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "auditory-iid-2",
+     "to": "auditory-iid-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "auditory-tonotopy",
+   "category": "auditory",
+   "name": {
+    "ko": "청각 주파수·강도 부호화",
+    "en": "Auditory frequency and intensity coding"
+   },
+   "summary": {
+    "ko": "바닥막의 위치부호와 구심발화의 시간·빈도 정보가 주파수·강도를 부호화한다."
+   },
+   "origin": {
+    "ko": "소리를 받는 귀 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      41,
+      43,
+      44
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "auditory-tonotopy-1",
+     "title": {
+      "ko": "바닥막 위치부호"
+     },
+     "description": {
+      "ko": "바닥쪽은 높은 주파수, 꼭대기쪽은 낮은 주파수에 민감하다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-basilar-membrane",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-inner-hair",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        41,
+        43,
+        44
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 바닥막 · 속유모세포"
+     }
+    },
+    {
+     "id": "auditory-tonotopy-2",
+     "title": {
+      "ko": "나선신경절 발화"
+     },
+     "description": {
+      "ko": "강한 소리는 발화율·모집을 변화시키고 낮은 주파수에서는 phase locking이 시간정보를 제공한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-spiral-ganglion",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        41,
+        43,
+        44
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 나선신경절"
+     }
+    },
+    {
+     "id": "auditory-tonotopy-3",
+     "title": {
+      "ko": "중추 주파수 배열"
+     },
+     "description": {
+      "ko": "달팽이핵에서 A1까지 주파수 배열이 유지되며 EE/EI 양귀반응망이 정보를 통합한다."
+     },
+     "structures": [
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "contra"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-cochlear",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-inferior-colliculus",
+       "side": "contra"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-auditory-a1",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-auditory-a1",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        41,
+        43,
+        44
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 달팽이핵군 · 일차청각겉질 (A1, 헤슐이랑)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "auditory-tonotopy-1",
+     "to": "auditory-tonotopy-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "auditory-tonotopy-2",
+     "to": "auditory-tonotopy-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "acoustic-attenuation-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "음향 감쇠반사",
+    "en": "Acoustic attenuation reflex"
+   },
+   "summary": {
+    "ko": "큰 소리의 중추입력이 등자근·고막긴장근 수축을 통해 중이 전달을 조절한다."
+   },
+   "origin": {
+    "ko": "소리를 받는 귀 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      22
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      40
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "acoustic-attenuation-reflex-1",
+     "title": {
+      "ko": "청각구심"
+     },
+     "description": {
+      "ko": "소리가 달팽이신경을 통해 달팽이핵에 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn8-cochlear",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-cochlear",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        40
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 달팽이신경 (VIII) · 달팽이핵군"
+     }
+    },
+    {
+     "id": "acoustic-attenuation-reflex-2",
+     "title": {
+      "ko": "뇌줄기 운동출력"
+     },
+     "description": {
+      "ko": "정리본은 반응근을 제시하지만 중계핵 세부는 생략한다. VII 얼굴운동핵의 등자근 가지와 V 운동핵의 고막긴장근 가지를 표준 연결로 보완했다."
+     },
+     "structures": [
+      {
+       "id": "bs-facial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-facial",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-facial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-facial",
+       "side": "contra"
+      },
+      {
+       "id": "bs-trigeminal-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-trigeminal-motor",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        40
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 운동핵"
+     }
+    },
+    {
+     "id": "acoustic-attenuation-reflex-3",
+     "title": {
+      "ko": "중이근 수축"
+     },
+     "description": {
+      "ko": "등자근(VII)·고막긴장근(V3)이 중이 움직임을 조절한다. 임상 음향반사 검사는 주로 등자근반사를 평가한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn7",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn7",
+       "side": "contra"
+      },
+      {
+       "id": "ef-stapedius",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-stapedius",
+       "side": "contra"
+      },
+      {
+       "id": "pn-cn5-v3",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn5-v3",
+       "side": "contra"
+      },
+      {
+       "id": "ef-tensor-tympani",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-tensor-tympani",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        40
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 얼굴신경 (VII) · 등자근 · 아래턱신경 (V3) · 고막긴장근"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "acoustic-attenuation-reflex-1",
+     "to": "acoustic-attenuation-reflex-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "acoustic-attenuation-reflex-2",
+     "to": "acoustic-attenuation-reflex-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

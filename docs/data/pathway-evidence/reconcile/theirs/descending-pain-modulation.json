@@ -1,0 +1,666 @@
+{
+ "ours": "descending-pain-modulation",
+ "theirs": [
+  {
+   "id": "pain-descending-serotonin",
+   "category": "pain",
+   "name": {
+    "ko": "PAG–RVM 하행 통각조절",
+    "en": "Descending pain modulation: serotonin"
+   },
+   "summary": {
+    "ko": "PAG에서 뇌줄기 조절핵을 거쳐 척수 뒤뿔의 통각전달을 조절한다. 억제뿐 아니라 상태·수용체에 따른 촉진도 가능하다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      15,
+      17,
+      18
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "pain-descending-serotonin-1",
+     "title": {
+      "ko": "상위 조절 → PAG"
+     },
+     "description": {
+      "ko": "정서·상황·기억 등이 PAG 관련 하행계에 영향을 준다. PAG 자극은 통각 억제를 유발할 수 있다."
+     },
+     "structures": [
+      {
+       "id": "bs-pag",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pag",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-pag",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pag",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        15,
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "pain-descending-serotonin-2",
+     "title": {
+      "ko": "PAG → 뇌줄기 조절핵"
+     },
+     "description": {
+      "ko": "PAG가 입쪽배안쪽숨뇌 (RVM) 관련 하행 조절계를 모집한다. RVM의 모든 세포를 5-HT 뉴런으로 동일시하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-rvm",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-rvm",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        15,
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 입쪽배안쪽숨뇌 (RVM)"
+     },
+     "transmitter": "serotonin"
+    },
+    {
+     "id": "pain-descending-serotonin-3",
+     "title": {
+      "ko": "뒤뿔 통각전달 조절"
+     },
+     "description": {
+      "ko": "하행 섬유가 뒤뿔의 투사뉴런과 억제성사이뉴런에 영향을 준다. 5-HT 가지의 엔케팔린 사이뉴런 연결은 정리본에 명시되어 있다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-dorsal-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-dorsal-horn",
+       "side": "contra"
+      },
+      {
+       "id": "sp-inhibitory-interneuron",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-inhibitory-interneuron",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        15,
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 뒤뿔 · 척수 억제성사이뉴런"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "pain-descending-serotonin-1",
+     "to": "pain-descending-serotonin-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "pain-descending-serotonin-2",
+     "to": "pain-descending-serotonin-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "pain-descending-norepinephrine",
+   "category": "pain",
+   "name": {
+    "ko": "PAG–청색반점 하행 통각조절",
+    "en": "Descending pain modulation: norepinephrine"
+   },
+   "summary": {
+    "ko": "PAG에서 뇌줄기 조절핵을 거쳐 척수 뒤뿔의 통각전달을 조절한다. 억제뿐 아니라 상태·수용체에 따른 촉진도 가능하다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      15,
+      17,
+      18
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "pain-descending-norepinephrine-1",
+     "title": {
+      "ko": "상위 조절 → PAG"
+     },
+     "description": {
+      "ko": "정서·상황·기억 등이 PAG 관련 하행계에 영향을 준다. PAG 자극은 통각 억제를 유발할 수 있다."
+     },
+     "structures": [
+      {
+       "id": "bs-pag",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pag",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-pag",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pag",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        15,
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "pain-descending-norepinephrine-2",
+     "title": {
+      "ko": "PAG → 뇌줄기 조절핵"
+     },
+     "description": {
+      "ko": "PAG가 청색반점 (NextBrain) 관련 하행 조절계를 모집한다. RVM의 모든 세포를 5-HT 뉴런으로 동일시하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "bs-lc-nextbrain",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-lc-nextbrain",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-lc-nextbrain",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-lc-nextbrain",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        15,
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "transmitter": "norepinephrine"
+    },
+    {
+     "id": "pain-descending-norepinephrine-3",
+     "title": {
+      "ko": "뒤뿔 통각전달 조절"
+     },
+     "description": {
+      "ko": "하행 섬유가 뒤뿔의 투사뉴런과 억제성사이뉴런에 영향을 준다. 5-HT 가지의 엔케팔린 사이뉴런 연결은 정리본에 명시되어 있다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-dorsal-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-dorsal-horn",
+       "side": "contra"
+      },
+      {
+       "id": "sp-inhibitory-interneuron",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-inhibitory-interneuron",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        15,
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 뒤뿔 · 척수 억제성사이뉴런"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "pain-descending-norepinephrine-1",
+     "to": "pain-descending-norepinephrine-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "pain-descending-norepinephrine-2",
+     "to": "pain-descending-norepinephrine-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "opioid-analgesia",
+   "category": "pain",
+   "name": {
+    "ko": "오피오이드 하행·척수 진통",
+    "en": "Opioid modulation of descending and spinal analgesia"
+   },
+   "summary": {
+    "ko": "PAG 탈억제와 척수 시냅스 조절이 통증전달을 감소시킨다."
+   },
+   "origin": {
+    "ko": "통증입력을 받는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-plus-experimental-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      17,
+      18
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "opioid-analgesia-1",
+     "title": {
+      "ko": "PAG 탈억제"
+     },
+     "description": {
+      "ko": "오피오이드가 GABA 입력·방출을 억제하여 PAG의 하행출력 뉴런을 탈억제할 수 있다. 상세 GABA 가지는 원문의 수용체·하행기전 설명을 실험문헌으로 보완했다."
+     },
+     "structures": [
+      {
+       "id": "bs-pag",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-pag",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-presynaptic",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시냅스앞말단"
+     },
+     "molecules": [
+      "mu opioid receptor"
+     ]
+    },
+    {
+     "id": "opioid-analgesia-2",
+     "title": {
+      "ko": "하행 진통망"
+     },
+     "description": {
+      "ko": "PAG–RVM 및 NE 관련 하행망이 척수 통각전달을 조절한다. RVM 출력은 세포형에 따라 억제·촉진 양방향이므로 전체를 항상 억제성 축삭으로 고정하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "bs-lc-nextbrain",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-rvm",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-lc-nextbrain",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-dorsal-horn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 입쪽배안쪽숨뇌 (RVM) · 척수 뒤뿔"
+     }
+    },
+    {
+     "id": "opioid-analgesia-3",
+     "title": {
+      "ko": "척수 국소 효과"
+     },
+     "description": {
+      "ko": "시냅스앞 통각 전달물질 방출 감소·시냅스뒤 흥분성 감소 등이 통증전달을 줄인다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-dorsal-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-presynaptic",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-postsynaptic",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 뒤뿔 · 시냅스앞말단 · 시냅스뒤막·가지돌기가시"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "opioid-analgesia-1",
+     "to": "opioid-analgesia-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "opioid-analgesia-2",
+     "to": "opioid-analgesia-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network",
+   "externalReferenceIds": [
+    "primary-opioid"
+   ]
+  },
+  {
+   "id": "pain-gate-control",
+   "category": "pain",
+   "name": {
+    "ko": "통각 관문조절",
+    "en": "Gate control of pain"
+   },
+   "summary": {
+    "ko": "Aβ 촉각입력이 뒤뿔 억제성회로를 활성화해 통각전달을 줄이는 모형이다."
+   },
+   "origin": {
+    "ko": "촉각·통각 자극을 받는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      17
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "pain-gate-control-1",
+     "title": {
+      "ko": "Aβ 입력"
+     },
+     "description": {
+      "ko": "주변 피부의 무해 촉각입력이 Aβ 구심축삭을 통해 뒤뿔로 들어온다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-skin-mechanoreceptors",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-dorsal-horn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 피부 기계수용기 · 척수신경절 (DRG) · 척수 뒤뿔"
+     }
+    },
+    {
+     "id": "pain-gate-control-2",
+     "title": {
+      "ko": "관문 닫힘"
+     },
+     "description": {
+      "ko": "억제성사이뉴런이 통각구심 말단·투사뉴런 전달을 억제한다. Aδ/C 입력이 우세하면 관문이 열리는 방향으로 변한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-substantia-gelatinosa",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-inhibitory-interneuron",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-presynaptic",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아교질 (Rexed II) · 척수 억제성사이뉴런 · 시냅스앞말단"
+     }
+    },
+    {
+     "id": "pain-gate-control-3",
+     "title": {
+      "ko": "상행 통각 감소"
+     },
+     "description": {
+      "ko": "뒤뿔 통각 투사뉴런의 발화가 감소해 척수시상계를 통한 신호가 줄어든다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-spinothalamic-lateral",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽척수시상로"
+     }
+    }
+   ],
+   "lesions": [],
+   "memo": "구심섬유별 관문은 정리본의 교육용 모형. 모든 회로가 단일 억제사이뉴런으로 구현된다고 확정하지 않음.",
+   "edges": [
+    {
+     "from": "pain-gate-control-1",
+     "to": "pain-gate-control-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "pain-gate-control-2",
+     "to": "pain-gate-control-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

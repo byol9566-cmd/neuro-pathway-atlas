@@ -1,0 +1,854 @@
+{
+ "ours": "amygdala-fear-circuit",
+ "theirs": [
+  {
+   "id": "fear-auditory-cued",
+   "category": "limbic",
+   "name": {
+    "ko": "청각 단서 공포조건화",
+    "en": "Auditory-cued fear conditioning"
+   },
+   "summary": {
+    "ko": "청각 입력과 유해입력이 LA에 수렴하여 공포학습·출력망을 활성화한다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      104,
+      105,
+      106,
+      107
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "fear-auditory-cued-1",
+     "title": {
+      "ko": "청각 CS 입력"
+     },
+     "description": {
+      "ko": "MGN·청각겉질의 입력이 가쪽편도체에 전달된다. 시상-LA 직접 가지와 겉질-LA 가지가 있다."
+     },
+     "structures": [
+      {
+       "id": "thal-mgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-mgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-auditory-a1",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-auditory-a1",
+       "side": "contra"
+      },
+      {
+       "id": "lim-amygdala-la",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala-la",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        104,
+        105,
+        106,
+        107
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차청각겉질 (A1, 헤슐이랑) · 편도체 가쪽핵 (LA)"
+     }
+    },
+    {
+     "id": "fear-auditory-cued-2",
+     "title": {
+      "ko": "유해 US·연합 가소성"
+     },
+     "description": {
+      "ko": "발바닥 충격 등의 입력이 VPL·몸감각겉질을 통해 LA 관련망에 도달하며 CS/US 연합 가소성이 형성된다."
+     },
+     "structures": [
+      {
+       "id": "thal-vpl",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vpl",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-vpl",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vpl",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "contra"
+      },
+      {
+       "id": "lim-amygdala-la",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala-la",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        104,
+        105,
+        106,
+        107
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 편도체 가쪽핵 (LA)"
+     }
+    },
+    {
+     "id": "fear-auditory-cued-3",
+     "title": {
+      "ko": "편도체 중심핵 출력"
+     },
+     "description": {
+      "ko": "LA/BA 및 억제성 중계망이 CeA 출력을 조절한다. LA→CE를 모든 세포가 흥분성 직결이라는 단순 부호로 확정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "lim-amygdala-ba",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala-ba",
+       "side": "contra"
+      },
+      {
+       "id": "lim-amygdala-ce",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala-ce",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        104,
+        105,
+        106,
+        107
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 편도체 바닥핵 (BA) · 편도체 중심핵 (CeA)"
+     }
+    },
+    {
+     "id": "fear-auditory-cued-4",
+     "title": {
+      "ko": "뇌줄기·시상하부 공포반응"
+     },
+     "description": {
+      "ko": "뇌줄기·시상하부 출력이 freezing·자율신경·스트레스 반응에 참여한다. 공포 freeezing은 떨림보다 움직임 억제의 의미다."
+     },
+     "structures": [
+      {
+       "id": "bs-pag",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pag",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-reticular-formation",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "contra"
+      },
+      {
+       "id": "bs-pag",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pag",
+       "side": "contra"
+      },
+      {
+       "id": "hyp-hypothalamus",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-hypothalamus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        104,
+        105,
+        106,
+        107
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 그물체 · 시상하부"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "편도체 관련망"
+     },
+     "deficit": {
+      "ko": "공포표현·얼굴 공포 인식 등 장애 가능"
+     }
+    }
+   ],
+   "species": "rodent-study-with-human-functional-context",
+   "topology": "convergent-learning-network",
+   "edges": [
+    {
+     "from": "fear-auditory-cued-1",
+     "to": "fear-auditory-cued-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "fear-auditory-cued-2",
+     "to": "fear-auditory-cued-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "fear-auditory-cued-3",
+     "to": "fear-auditory-cued-4",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "fear-contextual",
+   "category": "limbic",
+   "name": {
+    "ko": "맥락 공포조건화",
+    "en": "Contextual fear conditioning"
+   },
+   "summary": {
+    "ko": "해마의 맥락표현이 BA·CeA 출력망과 연결되어 특정 공간의 공포반응을 유발한다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      79,
+      105
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "fear-contextual-1",
+     "title": {
+      "ko": "공간·맥락표현"
+     },
+     "description": {
+      "ko": "상황·공간정보가 해마에 결합된다."
+     },
+     "structures": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        79,
+        105
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "fear-contextual-2",
+     "title": {
+      "ko": "해마 → BA"
+     },
+     "description": {
+      "ko": "해마 맥락정보가 바닥편도체 관련망에 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "lim-amygdala-ba",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala-ba",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        79,
+        105
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 편도체 바닥핵 (BA)"
+     }
+    },
+    {
+     "id": "fear-contextual-3",
+     "title": {
+      "ko": "CeA → 뇌줄기"
+     },
+     "description": {
+      "ko": "CeA 관련 출력이 공포행동을 유도한다."
+     },
+     "structures": [
+      {
+       "id": "bs-pag",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pag",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-amygdala-ce",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala-ce",
+       "side": "contra"
+      },
+      {
+       "id": "bs-pag",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-pag",
+       "side": "contra"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        79,
+        105
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 편도체 중심핵 (CeA) · 그물체"
+     }
+    }
+   ],
+   "lesions": [],
+   "species": "rodent-study",
+   "edges": [
+    {
+     "from": "fear-contextual-1",
+     "to": "fear-contextual-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "fear-contextual-2",
+     "to": "fear-contextual-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "fear-return",
+   "category": "learning",
+   "name": {
+    "ko": "공포소거 후 재출현",
+    "en": "Return of fear after extinction"
+   },
+   "summary": {
+    "ko": "재설치·자발적 회복·맥락갱신은 소거가 기존 공포기억의 완전 삭제가 아님을 보여주는 실험이다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      108
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "fear-return-1",
+     "title": {
+      "ko": "Reinstatement"
+     },
+     "description": {
+      "ko": "소거 후 US 재제시가 공포반응 재출현을 유발할 수 있다. US 자체 즉각반응과 이후 CS 반응 재설치를 구분한다."
+     },
+     "structures": [
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        108
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "fear-return-2",
+     "title": {
+      "ko": "Spontaneous recovery"
+     },
+     "description": {
+      "ko": "소거 후 시간이 지나면 CS 공포반응이 회복될 수 있다."
+     },
+     "structures": [
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-vmpfc",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-vmpfc",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        108
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 배쪽안쪽전전두겉질 (vmPFC)"
+     }
+    },
+    {
+     "id": "fear-return-3",
+     "title": {
+      "ko": "Renewal"
+     },
+     "description": {
+      "ko": "소거 맥락에서 벗어나 원래 학습맥락 등으로 옮길 때 반응이 회복될 수 있다. A·B 양쪽에서 항상 동일하게 재출현한다고 고정하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "contra"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "contra"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-vmpfc",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-vmpfc",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        108
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 배쪽안쪽전전두겉질 (vmPFC)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [],
+   "topology": "three-experimental-paradigms",
+   "processType": "learning-process",
+   "edgeSemantics": "no directional edge asserted"
+  },
+  {
+   "id": "amygdala-thalamic-ltp",
+   "category": "learning",
+   "name": {
+    "ko": "시상–LA LTP",
+    "en": "Thalamo-amygdala long-term potentiation"
+   },
+   "summary": {
+    "ko": "NMDA/VDCC·시냅스뒤 탈분극과 AMPA 변화가 시상–LA 시냅스 가소성에 관여한다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-experimental-model",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      106,
+      107
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "amygdala-thalamic-ltp-1",
+     "title": {
+      "ko": "LA 입력"
+     },
+     "description": {
+      "ko": "NMDA/VDCC·시냅스뒤 탈분극과 AMPA 변화가 시상–LA 시냅스 가소성에 관여한다."
+     },
+     "structures": [
+      {
+       "id": "thal-mgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-mgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-mgn",
+       "side": "contra"
+      },
+      {
+       "id": "lim-amygdala-la",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala-la",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        106,
+        107
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 편도체 가쪽핵 (LA)"
+     }
+    },
+    {
+     "id": "amygdala-thalamic-ltp-2",
+     "title": {
+      "ko": "가소성 발현"
+     },
+     "description": {
+      "ko": "원문 모형에서 postsynaptic 발현이 강조된다. 동일 LA에서도 모든 시냅스가 한 기전을 공유한다고 단정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "lim-amygdala-la",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala-la",
+       "side": "contra"
+      },
+      {
+       "id": "cell-presynaptic",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-postsynaptic",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        106,
+        107
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 편도체 가쪽핵 (LA) · 시냅스앞말단 · 시냅스뒤막·가지돌기가시"
+     }
+    },
+    {
+     "id": "amygdala-thalamic-ltp-3",
+     "title": {
+      "ko": "억제성 관문"
+     },
+     "description": {
+      "ko": "feed-forward 억제와 시냅스앞/뒤 GABAB 작용이 전달·LTP 유도를 조절한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "lim-amygdala-la",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala-la",
+       "side": "contra"
+      },
+      {
+       "id": "cell-presynaptic",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-postsynaptic",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        106,
+        107
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 편도체 가쪽핵 (LA) · 시냅스앞말단 · 시냅스뒤막·가지돌기가시"
+     },
+     "transmitter": "GABA"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "amygdala-thalamic-ltp-1",
+     "to": "amygdala-thalamic-ltp-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "amygdala-thalamic-ltp-2",
+     "to": "amygdala-thalamic-ltp-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

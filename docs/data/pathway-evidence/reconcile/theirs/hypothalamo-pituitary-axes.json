@@ -1,0 +1,308 @@
+{
+ "ours": "hypothalamo-pituitary-axes",
+ "theirs": [
+  {
+   "id": "hypothalamic-anterior-pituitary",
+   "category": "neuroendocrine",
+   "name": {
+    "ko": "시상하부–뇌하수체앞엽·음성되먹임",
+    "en": "Hypothalamo-adenohypophyseal endocrine axis"
+   },
+   "summary": {
+    "ko": "소세포 조절호르몬→문맥혈관→앞엽→표적샘 호르몬과 음성되먹임을 구분한다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      39
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "hypothalamic-anterior-pituitary-1",
+     "title": {
+      "ko": "시상하부 → 정중융기"
+     },
+     "description": {
+      "ko": "시상하부 소세포뉴런의 조절호르몬이 정중융기 문맥계에 분비된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "hyp-hypothalamus",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-hypothalamus",
+       "side": "contra"
+      },
+      {
+       "id": "end-median-eminence",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        39
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시상하부 · 정중융기·뇌하수체 문맥계"
+     }
+    },
+    {
+     "id": "hypothalamic-anterior-pituitary-2",
+     "title": {
+      "ko": "문맥 → 앞엽"
+     },
+     "description": {
+      "ko": "조절호르몬은 신경 축삭으로 앞엽 세포까지 직접 이어지는 대신 문맥혈류를 통해 도달한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "end-median-eminence",
+       "side": "ipsi"
+      },
+      {
+       "id": "end-ant-pituitary",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        39
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 정중융기·뇌하수체 문맥계 · 뇌하수체앞엽"
+     },
+     "signalMode": "endocrine"
+    },
+    {
+     "id": "hypothalamic-anterior-pituitary-3",
+     "title": {
+      "ko": "앞엽 → 표적샘"
+     },
+     "description": {
+      "ko": "ACTH/TSH/성선자극호르몬 등은 표적샘에 작용하며 표적호르몬은 시상하부·앞엽에 음성되먹임을 준다. PRL/GH의 조절은 전형적인 세 단계 축과 구분할 필요가 있다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "end-ant-pituitary",
+       "side": "ipsi"
+      },
+      {
+       "id": "end-adrenal-cortex",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        39
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 뇌하수체앞엽 · 부신겉질"
+     },
+     "signalMode": "endocrine"
+    }
+   ],
+   "lesions": [],
+   "topology": "endocrine-feedback",
+   "edges": [
+    {
+     "from": "hypothalamic-anterior-pituitary-1",
+     "to": "hypothalamic-anterior-pituitary-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "hypothalamic-anterior-pituitary-2",
+     "to": "hypothalamic-anterior-pituitary-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "hypothalamic-posterior-pituitary",
+   "category": "neuroendocrine",
+   "name": {
+    "ko": "시상하부–뇌하수체뒤엽",
+    "en": "Hypothalamo-neurohypophyseal pathway"
+   },
+   "summary": {
+    "ko": "시상하부 거대세포뉴런이 만든 ADH·옥시토신을 축삭말단에서 혈중으로 분비한다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      39
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "hypothalamic-posterior-pituitary-1",
+     "title": {
+      "ko": "거대세포 합성"
+     },
+     "description": {
+      "ko": "시상하부 거대세포뉴런이 ADH·옥시토신을 합성한다. SON/PVN 핵 구분은 원문의 거대세포 설명을 표준 해부학으로 보완했다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "hyp-son",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-son",
+       "side": "contra"
+      },
+      {
+       "id": "hyp-pvn",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-pvn",
+       "side": "contra"
+      },
+      {
+       "id": "cell-soma",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        39
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시각위핵 (SON) · 뇌실곁핵 (PVN) · 신경세포 세포체"
+     }
+    },
+    {
+     "id": "hypothalamic-posterior-pituitary-2",
+     "title": {
+      "ko": "축삭운반 → 뒤엽"
+     },
+     "description": {
+      "ko": "펩타이드가 축삭을 따라 뇌하수체뒤엽으로 운반된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cell-axon",
+       "side": "ipsi"
+      },
+      {
+       "id": "end-post-pituitary",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        39
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 축삭·축삭언덕 · 뇌하수체뒤엽"
+     }
+    },
+    {
+     "id": "hypothalamic-posterior-pituitary-3",
+     "title": {
+      "ko": "혈중분비"
+     },
+     "description": {
+      "ko": "뉴런 말단에서 혈액으로 분비된다. 뒤엽이 해당 호르몬을 자체 합성하는 내분비세포체가 아니다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "end-post-pituitary",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        39
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 뇌하수체뒤엽"
+     },
+     "transmitter": "vasopressin / oxytocin"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "hypothalamic-posterior-pituitary-1",
+     "to": "hypothalamic-posterior-pituitary-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "hypothalamic-posterior-pituitary-2",
+     "to": "hypothalamic-posterior-pituitary-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

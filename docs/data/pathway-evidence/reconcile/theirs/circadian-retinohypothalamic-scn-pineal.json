@@ -1,0 +1,382 @@
+{
+ "ours": "circadian-retinohypothalamic-scn-pineal",
+ "theirs": [
+  {
+   "id": "circadian-retina-scn",
+   "category": "arousal",
+   "name": {
+    "ko": "망막–SCN 일주기 동조",
+    "en": "Retinal-SCN circadian entrainment"
+   },
+   "summary": {
+    "ko": "멜라놉신 망막신경절세포 입력이 SCN의 일주기 시계를 빛-어둠 주기에 맞춘다."
+   },
+   "origin": {
+    "ko": "빛을 받는 눈 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      38
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      91
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "circadian-retina-scn-1",
+     "title": {
+      "ko": "멜라놉신 광수용"
+     },
+     "description": {
+      "ko": "ipRGC는 멜라놉신을 발현하며 자체 광반응과 막대·원뿔 입력으로 환경 빛정보를 제공한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-iprgc",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-retina",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        38
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        91
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 멜라놉신 망막신경절세포 · 망막"
+     }
+    },
+    {
+     "id": "circadian-retina-scn-2",
+     "title": {
+      "ko": "망막시상하부로 → SCN"
+     },
+     "description": {
+      "ko": "망막 입력이 SCN에 전달된다. 정중선 시각교차위핵에 대한 눈 기준 좌우는 단순 한쪽 고정 대신 양측망으로 표현한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-retinohypothalamic",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-scn",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-scn",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        38
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        91
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 망막시상하부로 · 시각교차위핵 (SCN, 일주기)"
+     }
+    },
+    {
+     "id": "circadian-retina-scn-3",
+     "title": {
+      "ko": "일주기 동조"
+     },
+     "description": {
+      "ko": "SCN 시계가 수면-각성·신경내분비 리듬을 조정한다. SCN은 시상이 아니라 시상하부 핵이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "hyp-scn",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-scn",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        38
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        91
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시각교차위핵 (SCN, 일주기)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "circadian-retina-scn-1",
+     "to": "circadian-retina-scn-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "circadian-retina-scn-2",
+     "to": "circadian-retina-scn-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "scn-pineal",
+   "category": "arousal",
+   "name": {
+    "ko": "SCN–솔방울샘 멜라토닌 조절",
+    "en": "SCN control of pineal melatonin"
+   },
+   "summary": {
+    "ko": "SCN의 시간정보가 다중시냅스 자율신경 경로를 통해 솔방울샘 멜라토닌 분비를 조절한다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      38,
+      39
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      2,
+      91
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "scn-pineal-1",
+     "title": {
+      "ko": "SCN 시계출력"
+     },
+     "description": {
+      "ko": "SCN은 일주기 정보를 하위 시상하부망에 전달한다. 정리본은 SCN→솔방울샘의 기능적 연결만 제시한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "hyp-scn",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-scn",
+       "side": "contra"
+      },
+      {
+       "id": "hyp-pvn",
+       "side": "ipsi"
+      },
+      {
+       "id": "hyp-pvn",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        38,
+        39
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        2,
+        91
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시각교차위핵 (SCN, 일주기) · 뇌실곁핵 (PVN)"
+     }
+    },
+    {
+     "id": "scn-pineal-2",
+     "title": {
+      "ko": "교감 다중중계"
+     },
+     "description": {
+      "ko": "PVN–척수 IML–위목신경절 연결은 표준 신경해부학 보완이다. SCN이 솔방울샘에 직접 축삭 한 개로 연결되는 것으로 보지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-iml",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-iml",
+       "side": "contra"
+      },
+      {
+       "id": "pn-superior-cervical",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-superior-cervical",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        38,
+        39
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        2,
+        91
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 중간가쪽세포기둥 (IML) · 위목신경절"
+     }
+    },
+    {
+     "id": "scn-pineal-3",
+     "title": {
+      "ko": "솔방울샘 분비"
+     },
+     "description": {
+      "ko": "절후 교감신호가 솔방울샘의 멜라토닌 합성·분비를 조절한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "end-pineal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        38,
+        39
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        2,
+        91
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 솔방울샘"
+     },
+     "transmitter": "norepinephrine"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "scn-pineal-1",
+     "to": "scn-pineal-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "scn-pineal-2",
+     "to": "scn-pineal-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

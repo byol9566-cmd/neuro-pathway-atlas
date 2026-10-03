@@ -1,0 +1,287 @@
+{
+ "ours": "central-autonomic-control-micturition",
+ "theirs": [
+  {
+   "id": "autonomic-micturition",
+   "category": "autonomic",
+   "name": {
+    "ko": "배뇨·저장 자율신경 협응",
+    "en": "Autonomic storage and voiding coordination"
+   },
+   "summary": {
+    "ko": "배뇨는 부교감 배뇨근 수축과 교감·체성 저장출력 감소를 함께 필요로 한다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-plus-correction",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      100
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "autonomic-micturition-1",
+     "title": {
+      "ko": "저장 상태"
+     },
+     "description": {
+      "ko": "교감출력은 배뇨근 이완과 방광목/근위요도 수축을 돕는다. 음부신경 체성출력은 외요도조임근 수축에 기여한다. 원문의 교감→내요도조임근 이완은 교정했다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-iml",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-iml",
+       "side": "contra"
+      },
+      {
+       "id": "pn-sympathetic-chain",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-sympathetic-chain",
+       "side": "contra"
+      },
+      {
+       "id": "ef-bladder",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-urethral-sphincter",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-pudendal",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-pudendal",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 중간가쪽세포기둥 (IML) · 교감신경줄기·척추옆신경절 · 방광배뇨근 · 요도조임근군 · 음부신경"
+     }
+    },
+    {
+     "id": "autonomic-micturition-2",
+     "title": {
+      "ko": "배뇨 상태"
+     },
+     "description": {
+      "ko": "S2–4 부교감 출력이 배뇨근을 수축시키고 저장 관련 교감·외조임근 출력을 낮추는 협응이 필요하다. 원문은 중추 배뇨중계핵을 주지 않아 추가핵을 만들지 않았다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-sacral-parasympathetic",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-sacral-parasympathetic",
+       "side": "contra"
+      },
+      {
+       "id": "pn-pelvic-splanchnic",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-pelvic-splanchnic",
+       "side": "contra"
+      },
+      {
+       "id": "ef-bladder",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-urethral-sphincter",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 엉치부교감핵 (S2~4) · 골반내장신경 · 방광배뇨근 · 요도조임근군"
+     }
+    }
+   ],
+   "lesions": [],
+   "topology": "alternative-states",
+   "edges": [],
+   "edgeSemantics": "no directional edge asserted",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "parasympathetic-sacral",
+   "category": "autonomic",
+   "name": {
+    "ko": "엉치 부교감 출력",
+    "en": "Sacral parasympathetic outflow"
+   },
+   "summary": {
+    "ko": "S2–4 절전뉴런→골반내장신경→장기 인접 신경절→골반내장 출력."
+   },
+   "origin": {
+    "ko": "출력받는 골반장기 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      100
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "parasympathetic-sacral-1",
+     "title": {
+      "ko": "S2–4 절전"
+     },
+     "description": {
+      "ko": "엉치부교감뉴런이 골반내장신경을 통해 골반장기로 간다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-sacral-parasympathetic",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-pelvic-splanchnic",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 엉치부교감핵 (S2~4) · 골반내장신경"
+     }
+    },
+    {
+     "id": "parasympathetic-sacral-2",
+     "title": {
+      "ko": "장기 인접 신경절"
+     },
+     "description": {
+      "ko": "장기 가까운 신경절에서 ACh–Nn 연결을 형성한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-intramural-ganglia",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 벽속부교감신경절"
+     },
+     "transmitter": "acetylcholine"
+    },
+    {
+     "id": "parasympathetic-sacral-3",
+     "title": {
+      "ko": "절후 출력"
+     },
+     "description": {
+      "ko": "짧은 절후축삭이 장기 평활근·분비·생식기 반응을 조절한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ef-bladder",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-genital",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        100
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 방광배뇨근 · 생식기 혈관·사정효과기"
+     },
+     "transmitter": "acetylcholine"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "parasympathetic-sacral-1",
+     "to": "parasympathetic-sacral-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "parasympathetic-sacral-2",
+     "to": "parasympathetic-sacral-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

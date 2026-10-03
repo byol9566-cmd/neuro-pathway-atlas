@@ -1,0 +1,1219 @@
+{
+ "ours": "spinal-reflex-arcs",
+ "theirs": [
+  {
+   "id": "stretch-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "근방추 신장반사",
+    "en": "Muscle spindle stretch reflex"
+   },
+   "summary": {
+    "ko": "근방추 Ia 구심이 같은 근육 알파운동뉴런을 흥분시키는 단일시냅스 반사다."
+   },
+   "origin": {
+    "ko": "늘어난 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      11,
+      54,
+      55,
+      56
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "stretch-reflex-1",
+     "title": {
+      "ko": "근육 길이 증가 → Ia"
+     },
+     "description": {
+      "ko": "근방추는 근육 길이·그 변화에 민감하다. Ia 구심이 DRG·뒤뿌리를 통해 척수로 들어온다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-muscle-spindle",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-dorsal-root",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        11,
+        54,
+        55,
+        56
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 근방추 · 척수신경절 (DRG) · 뒤뿌리"
+     },
+     "neuronOrder": 1
+    },
+    {
+     "id": "stretch-reflex-2",
+     "title": {
+      "ko": "Ia → 알파운동뉴런"
+     },
+     "description": {
+      "ko": "Ia가 같은 근육의 알파운동뉴런을 직접 흥분시킨다. 같은 입력의 길항근 억제 가지는 별도 경로다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        11,
+        54,
+        55,
+        56
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 알파운동뉴런"
+     },
+     "neuronOrder": 2
+    },
+    {
+     "id": "stretch-reflex-3",
+     "title": {
+      "ko": "근육 수축"
+     },
+     "description": {
+      "ko": "알파축삭이 앞뿌리·말초신경·신경근접합부를 통해 방추밖근섬유를 수축시킨다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-ventral-root",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        11,
+        54,
+        55,
+        56
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 앞뿌리 · 방추밖근섬유"
+     },
+     "transmitter": "acetylcholine"
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "뒤뿌리·구심 또는 LMN"
+     },
+     "deficit": {
+      "ko": "해당 신장반사 저하·소실"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "edges": [
+    {
+     "from": "stretch-reflex-1",
+     "to": "stretch-reflex-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "stretch-reflex-2",
+     "to": "stretch-reflex-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "reciprocal-inhibition",
+   "category": "reflex",
+   "name": {
+    "ko": "Ia 길항근 상호억제",
+    "en": "Ia reciprocal inhibition"
+   },
+   "summary": {
+    "ko": "신장반사 입력이 Ia 억제성사이뉴런을 통해 길항근 운동출력을 줄인다."
+   },
+   "origin": {
+    "ko": "신장된 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      11,
+      56,
+      58
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "reciprocal-inhibition-1",
+     "title": {
+      "ko": "근방추 Ia 입력"
+     },
+     "description": {
+      "ko": "근방추에서 유래한 Ia 구심이 척수 억제성사이뉴런을 모집한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-muscle-spindle",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-inhibitory-interneuron",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        11,
+        56,
+        58
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 근방추 · 척수신경절 (DRG) · 척수 억제성사이뉴런"
+     }
+    },
+    {
+     "id": "reciprocal-inhibition-2",
+     "title": {
+      "ko": "길항근 LMN 억제"
+     },
+     "description": {
+      "ko": "억제성사이뉴런 출력이 길항근 알파운동뉴런을 억제한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        11,
+        56,
+        58
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 알파운동뉴런"
+     },
+     "transmitter": "glycine"
+    },
+    {
+     "id": "reciprocal-inhibition-3",
+     "title": {
+      "ko": "길항근 이완"
+     },
+     "description": {
+      "ko": "동작근의 수축과 동시에 길항근 저항이 감소한다. 특정 반사에서 동작근은 폄근일 수 있으나 모든 근방추 반사의 동작근을 폄근으로 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ef-flexor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        11,
+        56,
+        58
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 굽힘근군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "reciprocal-inhibition-1",
+     "to": "reciprocal-inhibition-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "reciprocal-inhibition-2",
+     "to": "reciprocal-inhibition-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "gamma-loop",
+   "category": "reflex",
+   "name": {
+    "ko": "감마고리",
+    "en": "Gamma loop"
+   },
+   "summary": {
+    "ko": "감마운동뉴런→방추속근섬유→Ia→알파운동뉴런→방추밖근섬유의 고리가 신장반사 감도를 조절한다."
+   },
+   "origin": {
+    "ko": "조절되는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      56,
+      57,
+      62
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "gamma-loop-1",
+     "title": {
+      "ko": "하행 조절 → 감마"
+     },
+     "description": {
+      "ko": "소뇌·뇌줄기 관련 하행조절이 감마운동뉴런의 출력을 변화시킨다. 소뇌에서 감마로 가는 단일 직접 축삭으로 표현하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-reticular-formation",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "contra"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        56,
+        57,
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 그물체 · 감마운동뉴런"
+     }
+    },
+    {
+     "id": "gamma-loop-2",
+     "title": {
+      "ko": "방추속 수축 → Ia"
+     },
+     "description": {
+      "ko": "방추속근섬유의 끝부분 수축이 감각부의 장력을 유지·증가시켜 Ia 발화를 변화시킨다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ef-intrafusal",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-muscle-spindle",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        56,
+        57,
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 방추속근섬유 · 근방추 · 척수신경절 (DRG)"
+     }
+    },
+    {
+     "id": "gamma-loop-3",
+     "title": {
+      "ko": "알파 → 방추밖 수축"
+     },
+     "description": {
+      "ko": "Ia 입력이 알파운동뉴런을 흥분시켜 방추밖근 수축을 유발한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        56,
+        57,
+        62
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 알파운동뉴런 · 방추밖근섬유"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "gamma-loop-1",
+     "to": "gamma-loop-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "gamma-loop-2",
+     "to": "gamma-loop-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "golgi-tendon-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "골지힘줄반사·자가억제",
+    "en": "Golgi tendon reflex and autogenic inhibition"
+   },
+   "summary": {
+    "ko": "힘줄장력 입력이 Ib 억제사이뉴런을 통해 같은 근육 LMN 출력을 감소시키는 교육용 반사 모형."
+   },
+   "origin": {
+    "ko": "장력이 증가한 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      11,
+      57
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "golgi-tendon-reflex-1",
+     "title": {
+      "ko": "장력 → 골지기관 → Ib"
+     },
+     "description": {
+      "ko": "방추밖근섬유와 직렬로 연결된 골지힘줄기관이 장력 증가를 감지한다. Ib 구심이 척수로 들어온다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-golgi-tendon",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        11,
+        57
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 골지힘줄기관 · 척수신경절 (DRG)"
+     }
+    },
+    {
+     "id": "golgi-tendon-reflex-2",
+     "title": {
+      "ko": "Ib 억제사이뉴런"
+     },
+     "description": {
+      "ko": "Ib 입력이 억제사이뉴런을 모집한다. 보행 등 상태에서 Ib 회로의 부호·역할은 달라질 수 있다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-inhibitory-interneuron",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        11,
+        57
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 억제성사이뉴런"
+     }
+    },
+    {
+     "id": "golgi-tendon-reflex-3",
+     "title": {
+      "ko": "동작근 억제·길항근 모집"
+     },
+     "description": {
+      "ko": "같은 근육 알파출력이 감소한다. 원문에는 길항근 흥분 가지도 제시된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-excitatory-interneuron",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-flexor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        11,
+        57
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 알파운동뉴런 · 방추밖근섬유 · 척수 흥분성사이뉴런 · 굽힘근군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "golgi-tendon-reflex-1",
+     "to": "golgi-tendon-reflex-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "golgi-tendon-reflex-2",
+     "to": "golgi-tendon-reflex-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "withdrawal-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "굽힘회피반사",
+    "en": "Flexor withdrawal reflex"
+   },
+   "summary": {
+    "ko": "유해입력이 같은쪽 굽힘근을 수축시키고 폄근을 억제해 자극에서 피하게 한다."
+   },
+   "origin": {
+    "ko": "유해자극을 받는 팔다리 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      54,
+      58
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "withdrawal-reflex-1",
+     "title": {
+      "ko": "유해감수기 → 척수"
+     },
+     "description": {
+      "ko": "주로 Aδ/C 구심이 DRG·뒤뿌리를 통해 척수 사이뉴런망에 도달한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-nociceptor",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-dorsal-horn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        54,
+        58
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 유해감수기·자유신경종말 · 척수신경절 (DRG) · 척수 뒤뿔"
+     }
+    },
+    {
+     "id": "withdrawal-reflex-2",
+     "title": {
+      "ko": "같은쪽 사이뉴런 분기"
+     },
+     "description": {
+      "ko": "흥분성 가지는 굽힘근 운동뉴런을 모집하고 억제성 가지는 폄근 운동뉴런을 억제한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-excitatory-interneuron",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-inhibitory-interneuron",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        54,
+        58
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 흥분성사이뉴런 · 척수 억제성사이뉴런 · 알파운동뉴런"
+     }
+    },
+    {
+     "id": "withdrawal-reflex-3",
+     "title": {
+      "ko": "굽힘근 수축·폄근 이완"
+     },
+     "description": {
+      "ko": "자극쪽 팔다리가 굽혀져 자극에서 벗어난다. 여러 시냅스·분절에 걸쳐 summation과 irradiation이 가능하다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ef-flexor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extensor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        54,
+        58
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 굽힘근군 · 폄근군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "withdrawal-reflex-1",
+     "to": "withdrawal-reflex-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "withdrawal-reflex-2",
+     "to": "withdrawal-reflex-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "crossed-extension-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "교차폄반사",
+    "en": "Crossed extensor reflex"
+   },
+   "summary": {
+    "ko": "회피반사와 함께 반대쪽 폄근이 활성화되어 몸을 지탱한다."
+   },
+   "origin": {
+    "ko": "유해자극을 받는 팔다리 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      58
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "crossed-extension-reflex-1",
+     "title": {
+      "ko": "회피입력 → 교차 사이뉴런"
+     },
+     "description": {
+      "ko": "유해자극 입력이 척수 사이뉴런을 통해 반대쪽으로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-nociceptor",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-excitatory-interneuron",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        58
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 유해감수기·자유신경종말 · 척수신경절 (DRG) · 척수 흥분성사이뉴런"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "척수 사이뉴런 정중선 교차"
+     }
+    },
+    {
+     "id": "crossed-extension-reflex-2",
+     "title": {
+      "ko": "반대쪽 LMN 조절"
+     },
+     "description": {
+      "ko": "반대쪽 폄근 흥분·굽힘근 억제 가지가 활성화된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-excitatory-interneuron",
+       "side": "contra"
+      },
+      {
+       "id": "sp-inhibitory-interneuron",
+       "side": "contra"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        58
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 흥분성사이뉴런 · 척수 억제성사이뉴런 · 알파운동뉴런"
+     }
+    },
+    {
+     "id": "crossed-extension-reflex-3",
+     "title": {
+      "ko": "반대쪽 다리 폄"
+     },
+     "description": {
+      "ko": "반대쪽 폄근 수축과 굽힘근 이완으로 체중을 지탱한다. 원문의 마지막 무릎 구부러짐은 무릎 폄으로 수정했다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ef-extensor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-flexor",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        58
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 폄근군 · 굽힘근군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "crossed-extension-reflex-1",
+     "to": "crossed-extension-reflex-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "crossed-extension-reflex-2",
+     "to": "crossed-extension-reflex-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "renshaw-inhibition",
+   "category": "motor",
+   "name": {
+    "ko": "렌쇼 재귀억제",
+    "en": "Renshaw recurrent inhibition"
+   },
+   "summary": {
+    "ko": "알파운동뉴런 곁가지가 렌쇼세포를 흥분시켜 운동뉴런 풀에 억제성 되먹임을 제공한다."
+   },
+   "origin": {
+    "ko": "운동출력을 받는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-plus-correction",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      69
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "renshaw-inhibition-1",
+     "title": {
+      "ko": "알파 곁가지 → 렌쇼"
+     },
+     "description": {
+      "ko": "알파운동뉴런 축삭의 재귀 곁가지가 렌쇼세포를 흥분시킨다. 이를 CST가 렌쇼를 직접 켜는 필수 연결로 치환하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-renshaw",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 알파운동뉴런 · 렌쇼세포"
+     },
+     "transmitter": "acetylcholine"
+    },
+    {
+     "id": "renshaw-inhibition-2",
+     "title": {
+      "ko": "렌쇼 → 운동뉴런 풀"
+     },
+     "description": {
+      "ko": "렌쇼세포의 glycine 중심 억제출력이 원래·관련 운동뉴런의 발화를 조절한다. 원문의 α 운동뉴런이 glycine을 분비한다는 주어 혼동을 수정했다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-renshaw",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 렌쇼세포 · 알파운동뉴런"
+     },
+     "transmitter": "glycine"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "renshaw-inhibition-1",
+     "to": "renshaw-inhibition-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network",
+   "externalReferenceIds": [
+    "primary-renshaw"
+   ]
+  },
+  {
+   "id": "alpha-gamma-coactivation",
+   "category": "motor",
+   "name": {
+    "ko": "알파–감마 공동활성",
+    "en": "Alpha-gamma coactivation"
+   },
+   "summary": {
+    "ko": "방추밖·방추속근이 함께 조절되어 근육 수축 중 근방추 감각 민감도가 유지된다."
+   },
+   "origin": {
+    "ko": "수축하는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      56,
+      69
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "alpha-gamma-coactivation-1",
+     "title": {
+      "ko": "공통 운동명령"
+     },
+     "description": {
+      "ko": "수의운동 중 하행 출력이 알파·감마운동뉴런 계통을 함께 모집한다."
+     },
+     "structures": [
+      {
+       "id": "ctx-precentral",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-precentral",
+       "side": "contra"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        56,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 알파운동뉴런 · 감마운동뉴런"
+     }
+    },
+    {
+     "id": "alpha-gamma-coactivation-2",
+     "title": {
+      "ko": "알파의 힘 생성"
+     },
+     "description": {
+      "ko": "알파운동뉴런이 방추밖근섬유를 수축시킨다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-extrafusal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        56,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 알파운동뉴런 · 방추밖근섬유"
+     }
+    },
+    {
+     "id": "alpha-gamma-coactivation-3",
+     "title": {
+      "ko": "감마의 감각유지"
+     },
+     "description": {
+      "ko": "감마운동뉴런은 방추속근의 끝을 수축시켜 감각부가 느슨해지는 것을 보완한다. 두 가지는 순차 필수과정이 아니라 공동활성이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-gamma-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-intrafusal",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-muscle-spindle",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        56,
+        69
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 감마운동뉴런 · 방추속근섬유 · 근방추"
+     }
+    }
+   ],
+   "lesions": [],
+   "topology": "parallel-output",
+   "edges": [
+    {
+     "from": "alpha-gamma-coactivation-1",
+     "to": "alpha-gamma-coactivation-2",
+     "relation": "parallel"
+    },
+    {
+     "from": "alpha-gamma-coactivation-1",
+     "to": "alpha-gamma-coactivation-3",
+     "relation": "parallel"
+    }
+   ],
+   "edgeSemantics": "explicit step-level branches; see descriptions for intervening nuclei",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

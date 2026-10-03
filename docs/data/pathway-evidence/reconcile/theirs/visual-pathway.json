@@ -1,0 +1,1630 @@
+{
+ "ours": "visual-pathway",
+ "theirs": [
+  {
+   "id": "visual-nasal",
+   "category": "visual",
+   "name": {
+    "ko": "코쪽망막의 시각 경로",
+    "en": "Retinogeniculate pathway: nasal"
+   },
+   "summary": {
+    "ko": "코쪽망막은 교차하고 관자쪽망막은 교차하지 않는다. 각 반구는 반대쪽 시야를 처리한다."
+   },
+   "origin": {
+    "ko": "빛을 받는 눈 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      24
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      24,
+      25,
+      26
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "visual-nasal-1",
+     "title": {
+      "ko": "망막 → 시각신경"
+     },
+     "description": {
+      "ko": "망막의 신경절세포 축삭이 같은쪽 시각신경을 구성한다. 광수용체·두극세포와 신경절세포를 구분한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-nasal-retina",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-ganglion-retinal",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn2",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        24
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        24,
+        25,
+        26
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 코쪽망막 · 망막신경절세포 · 시각신경 (II)"
+     }
+    },
+    {
+     "id": "visual-nasal-2",
+     "title": {
+      "ko": "시각교차 → 시각로"
+     },
+     "description": {
+      "ko": "코쪽망막 축삭은 시각교차에서 반대쪽으로 건너고 관자쪽망막 축삭은 같은쪽에 남는다."
+     },
+     "structures": [
+      {
+       "id": "tr-optic-tract",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-optic-chiasm",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-optic-tract",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        24
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        24,
+        25,
+        26
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시각교차"
+     },
+     "decussation": true,
+     "decussationSite": {
+      "ko": "시각교차; 코쪽망막 섬유만 교차"
+     }
+    },
+    {
+     "id": "visual-nasal-3",
+     "title": {
+      "ko": "LGN → 시각부챗살"
+     },
+     "description": {
+      "ko": "LGN을 거쳐 시각부챗살로 전달된다. 렌즈핵뒤부분을 중심으로 하며 아래쪽 시각부챗살은 관자엽을 통과한다."
+     },
+     "structures": [
+      {
+       "id": "thal-lgn",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-lgn",
+       "side": "contra"
+      },
+      {
+       "id": "tr-optic-radiation",
+       "side": "contra"
+      },
+      {
+       "id": "tr-internal-capsule-retrolenticular",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        24
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        24,
+        25,
+        26
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시각부챗살 · 속섬유막 렌즈핵뒤부분"
+     }
+    },
+    {
+     "id": "visual-nasal-4",
+     "title": {
+      "ko": "V1"
+     },
+     "description": {
+      "ko": "시야 위쪽은 새발톱고랑 아래 둑, 아래쪽은 위 둑으로 투사된다. 눈 기준 좌우와 시야 기준 좌우를 혼동하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-visual-v1",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        24
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        24,
+        25,
+        26
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차시각겉질 (V1, BA 17)"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "시각신경"
+     },
+     "deficit": {
+      "ko": "같은쪽 단안 시력 소실"
+     },
+     "side": "ipsi"
+    },
+    {
+     "level": {
+      "ko": "시각교차 중앙"
+     },
+     "deficit": {
+      "ko": "양관자반맹"
+     },
+     "side": "bilateral"
+    },
+    {
+     "level": {
+      "ko": "시각로·뒤쪽 경로"
+     },
+     "deficit": {
+      "ko": "병변 반대쪽 동명반맹"
+     },
+     "side": "contra"
+    },
+    {
+     "level": {
+      "ko": "V1 아래 둑·관자엽 시각부챗살"
+     },
+     "deficit": {
+      "ko": "반대쪽 위사분맹"
+     },
+     "side": "contra"
+    }
+   ],
+   "edges": [
+    {
+     "from": "visual-nasal-1",
+     "to": "visual-nasal-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "visual-nasal-2",
+     "to": "visual-nasal-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "visual-nasal-3",
+     "to": "visual-nasal-4",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network",
+   "externalReferenceIds": [
+    "primary-optic-radiation",
+    "primary-internal-capsule"
+   ]
+  },
+  {
+   "id": "visual-temporal",
+   "category": "visual",
+   "name": {
+    "ko": "관자쪽망막의 시각 경로",
+    "en": "Retinogeniculate pathway: temporal"
+   },
+   "summary": {
+    "ko": "코쪽망막은 교차하고 관자쪽망막은 교차하지 않는다. 각 반구는 반대쪽 시야를 처리한다."
+   },
+   "origin": {
+    "ko": "빛을 받는 눈 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      24
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      24,
+      25,
+      26
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "visual-temporal-1",
+     "title": {
+      "ko": "망막 → 시각신경"
+     },
+     "description": {
+      "ko": "망막의 신경절세포 축삭이 같은쪽 시각신경을 구성한다. 광수용체·두극세포와 신경절세포를 구분한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-temporal-retina",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-ganglion-retinal",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn2",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        24
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        24,
+        25,
+        26
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 관자쪽망막 · 망막신경절세포 · 시각신경 (II)"
+     }
+    },
+    {
+     "id": "visual-temporal-2",
+     "title": {
+      "ko": "시각교차 → 시각로"
+     },
+     "description": {
+      "ko": "코쪽망막 축삭은 시각교차에서 반대쪽으로 건너고 관자쪽망막 축삭은 같은쪽에 남는다."
+     },
+     "structures": [
+      {
+       "id": "tr-optic-tract",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-optic-chiasm",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-optic-tract",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        24
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        24,
+        25,
+        26
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시각교차"
+     },
+     "decussation": false,
+     "decussationSite": {
+      "ko": "시각교차; 코쪽망막 섬유만 교차"
+     }
+    },
+    {
+     "id": "visual-temporal-3",
+     "title": {
+      "ko": "LGN → 시각부챗살"
+     },
+     "description": {
+      "ko": "LGN을 거쳐 시각부챗살로 전달된다. 렌즈핵뒤부분을 중심으로 하며 아래쪽 시각부챗살은 관자엽을 통과한다."
+     },
+     "structures": [
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-optic-radiation",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-internal-capsule-retrolenticular",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        24
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        24,
+        25,
+        26
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시각부챗살 · 속섬유막 렌즈핵뒤부분"
+     }
+    },
+    {
+     "id": "visual-temporal-4",
+     "title": {
+      "ko": "V1"
+     },
+     "description": {
+      "ko": "시야 위쪽은 새발톱고랑 아래 둑, 아래쪽은 위 둑으로 투사된다. 눈 기준 좌우와 시야 기준 좌우를 혼동하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-visual-v1",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        24
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        24,
+        25,
+        26
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차시각겉질 (V1, BA 17)"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "시각신경"
+     },
+     "deficit": {
+      "ko": "같은쪽 단안 시력 소실"
+     },
+     "side": "ipsi"
+    },
+    {
+     "level": {
+      "ko": "시각교차 중앙"
+     },
+     "deficit": {
+      "ko": "양관자반맹"
+     },
+     "side": "bilateral"
+    },
+    {
+     "level": {
+      "ko": "시각로·뒤쪽 경로"
+     },
+     "deficit": {
+      "ko": "병변 반대쪽 동명반맹"
+     },
+     "side": "contra"
+    },
+    {
+     "level": {
+      "ko": "V1 아래 둑·관자엽 시각부챗살"
+     },
+     "deficit": {
+      "ko": "반대쪽 위사분맹"
+     },
+     "side": "contra"
+    }
+   ],
+   "edges": [
+    {
+     "from": "visual-temporal-1",
+     "to": "visual-temporal-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "visual-temporal-2",
+     "to": "visual-temporal-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "visual-temporal-3",
+     "to": "visual-temporal-4",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network",
+   "externalReferenceIds": [
+    "primary-optic-radiation",
+    "primary-internal-capsule"
+   ]
+  },
+  {
+   "id": "visual-m",
+   "category": "visual",
+   "name": {
+    "ko": "시각 큰세포 경로 (M)",
+    "en": "Magnocellular visual processing"
+   },
+   "summary": {
+    "ko": "움직임·빠른 변화 정보를 병렬 처리한다."
+   },
+   "origin": {
+    "ko": "망막출력을 받는 시각 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      22,
+      23,
+      26,
+      27,
+      28,
+      30
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "visual-m-1",
+     "title": {
+      "ko": "망막 병렬출력"
+     },
+     "description": {
+      "ko": "망막신경절세포의 서로 다른 종류가 해당 LGN 층으로 출력한다. 이 경로의 기준은 눈이 아니라 중추 반구다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-ganglion-m",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-ganglion-m",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        22,
+        23,
+        26,
+        27,
+        28,
+        30
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 망막 M 신경절세포"
+     }
+    },
+    {
+     "id": "visual-m-2",
+     "title": {
+      "ko": "LGN 층별 중계"
+     },
+     "description": {
+      "ko": "M은 1·2층, P는 3~6층, K는 주층 사이에 위치한다. 각 반구 LGN은 같은쪽 관자망막·반대쪽 코망막 입력을 받는다."
+     },
+     "structures": [
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-lgn-m",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        22,
+        23,
+        26,
+        27,
+        28,
+        30
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: LGN 큰세포층 (1·2)"
+     }
+    },
+    {
+     "id": "visual-m-3",
+     "title": {
+      "ko": "V1 표적층"
+     },
+     "description": {
+      "ko": "M은 4Cα, P는 4Cβ, K는 색상 블롭을 포함하는 표적망에 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-visual-v1",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-v1-l4ca",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        22,
+        23,
+        26,
+        27,
+        28,
+        30
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차시각겉질 (V1, BA 17) · V1 제4Cα층"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "visual-m-1",
+     "to": "visual-m-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "visual-m-2",
+     "to": "visual-m-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "visual-p",
+   "category": "visual",
+   "name": {
+    "ko": "시각 작은세포 경로 (P)",
+    "en": "Parvocellular visual processing"
+   },
+   "summary": {
+    "ko": "세부 형태·색상 정보를 병렬 처리한다."
+   },
+   "origin": {
+    "ko": "망막출력을 받는 시각 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      22,
+      23,
+      26,
+      27,
+      28,
+      30
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "visual-p-1",
+     "title": {
+      "ko": "망막 병렬출력"
+     },
+     "description": {
+      "ko": "망막신경절세포의 서로 다른 종류가 해당 LGN 층으로 출력한다. 이 경로의 기준은 눈이 아니라 중추 반구다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-ganglion-p",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-ganglion-p",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        22,
+        23,
+        26,
+        27,
+        28,
+        30
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 망막 P 신경절세포"
+     }
+    },
+    {
+     "id": "visual-p-2",
+     "title": {
+      "ko": "LGN 층별 중계"
+     },
+     "description": {
+      "ko": "M은 1·2층, P는 3~6층, K는 주층 사이에 위치한다. 각 반구 LGN은 같은쪽 관자망막·반대쪽 코망막 입력을 받는다."
+     },
+     "structures": [
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-lgn-p",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        22,
+        23,
+        26,
+        27,
+        28,
+        30
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: LGN 작은세포층 (3~6)"
+     }
+    },
+    {
+     "id": "visual-p-3",
+     "title": {
+      "ko": "V1 표적층"
+     },
+     "description": {
+      "ko": "M은 4Cα, P는 4Cβ, K는 색상 블롭을 포함하는 표적망에 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-visual-v1",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-v1-l4cb",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        22,
+        23,
+        26,
+        27,
+        28,
+        30
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차시각겉질 (V1, BA 17) · V1 제4Cβ층"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "visual-p-1",
+     "to": "visual-p-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "visual-p-2",
+     "to": "visual-p-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "visual-k",
+   "category": "visual",
+   "name": {
+    "ko": "시각 먼지세포 경로 (K)",
+    "en": "Koniocellular visual processing"
+   },
+   "summary": {
+    "ko": "색상·대비 정보를 병렬 처리한다."
+   },
+   "origin": {
+    "ko": "망막출력을 받는 시각 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      22,
+      23,
+      26,
+      27,
+      28,
+      30
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "visual-k-1",
+     "title": {
+      "ko": "망막 병렬출력"
+     },
+     "description": {
+      "ko": "망막신경절세포의 서로 다른 종류가 해당 LGN 층으로 출력한다. 이 경로의 기준은 눈이 아니라 중추 반구다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-ganglion-k",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-ganglion-k",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        22,
+        23,
+        26,
+        27,
+        28,
+        30
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 망막 K 신경절세포"
+     }
+    },
+    {
+     "id": "visual-k-2",
+     "title": {
+      "ko": "LGN 층별 중계"
+     },
+     "description": {
+      "ko": "M은 1·2층, P는 3~6층, K는 주층 사이에 위치한다. 각 반구 LGN은 같은쪽 관자망막·반대쪽 코망막 입력을 받는다."
+     },
+     "structures": [
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-lgn-k",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        22,
+        23,
+        26,
+        27,
+        28,
+        30
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: LGN 먼지세포층"
+     }
+    },
+    {
+     "id": "visual-k-3",
+     "title": {
+      "ko": "V1 표적층"
+     },
+     "description": {
+      "ko": "M은 4Cα, P는 4Cβ, K는 색상 블롭을 포함하는 표적망에 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-visual-v1",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-v1-blob",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        22,
+        23,
+        26,
+        27,
+        28,
+        30
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차시각겉질 (V1, BA 17) · V1 색상 블롭"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "visual-k-1",
+     "to": "visual-k-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "visual-k-2",
+     "to": "visual-k-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "visual-dorsal",
+   "category": "visual",
+   "name": {
+    "ko": "시각 등쪽흐름 (Where)",
+    "en": "Dorsal visual stream"
+   },
+   "summary": {
+    "ko": "공간·위치·움직임과 시각에 따른 행동 안내에 관여한다."
+   },
+   "origin": {
+    "ko": "시각입력을 처리하는 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      33
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      26,
+      29,
+      87
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "visual-dorsal-1",
+     "title": {
+      "ko": "V1 → 외줄무늬겉질"
+     },
+     "description": {
+      "ko": "V1에서 V2 등 외줄무늬시각영역으로 전달된다. 두 흐름은 병렬이며 상호연결된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-visual-v1",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-visual-v2",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        33
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        26,
+        29,
+        87
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차시각겉질 (V1, BA 17) · 이차시각겉질 (V2)"
+     }
+    },
+    {
+     "id": "visual-dorsal-2",
+     "title": {
+      "ko": "중간 처리"
+     },
+     "description": {
+      "ko": "공간·위치·움직임과 시각에 따른 행동 안내 관련 시각정보를 처리한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-visual-mt",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        33
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        26,
+        29,
+        87
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 중간관자시각영역 (MT/V5)"
+     }
+    },
+    {
+     "id": "visual-dorsal-3",
+     "title": {
+      "ko": "연합영역"
+     },
+     "description": {
+      "ko": "공간·위치·움직임과 시각에 따른 행동 안내를 수행하는 분산 연합망으로 이어진다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-parietal-association",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        33
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        26,
+        29,
+        87
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 마루연합겉질 (BA 5·7 등)"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "ctx-parietal-association"
+     },
+     "deficit": {
+      "ko": "움직임·공간처리 장애"
+     }
+    }
+   ],
+   "edges": [
+    {
+     "from": "visual-dorsal-1",
+     "to": "visual-dorsal-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "visual-dorsal-2",
+     "to": "visual-dorsal-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "visual-ventral",
+   "category": "visual",
+   "name": {
+    "ko": "시각 배쪽흐름 (What)",
+    "en": "Ventral visual stream"
+   },
+   "summary": {
+    "ko": "물체의 형태·색·정체 인식에 관여한다."
+   },
+   "origin": {
+    "ko": "시각입력을 처리하는 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      33
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      26,
+      29,
+      87
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "visual-ventral-1",
+     "title": {
+      "ko": "V1 → 외줄무늬겉질"
+     },
+     "description": {
+      "ko": "V1에서 V2 등 외줄무늬시각영역으로 전달된다. 두 흐름은 병렬이며 상호연결된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-visual-v1",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-visual-v2",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        33
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        26,
+        29,
+        87
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차시각겉질 (V1, BA 17) · 이차시각겉질 (V2)"
+     }
+    },
+    {
+     "id": "visual-ventral-2",
+     "title": {
+      "ko": "중간 처리"
+     },
+     "description": {
+      "ko": "물체의 형태·색·정체 인식 관련 시각정보를 처리한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-visual-v4",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        33
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        26,
+        29,
+        87
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시각영역 V4"
+     }
+    },
+    {
+     "id": "visual-ventral-3",
+     "title": {
+      "ko": "연합영역"
+     },
+     "description": {
+      "ko": "물체의 형태·색·정체 인식를 수행하는 분산 연합망으로 이어진다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-inferior-temporal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        33
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        26,
+        29,
+        87
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아래관자겉질"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "ctx-inferior-temporal"
+     },
+     "deficit": {
+      "ko": "시각실인증·얼굴인식장애 가능"
+     }
+    }
+   ],
+   "edges": [
+    {
+     "from": "visual-ventral-1",
+     "to": "visual-ventral-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "visual-ventral-2",
+     "to": "visual-ventral-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "visual-cortical-feedback",
+   "category": "visual",
+   "name": {
+    "ko": "V1의 상위투사·하행 되먹임",
+    "en": "V1 feedforward and feedback projections"
+   },
+   "summary": {
+    "ko": "V1은 상위 시각겉질·위둔덕·LGN으로 서로 다른 층의 출력을 보낸다."
+   },
+   "origin": {
+    "ko": "시각정보를 처리하는 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      27
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "visual-cortical-feedback-1",
+     "title": {
+      "ko": "LGN → V1 제4층"
+     },
+     "description": {
+      "ko": "시상 입력이 V1 제4층에 도달한다."
+     },
+     "structures": [
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-visual-v1",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        27
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차시각겉질 (V1, BA 17)"
+     }
+    },
+    {
+     "id": "visual-cortical-feedback-2",
+     "title": {
+      "ko": "제2·3층 → 상위겉질"
+     },
+     "description": {
+      "ko": "제4층 처리 결과가 제2·3층 등을 거쳐 외줄무늬겉질로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-v1-l23",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-visual-v2",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        27
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: V1 제2·3층 · 이차시각겉질 (V2)"
+     }
+    },
+    {
+     "id": "visual-cortical-feedback-3",
+     "title": {
+      "ko": "제5·6층 출력"
+     },
+     "description": {
+      "ko": "제5층의 위둔덕 출력과 제6층의 LGN 되먹임을 구분한다. 이 단계는 병렬출력이며 상위겉질을 거친 단일 직렬 경로가 아니다."
+     },
+     "structures": [
+      {
+       "id": "bs-superior-colliculus",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-neocortical-l5",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-superior-colliculus",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-neocortical-l6",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-lgn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        27
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 신피질 제5층 피라미드세포 · 신피질 제6층"
+     }
+    }
+   ],
+   "lesions": [],
+   "topology": "branched",
+   "edges": [
+    {
+     "from": "visual-cortical-feedback-1",
+     "to": "visual-cortical-feedback-2",
+     "relation": "feedforward"
+    },
+    {
+     "from": "visual-cortical-feedback-1",
+     "to": "visual-cortical-feedback-3",
+     "relation": "parallel-output"
+    }
+   ],
+   "edgeSemantics": "explicit step-level branches; see descriptions for intervening nuclei",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

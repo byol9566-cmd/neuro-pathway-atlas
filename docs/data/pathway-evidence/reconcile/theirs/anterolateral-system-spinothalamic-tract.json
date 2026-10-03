@@ -1,0 +1,705 @@
+{
+ "ours": "anterolateral-system-spinothalamic-tract",
+ "theirs": [
+  {
+   "id": "spinothalamic-lateral",
+   "category": "somatosensory",
+   "name": {
+    "ko": "가쪽척수시상 경로",
+    "en": "Lateral spinothalamic pathway"
+   },
+   "summary": {
+    "ko": "통각·온도감각을 뒤뿔에서 중계하고 척수에서 교차해 반대쪽 시상·S1로 전달한다."
+   },
+   "origin": {
+    "ko": "자극을 받는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      8,
+      9,
+      16
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "spinothalamic-lateral-1",
+     "title": {
+      "ko": "말초 수용기 → DRG → 뒤뿔"
+     },
+     "description": {
+      "ko": "1차 구심축삭이 DRG·뒤뿌리를 통해 뒤뿔에 들어온다. 통각·온도는 Aδ/C 섬유를 중심으로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-nociceptor",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-thermoreceptor",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-dorsal-root",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-dorsal-horn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        8,
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 유해감수기·자유신경종말 · 온도수용기 · 척수신경절 (DRG) · 뒤뿌리 · 척수 뒤뿔"
+     },
+     "neuronOrder": 1
+    },
+    {
+     "id": "spinothalamic-lateral-2",
+     "title": {
+      "ko": "척수 중계 → 앞백색맞교차"
+     },
+     "description": {
+      "ko": "2차 축삭이 척수 앞백색맞교차를 통해 반대쪽으로 건넌다. 감각교차는 DCML의 숨뇌 교차와 다르다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-anterior-white-commissure",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-spinothalamic-lateral",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        8,
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞백색맞교차 · 가쪽척수시상로"
+     },
+     "neuronOrder": 2,
+     "decussation": true,
+     "decussationSite": {
+      "ko": "척수 앞백색맞교차; 입력 분절 인접 수준"
+     }
+    },
+    {
+     "id": "spinothalamic-lateral-3",
+     "title": {
+      "ko": "VPL → S1"
+     },
+     "description": {
+      "ko": "반대쪽 VPL의 중계뉴런이 속섬유막을 통해 반대쪽 S1에 신호를 보낸다. 통증의 정서적 가지는 별도 경로다."
+     },
+     "structures": [
+      {
+       "id": "thal-vpl",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-vpl",
+       "side": "contra"
+      },
+      {
+       "id": "tr-internal-capsule-posterior",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        8,
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 뒤다리"
+     },
+     "neuronOrder": 3
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "척수 반쪽"
+     },
+     "deficit": {
+      "ko": "대개 병변보다 1~2분절 아래부터 반대쪽 통각·온도감각 장애"
+     },
+     "side": "contra",
+     "syndrome": "Brown-Séquard syndrome"
+    }
+   ],
+   "edges": [
+    {
+     "from": "spinothalamic-lateral-1",
+     "to": "spinothalamic-lateral-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "spinothalamic-lateral-2",
+     "to": "spinothalamic-lateral-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "spinothalamic-anterior",
+   "category": "somatosensory",
+   "name": {
+    "ko": "앞척수시상 경로",
+    "en": "Anterior spinothalamic pathway"
+   },
+   "summary": {
+    "ko": "거친 촉각·압각을 뒤뿔에서 중계하고 척수에서 교차해 반대쪽 시상·S1로 전달한다."
+   },
+   "origin": {
+    "ko": "자극을 받는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      8,
+      9,
+      16
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "spinothalamic-anterior-1",
+     "title": {
+      "ko": "말초 수용기 → DRG → 뒤뿔"
+     },
+     "description": {
+      "ko": "1차 구심축삭이 DRG·뒤뿌리를 통해 뒤뿔에 들어온다. 통각·온도는 Aδ/C 섬유를 중심으로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-skin-mechanoreceptors",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-dorsal-root",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-dorsal-horn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        8,
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 피부 기계수용기 · 척수신경절 (DRG) · 뒤뿌리 · 척수 뒤뿔"
+     },
+     "neuronOrder": 1
+    },
+    {
+     "id": "spinothalamic-anterior-2",
+     "title": {
+      "ko": "척수 중계 → 앞백색맞교차"
+     },
+     "description": {
+      "ko": "2차 축삭이 척수 앞백색맞교차를 통해 반대쪽으로 건넌다. 감각교차는 DCML의 숨뇌 교차와 다르다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-anterior-white-commissure",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-spinothalamic-anterior",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        8,
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞백색맞교차 · 앞척수시상로"
+     },
+     "neuronOrder": 2,
+     "decussation": true,
+     "decussationSite": {
+      "ko": "척수 앞백색맞교차; 입력 분절 인접 수준"
+     }
+    },
+    {
+     "id": "spinothalamic-anterior-3",
+     "title": {
+      "ko": "VPL → S1"
+     },
+     "description": {
+      "ko": "반대쪽 VPL의 중계뉴런이 속섬유막을 통해 반대쪽 S1에 신호를 보낸다. 통증의 정서적 가지는 별도 경로다."
+     },
+     "structures": [
+      {
+       "id": "thal-vpl",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-vpl",
+       "side": "contra"
+      },
+      {
+       "id": "tr-internal-capsule-posterior",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-postcentral",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        8,
+        9,
+        16
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 뒤다리"
+     },
+     "neuronOrder": 3
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "척수 반쪽"
+     },
+     "deficit": {
+      "ko": "대개 병변보다 1~2분절 아래부터 반대쪽 통각·온도감각 장애"
+     },
+     "side": "contra",
+     "syndrome": "Brown-Séquard syndrome"
+    }
+   ],
+   "edges": [
+    {
+     "from": "spinothalamic-anterior-1",
+     "to": "spinothalamic-anterior-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "spinothalamic-anterior-2",
+     "to": "spinothalamic-anterior-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "pain-affective",
+   "category": "pain",
+   "name": {
+    "ko": "통증의 정서·인지 경로",
+    "en": "Affective and cognitive pain processing"
+   },
+   "summary": {
+    "ko": "척수 통각신호가 시상·그물체를 거쳐 띠겉질·섬겉질·전전두망과 상호작용해 고통의 정서적 측면을 형성한다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      10,
+      15,
+      16,
+      17
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "pain-affective-1",
+     "title": {
+      "ko": "척수 통각 → 상행망"
+     },
+     "description": {
+      "ko": "뒤뿔의 출력은 척수시상·척수그물 경로 등으로 분산된다. 원문은 정서 가지의 각 중계핵·좌우를 완전하게 제시하지 않으므로 양측 네트워크로 표시한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-dorsal-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-dorsal-horn",
+       "side": "contra"
+      },
+      {
+       "id": "tr-spinoreticular",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-spinoreticular",
+       "side": "contra"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "contra"
+      },
+      {
+       "id": "thal-relay",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-relay",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        10,
+        15,
+        16,
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 뒤뿔 · 척수그물로 · 그물체 · 시상 중계핵군"
+     }
+    },
+    {
+     "id": "pain-affective-2",
+     "title": {
+      "ko": "ACC·섬겉질·PFC"
+     },
+     "description": {
+      "ko": "띠겉질은 정서적 불쾌감, 섬겉질은 감각·자율신경·인지 통합에 관여한다. PFC와 상호작용하며 이 구조들을 하나씩 직렬 통과하는 경로로 보지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-anterior-cingulate",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-anterior-cingulate",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-insula",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-insula",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-prefrontal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-prefrontal",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        10,
+        15,
+        16,
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 앞띠겉질 (ACC) · 섬겉질 · 전전두겉질"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "띠겉질·섬겉질 관련망"
+     },
+     "deficit": {
+      "ko": "통각 인지와 정서적 반응이 분리되는 통증상징불능이 나타날 수 있음"
+     },
+     "syndrome": "Pain asymbolia"
+    }
+   ],
+   "topology": "distributed-network",
+   "edges": [
+    {
+     "from": "pain-affective-1",
+     "to": "pain-affective-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "pain-gate-control",
+   "category": "pain",
+   "name": {
+    "ko": "통각 관문조절",
+    "en": "Gate control of pain"
+   },
+   "summary": {
+    "ko": "Aβ 촉각입력이 뒤뿔 억제성회로를 활성화해 통각전달을 줄이는 모형이다."
+   },
+   "origin": {
+    "ko": "촉각·통각 자극을 받는 몸 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      17
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "pain-gate-control-1",
+     "title": {
+      "ko": "Aβ 입력"
+     },
+     "description": {
+      "ko": "주변 피부의 무해 촉각입력이 Aβ 구심축삭을 통해 뒤뿔로 들어온다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-skin-mechanoreceptors",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-drg",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-dorsal-horn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 피부 기계수용기 · 척수신경절 (DRG) · 척수 뒤뿔"
+     }
+    },
+    {
+     "id": "pain-gate-control-2",
+     "title": {
+      "ko": "관문 닫힘"
+     },
+     "description": {
+      "ko": "억제성사이뉴런이 통각구심 말단·투사뉴런 전달을 억제한다. Aδ/C 입력이 우세하면 관문이 열리는 방향으로 변한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-substantia-gelatinosa",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-inhibitory-interneuron",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-presynaptic",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아교질 (Rexed II) · 척수 억제성사이뉴런 · 시냅스앞말단"
+     }
+    },
+    {
+     "id": "pain-gate-control-3",
+     "title": {
+      "ko": "상행 통각 감소"
+     },
+     "description": {
+      "ko": "뒤뿔 통각 투사뉴런의 발화가 감소해 척수시상계를 통한 신호가 줄어든다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-spinothalamic-lateral",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽척수시상로"
+     }
+    }
+   ],
+   "lesions": [],
+   "memo": "구심섬유별 관문은 정리본의 교육용 모형. 모든 회로가 단일 억제사이뉴런으로 구현된다고 확정하지 않음.",
+   "edges": [
+    {
+     "from": "pain-gate-control-1",
+     "to": "pain-gate-control-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "pain-gate-control-2",
+     "to": "pain-gate-control-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

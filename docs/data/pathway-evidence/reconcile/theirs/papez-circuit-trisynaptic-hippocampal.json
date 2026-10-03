@@ -1,0 +1,1079 @@
+{
+ "ours": "papez-circuit-trisynaptic-hippocampal",
+ "theirs": [
+  {
+   "id": "papez",
+   "category": "limbic",
+   "name": {
+    "ko": "파페츠 회로",
+    "en": "Papez circuit"
+   },
+   "summary": {
+    "ko": "해마형성체→뇌활→유두체→시상앞핵→띠겉질→속후각겉질→해마로 돌아오는 기억 회로."
+   },
+   "origin": {
+    "ko": "표시할 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-plus-existing-draft",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      12,
+      27,
+      35,
+      37,
+      41
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      78,
+      79,
+      80
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "papez-1",
+     "title": {
+      "ko": "해마형성체 → 뇌활"
+     },
+     "description": {
+      "ko": "해마이행부 중심의 출력이 해마술을 포함한 뇌활로 모인다."
+     },
+     "structures": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-fornix",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-subiculum",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-fornix",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        12,
+        27,
+        35,
+        37,
+        41
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        78,
+        79,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 해마이행부"
+     }
+    },
+    {
+     "id": "papez-2",
+     "title": {
+      "ko": "유두체"
+     },
+     "description": {
+      "ko": "교차뒤뇌활이 유두체로 투사한다."
+     },
+     "structures": [
+      {
+       "id": "lim-mammillary-body",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-mammillary-body",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        12,
+        27,
+        35,
+        37,
+        41
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        78,
+        79,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "papez-3",
+     "title": {
+      "ko": "유두시상로 → 시상앞핵군"
+     },
+     "description": {
+      "ko": "유두체 출력이 유두시상로를 따라 시상앞핵군에 전달된다."
+     },
+     "structures": [
+      {
+       "id": "tr-mtt",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-anterior",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-mtt",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-anterior",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        12,
+        27,
+        35,
+        37,
+        41
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        78,
+        79,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "papez-4",
+     "title": {
+      "ko": "띠겉질"
+     },
+     "description": {
+      "ko": "시상앞핵군의 출력이 띠겉질에 전달된다. 기존 속섬유막 앞다리 설명은 원문이 회로 전체를 명시하지 않아 세부주행을 확정하지 않았다."
+     },
+     "structures": [
+      {
+       "id": "ctx-cingulate",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-cingulate",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        12,
+        27,
+        35,
+        37,
+        41
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        78,
+        79,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "papez-5",
+     "title": {
+      "ko": "띠다발 → 속후각겉질 → 해마"
+     },
+     "description": {
+      "ko": "띠다발을 통한 해마곁영역·속후각겉질 연결과 관통로를 통해 해마로 되돌아간다. 원문에는 부분 연결이 제시되어 있어 완전한 파페츠 고리는 기존 데이터와 표준 해부학 보완에 해당한다."
+     },
+     "structures": [
+      {
+       "id": "ctx-parahippocampal",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-cingulum",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-parahippocampal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-entorhinal",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-perforant-path",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        12,
+        27,
+        35,
+        37,
+        41
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        78,
+        79,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 띠다발 · 속후각겉질 · 관통로"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "양쪽 해마·뇌활"
+     },
+     "deficit": {
+      "ko": "새 서술기억 형성 장애"
+     },
+     "side": "bilateral"
+    }
+   ],
+   "memo": "원문은 뇌활-유두체-시상 및 띠다발의 부분 연결을 설명. 회로 전체와 subiculum 세부는 기존 초안 계승이며 전문 검수 필요. 고전적인 설명용 고리로 정리했으며 실제 상호연결·평행망 전체를 단방향 직렬로 축소한 모델은 아님.",
+   "edges": [
+    {
+     "from": "papez-1",
+     "to": "papez-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "papez-2",
+     "to": "papez-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "papez-3",
+     "to": "papez-4",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "papez-4",
+     "to": "papez-5",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network",
+   "externalReferenceIds": [
+    "primary-papez-mri"
+   ]
+  },
+  {
+   "id": "hippocampal-trisynaptic",
+   "category": "limbic",
+   "name": {
+    "ko": "해마 삼중시냅스 회로",
+    "en": "Hippocampal trisynaptic circuit"
+   },
+   "summary": {
+    "ko": "속후각겉질→치아이랑→CA3→CA1의 세 가지 흥분성 연결을 구분한다."
+   },
+   "origin": {
+    "ko": "정보를 받는 해마반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      83,
+      84
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "hippocampal-trisynaptic-1",
+     "title": {
+      "ko": "속후각 → 관통로 → DG"
+     },
+     "description": {
+      "ko": "속후각겉질 출력이 관통로를 통해 치아이랑 과립세포에 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-entorhinal",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-perforant-path",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-dentate-gyrus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        83,
+        84
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속후각겉질 · 관통로 · 치아이랑"
+     },
+     "transmitter": "glutamate"
+    },
+    {
+     "id": "hippocampal-trisynaptic-2",
+     "title": {
+      "ko": "DG → 이끼섬유 → CA3"
+     },
+     "description": {
+      "ko": "치아이랑 과립세포 축삭인 해마 이끼섬유가 CA3에 전달된다. 소뇌 이끼섬유와 별개다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-hippocampal-mossy",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-ca3",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        83,
+        84
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 해마 이끼섬유 · 해마 CA3"
+     },
+     "transmitter": "glutamate"
+    },
+    {
+     "id": "hippocampal-trisynaptic-3",
+     "title": {
+      "ko": "CA3 → Schaffer → CA1"
+     },
+     "description": {
+      "ko": "CA3 축삭의 샤퍼곁가지가 CA1 피라미드세포에 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-schaffer",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-ca1",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        83,
+        84
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 샤퍼곁가지 · 해마 CA1"
+     },
+     "transmitter": "glutamate"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "hippocampal-trisynaptic-1",
+     "to": "hippocampal-trisynaptic-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "hippocampal-trisynaptic-2",
+     "to": "hippocampal-trisynaptic-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "declarative-memory-input",
+   "category": "limbic",
+   "name": {
+    "ko": "내측관자 서술기억 입력·출력",
+    "en": "Medial temporal declarative memory flow"
+   },
+   "summary": {
+    "ko": "연합겉질→해마곁·속후각→해마의 흐름이 감각정보의 결합과 기억 공고화에 관여한다."
+   },
+   "origin": {
+    "ko": "기억회로를 표시할 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      78,
+      79,
+      80
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "declarative-memory-input-1",
+     "title": {
+      "ko": "감각·연합겉질"
+     },
+     "description": {
+      "ko": "여러 감각정보가 겉질연합영역에서 처리된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-prefrontal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-parietal-association",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-inferior-temporal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        78,
+        79,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전전두겉질 · 마루연합겉질 (BA 5·7 등) · 아래관자겉질"
+     }
+    },
+    {
+     "id": "declarative-memory-input-2",
+     "title": {
+      "ko": "해마곁·후각곁·속후각"
+     },
+     "description": {
+      "ko": "내측관자 겉질망이 해마에 정보를 전달한다. p.78 Information Flow 그림을 함께 확인했다."
+     },
+     "structures": [
+      {
+       "id": "ctx-parahippocampal",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-parahippocampal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-perirhinal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-entorhinal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        78,
+        79,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 후각곁겉질 · 속후각겉질"
+     }
+    },
+    {
+     "id": "declarative-memory-input-3",
+     "title": {
+      "ko": "해마 결합·출력"
+     },
+     "description": {
+      "ko": "해마는 정보 결합·초기 기억 저장·공간기억에 기여하며 겉질·시상하부·시상 관련망과 상호작용한다."
+     },
+     "structures": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-fornix",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-fornix",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        78,
+        79,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "양쪽 내측관자·해마"
+     },
+     "deficit": {
+      "ko": "새 서술기억 공고화 장애; 작업기억·절차학습이 상대적으로 보존될 수 있음"
+     },
+     "side": "bilateral"
+    }
+   ],
+   "edges": [
+    {
+     "from": "declarative-memory-input-1",
+     "to": "declarative-memory-input-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "declarative-memory-input-2",
+     "to": "declarative-memory-input-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "association-cingulum",
+   "category": "cognition",
+   "name": {
+    "ko": "띠다발 둘레겉질 연결",
+    "en": "Cingulum limbic association connection"
+   },
+   "summary": {
+    "ko": "같은반구 겉질 간 연합연결. 단순 순차 신경과정보다 해부학적 연결 항목이다."
+   },
+   "origin": {
+    "ko": "표시할 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-anatomical-connection",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      35
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "association-cingulum-1",
+     "title": {
+      "ko": "한쪽 연합겉질"
+     },
+     "description": {
+      "ko": "연합섬유는 같은반구 영역을 연결한다. 원문에 특정 과정이 충분히 제시되지 않아 기능을 과도하게 추정하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "ctx-cingulate",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-cingulate",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        35
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "association-cingulum-2",
+     "title": {
+      "ko": "백질다발 연결"
+     },
+     "description": {
+      "ko": "다발을 통해 연관 겉질이 연결된다. 여기의 방향은 표시에 따른 선택이며 실제 연결은 단방향으로 확정하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "ctx-parahippocampal",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "tr-cingulum",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-parahippocampal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        35
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 띠다발"
+     }
+    }
+   ],
+   "lesions": [],
+   "processType": "anatomical-connectivity",
+   "edges": [
+    {
+     "from": "association-cingulum-1",
+     "to": "association-cingulum-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description"
+  },
+  {
+   "id": "systems-consolidation",
+   "category": "learning",
+   "name": {
+    "ko": "기억의 체계 공고화",
+    "en": "Systems consolidation of memory"
+   },
+   "summary": {
+    "ko": "해마–겉질 상호작용이 시간에 따라 겉질 기억표현을 재구성하는 모형이다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      79
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "systems-consolidation-1",
+     "title": {
+      "ko": "초기 해마 의존 기억"
+     },
+     "description": {
+      "ko": "초기 맥락기억의 결합·회상은 해마에 크게 의존한다."
+     },
+     "structures": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        79
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "systems-consolidation-2",
+     "title": {
+      "ko": "해마–겉질 상호작용"
+     },
+     "description": {
+      "ko": "시간과 재활성화를 통해 겉질 연결이 강화·재구성된다. 기억을 파일처럼 한 핵에서 다른 핵으로 단순 이동하는 것으로 해석하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-prefrontal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-prefrontal",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-anterior-cingulate",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-anterior-cingulate",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        79
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전전두겉질 · 앞띠겉질 (ACC)"
+     }
+    },
+    {
+     "id": "systems-consolidation-3",
+     "title": {
+      "ko": "겉질 표현 증가"
+     },
+     "description": {
+      "ko": "원문의 맥락공포 동물실험에서는 ACC 의존성이 증가한다. 모든 기억이 같은 시간표로 완전히 해마에서 독립한다는 뜻은 아니다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-anterior-cingulate",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-anterior-cingulate",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        79
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 앞띠겉질 (ACC)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "systems-consolidation-1",
+     "to": "systems-consolidation-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "systems-consolidation-2",
+     "to": "systems-consolidation-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "spatial-memory",
+   "category": "learning",
+   "name": {
+    "ko": "격자·장소세포 공간기억",
+    "en": "Grid and place cell spatial coding"
+   },
+   "summary": {
+    "ko": "속후각 격자세포와 해마 장소세포 집단이 공간항법·위치기억에 기여한다."
+   },
+   "origin": {
+    "ko": "표시할 해마반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      78
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "spatial-memory-1",
+     "title": {
+      "ko": "속후각 격자표현"
+     },
+     "description": {
+      "ko": "격자세포는 공간의 반복적 격자 패턴과 관련된 활동을 보인다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-entorhinal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        78
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속후각겉질"
+     }
+    },
+    {
+     "id": "spatial-memory-2",
+     "title": {
+      "ko": "해마 장소표현"
+     },
+     "description": {
+      "ko": "해마 장소세포는 특정 위치·맥락에 대한 활동을 보인다. 두 체계는 상호작용하며 단일 단방향 연결만으로 고정하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        78
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "spatial-memory-1",
+     "to": "spatial-memory-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

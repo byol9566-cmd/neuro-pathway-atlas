@@ -1,0 +1,1212 @@
+{
+ "ours": "basal-ganglia-circuits",
+ "theirs": [
+  {
+   "id": "basal-ganglia-direct",
+   "category": "basal-ganglia",
+   "name": {
+    "ko": "바닥핵 직접경로",
+    "en": "Basal ganglia direct pathway"
+   },
+   "summary": {
+    "ko": "흥분·억제의 부호를 구분하여 선조체–창백핵–시상–겉질 운동조절을 표현한다."
+   },
+   "origin": {
+    "ko": "회로를 표시할 대뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      43
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      70
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "basal-ganglia-direct-1",
+     "title": {
+      "ko": "중심앞이랑 (일차운동겉질)"
+     },
+     "description": {
+      "ko": "겉질 글루탐산 입력이 선조체를 흥분시킨다."
+     },
+     "structures": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "transmitter": "glutamate"
+    },
+    {
+     "id": "basal-ganglia-direct-2",
+     "title": {
+      "ko": "꼬리핵"
+     },
+     "description": {
+      "ko": "D1 중심 직접경로 선조체 뉴런이 GABA 출력을 낸다."
+     },
+     "structures": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "transmitter": "GABA"
+    },
+    {
+     "id": "basal-ganglia-direct-3",
+     "title": {
+      "ko": "창백핵 속분절 (GPi)"
+     },
+     "description": {
+      "ko": "GPi/SNr를 억제해 시상의 지속억제를 낮춘다."
+     },
+     "structures": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-snr",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 흑색질 그물부 (SNr)"
+     },
+     "transmitter": "GABA"
+    },
+    {
+     "id": "basal-ganglia-direct-4",
+     "title": {
+      "ko": "배쪽앞핵 (VA)"
+     },
+     "description": {
+      "ko": "탈억제된 VA/VL의 겉질 흥분출력이 증가한다."
+     },
+     "structures": [
+      {
+       "id": "thal-va",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-va",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "transmitter": "glutamate"
+    },
+    {
+     "id": "basal-ganglia-direct-5",
+     "title": {
+      "ko": "중심앞이랑 (일차운동겉질)"
+     },
+     "description": {
+      "ko": "운동 선택·수행을 촉진하는 고전 모형이다."
+     },
+     "structures": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "transmitter": "glutamate"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "basal-ganglia-direct-1",
+     "to": "basal-ganglia-direct-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "basal-ganglia-direct-2",
+     "to": "basal-ganglia-direct-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "basal-ganglia-direct-3",
+     "to": "basal-ganglia-direct-4",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "basal-ganglia-direct-4",
+     "to": "basal-ganglia-direct-5",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "basal-ganglia-indirect",
+   "category": "basal-ganglia",
+   "name": {
+    "ko": "바닥핵 간접경로",
+    "en": "Basal ganglia indirect pathway"
+   },
+   "summary": {
+    "ko": "흥분·억제의 부호를 구분하여 선조체–창백핵–시상–겉질 운동조절을 표현한다."
+   },
+   "origin": {
+    "ko": "회로를 표시할 대뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      43
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      70
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "basal-ganglia-indirect-1",
+     "title": {
+      "ko": "중심앞이랑 (일차운동겉질)"
+     },
+     "description": {
+      "ko": "겉질이 선조체를 흥분시킨다."
+     },
+     "structures": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "transmitter": "glutamate"
+    },
+    {
+     "id": "basal-ganglia-indirect-2",
+     "title": {
+      "ko": "꼬리핵"
+     },
+     "description": {
+      "ko": "D2 중심 선조체 GABA 뉴런이 GPe를 억제한다."
+     },
+     "structures": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "transmitter": "GABA"
+    },
+    {
+     "id": "basal-ganglia-indirect-3",
+     "title": {
+      "ko": "창백핵 바깥분절 (GPe)"
+     },
+     "description": {
+      "ko": "GPe가 억제되면 STN에 대한 억제가 감소한다."
+     },
+     "structures": [
+      {
+       "id": "bg-gpe",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-gpe",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "transmitter": "GABA"
+    },
+    {
+     "id": "basal-ganglia-indirect-4",
+     "title": {
+      "ko": "시상밑핵 (STN)"
+     },
+     "description": {
+      "ko": "STN의 글루탐산 출력이 GPi/SNr를 흥분시킨다."
+     },
+     "structures": [
+      {
+       "id": "bg-stn",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-stn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "transmitter": "glutamate"
+    },
+    {
+     "id": "basal-ganglia-indirect-5",
+     "title": {
+      "ko": "창백핵 속분절 (GPi)"
+     },
+     "description": {
+      "ko": "GPi/SNr의 시상 GABA 억제가 증가한다."
+     },
+     "structures": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-snr",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 흑색질 그물부 (SNr)"
+     },
+     "transmitter": "GABA"
+    },
+    {
+     "id": "basal-ganglia-indirect-6",
+     "title": {
+      "ko": "배쪽앞핵 (VA)"
+     },
+     "description": {
+      "ko": "시상겉질 흥분출력이 감소하는 고전 모형이다."
+     },
+     "structures": [
+      {
+       "id": "thal-va",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-va",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        70
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "transmitter": "glutamate"
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "선조체 간접경로 뉴런"
+     },
+     "deficit": {
+      "ko": "헌팅턴병에서 초기 과운동·무도증; 진행 시 다른 회로도 손상"
+     }
+    },
+    {
+     "level": {
+      "ko": "STN"
+     },
+     "deficit": {
+      "ko": "반대쪽 반무도/반발리즘"
+     },
+     "side": "contra",
+     "syndrome": "Hemiballismus"
+    }
+   ],
+   "edges": [
+    {
+     "from": "basal-ganglia-indirect-1",
+     "to": "basal-ganglia-indirect-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "basal-ganglia-indirect-2",
+     "to": "basal-ganglia-indirect-3",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "basal-ganglia-indirect-3",
+     "to": "basal-ganglia-indirect-4",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "basal-ganglia-indirect-4",
+     "to": "basal-ganglia-indirect-5",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "basal-ganglia-indirect-5",
+     "to": "basal-ganglia-indirect-6",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "nigrostriatal",
+   "category": "basal-ganglia",
+   "name": {
+    "ko": "흑색질–선조체 도파민 조절",
+    "en": "Nigrostriatal dopamine modulation"
+   },
+   "summary": {
+    "ko": "SNc 도파민은 D1 직접경로를 촉진하고 D2 간접경로 활성을 억제하는 고전 운동모형이다."
+   },
+   "origin": {
+    "ko": "도파민 출력을 내는 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-plus-internal-correction",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      42,
+      43
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      71
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "nigrostriatal-1",
+     "title": {
+      "ko": "SNc 도파민 출력"
+     },
+     "description": {
+      "ko": "흑색질 치밀부 도파민뉴런이 등쪽선조체에 투사한다. SNr의 GABA 출력과 구분한다."
+     },
+     "structures": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-snc",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        42,
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        71
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 흑색질 치밀부 (SNc)"
+     },
+     "transmitter": "dopamine"
+    },
+    {
+     "id": "nigrostriatal-2",
+     "title": {
+      "ko": "D1·D2 조절"
+     },
+     "description": {
+      "ko": "D1의 Gs/olf 관련 신호와 D2의 Gi 관련 신호가 직접·간접경로 뉴런을 다르게 조절한다."
+     },
+     "structures": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        42,
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        71
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "molecules": [
+      "D1 receptor",
+      "D2 receptor"
+     ]
+    },
+    {
+     "id": "nigrostriatal-3",
+     "title": {
+      "ko": "도파민 소실의 결과"
+     },
+     "description": {
+      "ko": "도파민 소실 시 직접경로는 약화되고 간접경로 영향이 강화되어 시상겉질 운동출력이 감소한다. 1차 p.43의 직접↑/간접↓ 표기는 2차 p.71과 충돌하여 교정했다."
+     },
+     "structures": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-stn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-stn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        42,
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        71
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "SNc 도파민뉴런"
+     },
+     "deficit": {
+      "ko": "서동·운동개시 장애·강직·안정떨림; 세 증상을 모두 akinesia와 동의어로 사용하지 않음"
+     },
+     "syndrome": "Parkinson disease"
+    }
+   ],
+   "edges": [
+    {
+     "from": "nigrostriatal-1",
+     "to": "nigrostriatal-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "nigrostriatal-2",
+     "to": "nigrostriatal-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "stn-dbs-network",
+   "category": "basal-ganglia",
+   "name": {
+    "ko": "STN DBS의 운동망 조절",
+    "en": "Subthalamic deep brain stimulation network modulation"
+   },
+   "summary": {
+    "ko": "원문의 STN DBS 예시를 뉴런·섬유·망활동 조절로 저장한다."
+   },
+   "origin": {
+    "ko": "자극하는 바닥핵 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-model-needs-expert-review",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      43
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      71
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "stn-dbs-network-1",
+     "title": {
+      "ko": "STN 부근 자극"
+     },
+     "description": {
+      "ko": "STN 주변 전기자극은 국소뉴런·통과축삭·연결망 활동을 변화시킨다. 자극이 단순히 STN을 흥분 또는 억제한다고 고정하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "bg-stn",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-stn",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        71
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "stn-dbs-network-2",
+     "title": {
+      "ko": "바닥핵–시상겉질 조절"
+     },
+     "description": {
+      "ko": "이 조절은 창백핵·시상겉질 운동망의 병적 활동에 영향을 준다. 원문의 단순 motor 억제→떨림 호전 설명은 배선·기전이 불충분해 확정하지 않았다."
+     },
+     "structures": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        71
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "stn-dbs-network-1",
+     "to": "stn-dbs-network-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "procedural-memory",
+   "category": "learning",
+   "name": {
+    "ko": "선조체 습관·절차기억",
+    "en": "Striatal habit and procedural memory"
+   },
+   "summary": {
+    "ko": "이마·마루 입력이 선조체–바닥핵–시상겉질 회로의 학습을 통해 규칙·습관·기술 수행에 기여한다."
+   },
+   "origin": {
+    "ko": "학습하는 대뇌반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      76,
+      80
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "procedural-memory-1",
+     "title": {
+      "ko": "겉질 입력"
+     },
+     "description": {
+      "ko": "이마·마루겉질 입력이 선조체에 들어온다."
+     },
+     "structures": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-prefrontal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-parietal-association",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        76,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전전두겉질 · 마루연합겉질 (BA 5·7 등)"
+     }
+    },
+    {
+     "id": "procedural-memory-2",
+     "title": {
+      "ko": "선조체 학습"
+     },
+     "description": {
+      "ko": "반복 경험·강화에 따라 행동규칙·습관 관련 연결이 변한다. 해마의 공간맥락 기억과 구분한다."
+     },
+     "structures": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        76,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "procedural-memory-3",
+     "title": {
+      "ko": "시상겉질 되먹임"
+     },
+     "description": {
+      "ko": "선조체 출력은 바닥핵 출력핵을 거쳐 시상·운동겉질망에 영향을 준다. 원문의 선조체→시상 표현을 단일 직접 흥분축삭으로 해석하지 않는다."
+     },
+     "structures": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        76,
+        80
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "procedural-memory-1",
+     "to": "procedural-memory-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "procedural-memory-2",
+     "to": "procedural-memory-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

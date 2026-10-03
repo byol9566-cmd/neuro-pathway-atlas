@@ -1,0 +1,1223 @@
+{
+ "ours": "central-vestibular-pathways",
+ "theirs": [
+  {
+   "id": "vestibular-perception",
+   "category": "vestibular",
+   "name": {
+    "ko": "안뜰감각의 의식적 중추전달",
+    "en": "Conscious vestibular perception"
+   },
+   "summary": {
+    "ko": "안뜰핵 출력이 시상 중계와 전정겉질망을 통해 자세·움직임 인식에 기여한다."
+   },
+   "origin": {
+    "ko": "안뜰입력을 받는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      49
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vestibular-perception-1",
+     "title": {
+      "ko": "Scarpa → 안뜰핵군"
+     },
+     "description": {
+      "ko": "안뜰구심이 안쪽·가쪽·위·아래 안뜰핵 관련망으로 전달된다. 입력기관별 투사 차이가 있다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-other",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "pn-vestibular-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-other",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 안뜰신경절 (Scarpa)"
+     }
+    },
+    {
+     "id": "vestibular-perception-2",
+     "title": {
+      "ko": "시상 중계"
+     },
+     "description": {
+      "ko": "안뜰핵 출력이 시상 VP 등 여러 중계영역에 전달된다. 원문은 좌우·개별핵을 충분히 지정하지 않아 양측 VP 표시로 보류한다."
+     },
+     "structures": [
+      {
+       "id": "thal-vpl",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vpl",
+       "side": "contra"
+      },
+      {
+       "id": "thal-vpm",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vpm",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "thal-vpl",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vpl",
+       "side": "contra"
+      },
+      {
+       "id": "thal-vpm",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vpm",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "vestibular-perception-3",
+     "title": {
+      "ko": "전정겉질망"
+     },
+     "description": {
+      "ko": "전정겉질은 단일 전정핵처럼 독립된 한 위치가 아니라 마루·섬 등 분산망이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-vestibular",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-vestibular",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-insula",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-insula",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        49
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전정겉질 (마루·섬 영역) · 섬겉질"
+     }
+    }
+   ],
+   "lesions": [],
+   "lateralityNote": "세부 교차 원문 미제시; 양측 네트워크 표시.",
+   "edges": [
+    {
+     "from": "vestibular-perception-1",
+     "to": "vestibular-perception-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "vestibular-perception-2",
+     "to": "vestibular-perception-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vestibulocerebellar",
+   "category": "cerebellar",
+   "name": {
+    "ko": "안뜰소뇌 되먹임",
+    "en": "Vestibulocerebellar feedback"
+   },
+   "summary": {
+    "ko": "안뜰기관·안뜰핵→타래결절겉질→푸르키네/꼭지핵→안뜰핵으로 자세·눈운동을 조절한다."
+   },
+   "origin": {
+    "ko": "안뜰입력을 받는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      46,
+      48,
+      51
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      51,
+      61,
+      72
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vestibulocerebellar-1",
+     "title": {
+      "ko": "안뜰 입력 → 소뇌"
+     },
+     "description": {
+      "ko": "일차 안뜰구심 및 안뜰핵 입력이 아래소뇌다리를 통해 안뜰소뇌로 전달된다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "pn-cn8-vestibular",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-icp",
+       "side": "ipsi"
+      },
+      {
+       "id": "cb-flocculonodular",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        46,
+        48
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        61,
+        72
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 안뜰신경 (VIII) · 아래소뇌다리 · 타래결절엽"
+     }
+    },
+    {
+     "id": "vestibulocerebellar-2",
+     "title": {
+      "ko": "푸르키네 처리"
+     },
+     "description": {
+      "ko": "푸르키네세포는 안뜰입력·시각오류 정보를 통합하며 억제성 출력을 낸다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cb-purkinje",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        46,
+        48
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        61,
+        72
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 푸르키네세포"
+     },
+     "transmitter": "GABA"
+    },
+    {
+     "id": "vestibulocerebellar-3",
+     "title": {
+      "ko": "직접·깊은핵 경유 출력"
+     },
+     "description": {
+      "ko": "푸르키네는 안뜰핵에 직접 억제출력을 보내는 가지가 있고 꼭지핵을 거쳐 조절하는 가지도 있다. 꼭지핵은 안뜰·그물 운동망에 영향을 준다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "contra"
+      },
+      {
+       "id": "bs-vestibular-other",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-other",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "cb-fastigial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "contra"
+      },
+      {
+       "id": "bs-vestibular-other",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-other",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        46,
+        48
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        61,
+        72
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 꼭지핵"
+     }
+    }
+   ],
+   "lesions": [],
+   "topology": "feedback-with-parallel-output",
+   "edges": [
+    {
+     "from": "vestibulocerebellar-1",
+     "to": "vestibulocerebellar-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "vestibulocerebellar-2",
+     "to": "vestibulocerebellar-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vestibular-postural-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "안뜰성 자세교정반사",
+    "en": "Vestibular postural correction reflex"
+   },
+   "summary": {
+    "ko": "기울임·안뜰 불균형에 따라 폄근·굽힘근의 양측 출력이 달라지는 자세반사."
+   },
+   "origin": {
+    "ko": "머리를 돌리거나 기울이는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-mention-incomplete",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      51,
+      52
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vestibular-postural-reflex-1",
+     "title": {
+      "ko": "목·안뜰 입력"
+     },
+     "description": {
+      "ko": "기울임·안뜰 불균형에 따라 폄근·굽힘근의 양측 출력이 달라지는 자세반사. 정확한 입력뉴런·중계핵은 원문에 상세히 제시되지 않았다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "so-muscle-spindle",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-utricle",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-utricle",
+       "side": "contra"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-medial",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        52
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 근방추 · 타원주머니"
+     }
+    },
+    {
+     "id": "vestibular-postural-reflex-2",
+     "title": {
+      "ko": "양측 척수운동망"
+     },
+     "description": {
+      "ko": "뇌줄기·척수망이 양측 근육 출력을 조절한다. 정리본에 없는 구체 교차점을 추정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-extensor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-flexor",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        51,
+        52
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 알파운동뉴런 · 폄근군 · 굽힘근군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "vestibular-postural-reflex-1",
+     "to": "vestibular-postural-reflex-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vestibulo-autonomic",
+   "category": "autonomic",
+   "name": {
+    "ko": "안뜰–교감반사",
+    "en": "Vestibulosympathetic reflex"
+   },
+   "summary": {
+    "ko": "안뜰입력이 RVLM·IML 등 자율신경망에 영향을 주어 자세변화 때 혈압조절을 보조한다."
+   },
+   "origin": {
+    "ko": "안뜰입력을 받는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      53
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vestibulo-autonomic-1",
+     "title": {
+      "ko": "안뜰핵 입력"
+     },
+     "description": {
+      "ko": "머리·자세변화가 안뜰핵의 출력에 영향을 준다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-other",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vestibular-other",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        53
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "vestibulo-autonomic-2",
+     "title": {
+      "ko": "숨뇌 자율신경망"
+     },
+     "description": {
+      "ko": "안뜰핵은 NTS·CVLM·RVLM 및 다리뇌팔핵 관련망과 연결된다. 주된 교감 조절 가지를 RVLM 중심으로 표시한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-rvlm",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-rvlm",
+       "side": "contra"
+      },
+      {
+       "id": "bs-cvlm",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-cvlm",
+       "side": "contra"
+      },
+      {
+       "id": "bs-solitary",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-solitary",
+       "side": "contra"
+      },
+      {
+       "id": "bs-parabrachial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-parabrachial",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        53
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 입쪽배가쪽숨뇌 (RVLM) · 꼬리쪽배가쪽숨뇌 (CVLM) · 고립로핵 (NTS) · 다리뇌팔핵"
+     }
+    },
+    {
+     "id": "vestibulo-autonomic-3",
+     "title": {
+      "ko": "IML → 교감출력"
+     },
+     "description": {
+      "ko": "RVLM 관련 입력이 IML 교감 절전뉴런과 교감신경절·심혈관 출력에 영향을 준다. 좌우 교차세부는 원문에 없어 양측망으로 유지한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-iml",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-iml",
+       "side": "contra"
+      },
+      {
+       "id": "pn-sympathetic-chain",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-sympathetic-chain",
+       "side": "contra"
+      },
+      {
+       "id": "ef-heart-vessels",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        53
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 중간가쪽세포기둥 (IML) · 교감신경줄기·척추옆신경절 · 심장·혈관"
+     }
+    }
+   ],
+   "lesions": [],
+   "topology": "distributed-network",
+   "edges": [
+    {
+     "from": "vestibulo-autonomic-1",
+     "to": "vestibulo-autonomic-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "vestibulo-autonomic-2",
+     "to": "vestibulo-autonomic-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "otolith-tilt",
+   "category": "vestibular",
+   "name": {
+    "ko": "이석기관의 기울임·선가속 부호화",
+    "en": "Otolith tilt and linear acceleration coding"
+   },
+   "summary": {
+    "ko": "utricle·saccule 평형반의 방향 배열이 중력·선가속을 감지한다."
+   },
+   "origin": {
+    "ko": "기울이거나 가속하는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      47
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "otolith-tilt-1",
+     "title": {
+      "ko": "이석막 이동"
+     },
+     "description": {
+      "ko": "중력·선가속에 따른 이석막 상대이동이 유모세포 털다발을 편향시킨다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-utricle",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-utricle",
+       "side": "contra"
+      },
+      {
+       "id": "so-saccule",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-saccule",
+       "side": "contra"
+      },
+      {
+       "id": "so-otolith-macula",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-otolith-macula",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        47
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 타원주머니 · 둥근주머니 · 이석기관 평형반"
+     }
+    },
+    {
+     "id": "otolith-tilt-2",
+     "title": {
+      "ko": "방향에 따른 흥분·억제"
+     },
+     "description": {
+      "ko": "utricle은 대체로 수평, saccule은 대체로 수직 방향에 민감하다. striola 양쪽 배열에 따라 한 기관 안에서도 흥분·억제가 동시에 가능하다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-vestibular-hair",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-vestibular-hair",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        47
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 안뜰유모세포"
+     }
+    },
+    {
+     "id": "otolith-tilt-3",
+     "title": {
+      "ko": "구심발화"
+     },
+     "description": {
+      "ko": "Scarpa 신경절의 발화집단이 머리의 기울임·가속 정보를 전달한다. 개별 모식도의 앞뒤 방향은 실제 그림 배향에 의존한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-vestibular-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-vestibular-ganglion",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        47
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 안뜰신경절 (Scarpa)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "otolith-tilt-1",
+     "to": "otolith-tilt-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "otolith-tilt-2",
+     "to": "otolith-tilt-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vestibulospinal-lateral",
+   "category": "motor",
+   "name": {
+    "ko": "가쪽안뜰척수 경로",
+    "en": "Lateral vestibulospinal tract"
+   },
+   "summary": {
+    "ko": "같은쪽 폄근 활성·굽힘근 억제를 통한 자세 유지에 관여한다."
+   },
+   "origin": {
+    "ko": "하행 출력을 내는 뇌줄기 핵 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      61
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vestibulospinal-lateral-1",
+     "title": {
+      "ko": "출발핵·입력"
+     },
+     "description": {
+      "ko": "출발핵은 가쪽안뜰핵 (Deiters)이다. 겉질·감각·소뇌 입력의 조합으로 출력이 조절된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-lateral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽안뜰핵 (Deiters)"
+     }
+    },
+    {
+     "id": "vestibulospinal-lateral-2",
+     "title": {
+      "ko": "하행로·교차"
+     },
+     "description": {
+      "ko": "주로 같은쪽으로 교차 없이 하행한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-vestibulospinal-lateral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽안뜰척수로"
+     }
+    },
+    {
+     "id": "vestibulospinal-lateral-3",
+     "title": {
+      "ko": "척수 운동출력"
+     },
+     "description": {
+      "ko": "같은쪽 폄근 활성·굽힘근 억제를 통한 자세 유지에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-ventral-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "vestibulospinal-lateral-1",
+     "to": "vestibulospinal-lateral-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "vestibulospinal-lateral-2",
+     "to": "vestibulospinal-lateral-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vestibulospinal-medial",
+   "category": "motor",
+   "name": {
+    "ko": "안쪽안뜰척수 경로",
+    "en": "Medial vestibulospinal tract"
+   },
+   "summary": {
+    "ko": "양측 목·상부몸통 안정화에 관여한다."
+   },
+   "origin": {
+    "ko": "하행 출력을 내는 뇌줄기 핵 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      3,
+      61
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vestibulospinal-medial-1",
+     "title": {
+      "ko": "출발핵·입력"
+     },
+     "description": {
+      "ko": "출발핵은 안쪽안뜰핵이다. 겉질·감각·소뇌 입력의 조합으로 출력이 조절된다."
+     },
+     "structures": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-vestibular-medial",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "vestibulospinal-medial-2",
+     "title": {
+      "ko": "하행로·교차"
+     },
+     "description": {
+      "ko": "양측으로 분산되어 하행한다. 양측 표시가 한 번의 특정 교차점을 뜻하지 않는다. MVST는 하행 MLF를 통해 목·상부흉부에 이른다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "tr-vestibulospinal-medial",
+       "side": "ipsi"
+      },
+      {
+       "id": "tr-vestibulospinal-medial",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 안쪽안뜰척수로"
+     }
+    },
+    {
+     "id": "vestibulospinal-medial-3",
+     "title": {
+      "ko": "척수 운동출력"
+     },
+     "description": {
+      "ko": "양측 목·상부몸통 안정화에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "sp-ventral-horn",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-ventral-horn",
+       "side": "contra"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-alpha-motor",
+       "side": "contra"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "sp-gamma-motor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-neck-muscles",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        3,
+        61
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "vestibulospinal-medial-1",
+     "to": "vestibulospinal-medial-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "vestibulospinal-medial-2",
+     "to": "vestibulospinal-medial-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

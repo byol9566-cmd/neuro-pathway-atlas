@@ -1,0 +1,722 @@
+{
+ "ours": "dopamine-reward-pathways",
+ "theirs": [
+  {
+   "id": "mesolimbic-dopamine",
+   "category": "limbic",
+   "name": {
+    "ko": "중뇌둘레 도파민 보상망",
+    "en": "Mesolimbic dopamine pathway"
+   },
+   "summary": {
+    "ko": "VTA 도파민→NAc·둘레망의 연결이 보상 추구·강화·동기에 기여한다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      42,
+      44
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      109,
+      110
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "mesolimbic-dopamine-1",
+     "title": {
+      "ko": "VTA 도파민뉴런"
+     },
+     "description": {
+      "ko": "VTA의 도파민뉴런은 GABA 입력·흥분입력 등의 조절을 받는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-vta",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vta",
+       "side": "contra"
+      },
+      {
+       "id": "cell-vta-da",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-vta-da",
+       "side": "contra"
+      },
+      {
+       "id": "cell-vta-gaba",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-vta-gaba",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        42,
+        44
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        109,
+        110
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 배쪽피개영역 (VTA) · VTA 도파민뉴런 · VTA 억제성 GABA 뉴런"
+     }
+    },
+    {
+     "id": "mesolimbic-dopamine-2",
+     "title": {
+      "ko": "NAc 투사"
+     },
+     "description": {
+      "ko": "VTA 도파민출력이 NAc의 MSN 등에 영향을 준다. NAc를 단순 쾌락 발생점으로 동일시하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bg-accumbens",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-accumbens",
+       "side": "contra"
+      },
+      {
+       "id": "cell-na-msn",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-na-msn",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        42,
+        44
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        109,
+        110
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 측좌핵 (NAc) · 측좌핵 중간가시뉴런 (MSN)"
+     },
+     "transmitter": "dopamine"
+    },
+    {
+     "id": "mesolimbic-dopamine-3",
+     "title": {
+      "ko": "둘레·행동망"
+     },
+     "description": {
+      "ko": "NAc·편도체·해마·전전두 연결이 동기·강화행동을 조절한다."
+     },
+     "structures": [
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "contra"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "lim-amygdala",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-amygdala",
+       "side": "contra"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "ipsi"
+      },
+      {
+       "id": "lim-hippocampus",
+       "side": "contra"
+      },
+      {
+       "id": "ctx-prefrontal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-prefrontal",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        42,
+        44
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        109,
+        110
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전전두겉질"
+     }
+    }
+   ],
+   "lesions": [],
+   "topology": "distributed-reward-network",
+   "edges": [
+    {
+     "from": "mesolimbic-dopamine-1",
+     "to": "mesolimbic-dopamine-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "mesolimbic-dopamine-2",
+     "to": "mesolimbic-dopamine-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "mesocortical-dopamine",
+   "category": "limbic",
+   "name": {
+    "ko": "중뇌겉질 도파민 투사",
+    "en": "Mesocortical dopamine projection"
+   },
+   "summary": {
+    "ko": "VTA 도파민출력이 전전두 관련망에 영향을 준다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      110
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "mesocortical-dopamine-1",
+     "title": {
+      "ko": "VTA 출력"
+     },
+     "description": {
+      "ko": "VTA 도파민뉴런의 출력이 전전두망으로 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-vta",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vta",
+       "side": "contra"
+      },
+      {
+       "id": "cell-vta-da",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-vta-da",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        110
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 배쪽피개영역 (VTA) · VTA 도파민뉴런"
+     },
+     "transmitter": "dopamine"
+    },
+    {
+     "id": "mesocortical-dopamine-2",
+     "title": {
+      "ko": "PFC 조절"
+     },
+     "description": {
+      "ko": "작업기억·동기·행동조절에 기여하는 전전두 신호를 조절한다. 도파민의 효과는 수용체·상태에 의존한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "ctx-prefrontal",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-prefrontal",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        110
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전전두겉질"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "mesocortical-dopamine-1",
+     "to": "mesocortical-dopamine-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "nigrostriatal",
+   "category": "basal-ganglia",
+   "name": {
+    "ko": "흑색질–선조체 도파민 조절",
+    "en": "Nigrostriatal dopamine modulation"
+   },
+   "summary": {
+    "ko": "SNc 도파민은 D1 직접경로를 촉진하고 D2 간접경로 활성을 억제하는 고전 운동모형이다."
+   },
+   "origin": {
+    "ko": "도파민 출력을 내는 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-plus-internal-correction",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      42,
+      43
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      71
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "nigrostriatal-1",
+     "title": {
+      "ko": "SNc 도파민 출력"
+     },
+     "description": {
+      "ko": "흑색질 치밀부 도파민뉴런이 등쪽선조체에 투사한다. SNr의 GABA 출력과 구분한다."
+     },
+     "structures": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-snc",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        42,
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        71
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 흑색질 치밀부 (SNc)"
+     },
+     "transmitter": "dopamine"
+    },
+    {
+     "id": "nigrostriatal-2",
+     "title": {
+      "ko": "D1·D2 조절"
+     },
+     "description": {
+      "ko": "D1의 Gs/olf 관련 신호와 D2의 Gi 관련 신호가 직접·간접경로 뉴런을 다르게 조절한다."
+     },
+     "structures": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-caudate",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-putamen",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        42,
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        71
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "molecules": [
+      "D1 receptor",
+      "D2 receptor"
+     ]
+    },
+    {
+     "id": "nigrostriatal-3",
+     "title": {
+      "ko": "도파민 소실의 결과"
+     },
+     "description": {
+      "ko": "도파민 소실 시 직접경로는 약화되고 간접경로 영향이 강화되어 시상겉질 운동출력이 감소한다. 1차 p.43의 직접↑/간접↓ 표기는 2차 p.71과 충돌하여 교정했다."
+     },
+     "structures": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-stn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bg-gpi",
+       "side": "ipsi"
+      },
+      {
+       "id": "bg-stn",
+       "side": "ipsi"
+      },
+      {
+       "id": "thal-vl",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-precentral",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        42,
+        43
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        71
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "SNc 도파민뉴런"
+     },
+     "deficit": {
+      "ko": "서동·운동개시 장애·강직·안정떨림; 세 증상을 모두 akinesia와 동의어로 사용하지 않음"
+     },
+     "syndrome": "Parkinson disease"
+    }
+   ],
+   "edges": [
+    {
+     "from": "nigrostriatal-1",
+     "to": "nigrostriatal-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "nigrostriatal-2",
+     "to": "nigrostriatal-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "vta-gaba-feedback",
+   "category": "limbic",
+   "name": {
+    "ko": "VTA GABA–도파민 억제·NAc 되먹임",
+    "en": "VTA inhibitory control and accumbal feedback"
+   },
+   "summary": {
+    "ko": "VTA GABA 입력과 NAc GABA 출력이 도파민 회로의 억제조절에 참여한다."
+   },
+   "origin": {
+    "ko": "표시할 회로의 쪽 (양측성·정중선 회로에서는 표시 기준만 뜻함)"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-needs-expert-review",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      110
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "vta-gaba-feedback-1",
+     "title": {
+      "ko": "NAc GABA 출력"
+     },
+     "description": {
+      "ko": "NAc의 GABAergic MSN 출력이 VTA 관련망에 영향을 준다. 표적은 도파민·GABA 세포군과 경로에 따라 다르므로 한 부호의 직렬모형으로 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cell-na-msn",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-na-msn",
+       "side": "contra"
+      },
+      {
+       "id": "bs-vta",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-vta",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        110
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 측좌핵 중간가시뉴런 (MSN) · 배쪽피개영역 (VTA)"
+     },
+     "transmitter": "GABA"
+    },
+    {
+     "id": "vta-gaba-feedback-2",
+     "title": {
+      "ko": "VTA 국소 억제"
+     },
+     "description": {
+      "ko": "VTA GABA 세포의 출력은 도파민뉴런의 발화를 억제한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "cell-vta-gaba",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-vta-gaba",
+       "side": "contra"
+      },
+      {
+       "id": "cell-vta-da",
+       "side": "ipsi"
+      },
+      {
+       "id": "cell-vta-da",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        110
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: VTA 억제성 GABA 뉴런 · VTA 도파민뉴런"
+     },
+     "transmitter": "GABA"
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "vta-gaba-feedback-1",
+     "to": "vta-gaba-feedback-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

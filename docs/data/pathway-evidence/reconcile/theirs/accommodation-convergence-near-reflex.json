@@ -1,0 +1,248 @@
+{
+ "ours": "accommodation-convergence-near-reflex",
+ "theirs": [
+  {
+   "id": "accommodation",
+   "category": "oculomotor",
+   "name": {
+    "ko": "눈 조절·근접반응",
+    "en": "Accommodation and near response"
+   },
+   "summary": {
+    "ko": "가까운 물체 보기에서 섬모체근 수축·동공수축·눈모음이 함께 일어난다."
+   },
+   "origin": {
+    "ko": "주시하는 눈 또는 표시 반구"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      25
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      19
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "accommodation-1",
+     "title": {
+      "ko": "시각입력·근접 목표"
+     },
+     "description": {
+      "ko": "근접 물체 시각입력과 상위 주시망이 조절반응을 유발한다. 원문은 렌즈 조절·III 효과기를 제시하고 중앙 연결 세부는 생략한다."
+     },
+     "structures": [
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "ctx-visual-v1",
+       "side": "ipsi"
+      },
+      {
+       "id": "ctx-visual-v1",
+       "side": "contra"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "contra"
+      },
+      {
+       "id": "bs-ew",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-ew",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        25
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        19
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 일차시각겉질 (V1, BA 17) · 에딩거-베스트팔핵 (EW)"
+     }
+    },
+    {
+     "id": "accommodation-2",
+     "title": {
+      "ko": "부교감 조절 가지"
+     },
+     "description": {
+      "ko": "EW→III→섬모체신경절→짧은섬모체신경이 섬모체근·동공조임근에 작용한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn3",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn3",
+       "side": "contra"
+      },
+      {
+       "id": "pn-ciliary-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-ciliary-ganglion",
+       "side": "contra"
+      },
+      {
+       "id": "ef-ciliary-muscle",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-ciliary-muscle",
+       "side": "contra"
+      },
+      {
+       "id": "ef-sphincter-pupillae",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-sphincter-pupillae",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        25
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        19
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈돌림신경 (III) · 섬모체신경절 · 섬모체근 · 동공조임근"
+     }
+    },
+    {
+     "id": "accommodation-3",
+     "title": {
+      "ko": "눈모음 가지"
+     },
+     "description": {
+      "ko": "양쪽 III 운동뉴런이 안쪽곧은근을 수축시킨다. 중앙회로는 원문에서 상세히 주어지지 않았다."
+     },
+     "structures": [
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-oculomotor",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-oculomotor",
+       "side": "contra"
+      },
+      {
+       "id": "ef-medial-rectus",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-medial-rectus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        25
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        19
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 안쪽곧은근"
+     }
+    }
+   ],
+   "lesions": [],
+   "memo": "근접반응의 전체 중앙경로는 원문에 없음; 효과기 중심 요약.",
+   "edges": [
+    {
+     "from": "accommodation-1",
+     "to": "accommodation-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "accommodation-2",
+     "to": "accommodation-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

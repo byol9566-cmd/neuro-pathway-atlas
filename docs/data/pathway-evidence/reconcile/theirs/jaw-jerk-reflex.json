@@ -1,0 +1,397 @@
+{
+ "ours": "jaw-jerk-reflex",
+ "theirs": [
+  {
+   "id": "jaw-jerk",
+   "category": "reflex",
+   "name": {
+    "ko": "턱 신장반사",
+    "en": "Jaw jerk reflex"
+   },
+   "summary": {
+    "ko": "씹기근 근방추 입력이 삼차중뇌핵 뉴런을 통해 삼차운동핵·V3 씹기근 출력으로 연결된다."
+   },
+   "origin": {
+    "ko": "늘어난 씹기근 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      18
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      59
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "jaw-jerk-1",
+     "title": {
+      "ko": "근방추 → 삼차중뇌핵"
+     },
+     "description": {
+      "ko": "턱 고유감각 일차뉴런의 세포체가 삼차중뇌핵에 있는 특수성을 반영한다. 원문은 핵기능과 jaw reflex를 분리해 언급한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-muscle-spindle",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-trigeminal-mesencephalic",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        59
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 근방추 · 삼차신경 중뇌핵"
+     }
+    },
+    {
+     "id": "jaw-jerk-2",
+     "title": {
+      "ko": "삼차운동핵"
+     },
+     "description": {
+      "ko": "주요 단일시냅스 구심–운동 연결이 씹기근 반사출력을 형성한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-trigeminal-motor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        59
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 운동핵"
+     }
+    },
+    {
+     "id": "jaw-jerk-3",
+     "title": {
+      "ko": "V3 → 씹기근"
+     },
+     "description": {
+      "ko": "V3 운동축삭이 씹기근을 수축시켜 턱을 닫는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn5-v3",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-masticatory-muscles",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        59
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아래턱신경 (V3) · 씹기근"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "jaw-jerk-1",
+     "to": "jaw-jerk-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "jaw-jerk-2",
+     "to": "jaw-jerk-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "jaw-opening-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "턱벌림반사",
+    "en": "Jaw opening reflex"
+   },
+   "summary": {
+    "ko": "구강 입력이 사이뉴런을 통해 턱벌림 운동반응을 유발하는 원문의 이중시냅스 반사 예시다."
+   },
+   "origin": {
+    "ko": "구강 자극 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-mention-incomplete",
+   "sourceRefs": [
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      59
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "jaw-opening-reflex-1",
+     "title": {
+      "ko": "구강 감각입력"
+     },
+     "description": {
+      "ko": "삼차 구심이 턱반사망에 감각정보를 보낸다. 원문은 수용기·중계핵·근육의 세부를 제시하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn5",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        59
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 (V)"
+     }
+    },
+    {
+     "id": "jaw-opening-reflex-2",
+     "title": {
+      "ko": "사이뉴런 → 운동출력"
+     },
+     "description": {
+      "ko": "사이뉴런을 거친 턱벌림 운동출력이 유발된다. 단순 jaw jerk와 구분해 독립 항목으로 저장한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-trigeminal-motor",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-masticatory-muscles",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        59
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 운동핵 · 씹기근"
+     }
+    }
+   ],
+   "lesions": [],
+   "memo": "정리본 p.59의 반사종류 표가 근거. 세부 배선 확정 보류.",
+   "edges": [
+    {
+     "from": "jaw-opening-reflex-1",
+     "to": "jaw-opening-reflex-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cranial-v-motor",
+   "category": "motor",
+   "name": {
+    "ko": "V 씹기근 출력",
+    "en": "Trigeminal motor output"
+   },
+   "summary": {
+    "ko": "뇌신경 운동핵→말초축삭→표적근육 연결."
+   },
+   "origin": {
+    "ko": "출력받는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cranial-v-motor-1",
+     "title": {
+      "ko": "운동핵"
+     },
+     "description": {
+      "ko": "운동뉴런 세포체는 삼차신경 운동핵에 있다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-trigeminal-motor",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 운동핵"
+     }
+    },
+    {
+     "id": "cranial-v-motor-2",
+     "title": {
+      "ko": "뇌신경 → 근육"
+     },
+     "description": {
+      "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn5-v3",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-masticatory-muscles",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아래턱신경 (V3) · 씹기근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "bs-trigeminal-motor 또는 신경"
+     },
+     "deficit": {
+      "ko": "지배근육의 운동장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "memo": "운동핵 기능표·원심축삭 요약; 근육별 아핵 배선은 전문 검수 필요.",
+   "edges": [
+    {
+     "from": "cranial-v-motor-1",
+     "to": "cranial-v-motor-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

@@ -1,0 +1,810 @@
+{
+ "ours": "gag-pharyngeal-and-cough-reflex",
+ "theirs": [
+  {
+   "id": "gag-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "구역반사",
+    "en": "Gag reflex"
+   },
+   "summary": {
+    "ko": "인두 자극의 IX 구심과 X 원심이 인두근 반응을 연결한다."
+   },
+   "origin": {
+    "ko": "인두를 자극받는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      23
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "gag-reflex-1",
+     "title": {
+      "ko": "인두 → IX 구심"
+     },
+     "description": {
+      "ko": "인두 감각이 IX를 통해 고립로핵·뇌줄기 감각망에 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn9",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-solitary",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 혀인두신경 (IX) · 고립로핵 (NTS)"
+     }
+    },
+    {
+     "id": "gag-reflex-2",
+     "title": {
+      "ko": "양측 뇌줄기 운동망"
+     },
+     "description": {
+      "ko": "감각입력이 의문핵 관련 운동망을 모집한다. 원문은 반사 중계 세부보다 IX/X 조합을 강조한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-ambiguus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-ambiguus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 의문핵"
+     }
+    },
+    {
+     "id": "gag-reflex-3",
+     "title": {
+      "ko": "X → 인두근"
+     },
+     "description": {
+      "ko": "X 운동축삭이 인두근 반응을 일으킨다. 구역반사와 실제 구토의 전체 회로를 동일시하지 않는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "contra"
+      },
+      {
+       "id": "ef-pharynx-larynx",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-pharynx-larynx",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미주신경 (X) · 인두·후두 가로무늬근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "IX 또는 X 반사활"
+     },
+     "deficit": {
+      "ko": "구역반사 장애; X 운동이상에서는 연하·발성 장애가 동반될 수 있다"
+     }
+    }
+   ],
+   "edges": [
+    {
+     "from": "gag-reflex-1",
+     "to": "gag-reflex-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "gag-reflex-2",
+     "to": "gag-reflex-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "swallowing-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "연하반사",
+    "en": "Swallowing reflex"
+   },
+   "summary": {
+    "ko": "구강·인두 감각입력을 뇌줄기 연하운동 프로그램으로 연결한다."
+   },
+   "origin": {
+    "ko": "자극 부위 쪽 또는 회로 표시 기준"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-mention-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      23
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      23
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "swallowing-reflex-1",
+     "title": {
+      "ko": "구심입력"
+     },
+     "description": {
+      "ko": "구강·인두 감각입력을 뇌줄기 연하운동 프로그램으로 연결한다. 원문은 반사 기능을 제시하며 상세 중계핵은 생략한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn9",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-solitary-caudal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 혀인두신경 (IX) · 미주신경 (X) · 꼬리쪽 고립로핵 (내장감각)"
+     }
+    },
+    {
+     "id": "swallowing-reflex-2",
+     "title": {
+      "ko": "뇌줄기 협응"
+     },
+     "description": {
+      "ko": "NTS·그물체·의문핵 관련망이 협응 출력에 참여한다. 모든 반사 세부 연결은 전문 검수 대상이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-solitary",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "contra"
+      },
+      {
+       "id": "bs-ambiguus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-ambiguus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 고립로핵 (NTS) · 그물체 · 의문핵"
+     }
+    },
+    {
+     "id": "swallowing-reflex-3",
+     "title": {
+      "ko": "운동·자율신경 출력"
+     },
+     "description": {
+      "ko": "인두·후두 및 관련 운동효과기가 협응하여 반응한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "contra"
+      },
+      {
+       "id": "ef-pharynx-larynx",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-pharynx-larynx",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미주신경 (X) · 인두·후두 가로무늬근"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "swallowing-reflex-1",
+     "to": "swallowing-reflex-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "swallowing-reflex-2",
+     "to": "swallowing-reflex-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cough-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "기침반사",
+    "en": "Cough reflex"
+   },
+   "summary": {
+    "ko": "기도의 감각입력이 뇌줄기 호흡·후두운동망을 통해 기침을 유발한다."
+   },
+   "origin": {
+    "ko": "자극 부위 쪽 또는 회로 표시 기준"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-mention-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      23
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      54
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cough-reflex-1",
+     "title": {
+      "ko": "구심입력"
+     },
+     "description": {
+      "ko": "기도의 감각입력이 뇌줄기 호흡·후두운동망을 통해 기침을 유발한다. 원문은 반사 기능을 제시하며 상세 중계핵은 생략한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-solitary-caudal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        54
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미주신경 (X) · 꼬리쪽 고립로핵 (내장감각)"
+     }
+    },
+    {
+     "id": "cough-reflex-2",
+     "title": {
+      "ko": "뇌줄기 협응"
+     },
+     "description": {
+      "ko": "NTS·그물체·의문핵 관련망이 협응 출력에 참여한다. 모든 반사 세부 연결은 전문 검수 대상이다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-solitary",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-reticular-formation",
+       "side": "contra"
+      },
+      {
+       "id": "bs-ambiguus",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-ambiguus",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        54
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 고립로핵 (NTS) · 그물체 · 의문핵"
+     }
+    },
+    {
+     "id": "cough-reflex-3",
+     "title": {
+      "ko": "운동·자율신경 출력"
+     },
+     "description": {
+      "ko": "인두·후두 및 관련 운동효과기가 협응하여 반응한다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "contra"
+      },
+      {
+       "id": "ef-pharynx-larynx",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-pharynx-larynx",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        23
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        54
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미주신경 (X) · 인두·후두 가로무늬근"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "cough-reflex-1",
+     "to": "cough-reflex-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "cough-reflex-2",
+     "to": "cough-reflex-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "cranial-ix-x-motor",
+   "category": "motor",
+   "name": {
+    "ko": "IX·X 인두·후두 출력",
+    "en": "Glossopharyngeal and vagal branchial motor output"
+   },
+   "summary": {
+    "ko": "뇌신경 운동핵→말초축삭→표적근육 연결."
+   },
+   "origin": {
+    "ko": "출력받는 근육 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      23
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "cranial-ix-x-motor-1",
+     "title": {
+      "ko": "운동핵"
+     },
+     "description": {
+      "ko": "운동뉴런 세포체는 의문핵에 있다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-ambiguus",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 의문핵"
+     }
+    },
+    {
+     "id": "cranial-ix-x-motor-2",
+     "title": {
+      "ko": "뇌신경 → 근육"
+     },
+     "description": {
+      "ko": "운동축삭이 해당 표적근육을 지배한다. IX는 붓인두근, X는 대부분 인두·후두근을 지배하며 두 출력은 대안 가지다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn9",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-pharynx-larynx",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 혀인두신경 (IX) · 미주신경 (X) · 인두·후두 가로무늬근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "bs-ambiguus 또는 신경"
+     },
+     "deficit": {
+      "ko": "지배근육의 운동장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "memo": "운동핵 기능표·원심축삭 요약; 근육별 아핵 배선은 전문 검수 필요.",
+   "edges": [
+    {
+     "from": "cranial-ix-x-motor-1",
+     "to": "cranial-ix-x-motor-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  },
+  {
+   "id": "visceral-afferent",
+   "category": "autonomic",
+   "name": {
+    "ko": "IX·X 내장감각 입력",
+    "en": "Glossopharyngeal and vagal visceral afferents"
+   },
+   "summary": {
+    "ko": "목동맥·심혈관·내장 감각이 IX/X를 통해 꼬리쪽 고립로핵에 전달된다."
+   },
+   "origin": {
+    "ko": "내장 구심을 받는 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-grounded",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      17,
+      18,
+      23
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "visceral-afferent-1",
+     "title": {
+      "ko": "말초 수용·신경절"
+     },
+     "description": {
+      "ko": "목동맥소체·팽대는 IX, 많은 흉복부 내장 감각은 X를 통해 전달된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-carotid-baroreceptor",
+       "side": "ipsi"
+      },
+      {
+       "id": "so-carotid-body",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-viscera",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn9",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn10",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-petrosal-ganglion",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-nodose-ganglion",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 목동맥팽대 압력수용기 · 목동맥소체 화학수용기 · 흉복부 내장·평활근·샘 · 혀인두신경 (IX) · 미주신경 (X) · 혀인두신경 아래신경절 · 미주신경 아래신경절"
+     }
+    },
+    {
+     "id": "visceral-afferent-2",
+     "title": {
+      "ko": "꼬리쪽 NTS"
+     },
+     "description": {
+      "ko": "내장감각 구심이 꼬리쪽 고립로핵에서 중계되어 자율신경·호흡·내장반응에 연결된다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "bs-solitary-caudal",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        17,
+        18,
+        23
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 꼬리쪽 고립로핵 (내장감각)"
+     }
+    }
+   ],
+   "lesions": [],
+   "edges": [
+    {
+     "from": "visceral-afferent-1",
+     "to": "visceral-afferent-2",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}

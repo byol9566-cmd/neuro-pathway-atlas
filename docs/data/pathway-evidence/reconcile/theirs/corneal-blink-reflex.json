@@ -1,0 +1,225 @@
+{
+ "ours": "corneal-blink-reflex",
+ "theirs": [
+  {
+   "id": "corneal-reflex",
+   "category": "reflex",
+   "name": {
+    "ko": "각막반사",
+    "en": "Corneal reflex"
+   },
+   "summary": {
+    "ko": "각막 V1 구심이 양쪽 VII 눈둘레근 출력을 유발한다."
+   },
+   "origin": {
+    "ko": "각막을 자극받는 눈 쪽"
+   },
+   "defaultOriginSide": "L",
+   "reviewStatus": "draft",
+   "evidenceStatus": "lecture-partial-plus-standard-completion",
+   "sourceRefs": [
+    {
+     "documentId": "om-1",
+     "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+     "pdfPages": [
+      22
+     ],
+     "scope": "pathway-context"
+    },
+    {
+     "documentId": "om-2",
+     "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+     "pdfPages": [
+      54
+     ],
+     "scope": "pathway-context"
+    }
+   ],
+   "steps": [
+    {
+     "id": "corneal-reflex-1",
+     "title": {
+      "ko": "각막 → V1"
+     },
+     "description": {
+      "ko": "각막 자극이 V1·삼차신경절을 통해 뇌줄기로 들어온다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "so-cornea",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn5-v1",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-trigeminal-ganglion",
+       "side": "ipsi"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        54
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 각막 · 눈신경 (V1) · 삼차신경절"
+     }
+    },
+    {
+     "id": "corneal-reflex-2",
+     "title": {
+      "ko": "삼차 감각망 → 양쪽 얼굴핵"
+     },
+     "description": {
+      "ko": "삼차척수핵 관련 사이뉴런망이 양쪽 얼굴핵을 모집한다. 원문은 V1/VII 반사활을 명시하고 중계핵 세부는 표준 연결로 보완한다."
+     },
+     "structures": [
+      {
+       "id": "bs-spinal-trigeminal",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-facial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-facial",
+       "side": "contra"
+      }
+     ],
+     "structureRefs": [
+      {
+       "id": "bs-spinal-trigeminal",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-facial",
+       "side": "ipsi"
+      },
+      {
+       "id": "bs-facial",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        54
+       ],
+       "scope": "pathway-context"
+      }
+     ]
+    },
+    {
+     "id": "corneal-reflex-3",
+     "title": {
+      "ko": "VII → 눈둘레근"
+     },
+     "description": {
+      "ko": "양쪽 VII 출력이 눈둘레근을 수축시켜 양쪽 눈을 감는다."
+     },
+     "structures": [],
+     "structureRefs": [
+      {
+       "id": "pn-cn7",
+       "side": "ipsi"
+      },
+      {
+       "id": "pn-cn7",
+       "side": "contra"
+      },
+      {
+       "id": "ef-orbicularis-oculi",
+       "side": "ipsi"
+      },
+      {
+       "id": "ef-orbicularis-oculi",
+       "side": "contra"
+      }
+     ],
+     "sourceRefs": [
+      {
+       "documentId": "om-1",
+       "file": "[25오민석] 기신경_1차_Om정리본_필기_260101_1559_v2.0.pdf",
+       "pdfPages": [
+        22
+       ],
+       "scope": "pathway-context"
+      },
+      {
+       "documentId": "om-2",
+       "file": "[25오민석] 기신경_2차_Om정리본_260101_1601_v2.0.pdf",
+       "pdfPages": [
+        54
+       ],
+       "scope": "pathway-context"
+      }
+     ],
+     "missing": {
+      "ko": "현재 제공 데이터에 독립 3D 정의 없음: 얼굴신경 (VII) · 눈둘레근"
+     }
+    }
+   ],
+   "lesions": [
+    {
+     "level": {
+      "ko": "V1 구심 완전손상"
+     },
+     "deficit": {
+      "ko": "손상각막 자극 시 양쪽 깜빡임 장애"
+     }
+    },
+    {
+     "level": {
+      "ko": "VII 원심손상"
+     },
+     "deficit": {
+      "ko": "어느 쪽 각막을 자극해도 손상쪽 눈 깜빡임 장애"
+     },
+     "side": "ipsi"
+    }
+   ],
+   "edges": [
+    {
+     "from": "corneal-reflex-1",
+     "to": "corneal-reflex-2",
+     "relation": "presentation-next"
+    },
+    {
+     "from": "corneal-reflex-2",
+     "to": "corneal-reflex-3",
+     "relation": "presentation-next"
+    }
+   ],
+   "edgeSemantics": "ordered-exposition; not a claim of a direct monosynaptic connection",
+   "topology": "ordered-pathway-description",
+   "processType": "neural-pathway-or-network"
+  }
+ ]
+}
