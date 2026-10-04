@@ -55,6 +55,13 @@ ATTRIBUTION = [
         "license": "Public: NLM states a license is no longer required",
         "url": "https://www.nlm.nih.gov/research/visible/visible_human.html",
     },
+    {
+        "atlas": "hcp1065",
+        "title": "HCP1065 population-averaged tractography atlas (Yeh, DSI Studio)",
+        "citation": "Yeh FC. Population-based tract-to-region connectome of the human brain and its hierarchical topology. Nat Commun (2022). Data: Human Connectome Project (WU-Minn consortium).",
+        "license": "CC BY-SA 4.0 — the tract paths derived here carry the same licence",
+        "url": "https://brain.labsolver.org/hcp_trk_atlas.html",
+    },
 ]
 
 
@@ -235,6 +242,18 @@ def build_structure(structure: dict, nb: NextBrain):
             out += build_vhp_side(structure, side, file)
         return out
 
+    if src["atlas"] == "hcp1065":
+        # fibre bundle from the HCP1065 tractography atlas, prepared by pipeline/tracts/prepare_tracts.py:
+        # a tube along the bundle's centerline; the centerline itself is what the pathway animation follows
+        for side, tid in src["tracts"].items():
+            t = HCP_TRACTS[tid]
+            pts = np.asarray(t["points"], dtype=float)
+            mesh = meshing.tube(pts, t["radiiMm"])
+            rec = mesh_record(f"{sid}.{side}", structure, side, mesh, volume_mm3=float(mesh.volume), approx=False, line=pts)
+            rec["note"] = t["note"]
+            out.append((f"{sid}.{side}", mesh, rec))
+        return out
+
     if src["atlas"] == "mni":
         # no atlas gives the shape, but the position and size are known: an ellipsoid at MNI coordinates,
         # given for the right side when bilateral (the left is its mirror image)
@@ -299,7 +318,22 @@ def build_structure(structure: dict, nb: NextBrain):
     wants_line = structure.get("tract") or structure.get("centerline")
     line = meshing.centerline(cleaned, spacing, origin) if wants_line else None
     add_pair(mesh, volume_mm3=vol, approx=False, stats=stats, line=line)
+    # a tractography centerline can replace the label's own (the NextBrain label is often only the
+    # brainstem segment, the HCP1065 bundle runs the whole course)
+    for side, tid in (src.get("centerlineFrom") or {}).items():
+        for i, (mesh_id, m, rec) in enumerate(out):
+            if mesh_id == f"{sid}.{side}":
+                rec["centerline"] = np.round(np.asarray(HCP_TRACTS[tid]["points"], dtype=float), 2).tolist()
+                rec["centerlineSource"] = "hcp1065"
     return out
+
+
+def _load_hcp_tracts():
+    p = REPO_ROOT / "data" / "derived" / "tracts" / "tracts-prepared.json"
+    return json.loads(p.read_text(encoding="utf-8"))["tracts"] if p.exists() else {}
+
+
+HCP_TRACTS = _load_hcp_tracts()
 
 
 def compress(raw_glb, out_glb) -> bool:

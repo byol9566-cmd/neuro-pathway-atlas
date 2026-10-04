@@ -606,7 +606,11 @@
         "labels": [
           199,
           461
-        ]
+        ],
+        "centerlineFrom": {
+          "L": "fornix-l",
+          "R": "fornix-r"
+        }
       }
     },
     {
@@ -636,7 +640,11 @@
         "atlas": "nextbrain",
         "labels": [
           499
-        ]
+        ],
+        "centerlineFrom": {
+          "L": "ml-l",
+          "R": "ml-r"
+        }
       }
     },
     {
@@ -2927,7 +2935,11 @@
         "atlas": "nextbrain",
         "labels": [
           697
-        ]
+        ],
+        "centerlineFrom": {
+          "L": "icp-l",
+          "R": "icp-r"
+        }
       },
       "tract": true,
       "mapping": {
@@ -3185,6 +3197,138 @@
         ],
         "note": ""
       }
+    },
+    {
+      "id": "tr-cst-cerebral",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "겉질척수로 (방사관·속섬유막·대뇌다리 구간)",
+        "en": "Corticospinal tract, cerebral course"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "cst-cerebral-l",
+          "R": "cst-cerebral-r"
+        }
+      },
+      "note": "HCP1065 겉질척수 다발의 겉질~위다리뇌 구간. 숨뇌 피라미드는 NextBrain 라벨(tr-pyramid)."
+    },
+    {
+      "id": "tr-cst-lateral",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "가쪽겉질척수로",
+        "en": "Lateral corticospinal tract"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "cst-lateral-l",
+          "R": "cst-lateral-r"
+        }
+      },
+      "note": "피라미드교차 뒤 반대쪽 다발의 연속. 교차와 가쪽기둥 위치는 교과서 기하, 척수 축은 Visible Human 척수."
+    },
+    {
+      "id": "tr-cst-anterior",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "앞겉질척수로",
+        "en": "Anterior corticospinal tract"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "cst-anterior-l",
+          "R": "cst-anterior-r"
+        }
+      },
+      "note": "교차하지 않은 같은 쪽 다발의 앞기둥 연속(~T1까지). 앞기둥 위치는 교과서 기하."
+    },
+    {
+      "id": "tr-corticobulbar",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "겉질숨뇌로",
+        "en": "Corticobulbar tract"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "cbt-l",
+          "R": "cbt-r"
+        }
+      }
+    },
+    {
+      "id": "tr-optic-radiation",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "시각부챗살",
+        "en": "Optic radiation"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "or-l",
+          "R": "or-r"
+        }
+      }
+    },
+    {
+      "id": "tr-arcuate",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "활꼴다발",
+        "en": "Arcuate fasciculus"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "af-l",
+          "R": "af-r"
+        }
+      }
+    },
+    {
+      "id": "tr-uncinate",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "갈고리다발",
+        "en": "Uncinate fasciculus"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "uf-l",
+          "R": "uf-r"
+        }
+      }
+    },
+    {
+      "id": "tr-cingulum",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "띠다발",
+        "en": "Cingulum bundle"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "cingulum-l",
+          "R": "cingulum-r"
+        }
+      },
+      "note": "HCP1065의 이마–해마곁 띠다발(C_FPH)."
     },
     {
       "id": "end-ant-pituitary",

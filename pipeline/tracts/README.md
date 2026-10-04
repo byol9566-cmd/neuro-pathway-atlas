@@ -248,3 +248,13 @@ Yeh, F.-C. (2022). *Population-based tract-to-region connectome of the human bra
 ## 변경 범위
 
 이번 작업은 `pipeline/tracts/`의 새 파일, `pipeline/tests/test_bundle_centerlines.py`, 지정된 `data/raw/hcp1065/` 및 `data/derived/tracts/` 출력에 한정했다. `content/`, `viewer/`, 기존 `pipeline/atlas_pipeline/`, 기존 테스트는 수정하지 않았다. 커밋·푸시는 하지 않았다.
+
+# 아틀라스 반영 (메인 세션, 2026-10-04)
+
+변환기 결과를 뷰어에 넣는 두 단계. 둘 다 결정은 코드 안의 표로 명시돼 있어 다시 돌리면 같은 결과가 나온다.
+
+1. `prepare_tracts.py` → `data/derived/tracts/tracts-prepared.json`. 중심선 손질: 안쪽섬유띠는 **VPL에 가장 가까운 점에서 자름**(아틀라스 다발은 겉질까지 이어짐); 겉질척수로는 **겉질~위다리뇌 구간**(z ≥ −22)만 튜브로 쓰고(피라미드는 NextBrain 라벨), **교차 뒤 가쪽겉질척수로**는 반대쪽 다발의 숨뇌 끝에서 정중선을 건너 Visible Human 척수(자세 보정본)의 가쪽기둥을 따라 C7/T1까지, **앞겉질척수로**는 같은 쪽 앞기둥을 따라 T1까지 — 교차·기둥 위치는 교과서 기하이지 아틀라스 데이터가 아니며 각 조각의 `note`에 적혀 뷰어 상세 패널에 그대로 보인다. 반지름은 다발 퍼짐 중앙값을 1.5~6 mm로 제한.
+2. `apply_to_content.py --write` → `content/structures.json`에 `source.atlas: "hcp1065"` 구조 8개(겉질척수로 3구간·겉질숨뇌로·시각부챗살·활꼴다발·갈고리다발·띠다발 C_FPH), NextBrain 신경로 3개(안쪽섬유띠·아래소뇌다리·뇌활)에 `centerlineFrom`(메시는 라벨 그대로, 경로 재생 중심선만 HCP). `content/pathways.json`의 단계 16개에 해당 신경로를 끼워 넣고(표 `STEP_TRACTS`; '활꼴'은 활꼴핵과 겹쳐 키워드 매칭 대신 명시 표) `missing` 문구에서 이제 3D가 있는 이름을 지운다.
+3. 빌드(`atlas_pipeline/build.py`의 `hcp1065` 분기)는 `meshing.tube()`로 중심선을 따라 튜브를 만들고 그 중심선을 매니페스트 `centerline`으로 내보낸다. 출처는 매니페스트 `attribution`의 HCP1065 항목(CC BY-SA 4.0 — 파생 경로도 같은 라이선스).
+
+쓰지 않은 다발: 겉질다리뇌 3구간(NextBrain 라벨이 뇌줄기 구간을 갖고 있음), MCP·SCP(배포본이 좌우 구분 없는 단일 파일), 띠다발 나머지 4구간, 뇌활·아래소뇌다리 튜브(라벨 메시 유지).

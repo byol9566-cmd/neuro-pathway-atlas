@@ -91,6 +91,47 @@ def ellipsoid(center_mm, radii_mm, subdivisions: int = 3) -> trimesh.Trimesh:
     return mesh
 
 
+def tube(points_mm, radii_mm, segments: int = 12) -> trimesh.Trimesh:
+    """Closed tube swept along a polyline with a radius per point (fibre bundles from tractography:
+    the centerline is the data, the surface only gives it a body). Frames are parallel-transported so
+    the rings do not twist at bends; the ends are capped with a fan."""
+    P = np.asarray(points_mm, dtype=np.float64)
+    R = np.asarray(radii_mm, dtype=np.float64)
+    n = len(P)
+    tangents = np.gradient(P, axis=0)
+    tangents /= np.linalg.norm(tangents, axis=1)[:, None] + 1e-9
+    normal = np.cross(tangents[0], [0.0, 0.0, 1.0])
+    if np.linalg.norm(normal) < 1e-6:
+        normal = np.cross(tangents[0], [0.0, 1.0, 0.0])
+    normal /= np.linalg.norm(normal)
+    rings = []
+    ang = np.linspace(0, 2 * np.pi, segments, endpoint=False)
+    for i in range(n):
+        if i:
+            # rotate the previous normal into the new tangent plane (parallel transport)
+            normal -= tangents[i] * (normal @ tangents[i])
+            normal /= np.linalg.norm(normal) + 1e-9
+        binormal = np.cross(tangents[i], normal)
+        rings.append(P[i] + R[i] * (np.cos(ang)[:, None] * normal + np.sin(ang)[:, None] * binormal))
+    verts = np.concatenate(rings + [P[:1], P[-1:]])
+    faces = []
+    for i in range(n - 1):
+        a, b = i * segments, (i + 1) * segments
+        for k in range(segments):
+            k2 = (k + 1) % segments
+            faces.append([a + k, b + k, b + k2])
+            faces.append([a + k, b + k2, a + k2])
+    c0, c1 = n * segments, n * segments + 1
+    for k in range(segments):
+        k2 = (k + 1) % segments
+        faces.append([c0, k2, k])
+        faces.append([c1, (n - 1) * segments + k, (n - 1) * segments + k2])
+    mesh = trimesh.Trimesh(verts, np.asarray(faces), process=False)
+    if mesh.volume < 0:
+        mesh.invert()
+    return mesh
+
+
 def _component_centerline(m: np.ndarray, n_points: int) -> np.ndarray:
     """Centerline of one connected mask, in voxel index coordinates of `m`."""
     from skimage.graph import MCP_Geometric

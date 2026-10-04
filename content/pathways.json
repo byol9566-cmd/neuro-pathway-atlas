@@ -2059,6 +2059,10 @@
           },
           "structures": [
             {
+              "id": "tr-cst-cerebral",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-precentral",
               "side": "ipsi"
             },
@@ -2072,7 +2076,7 @@
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전운동영역 (PMA, BA 6) · 신피질 제5층 피라미드세포 · 방사관 · 속섬유막 뒤다리 · 3D 없음: 신피질 제5층 피라미드세포, 방사관, 속섬유막 뒤다리"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전운동영역 (PMA, BA 6) · 신피질 제5층 피라미드세포 · 3D 없음: 신피질 제5층 피라미드세포"
           }
         },
         {
@@ -2101,11 +2105,13 @@
           "description": {
             "ko": "대부분(약 80~90%)이 피라미드교차를 통해 반대쪽 가쪽CST로 하행한다."
           },
-          "structures": [],
-          "decussation": true,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽겉질척수로 · 3D 없음: 가쪽겉질척수로"
-          }
+          "structures": [
+            {
+              "id": "tr-cst-lateral",
+              "side": "contra"
+            }
+          ],
+          "decussation": true
         },
         {
           "id": "corticospinal-lateral-4",
@@ -2350,13 +2356,14 @@
           },
           "structures": [
             {
+              "id": "tr-corticobulbar",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-precentral",
               "side": "ipsi"
             }
-          ],
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 무릎 · 겉질핵로 (겉질숨뇌로) · 대뇌다리바닥 · 3D 없음: 속섬유막 무릎, 겉질핵로 (겉질숨뇌로), 대뇌다리바닥"
-          }
+          ]
         },
         {
           "id": "corticobulbar-2",
@@ -2781,6 +2788,10 @@
           },
           "structures": [
             {
+              "id": "tr-cst-cerebral",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-precentral",
               "side": "ipsi"
             },
@@ -2794,7 +2805,7 @@
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전운동영역 (PMA, BA 6) · 신피질 제5층 피라미드세포 · 방사관 · 속섬유막 뒤다리 · 3D 없음: 신피질 제5층 피라미드세포, 방사관, 속섬유막 뒤다리"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 전운동영역 (PMA, BA 6) · 신피질 제5층 피라미드세포 · 3D 없음: 신피질 제5층 피라미드세포"
           }
         },
         {
@@ -2823,11 +2834,13 @@
           "description": {
             "ko": "앞CST는 피라미드교차에서 교차하지 않은 성분이다. 분절 수준 교차·양측 투사를 통해 몸통·근위부를 조절한다."
           },
-          "structures": [],
-          "decussation": true,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 앞겉질척수로 · 3D 없음: 앞겉질척수로"
-          }
+          "structures": [
+            {
+              "id": "tr-cst-anterior",
+              "side": "ipsi"
+            }
+          ],
+          "decussation": true
         },
         {
           "id": "corticospinal-anterior-4",
@@ -4435,13 +4448,17 @@
           },
           "structures": [
             {
+              "id": "tr-cst-lateral",
+              "side": "contra"
+            },
+            {
               "id": "tr-pyramid",
               "side": "contra"
             }
           ],
           "decussation": true,
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 숨뇌 피라미드 · 가쪽겉질척수로 · 알파운동뉴런 · 3D 없음: 가쪽겉질척수로, 알파운동뉴런"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 숨뇌 피라미드 · · 알파운동뉴런 · 3D 없음: 알파운동뉴런"
           }
         },
         {
@@ -7050,12 +7067,16 @@
           },
           "structures": [
             {
+              "id": "tr-optic-radiation",
+              "side": "ipsi"
+            },
+            {
               "id": "thal-lgn",
               "side": "ipsi"
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시각부챗살 · 속섬유막 렌즈핵뒤부분 · 3D 없음: 시각부챗살, 속섬유막 렌즈핵뒤부분"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 렌즈핵뒤부분 · 3D 없음: 렌즈핵뒤부분"
           }
         },
         {
@@ -7652,12 +7673,16 @@
           },
           "structures": [
             {
+              "id": "tr-optic-radiation",
+              "side": "contra"
+            },
+            {
               "id": "thal-lgn",
               "side": "contra"
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 시각부챗살 · 속섬유막 렌즈핵뒤부분 · 3D 없음: 시각부챗살, 속섬유막 렌즈핵뒤부분"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 렌즈핵뒤부분 · 3D 없음: 렌즈핵뒤부분"
           }
         },
         {
@@ -9454,6 +9479,10 @@
           },
           "structures": [
             {
+              "id": "tr-cingulum",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-parahippocampal",
               "side": "ipsi"
             },
@@ -9467,7 +9496,7 @@
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 띠다발 · 속후각겉질 · 관통로 · 3D 없음: 띠다발, 관통로"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속후각겉질 · 관통로 · 3D 없음: 관통로"
           }
         }
       ],
@@ -14441,12 +14470,16 @@
           },
           "structures": [
             {
+              "id": "tr-uncinate",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-inferior-temporal",
               "side": "ipsi"
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 갈고리다발 · 아래관자겉질 · 3D 없음: 갈고리다발"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아래관자겉질"
           }
         }
       ],
@@ -14533,13 +14566,14 @@
           },
           "structures": [
             {
+              "id": "tr-cingulum",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-parahippocampal",
               "side": "ipsi"
             }
-          ],
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 띠다발 · 3D 없음: 띠다발"
-          }
+          ]
         }
       ],
       "lesions": []
@@ -14928,12 +14962,16 @@
           },
           "structures": [
             {
+              "id": "tr-arcuate",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-broca",
               "side": "ipsi"
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 활꼴다발 · 브로카영역 (BA 44·45) · 3D 없음: 활꼴다발"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 브로카영역 (BA 44·45)"
           }
         },
         {
@@ -14945,6 +14983,10 @@
             "ko": "겉질운동망이 뇌신경·호흡근 출력을 조절하여 발화한다. 운동계 최종 신경핵은 양측성 출력이 많다."
           },
           "structures": [
+            {
+              "id": "tr-corticobulbar",
+              "side": "ipsi"
+            },
             {
               "id": "ctx-precentral",
               "side": "ipsi"
@@ -14959,7 +15001,7 @@
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 겉질핵로 (겉질숨뇌로) · 의문핵 · 인두·후두 가로무늬근 · 혀근육 · 3D 없음: 겉질핵로 (겉질숨뇌로), 인두·후두 가로무늬근, 혀근육"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 의문핵 · 인두·후두 가로무늬근 · 혀근육 · 3D 없음: 인두·후두 가로무늬근, 혀근육"
           }
         }
       ],
@@ -15133,6 +15175,10 @@
           },
           "structures": [
             {
+              "id": "tr-arcuate",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-broca",
               "side": "ipsi"
             },
@@ -15142,7 +15188,7 @@
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 활꼴다발 · 브로카영역 (BA 44·45) · 전운동영역 (PMA, BA 6) · 3D 없음: 활꼴다발"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 브로카영역 (BA 44·45) · 전운동영역 (PMA, BA 6)"
           }
         }
       ],
@@ -15283,12 +15329,16 @@
           },
           "structures": [
             {
+              "id": "tr-arcuate",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-broca",
               "side": "ipsi"
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 활꼴다발 · 브로카영역 (BA 44·45) · 3D 없음: 활꼴다발"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 브로카영역 (BA 44·45)"
           }
         },
         {
@@ -15300,6 +15350,10 @@
             "ko": "겉질운동망이 뇌신경·호흡근 출력을 조절하여 발화한다. 운동계 최종 신경핵은 양측성 출력이 많다."
           },
           "structures": [
+            {
+              "id": "tr-corticobulbar",
+              "side": "ipsi"
+            },
             {
               "id": "ctx-precentral",
               "side": "ipsi"
@@ -15314,7 +15368,7 @@
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 겉질핵로 (겉질숨뇌로) · 의문핵 · 인두·후두 가로무늬근 · 혀근육 · 3D 없음: 겉질핵로 (겉질숨뇌로), 인두·후두 가로무늬근, 혀근육"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 의문핵 · 인두·후두 가로무늬근 · 혀근육 · 3D 없음: 인두·후두 가로무늬근, 혀근육"
           }
         }
       ],
