@@ -3194,18 +3194,29 @@
         "en": "Anterior pituitary"
       },
       "source": {
-        "atlas": "mni",
-        "centreMni": [
-          0,
-          4,
-          -32
-        ],
-        "radiiMm": [
-          7,
-          5,
-          5
-        ],
-        "bilateral": false
+        "atlas": "vhp",
+        "files": {
+          "M": "data/derived/vhp/end-ant-pituitary.M.mni.nii.gz"
+        },
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            0,
+            4,
+            -32
+          ],
+          "radiiMm": [
+            7,
+            5,
+            5
+          ],
+          "bilateral": false
+        },
+        "file": "data/derived/vhp/end-ant-pituitary.M.mni.nii.gz",
+        "side": "M",
+        "sides": {
+          "M": "data/derived/vhp/end-ant-pituitary.M.mni.nii.gz"
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3221,18 +3232,29 @@
         "en": "Posterior pituitary"
       },
       "source": {
-        "atlas": "mni",
-        "centreMni": [
-          0,
-          -1,
-          -32
-        ],
-        "radiiMm": [
-          3,
-          3,
-          3
-        ],
-        "bilateral": false
+        "atlas": "vhp",
+        "files": {
+          "M": "data/derived/vhp/end-post-pituitary.M.mni.nii.gz"
+        },
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            0,
+            -1,
+            -32
+          ],
+          "radiiMm": [
+            3,
+            3,
+            3
+          ],
+          "bilateral": false
+        },
+        "file": "data/derived/vhp/end-post-pituitary.M.mni.nii.gz",
+        "side": "M",
+        "sides": {
+          "M": "data/derived/vhp/end-post-pituitary.M.mni.nii.gz"
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3248,18 +3270,29 @@
         "en": "Spinal cord"
       },
       "source": {
-        "atlas": "mni",
-        "centreMni": [
-          0,
-          -38,
-          -267
-        ],
-        "radiiMm": [
-          6,
-          5,
-          212
-        ],
-        "bilateral": false
+        "atlas": "vhp",
+        "files": {
+          "M": "data/derived/vhp/sp-cord.M.mni.nii.gz"
+        },
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            0,
+            -38,
+            -267
+          ],
+          "radiiMm": [
+            6,
+            5,
+            212
+          ],
+          "bilateral": false
+        },
+        "file": "data/derived/vhp/sp-cord.M.mni.nii.gz",
+        "side": "M",
+        "sides": {
+          "M": "data/derived/vhp/sp-cord.M.mni.nii.gz"
+        }
       },
       "placeholderNote": {
         "source": "De Leener B, Fonov VS, Collins DL, Callot V, Stikov N, Cohen-Adad J. PAM50: Unbiased multimodal template of the brainstem and spinal cord aligned with the ICBM152 space. NeuroImage 2018;165:170-179. DOI 10.1016/j.neuroimage.2017.10.041 (PMID 29061527)",
@@ -3349,6 +3382,28 @@
       }
     },
     {
+      "id": "so-eyeball",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "안구",
+        "en": "Eyeball"
+      },
+      "source": {
+        "atlas": "vhp",
+        "files": {
+          "L": "data/derived/vhp/so-eyeball.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-eyeball.R.mni.nii.gz"
+        },
+        "file": "data/derived/vhp/so-eyeball.L.mni.nii.gz",
+        "side": "L",
+        "sides": {
+          "L": "data/derived/vhp/so-eyeball.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-eyeball.R.mni.nii.gz"
+        }
+      },
+      "note": "Visible Human 남성 냉동절편에서 Segment Anything으로 분할(우 23·좌 24장), MNI152 2009c로 정합. 망막·각막은 이 표면에서 잘라 만든다."
+    },
+    {
       "id": "so-retina",
       "group": "sensory-organs",
       "name": {
@@ -3356,18 +3411,31 @@
         "en": "Retina"
       },
       "source": {
-        "atlas": "mni",
-        "centreMni": [
-          32,
-          53,
-          -30
-        ],
-        "radiiMm": [
-          11,
-          9,
-          11
-        ],
-        "bilateral": true
+        "atlas": "vhp",
+        "files": {
+          "L": "data/derived/vhp/so-retina.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-retina.R.mni.nii.gz"
+        },
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            32,
+            53,
+            -30
+          ],
+          "radiiMm": [
+            11,
+            9,
+            11
+          ],
+          "bilateral": true
+        },
+        "file": "data/derived/vhp/so-retina.L.mni.nii.gz",
+        "side": "L",
+        "sides": {
+          "L": "data/derived/vhp/so-retina.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-retina.R.mni.nii.gz"
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3383,18 +3451,31 @@
         "en": "Cornea"
       },
       "source": {
-        "atlas": "mni",
-        "centreMni": [
-          32,
-          67,
-          -30
-        ],
-        "radiiMm": [
-          6,
-          1.5,
-          5
-        ],
-        "bilateral": true
+        "atlas": "vhp",
+        "files": {
+          "L": "data/derived/vhp/so-cornea.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-cornea.R.mni.nii.gz"
+        },
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            32,
+            67,
+            -30
+          ],
+          "radiiMm": [
+            6,
+            1.5,
+            5
+          ],
+          "bilateral": true
+        },
+        "file": "data/derived/vhp/so-cornea.L.mni.nii.gz",
+        "side": "L",
+        "sides": {
+          "L": "data/derived/vhp/so-cornea.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-cornea.R.mni.nii.gz"
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3410,18 +3491,31 @@
         "en": "Nasal hemiretina"
       },
       "source": {
-        "atlas": "mni",
-        "centreMni": [
-          25,
-          53,
-          -30
-        ],
-        "radiiMm": [
-          5,
-          9,
-          10
-        ],
-        "bilateral": true
+        "atlas": "vhp",
+        "files": {
+          "L": "data/derived/vhp/so-nasal-retina.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-nasal-retina.R.mni.nii.gz"
+        },
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            25,
+            53,
+            -30
+          ],
+          "radiiMm": [
+            5,
+            9,
+            10
+          ],
+          "bilateral": true
+        },
+        "file": "data/derived/vhp/so-nasal-retina.L.mni.nii.gz",
+        "side": "L",
+        "sides": {
+          "L": "data/derived/vhp/so-nasal-retina.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-nasal-retina.R.mni.nii.gz"
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3437,18 +3531,31 @@
         "en": "Temporal hemiretina"
       },
       "source": {
-        "atlas": "mni",
-        "centreMni": [
-          39,
-          53,
-          -30
-        ],
-        "radiiMm": [
-          5,
-          9,
-          10
-        ],
-        "bilateral": true
+        "atlas": "vhp",
+        "files": {
+          "L": "data/derived/vhp/so-temporal-retina.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-temporal-retina.R.mni.nii.gz"
+        },
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            39,
+            53,
+            -30
+          ],
+          "radiiMm": [
+            5,
+            9,
+            10
+          ],
+          "bilateral": true
+        },
+        "file": "data/derived/vhp/so-temporal-retina.L.mni.nii.gz",
+        "side": "L",
+        "sides": {
+          "L": "data/derived/vhp/so-temporal-retina.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-temporal-retina.R.mni.nii.gz"
+        }
       },
       "placeholderNote": {
         "source": "estimate",

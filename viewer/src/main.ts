@@ -360,6 +360,10 @@ async function main() {
       el('h2', {}, s.name.ko),
       el('p', { className: 'sub' }, s.name.en ?? ''));
     if (s.approx) detail.append(el('p', { className: 'warn' }, '근사 형상: 아틀라스 라벨이 너무 작아 위치만 라벨에서 가져오고 모양은 타원체로 대신했습니다.'));
+    const derivedFrom = meshes.find((m) => m.derived)?.derived;
+    if (derivedFrom) detail.append(el('p', { className: 'warn' }, `부분 형상: Visible Human 절편에서 분할한 ${derivedFrom}의 표면을 교과서 기하로 잘라 만든 영역입니다. 경계는 근사입니다.`));
+    const note = meshes.find((m) => m.note)?.note;
+    if (note) detail.append(el('p', { className: 'warn' }, note));
     const rows = el('dl', {});
     for (const m of meshes) {
       rows.append(el('dt', {}, `${SIDE_LABEL[m.side]} 부피`), el('dd', { className: 'num' }, `${m.volumeMm3.toLocaleString()} mm³`),

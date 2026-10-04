@@ -48,6 +48,13 @@ ATTRIBUTION = [
         "license": "CC0 1.0",
         "url": "https://zenodo.org/records/8161638",
     },
+    {
+        "atlas": "vhp",
+        "title": "Visible Human Project (male cryosections), U.S. National Library of Medicine",
+        "citation": "Segmented here with Segment Anything and registered to MNI152 2009c (pipeline/vhp_*.py).",
+        "license": "Public: NLM states a license is no longer required",
+        "url": "https://www.nlm.nih.gov/research/visible/visible_human.html",
+    },
 ]
 
 
@@ -176,6 +183,38 @@ def build_from_mask(mask, spacing, origin, *, sigma_mm, faces_per_mm2, max_faces
     return cleaned, stats, mesh
 
 
+def build_vhp_side(structure, side, file):
+    sid = structure["id"]
+    img = nib.as_closest_canonical(nib.load(REPO_ROOT / file))
+    affine = img.affine
+    mask = np.asanyarray(img.dataobj) > 0
+    if not mask.any():
+        raise ValueError(f"{sid}: empty mask {file}")
+    box = ndimage.find_objects(mask.astype(np.uint8))[0]
+    start = np.array([b.start for b in box])
+    spacing = float(affine[0, 0])
+    factor = 2  # up-sample so the 1 mm voxel steps smooth out, like the AAN masks
+    fine = np.kron(mask[box], np.ones((factor,) * 3, dtype=bool))
+    origin = affine[:3, 3] + start * spacing + (0.5 / factor - 0.5) * spacing
+    cleaned, stats, mesh = build_from_mask(fine, spacing / factor, origin, sigma_mm=1.0, faces_per_mm2=2.0, max_faces=20000, closing_iters=1)
+    vol = cleaned.sum() * (spacing / factor) ** 3
+    rec = mesh_record(f"{sid}.{side}", structure, side, mesh, volume_mm3=vol, approx=False, stats=stats)
+    derived = VHP_DERIVED.get(sid) or {}
+    if derived.get("organ"):
+        rec["derived"] = derived["organ"]  # cut from this segmented organ by vhp_derive.py, not segmented itself
+    if derived.get("note"):
+        rec["note"] = derived["note"]  # e.g. the cord re-posed to a vertical axis
+    return [(f"{sid}.{side}", mesh, rec)]
+
+
+def _load_vhp_derived():
+    p = REPO_ROOT / "data" / "derived" / "vhp" / "derived.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+VHP_DERIVED = _load_vhp_derived()
+
+
 def build_structure(structure: dict, nb: NextBrain):
     """-> list of (mesh_id, trimesh, manifest record)."""
     src = structure["source"]
@@ -188,6 +227,13 @@ def build_structure(structure: dict, nb: NextBrain):
         mesh_r = meshing.mirror_x(mesh_l)
         line_r = None if line is None else line * np.array([-1.0, 1.0, 1.0])
         out.append((f"{sid}.R", mesh_r, mesh_record(f"{sid}.R", structure, "R", mesh_r, line=line_r, **kw)))
+
+    if src["atlas"] == "vhp":
+        # binary masks in the MNI152 grid, segmented from the Visible Human cryosections (data/derived/vhp);
+        # one file per side
+        for side, file in (src.get("sides") or {src.get("side", "M"): src["file"]}).items():
+            out += build_vhp_side(structure, side, file)
+        return out
 
     if src["atlas"] == "mni":
         # no atlas gives the shape, but the position and size are known: an ellipsoid at MNI coordinates,

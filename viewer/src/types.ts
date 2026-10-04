@@ -20,6 +20,10 @@ export interface ManifestMesh {
   faces: number;
   /** true when the mesh is a stand-in ellipsoid rather than atlas-derived geometry */
   approx: boolean;
+  /** Korean name of the Visible-Human-segmented organ this part was cut from by geometry (not segmented itself) */
+  derived?: string;
+  /** free-text caveat from the pipeline (e.g. the cord was re-posed to a vertical axis) */
+  note?: string;
   centerline?: Vec3[];
 }
 
