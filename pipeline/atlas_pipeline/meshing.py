@@ -127,6 +127,14 @@ def tube(points_mm, radii_mm, segments: int = 12) -> trimesh.Trimesh:
         faces.append([c0, k2, k])
         faces.append([c1, (n - 1) * segments + k, (n - 1) * segments + k2])
     mesh = trimesh.Trimesh(verts, np.asarray(faces), process=False)
+    return outward(mesh)
+
+
+def outward(mesh: trimesh.Trimesh) -> trimesh.Trimesh:
+    """make the winding consistent and the normals point out (a mesh assembled from rings and caps can
+    have the two disagree, and then trimesh's volume changes with the orientation of the mesh)"""
+    trimesh.repair.fix_winding(mesh)
+    trimesh.repair.fix_normals(mesh)
     if mesh.volume < 0:
         mesh.invert()
     return mesh

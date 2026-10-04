@@ -3445,6 +3445,25 @@
       }
     },
     {
+      "id": "sp-cord-extension",
+      "group": "spinal-cord",
+      "name": {
+        "ko": "척수 (흉·요·천수, 모형 연장)",
+        "en": "Spinal cord, thoracolumbar (modelled extension)"
+      },
+      "source": {
+        "atlas": "model",
+        "shape": "cord-extension",
+        "centreMni": [
+          0,
+          0,
+          0
+        ],
+        "bilateral": false,
+        "modelNote": "기하 모형: Visible Human 절편은 T1 부근에서 끝나므로 그 아래 흉·요·천수는 교과서 치수의 관(흉추후만 25 mm, 요천팽대, 척수원뿔 L1)으로 이어 그렸다."
+      }
+    },
+    {
       "id": "sp-iml",
       "group": "spinal-cord",
       "name": {
@@ -3452,18 +3471,38 @@
         "en": "Intermediolateral cell column"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "cord-column",
+        "params": {
+          "z_top": -230,
+          "z_bottom": -420,
+          "offset": [
+            2.8,
+            -0.3
+          ],
+          "radius": 0.8
+        },
         "centreMni": [
-          3,
-          -37,
-          -286
+          0,
+          0,
+          0
         ],
-        "radiiMm": [
-          1.5,
-          1.5,
-          147
-        ],
-        "bilateral": true
+        "bilateral": true,
+        "modelNote": "기하 모형: 중간가쪽세포기둥(T1~L2)을 가쪽뿔 위치의 가는 기둥으로 그렸다. 축은 Visible Human 척수(T1까지)와 그 아래 모형 연장, 단면 내 위치는 교과서 기하.",
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            3,
+            -37,
+            -286
+          ],
+          "radiiMm": [
+            1.5,
+            1.5,
+            147
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3479,18 +3518,38 @@
         "en": "Sacral parasympathetic nucleus"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "cord-column",
+        "params": {
+          "z_top": -440,
+          "z_bottom": -468,
+          "offset": [
+            2.2,
+            -0.4
+          ],
+          "radius": 0.8
+        },
         "centreMni": [
-          3,
-          -36,
-          -470
+          0,
+          0,
+          0
         ],
-        "radiiMm": [
-          1.5,
-          1.5,
-          6
-        ],
-        "bilateral": true
+        "bilateral": true,
+        "modelNote": "기하 모형: 엉치부교감핵(S2~4)을 가쪽 중간회백질 위치의 짧은 기둥으로 그렸다. 축은 Visible Human 척수(T1까지)와 그 아래 모형 연장, 단면 내 위치는 교과서 기하.",
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            3,
+            -36,
+            -470
+          ],
+          "radiiMm": [
+            1.5,
+            1.5,
+            6
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3506,18 +3565,38 @@
         "en": "Clarke column"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "cord-column",
+        "params": {
+          "z_top": -222,
+          "z_bottom": -435,
+          "offset": [
+            1.6,
+            -2.2
+          ],
+          "radius": 0.7
+        },
         "centreMni": [
-          2.5,
-          -35,
-          -291
+          0,
+          0,
+          0
         ],
-        "radiiMm": [
-          1.5,
-          1.5,
-          151
-        ],
-        "bilateral": true
+        "bilateral": true,
+        "modelNote": "기하 모형: 클라크기둥(C8~L3)을 뒤뿔 바닥 위치의 가는 기둥으로 그렸다. 축은 Visible Human 척수(T1까지)와 그 아래 모형 연장, 단면 내 위치는 교과서 기하.",
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            2.5,
+            -35,
+            -291
+          ],
+          "radiiMm": [
+            1.5,
+            1.5,
+            151
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3769,18 +3848,38 @@
         "en": "Cochlea"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "cochlea",
         "centreMni": [
-          36,
-          -30,
-          -27
+          35,
+          -29,
+          -26
         ],
-        "radiiMm": [
-          4.5,
-          3.5,
-          3
+        "axis": [
+          0.6,
+          0.75,
+          -0.3
         ],
-        "bilateral": true
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            36,
+            -30,
+            -27
+          ],
+          "radiiMm": [
+            4.5,
+            3.5,
+            3
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3796,18 +3895,38 @@
         "en": "Organ of Corti"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "organ-corti",
         "centreMni": [
-          36,
-          -30,
-          -27
+          35,
+          -29,
+          -26
         ],
-        "radiiMm": [
-          3,
-          2.5,
-          2
+        "axis": [
+          0.6,
+          0.75,
+          -0.3
         ],
-        "bilateral": true
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            36,
+            -30,
+            -27
+          ],
+          "radiiMm": [
+            3,
+            2.5,
+            2
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3823,18 +3942,38 @@
         "en": "Tectorial membrane"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "tectorial-membrane",
         "centreMni": [
-          36,
-          -30,
-          -27
+          35,
+          -29,
+          -26
         ],
-        "radiiMm": [
-          3,
-          2.5,
-          2
+        "axis": [
+          0.6,
+          0.75,
+          -0.3
         ],
-        "bilateral": true
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            36,
+            -30,
+            -27
+          ],
+          "radiiMm": [
+            3,
+            2.5,
+            2
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3850,18 +3989,38 @@
         "en": "Stria vascularis"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "stria-vascularis",
         "centreMni": [
-          37,
-          -30,
-          -27
+          35,
+          -29,
+          -26
         ],
-        "radiiMm": [
-          3.5,
-          2.5,
-          2
+        "axis": [
+          0.6,
+          0.75,
+          -0.3
         ],
-        "bilateral": true
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            37,
+            -30,
+            -27
+          ],
+          "radiiMm": [
+            3.5,
+            2.5,
+            2
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3877,18 +4036,38 @@
         "en": "Basilar membrane"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "basilar-membrane",
         "centreMni": [
-          36,
-          -30,
-          -27
+          35,
+          -29,
+          -26
         ],
-        "radiiMm": [
-          4,
-          3,
-          2
+        "axis": [
+          0.6,
+          0.75,
+          -0.3
         ],
-        "bilateral": true
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            36,
+            -30,
+            -27
+          ],
+          "radiiMm": [
+            4,
+            3,
+            2
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3904,18 +4083,38 @@
         "en": "Horizontal semicircular canal"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "semicircular-canal",
         "centreMni": [
-          40,
-          -34,
+          41,
+          -35,
           -20
         ],
-        "radiiMm": [
-          3.5,
-          3.5,
-          1.5
+        "axis": [
+          0,
+          -0.5,
+          0.87
         ],
-        "bilateral": true
+        "up": [
+          1,
+          0,
+          0
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            40,
+            -34,
+            -20
+          ],
+          "radiiMm": [
+            3.5,
+            3.5,
+            1.5
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3931,18 +4130,38 @@
         "en": "Anterior semicircular canal"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "semicircular-canal",
         "centreMni": [
-          37,
-          -30,
+          38,
+          -31,
           -16
         ],
-        "radiiMm": [
-          3,
-          1.5,
-          3.5
+        "axis": [
+          -0.7,
+          0.7,
+          0.0
         ],
-        "bilateral": true
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            37,
+            -30,
+            -16
+          ],
+          "radiiMm": [
+            3,
+            1.5,
+            3.5
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3958,18 +4177,38 @@
         "en": "Posterior semicircular canal"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "semicircular-canal",
         "centreMni": [
           42,
           -38,
-          -22
+          -23
         ],
-        "radiiMm": [
-          1.5,
-          3.5,
-          3.5
+        "axis": [
+          0.7,
+          0.7,
+          0
         ],
-        "bilateral": true
+        "up": [
+          0.7,
+          -0.7,
+          -0.2
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            42,
+            -38,
+            -22
+          ],
+          "radiiMm": [
+            1.5,
+            3.5,
+            3.5
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3985,18 +4224,45 @@
         "en": "Utricle"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "ellipsoid",
+        "params": {
+          "radii": [
+            3.0,
+            2.0,
+            1.5
+          ]
+        },
         "centreMni": [
           38,
           -33,
-          -22
+          -21
         ],
-        "radiiMm": [
-          2,
-          2,
-          1.5
+        "axis": [
+          0,
+          -0.5,
+          0.87
         ],
-        "bilateral": true
+        "up": [
+          1,
+          0,
+          0
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            38,
+            -33,
+            -22
+          ],
+          "radiiMm": [
+            2,
+            2,
+            1.5
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4012,18 +4278,40 @@
         "en": "Saccule"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "ellipsoid",
+        "params": {
+          "radii": [
+            1.5,
+            1.2,
+            1.8
+          ]
+        },
         "centreMni": [
           36,
           -31,
           -24
         ],
-        "radiiMm": [
-          1.5,
-          1.5,
-          1.5
+        "axis": [
+          0,
+          0,
+          1
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            36,
+            -31,
+            -24
+          ],
+          "radiiMm": [
+            1.5,
+            1.5,
+            1.5
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4039,18 +4327,39 @@
         "en": "Carotid sinus baroreceptor"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "spindle",
+        "params": {
+          "length": 14,
+          "radius": 4.5,
+          "sharpness": 0.5
+        },
         "centreMni": [
           28,
           -20,
           -102
         ],
-        "radiiMm": [
-          5,
-          5,
-          8
+        "axis": [
+          0.1,
+          0.1,
+          1
         ],
-        "bilateral": true
+        "modelNote": "기하 모형: 목동맥팽대(온목동맥 갈림 부위의 확장부)를 방추형으로 표현. 압력수용기는 이 벽 안의 신경종말이다.",
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            28,
+            -20,
+            -102
+          ],
+          "radiiMm": [
+            5,
+            5,
+            8
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4066,18 +4375,40 @@
         "en": "Carotid body chemoreceptor"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "ellipsoid",
+        "params": {
+          "radii": [
+            2.5,
+            1.5,
+            3.0
+          ]
+        },
         "centreMni": [
           27,
           -22,
           -104
         ],
-        "radiiMm": [
-          3,
-          3,
-          4
+        "axis": [
+          0,
+          0,
+          1
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            27,
+            -22,
+            -104
+          ],
+          "radiiMm": [
+            3,
+            3,
+            4
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4093,18 +4424,47 @@
         "en": "Trigeminal ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "crescent",
+        "params": {
+          "radius": 6.0,
+          "degrees": 150,
+          "thickness": [
+            2.5,
+            1.5
+          ],
+          "flatten": 0.6
+        },
         "centreMni": [
           20,
           -10,
           -32
         ],
-        "radiiMm": [
-          4,
-          6,
-          3
+        "axis": [
+          0.2,
+          0.3,
+          0.93
         ],
-        "bilateral": true
+        "up": [
+          0.7,
+          0.7,
+          0
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            20,
+            -10,
+            -32
+          ],
+          "radiiMm": [
+            4,
+            6,
+            3
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4120,18 +4480,37 @@
         "en": "Geniculate ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "disc",
+        "params": {
+          "radius": 1.5,
+          "thickness": 1.0
+        },
         "centreMni": [
           35,
           -28,
           -22
         ],
-        "radiiMm": [
-          1.5,
-          1.5,
-          1.5
+        "axis": [
+          1,
+          0,
+          0
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            35,
+            -28,
+            -22
+          ],
+          "radiiMm": [
+            1.5,
+            1.5,
+            1.5
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4147,18 +4526,37 @@
         "en": "Inferior vagal ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "spindle",
+        "params": {
+          "length": 16,
+          "radius": 3.0
+        },
         "centreMni": [
           18,
           -26,
           -64
         ],
-        "radiiMm": [
-          3,
-          3,
-          8
+        "axis": [
+          0.1,
+          -0.2,
+          -1
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            18,
+            -26,
+            -64
+          ],
+          "radiiMm": [
+            3,
+            3,
+            8
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4174,18 +4572,37 @@
         "en": "Inferior glossopharyngeal ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "spindle",
+        "params": {
+          "length": 6,
+          "radius": 2.0
+        },
         "centreMni": [
           15,
           -30,
           -52
         ],
-        "radiiMm": [
-          2,
-          2,
-          3
+        "axis": [
+          0,
+          0,
+          -1
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            15,
+            -30,
+            -52
+          ],
+          "radiiMm": [
+            2,
+            2,
+            3
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4201,18 +4618,37 @@
         "en": "Vestibular ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "spindle",
+        "params": {
+          "length": 5,
+          "radius": 1.8
+        },
         "centreMni": [
           31,
           -30,
           -26
         ],
-        "radiiMm": [
-          3,
-          2,
-          2
+        "axis": [
+          1,
+          0.2,
+          0
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            31,
+            -30,
+            -26
+          ],
+          "radiiMm": [
+            3,
+            2,
+            2
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4228,18 +4664,38 @@
         "en": "Spiral ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "spiral-ganglion",
         "centreMni": [
-          36,
-          -30,
-          -27
+          35,
+          -29,
+          -26
         ],
-        "radiiMm": [
-          3,
-          2.5,
-          2
+        "axis": [
+          0.6,
+          0.75,
+          -0.3
         ],
-        "bilateral": true
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            36,
+            -30,
+            -27
+          ],
+          "radiiMm": [
+            3,
+            2.5,
+            2
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4255,18 +4711,37 @@
         "en": "Superior cervical ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "spindle",
+        "params": {
+          "length": 25,
+          "radius": 4.0
+        },
         "centreMni": [
           22,
           -30,
           -88
         ],
-        "radiiMm": [
-          3,
-          3,
-          12
+        "axis": [
+          0,
+          0.15,
+          -1
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            22,
+            -30,
+            -88
+          ],
+          "radiiMm": [
+            3,
+            3,
+            12
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4282,18 +4757,37 @@
         "en": "Ciliary ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "disc",
+        "params": {
+          "radius": 1.5,
+          "thickness": 0.8
+        },
         "centreMni": [
           29,
           38,
           -28
         ],
-        "radiiMm": [
-          1.5,
-          1.5,
-          1.5
+        "axis": [
+          0,
+          1,
+          0
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            29,
+            38,
+            -28
+          ],
+          "radiiMm": [
+            1.5,
+            1.5,
+            1.5
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4309,18 +4803,37 @@
         "en": "Pterygopalatine ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "disc",
+        "params": {
+          "radius": 3.0,
+          "thickness": 1.5
+        },
         "centreMni": [
           24,
           20,
           -44
         ],
-        "radiiMm": [
-          3,
-          3,
-          3
+        "axis": [
+          1,
+          0,
+          0
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            24,
+            20,
+            -44
+          ],
+          "radiiMm": [
+            3,
+            3,
+            3
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4336,18 +4849,37 @@
         "en": "Submandibular ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "disc",
+        "params": {
+          "radius": 2.0,
+          "thickness": 1.0
+        },
         "centreMni": [
           33,
           12,
           -76
         ],
-        "radiiMm": [
-          2,
-          2,
-          2
+        "axis": [
+          0,
+          0,
+          1
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            33,
+            12,
+            -76
+          ],
+          "radiiMm": [
+            2,
+            2,
+            2
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -4363,18 +4895,37 @@
         "en": "Otic ganglion"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "disc",
+        "params": {
+          "radius": 2.5,
+          "thickness": 1.0
+        },
         "centreMni": [
           24,
           -6,
           -50
         ],
-        "radiiMm": [
-          2,
-          2,
-          2
+        "axis": [
+          1,
+          0,
+          0
         ],
-        "bilateral": true
+        "bilateral": true,
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            24,
+            -6,
+            -50
+          ],
+          "radiiMm": [
+            2,
+            2,
+            2
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",

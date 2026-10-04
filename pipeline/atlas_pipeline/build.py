@@ -17,7 +17,7 @@ import numpy as np
 import trimesh
 from scipy import ndimage
 
-from . import CONTENT_DIR, DATA_DIR, OUT_DIR, REPO_ROOT, meshing, sections
+from . import CONTENT_DIR, DATA_DIR, OUT_DIR, REPO_ROOT, meshing, models, sections
 
 # Labels that make up the brainstem / cerebellum outlines. `white_matter_of_hindbrain` (611) spans
 # both and is split by proximity in `shell_masks`.
@@ -32,6 +32,10 @@ BRAINSTEM_IDS = [
 
 SHELL_STRIDE = 4
 PLACEHOLDER_BELOW_MM3 = 6.0
+# nuclei whose argmax label is smaller than this are rebuilt from the probability maps (p >= threshold)
+PROB_BELOW_MM3 = 40.0
+PROB_THRESHOLD = 0.2
+PROB_DIR = DATA_DIR / "nextbrain" / "prob"
 
 ATTRIBUTION = [
     {
@@ -54,6 +58,13 @@ ATTRIBUTION = [
         "citation": "Segmented here with Segment Anything and registered to MNI152 2009c (pipeline/vhp_*.py).",
         "license": "Public: NLM states a license is no longer required",
         "url": "https://www.nlm.nih.gov/research/visible/visible_human.html",
+    },
+    {
+        "atlas": "model",
+        "title": "기하 모형 (이 프로젝트에서 교과서 치수로 작성)",
+        "citation": "Parametric shapes at literature MNI coordinates: cochlea, semicircular canals, ganglia, carotid sinus, spinal cord columns (pipeline/atlas_pipeline/models.py).",
+        "license": "프로젝트 자체 제작",
+        "url": "",
     },
     {
         "atlas": "hcp1065",
@@ -95,6 +106,43 @@ class NextBrain:
         if stride > 1:
             mask = mask[::stride, ::stride, ::stride]
         return mask, self.spacing * stride, self.origin + start * self.spacing
+
+    def prob_mask(self, labels: list[int], threshold: float):
+        """Boolean mask from the atlas's per-label probability maps (data/raw/nextbrain/prob/<label>.npz,
+        scipy COO over the flattened argmax grid; fetch.fetch_nextbrain_probabilities). The argmax volume
+        drops a small nucleus wherever a bigger neighbour is more probable, so the abducens nucleus keeps
+        5 mm3 of its ~15; summing the labels' probabilities and thresholding keeps the whole nucleus.
+        -> (mask, spacing, origin) like label_mask, or None if any map is missing."""
+        import scipy.sparse
+
+        total = None
+        for lab in labels:
+            p = PROB_DIR / f"{lab}.npz"
+            if not p.exists():
+                return None
+            m = scipy.sparse.load_npz(p).tocoo()
+            idx = np.unravel_index(m.row, self.data.shape)
+            if total is None:
+                total = {}
+            for i, j, k, v in zip(*idx, m.data):
+                total[(i, j, k)] = total.get((i, j, k), 0.0) + float(v)
+        # the maps of the smallest nuclei never get confident (oculomotor peaks at 0.44), so the cut
+        # follows the peak: 30% of it, between 0.08 and `threshold`
+        pmax = max(total.values())
+        vals = np.array(list(total.values()))
+        voxel = self.spacing**3
+        cut = None
+        for cand in (min(threshold, max(0.08, 0.3 * pmax)), 0.15, 0.1, 0.08, 0.05, 0.03):
+            if (vals >= cand).sum() * voxel >= PLACEHOLDER_BELOW_MM3:  # loosen until the nucleus has a body
+                cut = cand
+                break
+        if cut is None:
+            return None
+        pts = np.array([key for key, v in total.items() if v >= cut])
+        lo = pts.min(axis=0); hi = pts.max(axis=0) + 1
+        mask = np.zeros(hi - lo, dtype=bool)
+        mask[tuple((pts - lo).T)] = True
+        return mask, self.spacing, self.origin + lo * self.spacing, cut
 
     def shell_masks(self) -> dict[str, np.ndarray]:
         if self._shells is None:
@@ -254,6 +302,22 @@ def build_structure(structure: dict, nb: NextBrain):
             out.append((f"{sid}.{side}", mesh, rec))
         return out
 
+    if src["atlas"] == "model":
+        # parametric textbook shape at literature coordinates (atlas_pipeline/models.py); right side given
+        mesh = models.build(src)
+        note = src.get("modelNote") or "기하 모형: 모양은 교과서 치수의 매개변수 모형, 위치·크기는 문헌 좌표. 분할 데이터가 아니다."
+        vol = float(abs(mesh.volume))
+        if src.get("bilateral", True):
+            rec_r = mesh_record(f"{sid}.R", structure, "R", mesh, volume_mm3=vol, approx=True); rec_r["note"] = note
+            out.append((f"{sid}.R", mesh, rec_r))
+            mesh_l = meshing.mirror_x(mesh)
+            rec_l = mesh_record(f"{sid}.L", structure, "L", mesh_l, volume_mm3=vol, approx=True); rec_l["note"] = note
+            out.append((f"{sid}.L", mesh_l, rec_l))
+        else:
+            rec = mesh_record(f"{sid}.M", structure, "M", mesh, volume_mm3=vol, approx=True); rec["note"] = note
+            out.append((f"{sid}.M", mesh, rec))
+        return out
+
     if src["atlas"] == "mni":
         # no atlas gives the shape, but the position and size are known: an ellipsoid at MNI coordinates,
         # given for the right side when bilateral (the left is its mirror image)
@@ -296,6 +360,19 @@ def build_structure(structure: dict, nb: NextBrain):
     cleaned, stats = meshing.clean_mask(mask)
     vol = cleaned.sum() * spacing**3
     placeholder = src.get("placeholder")
+    prob_note = None
+    if vol < PROB_BELOW_MM3 and not src.get("stride"):
+        # small nucleus: the probability maps give its real extent where the argmax only kept a core
+        got = nb.prob_mask(labels, PROB_THRESHOLD)
+        if got is not None:
+            pmask, pspacing, porigin, cut = got
+            pcleaned, pstats = meshing.clean_mask(pmask)
+            pvol = pcleaned.sum() * pspacing**3
+            if pvol >= PLACEHOLDER_BELOW_MM3 and pvol > vol:
+                prob_note = (f"NextBrain 확률 지도에서 p ≥ {cut:.2f}인 복셀로 만든 형태. " +
+                             (f"argmax 라벨은 {vol:.1f} mm³만 남아 모양이 없었다." if vol < PLACEHOLDER_BELOW_MM3
+                              else f"argmax 라벨({vol:.0f} mm³)은 이웃 구조에 밀려 일부만 남아 있었다."))
+                mask, spacing, origin, cleaned, stats, vol = pmask, pspacing, porigin, pcleaned, pstats, pvol
     if vol < PLACEHOLDER_BELOW_MM3 and (placeholder or mask.any()):
         # too few voxels for a surface: an ellipsoid at the label's centroid. Explicit radii if the
         # content gives them, otherwise a sphere a little larger than the label's own volume so the
@@ -318,6 +395,9 @@ def build_structure(structure: dict, nb: NextBrain):
     wants_line = structure.get("tract") or structure.get("centerline")
     line = meshing.centerline(cleaned, spacing, origin) if wants_line else None
     add_pair(mesh, volume_mm3=vol, approx=False, stats=stats, line=line)
+    if prob_note:
+        for _, _, rec in out:
+            rec["note"] = prob_note
     # a tractography centerline can replace the label's own (the NextBrain label is often only the
     # brainstem segment, the HCP1065 bundle runs the whole course)
     for side, tid in (src.get("centerlineFrom") or {}).items():
@@ -334,6 +414,7 @@ def _load_hcp_tracts():
 
 
 HCP_TRACTS = _load_hcp_tracts()
+models.CORD_FILE = REPO_ROOT / "data" / "derived" / "vhp" / "sp-cord.M.mni.nii.gz"
 
 
 def compress(raw_glb, out_glb) -> bool:

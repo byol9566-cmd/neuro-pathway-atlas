@@ -232,7 +232,8 @@ async function main() {
     for (const s of members) {
       const swatch = el('span', { className: 'swatch' });
       swatch.style.background = `#${scene.structureColor(s.id)?.getHexString() ?? '888888'}`;
-      const btn = el('button', { className: 'item structure' }, swatch, el('span', {}, s.name.ko), ...(s.approx ? [el('em', {}, '근사')] : []));
+      const tag = s.atlas === 'model' ? '모형' : s.approx ? '근사' : null;
+      const btn = el('button', { className: 'item structure' }, swatch, el('span', {}, s.name.ko), ...(tag ? [el('em', {}, tag)] : []));
       btn.dataset.structure = s.id;
       btn.dataset.search = `${s.name.ko} ${s.name.en ?? ''}`.toLowerCase();
       btn.onclick = () => setMode({ kind: 'structure', structureId: s.id }, { focus: true });
@@ -273,7 +274,8 @@ async function main() {
   function attributionBlock() {
     const box = el('details', { className: 'attribution' }, el('summary', {}, '데이터 출처'));
     for (const a of manifest.attribution) {
-      box.append(el('p', {}, el('a', { href: a.url, target: '_blank', rel: 'noreferrer' }, a.title), ` — ${a.license}. ${a.citation}`));
+      const title = a.url ? el('a', { href: a.url, target: '_blank', rel: 'noreferrer' }, a.title) : el('span', {}, a.title);
+      box.append(el('p', {}, title, ` — ${a.license}. ${a.citation}`));
     }
     box.append(el('p', {}, '오른쪽 반구는 왼쪽 반구 아틀라스를 좌우 반전해 만든 것입니다.'));
     return box;
@@ -359,10 +361,10 @@ async function main() {
       el('p', { className: 'eyebrow' }, manifest.groups[s.group].name.ko),
       el('h2', {}, s.name.ko),
       el('p', { className: 'sub' }, s.name.en ?? ''));
-    if (s.approx) detail.append(el('p', { className: 'warn' }, '근사 형상: 아틀라스 라벨이 너무 작아 위치만 라벨에서 가져오고 모양은 타원체로 대신했습니다.'));
+    const note = meshes.find((m) => m.note)?.note;
+    if (s.approx && !note) detail.append(el('p', { className: 'warn' }, '근사 형상: 아틀라스 라벨이 너무 작아 위치만 라벨에서 가져오고 모양은 타원체로 대신했습니다.'));
     const derivedFrom = meshes.find((m) => m.derived)?.derived;
     if (derivedFrom) detail.append(el('p', { className: 'warn' }, `부분 형상: Visible Human 절편에서 분할한 ${derivedFrom}의 표면을 교과서 기하로 잘라 만든 영역입니다. 경계는 근사입니다.`));
-    const note = meshes.find((m) => m.note)?.note;
     if (note) detail.append(el('p', { className: 'warn' }, note));
     const rows = el('dl', {});
     for (const m of meshes) {
