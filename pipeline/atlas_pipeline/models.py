@@ -245,7 +245,20 @@ BUILDERS = {
 }
 
 
-WORLD_SHAPES = {"cord-extension", "cord-column"}  # built in MNI already: no placement
+def path_tube(points, radius=1.0, **_):
+    """a nerve drawn as a tube through MNI waypoints (resampled every 2 mm so the bends are smooth)"""
+    P = np.asarray(points, float)
+    seg = np.linalg.norm(np.diff(P, axis=0), axis=1)
+    s = np.concatenate([[0], np.cumsum(seg)])
+    t = np.arange(0, s[-1], 2.0)
+    Q = np.stack([np.interp(t, s, P[:, i]) for i in range(3)], axis=1)
+    k = np.ones(3) / 3
+    Q = np.stack([np.convolve(np.pad(Q[:, i], 1, mode="edge"), k, mode="valid") for i in range(3)], axis=1)
+    return meshing.tube(Q, np.full(len(Q), float(radius)), segments=10)
+
+
+BUILDERS["path-tube"] = path_tube
+WORLD_SHAPES = {"cord-extension", "cord-column", "path-tube"}  # built in MNI already: no placement
 
 
 def build(source: dict) -> trimesh.Trimesh:

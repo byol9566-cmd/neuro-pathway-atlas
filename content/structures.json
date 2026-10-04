@@ -2829,10 +2829,61 @@
         "en": "Oculomotor nerve"
       },
       "source": {
-        "atlas": "nextbrain",
-        "labels": [
-          386
-        ]
+        "atlas": "model",
+        "shape": "path-tube",
+        "centreMni": [
+          0,
+          0,
+          0
+        ],
+        "params": {
+          "radius": 1.2,
+          "points": [
+            [
+              2.5,
+              -13,
+              -17
+            ],
+            [
+              4,
+              -12,
+              -21
+            ],
+            [
+              7,
+              -6,
+              -23
+            ],
+            [
+              12,
+              2,
+              -24
+            ],
+            [
+              16,
+              14,
+              -26
+            ],
+            [
+              20,
+              26,
+              -28
+            ],
+            [
+              26,
+              36,
+              -28
+            ]
+          ]
+        },
+        "bilateral": true,
+        "modelNote": "기하 모형: 눈돌림신경을 핵에서 다리사이오목 → 해면정맥굴 가쪽벽 → 위안와틈새 → 안와까지 교과서 주행의 경유점으로 그린 관(반지름 1.2 mm). NextBrain 라벨은 확률이 낮아 모양을 주지 못했다.",
+        "replaced": {
+          "atlas": "nextbrain",
+          "labels": [
+            386
+          ]
+        }
       },
       "approxArea": true,
       "mapping": {
@@ -3794,18 +3845,43 @@
         "en": "Olfactory epithelium"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "disc",
+        "params": {
+          "radius": 6.0,
+          "thickness": 0.6
+        },
         "centreMni": [
           5,
           30,
           -44
         ],
-        "radiiMm": [
-          4,
-          8,
-          3
+        "axis": [
+          1,
+          0,
+          0
         ],
-        "bilateral": true
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "bilateral": true,
+        "modelNote": "기하 모형: 후각상피를 코중격 위쪽·코안 천장의 얇은 판(지름 12 mm, 두께 0.6 mm)으로. 위치는 교과서 기준 추정.",
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            5,
+            30,
+            -44
+          ],
+          "radiiMm": [
+            4,
+            8,
+            3
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
@@ -3821,18 +3897,46 @@
         "en": "Olfactory bulb"
       },
       "source": {
-        "atlas": "mni",
+        "atlas": "model",
+        "shape": "ellipsoid",
+        "params": {
+          "radii": [
+            2.2,
+            5.0,
+            1.5
+          ]
+        },
         "centreMni": [
           7,
           32,
           -36
         ],
-        "radiiMm": [
-          3,
-          8,
-          2.5
+        "axis": [
+          0,
+          0,
+          1
         ],
-        "bilateral": true
+        "up": [
+          1,
+          0,
+          0
+        ],
+        "bilateral": true,
+        "modelNote": "기하 모형: 후각망울을 벌집뼈 체판 위의 납작한 길쭉한 타원체(약 10×4.5×3 mm)로. 위치는 문헌 추정 좌표, Visible Human 절편에서는 식별하지 못했다.",
+        "replaced": {
+          "atlas": "mni",
+          "centreMni": [
+            7,
+            32,
+            -36
+          ],
+          "radiiMm": [
+            3,
+            8,
+            2.5
+          ],
+          "bilateral": true
+        }
       },
       "placeholderNote": {
         "source": "estimate",
