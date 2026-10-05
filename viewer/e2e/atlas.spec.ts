@@ -76,7 +76,7 @@ test('DCML pathway highlights the contralateral chain and flips with the origin 
 
 test('selecting a structure isolates it; Escape returns to explore', async ({ page }) => {
   await ready(page);
-  await page.locator('#search').fill('VPL');
+  await page.locator('#search').fill('배쪽뒤가쪽');  // 'VPL' alone also matches the superior thalamic radiation
   await expect(page.locator('.structure:visible')).toHaveCount(1);
   await pickStructure(page, 'thal-vpl');
   const s = await states(page);

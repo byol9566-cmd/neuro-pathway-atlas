@@ -258,3 +258,6 @@ Yeh, F.-C. (2022). *Population-based tract-to-region connectome of the human bra
 3. 빌드(`atlas_pipeline/build.py`의 `hcp1065` 분기)는 `meshing.tube()`로 중심선을 따라 튜브를 만들고 그 중심선을 매니페스트 `centerline`으로 내보낸다. 출처는 매니페스트 `attribution`의 HCP1065 항목(CC BY-SA 4.0 — 파생 경로도 같은 라이선스).
 
 쓰지 않은 다발: 겉질다리뇌 3구간(NextBrain 라벨이 뇌줄기 구간을 갖고 있음), MCP·SCP(배포본이 좌우 구분 없는 단일 파일), 띠다발 나머지 4구간, 뇌활·아래소뇌다리 튜브(라벨 메시 유지).
+
+## 2차 반영 (2026-10-05)
+`bundle_centerlines.py`를 아카이브의 74개 다발 전부에 돌리고(`--in data/raw/hcp1065`), `prepare_tracts.py`에 시상부챗살(TR_A/P/S)·청각부챗살(AR)·겉질선조체(CS_A/P/S)·SLF1~3·IFOF·ILF·MdLF·EMC·FAT·VOF·PAT·뇌량(CC) 통과와 **교차 치아핵적색시상로**(DRTT의 시상·겉질 부분을 좌우 반전해 z −22~−10에서 정중선을 건너게 구성; 아틀라스 다발은 교차하지 않음)를 더했다. `apply_to_content.py`의 `STEP_TRACTS`는 단계당 여러 신경로를 받는다. 쓰지 않은 것과 이유: AC(양측 U자 다발의 중앙선이 뒤통수에서 뒤통수로 가는 무의미한 선), MCP·SCP(좌우 합본 파일이라 중앙선이 정중선으로 붕괴), RST(겉질→숨뇌 z −40까지의 겉질그물 섬유; 척수 부분 없음), CB·V(소뇌 내부 섬유). 결과: 실주행 단계 56→82.

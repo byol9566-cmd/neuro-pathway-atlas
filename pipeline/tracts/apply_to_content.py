@@ -37,30 +37,78 @@ NEW_STRUCTURES = [
     {"id": "tr-cingulum", "name": {"ko": "띠다발", "en": "Cingulum bundle"},
      "tracts": {"L": "cingulum-l", "R": "cingulum-r"},
      "note": "HCP1065의 이마–해마곁 띠다발(C_FPH)."},
+    {"id": "tr-thalamic-radiation-superior", "name": {"ko": "위시상부챗살 (VPL·VL → 중심앞·뒤이랑)", "en": "Superior thalamic radiation"}, "tracts": {"L": "tr-s-l", "R": "tr-s-r"}},
+    {"id": "tr-thalamic-radiation-anterior", "name": {"ko": "앞시상부챗살 (MD·VA → 전전두)", "en": "Anterior thalamic radiation"}, "tracts": {"L": "tr-a-l", "R": "tr-a-r"}},
+    {"id": "tr-thalamic-radiation-posterior", "name": {"ko": "뒤시상부챗살 (베개 → 마루·뒤통수)", "en": "Posterior thalamic radiation"}, "tracts": {"L": "tr-p-l", "R": "tr-p-r"}},
+    {"id": "tr-acoustic-radiation", "name": {"ko": "청각부챗살", "en": "Acoustic radiation"}, "tracts": {"L": "ar-l", "R": "ar-r"}},
+    {"id": "tr-corticostriatal-superior", "name": {"ko": "겉질선조체섬유 (운동·감각겉질 → 조가비핵)", "en": "Corticostriatal tract, superior"}, "tracts": {"L": "cs-s-l", "R": "cs-s-r"}},
+    {"id": "tr-corticostriatal-anterior", "name": {"ko": "겉질선조체섬유 (전전두 → 꼬리핵)", "en": "Corticostriatal tract, anterior"}, "tracts": {"L": "cs-a-l", "R": "cs-a-r"}},
+    {"id": "tr-corticostriatal-posterior", "name": {"ko": "겉질선조체섬유 (마루·뒤통수 → 선조체)", "en": "Corticostriatal tract, posterior"}, "tracts": {"L": "cs-p-l", "R": "cs-p-r"}},
+    {"id": "tr-drtt", "name": {"ko": "치아핵적색시상로", "en": "Dentatorubrothalamic tract"}, "tracts": {"L": "drtt-crossed-l", "R": "drtt-crossed-r"},
+     "note": "좌/우는 치아핵이 있는 쪽. 교차는 교과서 기하로 구성(아틀라스 다발은 교차하지 않음)."},
+    {"id": "tr-slf-1", "name": {"ko": "위세로다발 I", "en": "Superior longitudinal fasciculus I"}, "tracts": {"L": "slf1-l", "R": "slf1-r"}},
+    {"id": "tr-slf-2", "name": {"ko": "위세로다발 II", "en": "Superior longitudinal fasciculus II"}, "tracts": {"L": "slf2-l", "R": "slf2-r"}},
+    {"id": "tr-slf-3", "name": {"ko": "위세로다발 III", "en": "Superior longitudinal fasciculus III"}, "tracts": {"L": "slf3-l", "R": "slf3-r"}},
+    {"id": "tr-ifof", "name": {"ko": "아래이마뒤통수다발", "en": "Inferior fronto-occipital fasciculus"}, "tracts": {"L": "ifof-l", "R": "ifof-r"}},
+    {"id": "tr-ilf", "name": {"ko": "아래세로다발", "en": "Inferior longitudinal fasciculus"}, "tracts": {"L": "ilf-l", "R": "ilf-r"}},
+    {"id": "tr-mdlf", "name": {"ko": "중간세로다발", "en": "Middle longitudinal fasciculus"}, "tracts": {"L": "mdlf-l", "R": "mdlf-r"}},
+    {"id": "tr-extreme-capsule", "name": {"ko": "극섬유막", "en": "Extreme capsule"}, "tracts": {"L": "emc-l", "R": "emc-r"}},
+    {"id": "tr-fat", "name": {"ko": "이마빗다발 (FAT)", "en": "Frontal aslant tract"}, "tracts": {"L": "fat-l", "R": "fat-r"}},
+    {"id": "tr-vof", "name": {"ko": "뒤통수세로다발 (VOF)", "en": "Vertical occipital fasciculus"}, "tracts": {"L": "vof-l", "R": "vof-r"}},
+    {"id": "tr-pat", "name": {"ko": "마루빗다발 (PAT)", "en": "Parietal aslant tract"}, "tracts": {"L": "pat-l", "R": "pat-r"}},
+    {"id": "tr-corpus-callosum", "name": {"ko": "뇌들보 (뇌량)", "en": "Corpus callosum"}, "tracts": {"M": "cc"}},
 ]
 CENTERLINE_FROM = {
     "tr-medial-lemniscus": {"L": "ml-l", "R": "ml-r"},
     "tr-icp": {"L": "icp-l", "R": "icp-r"},
     "tr-fornix": {"L": "fornix-l", "R": "fornix-r"},
 }
-# step id -> (structure id, side). The side follows the structure the step already names.
+# step id -> [(structure id, side), ...]. The side follows the structure the step already names.
 STEP_TRACTS = {
-    "corticospinal-lateral-1": ("tr-cst-cerebral", "ipsi"),
-    "corticospinal-lateral-3": ("tr-cst-lateral", "contra"),
-    "corticospinal-anterior-1": ("tr-cst-cerebral", "ipsi"),
-    "corticospinal-anterior-3": ("tr-cst-anterior", "ipsi"),
-    "cerebellar-double-crossing-2": ("tr-cst-lateral", "contra"),
-    "corticobulbar-1": ("tr-corticobulbar", "ipsi"),
-    "language-spoken-4": ("tr-corticobulbar", "ipsi"),
-    "language-written-4": ("tr-corticobulbar", "ipsi"),
-    "visual-temporal-3": ("tr-optic-radiation", "ipsi"),
-    "visual-nasal-3": ("tr-optic-radiation", "contra"),
-    "papez-5": ("tr-cingulum", "ipsi"),
-    "association-cingulum-2": ("tr-cingulum", "ipsi"),
-    "association-uncinate-2": ("tr-uncinate", "ipsi"),
-    "language-spoken-3": ("tr-arcuate", "ipsi"),
-    "language-dorsal-2": ("tr-arcuate", "ipsi"),
-    "language-written-3": ("tr-arcuate", "ipsi"),
+    "dcml-5": [("tr-thalamic-radiation-superior", "contra")],
+    "spinothalamic-lateral-3": [("tr-thalamic-radiation-superior", "contra")],
+    "spinothalamic-anterior-3": [("tr-thalamic-radiation-superior", "contra")],
+    "trigeminal-touch-3": [("tr-thalamic-radiation-superior", "contra")],
+    "trigeminal-pain-3": [("tr-thalamic-radiation-superior", "contra")],
+    "somatosensory-cortical-processing-1": [("tr-thalamic-radiation-superior", "contra")],
+    "thalamocortical-oscillation-1": [("tr-thalamic-radiation-superior", "ipsi")],
+    "basal-ganglia-indirect-6": [("tr-thalamic-radiation-superior", "ipsi")],
+    "basal-ganglia-direct-5": [("tr-thalamic-radiation-superior", "ipsi")],
+    "stn-dbs-network-2": [("tr-thalamic-radiation-superior", "ipsi")],
+    "nigrostriatal-3": [("tr-thalamic-radiation-superior", "ipsi")],
+    "dentatothalamocortical-3": [("tr-thalamic-radiation-superior", "contra")],
+    "cerebellar-double-crossing-1": [("tr-drtt", "ipsi"), ("tr-thalamic-radiation-superior", "contra")],
+    "dentatothalamocortical-2": [("tr-drtt", "ipsi")],
+    "auditory-central-5": [("tr-acoustic-radiation", "ipsi")],
+    "auditory-itd-3": [("tr-acoustic-radiation", "ipsi")],
+    "auditory-tonotopy-3": [("tr-acoustic-radiation", "ipsi")],
+    "basal-ganglia-direct-2": [("tr-corticostriatal-superior", "ipsi")],
+    "basal-ganglia-indirect-2": [("tr-corticostriatal-superior", "ipsi")],
+    "procedural-memory-2": [("tr-corticostriatal-superior", "ipsi")],
+    "caudate-motivation-1": [("tr-corticostriatal-anterior", "ipsi")],
+    "association-longitudinal-2": [("tr-slf-2", "ipsi"), ("tr-ifof", "ipsi"), ("tr-ilf", "ipsi")],
+    "parietal-prefrontal-information-2": [("tr-slf-2", "ipsi")],
+    "working-memory-2": [("tr-slf-2", "ipsi")],
+    "language-ventral-2": [("tr-ifof", "ipsi")],
+    "visual-ventral-3": [("tr-ilf", "ipsi")],
+    "commissural-connections-1": [("tr-corpus-callosum", "ipsi")],
+    "split-brain-language-2": [("tr-corpus-callosum", "ipsi")],
+    "corticospinal-lateral-1": [("tr-cst-cerebral", "ipsi")],
+    "corticospinal-lateral-3": [("tr-cst-lateral", "contra")],
+    "corticospinal-anterior-1": [("tr-cst-cerebral", "ipsi")],
+    "corticospinal-anterior-3": [("tr-cst-anterior", "ipsi")],
+    "cerebellar-double-crossing-2": [("tr-cst-lateral", "contra")],
+    "corticobulbar-1": [("tr-corticobulbar", "ipsi")],
+    "language-spoken-4": [("tr-corticobulbar", "ipsi")],
+    "language-written-4": [("tr-corticobulbar", "ipsi")],
+    "visual-temporal-3": [("tr-optic-radiation", "ipsi")],
+    "visual-nasal-3": [("tr-optic-radiation", "contra")],
+    "papez-5": [("tr-cingulum", "ipsi")],
+    "association-cingulum-2": [("tr-cingulum", "ipsi")],
+    "association-uncinate-2": [("tr-uncinate", "ipsi")],
+    "language-spoken-3": [("tr-arcuate", "ipsi")],
+    "language-dorsal-2": [("tr-arcuate", "ipsi")],
+    "language-written-3": [("tr-arcuate", "ipsi")],
 }
 
 
@@ -74,6 +122,12 @@ COVERED_NAMES = {
     "tr-cingulum": ["띠다발"],
     "tr-uncinate": ["갈고리다발"],
     "tr-arcuate": ["활꼴다발"],
+    "tr-thalamic-radiation-superior": ["속섬유막 뒤다리", "속섬유막", "방사관"],
+    "tr-acoustic-radiation": ["청각부챗살", "속섬유막 렌즈핵밑부분", "속섬유막"],
+    "tr-slf-2": ["위세로다발"],
+    "tr-ilf": ["아래세로다발"],
+    "tr-ifof": ["아래이마뒤통수다발"],
+    "tr-corpus-callosum": ["뇌들보"],
 }
 
 
@@ -116,21 +170,18 @@ def main(write):
     changed = []
     for pw in p["pathways"]:
         for st in pw["steps"]:
-            hit = STEP_TRACTS.get(st["id"])
-            if not hit:
-                continue
-            sid, side = hit
-            if "missing" in st:
-                cleaned = drop_covered(st["missing"]["ko"], COVERED_NAMES.get(sid, []))
-                if cleaned:
-                    st["missing"]["ko"] = cleaned
-                else:
-                    del st["missing"]
-            if any(r["id"] == sid for r in st["structures"]):
-                continue
-            # the tract goes first so the route runs along it before reaching the step's grey matter
-            st["structures"].insert(0, {"id": sid, "side": side})
-            changed.append((pw["id"], st["id"], sid, side))
+            for sid, side in STEP_TRACTS.get(st["id"], []):
+                if "missing" in st:
+                    cleaned = drop_covered(st["missing"]["ko"], COVERED_NAMES.get(sid, []))
+                    if cleaned:
+                        st["missing"]["ko"] = cleaned
+                    else:
+                        del st["missing"]
+                if any(r["id"] == sid for r in st["structures"]):
+                    continue
+                # the tract goes first so the route runs along it before reaching the step's grey matter
+                st["structures"].insert(0, {"id": sid, "side": side})
+                changed.append((pw["id"], st["id"], sid, side))
     print(f"structures: {len(NEW_STRUCTURES)} hcp1065 tracts, centerline overrides {list(CENTERLINE_FROM)}")
     print("pathway steps:", *changed, sep="\n  ")
     if write:

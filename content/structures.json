@@ -3382,6 +3382,310 @@
       "note": "HCP1065의 이마–해마곁 띠다발(C_FPH)."
     },
     {
+      "id": "tr-thalamic-radiation-superior",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "위시상부챗살 (VPL·VL → 중심앞·뒤이랑)",
+        "en": "Superior thalamic radiation"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "tr-s-l",
+          "R": "tr-s-r"
+        }
+      }
+    },
+    {
+      "id": "tr-thalamic-radiation-anterior",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "앞시상부챗살 (MD·VA → 전전두)",
+        "en": "Anterior thalamic radiation"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "tr-a-l",
+          "R": "tr-a-r"
+        }
+      }
+    },
+    {
+      "id": "tr-thalamic-radiation-posterior",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "뒤시상부챗살 (베개 → 마루·뒤통수)",
+        "en": "Posterior thalamic radiation"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "tr-p-l",
+          "R": "tr-p-r"
+        }
+      }
+    },
+    {
+      "id": "tr-acoustic-radiation",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "청각부챗살",
+        "en": "Acoustic radiation"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "ar-l",
+          "R": "ar-r"
+        }
+      }
+    },
+    {
+      "id": "tr-corticostriatal-superior",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "겉질선조체섬유 (운동·감각겉질 → 조가비핵)",
+        "en": "Corticostriatal tract, superior"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "cs-s-l",
+          "R": "cs-s-r"
+        }
+      }
+    },
+    {
+      "id": "tr-corticostriatal-anterior",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "겉질선조체섬유 (전전두 → 꼬리핵)",
+        "en": "Corticostriatal tract, anterior"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "cs-a-l",
+          "R": "cs-a-r"
+        }
+      }
+    },
+    {
+      "id": "tr-corticostriatal-posterior",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "겉질선조체섬유 (마루·뒤통수 → 선조체)",
+        "en": "Corticostriatal tract, posterior"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "cs-p-l",
+          "R": "cs-p-r"
+        }
+      }
+    },
+    {
+      "id": "tr-drtt",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "치아핵적색시상로",
+        "en": "Dentatorubrothalamic tract"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "drtt-crossed-l",
+          "R": "drtt-crossed-r"
+        }
+      },
+      "note": "좌/우는 치아핵이 있는 쪽. 교차는 교과서 기하로 구성(아틀라스 다발은 교차하지 않음)."
+    },
+    {
+      "id": "tr-slf-1",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "위세로다발 I",
+        "en": "Superior longitudinal fasciculus I"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "slf1-l",
+          "R": "slf1-r"
+        }
+      }
+    },
+    {
+      "id": "tr-slf-2",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "위세로다발 II",
+        "en": "Superior longitudinal fasciculus II"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "slf2-l",
+          "R": "slf2-r"
+        }
+      }
+    },
+    {
+      "id": "tr-slf-3",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "위세로다발 III",
+        "en": "Superior longitudinal fasciculus III"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "slf3-l",
+          "R": "slf3-r"
+        }
+      }
+    },
+    {
+      "id": "tr-ifof",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "아래이마뒤통수다발",
+        "en": "Inferior fronto-occipital fasciculus"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "ifof-l",
+          "R": "ifof-r"
+        }
+      }
+    },
+    {
+      "id": "tr-ilf",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "아래세로다발",
+        "en": "Inferior longitudinal fasciculus"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "ilf-l",
+          "R": "ilf-r"
+        }
+      }
+    },
+    {
+      "id": "tr-mdlf",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "중간세로다발",
+        "en": "Middle longitudinal fasciculus"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "mdlf-l",
+          "R": "mdlf-r"
+        }
+      }
+    },
+    {
+      "id": "tr-extreme-capsule",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "극섬유막",
+        "en": "Extreme capsule"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "emc-l",
+          "R": "emc-r"
+        }
+      }
+    },
+    {
+      "id": "tr-fat",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "이마빗다발 (FAT)",
+        "en": "Frontal aslant tract"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "fat-l",
+          "R": "fat-r"
+        }
+      }
+    },
+    {
+      "id": "tr-vof",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "뒤통수세로다발 (VOF)",
+        "en": "Vertical occipital fasciculus"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "vof-l",
+          "R": "vof-r"
+        }
+      }
+    },
+    {
+      "id": "tr-pat",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "마루빗다발 (PAT)",
+        "en": "Parietal aslant tract"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "L": "pat-l",
+          "R": "pat-r"
+        }
+      }
+    },
+    {
+      "id": "tr-corpus-callosum",
+      "group": "tracts",
+      "tract": true,
+      "name": {
+        "ko": "뇌들보 (뇌량)",
+        "en": "Corpus callosum"
+      },
+      "source": {
+        "atlas": "hcp1065",
+        "tracts": {
+          "M": "cc"
+        }
+      }
+    },
+    {
       "id": "end-ant-pituitary",
       "group": "neuroendocrine",
       "name": {
@@ -5059,9 +5363,9 @@
         "bilateral": true
       },
       "placeholderNote": {
-        "source": "estimate",
-        "confidence": "low",
-        "note": "메인 세션 추정: 숨뇌 머리쪽 배가쪽, 아래올리브 뒤가쪽"
+        "source": "Henderson LA et al. 2016 Front Neurosci 10:90 (doi 10.3389/fnins.2016.00090, PMC4785184, CC BY)",
+        "confidence": "medium",
+        "note": "MSNA-coupled BOLD clusters in MNI: left RVLM (−4, −36, −44), right RVLM (10, −44, −48); structural GM cluster left RVLM (−5, −39, −46) — Table 1/2, verified in the Europe PMC full text 2026-10-05. Our ellipsoid centre (±7, −38, −45) sits within these; extent kept at 3×4×4 mm (functional clusters were ~20 mm³, structural up to several hundred). Single OA source; no second MNI report found."
       }
     },
     {
@@ -5088,7 +5392,8 @@
       "placeholderNote": {
         "source": "estimate",
         "confidence": "low",
-        "note": "메인 세션 추정: RVLM 바로 꼬리쪽"
+        "note": "메인 세션 추정: RVLM 바로 꼬리쪽",
+        "search2026-10-05": "No peer-reviewed MNI coordinates or volume found (Bianciardi/Singh/García-Gomar 7T atlases subsume Gi in the composite 'sMRt' label; RtTg not segmented anywhere; CVLM only named as 'iMRt' proxy without coordinates). Position stays the textbook estimate."
       }
     },
     {
@@ -5115,7 +5420,8 @@
       "placeholderNote": {
         "source": "estimate",
         "confidence": "low",
-        "note": "메인 세션 추정: 숨뇌 안쪽 그물체"
+        "note": "메인 세션 추정: 숨뇌 안쪽 그물체",
+        "search2026-10-05": "No peer-reviewed MNI coordinates or volume found (Bianciardi/Singh/García-Gomar 7T atlases subsume Gi in the composite 'sMRt' label; RtTg not segmented anywhere; CVLM only named as 'iMRt' proxy without coordinates). Position stays the textbook estimate."
       }
     },
     {
@@ -5142,7 +5448,8 @@
       "placeholderNote": {
         "source": "estimate",
         "confidence": "low",
-        "note": "메인 세션 추정: 다리뇌 덮개, 안쪽세로다발 배쪽"
+        "note": "메인 세션 추정: 다리뇌 덮개, 안쪽세로다발 배쪽",
+        "search2026-10-05": "No peer-reviewed MNI coordinates or volume found (Bianciardi/Singh/García-Gomar 7T atlases subsume Gi in the composite 'sMRt' label; RtTg not segmented anywhere; CVLM only named as 'iMRt' proxy without coordinates). Position stays the textbook estimate."
       }
     }
   ]

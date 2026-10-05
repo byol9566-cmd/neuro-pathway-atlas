@@ -152,6 +152,10 @@
           },
           "structures": [
             {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "contra"
+            },
+            {
               "id": "thal-vpl",
               "side": "contra"
             },
@@ -247,6 +251,10 @@
           },
           "structures": [
             {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "contra"
+            },
+            {
               "id": "thal-vpl",
               "side": "contra"
             },
@@ -255,10 +263,7 @@
               "side": "contra"
             }
           ],
-          "neuronOrder": 3,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 뒤다리 · 3D 없음: 속섬유막 뒤다리"
-          }
+          "neuronOrder": 3
         }
       ],
       "lesions": [
@@ -372,14 +377,15 @@
           },
           "structures": [
             {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "contra"
+            },
+            {
               "id": "ctx-postcentral",
               "side": "contra"
             }
           ],
-          "neuronOrder": 3,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 뒤다리 · 방사관 · 3D 없음: 속섬유막 뒤다리, 방사관"
-          }
+          "neuronOrder": 3
         }
       ],
       "lesions": [
@@ -461,6 +467,10 @@
           },
           "structures": [
             {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "contra"
+            },
+            {
               "id": "thal-vpl",
               "side": "contra"
             },
@@ -469,10 +479,7 @@
               "side": "contra"
             }
           ],
-          "neuronOrder": 3,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 뒤다리 · 3D 없음: 속섬유막 뒤다리"
-          }
+          "neuronOrder": 3
         }
       ],
       "lesions": [
@@ -559,14 +566,15 @@
           },
           "structures": [
             {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "contra"
+            },
+            {
               "id": "ctx-postcentral",
               "side": "contra"
             }
           ],
-          "neuronOrder": 3,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 뒤다리 · 3D 없음: 속섬유막 뒤다리"
-          }
+          "neuronOrder": 3
         }
       ],
       "lesions": [
@@ -666,14 +674,15 @@
           },
           "structures": [
             {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "contra"
+            },
+            {
               "id": "ctx-postcentral",
               "side": "contra"
             }
           ],
-          "neuronOrder": 3,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 뒤다리 · 3D 없음: 속섬유막 뒤다리"
-          }
+          "neuronOrder": 3
         }
       ],
       "lesions": [
@@ -3477,6 +3486,10 @@
           },
           "structures": [
             {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "ipsi"
+            },
+            {
               "id": "bg-gpi",
               "side": "ipsi"
             },
@@ -3537,6 +3550,10 @@
             "ko": "D2 중심 선조체 GABA 뉴런이 GPe를 억제한다."
           },
           "structures": [
+            {
+              "id": "tr-corticostriatal-superior",
+              "side": "ipsi"
+            },
             {
               "id": "bg-caudate",
               "side": "ipsi"
@@ -3612,6 +3629,10 @@
             "ko": "시상겉질 흥분출력이 감소하는 고전 모형이다."
           },
           "structures": [
+            {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "ipsi"
+            },
             {
               "id": "thal-va",
               "side": "ipsi"
@@ -3693,6 +3714,10 @@
           },
           "structures": [
             {
+              "id": "tr-corticostriatal-superior",
+              "side": "ipsi"
+            },
+            {
               "id": "bg-caudate",
               "side": "ipsi"
             },
@@ -3755,6 +3780,10 @@
             "ko": "운동 선택·수행을 촉진하는 고전 모형이다."
           },
           "structures": [
+            {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "ipsi"
+            },
             {
               "id": "ctx-precentral",
               "side": "ipsi"
@@ -3839,6 +3868,10 @@
             "ko": "도파민 소실 시 직접경로는 약화되고 간접경로 영향이 강화되어 시상겉질 운동출력이 감소한다. 1차 p.43의 직접↑/간접↓ 표기는 2차 p.71과 충돌하여 교정했다."
           },
           "structures": [
+            {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "ipsi"
+            },
             {
               "id": "bg-gpi",
               "side": "ipsi"
@@ -4420,6 +4453,14 @@
           },
           "structures": [
             {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "contra"
+            },
+            {
+              "id": "tr-drtt",
+              "side": "ipsi"
+            },
+            {
               "id": "cb-dentate",
               "side": "ipsi"
             },
@@ -4936,6 +4977,10 @@
           },
           "structures": [
             {
+              "id": "tr-drtt",
+              "side": "ipsi"
+            },
+            {
               "id": "tr-scp",
               "side": "ipsi"
             },
@@ -4958,6 +5003,10 @@
             "ko": "반대쪽 VL 중계가 그쪽 M1·전운동망에 정보를 보낸다. VL과 몸감각 VPL을 혼동하지 않는다."
           },
           "structures": [
+            {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "contra"
+            },
             {
               "id": "thal-vl",
               "side": "contra"
@@ -7437,6 +7486,10 @@
           },
           "structures": [
             {
+              "id": "tr-ilf",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-inferior-temporal",
               "side": "ipsi"
             }
@@ -7959,6 +8012,10 @@
           },
           "structures": [
             {
+              "id": "tr-acoustic-radiation",
+              "side": "ipsi"
+            },
+            {
               "id": "bs-inferior-colliculus",
               "side": "ipsi"
             },
@@ -8042,6 +8099,10 @@
             "ko": "달팽이핵에서 A1까지 주파수 배열이 유지되며 EE/EI 양귀반응망이 정보를 통합한다."
           },
           "structures": [
+            {
+              "id": "tr-acoustic-radiation",
+              "side": "ipsi"
+            },
             {
               "id": "bs-inferior-colliculus",
               "side": "ipsi"
@@ -8175,6 +8236,10 @@
           },
           "structures": [
             {
+              "id": "tr-acoustic-radiation",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-auditory-a1",
               "side": "ipsi"
             },
@@ -8184,7 +8249,7 @@
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 속섬유막 렌즈핵밑부분 · 청각부챗살 · 일차청각겉질 (A1, 헤슐이랑) · 이차청각겉질 (BA 42) · 3D 없음: 속섬유막 렌즈핵밑부분, 청각부챗살"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: · 일차청각겉질 (A1, 헤슐이랑) · 이차청각겉질 (BA 42)"
           }
         }
       ],
@@ -10264,6 +10329,10 @@
           },
           "structures": [
             {
+              "id": "tr-corticostriatal-superior",
+              "side": "ipsi"
+            },
+            {
               "id": "bg-caudate",
               "side": "ipsi"
             },
@@ -11896,6 +11965,10 @@
             "ko": "시상겉질 입력이 피라미드세포 가지돌기의 집단 시냅스전위에 기여한다. EEG를 개별 AP들의 단순 합으로 해석하지 않는다."
           },
           "structures": [
+            {
+              "id": "tr-thalamic-radiation-superior",
+              "side": "ipsi"
+            },
             {
               "id": "ctx-postcentral",
               "side": "ipsi"
@@ -14514,6 +14587,10 @@
           },
           "structures": [
             {
+              "id": "tr-corticostriatal-anterior",
+              "side": "ipsi"
+            },
+            {
               "id": "bg-caudate",
               "side": "ipsi"
             }
@@ -14625,6 +14702,10 @@
           },
           "structures": [
             {
+              "id": "tr-slf-2",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-prefrontal",
               "side": "ipsi"
             }
@@ -14665,12 +14746,16 @@
           },
           "structures": [
             {
+              "id": "tr-corpus-callosum",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-sma",
               "side": "ipsi"
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 뇌들보 · 보조운동영역 (SMA, BA 6) · 3D 없음: 뇌들보"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 보조운동영역 (SMA, BA 6)"
           }
         },
         {
@@ -14745,12 +14830,24 @@
           },
           "structures": [
             {
+              "id": "tr-ilf",
+              "side": "ipsi"
+            },
+            {
+              "id": "tr-ifof",
+              "side": "ipsi"
+            },
+            {
+              "id": "tr-slf-2",
+              "side": "ipsi"
+            },
+            {
               "id": "ctx-parietal-association",
               "side": "ipsi"
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 위세로다발 · 마루연합겉질 (BA 5·7 등) · 아래세로다발 · 아래이마뒤통수다발 · 위이마뒤통수다발 (정리본 용어) · 3D 없음: 위세로다발, 아래세로다발, 아래이마뒤통수다발, 위이마뒤통수다발 (정리본 용어)"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 마루연합겉질 (BA 5·7 등) · · 위이마뒤통수다발 (정리본 용어) · 3D 없음: , 위이마뒤통수다발 (정리본 용어)"
           }
         }
       ],
@@ -14855,6 +14952,10 @@
             "ko": "PFC·LIP의 활동이 정보 유지와 delayed-saccade 과제 등에 관련된다. 한 직렬 중계보다 분산·재귀망으로 표현한다."
           },
           "structures": [
+            {
+              "id": "tr-slf-2",
+              "side": "ipsi"
+            },
             {
               "id": "ctx-prefrontal",
               "side": "ipsi"
@@ -15081,10 +15182,12 @@
           "description": {
             "ko": "비우성반구의 정보가 우성 언어반구로 전달되려면 반구간 연결이 필요하다. 우성반구는 대개 왼쪽이며 origin 스위치를 누른다고 언어우성까지 자동 반전되는 것은 아니다."
           },
-          "structures": [],
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 뇌들보 · 3D 없음: 뇌들보"
-          }
+          "structures": [
+            {
+              "id": "tr-corpus-callosum",
+              "side": "ipsi"
+            }
+          ]
         },
         {
           "id": "split-brain-language-3",
@@ -15244,6 +15347,10 @@
             "ko": "관자·전전두 등의 의미연결망이 내용을 해석한다. 원문에 정확한 백질다발이 없으므로 임의의 tract를 필수 중계로 추가하지 않았다."
           },
           "structures": [
+            {
+              "id": "tr-ifof",
+              "side": "ipsi"
+            },
             {
               "id": "ctx-inferior-temporal",
               "side": "ipsi"

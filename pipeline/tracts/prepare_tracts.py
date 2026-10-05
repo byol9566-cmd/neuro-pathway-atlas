@@ -131,9 +131,29 @@ def main():
         k = int(np.argmin(np.linalg.norm(P - VPL[side], axis=1)))
         put(f"ml-{side}", P[: k + 1], clamp(R[: k + 1]), f"HCP1065 안쪽섬유띠 다발을 VPL에 가장 가까운 점 {P[k].round(1).tolist()}에서 잘랐다(아틀라스 다발은 겉질까지 이어진다).", [ml["atlasName"]])
 
-        for pid, src in (("cbt", f"cbt-{side}"), ("or", f"or-{side}"), ("af", f"af-{side}"), ("uf", f"uf-{side}"), ("cingulum", f"c-fph-{side}"), ("icp", f"icp-{side}"), ("fornix", f"f-{side}")):
+        for pid, src in (("cbt", f"cbt-{side}"), ("or", f"or-{side}"), ("af", f"af-{side}"), ("uf", f"uf-{side}"), ("cingulum", f"c-fph-{side}"), ("icp", f"icp-{side}"), ("fornix", f"f-{side}"),
+                         ("tr-s", f"tr-s-{side}"), ("tr-a", f"tr-a-{side}"), ("tr-p", f"tr-p-{side}"), ("ar", f"ar-{side}"),
+                         ("cs-a", f"cs-a-{side}"), ("cs-p", f"cs-p-{side}"), ("cs-s", f"cs-s-{side}"),
+                         ("slf1", f"slf1-{side}"), ("slf2", f"slf2-{side}"), ("slf3", f"slf3-{side}"), ("ifof", f"ifof-{side}"), ("ilf", f"ilf-{side}"),
+                         ("mdlf", f"mdlf-{side}"), ("emc", f"emc-{side}"), ("fat", f"fat-{side}"), ("vof", f"vof-{side}"), ("pat", f"pat-{side}")):
             t = by_id[src]
             put(f"{pid}-{side}", t["points"], clamp(t["radiiMm"]), "HCP1065 다발 중심선 그대로(반지름은 다발 퍼짐의 중앙값, 1.5~6 mm로 제한).", [t["atlasName"]])
+
+        # dentatorubrothalamic: the atlas bundle stays on one side (tractography does not resolve the
+        # decussation of the superior cerebellar peduncle), so the thalamocortical part is mirrored to the
+        # other hemisphere and the two halves are joined across the midline in the caudal midbrain
+        drtt = by_id[f"drtt-{side}"]
+        P = np.array(drtt["points"]); R = clamp(drtt["radiiMm"])
+        if P[0, 2] < P[-1, 2]:  # order cortex -> cerebellum
+            P = P[::-1]; R = R[::-1]
+        z_hi, z_lo = -10.0, -22.0  # decussation band
+        w = np.clip((P[:, 2] - z_lo) / (z_hi - z_lo), 0, 1)  # 1 above the band (mirror), 0 below (keep)
+        s = (1 - np.cos(np.pi * w)) / 2
+        Q = P.copy(); Q[:, 0] = P[:, 0] * (1 - 2 * s)
+        put(f"drtt-crossed-{side}", Q, R, "치아핵에서 시작하는 쪽 기준: 소뇌 부분은 HCP1065 치아핵적색시상로(DRTT) 그대로, 위소뇌다리 교차(z −22~−10)에서 정중선을 건너 반대쪽 시상·겉질 부분은 같은 다발을 좌우 반전해 이었다. 아틀라스 다발은 교차하지 않는다.", [drtt["atlasName"]])
+
+    cc = by_id["cc"]
+    put("cc", cc["points"], clamp(cc["radiiMm"]), "HCP1065 뇌량 전체 다발의 대표 중심선(몸통을 지나는 하나의 선). 부위별(무릎·몸통·팽대) 섬유는 구분하지 않았다.", [cc["atlasName"]])
 
     OUT.write_text(json.dumps({"source": data["source"], "tracts": prepared}, ensure_ascii=False, indent=1) + "\n")
     for pid, t in prepared.items():
