@@ -144,6 +144,25 @@ class NextBrain:
         mask[tuple((pts - lo).T)] = True
         return mask, self.spacing, self.origin + lo * self.spacing, cut
 
+    def brainstem_axis(self) -> dict:
+        """z (mm, RAS) -> (x, y, equivalent radius) of the brainstem cross-section, from the shell mask
+        (stride SHELL_STRIDE); feeds the textbook tract models in models.py"""
+        m = self.shell_masks()["brainstem"]
+        sp = self.spacing * SHELL_STRIDE
+        out = {}
+        for k in range(m.shape[2]):
+            sl = m[:, :, k]
+            n = int(sl.sum())
+            if n < 40:
+                continue
+            ii, jj = np.nonzero(sl)
+            # the atlas is one hemisphere (the right is mirrored at build time): the brainstem sits on the
+            # midline and the full cross-section is twice the half mask
+            y = self.origin[1] + jj.mean() * sp
+            z = self.origin[2] + k * sp
+            out[round(float(z))] = (0.0, float(y), float(np.sqrt(2 * n / np.pi) * sp))
+        return out
+
     def shell_masks(self) -> dict[str, np.ndarray]:
         if self._shells is None:
             ds = self.data[::SHELL_STRIDE, ::SHELL_STRIDE, ::SHELL_STRIDE]
@@ -304,17 +323,18 @@ def build_structure(structure: dict, nb: NextBrain):
 
     if src["atlas"] == "model":
         # parametric textbook shape at literature coordinates (atlas_pipeline/models.py); right side given
-        mesh = models.build(src)
+        mesh, line = models.build(src)
         note = src.get("modelNote") or "기하 모형: 모양은 교과서 치수의 매개변수 모형, 위치·크기는 문헌 좌표. 분할 데이터가 아니다."
         vol = float(abs(mesh.volume))
         if src.get("bilateral", True):
-            rec_r = mesh_record(f"{sid}.R", structure, "R", mesh, volume_mm3=vol, approx=True); rec_r["note"] = note
+            rec_r = mesh_record(f"{sid}.R", structure, "R", mesh, volume_mm3=vol, approx=True, line=line); rec_r["note"] = note
             out.append((f"{sid}.R", mesh, rec_r))
             mesh_l = meshing.mirror_x(mesh)
-            rec_l = mesh_record(f"{sid}.L", structure, "L", mesh_l, volume_mm3=vol, approx=True); rec_l["note"] = note
+            line_l = None if line is None else np.asarray(line) * np.array([-1.0, 1.0, 1.0])
+            rec_l = mesh_record(f"{sid}.L", structure, "L", mesh_l, volume_mm3=vol, approx=True, line=line_l); rec_l["note"] = note
             out.append((f"{sid}.L", mesh_l, rec_l))
         else:
-            rec = mesh_record(f"{sid}.M", structure, "M", mesh, volume_mm3=vol, approx=True); rec["note"] = note
+            rec = mesh_record(f"{sid}.M", structure, "M", mesh, volume_mm3=vol, approx=True, line=line); rec["note"] = note
             out.append((f"{sid}.M", mesh, rec))
         return out
 
@@ -437,6 +457,7 @@ def main(argv=None):
 
     t0 = time.time()
     nb = NextBrain()
+    models.BRAINSTEM_AXIS = nb.brainstem_axis()
     print(f"nextbrain loaded: {nb.data.shape} @ {nb.spacing} mm, {len(nb.present)} labels ({time.time() - t0:.1f}s)")
 
     scene = trimesh.Scene()

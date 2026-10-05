@@ -68,6 +68,7 @@
 - 2026-10-04 **HCP1065 섬유로 → 경로 재생 연결**(`pipeline/tracts/README.md` "아틀라스 반영"): 튜브 구조 8개(겉질척수로 겉질구간·가쪽·앞, 겉질숨뇌로, 시각부챗살, 활꼴·갈고리·띠다발), 안쪽섬유띠·아래소뇌다리·뇌활은 HCP 중심선으로 교체, 경로 단계 16개가 따라감. 교차·척수기둥 위치는 교과서 기하(각 메시 `note`에 명시). 빌드 388 메시, tsc·e2e 7 통과. 커밋 `522000a`.
 - 2026-10-04 저녁 **근사 55 → 34**: NextBrain 확률 지도(1.1 GB 내려받음)로 작은 핵 43개 실제 모양 복원(`build.py` `prob_mask`), 속귀·신경절·목동맥·척수 기둥 27개는 교과서 치수 기하 모형(`models.py`, 사이드바 "모형"). 남은 타원체 6 + 구 1. 요약은 `docs/placeholders-to-detailed-3d.md` 머리말. Qwen 밤샘 결과(`qwen-findings.json`)는 DOI 2건이 Crossref에서 다른 논문으로 확인돼 **폐기**(커밋 안 함). 빌드 389 메시, tsc·e2e 7 통과.
 - 2026-10-05 **경로 실주행 1단계**: HCP1065 다발 74개 전부 변환(`centerlines.json`), 19종을 튜브 구조로 추가·경로 31단계 연결 → 실주행 단계 56→82, 경로 38→57(`docs/pathway-routing-analysis.md`). 좌표 조사(2): RVLM은 Henderson 2016(PMC4785184) MNI 군집으로 확인·기록, CVLM·거대세포핵·피개그물핵은 공개 좌표 없음(`docs/data/structures-3d/coords-reticular-2026-10-05.md`). 빌드 426 메시.
+- 2026-10-05 배포(`1e8b91c`, https://neuro-pathway-atlas.vercel.app). **경로 실주행 2단계**: 뇌줄기·척수 내부 섬유로 12개를 교과서 단면 위치의 관으로(`apply_axis_tracts.py`, 성연 검수 표 `docs/data/structures-3d/axis-tracts-review.md`), 모형 관의 중심선 내보내기 → 실주행 단계 82→113, 경로 57→79. 빌드 450 메시, tsc·e2e 7 통과. 미배포.
 <!-- STATUS:END -->
 
 ## 아직 수집하지 않은 주제 (우선순위 순)

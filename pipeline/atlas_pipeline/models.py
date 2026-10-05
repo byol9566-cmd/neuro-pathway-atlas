@@ -210,8 +210,7 @@ def cord_extension(**_):
     zs = [z for z in sorted(ax, reverse=True) if z <= Z_T1 + 4]
     P = np.array([[ax[z][0], ax[z][1], float(z)] for z in zs[::4]])
     R = np.array([ax[z][2] for z in zs[::4]])
-    m = meshing.tube(P, R, segments=16)
-    return m  # already in MNI; place() receives centre [0,0,0]
+    return meshing.tube(P, R, segments=16), P  # already in MNI; no placement
 
 
 def cord_column(z_top: float, z_bottom: float, offset=(2.5, -0.5), radius=0.8, lateral_sign=1.0, **_):
@@ -225,7 +224,7 @@ def cord_column(z_top: float, z_bottom: float, offset=(2.5, -0.5), radius=0.8, l
         s = r / 4.5
         P.append([x + lateral_sign * offset[0] * s, y + offset[1] * s, float(z)])
         R.append(radius)
-    return meshing.tube(np.array(P), np.array(R), segments=10)
+    return meshing.tube(np.array(P), np.array(R), segments=10), np.array(P)
 
 
 BUILDERS = {
@@ -254,16 +253,87 @@ def path_tube(points, radius=1.0, **_):
     Q = np.stack([np.interp(t, s, P[:, i]) for i in range(3)], axis=1)
     k = np.ones(3) / 3
     Q = np.stack([np.convolve(np.pad(Q[:, i], 1, mode="edge"), k, mode="valid") for i in range(3)], axis=1)
-    return meshing.tube(Q, np.full(len(Q), float(radius)), segments=10)
+    return meshing.tube(Q, np.full(len(Q), float(radius)), segments=10), Q
 
 
 BUILDERS["path-tube"] = path_tube
-WORLD_SHAPES = {"cord-extension", "cord-column", "path-tube"}  # built in MNI already: no placement
 
 
-def build(source: dict) -> trimesh.Trimesh:
-    """mesh for one side (the right) in MNI from a `model` source"""
-    mesh = BUILDERS[source["shape"]](**source.get("params", {}))
+# ---------------------------------------------------------------- brainstem + cord fibre tracts
+BRAINSTEM_AXIS: dict | None = None  # set by build.py from the NextBrain brainstem shell: z -> (x, y, r)
+Z_JOIN = -58.0  # below this the Visible Human cord axis takes over from the NextBrain brainstem axis
+
+
+def neuraxis():
+    """z -> (x, y, r) from the midbrain down to the conus: NextBrain brainstem above Z_JOIN, the Visible
+    Human cord (and its modelled extension) below"""
+    ax = {z: v for z, v in cord_axis().items() if z < Z_JOIN}
+    if BRAINSTEM_AXIS:
+        ax.update({z: v for z, v in BRAINSTEM_AXIS.items() if z >= Z_JOIN})
+    zs = sorted(ax)
+    arr = np.array([ax[z] for z in zs])
+    k = np.ones(9) / 9
+    sm = np.stack([np.convolve(np.pad(arr[:, i], 4, mode="edge"), k, mode="valid") for i in range(3)], axis=1)
+    return {z: tuple(sm[i]) for i, z in enumerate(zs)}
+
+
+def axis_tract(keys, z_top, z_bottom, radius=1.4, cross=None, top_point=None, bottom_point=None, lateral_sign=1.0, step=3.0, **_):
+    """A fibre tract drawn along the neuraxis at textbook cross-section positions.
+    keys: [[z, lateral, anterior], ...] — position as fractions of the local radius (lateral +: the side
+    of lateral_sign), linearly interpolated between keyframes along z (sorted internally).
+    cross: [z_from, z_to] — the lateral sign flips between these z (a decussation), eased; above the band
+    the tract runs on the other side.
+    top_point / bottom_point: absolute RAS points (|x| used) joined to the tract's upper / lower end — a
+    nucleus of origin or a target; their side follows the tract's side at that end.
+    The mesh is for the side `lateral_sign` (+1 right, below any decussation) and is mirrored by the
+    builder for the other."""
+    ax = neuraxis()
+    K = np.array(sorted(keys, key=lambda k: k[0]), dtype=float)
+    zs = [z for z in sorted(ax, reverse=True) if z_bottom <= z <= z_top]
+    pts = []
+    for i, z in enumerate(zs):
+        if i % int(step) and z != zs[-1]:
+            continue
+        x, y, r = ax[z]
+        lat = np.interp(z, K[:, 0], K[:, 1]); ant = np.interp(z, K[:, 0], K[:, 2])
+        # the mesh's side is the side ABOVE any decussation (the thalamic side of an ascending tract, the
+        # nucleus side of a descending one — what a pathway step's ipsi/contra refers to); below the band
+        # the tract is on the other side
+        sign = lateral_sign
+        if cross is not None:
+            lo, hi = min(cross), max(cross)
+            t = np.clip((z - lo) / (hi - lo), 0, 1)  # 0 below the band, 1 above
+            s = (1 - np.cos(np.pi * t)) / 2
+            sign = lateral_sign * (2 * s - 1)
+        pts.append([x + sign * lat * r, y + ant * r, float(z)])
+    P = np.array(pts)  # ordered top -> bottom
+    if top_point is not None:
+        e = np.array(top_point, float); e[0] = abs(e[0]) * lateral_sign
+        P = np.concatenate([np.array(blend_pts(P[0], e, 5))[::-1], P])
+    if bottom_point is not None:
+        s0 = np.array(bottom_point, float); s0[0] = abs(s0[0]) * (-lateral_sign if cross is not None else lateral_sign)
+        P = np.concatenate([P, np.array(blend_pts(P[-1], s0, 5))])
+    return meshing.tube(P, np.full(len(P), float(radius)), segments=10), P
+
+
+def blend_pts(a, b, n):
+    out = []
+    for i in range(1, n + 1):
+        t = i / n
+        s = (1 - np.cos(np.pi * t)) / 2
+        out.append(list(np.array(a) * (1 - s) + np.array(b) * s))
+    return out
+
+
+BUILDERS["axis-tract"] = axis_tract
+WORLD_SHAPES = {"cord-extension", "cord-column", "path-tube", "axis-tract"}  # built in MNI already: no placement
+
+
+def build(source: dict):
+    """-> (mesh, centerline or None) for one side (the right) in MNI from a `model` source; tube-shaped
+    models (tracts, nerves, cord columns) return the polyline the pathway animation should follow"""
+    out = BUILDERS[source["shape"]](**source.get("params", {}))
+    mesh, line = out if isinstance(out, tuple) else (out, None)
     if source["shape"] in WORLD_SHAPES:
-        return mesh
-    return place(mesh, source["centreMni"], source.get("axis", [0, 0, 1]), source.get("up"))
+        return mesh, line
+    return place(mesh, source["centreMni"], source.get("axis", [0, 0, 1]), source.get("up")), None

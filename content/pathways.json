@@ -234,12 +234,14 @@
           "description": {
             "ko": "2차 축삭이 척수 앞백색맞교차를 통해 반대쪽으로 건넌다. 감각교차는 DCML의 숨뇌 교차와 다르다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "tr-spinothalamic-lateral",
+              "side": "contra"
+            }
+          ],
           "neuronOrder": 2,
-          "decussation": true,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞백색맞교차 · 가쪽척수시상로 · 3D 없음: 척수 앞백색맞교차, 가쪽척수시상로"
-          }
+          "decussation": true
         },
         {
           "id": "spinothalamic-lateral-3",
@@ -450,12 +452,14 @@
           "description": {
             "ko": "2차 축삭이 척수 앞백색맞교차를 통해 반대쪽으로 건넌다. 감각교차는 DCML의 숨뇌 교차와 다르다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "tr-spinothalamic-anterior",
+              "side": "contra"
+            }
+          ],
           "neuronOrder": 2,
-          "decussation": true,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞백색맞교차 · 앞척수시상로 · 3D 없음: 척수 앞백색맞교차, 앞척수시상로"
-          }
+          "decussation": true
         },
         {
           "id": "spinothalamic-anterior-3",
@@ -546,15 +550,16 @@
           },
           "structures": [
             {
+              "id": "tr-trigeminothalamic",
+              "side": "contra"
+            },
+            {
               "id": "thal-vpm",
               "side": "contra"
             }
           ],
           "neuronOrder": 2,
-          "decussation": true,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차시상로 · 3D 없음: 삼차시상로"
-          }
+          "decussation": true
         },
         {
           "id": "trigeminal-touch-3",
@@ -654,15 +659,16 @@
           },
           "structures": [
             {
+              "id": "tr-trigeminothalamic",
+              "side": "contra"
+            },
+            {
               "id": "thal-vpm",
               "side": "contra"
             }
           ],
           "neuronOrder": 2,
-          "decussation": true,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차시상로 · 3D 없음: 삼차시상로"
-          }
+          "decussation": true
         },
         {
           "id": "trigeminal-pain-3",
@@ -2202,10 +2208,12 @@
           "description": {
             "ko": "주로 같은쪽으로 교차 없이 하행한다."
           },
-          "structures": [],
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 가쪽안뜰척수로 · 3D 없음: 가쪽안뜰척수로"
-          }
+          "structures": [
+            {
+              "id": "tr-vestibulospinal-lateral",
+              "side": "ipsi"
+            }
+          ]
         },
         {
           "id": "vestibulospinal-lateral-3",
@@ -2488,10 +2496,12 @@
           "description": {
             "ko": "양측으로 분산되어 하행한다. 양측 표시가 한 번의 특정 교차점을 뜻하지 않는다."
           },
-          "structures": [],
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 다리뇌그물척수로 · 3D 없음: 다리뇌그물척수로"
-          }
+          "structures": [
+            {
+              "id": "tr-reticulospinal-pontine",
+              "side": "ipsi"
+            }
+          ]
         },
         {
           "id": "reticulospinal-pontine-3",
@@ -2551,11 +2561,13 @@
           "description": {
             "ko": "정중선을 교차하여 덮개척수로로 하행한다."
           },
-          "structures": [],
-          "decussation": true,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 덮개척수로 · 3D 없음: 덮개척수로"
-          }
+          "structures": [
+            {
+              "id": "tr-tectospinal",
+              "side": "ipsi"
+            }
+          ],
+          "decussation": true
         },
         {
           "id": "tectospinal-3",
@@ -2618,10 +2630,12 @@
           "description": {
             "ko": "양측으로 분산되어 하행한다. 양측 표시가 한 번의 특정 교차점을 뜻하지 않는다."
           },
-          "structures": [],
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 숨뇌그물척수로 · 3D 없음: 숨뇌그물척수로"
-          }
+          "structures": [
+            {
+              "id": "tr-reticulospinal-medullary",
+              "side": "ipsi"
+            }
+          ]
         },
         {
           "id": "reticulospinal-medullary-3",
@@ -2681,10 +2695,12 @@
           "description": {
             "ko": "양측으로 분산되어 하행한다. 양측 표시가 한 번의 특정 교차점을 뜻하지 않는다. MVST는 하행 MLF를 통해 목·상부흉부에 이른다."
           },
-          "structures": [],
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 안쪽안뜰척수로 · 3D 없음: 안쪽안뜰척수로"
-          }
+          "structures": [
+            {
+              "id": "tr-vestibulospinal-medial",
+              "side": "ipsi"
+            }
+          ]
         },
         {
           "id": "vestibulospinal-medial-3",
@@ -2918,11 +2934,13 @@
           "description": {
             "ko": "정중선을 교차하여 적색핵척수로로 하행한다."
           },
-          "structures": [],
-          "decussation": true,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 적색핵척수로 · 3D 없음: 적색핵척수로"
-          }
+          "structures": [
+            {
+              "id": "tr-rubrospinal",
+              "side": "ipsi"
+            }
+          ],
+          "decussation": true
         },
         {
           "id": "rubrospinal-3",
@@ -3149,12 +3167,16 @@
           },
           "structures": [
             {
+              "id": "tr-spinoreticular",
+              "side": "ipsi"
+            },
+            {
               "id": "bs-reticular-formation",
               "side": "ipsi"
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수그물로 · 그물체 · 3D 없음: 척수그물로"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 그물체"
           }
         }
       ],
@@ -4136,12 +4158,16 @@
           },
           "structures": [
             {
+              "id": "tr-spinocerebellar-dorsal",
+              "side": "ipsi"
+            },
+            {
               "id": "tr-icp",
               "side": "ipsi"
             }
           ],
           "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 뒤척수소뇌로 · 아래소뇌다리 · 3D 없음: 뒤척수소뇌로"
+            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아래소뇌다리"
           }
         },
         {
@@ -4779,14 +4805,15 @@
           },
           "structures": [
             {
+              "id": "tr-spinocerebellar-ventral",
+              "side": "contra"
+            },
+            {
               "id": "tr-scp",
               "side": "ipsi"
             }
           ],
-          "decussation": true,
-          "missing": {
-            "ko": "현재 제공 데이터에 독립 3D 정의 없음: 앞척수소뇌로 · 3D 없음: 앞척수소뇌로"
-          }
+          "decussation": true
         },
         {
           "id": "spinocerebellar-ventral-3",
