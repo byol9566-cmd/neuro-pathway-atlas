@@ -1541,7 +1541,12 @@
           "description": {
             "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn4",
+              "side": "ipsi"
+            }
+          ],
           "decussation": true,
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 도르래신경 (IV) · 위빗근 · 3D 없음: 도르래신경 (IV), 위빗근"
@@ -1614,7 +1619,16 @@
           "description": {
             "ko": "운동축삭이 해당 표적근육을 지배한다. IX는 붓인두근, X는 대부분 인두·후두근을 지배하며 두 출력은 대안 가지다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn9",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-cn10",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 혀인두신경 (IX) · 미주신경 (X) · 인두·후두 가로무늬근 · 3D 없음: 혀인두신경 (IX), 미주신경 (X), 인두·후두 가로무늬근"
           }
@@ -1779,7 +1793,16 @@
           "description": {
             "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn5",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-cn5-v3",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아래턱신경 (V3) · 씹기근 · 3D 없음: 아래턱신경 (V3), 씹기근"
           }
@@ -1839,7 +1862,12 @@
           "description": {
             "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn6",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 갓돌림신경 (VI) · 가쪽곧은근 · 3D 없음: 갓돌림신경 (VI), 가쪽곧은근"
           }
@@ -1902,6 +1930,10 @@
           "structures": [
             {
               "id": "pn-cn7",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-cn7-peripheral",
               "side": "ipsi"
             }
           ],
@@ -1967,7 +1999,12 @@
           "description": {
             "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn11",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 더부신경 (XI) · 목빗근·등세모근 · 3D 없음: 더부신경 (XI), 목빗근·등세모근"
           }
@@ -2027,7 +2064,12 @@
           "description": {
             "ko": "운동축삭이 해당 쪽 표적근육에 전달된다. III의 위곧은근·눈꺼풀올림근 아핵 특수성은 단순 한쪽 III 핵 모형으로 고정하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn12",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 혀밑신경 (XII) · 혀근육 · 3D 없음: 혀밑신경 (XII), 혀근육"
           }
@@ -5219,6 +5261,14 @@
             {
               "id": "pn-trigeminal-ganglion",
               "side": "ipsi"
+            },
+            {
+              "id": "pn-cn5-v1",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-cn5",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -5255,6 +5305,10 @@
           "structures": [
             {
               "id": "pn-cn7",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-cn7-peripheral",
               "side": "ipsi"
             }
           ],
@@ -5380,6 +5434,10 @@
             {
               "id": "bs-solitary",
               "side": "ipsi"
+            },
+            {
+              "id": "pn-cn9",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -5412,7 +5470,12 @@
           "description": {
             "ko": "X 운동축삭이 인두근 반응을 일으킨다. 구역반사와 실제 구토의 전체 회로를 동일시하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn10",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미주신경 (X) · 인두·후두 가로무늬근 · 3D 없음: 미주신경 (X), 인두·후두 가로무늬근"
           }
@@ -5500,7 +5563,12 @@
           "description": {
             "ko": "인두·후두 및 관련 운동효과기가 협응하여 반응한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn10",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미주신경 (X) · 인두·후두 가로무늬근 · 3D 없음: 미주신경 (X), 인두·후두 가로무늬근"
           }
@@ -5693,7 +5761,12 @@
           "description": {
             "ko": "인두·후두 및 관련 운동효과기가 협응하여 반응한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn10",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미주신경 (X) · 인두·후두 가로무늬근 · 3D 없음: 미주신경 (X), 인두·후두 가로무늬근"
           }
@@ -5772,6 +5845,10 @@
             {
               "id": "pn-cn7",
               "side": "ipsi"
+            },
+            {
+              "id": "pn-cn7-peripheral",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -5844,7 +5921,12 @@
           "description": {
             "ko": "V3 운동축삭이 씹기근을 수축시켜 턱을 닫는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn5-v3",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아래턱신경 (V3) · 씹기근 · 3D 없음: 아래턱신경 (V3), 씹기근"
           }
@@ -5879,7 +5961,12 @@
           "description": {
             "ko": "삼차 구심이 턱반사망에 감각정보를 보낸다. 원문은 수용기·중계핵·근육의 세부를 제시하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn5-v3",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 삼차신경 (V) · 3D 없음: 삼차신경 (V)"
           }
@@ -6271,7 +6358,12 @@
           "description": {
             "ko": "VI 출력 감소로 회전쪽 가쪽곧은근이 이완한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn6",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 갓돌림신경 (VI) · 가쪽곧은근 · 3D 없음: 갓돌림신경 (VI), 가쪽곧은근"
           }
@@ -6500,7 +6592,12 @@
           "description": {
             "ko": "절후축삭이 짧은섬모체신경을 통해 동공조임근을 수축시킨다. 비춘 눈은 직접반사, 반대 눈은 간접반사다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-short-ciliary",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 짧은섬모체신경 · 동공조임근 · 3D 없음: 짧은섬모체신경, 동공조임근"
@@ -8639,6 +8736,10 @@
             },
             {
               "id": "pn-nodose-ganglion",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-chorda-tympani",
               "side": "ipsi"
             }
           ],
@@ -12295,7 +12396,12 @@
           "description": {
             "ko": "출발핵은 아래침분비핵이고 절전축삭은 해당 뇌신경을 따라간다. 분지·중계 세부는 원문에 없는 경우 생략한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn9",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 아래침분비핵 · 혀인두신경 (IX) · 3D 없음: 아래침분비핵, 혀인두신경 (IX)"
@@ -12312,6 +12418,10 @@
           "structures": [
             {
               "id": "pn-otic",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-lesser-petrosal",
               "side": "ipsi"
             }
           ],
@@ -12568,6 +12678,10 @@
             {
               "id": "pn-cn7",
               "side": "ipsi"
+            },
+            {
+              "id": "pn-cn7-peripheral",
+              "side": "ipsi"
             }
           ],
           "transmitter": "acetylcholine",
@@ -12586,6 +12700,10 @@
           "structures": [
             {
               "id": "pn-pterygopalatine",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-greater-petrosal",
               "side": "ipsi"
             }
           ],
@@ -12642,6 +12760,10 @@
             {
               "id": "pn-cn7",
               "side": "ipsi"
+            },
+            {
+              "id": "pn-cn7-peripheral",
+              "side": "ipsi"
             }
           ],
           "transmitter": "acetylcholine",
@@ -12660,6 +12782,10 @@
           "structures": [
             {
               "id": "pn-submandibular",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-chorda-tympani",
               "side": "ipsi"
             }
           ],
@@ -12715,6 +12841,10 @@
           "structures": [
             {
               "id": "bs-dorsal-vagal",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-cn10",
               "side": "ipsi"
             }
           ],
@@ -14013,7 +14143,12 @@
           "description": {
             "ko": "심장 절전·절후 ACh 출력이 심박수를 낮춘다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-cn10",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 미주신경 (X) · 벽속부교감신경절 · 심장·혈관 · 3D 없음: 미주신경 (X), 벽속부교감신경절, 심장·혈관"
