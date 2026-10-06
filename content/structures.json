@@ -105,6 +105,27 @@
         "en": "Neuroendocrine organs"
       },
       "color": "#9f97bb"
+    },
+    "body-shell": {
+      "name": {
+        "ko": "몸 외곽·뼈대",
+        "en": "Body shell and skeleton"
+      },
+      "color": "#9aa3ad"
+    },
+    "muscles": {
+      "name": {
+        "ko": "골격근",
+        "en": "Skeletal muscles"
+      },
+      "color": "#c4675a"
+    },
+    "viscera": {
+      "name": {
+        "ko": "내장·샘·혈관",
+        "en": "Viscera, glands and vessels"
+      },
+      "color": "#b98fd1"
     }
   },
   "structures": [
@@ -6877,6 +6898,1146 @@
         "note": "메인 세션 추정: 다리뇌 덮개, 안쪽세로다발 배쪽",
         "search2026-10-05": "No peer-reviewed MNI coordinates or volume found (Bianciardi/Singh/García-Gomar 7T atlases subsume Gi in the composite 'sMRt' label; RtTg not segmented anywhere; CVLM only named as 'iMRt' proxy without coordinates). Position stays the textbook estimate."
       }
+    },
+    {
+      "id": "body-skin",
+      "group": "body-shell",
+      "name": {
+        "ko": "피부 (몸 외곽)",
+        "en": "Skin"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "skin"
+          ]
+        },
+        "maxFaces": 24000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-skull",
+      "group": "body-shell",
+      "name": {
+        "ko": "머리뼈",
+        "en": "Skull"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "skull",
+            "mandible"
+          ]
+        },
+        "maxFaces": 8000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-vertebral-column",
+      "group": "body-shell",
+      "name": {
+        "ko": "척주",
+        "en": "Vertebral column"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "vertebral column",
+            "sacrum"
+          ]
+        },
+        "maxFaces": 8000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-rib-cage",
+      "group": "body-shell",
+      "name": {
+        "ko": "가슴우리",
+        "en": "Rib cage"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "rib cage",
+            "sternum"
+          ]
+        },
+        "maxFaces": 8000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-pelvis",
+      "group": "body-shell",
+      "name": {
+        "ko": "골반",
+        "en": "Pelvis"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "pelvis"
+          ]
+        },
+        "maxFaces": 5000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-shoulder",
+      "group": "body-shell",
+      "name": {
+        "ko": "어깨뼈·빗장뼈",
+        "en": "Scapula and clavicle"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right scapula",
+            "right clavicle"
+          ],
+          "L": [
+            "left scapula",
+            "left clavicle"
+          ]
+        },
+        "maxFaces": 3000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-humerus",
+      "group": "body-shell",
+      "name": {
+        "ko": "위팔뼈",
+        "en": "Humerus"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right humerus"
+          ],
+          "L": [
+            "left humerus"
+          ]
+        },
+        "maxFaces": 2000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-forearm",
+      "group": "body-shell",
+      "name": {
+        "ko": "아래팔뼈 (노뼈·자뼈)",
+        "en": "Radius and ulna"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right radius",
+            "right ulna"
+          ],
+          "L": [
+            "left radius",
+            "left ulna"
+          ]
+        },
+        "maxFaces": 2500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-hand",
+      "group": "body-shell",
+      "name": {
+        "ko": "손",
+        "en": "Hand"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right hand"
+          ],
+          "L": [
+            "left hand"
+          ]
+        },
+        "maxFaces": 3000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-femur",
+      "group": "body-shell",
+      "name": {
+        "ko": "넙다리뼈·무릎뼈",
+        "en": "Femur and patella"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right femur",
+            "right patella"
+          ],
+          "L": [
+            "left femur",
+            "left patella"
+          ]
+        },
+        "maxFaces": 2500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-leg",
+      "group": "body-shell",
+      "name": {
+        "ko": "종아리뼈 (정강뼈·종아리뼈)",
+        "en": "Tibia and fibula"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right tibia",
+            "right fibula"
+          ],
+          "L": [
+            "left tibia",
+            "left fibula"
+          ]
+        },
+        "maxFaces": 2500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "bone-foot",
+      "group": "body-shell",
+      "name": {
+        "ko": "발",
+        "en": "Foot"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right foot"
+          ],
+          "L": [
+            "left foot"
+          ]
+        },
+        "maxFaces": 3000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-heart",
+      "group": "viscera",
+      "name": {
+        "ko": "심장",
+        "en": "Heart"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "heart"
+          ]
+        },
+        "maxFaces": 6000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-lung",
+      "group": "viscera",
+      "name": {
+        "ko": "허파",
+        "en": "Lung"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right lung"
+          ],
+          "L": [
+            "left lung"
+          ]
+        },
+        "maxFaces": 6000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-trachea",
+      "group": "viscera",
+      "name": {
+        "ko": "기관",
+        "en": "Trachea"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "trachea"
+          ]
+        },
+        "maxFaces": 1500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-esophagus",
+      "group": "viscera",
+      "name": {
+        "ko": "식도",
+        "en": "Esophagus"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "esophagus"
+          ]
+        },
+        "maxFaces": 1500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-stomach",
+      "group": "viscera",
+      "name": {
+        "ko": "위",
+        "en": "Stomach"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "stomach"
+          ]
+        },
+        "maxFaces": 3000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-small-intestine",
+      "group": "viscera",
+      "name": {
+        "ko": "작은창자",
+        "en": "Small intestine"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "small intestine"
+          ]
+        },
+        "maxFaces": 8000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-large-intestine",
+      "group": "viscera",
+      "name": {
+        "ko": "큰창자",
+        "en": "Large intestine"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "large intestine"
+          ]
+        },
+        "maxFaces": 6000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-liver",
+      "group": "viscera",
+      "name": {
+        "ko": "간",
+        "en": "Liver"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "liver"
+          ]
+        },
+        "maxFaces": 5000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-gallbladder",
+      "group": "viscera",
+      "name": {
+        "ko": "쓸개",
+        "en": "Gallbladder"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "gallbladder"
+          ]
+        },
+        "maxFaces": 1000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-pancreas",
+      "group": "viscera",
+      "name": {
+        "ko": "이자",
+        "en": "Pancreas"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "pancreas"
+          ]
+        },
+        "maxFaces": 2000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-spleen",
+      "group": "viscera",
+      "name": {
+        "ko": "지라",
+        "en": "Spleen"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "spleen"
+          ]
+        },
+        "maxFaces": 2000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-kidney",
+      "group": "viscera",
+      "name": {
+        "ko": "콩팥",
+        "en": "Kidney"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right kidney"
+          ],
+          "L": [
+            "left kidney"
+          ]
+        },
+        "maxFaces": 2500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-adrenal",
+      "group": "viscera",
+      "name": {
+        "ko": "부신",
+        "en": "Adrenal gland"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right adrenal gland"
+          ],
+          "L": [
+            "left adrenal gland"
+          ]
+        },
+        "maxFaces": 1500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-bladder",
+      "group": "viscera",
+      "name": {
+        "ko": "방광",
+        "en": "Urinary bladder"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "urinary bladder"
+          ]
+        },
+        "maxFaces": 1500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-prostate",
+      "group": "viscera",
+      "name": {
+        "ko": "전립샘",
+        "en": "Prostate"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "prostate"
+          ]
+        },
+        "maxFaces": 1000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-aorta",
+      "group": "viscera",
+      "name": {
+        "ko": "대동맥",
+        "en": "Aorta"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "aorta"
+          ]
+        },
+        "maxFaces": 4000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-carotid",
+      "group": "viscera",
+      "name": {
+        "ko": "목동맥 (온·속목동맥)",
+        "en": "Common and internal carotid artery"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right common carotid artery",
+            "right internal carotid artery"
+          ],
+          "L": [
+            "left common carotid artery",
+            "left internal carotid artery"
+          ]
+        },
+        "maxFaces": 2500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-lacrimal-gland",
+      "group": "viscera",
+      "name": {
+        "ko": "눈물샘",
+        "en": "Lacrimal gland"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right lacrimal gland"
+          ],
+          "L": [
+            "left lacrimal gland"
+          ]
+        },
+        "maxFaces": 800
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-submandibular-gland",
+      "group": "viscera",
+      "name": {
+        "ko": "턱밑샘",
+        "en": "Submandibular gland"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right submandibular gland"
+          ],
+          "L": [
+            "left submandibular gland"
+          ]
+        },
+        "maxFaces": 1000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-sublingual-gland",
+      "group": "viscera",
+      "name": {
+        "ko": "혀밑샘",
+        "en": "Sublingual gland"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right sublingual gland"
+          ],
+          "L": [
+            "left sublingual gland"
+          ]
+        },
+        "maxFaces": 800
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-tongue",
+      "group": "viscera",
+      "name": {
+        "ko": "혀",
+        "en": "Tongue"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "tongue"
+          ]
+        },
+        "maxFaces": 2500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "vs-diaphragm",
+      "group": "viscera",
+      "name": {
+        "ko": "가로막",
+        "en": "Diaphragm"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "M": [
+            "diaphragm"
+          ]
+        },
+        "maxFaces": 3000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-lateral-rectus",
+      "group": "muscles",
+      "name": {
+        "ko": "가쪽곧은근",
+        "en": "Lateral rectus"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right lateral rectus"
+          ],
+          "L": [
+            "left lateral rectus"
+          ]
+        },
+        "maxFaces": 1200
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-medial-rectus",
+      "group": "muscles",
+      "name": {
+        "ko": "안쪽곧은근",
+        "en": "Medial rectus"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right medial rectus"
+          ],
+          "L": [
+            "left medial rectus"
+          ]
+        },
+        "maxFaces": 1200
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-superior-rectus",
+      "group": "muscles",
+      "name": {
+        "ko": "위곧은근",
+        "en": "Superior rectus"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right superior rectus"
+          ],
+          "L": [
+            "left superior rectus"
+          ]
+        },
+        "maxFaces": 1200
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-inferior-rectus",
+      "group": "muscles",
+      "name": {
+        "ko": "아래곧은근",
+        "en": "Inferior rectus"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right inferior rectus"
+          ],
+          "L": [
+            "left inferior rectus"
+          ]
+        },
+        "maxFaces": 1200
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-superior-oblique",
+      "group": "muscles",
+      "name": {
+        "ko": "위빗근",
+        "en": "Superior oblique"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right superior oblique"
+          ],
+          "L": [
+            "left superior oblique"
+          ]
+        },
+        "maxFaces": 1200
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-inferior-oblique",
+      "group": "muscles",
+      "name": {
+        "ko": "아래빗근",
+        "en": "Inferior oblique"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right inferior oblique"
+          ],
+          "L": [
+            "left inferior oblique"
+          ]
+        },
+        "maxFaces": 1200
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-levator-palpebrae",
+      "group": "muscles",
+      "name": {
+        "ko": "위눈꺼풀올림근",
+        "en": "Levator palpebrae superioris"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right levator palpebrae superioris"
+          ],
+          "L": [
+            "left levator palpebrae superioris"
+          ]
+        },
+        "maxFaces": 1000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-genioglossus",
+      "group": "muscles",
+      "name": {
+        "ko": "턱끝혀근",
+        "en": "Genioglossus"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right genioglossus"
+          ],
+          "L": [
+            "left genioglossus"
+          ]
+        },
+        "maxFaces": 1000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-sternocleidomastoid",
+      "group": "muscles",
+      "name": {
+        "ko": "목빗근",
+        "en": "Sternocleidomastoid"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right sternocleidomastoid"
+          ],
+          "L": [
+            "left sternocleidomastoid"
+          ]
+        },
+        "maxFaces": 1500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-trapezius",
+      "group": "muscles",
+      "name": {
+        "ko": "등세모근",
+        "en": "Trapezius"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "descending part of right trapezius",
+            "transverse part of right trapezius",
+            "ascending part of right trapezius"
+          ],
+          "L": [
+            "descending part of left trapezius",
+            "transverse part of left trapezius",
+            "ascending part of left trapezius"
+          ]
+        },
+        "maxFaces": 2500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-deltoid",
+      "group": "muscles",
+      "name": {
+        "ko": "어깨세모근",
+        "en": "Deltoid"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "clavicular part of right deltoid",
+            "acromial part of right deltoid",
+            "spinal part of right deltoid"
+          ],
+          "L": [
+            "clavicular part of left deltoid",
+            "acromial part of left deltoid",
+            "spinal part of left deltoid"
+          ]
+        },
+        "maxFaces": 2000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-pectoralis-major",
+      "group": "muscles",
+      "name": {
+        "ko": "큰가슴근",
+        "en": "Pectoralis major"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right pectoralis major"
+          ],
+          "L": [
+            "left pectoralis major"
+          ]
+        },
+        "maxFaces": 2000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-biceps-brachii",
+      "group": "muscles",
+      "name": {
+        "ko": "위팔두갈래근",
+        "en": "Biceps brachii"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "long head of right biceps brachii",
+            "short head of right biceps brachii"
+          ],
+          "L": [
+            "long head of left biceps brachii",
+            "short head of left biceps brachii"
+          ]
+        },
+        "maxFaces": 1500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-brachialis",
+      "group": "muscles",
+      "name": {
+        "ko": "위팔근",
+        "en": "Brachialis"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right brachialis"
+          ],
+          "L": [
+            "left brachialis"
+          ]
+        },
+        "maxFaces": 1000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-triceps-brachii",
+      "group": "muscles",
+      "name": {
+        "ko": "위팔세갈래근",
+        "en": "Triceps brachii"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "long head of right triceps brachii",
+            "lateral head of right triceps brachii",
+            "medial head of right triceps brachii"
+          ],
+          "L": [
+            "long head of left triceps brachii",
+            "lateral head of left triceps brachii",
+            "medial head of left triceps brachii"
+          ]
+        },
+        "maxFaces": 2000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-iliopsoas",
+      "group": "muscles",
+      "name": {
+        "ko": "엉덩허리근",
+        "en": "Iliopsoas"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right psoas major",
+            "right iliacus"
+          ],
+          "L": [
+            "left psoas major",
+            "left iliacus"
+          ]
+        },
+        "maxFaces": 2000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-gluteus-maximus",
+      "group": "muscles",
+      "name": {
+        "ko": "큰볼기근",
+        "en": "Gluteus maximus"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right gluteus maximus"
+          ],
+          "L": [
+            "left gluteus maximus"
+          ]
+        },
+        "maxFaces": 2000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-quadriceps",
+      "group": "muscles",
+      "name": {
+        "ko": "넙다리네갈래근",
+        "en": "Quadriceps femoris"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right rectus femoris",
+            "right vastus lateralis",
+            "right vastus medialis",
+            "right vastus intermedius"
+          ],
+          "L": [
+            "left rectus femoris",
+            "left vastus lateralis",
+            "left vastus medialis",
+            "left vastus intermedius"
+          ]
+        },
+        "maxFaces": 3000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-hamstrings",
+      "group": "muscles",
+      "name": {
+        "ko": "넙다리뒤근육 (햄스트링)",
+        "en": "Hamstrings"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "long head of right biceps femoris",
+            "short head of right biceps femoris",
+            "right semitendinosus",
+            "right semimembranosus"
+          ],
+          "L": [
+            "long head of left biceps femoris",
+            "short head of left biceps femoris",
+            "left semitendinosus",
+            "left semimembranosus"
+          ]
+        },
+        "maxFaces": 3000
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-tibialis-anterior",
+      "group": "muscles",
+      "name": {
+        "ko": "앞정강근",
+        "en": "Tibialis anterior"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "right tibialis anterior"
+          ],
+          "L": [
+            "left tibialis anterior"
+          ]
+        },
+        "maxFaces": 1200
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
+    },
+    {
+      "id": "mu-triceps-surae",
+      "group": "muscles",
+      "name": {
+        "ko": "종아리세갈래근 (장딴지근·가자미근)",
+        "en": "Triceps surae"
+      },
+      "source": {
+        "atlas": "bp3d",
+        "parts": {
+          "R": [
+            "medial head of right gastrocnemius",
+            "lateral head of right gastrocnemius",
+            "right soleus"
+          ],
+          "L": [
+            "medial head of left gastrocnemius",
+            "lateral head of left gastrocnemius",
+            "left soleus"
+          ]
+        },
+        "maxFaces": 2500
+      },
+      "note": "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메시를 뇌·눈 랜드마크로 MNI에 맞춘 것. 개략 형태용 — 세부 모양은 믿지 말 것."
     }
   ]
 }

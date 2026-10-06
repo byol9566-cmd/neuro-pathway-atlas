@@ -17,7 +17,7 @@ import numpy as np
 import trimesh
 from scipy import ndimage
 
-from . import CONTENT_DIR, DATA_DIR, OUT_DIR, REPO_ROOT, meshing, models, sections
+from . import CONTENT_DIR, DATA_DIR, OUT_DIR, REPO_ROOT, bp3d, meshing, models, sections
 
 # Labels that make up the brainstem / cerebellum outlines. `white_matter_of_hindbrain` (611) spans
 # both and is split by proximity in `shell_masks`.
@@ -65,6 +65,13 @@ ATTRIBUTION = [
         "citation": "Parametric shapes at literature MNI coordinates: cochlea, semicircular canals, ganglia, carotid sinus, spinal cord columns (pipeline/atlas_pipeline/models.py).",
         "license": "프로젝트 자체 제작",
         "url": "",
+    },
+    {
+        "atlas": "bp3d",
+        "title": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International",
+        "citation": "Mitsuhashi N, et al. BodyParts3D: 3D structure database for anatomical concepts. Nucleic Acids Res (2009). Polygon-reduced (99 %) meshes, fitted to MNI on brain and eye landmarks (pipeline/atlas_pipeline/bp3d.py).",
+        "license": "CC BY 4.0",
+        "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html",
     },
     {
         "atlas": "hcp1065",
@@ -318,6 +325,15 @@ def build_structure(structure: dict, nb: NextBrain):
             mesh = meshing.tube(pts, t["radiiMm"])
             rec = mesh_record(f"{sid}.{side}", structure, side, mesh, volume_mm3=float(mesh.volume), approx=False, line=pts)
             rec["note"] = t["note"]
+            out.append((f"{sid}.{side}", mesh, rec))
+        return out
+
+    if src["atlas"] == "bp3d":
+        # BodyParts3D whole-body parts (real left and right, no mirroring), unioned per side
+        for side, names in src["parts"].items():
+            mesh = bp3d.mesh_for(names, max_faces=int(src.get("maxFaces", 6000)))
+            rec = mesh_record(f"{sid}.{side}", structure, side, mesh, volume_mm3=float(abs(mesh.volume)), approx=False)
+            rec["note"] = structure.get("note", "")
             out.append((f"{sid}.{side}", mesh, rec))
         return out
 

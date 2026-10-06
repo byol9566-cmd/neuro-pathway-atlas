@@ -220,7 +220,12 @@
           "description": {
             "ko": "1차 구심축삭이 DRG·뒤뿌리를 통해 뒤뿔에 들어온다. 통각·온도는 Aδ/C 섬유를 중심으로 전달된다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "body-skin",
+              "side": "ipsi"
+            }
+          ],
           "neuronOrder": 1,
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 유해감수기·자유신경종말 · 온도수용기 · 척수신경절 (DRG) · 뒤뿌리 · 척수 뒤뿔 · 3D 없음: 유해감수기·자유신경종말, 온도수용기, 척수신경절 (DRG), 뒤뿌리, 척수 뒤뿔"
@@ -307,7 +312,12 @@
           "description": {
             "ko": "피부 기계수용기·고유감각수용기의 신호가 DRG 뉴런의 중추가지를 통해 같은쪽 뒤기둥을 상행한다. 널판다발은 하지·하부몸통, 쐐기다발은 상지·상부몸통을 전달하며 쐐기다발은 대략 T6 이상에서 존재한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "body-skin",
+              "side": "ipsi"
+            }
+          ],
           "neuronOrder": 1,
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 피부 기계수용기 · 근방추 · 관절수용기 · 척수신경절 (DRG) · 뒤뿌리 · 널판다발 · 쐐기다발 · 3D 없음: 피부 기계수용기, 근방추, 관절수용기, 척수신경절 (DRG), 뒤뿌리, 널판다발, 쐐기다발"
@@ -438,7 +448,12 @@
           "description": {
             "ko": "1차 구심축삭이 DRG·뒤뿌리를 통해 뒤뿔에 들어온다. 통각·온도는 Aδ/C 섬유를 중심으로 전달된다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "body-skin",
+              "side": "ipsi"
+            }
+          ],
           "neuronOrder": 1,
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 피부 기계수용기 · 척수신경절 (DRG) · 뒤뿌리 · 척수 뒤뿔 · 3D 없음: 피부 기계수용기, 척수신경절 (DRG), 뒤뿌리, 척수 뒤뿔"
@@ -1477,6 +1492,26 @@
             {
               "id": "pn-cn3",
               "side": "ipsi"
+            },
+            {
+              "id": "mu-medial-rectus",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-superior-rectus",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-inferior-rectus",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-inferior-oblique",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-levator-palpebrae",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -1544,6 +1579,10 @@
           "structures": [
             {
               "id": "pn-cn4",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-superior-oblique",
               "side": "ipsi"
             }
           ],
@@ -1866,6 +1905,10 @@
             {
               "id": "pn-cn6",
               "side": "ipsi"
+            },
+            {
+              "id": "mu-lateral-rectus",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -2003,6 +2046,14 @@
             {
               "id": "pn-cn11",
               "side": "ipsi"
+            },
+            {
+              "id": "mu-sternocleidomastoid",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-trapezius",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -2067,6 +2118,10 @@
           "structures": [
             {
               "id": "pn-cn12",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-genioglossus",
               "side": "ipsi"
             }
           ],
@@ -2178,7 +2233,16 @@
           "description": {
             "ko": "사이뉴런과 일부 직접 알파운동뉴런 연결을 통해 근육을 조절한다. 가쪽CST는 특히 원위부 정교운동, 앞CST는 축성·근위부에 기여한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "mu-biceps-brachii",
+              "side": "contra"
+            },
+            {
+              "id": "mu-quadriceps",
+              "side": "contra"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 방추밖근섬유 · 3D 없음: 척수 앞뿔, 알파운동뉴런, 방추밖근섬유"
           }
@@ -2265,7 +2329,16 @@
           "description": {
             "ko": "같은쪽 폄근 활성·굽힘근 억제를 통한 자세 유지에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "mu-quadriceps",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-triceps-surae",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군 · 3D 없음: 척수 앞뿔, 알파운동뉴런, 감마운동뉴런, 목·몸통 근육군"
           }
@@ -2553,7 +2626,12 @@
           "description": {
             "ko": "원문의 항중력·신장반사 촉진 모형에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "mu-quadriceps",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군 · 3D 없음: 척수 앞뿔, 알파운동뉴런, 감마운동뉴런, 목·몸통 근육군"
           }
@@ -2619,7 +2697,12 @@
           "description": {
             "ko": "시각자극에 따른 머리·목 정향에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "mu-sternocleidomastoid",
+              "side": "contra"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군 · 3D 없음: 척수 앞뿔, 알파운동뉴런, 감마운동뉴런, 목·몸통 근육군"
           }
@@ -2687,7 +2770,12 @@
           "description": {
             "ko": "원문의 신장반사·폄근 긴장 억제 모형에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "mu-biceps-brachii",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군 · 3D 없음: 척수 앞뿔, 알파운동뉴런, 감마운동뉴런, 목·몸통 근육군"
           }
@@ -2917,7 +3005,16 @@
           "description": {
             "ko": "사이뉴런과 일부 직접 알파운동뉴런 연결을 통해 근육을 조절한다. 가쪽CST는 특히 원위부 정교운동, 앞CST는 축성·근위부에 기여한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "mu-trapezius",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-iliopsoas",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 방추밖근섬유 · 3D 없음: 척수 앞뿔, 알파운동뉴런, 방추밖근섬유"
           }
@@ -2992,7 +3089,12 @@
           "description": {
             "ko": "특히 상지 굽힘·운동 조절; 사람에서는 역할이 제한적에 관여하는 척수사이뉴런·알파/감마운동뉴런을 조절한다. 원문의 촉진·억제 대비는 교육용 모형이며 모든 뉴런의 부호를 일괄 고정하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "mu-biceps-brachii",
+              "side": "contra"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척수 앞뿔 · 알파운동뉴런 · 감마운동뉴런 · 목·몸통 근육군 · 3D 없음: 척수 앞뿔, 알파운동뉴런, 감마운동뉴런, 목·몸통 근육군"
           }
@@ -5474,6 +5576,10 @@
             {
               "id": "pn-cn10",
               "side": "ipsi"
+            },
+            {
+              "id": "vs-tongue",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -5566,6 +5672,14 @@
           "structures": [
             {
               "id": "pn-cn10",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-diaphragm",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-trachea",
               "side": "ipsi"
             }
           ],
@@ -5764,6 +5878,14 @@
           "structures": [
             {
               "id": "pn-cn10",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-tongue",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-esophagus",
               "side": "ipsi"
             }
           ],
@@ -6204,7 +6326,12 @@
           "description": {
             "ko": "주로 Aδ/C 구심이 DRG·뒤뿌리를 통해 척수 사이뉴런망에 도달한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "body-skin",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 유해감수기·자유신경종말 · 척수신경절 (DRG) · 척수 뒤뿔 · 3D 없음: 유해감수기·자유신경종말, 척수신경절 (DRG), 척수 뒤뿔"
           }
@@ -6230,7 +6357,16 @@
           "description": {
             "ko": "자극쪽 팔다리가 굽혀져 자극에서 벗어난다. 여러 시냅스·분절에 걸쳐 summation과 irradiation이 가능하다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "mu-hamstrings",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-quadriceps",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 굽힘근군 · 폄근군 · 3D 없음: 굽힘근군, 폄근군"
           }
@@ -6265,7 +6401,12 @@
           "description": {
             "ko": "근방추는 근육 길이·그 변화에 민감하다. Ia 구심이 DRG·뒤뿌리를 통해 척수로 들어온다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "mu-quadriceps",
+              "side": "ipsi"
+            }
+          ],
           "neuronOrder": 1,
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 근방추 · 척수신경절 (DRG) · 뒤뿌리 · 3D 없음: 근방추, 척수신경절 (DRG), 뒤뿌리"
@@ -6293,7 +6434,12 @@
           "description": {
             "ko": "알파축삭이 앞뿌리·말초신경·신경근접합부를 통해 방추밖근섬유를 수축시킨다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "mu-quadriceps",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 앞뿌리 · 방추밖근섬유 · 3D 없음: 앞뿌리, 방추밖근섬유"
@@ -6361,6 +6507,10 @@
           "structures": [
             {
               "id": "pn-cn6",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-lateral-rectus",
               "side": "ipsi"
             }
           ],
@@ -6475,6 +6625,10 @@
           "structures": [
             {
               "id": "bs-oculomotor",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-medial-rectus",
               "side": "ipsi"
             }
           ],
@@ -6767,6 +6921,10 @@
             {
               "id": "bs-abducens",
               "side": "contra"
+            },
+            {
+              "id": "mu-lateral-rectus",
+              "side": "contra"
             }
           ],
           "neuronOrder": 3,
@@ -6806,6 +6964,10 @@
             },
             {
               "id": "pn-cn3",
+              "side": "ipsi"
+            },
+            {
+              "id": "mu-medial-rectus",
               "side": "ipsi"
             }
           ],
@@ -12490,6 +12652,10 @@
             {
               "id": "pn-nodose-ganglion",
               "side": "ipsi"
+            },
+            {
+              "id": "vs-carotid",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -12720,7 +12886,12 @@
           "description": {
             "ko": "절후 ACh가 무스카린 수용체를 통해 샘 분비·내장 기능을 조절한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "vs-lacrimal-gland",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈물샘·코·입천장샘 · 3D 없음: 눈물샘·코·입천장샘"
@@ -12802,7 +12973,16 @@
           "description": {
             "ko": "절후 ACh가 무스카린 수용체를 통해 샘 분비·내장 기능을 조절한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "vs-submandibular-gland",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-sublingual-gland",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 턱밑샘·혀밑샘 · 3D 없음: 턱밑샘·혀밑샘"
@@ -12875,7 +13055,24 @@
           "description": {
             "ko": "절후 ACh가 무스카린 수용체를 통해 샘 분비·내장 기능을 조절한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "vs-heart",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-lung",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-stomach",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-small-intestine",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 흉복부 내장·평활근·샘 · 3D 없음: 흉복부 내장·평활근·샘"
@@ -13006,7 +13203,12 @@
           "description": {
             "ko": "절후 ACh가 땀샘 무스카린 수용체에 작용한다. 절후 NE를 사용하는 일반 교감경로와 다른 예외다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "body-skin",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 회색교통가지 · 땀샘 · 3D 없음: 회색교통가지, 땀샘"
@@ -13074,7 +13276,12 @@
           "description": {
             "ko": "절후축삭이 회색교통가지를 통해 척수신경에 합류하여 피부·혈관·털세움근 등에 간다. 땀샘의 ACh 출력은 별도 예외경로다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "body-skin",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "norepinephrine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 회색교통가지 · 심장·혈관 · 3D 없음: 회색교통가지, 심장·혈관"
@@ -13142,7 +13349,28 @@
           "description": {
             "ko": "절후 NE 출력이 복부·골반 내장효과기를 조절한다. 세 신경절은 장기별 대안 경로이며 직렬이 아니다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "vs-stomach",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-small-intestine",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-large-intestine",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-kidney",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-bladder",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "norepinephrine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 흉복부 내장·평활근·샘 · 3D 없음: 흉복부 내장·평활근·샘"
@@ -13181,6 +13409,10 @@
           "structures": [
             {
               "id": "sp-iml",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-adrenal",
               "side": "ipsi"
             }
           ],
@@ -13264,7 +13496,16 @@
           "description": {
             "ko": "흉부 내장으로 가는 절후가지는 척수신경의 회색가지로 돌아가는 몸벽경로와 구분한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "vs-heart",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-lung",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "norepinephrine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 교감신경줄기·척추옆신경절 · 심장·혈관 · 흉복부 내장·평활근·샘 · 3D 없음: 교감신경줄기·척추옆신경절, 심장·혈관, 흉복부 내장·평활근·샘"
@@ -13592,6 +13833,10 @@
             {
               "id": "sp-sacral-parasympathetic",
               "side": "ipsi"
+            },
+            {
+              "id": "vs-prostate",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -13650,6 +13895,10 @@
             {
               "id": "sp-iml",
               "side": "ipsi"
+            },
+            {
+              "id": "vs-bladder",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -13667,6 +13916,10 @@
           "structures": [
             {
               "id": "sp-sacral-parasympathetic",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-bladder",
               "side": "ipsi"
             }
           ],
@@ -13711,6 +13964,10 @@
             },
             {
               "id": "bs-solitary",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-diaphragm",
               "side": "ipsi"
             }
           ],
@@ -13876,7 +14133,12 @@
           "description": {
             "ko": "혈관·땀샘·근육·행동 반응이 열생산·열손실을 조절한다. 세부 배선은 추정하지 않은 기능망이다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "body-skin",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 심장·혈관 · 땀샘 · 방추밖근섬유 · 3D 없음: 심장·혈관, 땀샘, 방추밖근섬유"
           }
@@ -14007,6 +14269,10 @@
             },
             {
               "id": "bs-solitary",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-carotid",
               "side": "ipsi"
             }
           ],
@@ -14147,6 +14413,10 @@
             {
               "id": "pn-cn10",
               "side": "ipsi"
+            },
+            {
+              "id": "vs-heart",
+              "side": "ipsi"
             }
           ],
           "transmitter": "acetylcholine",
@@ -14216,7 +14486,16 @@
           "description": {
             "ko": "짧은 절후축삭이 장기 평활근·분비·생식기 반응을 조절한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "vs-bladder",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-large-intestine",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 방광배뇨근 · 생식기 혈관·사정효과기 · 3D 없음: 방광배뇨근, 생식기 혈관·사정효과기"
@@ -14327,7 +14606,16 @@
           "description": {
             "ko": "CCK/PYY/GLP-1 등 말초 신호가 분비된다. 각 호르몬을 동일한 직접 신경축삭 경로로 통합하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "vs-stomach",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-small-intestine",
+              "side": "ipsi"
+            }
+          ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 창자 (포만호르몬 분비) · 3D 없음: 창자 (포만호르몬 분비)"
           }
@@ -15261,6 +15549,10 @@
             {
               "id": "bs-ambiguus",
               "side": "ipsi"
+            },
+            {
+              "id": "vs-tongue",
+              "side": "ipsi"
             }
           ],
           "missing": {
@@ -15633,6 +15925,10 @@
             },
             {
               "id": "bs-ambiguus",
+              "side": "ipsi"
+            },
+            {
+              "id": "vs-tongue",
               "side": "ipsi"
             }
           ],

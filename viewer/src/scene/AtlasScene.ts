@@ -107,6 +107,8 @@ export class AtlasScene {
   private lastFrameMs = performance.now();
   private time = 0;
   private lastActivity = 0;
+  /** where the mist surface should be: at rest under the brain, lower when the focus is on the body */
+  private seaGoal = 0;
   private framing = { x: 0.5, y: 0.5, scale: 1 };
   private framingGoal = { x: 0.5, y: 0.5, scale: 1 };
   private framed = false;
@@ -121,6 +123,7 @@ export class AtlasScene {
     this.raycaster.firstHitOnly = true;
     this.background = new MistSea(BRAIN_CENTER, this.renderer);
     sceneFloor.value = this.background.seaLevel;
+    this.seaGoal = this.background.seaLevel;
 
     this.scene.add(new THREE.HemisphereLight('#e8ecff', '#2c2a4a', 1.1));
     const key = new THREE.DirectionalLight('#ffffff', 2.0);
@@ -186,7 +189,10 @@ export class AtlasScene {
       if (!info) return;
       const structure = structures.get(info.structureId)!;
       const isShell = structure.group === 'shell';
-      const isOutline = isShell || structure.group === 'cortex' || structure.group === 'spinal-cord';
+      // groups drawn as ghosts until chosen: the shells and cortex, and everything that would otherwise bury
+      // the nuclei — the tract tubes, the body shell, muscles and viscera
+      const GHOST_GROUPS = new Set(['cortex', 'spinal-cord', 'tracts', 'body-shell', 'muscles', 'viscera']);
+      const isOutline = isShell || GHOST_GROUPS.has(structure.group);
       const baseColor = structureColor(manifest.groups[structure.group].color, indexInGroup.get(structure.id)!, isShell);
       if (!object.geometry.attributes.normal) object.geometry.computeVertexNormals();
       object.geometry.computeBoundsTree();
@@ -434,6 +440,7 @@ export class AtlasScene {
 
   setView(preset: ViewPreset, animate = true) {
     const toPos = BRAIN_CENTER.clone().addScaledVector(VIEW_DIRECTIONS[preset], HOME_DISTANCE);
+    this.seaGoal = this.background.seaLevel;
     this.flyTo(BRAIN_CENTER.clone(), toPos, animate);
   }
 
@@ -447,6 +454,8 @@ export class AtlasScene {
       box.expandByPoint(rasToThree(entry.info.bboxMax));
     }
     if (box.isEmpty()) return;
+    // the sea sinks below whatever is in focus, so a muscle or an organ is seen with the body around it
+    this.seaGoal = Math.min(this.background.seaLevel, box.min.y - 80);
     const sphere = box.getBoundingSphere(new THREE.Sphere());
     const radius = Math.max(sphere.radius, 22); // keep enough surroundings in view to stay oriented
     const distance = (radius / Math.sin(THREE.MathUtils.degToRad(this.camera.fov / 2))) * 1.25;
@@ -571,6 +580,12 @@ export class AtlasScene {
     }
     this.controls.update();
     ghostFocusDistance.value = this.camera.position.distanceTo(this.controls.target);
+    if (Math.abs(this.background.surfaceY - this.seaGoal) > 0.5) {
+      const k = this.reducedMotion.matches ? 1 : 1 - Math.exp(-dt * 3);
+      this.background.setLevel(this.background.surfaceY + (this.seaGoal - this.background.surfaceY) * k);
+      sceneFloor.value = this.background.surfaceY;
+      this.poke();
+    }
 
     if (this.pointerDirty && !this.downAt && !this.intro) {
       this.pointerDirty = false;

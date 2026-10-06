@@ -185,11 +185,16 @@ export class MistSea {
 
   /** world y of the resting surface */
   readonly seaLevel: number;
+  /** world y of the surface right now (it sinks to uncover the body when something below is in focus) */
+  surfaceY: number;
+  private readonly sheetMeshes: THREE.Mesh[] = [];
+  private readonly sheetOffsets: number[] = [];
 
   constructor(private readonly center: THREE.Vector3, renderer: THREE.WebGLRenderer) {
     this.waves = new WaveField(renderer, 384, 0.978); // fades within a couple of seconds
     const seaLevel = center.y - SEA_DROP;
     this.seaLevel = seaLevel;
+    this.surfaceY = seaLevel;
     this.plane = new THREE.Plane(new THREE.Vector3(0, 1, 0), -seaLevel);
 
     const geometry = new THREE.PlaneGeometry(SHEET_RADIUS * 2, SHEET_RADIUS * 2, 300, 300).rotateX(-Math.PI / 2);
@@ -223,6 +228,8 @@ export class MistSea {
       sheet.renderOrder = -800;
       sheet.raycast = () => {};
       this.sheets.push(material);
+      this.sheetMeshes.push(sheet);
+      this.sheetOffsets.push(offset);
       this.group.add(sheet);
     }
 
@@ -289,6 +296,15 @@ export class MistSea {
   }
 
   /** `time` should stand still when the user prefers reduced motion. */
+  /** Move the surface to world y (the sheets, the hit plane and the motes follow). */
+  setLevel(y: number) {
+    if (y === this.surfaceY) return;
+    this.surfaceY = y;
+    this.sheetMeshes.forEach((sheet, i) => { sheet.position.y = y + this.sheetOffsets[i]; });
+    this.plane.constant = -y;
+    this.motes.uniforms.uSeaLevel.value = y;
+  }
+
   update(time: number, dt: number, pixelRatio: number, viewHeight: number) {
     this.waves.update(dt);
     // the rush: flow speeds up sharply, then eases back
