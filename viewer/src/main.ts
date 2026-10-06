@@ -143,6 +143,7 @@ async function main() {
       scene.setPupils({});
       scene.setEyeRotations({});
       scene.setLenses({});
+      scene.setContractions([]);
     }
     if (mode.kind === 'explore') {
       scene.setStates(() => 'normal');
@@ -185,6 +186,7 @@ async function main() {
       scene.setPupils(pupils);
       scene.setEyeRotations(eyes);
       scene.setLenses(lenses);
+      scene.setContractions(active); // the step's skeletal muscles contract
 
       const routeChanged = prev.kind !== 'pathway' || prev.pathwayId !== m.pathwayId || prev.origin !== m.origin;
       if (routeChanged) {

@@ -4481,6 +4481,118 @@
       }
     },
     {
+      "id": "sp-seg-cervical",
+      "group": "spinal-cord",
+      "name": {
+        "ko": "경수 (C1~C8)",
+        "en": "Cervical cord segments"
+      },
+      "source": {
+        "atlas": "model",
+        "shape": "cord-column",
+        "params": {
+          "z_top": -56,
+          "z_bottom": -178,
+          "offset": [
+            0,
+            0
+          ],
+          "radius": 7.5
+        },
+        "centreMni": [
+          0,
+          0,
+          0
+        ],
+        "bilateral": false,
+        "modelNote": "기하 모형: 척수 분절 범위를 척수 축 둘레의 반투명 덮개로 표시. 분절–척추뼈 대응은 교과서 일반값(BodyParts3D 척추관 축 기준). 경수 분절 C1~C8: 큰구멍에서 C7 척추뼈 높이까지. 분절은 같은 번호 척추뼈보다 위에 있다."
+      }
+    },
+    {
+      "id": "sp-seg-thoracic",
+      "group": "spinal-cord",
+      "name": {
+        "ko": "흉수 (T1~T12)",
+        "en": "Thoracic cord segments"
+      },
+      "source": {
+        "atlas": "model",
+        "shape": "cord-column",
+        "params": {
+          "z_top": -178,
+          "z_bottom": -400,
+          "offset": [
+            0,
+            0
+          ],
+          "radius": 7.5
+        },
+        "centreMni": [
+          0,
+          0,
+          0
+        ],
+        "bilateral": false,
+        "modelNote": "기하 모형: 척수 분절 범위를 척수 축 둘레의 반투명 덮개로 표시. 분절–척추뼈 대응은 교과서 일반값(BodyParts3D 척추관 축 기준). 흉수 T1~T12: 대략 T1~T10 척추뼈 높이."
+      }
+    },
+    {
+      "id": "sp-seg-lumbar",
+      "group": "spinal-cord",
+      "name": {
+        "ko": "요수 (L1~L5)",
+        "en": "Lumbar cord segments"
+      },
+      "source": {
+        "atlas": "model",
+        "shape": "cord-column",
+        "params": {
+          "z_top": -400,
+          "z_bottom": -448,
+          "offset": [
+            0,
+            0
+          ],
+          "radius": 7.5
+        },
+        "centreMni": [
+          0,
+          0,
+          0
+        ],
+        "bilateral": false,
+        "modelNote": "기하 모형: 척수 분절 범위를 척수 축 둘레의 반투명 덮개로 표시. 분절–척추뼈 대응은 교과서 일반값(BodyParts3D 척추관 축 기준). 요수 L1~L5: T11~T12 척추뼈 높이(요천팽대)."
+      }
+    },
+    {
+      "id": "sp-seg-sacral",
+      "group": "spinal-cord",
+      "name": {
+        "ko": "천수·미수 (S1~S5, Co)",
+        "en": "Sacral and coccygeal segments"
+      },
+      "source": {
+        "atlas": "model",
+        "shape": "cord-column",
+        "params": {
+          "z_top": -448,
+          "z_bottom": -478,
+          "offset": [
+            0,
+            0
+          ],
+          "radius": 7.5
+        },
+        "centreMni": [
+          0,
+          0,
+          0
+        ],
+        "bilateral": false,
+        "modelNote": "기하 모형: 척수 분절 범위를 척수 축 둘레의 반투명 덮개로 표시. 분절–척추뼈 대응은 교과서 일반값(BodyParts3D 척추관 축 기준). 천수 S1~S5·미수: L1 척추뼈 높이, 척수원뿔."
+      }
+    },
+    {
       "id": "sp-iml",
       "group": "spinal-cord",
       "name": {

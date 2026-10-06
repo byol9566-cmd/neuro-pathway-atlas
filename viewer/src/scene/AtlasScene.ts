@@ -378,6 +378,40 @@ export class AtlasScene {
     }
   }
 
+  /** skeletal muscles on pivots at their centre: contraction scales them along their long axis */
+  private readonly muscles = new Map<string, { group: THREE.Group; axis: THREE.Vector3; k: number; goal: number }>();
+
+  private musclePivot(entry: AtlasEntry) {
+    let m = this.muscles.get(entry.info.id);
+    if (m) return m;
+    const group = new THREE.Group();
+    const parent = entry.object.parent!;
+    // the pivot sits at the muscle's centroid, inside whatever already holds the mesh (a joint group or the atlas)
+    const worldC = rasToThree(entry.info.centroid);
+    const localC = parent.worldToLocal(this.root.localToWorld(worldC.clone()));
+    group.position.copy(localC);
+    parent.add(group);
+    group.updateMatrixWorld(true);
+    group.attach(entry.object);
+    const size = [0, 1, 2].map((i) => entry.info.bboxMax[i] - entry.info.bboxMin[i]);
+    const longest = size.indexOf(Math.max(...size));
+    const axis = new THREE.Vector3(longest === 0 ? 1 : 0, longest === 1 ? 1 : 0, longest === 2 ? 1 : 0);
+    m = { group, axis, k: 0, goal: 0 };
+    this.muscles.set(entry.info.id, m);
+    return m;
+  }
+
+  /** Contract the given skeletal muscles (shorter along their long axis, thicker across); others relax. */
+  setContractions(meshIds: Iterable<string>) {
+    const want = new Set(meshIds);
+    for (const id of want) {
+      const entry = this.entries.get(id);
+      if (entry && entry.structure.group === 'muscles') this.musclePivot(entry).goal = 1;
+    }
+    for (const [id, m] of this.muscles) if (!want.has(id)) m.goal = 0;
+    this.poke();
+  }
+
   /** Turn the eyes: per side [degrees about the vertical axis (+ = toward the nose), degrees of elevation]. */
   setEyeRotations(goals: Record<string, [number, number]>) {
     for (const [side, e] of this.eyes) e.goal = goals[side] ?? [0, 0];
@@ -715,6 +749,13 @@ export class AtlasScene {
       const toward = side === 'R' ? 1 : -1;
       const q = new THREE.Quaternion().setFromEuler(new THREE.Euler(THREE.MathUtils.degToRad(e.rot[1]), 0, THREE.MathUtils.degToRad(toward * e.rot[0]), 'XYZ'));
       e.group.quaternion.copy(q);
+      this.poke();
+    }
+    for (const m of this.muscles.values()) {
+      if (Math.abs(m.k - m.goal) < 0.002) continue;
+      m.k += (m.goal - m.k) * ease;
+      const along = 1 - 0.12 * m.k, across = 1 + 0.22 * m.k;
+      m.group.scale.set(m.axis.x ? along : across, m.axis.y ? along : across, m.axis.z ? along : across);
       this.poke();
     }
     for (const l of this.lenses.values()) {

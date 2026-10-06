@@ -99,6 +99,20 @@ export function renderCircuit(pathway: Pathway, opts: CircuitOptions): HTMLEleme
         svg.append(g);
       }
     }
+    // a loop: the last step returns to a structure of the first (basal ganglia loops, Papez, VOR adaptation)
+    const first = new Set(pathway.steps[0].structures.map((r) => r.id));
+    const last = pathway.steps[pathway.steps.length - 1];
+    if (nodes.length > 2 && last.structures.some((r) => first.has(r.id))) {
+      const a = nodes[nodes.length - 1].getBoundingClientRect();
+      const b = nodes[0].getBoundingClientRect();
+      const x0 = a.left + a.width / 2 - box.left, y0 = a.bottom - box.top;
+      const x1 = b.left + b.width / 2 - box.left, y1 = b.top - box.top;
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', `M ${x0} ${y0} C ${x0} ${y0 + 26}, ${-14} ${y0 + 26}, ${-14} ${(y0 + y1) / 2} S ${x1} ${y1 - 22}, ${x1} ${y1}`);
+      path.setAttribute('class', 'wire loop');
+      path.setAttribute('marker-end', 'url(#circuit-arrow)');
+      svg.append(path);
+    }
     svg.insertAdjacentHTML('afterbegin', `<defs>
       <marker id="circuit-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z"/></marker>
       <marker id="circuit-bar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 6 0 L 6 10" stroke-width="2.5"/></marker>
