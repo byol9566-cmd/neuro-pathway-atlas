@@ -445,6 +445,14 @@ def build_structure(structure: dict, nb: NextBrain):
 
 
 LIMB_SEGMENTS = {"bone-humerus", "bone-forearm", "bone-hand", "bone-femur", "bone-leg", "bone-foot"}
+TORSO_BONES = {"bone-skull", "bone-vertebral-column", "bone-rib-cage", "bone-pelvis", "bone-shoulder"}
+# muscles that ride with a bone segment when its joint moves (their origin end detaches: schematic)
+SEGMENT_MUSCLES = {
+    "bone-humerus": ["mu-biceps-brachii", "mu-brachialis", "mu-triceps-brachii", "mu-deltoid"],
+    "bone-femur": ["mu-quadriceps", "mu-hamstrings"],
+    "bone-leg": ["mu-tibialis-anterior", "mu-triceps-surae"],
+}
+SKIN_PIECE_NAMES = {"bone-humerus": "위팔", "bone-forearm": "아래팔", "bone-hand": "손", "bone-femur": "넙다리", "bone-leg": "종아리", "bone-foot": "발"}
 # joint -> (the proximal bone whose distal end is the pivot, or None for the segment's own top end),
 #          the segment the joint moves, flexion sign about +x (RAS), Korean name
 JOINTS = [
@@ -475,10 +483,40 @@ def limb_joints(segment_meshes: dict) -> list:
             else:
                 end = v[v[:, 2] > v[:, 2].max() - 25]  # top of the segment itself
             pivot = end.mean(axis=0)
+            moved = [f"{segment}.{side}", f"{segment}-skin.{side}"] + [f"{m}.{side}" for m in SEGMENT_MUSCLES.get(segment, [])]
             out.append({"id": f"{name}.{side}", "joint": name, "side": side, "name": {"ko": ko}, "pivot": np.round(pivot, 1).tolist(),
-                        "axis": [1.0, 0.0, 0.0], "flexSign": sign, "segment": f"{segment}.{side}",
+                        "axis": [1.0, 0.0, 0.0], "flexSign": sign, "segment": f"{segment}.{side}", "segments": moved,
                         "parent": next((f"{j[0]}.{side}" for j in JOINTS if j[2] == proximal), None) if proximal else None})
     return out
+
+
+def split_body_skin(scene, mesh_records, structure_records, segment_meshes, torso_meshes, skin_structure):
+    """Replace the single skin mesh by a torso piece plus one piece per limb bone segment (as structures
+    '<bone>-skin'), so the limbs' skin follows the joints."""
+    skin = scene.geometry.get("body-skin.M")
+    if skin is None or not segment_meshes or not torso_meshes:
+        return
+    pieces = bp3d.split_skin(skin, segment_meshes, torso_meshes)
+    scene.delete_geometry("body-skin.M")
+    rec_skin = next(r for r in mesh_records if r["id"] == "body-skin.M")
+    mesh_records.remove(rec_skin)
+    torso = pieces.pop("torso")
+    torso.vertex_normals  # noqa: B018
+    scene.add_geometry(torso, node_name="body-skin.M", geom_name="body-skin.M")
+    r = mesh_record("body-skin.M", skin_structure, "M", torso, volume_mm3=float(abs(torso.volume)), approx=False); r["note"] = skin_structure.get("note", "")
+    mesh_records.append(r)
+    by_struct = {}
+    for seg_id, piece in pieces.items():
+        bone, side = seg_id.rsplit(".", 1)
+        sid = f"{bone}-skin"
+        piece.vertex_normals  # noqa: B018
+        scene.add_geometry(piece, node_name=f"{sid}.{side}", geom_name=f"{sid}.{side}")
+        fake = {"id": sid, "name": {"ko": f"피부 — {SKIN_PIECE_NAMES[bone]}", "en": f"Skin, {bone.replace('bone-', '')}"}, "group": "body-shell"}
+        r = mesh_record(f"{sid}.{side}", fake, side, piece, volume_mm3=float(abs(piece.volume)), approx=False); r["note"] = skin_structure.get("note", "")
+        mesh_records.append(r)
+        by_struct.setdefault(sid, (fake, []))[1].append(f"{sid}.{side}")
+    for sid, (fake, ids) in by_struct.items():
+        structure_records.append({"id": sid, "group": "body-shell", "name": fake["name"], "tract": False, "approx": False, "atlas": "bp3d", "labels": [], "meshIds": sorted(ids)})
 
 
 def _load_hcp_tracts():
@@ -516,6 +554,7 @@ def main(argv=None):
     scene = trimesh.Scene()
     mesh_records, structure_records, skipped = [], [], []
     segment_meshes = {}  # limb bone segments, for the joint pivots
+    torso_meshes = []
     for s in structures:
         t = time.time()
         try:
@@ -530,6 +569,8 @@ def main(argv=None):
             mesh_records.append(rec)
             if s["id"] in LIMB_SEGMENTS:
                 segment_meshes[mesh_id] = mesh
+            if s["id"] in TORSO_BONES:
+                torso_meshes.append(mesh)
         first = built[0][2]
         structure_records.append(
             {
@@ -550,6 +591,9 @@ def main(argv=None):
 
     if skipped:
         print(f"skipped {len(skipped)} structures with no usable voxels: {', '.join(skipped)}")
+    skin_structure = next((s for s in structures if s["id"] == "body-skin"), None)
+    if skin_structure:
+        split_body_skin(scene, mesh_records, structure_records, segment_meshes, torso_meshes, skin_structure)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     raw = OUT_DIR / "atlas.raw.glb"
     final = OUT_DIR / "atlas.glb"

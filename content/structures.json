@@ -4644,6 +4644,96 @@
       "note": "Visible Human 남성 냉동절편에서 Segment Anything으로 분할(우 23·좌 24장), MNI152 2009c로 정합. 망막·각막은 이 표면에서 잘라 만든다."
     },
     {
+      "id": "so-lens",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "수정체",
+        "en": "Lens"
+      },
+      "source": {
+        "atlas": "vhp",
+        "files": {
+          "L": "data/derived/vhp/so-lens.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-lens.R.mni.nii.gz"
+        },
+        "file": "data/derived/vhp/so-lens.L.mni.nii.gz",
+        "side": "L",
+        "sides": {
+          "L": "data/derived/vhp/so-lens.L.mni.nii.gz",
+          "R": "data/derived/vhp/so-lens.R.mni.nii.gz"
+        }
+      },
+      "note": "Visible Human 절편에서 분할(안구 앞극의 노란 타원), MNI 정합."
+    },
+    {
+      "id": "so-iris",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "홍채",
+        "en": "Iris"
+      },
+      "source": {
+        "atlas": "model",
+        "shape": "annulus",
+        "params": {
+          "r_in": 2.5,
+          "r_out": 6.0,
+          "thickness": 0.5
+        },
+        "centreMni": [
+          30.4,
+          70.3,
+          -38.7
+        ],
+        "axis": [
+          0.043,
+          0.999,
+          0.034
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "bilateral": true,
+        "modelNote": "기하 모형: 분할한 안구의 중심–각막 축 위, 중심에서 9.5 mm 앞에 놓인 고리(바깥 6 mm, 동공 2.5 mm). 동공 지름은 경로 효과로 변한다."
+      }
+    },
+    {
+      "id": "so-ciliary-body",
+      "group": "sensory-organs",
+      "name": {
+        "ko": "섬모체",
+        "en": "Ciliary body"
+      },
+      "source": {
+        "atlas": "model",
+        "shape": "annulus",
+        "params": {
+          "r_in": 5.8,
+          "r_out": 7.6,
+          "bulge": 1.2
+        },
+        "centreMni": [
+          30.4,
+          68.3,
+          -38.8
+        ],
+        "axis": [
+          0.043,
+          0.999,
+          0.034
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ],
+        "bilateral": true,
+        "modelNote": "기하 모형: 홍채 뒤 7.5 mm 위치의 고리(섬모체근·섬모체돌기). 수정체 두께 변화(조절)의 원인 근육."
+      }
+    },
+    {
       "id": "so-retina",
       "group": "sensory-organs",
       "name": {

@@ -16,9 +16,17 @@ EFFECTS = {
     "reticulospinal-medullary-3": [{"joint": "elbow", "side": "ipsi", "angle": 30}],
     "reticulospinal-pontine-3": [{"joint": "knee", "side": "ipsi", "angle": -8}, {"joint": "hip", "side": "ipsi", "angle": -8}],
     "vestibulospinal-lateral-3": [{"joint": "knee", "side": "ipsi", "angle": -8}, {"joint": "ankle", "side": "ipsi", "angle": -15}],
-    "withdrawal-reflex-3": [{"joint": "hip", "side": "ipsi", "angle": 40}, {"joint": "knee", "side": "ipsi", "angle": 60}],
+    "withdrawal-reflex-3": [{"joint": "hip", "side": "ipsi", "angle": 25}, {"joint": "knee", "side": "ipsi", "angle": 45}],
     "stretch-reflex-3": [{"joint": "knee", "side": "ipsi", "angle": -20}],
     "tectospinal-3": [],
+}
+
+
+# pupil effects (the iris ring scales): constrict for the light reflex and the near response, dilate for the sympathetic
+PUPIL = {
+    "pupillary-light-reflex-4": [{"pupil": "constrict", "side": "ipsi"}, {"pupil": "constrict", "side": "contra"}],
+    "autonomic-pupil-dilation-3": [{"pupil": "dilate", "side": "ipsi"}],
+    "accommodation-2": [{"pupil": "constrict", "side": "ipsi"}],
 }
 
 
@@ -27,6 +35,11 @@ def main(write):
     n = 0
     for pw in p["pathways"]:
         for st in pw["steps"]:
+            if st["id"] in PUPIL:
+                st["effects"] = [e for e in st.get("effects", []) if "pupil" not in e] + PUPIL[st["id"]]
+                if not any(r["id"] == "so-iris" for r in st["structures"]):
+                    st["structures"].append({"id": "so-iris", "side": "ipsi"})
+                n += 1
             if st["id"] in EFFECTS:
                 if EFFECTS[st["id"]]:
                     st["effects"] = EFFECTS[st["id"]]; n += 1

@@ -51,6 +51,8 @@ export interface ManifestJoint {
   /** +1 when a positive angle is flexion about +x, -1 when flexion is the other way (knee, ankle) */
   flexSign: number;
   segment: string;
+  /** every mesh the joint moves: the bone, its skin piece, the muscles riding on it */
+  segments?: string[];
   parent: string | null;
 }
 
@@ -63,11 +65,13 @@ export interface Manifest {
   joints?: ManifestJoint[];
 }
 
-/** what a pathway step does to the body: a joint flexes (positive degrees) or extends (negative) */
+/** what a pathway step does to the body: a joint flexes (positive degrees) or extends (negative),
+ *  or a pupil constricts / dilates */
 export interface StepEffect {
-  joint: string;
+  joint?: string;
   side: RelativeSide;
-  angle: number;
+  angle?: number;
+  pupil?: 'constrict' | 'dilate';
 }
 
 export interface PathwayStructureRef {

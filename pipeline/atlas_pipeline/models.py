@@ -144,6 +144,26 @@ def ellipsoid(radii=(2.0, 2.0, 1.5), **_):
     return meshing.ellipsoid([0, 0, 0], radii)
 
 
+def annulus(r_in=2.5, r_out=6.0, thickness=0.5, bulge=0.0, n=48, **_):
+    """flat ring in the local xy plane (the iris; with `bulge` the ring is a torus-like ciliary body)"""
+    th = np.linspace(0, 2 * np.pi, n, endpoint=False)
+    if bulge > 0:
+        P = np.stack([((r_in + r_out) / 2) * np.cos(th), ((r_in + r_out) / 2) * np.sin(th), np.zeros(n)], axis=1)
+        P = np.concatenate([P, P[:1]])
+        m = meshing.tube(P, np.full(len(P), (r_out - r_in) / 2), segments=10)
+        m.vertices[:, 2] *= bulge / ((r_out - r_in) / 2)
+        return m
+    ring = lambda r, z: np.stack([r * np.cos(th), r * np.sin(th), np.full(n, z)], axis=1)
+    V = np.concatenate([ring(r_in, -thickness / 2), ring(r_out, -thickness / 2), ring(r_in, thickness / 2), ring(r_out, thickness / 2)])
+    faces = []
+    for i in range(n):
+        j = (i + 1) % n
+        a, b, c, d = i, n + i, 2 * n + i, 3 * n + i
+        a2, b2, c2, d2 = j, n + j, 2 * n + j, 3 * n + j
+        faces += [[a, b, b2], [a, b2, a2], [c, d2, d], [c, c2, d2], [b, d, d2], [b, d2, b2], [a, c2, c], [a, a2, c2]]
+    return meshing.outward(trimesh.Trimesh(V, np.asarray(faces), process=False))
+
+
 def disc(radius=2.0, thickness=0.8, **_):
     """flattened ovoid (the ciliary, otic, pterygopalatine ganglia)"""
     return meshing.ellipsoid([0, 0, 0], [radius, radius, thickness / 2])
@@ -241,6 +261,7 @@ BUILDERS = {
     "crescent": crescent,
     "ellipsoid": ellipsoid,
     "disc": disc,
+    "annulus": annulus,
 }
 
 

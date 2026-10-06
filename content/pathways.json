@@ -6426,12 +6426,12 @@
             {
               "joint": "hip",
               "side": "ipsi",
-              "angle": 40
+              "angle": 25
             },
             {
               "joint": "knee",
               "side": "ipsi",
-              "angle": 60
+              "angle": 45
             }
           ]
         }
@@ -6679,11 +6679,21 @@
             {
               "id": "pn-ciliary-ganglion",
               "side": "ipsi"
+            },
+            {
+              "id": "so-iris",
+              "side": "ipsi"
             }
           ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈돌림신경 (III) · 섬모체신경절 · 섬모체근 · 동공조임근 · 3D 없음: 섬모체근, 동공조임근"
-          }
+          },
+          "effects": [
+            {
+              "pupil": "constrict",
+              "side": "ipsi"
+            }
+          ]
         },
         {
           "id": "accommodation-3",
@@ -6821,12 +6831,26 @@
             {
               "id": "pn-short-ciliary",
               "side": "ipsi"
+            },
+            {
+              "id": "so-iris",
+              "side": "ipsi"
             }
           ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 짧은섬모체신경 · 동공조임근 · 3D 없음: 짧은섬모체신경, 동공조임근"
-          }
+          },
+          "effects": [
+            {
+              "pupil": "constrict",
+              "side": "ipsi"
+            },
+            {
+              "pupil": "constrict",
+              "side": "contra"
+            }
+          ]
         }
       ],
       "lesions": [
@@ -13219,11 +13243,22 @@
           "description": {
             "ko": "절후출력이 동공확대근에 작용한다. III의 부교감 축삭과 동일한 신경성분으로 혼합하지 않는다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "so-iris",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "norepinephrine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 동공확대근 · 3D 없음: 동공확대근"
-          }
+          },
+          "effects": [
+            {
+              "pupil": "dilate",
+              "side": "ipsi"
+            }
+          ]
         }
       ],
       "lesions": []

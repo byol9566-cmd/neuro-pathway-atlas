@@ -78,3 +78,27 @@ def mesh_for(names: list[str], max_faces: int = 6000) -> trimesh.Trimesh:
         m = meshing.simplify(m, max_faces, taubin_iters=0)
     m.fix_normals()
     return m
+
+
+def split_skin(skin: trimesh.Trimesh, limb: dict[str, trimesh.Trimesh], torso: list[trimesh.Trimesh]) -> dict[str, trimesh.Trimesh]:
+    """Cut the skin into limb pieces so the limbs can move: every skin vertex goes to the bone segment
+    whose vertices are nearest (limb segments by name, or the torso bones -> 'torso'); a face follows the
+    majority of its vertices. Pieces simply separate at the joints when bent — schematic, no skinning."""
+    from scipy.spatial import cKDTree
+
+    names = list(limb) + ["torso"]
+    trees = [cKDTree(m.vertices) for m in limb.values()] + [cKDTree(np.concatenate([t.vertices for t in torso]))]
+    dist = np.stack([t.query(skin.vertices)[0] for t in trees], axis=1)
+    # the torso is favoured: a limb only claims skin that is clearly closer to its own bones
+    dist[:, -1] *= 0.75
+    label = dist.argmin(axis=1)
+    face_label = np.array([np.bincount(label[f], minlength=len(names)).argmax() for f in skin.faces])
+    out = {}
+    for i, n in enumerate(names):
+        faces = skin.faces[face_label == i]
+        if len(faces) == 0:
+            continue
+        m = trimesh.Trimesh(skin.vertices, faces, process=True)
+        m.remove_unreferenced_vertices()
+        out[n] = m
+    return out

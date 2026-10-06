@@ -137,7 +137,10 @@ async function main() {
     mode = next;
     window.clearInterval(timer);
 
-    if (mode.kind !== 'pathway') scene.setJointAngles({});
+    if (mode.kind !== 'pathway') {
+      scene.setJointAngles({});
+      scene.setPupils({});
+    }
     if (mode.kind === 'explore') {
       scene.setStates(() => 'normal');
       scene.setRoute(null);
@@ -156,13 +159,18 @@ async function main() {
       // what this step does to the body: the named joints flex or extend (the rest return to rest), and
       // the bones they move are shown so the movement can be seen
       const angles: Record<string, number> = {};
+      const pupils: Record<string, number> = {};
       for (const fx of pathway.steps[m.step].effects ?? []) {
-        const jointId = `${fx.joint}.${resolveSide(fx.side, m.origin)}`;
-        angles[jointId] = fx.angle;
-        for (const id of scene.jointChainMeshIds(jointId)) active.add(id);
+        const side = resolveSide(fx.side, m.origin);
+        if (fx.joint && fx.angle !== undefined) {
+          angles[`${fx.joint}.${side}`] = fx.angle;
+          for (const id of scene.jointChainMeshIds(`${fx.joint}.${side}`)) active.add(id);
+        }
+        if (fx.pupil) pupils[side] = fx.pupil === 'constrict' ? 0.6 : 1.5;
       }
       scene.setStates((e) => (active.has(e.info.id) ? 'active' : involved.has(e.info.id) ? 'involved' : 'ghost'));
       scene.setJointAngles(angles);
+      scene.setPupils(pupils);
 
       const routeChanged = prev.kind !== 'pathway' || prev.pathwayId !== m.pathwayId || prev.origin !== m.origin;
       if (routeChanged) {
@@ -632,7 +640,7 @@ async function main() {
 
   // ---------- toolbar ----------
   const toolbar = $('#toolbar');
-  const views: [ViewPreset, string][] = [['oblique', '기본'], ['left', '왼쪽'], ['right', '오른쪽'], ['anterior', '앞'], ['posterior', '뒤'], ['superior', '위']];
+  const views: [ViewPreset, string][] = [['oblique', '기본'], ['left', '왼쪽'], ['right', '오른쪽'], ['anterior', '앞'], ['posterior', '뒤'], ['superior', '위'], ['body', '전신']];
   const viewGroup = el('div', { className: 'button-group' });
   for (const [preset, label] of views) {
     const b = el('button', {}, label);

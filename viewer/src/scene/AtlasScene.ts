@@ -28,13 +28,16 @@ export interface AtlasEntry {
   state: MeshState;
 }
 
-export type ViewPreset = 'anterior' | 'posterior' | 'left' | 'right' | 'superior' | 'oblique';
+export type ViewPreset = 'anterior' | 'posterior' | 'left' | 'right' | 'superior' | 'oblique' | 'body';
 
 /** Atlas data is RAS mm (z up); three.js is y up. Anterior ends up on -z. */
 export const rasToThree = ([x, y, z]: Vec3) => new THREE.Vector3(x, z, -y);
 
 const BRAIN_CENTER = rasToThree([0, -20, 8]);
 const HOME_DISTANCE = 520;
+/** the whole body (BodyParts3D ghost): its middle and how far back the camera must stand to take it in */
+const BODY_CENTER = rasToThree([0, -90, -720]);
+const BODY_DISTANCE = 3400;
 const VIEW_DIRECTIONS: Record<ViewPreset, THREE.Vector3> = {
   anterior: new THREE.Vector3(0, 0, -1),
   posterior: new THREE.Vector3(0, 0, 1),
@@ -42,6 +45,7 @@ const VIEW_DIRECTIONS: Record<ViewPreset, THREE.Vector3> = {
   right: new THREE.Vector3(1, 0, 0),
   superior: new THREE.Vector3(0, 1, 0.001),
   oblique: new THREE.Vector3(-0.75, 0.35, -0.6).normalize(),
+  body: new THREE.Vector3(-0.35, 0.08, -0.93).normalize(),
 };
 const ACCENT = '#a0e7ff';
 /** after this long without input the loop drops to every other frame (pulses and drift stay smooth enough) */
@@ -84,7 +88,7 @@ export class AtlasScene {
 
   private readonly renderer: THREE.WebGLRenderer;
   private readonly scene = new THREE.Scene();
-  private readonly camera = new THREE.PerspectiveCamera(32, 1, 1, 6000);
+  private readonly camera = new THREE.PerspectiveCamera(32, 1, 1, 20000);
   private readonly controls: OrbitControls;
   private readonly root = new THREE.Group();
   private readonly background: MistSea;
@@ -138,7 +142,7 @@ export class AtlasScene {
     this.controls.enableDamping = true;
     this.controls.dampingFactor = 0.12;
     this.controls.minDistance = 30;
-    this.controls.maxDistance = 1200;
+    this.controls.maxDistance = 4500; // far enough to take in the whole body
     this.controls.addEventListener('start', () => (this.fly = null));
     this.controls.addEventListener('change', () => this.poke());
     this.setView('oblique', false);
@@ -209,6 +213,7 @@ export class AtlasScene {
     if (missing.length) throw new Error(`meshes listed in the manifest but absent from the GLB: ${missing.join(', ')}`);
 
     this.buildJoints(gltf.scene, manifest.joints ?? []);
+    this.buildPupils(gltf.scene);
     gltf.scene.rotation.x = -Math.PI / 2; // RAS -> y-up, see rasToThree
     this.root.add(gltf.scene);
     this.root.updateMatrixWorld(true);
@@ -314,17 +319,39 @@ export class AtlasScene {
     }
     atlasRoot.updateMatrixWorld(true);
     for (const info of ordered) {
-      const entry = this.entries.get(info.segment);
-      if (!entry) continue;
+      const moved = (info.segments ?? [info.segment]).map((id) => this.entries.get(id)).filter((e): e is AtlasEntry => !!e);
+      if (!moved.length) continue;
       const group = new THREE.Group();
       group.name = `joint:${info.id}`;
       group.position.set(info.pivot[0], info.pivot[1], info.pivot[2]);
       const parent = info.parent ? this.joints.get(info.parent)?.group : undefined;
       (parent ?? atlasRoot).add(group);
       group.updateMatrixWorld(true);
-      group.attach(entry.object); // keeps the mesh where it is; only the parent changes
+      for (const e of moved) group.attach(e.object); // keeps each mesh where it is; only the parent changes
       this.joints.set(info.id, { info, group, angle: 0, goal: 0 });
     }
+  }
+
+  /** the iris rings, each on a pivot at its centre so the pupil can be scaled: side -> {group, scale, goal} */
+  private readonly pupils = new Map<string, { group: THREE.Group; scale: number; goal: number }>();
+
+  private buildPupils(atlasRoot: THREE.Object3D) {
+    for (const entry of this.entries.values()) {
+      if (entry.structure.id !== 'so-iris') continue;
+      const group = new THREE.Group();
+      const c = entry.info.centroid;
+      group.position.set(c[0], c[1], c[2]);
+      atlasRoot.add(group);
+      group.updateMatrixWorld(true);
+      group.attach(entry.object);
+      this.pupils.set(entry.info.side, { group, scale: 1, goal: 1 });
+    }
+  }
+
+  /** Pupil size per side as a scale of the iris ring: < 1 constricts, > 1 dilates, 1 at rest. */
+  setPupils(scales: Record<string, number>) {
+    for (const [side, p] of this.pupils) p.goal = scales[side] ?? 1;
+    this.poke();
   }
 
   /** Mesh ids of the bone segments a joint moves: its own and those of every joint distal to it. */
@@ -333,7 +360,7 @@ export class AtlasScene {
     const walk = (id: string) => {
       const j = this.joints.get(id);
       if (!j) return;
-      out.push(j.info.segment);
+      out.push(...(j.info.segments ?? [j.info.segment]));
       for (const [cid, c] of this.joints) if (c.info.parent === id) walk(cid);
     };
     walk(jointId);
@@ -488,6 +515,12 @@ export class AtlasScene {
   }
 
   setView(preset: ViewPreset, animate = true) {
+    if (preset === 'body') {
+      // the whole body: the mist sinks under the feet and the camera backs off
+      this.seaGoal = BODY_CENTER.y - 900;
+      this.flyTo(BODY_CENTER.clone(), BODY_CENTER.clone().addScaledVector(VIEW_DIRECTIONS.body, BODY_DISTANCE), animate);
+      return;
+    }
     const toPos = BRAIN_CENTER.clone().addScaledVector(VIEW_DIRECTIONS[preset], HOME_DISTANCE);
     this.seaGoal = this.background.seaLevel;
     this.flyTo(BRAIN_CENTER.clone(), toPos, animate);
@@ -629,6 +662,12 @@ export class AtlasScene {
     }
     this.controls.update();
     ghostFocusDistance.value = this.camera.position.distanceTo(this.controls.target);
+    for (const p of this.pupils.values()) {
+      if (Math.abs(p.scale - p.goal) < 0.002) continue;
+      p.scale += (p.goal - p.scale) * (this.reducedMotion.matches ? 1 : 1 - Math.exp(-dt * 4));
+      p.group.scale.setScalar(p.scale);
+      this.poke();
+    }
     for (const j of this.joints.values()) {
       if (Math.abs(j.angle - j.goal) < 0.05) continue;
       const k = this.reducedMotion.matches ? 1 : 1 - Math.exp(-dt * 4);
