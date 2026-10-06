@@ -323,9 +323,12 @@ export class AtlasScene {
       if (!moved.length) continue;
       const group = new THREE.Group();
       group.name = `joint:${info.id}`;
-      group.position.set(info.pivot[0], info.pivot[1], info.pivot[2]);
-      const parent = info.parent ? this.joints.get(info.parent)?.group : undefined;
-      (parent ?? atlasRoot).add(group);
+      const parentJoint = info.parent ? this.joints.get(info.parent) : undefined;
+      // a child joint's group lives inside its parent's group, so its position is the pivot relative to
+      // the parent's pivot (the parent is unrotated while the chain is built)
+      const base = parentJoint ? parentJoint.info.pivot : [0, 0, 0];
+      group.position.set(info.pivot[0] - base[0], info.pivot[1] - base[1], info.pivot[2] - base[2]);
+      (parentJoint?.group ?? atlasRoot).add(group);
       group.updateMatrixWorld(true);
       for (const e of moved) group.attach(e.object); // keeps each mesh where it is; only the parent changes
       this.joints.set(info.id, { info, group, angle: 0, goal: 0 });

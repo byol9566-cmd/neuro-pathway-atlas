@@ -176,9 +176,10 @@ Z_T1, Z_L1, Z_CONUS = -230.0, -470.0, -495.0
 
 
 def cord_axis():
-    """z (mm, RAS) -> (x, y, radius) along the cord: the Visible Human cord down to about T1, then a
-    textbook continuation — the thoracic cord bows ~25 mm posteriorly with the kyphosis, narrows to
-    ~4.5 mm radius, swells again at the lumbosacral enlargement and tapers into the conus near L1."""
+    """z (mm, RAS) -> (x, y, radius) along the cord: the Visible Human cord (re-posed onto the body's
+    vertebral canal) down to about T1, then a continuation along the BodyParts3D canal axis
+    (data/derived/bp3d/canal_axis.json; a textbook curve if that file is missing) that narrows to ~4.5 mm
+    radius, swells at the lumbosacral enlargement and tapers into the conus just below L1."""
     global _CORD_AXIS
     if _CORD_AXIS is not None:
         return _CORD_AXIS
@@ -209,16 +210,32 @@ def cord_axis():
         for z in range(int(z_end), int(Z_T1) - 1, -1):
             pts[z] = np.array([0.0, -38.0 + 12.0 * (z_end - z) / (z_end - Z_T1), 6.0])
         z_end, x_end, y_end = Z_T1, 0.0, -26.0
-    for z in range(int(z_end) - 1, int(Z_CONUS) - 1, -1):
-        u = (z_end - z) / (z_end - Z_L1)  # 0 at the end of the data, 1 at L1
-        y = y_end - 25.0 * np.sin(np.pi * min(u, 1.0))
-        x = x_end * max(0.0, 1 - u)
-        if z > Z_L1 + 40:
-            r = 5.5 + (4.5 - 5.5) * min(u / 0.5, 1.0)  # taper into the thoracic cord
-        elif z > Z_L1:
-            r = 4.5 + 1.0 * np.sin(np.pi * (z - Z_L1) / 40.0)  # lumbosacral enlargement
+    canal = None
+    canal_file = CORD_FILE.parent.parent / "bp3d" / "canal_axis.json" if CORD_FILE is not None else None
+    if canal_file is not None and canal_file.exists():
+        import json
+        rows = sorted(json.loads(canal_file.read_text())["points"], key=lambda r: -r["z"])
+        cz = np.array([r["z"] for r in rows]); cx = np.array([r["x"] for r in rows]); cy = np.array([r["y"] for r in rows])
+        k = np.ones(3) / 3
+        cx = np.convolve(np.pad(cx, 1, mode="edge"), k, mode="valid"); cy = np.convolve(np.pad(cy, 1, mode="edge"), k, mode="valid")
+        canal = lambda z: (float(np.interp(-z, -cz, cx)), float(np.interp(-z, -cz, cy)))
+        z_l1 = float(next(r["z"] for r in rows if r["vertebra"].startswith("first lumbar")))
+    else:
+        z_l1 = Z_L1
+    z_conus = z_l1 - 25.0
+    for z in range(int(z_end) - 1, int(z_conus) - 1, -1):
+        u = (z_end - z) / (z_end - z_l1)  # 0 at the end of the data, 1 at L1
+        if canal is not None:
+            x, y = canal(z)
         else:
-            r = max(1.0, 5.0 * (z - Z_CONUS) / (Z_L1 - Z_CONUS))  # conus
+            y = y_end - 25.0 * np.sin(np.pi * min(u, 1.0))
+            x = x_end * max(0.0, 1 - u)
+        if z > z_l1 + 40:
+            r = 5.5 + (4.5 - 5.5) * min(u / 0.5, 1.0)  # taper into the thoracic cord
+        elif z > z_l1:
+            r = 4.5 + 1.0 * np.sin(np.pi * (z - z_l1) / 40.0)  # lumbosacral enlargement
+        else:
+            r = max(1.0, 5.0 * (z - z_conus) / (z_l1 - z_conus))  # conus
         pts[z] = np.array([x, y, r])
     _CORD_AXIS = pts
     return pts

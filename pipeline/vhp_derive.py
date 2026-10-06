@@ -97,44 +97,53 @@ def pituitary_parts():
     return ["end-ant-pituitary", "end-post-pituitary"]
 
 
-CORD_NOTE = ("자세 보정: Visible Human 표본은 목이 젖혀져 있어 척수가 뒤쪽으로 기울어 내려간다. "
-             "큰구멍 아래의 척수를 그 축이 수직이 되도록 돌려 놓았다(모양·굵기는 분할 결과 그대로).")
+CANAL = ROOT / "data" / "derived" / "bp3d" / "canal_axis.json"
+CORD_NOTE = ("자세 보정: Visible Human 표본은 목이 젖혀져 있어 척수가 뒤로 기울어 내려간다. 큰구멍 아래의 척수를 "
+             "BodyParts3D 전신 모델의 척추관 축(척추뼈마다 구한 척추구멍 중심)을 따라 옮겨 놓았다(모양·굵기는 분할 결과 그대로).")
+
+
+def canal_curve():
+    """z -> (x, y) of the vertebral canal from bp3d_canal_axis.py, smoothed and linearly extended"""
+    pts = json.loads(CANAL.read_text())["points"]
+    z = np.array([p["z"] for p in pts]); x = np.array([p["x"] for p in pts]); y = np.array([p["y"] for p in pts])
+    order = np.argsort(-z); z, x, y = z[order], x[order], y[order]
+    k = np.ones(3) / 3
+    xs = np.convolve(np.pad(x, 1, mode="edge"), k, mode="valid"); ys = np.convolve(np.pad(y, 1, mode="edge"), k, mode="valid")
+    def f(zq):
+        zq = np.asarray(zq, float)
+        return np.interp(-zq, -z, xs), np.interp(-zq, -z, ys)
+    return f, float(z.min())
 
 
 def straighten_cord():
-    """The specimen's neck is extended, so under the affine the cervical cord leaves the foramen magnum
-    heading 25 degrees backwards. Rotate the part below the foramen magnum about a pivot there so its
-    principal axis is vertical, blending over 20 mm so there is no kink. Shape and calibre are untouched."""
+    """Move the Visible Human cord (segmented with the specimen's neck extended) onto the body's vertebral
+    canal: below the foramen magnum every slice is shifted to the canal centre, blending in over 40 mm so
+    the medulla junction is untouched. Shape and calibre are kept."""
     src = DER / "sp-cord.M.mni.nii.gz"
-    if not src.exists():
+    if not src.exists() or not CANAL.exists():
         return
     img = sitk.ReadImage(str(src))
     mask, ras = ras_grid(img)
+    canal, _ = canal_curve()
     pts = ras[mask]
-    z0 = -62.0  # foramen magnum level in MNI
-    below = pts[pts[:, 2] < z0 - 10]
-    c = below.mean(axis=0)
-    _, _, vt = np.linalg.svd(below - c, full_matrices=False)
-    d = vt[0] / np.linalg.norm(vt[0])
-    if d[2] > 0:
-        d = -d
-    pivot = pts[np.abs(pts[:, 2] - z0) < 3].mean(axis=0)
-    target = np.array([0.0, 0.0, -1.0])
-    v = np.cross(d, target); s = np.linalg.norm(v); cth = float(d @ target)
-    k = np.array([[0, -v[2], v[1]], [v[2], 0, -v[0]], [-v[1], v[0], 0]])
-    R = np.eye(3) + k + k @ k * ((1 - cth) / (s * s)) if s > 1e-9 else np.eye(3)
-    angle = np.degrees(np.arccos(np.clip(cth, -1, 1)))
-    print(f"sp-cord: axis below the foramen magnum tilted {angle:.1f} deg (RAS dir {d.round(2)}); pivot RAS {pivot.round(1)}")
-    w = np.clip((z0 - pts[:, 2]) / 20.0, 0, 1)[:, None]  # 0 at/above the pivot, 1 from 20 mm below
-    rotated = pivot + (R @ (pts - pivot).T).T
-    moved = pts * (1 - w) + rotated * w
-    # rasterise the moved points onto the same grid (extended downwards as needed), fill the few gaps
+    z0 = -85.0
+    zs = np.round(pts[:, 2])
+    moved = pts.copy()
+    for z in np.unique(zs):
+        sel = zs == z
+        w = float(np.clip((z0 - z) / 40.0, 0, 1))
+        if w == 0:
+            continue
+        cx, cy = canal(z)
+        here = pts[sel]
+        shift = np.array([cx - here[:, 0].mean(), cy - here[:, 1].mean(), 0.0]) * w
+        moved[sel] = here + shift
+    print(f"sp-cord: re-posed onto the BodyParts3D canal (blend {z0} .. {z0 - 40})")
     o = np.array(img.GetOrigin()); dmat = np.array(img.GetDirection()).reshape(3, 3); sp = np.array(img.GetSpacing())
     lps = moved * np.array([-1, -1, 1])
     idx = np.rint(np.linalg.solve(dmat, (lps - o).T).T / sp).astype(int)
     lo = idx.min(axis=0) - 2; hi = idx.max(axis=0) + 3
-    size = hi - lo
-    arr = np.zeros(size[::-1], dtype=np.uint8)
+    arr = np.zeros((hi - lo)[::-1], dtype=np.uint8)
     ii = idx - lo
     arr[ii[:, 2], ii[:, 1], ii[:, 0]] = 1
     out = sitk.GetImageFromArray(arr)
@@ -145,7 +154,7 @@ def straighten_cord():
     out = sitk.Cast(soft > 0.5, sitk.sitkUInt8)
     sitk.WriteImage(out, str(src))
     print(f"  sp-cord.M.mni.nii.gz re-posed: {sitk.GetArrayFromImage(out).sum() / 1000:.2f} mL (was {mask.sum() / 1000:.2f} mL)")
-    return angle
+    return True
 
 
 def main():

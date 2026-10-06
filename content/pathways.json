@@ -13227,6 +13227,10 @@
           },
           "structures": [
             {
+              "id": "pn-sympathetic-trunk",
+              "side": "ipsi"
+            },
+            {
               "id": "pn-superior-cervical",
               "side": "ipsi"
             }
@@ -13244,6 +13248,10 @@
             "ko": "절후출력이 동공확대근에 작용한다. III의 부교감 축삭과 동일한 신경성분으로 혼합하지 않는다."
           },
           "structures": [
+            {
+              "id": "pn-internal-carotid-plexus",
+              "side": "ipsi"
+            },
             {
               "id": "so-iris",
               "side": "ipsi"
@@ -13291,6 +13299,10 @@
             "ko": "IML 절전 ACh가 교감신경절 Nn 수용체를 활성화한다."
           },
           "structures": [
+            {
+              "id": "pn-sympathetic-trunk",
+              "side": "ipsi"
+            },
             {
               "id": "sp-iml",
               "side": "ipsi"
@@ -13368,7 +13380,12 @@
           "description": {
             "ko": "같은 높이 또는 위아래 신경절에서 ACh–Nn 시냅스한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-sympathetic-trunk",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 교감신경줄기·척추옆신경절 · 3D 없음: 교감신경줄기·척추옆신경절"
@@ -13425,6 +13442,14 @@
           },
           "structures": [
             {
+              "id": "pn-greater-splanchnic",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-sympathetic-trunk",
+              "side": "ipsi"
+            },
+            {
               "id": "sp-iml",
               "side": "ipsi"
             }
@@ -13441,7 +13466,12 @@
           "description": {
             "ko": "복강·위창자간막·아래창자간막 신경절군에서 ACh–Nn 시냅스한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-celiac-ganglion",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 척추앞신경절군 · 3D 없음: 척추앞신경절군"
@@ -13456,6 +13486,10 @@
             "ko": "절후 NE 출력이 복부·골반 내장효과기를 조절한다. 세 신경절은 장기별 대안 경로이며 직렬이 아니다."
           },
           "structures": [
+            {
+              "id": "pn-hypogastric",
+              "side": "ipsi"
+            },
             {
               "id": "vs-stomach",
               "side": "ipsi"
@@ -13513,6 +13547,14 @@
             "ko": "절전섬유는 교감줄기·척추앞신경절의 시냅스를 우회해 부신속질에 도달한다."
           },
           "structures": [
+            {
+              "id": "pn-adrenal-branch",
+              "side": "ipsi"
+            },
+            {
+              "id": "pn-greater-splanchnic",
+              "side": "ipsi"
+            },
             {
               "id": "sp-iml",
               "side": "ipsi"
@@ -13585,6 +13627,10 @@
           },
           "structures": [
             {
+              "id": "pn-sympathetic-trunk",
+              "side": "ipsi"
+            },
+            {
               "id": "sp-iml",
               "side": "ipsi"
             }
@@ -13603,6 +13649,10 @@
             "ko": "흉부 내장으로 가는 절후가지는 척수신경의 회색가지로 돌아가는 몸벽경로와 구분한다."
           },
           "structures": [
+            {
+              "id": "pn-cardiac-nerves",
+              "side": "ipsi"
+            },
             {
               "id": "vs-heart",
               "side": "ipsi"
@@ -13874,6 +13924,10 @@
           },
           "structures": [
             {
+              "id": "pn-sympathetic-trunk",
+              "side": "ipsi"
+            },
+            {
               "id": "sp-iml",
               "side": "ipsi"
             },
@@ -13895,6 +13949,10 @@
             "ko": "절후출력은 동맥 주위얼기 등을 통해 머리·목으로 전달된다. 정리본의 머리·목은 모두 회색가지를 통과한다는 일반화는 채택하지 않았다."
           },
           "structures": [
+            {
+              "id": "pn-internal-carotid-plexus",
+              "side": "ipsi"
+            },
             {
               "id": "pn-superior-cervical",
               "side": "ipsi"
@@ -13937,6 +13995,10 @@
           },
           "structures": [
             {
+              "id": "pn-pelvic-splanchnic",
+              "side": "ipsi"
+            },
+            {
               "id": "sp-sacral-parasympathetic",
               "side": "ipsi"
             },
@@ -13958,6 +14020,10 @@
             "ko": "교감 관련 장기 평활근 반응과 체성 근육반응이 사정의 다른 국면을 조절한다. 부교감과 교감이 동일 작용을 단순 반대로 만드는 예시는 아니다."
           },
           "structures": [
+            {
+              "id": "pn-hypogastric",
+              "side": "ipsi"
+            },
             {
               "id": "sp-iml",
               "side": "ipsi"
@@ -13999,6 +14065,10 @@
           },
           "structures": [
             {
+              "id": "pn-hypogastric",
+              "side": "ipsi"
+            },
+            {
               "id": "sp-iml",
               "side": "ipsi"
             },
@@ -14020,6 +14090,10 @@
             "ko": "S2–4 부교감 출력이 배뇨근을 수축시키고 저장 관련 교감·외조임근 출력을 낮추는 협응이 필요하다. 원문은 중추 배뇨중계핵을 주지 않아 추가핵을 만들지 않았다."
           },
           "structures": [
+            {
+              "id": "pn-pelvic-splanchnic",
+              "side": "ipsi"
+            },
             {
               "id": "sp-sacral-parasympathetic",
               "side": "ipsi"
@@ -14330,6 +14404,10 @@
           },
           "structures": [
             {
+              "id": "pn-sympathetic-trunk",
+              "side": "ipsi"
+            },
+            {
               "id": "sp-iml",
               "side": "ipsi"
             }
@@ -14436,6 +14514,10 @@
             "ko": "척수 IML·말초 교감출력이 감소하여 심혈관 작용이 낮아진다."
           },
           "structures": [
+            {
+              "id": "pn-sympathetic-trunk",
+              "side": "ipsi"
+            },
             {
               "id": "sp-iml",
               "side": "ipsi"
@@ -14578,7 +14660,12 @@
           "description": {
             "ko": "장기 가까운 신경절에서 ACh–Nn 연결을 형성한다."
           },
-          "structures": [],
+          "structures": [
+            {
+              "id": "pn-pelvic-splanchnic",
+              "side": "ipsi"
+            }
+          ],
           "transmitter": "acetylcholine",
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 벽속부교감신경절 · 3D 없음: 벽속부교감신경절"
