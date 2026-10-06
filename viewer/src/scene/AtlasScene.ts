@@ -199,7 +199,7 @@ export class AtlasScene {
       // the nuclei — the tract tubes, the body shell, muscles and viscera
       const GHOST_GROUPS = new Set(['cortex', 'spinal-cord', 'tracts', 'body-shell', 'muscles', 'viscera']);
       const isOutline = isShell || GHOST_GROUPS.has(structure.group);
-      const baseColor = structureColor(manifest.groups[structure.group].color, indexInGroup.get(structure.id)!, isShell);
+      const baseColor = structure.color ? new THREE.Color(structure.color) : structureColor(manifest.groups[structure.group].color, indexInGroup.get(structure.id)!, isShell);
       if (!object.geometry.attributes.normal) object.geometry.computeVertexNormals();
       object.geometry.computeBoundsTree();
       const entry: AtlasEntry = {
@@ -337,18 +337,57 @@ export class AtlasScene {
 
   /** the iris rings, each on a pivot at its centre so the pupil can be scaled: side -> {group, scale, goal} */
   private readonly pupils = new Map<string, { group: THREE.Group; scale: number; goal: number }>();
+  /** each eyeball with its parts on a pivot at the globe's centre: side -> {group, current and goal rotation (deg about z, x)} */
+  private readonly eyes = new Map<string, { group: THREE.Group; rot: [number, number]; goal: [number, number] }>();
+  /** the lenses on pivots at their centre, scaled along the eye axis for accommodation */
+  private readonly lenses = new Map<string, { group: THREE.Group; k: number; goal: number }>();
+
+  private static readonly EYE_PARTS = new Set(['so-eyeball', 'so-lens', 'so-iris', 'so-cornea', 'so-retina', 'so-nasal-retina', 'so-temporal-retina', 'so-ciliary-body']);
 
   private buildPupils(atlasRoot: THREE.Object3D) {
+    // 1. the globes: a pivot at each eyeball's centre carrying every part of that eye
     for (const entry of this.entries.values()) {
-      if (entry.structure.id !== 'so-iris') continue;
+      if (entry.structure.id !== 'so-eyeball') continue;
       const group = new THREE.Group();
+      group.name = `eye:${entry.info.side}`;
       const c = entry.info.centroid;
       group.position.set(c[0], c[1], c[2]);
       atlasRoot.add(group);
       group.updateMatrixWorld(true);
-      group.attach(entry.object);
-      this.pupils.set(entry.info.side, { group, scale: 1, goal: 1 });
+      this.eyes.set(entry.info.side, { group, rot: [0, 0], goal: [0, 0] });
     }
+    for (const entry of this.entries.values()) {
+      if (!AtlasScene.EYE_PARTS.has(entry.structure.id)) continue;
+      const eye = this.eyes.get(entry.info.side);
+      if (eye) eye.group.attach(entry.object);
+    }
+    // 2. inside each eye: the iris on its own pivot (pupil size) and the lens on its own (accommodation)
+    for (const entry of this.entries.values()) {
+      if (entry.structure.id !== 'so-iris' && entry.structure.id !== 'so-lens') continue;
+      const eye = this.eyes.get(entry.info.side);
+      const parent = eye?.group ?? atlasRoot;
+      const base = eye ? this.entries.get(`so-eyeball.${entry.info.side}`)!.info.centroid : [0, 0, 0];
+      const group = new THREE.Group();
+      const c = entry.info.centroid;
+      group.position.set(c[0] - base[0], c[1] - base[1], c[2] - base[2]);
+      parent.add(group);
+      group.updateMatrixWorld(true);
+      group.attach(entry.object);
+      if (entry.structure.id === 'so-iris') this.pupils.set(entry.info.side, { group, scale: 1, goal: 1 });
+      else this.lenses.set(entry.info.side, { group, k: 0, goal: 0 });
+    }
+  }
+
+  /** Turn the eyes: per side [degrees about the vertical axis (+ = toward the nose), degrees of elevation]. */
+  setEyeRotations(goals: Record<string, [number, number]>) {
+    for (const [side, e] of this.eyes) e.goal = goals[side] ?? [0, 0];
+    this.poke();
+  }
+
+  /** Lens accommodation per side: 0 at rest, 1 fully thickened. */
+  setLenses(goals: Record<string, number>) {
+    for (const [side, l] of this.lenses) l.goal = goals[side] ?? 0;
+    this.poke();
   }
 
   /** Pupil size per side as a scale of the iris ring: < 1 constricts, > 1 dilates, 1 at rest. */
@@ -534,7 +573,9 @@ export class AtlasScene {
     const box = new THREE.Box3();
     for (const id of meshIds) {
       const entry = this.entries.get(id);
-      if (!entry) continue;
+      // the whole-body skin is in sensory pathways as "the skin", but framing it would shrink everything
+      // else to a dot; it is a ghost anyway
+      if (!entry || entry.structure.id === 'body-skin') continue;
       box.expandByPoint(rasToThree(entry.info.bboxMin));
       box.expandByPoint(rasToThree(entry.info.bboxMax));
     }
@@ -665,6 +706,23 @@ export class AtlasScene {
     }
     this.controls.update();
     ghostFocusDistance.value = this.camera.position.distanceTo(this.controls.target);
+    const ease = this.reducedMotion.matches ? 1 : 1 - Math.exp(-dt * 4);
+    for (const [side, e] of this.eyes) {
+      if (Math.abs(e.rot[0] - e.goal[0]) < 0.05 && Math.abs(e.rot[1] - e.goal[1]) < 0.05) continue;
+      e.rot = [e.rot[0] + (e.goal[0] - e.rot[0]) * ease, e.rot[1] + (e.goal[1] - e.rot[1]) * ease];
+      // GLB frame is RAS: +z up, +x right. Turning toward the nose: the right eye's anterior pole (+y) goes to -x,
+      // a positive rotation about +z; the left eye the opposite. Elevation is a positive rotation about +x.
+      const toward = side === 'R' ? 1 : -1;
+      const q = new THREE.Quaternion().setFromEuler(new THREE.Euler(THREE.MathUtils.degToRad(e.rot[1]), 0, THREE.MathUtils.degToRad(toward * e.rot[0]), 'XYZ'));
+      e.group.quaternion.copy(q);
+      this.poke();
+    }
+    for (const l of this.lenses.values()) {
+      if (Math.abs(l.k - l.goal) < 0.002) continue;
+      l.k += (l.goal - l.k) * ease;
+      l.group.scale.set(1 - 0.08 * l.k, 1 + 0.35 * l.k, 1 - 0.08 * l.k); // thicker along the eye axis (+y), a little narrower
+      this.poke();
+    }
     for (const p of this.pupils.values()) {
       if (Math.abs(p.scale - p.goal) < 0.002) continue;
       p.scale += (p.goal - p.scale) * (this.reducedMotion.matches ? 1 : 1 - Math.exp(-dt * 4));

@@ -1516,7 +1516,14 @@
           ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈돌림신경 (III) · 눈돌림신경 지배 눈근육·눈꺼풀올림근 · 3D 없음: 눈돌림신경 지배 눈근육·눈꺼풀올림근"
-          }
+          },
+          "effects": [
+            {
+              "eye": "adduct",
+              "side": "ipsi",
+              "angle": 20
+            }
+          ]
         }
       ],
       "lesions": [
@@ -1589,7 +1596,14 @@
           "decussation": true,
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 도르래신경 (IV) · 위빗근 · 3D 없음: 도르래신경 (IV), 위빗근"
-          }
+          },
+          "effects": [
+            {
+              "eye": "depress",
+              "side": "ipsi",
+              "angle": 12
+            }
+          ]
         }
       ],
       "lesions": [
@@ -1913,7 +1927,14 @@
           ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 갓돌림신경 (VI) · 가쪽곧은근 · 3D 없음: 갓돌림신경 (VI), 가쪽곧은근"
-          }
+          },
+          "effects": [
+            {
+              "eye": "abduct",
+              "side": "ipsi",
+              "angle": 25
+            }
+          ]
         }
       ],
       "lesions": [
@@ -6587,7 +6608,14 @@
           ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 갓돌림신경 (VI) · 가쪽곧은근 · 3D 없음: 갓돌림신경 (VI), 가쪽곧은근"
-          }
+          },
+          "effects": [
+            {
+              "eye": "adduct",
+              "side": "ipsi",
+              "angle": 15
+            }
+          ]
         },
         {
           "id": "hvor-inhibition-3",
@@ -6690,6 +6718,10 @@
           },
           "effects": [
             {
+              "lens": "accommodate",
+              "side": "ipsi"
+            },
+            {
               "pupil": "constrict",
               "side": "ipsi"
             }
@@ -6715,7 +6747,19 @@
           ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 안쪽곧은근 · 3D 없음: 안쪽곧은근"
-          }
+          },
+          "effects": [
+            {
+              "eye": "adduct",
+              "side": "ipsi",
+              "angle": 12
+            },
+            {
+              "eye": "adduct",
+              "side": "contra",
+              "angle": 12
+            }
+          ]
         }
       ],
       "lesions": []
@@ -7026,7 +7070,14 @@
           "decussation": true,
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 갓돌림신경 (VI) · 가쪽곧은근 · 3D 없음: 갓돌림신경 (VI), 가쪽곧은근"
-          }
+          },
+          "effects": [
+            {
+              "eye": "abduct",
+              "side": "contra",
+              "angle": 20
+            }
+          ]
         },
         {
           "id": "hvor-3",
@@ -7069,7 +7120,14 @@
           "neuronOrder": 4,
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈돌림신경 (III) · 안쪽곧은근 · 3D 없음: 안쪽곧은근"
-          }
+          },
+          "effects": [
+            {
+              "eye": "adduct",
+              "side": "ipsi",
+              "angle": 20
+            }
+          ]
         }
       ],
       "lesions": [

@@ -37,6 +37,8 @@ export interface ManifestStructure {
   /** atlas label ids merged into this structure (empty for outlines and non-NextBrain sources) */
   labels: number[];
   meshIds: string[];
+  /** optional colour override (e.g. the brown iris inside the sensory-organ group) */
+  color?: string;
 }
 
 /** a limb joint of the schematic body: rotating it about `axis` (RAS) through `pivot` moves `segment`
@@ -72,6 +74,10 @@ export interface StepEffect {
   side: RelativeSide;
   angle?: number;
   pupil?: 'constrict' | 'dilate';
+  /** the eyeball turns: abduction/adduction about the vertical axis, elevation/depression about the lateral */
+  eye?: 'abduct' | 'adduct' | 'elevate' | 'depress';
+  /** the lens thickens for near vision */
+  lens?: 'accommodate';
 }
 
 export interface PathwayStructureRef {

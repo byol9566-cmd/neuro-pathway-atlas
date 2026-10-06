@@ -30,11 +30,27 @@ PUPIL = {
 }
 
 
+# eye movements (the globe with its parts turns about its centre) and lens accommodation
+EYE = {
+    "cranial-vi-motor-2": [{"eye": "abduct", "side": "ipsi", "angle": 25}],
+    "cranial-iii-motor-2": [{"eye": "adduct", "side": "ipsi", "angle": 20}],
+    "cranial-iv-motor-2": [{"eye": "depress", "side": "ipsi", "angle": 12}],
+    "hvor-2": [{"eye": "abduct", "side": "contra", "angle": 20}],
+    "hvor-4": [{"eye": "adduct", "side": "ipsi", "angle": 20}],
+    "hvor-inhibition-2": [{"eye": "adduct", "side": "ipsi", "angle": 15}],
+    "accommodation-3": [{"eye": "adduct", "side": "ipsi", "angle": 12}, {"eye": "adduct", "side": "contra", "angle": 12}],
+    "accommodation-2": [{"lens": "accommodate", "side": "ipsi"}],
+}
+
+
 def main(write):
     p = json.loads(PATHWAYS.read_text(encoding="utf-8"))
     n = 0
     for pw in p["pathways"]:
         for st in pw["steps"]:
+            if st["id"] in EYE:
+                st["effects"] = [e for e in st.get("effects", []) if "eye" not in e and "lens" not in e] + EYE[st["id"]]
+                n += 1
             if st["id"] in PUPIL:
                 st["effects"] = [e for e in st.get("effects", []) if "pupil" not in e] + PUPIL[st["id"]]
                 if not any(r["id"] == "so-iris" for r in st["structures"]):

@@ -1,4 +1,5 @@
 import pathwaysJson from '../../content/pathways.json';
+import { renderCircuit } from './circuit';
 import { pathwayMeshIds, pathwayRoute, resolveSide, stepMeshIds, type PathwayRoute } from './pathways';
 import { AtlasScene, type AtlasEntry, type ViewPreset } from './scene/AtlasScene';
 import { SectionPanel, type SectionHit, type SectionMeta } from './sections/SectionPanel';
@@ -140,6 +141,8 @@ async function main() {
     if (mode.kind !== 'pathway') {
       scene.setJointAngles({});
       scene.setPupils({});
+      scene.setEyeRotations({});
+      scene.setLenses({});
     }
     if (mode.kind === 'explore') {
       scene.setStates(() => 'normal');
@@ -160,6 +163,8 @@ async function main() {
       // the bones they move are shown so the movement can be seen
       const angles: Record<string, number> = {};
       const pupils: Record<string, number> = {};
+      const eyes: Record<string, [number, number]> = {};
+      const lenses: Record<string, number> = {};
       for (const fx of pathway.steps[m.step].effects ?? []) {
         const side = resolveSide(fx.side, m.origin);
         if (fx.joint && fx.angle !== undefined) {
@@ -167,10 +172,19 @@ async function main() {
           for (const id of scene.jointChainMeshIds(`${fx.joint}.${side}`)) active.add(id);
         }
         if (fx.pupil) pupils[side] = fx.pupil === 'constrict' ? 0.6 : 1.5;
+        if (fx.eye) {
+          const a = fx.angle ?? 15;
+          const cur = eyes[side] ?? [0, 0];
+          eyes[side] = fx.eye === 'adduct' ? [cur[0] + a, cur[1]] : fx.eye === 'abduct' ? [cur[0] - a, cur[1]] : fx.eye === 'elevate' ? [cur[0], cur[1] + a] : [cur[0], cur[1] - a];
+          active.add(`so-eyeball.${side}`);
+        }
+        if (fx.lens) { lenses[side] = 1; active.add(`so-lens.${side}`); }
       }
       scene.setStates((e) => (active.has(e.info.id) ? 'active' : involved.has(e.info.id) ? 'involved' : 'ghost'));
       scene.setJointAngles(angles);
       scene.setPupils(pupils);
+      scene.setEyeRotations(eyes);
+      scene.setLenses(lenses);
 
       const routeChanged = prev.kind !== 'pathway' || prev.pathwayId !== m.pathwayId || prev.origin !== m.origin;
       if (routeChanged) {
@@ -417,6 +431,12 @@ async function main() {
       sides.append(b);
     }
     detail.append(el('div', { className: 'origin' }, el('span', {}, p.origin.ko), sides));
+
+    // the circuit diagram: every step as a node, the signal's wires between them (crossings and
+    // inhibitory endings marked). For pathways with no 3D structures this is the picture.
+    const circuit = el('details', { className: 'circuit-box', open: p.has3d === false || p.category === 'cellular' });
+    circuit.append(el('summary', {}, '회로도'), renderCircuit(p, { origin: m.origin, step: m.step, meshes: meshLookup, structures, onStep: (i) => setMode({ ...m, step: i, playing: false }) }));
+    detail.append(circuit);
 
     const steps = el('ol', { className: 'steps' });
     p.steps.forEach((st, i) => {

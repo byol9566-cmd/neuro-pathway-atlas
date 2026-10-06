@@ -4663,7 +4663,8 @@
           "R": "data/derived/vhp/so-lens.R.mni.nii.gz"
         }
       },
-      "note": "Visible Human 절편에서 분할(안구 앞극의 노란 타원), MNI 정합."
+      "note": "Visible Human 절편에서 분할(안구 앞극의 노란 타원), MNI 정합.",
+      "color": "#e9e2c4"
     },
     {
       "id": "so-iris",
@@ -4697,7 +4698,8 @@
         ],
         "bilateral": true,
         "modelNote": "기하 모형: 분할한 안구의 중심–각막 축 위, 중심에서 9.5 mm 앞에 놓인 고리(바깥 6 mm, 동공 2.5 mm). 동공 지름은 경로 효과로 변한다."
-      }
+      },
+      "color": "#7a5230"
     },
     {
       "id": "so-ciliary-body",

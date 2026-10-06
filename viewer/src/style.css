@@ -298,3 +298,30 @@ dl.keys dt { font-family: var(--mono); font-size: 12px; color: var(--accent); wh
   #app.dock-min .panel { height: 100dvh; width: 0 !important; padding-left: 0; padding-right: 0; border-left-color: transparent; }
   #section, #section.beside-detail { left: auto; right: 8px; top: 56px; bottom: 50px; width: 48%; height: auto; }
 }
+
+/* --- circuit diagram (회로도): nodes in a two-column snake, wires drawn over them --- */
+.circuit-box { margin: 12px 0 4px; }
+.circuit-box summary { font-size: 11.5px; letter-spacing: 0.14em; color: var(--accent); cursor: pointer; list-style: none; display: flex; align-items: center; gap: 6px; }
+.circuit-box summary::before { content: '▸'; font-size: 10px; transition: transform 0.2s var(--ease-ui); }
+.circuit-box[open] summary::before { transform: rotate(90deg); }
+.circuit { position: relative; margin-top: 8px; }
+.circuit-wires { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
+.circuit-wires .wire { fill: none; stroke: var(--hairline-strong); stroke-width: 1.2; }
+.circuit-wires .wire.lit { stroke: var(--accent); stroke-width: 1.6; filter: drop-shadow(0 0 4px rgba(160, 231, 255, 0.5)); }
+.circuit-wires .wire.inhib { stroke-dasharray: 3 3; }
+.circuit-wires marker path { fill: var(--text-3); stroke: var(--text-3); }
+.circuit-wires .cross-mark circle { fill: var(--surface); stroke: var(--warn); stroke-width: 1; }
+.circuit-wires .cross-mark path { stroke: var(--warn); stroke-width: 1.3; fill: none; }
+.circuit-grid { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 24px; }
+.circuit-node { text-align: left; padding: 7px 9px 8px; border-radius: var(--r-sm); background: var(--surface); border: 1px solid var(--hairline-strong); color: var(--text-2); min-height: 0; display: flex; flex-direction: column; gap: 5px; }
+.circuit-node:nth-child(4n + 3) { grid-column: 2; }
+.circuit-node:nth-child(4n + 4) { grid-column: 1; }
+.circuit-node.done { border-color: color-mix(in srgb, var(--accent) 35%, transparent); color: var(--text); }
+.circuit-node.on { border-color: var(--accent); background: var(--accent-soft); color: var(--text); box-shadow: var(--glow); }
+.circuit-head { display: flex; gap: 6px; align-items: baseline; font-size: 12px; line-height: 1.3; }
+.circuit-index { font: 500 10px/1 var(--mono); color: var(--text-3); flex: none; padding-top: 1px; }
+.circuit-node.on .circuit-index { color: var(--accent); }
+.circuit-cells { display: flex; flex-wrap: wrap; gap: 3px; }
+.circuit-cell { font-size: 10.5px; padding: 1px 6px; border-radius: 999px; border: 1px solid var(--hairline-strong); color: var(--text-2); background: rgba(255, 255, 255, 0.03); }
+.circuit-cell.more { color: var(--text-3); }
+.circuit-meta { font: 10.5px/1.2 var(--mono); color: var(--text-3); }

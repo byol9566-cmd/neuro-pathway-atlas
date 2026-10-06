@@ -583,6 +583,7 @@ def main(argv=None):
                 # atlas label ids behind this structure: lets the 2D section panel map a pixel to it
                 "labels": nb.expand_labels(s["source"]) if s["source"]["atlas"] == "nextbrain" and "shell" not in s["source"] else [],
                 "meshIds": [m[0] for m in built],
+                **({"color": s["color"]} if s.get("color") else {}),
             }
         )
         flag = " [placeholder]" if first["approx"] else ""
