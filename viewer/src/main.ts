@@ -1,5 +1,5 @@
 import pathwaysJson from '../../content/pathways.json';
-import { pathwayMeshIds, pathwayRoute, stepMeshIds, type PathwayRoute } from './pathways';
+import { pathwayMeshIds, pathwayRoute, resolveSide, stepMeshIds, type PathwayRoute } from './pathways';
 import { AtlasScene, type AtlasEntry, type ViewPreset } from './scene/AtlasScene';
 import { SectionPanel, type SectionHit, type SectionMeta } from './sections/SectionPanel';
 import './style.css';
@@ -137,6 +137,7 @@ async function main() {
     mode = next;
     window.clearInterval(timer);
 
+    if (mode.kind !== 'pathway') scene.setJointAngles({});
     if (mode.kind === 'explore') {
       scene.setStates(() => 'normal');
       scene.setRoute(null);
@@ -152,7 +153,16 @@ async function main() {
       const pathway = pathwayOf(m);
       const involved = pathwayMeshIds(pathway, m.origin, meshLookup);
       const active = new Set(stepMeshIds(pathway.steps[m.step], m.origin, meshLookup));
+      // what this step does to the body: the named joints flex or extend (the rest return to rest), and
+      // the bones they move are shown so the movement can be seen
+      const angles: Record<string, number> = {};
+      for (const fx of pathway.steps[m.step].effects ?? []) {
+        const jointId = `${fx.joint}.${resolveSide(fx.side, m.origin)}`;
+        angles[jointId] = fx.angle;
+        for (const id of scene.jointChainMeshIds(jointId)) active.add(id);
+      }
       scene.setStates((e) => (active.has(e.info.id) ? 'active' : involved.has(e.info.id) ? 'involved' : 'ghost'));
+      scene.setJointAngles(angles);
 
       const routeChanged = prev.kind !== 'pathway' || prev.pathwayId !== m.pathwayId || prev.origin !== m.origin;
       if (routeChanged) {

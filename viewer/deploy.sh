@@ -14,5 +14,7 @@ rm -rf "$stage"
 mkdir -p "$stage"
 cp -R dist/. "$stage"/
 test -d "$link" && cp -R "$link" "$stage"/.vercel
-(cd "$stage" && npx --yes vercel deploy . --prod --yes < /dev/null)
+# the first upload of a new build sometimes ends in "Not authorized" after the missing files are sent;
+# a second call then succeeds immediately
+(cd "$stage" && (npx --yes vercel deploy . --prod --yes < /dev/null || npx --yes vercel deploy . --prod --yes < /dev/null))
 mkdir -p "$(dirname "$link")" && rm -rf "$link" && cp -R "$stage"/.vercel "$link"

@@ -70,7 +70,8 @@
 - 2026-10-05 **경로 실주행 1단계**: HCP1065 다발 74개 전부 변환(`centerlines.json`), 19종을 튜브 구조로 추가·경로 31단계 연결 → 실주행 단계 56→82, 경로 38→57(`docs/pathway-routing-analysis.md`). 좌표 조사(2): RVLM은 Henderson 2016(PMC4785184) MNI 군집으로 확인·기록, CVLM·거대세포핵·피개그물핵은 공개 좌표 없음(`docs/data/structures-3d/coords-reticular-2026-10-05.md`). 빌드 426 메시.
 - 2026-10-05 배포(`1e8b91c`, https://neuro-pathway-atlas.vercel.app). **경로 실주행 2단계**: 뇌줄기·척수 내부 섬유로 12개를 교과서 단면 위치의 관으로(`apply_axis_tracts.py`, 성연 검수 표 `docs/data/structures-3d/axis-tracts-review.md`), 모형 관의 중심선 내보내기 → 실주행 단계 82→113, 경로 57→79. 빌드 450 메시, tsc·e2e 7 통과. 미배포.
 - 2026-10-05 배포(`07a25a8`). **경로 실주행 3단계**: 뇌신경 15개 경유점 관(`apply_cranial_nerves.py`, 검수 표 `cranial-nerves-review.md`), 단계 27개 연결 → 실주행 단계 113→140, 경로 79→99. 빌드 480 메시, 구조 243, tsc·e2e 7 통과. 미배포.
-- 2026-10-06 **전신 개략 모델**(`docs/data/body-model.md`): BodyParts3D(CC BY 4.0) 받아 뇌·눈 랜드마크로 MNI 정합(잔차 3~5 mm), 피부·뼈대 12·내장 22·골격근 21 구조 추가(`apply_body.py`), 경로 68단계에 근육·장기·피부 종착 연결(`apply_body_targets.py`). 뷰어: 몸·근육·내장·신경로는 선택 전 유령, 초점이 몸으로 가면 안개 바다가 가라앉음. 빌드 570 메시·구조 298, tsc·e2e 7 통과. 다음: 관절 작용 애니메이션 → 눈 세부 → 교감줄기.
+- 2026-10-06 **전신 개략 모델**(`docs/data/body-model.md`): BodyParts3D(CC BY 4.0) 받아 뇌·눈 랜드마크로 MNI 정합(잔차 3~5 mm), 피부·뼈대 12·내장 22·골격근 21 구조 추가(`apply_body.py`), 경로 68단계에 근육·장기·피부 종착 연결(`apply_body_targets.py`). 뷰어: 몸·근육·내장·신경로는 선택 전 유령, 초점이 몸으로 가면 안개 바다가 가라앉음. 빌드 570 메시·구조 298, tsc·e2e 7 통과. 다음: 관절 작용 애니메이션 → 눈 세부 → 교감줄기. 커밋 `528cf2e`, 배포.
+- 2026-10-06 **관절 작용**: 뼈 분절 끝에서 관절 피벗 12개 산출(`limb_joints`), 뷰어 피벗 사슬 + 단계 `effects`로 굽힘/폄 애니메이션(`apply_effects.py`, 8단계). 피부는 항상 유령. tsc·e2e 7 통과.
 <!-- STATUS:END -->
 
 ## 아직 수집하지 않은 주제 (우선순위 순)

@@ -39,12 +39,35 @@ export interface ManifestStructure {
   meshIds: string[];
 }
 
+/** a limb joint of the schematic body: rotating it about `axis` (RAS) through `pivot` moves `segment`
+ *  and, through the chain of child joints, everything distal to it */
+export interface ManifestJoint {
+  id: string;
+  joint: string;
+  side: 'L' | 'R';
+  name: LocalizedText;
+  pivot: Vec3;
+  axis: Vec3;
+  /** +1 when a positive angle is flexion about +x, -1 when flexion is the other way (knee, ankle) */
+  flexSign: number;
+  segment: string;
+  parent: string | null;
+}
+
 export interface Manifest {
   space: string;
   attribution: { atlas: string; title: string; citation: string; license: string; url: string }[];
   groups: Record<string, { name: LocalizedText; color: string }>;
   structures: ManifestStructure[];
   meshes: ManifestMesh[];
+  joints?: ManifestJoint[];
+}
+
+/** what a pathway step does to the body: a joint flexes (positive degrees) or extends (negative) */
+export interface StepEffect {
+  joint: string;
+  side: RelativeSide;
+  angle: number;
 }
 
 export interface PathwayStructureRef {
@@ -61,6 +84,7 @@ export interface PathwayStep {
   transmitter?: string;
   structures: PathwayStructureRef[];
   missing?: LocalizedText;
+  effects?: StepEffect[];
 }
 
 export interface Pathway {

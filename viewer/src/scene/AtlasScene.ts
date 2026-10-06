@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import { acceleratedRaycast, computeBoundsTree, disposeBoundsTree } from 'three-mesh-bvh';
-import type { Manifest, ManifestMesh, ManifestStructure, Vec3 } from '../types';
+import type { Manifest, ManifestJoint, ManifestMesh, ManifestStructure, Vec3 } from '../types';
 import { IntroParticles } from './IntroParticles';
 import { applySolidState, ghostFocusDistance, ghostMaterial, haloMaterial, sceneFloor, sceneReveal, solidMaterial, type MeshState } from './materials';
 import { PathwayCurve } from './pathwayCurve';
@@ -109,6 +109,8 @@ export class AtlasScene {
   private lastActivity = 0;
   /** where the mist surface should be: at rest under the brain, lower when the focus is on the body */
   private seaGoal = 0;
+  /** limb joints of the schematic body: pivot groups in the atlas (RAS) frame, with current and goal angles */
+  private readonly joints = new Map<string, { info: ManifestJoint; group: THREE.Group; angle: number; goal: number }>();
   private framing = { x: 0.5, y: 0.5, scale: 1 };
   private framingGoal = { x: 0.5, y: 0.5, scale: 1 };
   private framed = false;
@@ -206,6 +208,7 @@ export class AtlasScene {
     const missing = manifest.meshes.filter((m) => !this.entries.has(m.id)).map((m) => m.id);
     if (missing.length) throw new Error(`meshes listed in the manifest but absent from the GLB: ${missing.join(', ')}`);
 
+    this.buildJoints(gltf.scene, manifest.joints ?? []);
     gltf.scene.rotation.x = -Math.PI / 2; // RAS -> y-up, see rasToThree
     this.root.add(gltf.scene);
     this.root.updateMatrixWorld(true);
@@ -299,11 +302,57 @@ export class AtlasScene {
     }
   }
 
+  /** Pivot groups for the limb joints, built in the GLB's own (RAS) frame before it is rotated to y-up.
+   *  A joint's group sits at its pivot and holds the bone segment it moves; child joints are attached
+   *  inside it, so flexing the shoulder carries the elbow, wrist and hand along. */
+  private buildJoints(atlasRoot: THREE.Object3D, joints: ManifestJoint[]) {
+    const ordered = [...joints].sort((a, b) => depth(a) - depth(b));
+    function depth(j: ManifestJoint): number {
+      let d = 0;
+      for (let p = j.parent; p; d++) p = joints.find((x) => x.id === p)?.parent ?? null;
+      return d;
+    }
+    atlasRoot.updateMatrixWorld(true);
+    for (const info of ordered) {
+      const entry = this.entries.get(info.segment);
+      if (!entry) continue;
+      const group = new THREE.Group();
+      group.name = `joint:${info.id}`;
+      group.position.set(info.pivot[0], info.pivot[1], info.pivot[2]);
+      const parent = info.parent ? this.joints.get(info.parent)?.group : undefined;
+      (parent ?? atlasRoot).add(group);
+      group.updateMatrixWorld(true);
+      group.attach(entry.object); // keeps the mesh where it is; only the parent changes
+      this.joints.set(info.id, { info, group, angle: 0, goal: 0 });
+    }
+  }
+
+  /** Mesh ids of the bone segments a joint moves: its own and those of every joint distal to it. */
+  jointChainMeshIds(jointId: string): string[] {
+    const out: string[] = [];
+    const walk = (id: string) => {
+      const j = this.joints.get(id);
+      if (!j) return;
+      out.push(j.info.segment);
+      for (const [cid, c] of this.joints) if (c.info.parent === id) walk(cid);
+    };
+    walk(jointId);
+    return out;
+  }
+
+  /** Flex (positive degrees) or extend the given joints; every joint not named returns to rest. */
+  setJointAngles(angles: Record<string, number>) {
+    for (const [id, j] of this.joints) j.goal = angles[id] ?? 0;
+    this.poke();
+  }
+
   /** Assign a state to every mesh. Shells are always drawn as ghosts unless made active/involved. */
   setStates(stateOf: (entry: AtlasEntry) => MeshState) {
     for (const entry of this.entries.values()) {
       let state = stateOf(entry);
       if (entry.isOutline && state === 'normal') state = 'ghost';
+      // the skin is the body's outline and is never solid: solid it would wall off everything inside
+      if (entry.structure.id === 'body-skin') state = 'ghost';
       entry.state = state;
       const ghost = state === 'ghost';
       entry.object.material = ghost ? entry.ghost : entry.solid;
@@ -580,6 +629,14 @@ export class AtlasScene {
     }
     this.controls.update();
     ghostFocusDistance.value = this.camera.position.distanceTo(this.controls.target);
+    for (const j of this.joints.values()) {
+      if (Math.abs(j.angle - j.goal) < 0.05) continue;
+      const k = this.reducedMotion.matches ? 1 : 1 - Math.exp(-dt * 4);
+      j.angle += (j.goal - j.angle) * k;
+      const axis = new THREE.Vector3(...j.info.axis).normalize();
+      j.group.quaternion.setFromAxisAngle(axis, THREE.MathUtils.degToRad(j.angle * j.info.flexSign));
+      this.poke();
+    }
     if (Math.abs(this.background.surfaceY - this.seaGoal) > 0.5) {
       const k = this.reducedMotion.matches ? 1 : 1 - Math.exp(-dt * 3);
       this.background.setLevel(this.background.surfaceY + (this.seaGoal - this.background.surfaceY) * k);

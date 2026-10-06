@@ -444,6 +444,43 @@ def build_structure(structure: dict, nb: NextBrain):
     return out
 
 
+LIMB_SEGMENTS = {"bone-humerus", "bone-forearm", "bone-hand", "bone-femur", "bone-leg", "bone-foot"}
+# joint -> (the proximal bone whose distal end is the pivot, or None for the segment's own top end),
+#          the segment the joint moves, flexion sign about +x (RAS), Korean name
+JOINTS = [
+    ("shoulder", None, "bone-humerus", 1.0, "어깨"),
+    ("elbow", "bone-humerus", "bone-forearm", 1.0, "팔꿈치"),
+    ("wrist", "bone-forearm", "bone-hand", 1.0, "손목"),
+    ("hip", None, "bone-femur", 1.0, "엉덩관절"),
+    ("knee", "bone-femur", "bone-leg", -1.0, "무릎"),
+    ("ankle", "bone-leg", "bone-foot", -1.0, "발목"),
+]
+
+
+def limb_joints(segment_meshes: dict) -> list:
+    """Pivots for the schematic limb movement: the end of a bone is the mean of its vertices within 25 mm
+    of its top or bottom. Each joint moves one segment; the viewer chains them (shoulder > elbow > wrist)."""
+    out = []
+    for name, proximal, segment, sign, ko in JOINTS:
+        for side in ("R", "L"):
+            seg = segment_meshes.get(f"{segment}.{side}")
+            if seg is None:
+                continue
+            ref = segment_meshes.get(f"{proximal}.{side}") if proximal else seg
+            if ref is None:
+                continue
+            v = ref.vertices
+            if proximal:
+                end = v[v[:, 2] < v[:, 2].min() + 25]  # distal end of the proximal bone
+            else:
+                end = v[v[:, 2] > v[:, 2].max() - 25]  # top of the segment itself
+            pivot = end.mean(axis=0)
+            out.append({"id": f"{name}.{side}", "joint": name, "side": side, "name": {"ko": ko}, "pivot": np.round(pivot, 1).tolist(),
+                        "axis": [1.0, 0.0, 0.0], "flexSign": sign, "segment": f"{segment}.{side}",
+                        "parent": next((f"{j[0]}.{side}" for j in JOINTS if j[2] == proximal), None) if proximal else None})
+    return out
+
+
 def _load_hcp_tracts():
     p = REPO_ROOT / "data" / "derived" / "tracts" / "tracts-prepared.json"
     return json.loads(p.read_text(encoding="utf-8"))["tracts"] if p.exists() else {}
@@ -478,6 +515,7 @@ def main(argv=None):
 
     scene = trimesh.Scene()
     mesh_records, structure_records, skipped = [], [], []
+    segment_meshes = {}  # limb bone segments, for the joint pivots
     for s in structures:
         t = time.time()
         try:
@@ -490,6 +528,8 @@ def main(argv=None):
             mesh.vertex_normals  # noqa: B018 -- compute so the GLB carries smooth normals
             scene.add_geometry(mesh, node_name=mesh_id, geom_name=mesh_id)
             mesh_records.append(rec)
+            if s["id"] in LIMB_SEGMENTS:
+                segment_meshes[mesh_id] = mesh
         first = built[0][2]
         structure_records.append(
             {
@@ -527,6 +567,7 @@ def main(argv=None):
         "groups": config["groups"],
         "structures": structure_records,
         "meshes": mesh_records,
+        "joints": limb_joints(segment_meshes),
     }
     (OUT_DIR / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1))
     total_faces = sum(m["faces"] for m in mesh_records)
