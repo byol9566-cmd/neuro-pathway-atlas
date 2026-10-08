@@ -113,8 +113,10 @@ export class AtlasScene {
   private lastActivity = 0;
   /** where the mist surface should be: at rest under the brain, lower when the focus is on the body */
   private seaGoal = 0;
-  /** the "몸 드러내기" toggle: while on, the mist stays below the feet whatever is in focus */
+  /** the 전신 toggle: while on, the mist stays below the feet whatever is in focus */
   private bodyRevealed = false;
+  /** 자유 시점: the camera never moves on its own (selections and pathways do not re-frame) */
+  freeCamera = false;
   /** limb joints of the schematic body: pivot groups in the atlas (RAS) frame, with current and goal angles */
   private readonly joints = new Map<string, { info: ManifestJoint; group: THREE.Group; angle: number; goal: number }>();
   private framing = { x: 0.5, y: 0.5, scale: 1 };
@@ -594,9 +596,7 @@ export class AtlasScene {
 
   setView(preset: ViewPreset, animate = true) {
     if (preset === 'body') {
-      // the whole body: the mist sinks under the feet and the camera backs off
-      this.seaGoal = BODY_CENTER.y - 900;
-      this.flyTo(BODY_CENTER.clone(), BODY_CENTER.clone().addScaledVector(VIEW_DIRECTIONS.body, BODY_DISTANCE), animate);
+      this.revealBody(true);
       return;
     }
     const toPos = BRAIN_CENTER.clone().addScaledVector(VIEW_DIRECTIONS[preset], HOME_DISTANCE);
@@ -604,9 +604,16 @@ export class AtlasScene {
     this.flyTo(BRAIN_CENTER.clone(), toPos, animate);
   }
 
-  /** Keep the whole body above the mist (on) or let the mist cover it again (off). */
+  /** 전신: keep the whole body above the mist and, when turning on, step back to take it in; off lets the
+   *  mist cover the body again (the camera stays where it is). */
   revealBody(on: boolean) {
     this.bodyRevealed = on;
+    if (on) {
+      this.seaGoal = BODY_CENTER.y - 900;
+      this.flyTo(BODY_CENTER.clone(), BODY_CENTER.clone().addScaledVector(VIEW_DIRECTIONS.body, BODY_DISTANCE), true);
+    } else {
+      this.seaGoal = this.background.seaLevel;
+    }
     this.poke();
   }
 
@@ -628,6 +635,7 @@ export class AtlasScene {
     if (box.isEmpty()) return;
     // the sea sinks below whatever is in focus, so a muscle or an organ is seen with the body around it
     this.seaGoal = Math.min(this.background.seaLevel, box.min.y - 80);
+    if (this.freeCamera) return; // 자유 시점: the user drives the camera
     const sphere = box.getBoundingSphere(new THREE.Sphere());
     const radius = Math.max(sphere.radius, 22); // keep enough surroundings in view to stay oriented
     const distance = (radius / Math.sin(THREE.MathUtils.degToRad(this.camera.fov / 2))) * 1.25;

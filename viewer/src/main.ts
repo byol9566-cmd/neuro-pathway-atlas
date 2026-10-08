@@ -662,15 +662,16 @@ async function main() {
 
   // ---------- toolbar ----------
   const toolbar = $('#toolbar');
-  const views: [ViewPreset, string][] = [['oblique', '기본'], ['left', '왼쪽'], ['right', '오른쪽'], ['anterior', '앞'], ['posterior', '뒤'], ['superior', '위'], ['body', '전신']];
+  const views: [ViewPreset, string][] = [['oblique', '기본'], ['left', '왼쪽'], ['right', '오른쪽'], ['anterior', '앞'], ['posterior', '뒤'], ['superior', '위']];
   const viewGroup = el('div', { className: 'button-group' });
   for (const [preset, label] of views) {
     const b = el('button', {}, label);
     b.onclick = () => scene.setView(preset);
     viewGroup.append(b);
   }
-  // the body sits in the mist with only the head above it; this lifts the mist off the whole body
-  const bodyToggle = el('button', { title: '안개를 발 아래로 내려 몸 전체를 드러냅니다. 다시 누르면 원래대로.' }, '몸 드러내기');
+  // 전신: the body stands in the mist with only the head above it; this toggle sinks the mist under the
+  // feet (and steps back once to take the body in); pressed again, the mist covers the body again
+  const bodyToggle = el('button', { title: '안개를 발 아래로 내려 몸 전체를 봅니다. 다시 누르면 원래대로.' }, '전신');
   bodyToggle.setAttribute('aria-pressed', 'false');
   bodyToggle.onclick = () => {
     const on = !scene.isBodyRevealed;
@@ -678,10 +679,21 @@ async function main() {
     bodyToggle.classList.toggle('on', on);
     bodyToggle.setAttribute('aria-pressed', String(on));
   };
+  viewGroup.append(bodyToggle);
+  // 자유 시점: the camera stops following selections and pathways; the view buttons still move it
+  const freeToggle = el('button', { title: '켜면 구조·경로를 골라도 카메라가 움직이지 않습니다. 시점 버튼은 그대로 동작.' }, '자유 시점');
+  freeToggle.setAttribute('aria-pressed', 'false');
+  freeToggle.onclick = () => {
+    scene.freeCamera = !scene.freeCamera;
+    freeToggle.classList.toggle('on', scene.freeCamera);
+    freeToggle.setAttribute('aria-pressed', String(scene.freeCamera));
+  };
   const sectionToggle = el('button', { className: 'section-toggle', disabled: !sectionMeta, title: sectionMeta ? '가로 단면 패널' : '단면 데이터가 없습니다 (pipeline 빌드 필요)' }, '단면');
   sectionToggle.onclick = () => (sectionRoot.hidden ? openSection() : closeSection());
   const reset = el('button', { title: '숨긴 그룹·선택·시점을 처음 상태로' }, '기본값으로');
   reset.onclick = () => {
+    if (scene.isBodyRevealed) bodyToggle.click();
+    if (scene.freeCamera) freeToggle.click();
     for (const t of groupToggles) {
       t.checked = true;
       scene.setGroupVisible(t.dataset.group!, true);
@@ -709,7 +721,7 @@ async function main() {
       el('dt', {}, 'Esc'), el('dd', {}, '선택·경로에서 나가기'),
       el('dt', {}, '/'), el('dd', {}, '구조 검색')),
     el('p', { className: 'sub' }, '단면 패널: 휠로 높이 이동, Ctrl+휠로 확대, 드래그로 이동.'));
-  toolbar.append(viewGroup, el('div', { className: 'button-group' }, bodyToggle, sectionToggle, reset, helpToggle));
+  toolbar.append(viewGroup, el('div', { className: 'button-group' }, freeToggle, sectionToggle, reset, helpToggle));
 
   window.addEventListener('keydown', (e) => {
     if (scene.introPlaying) return scene.skipIntro();
