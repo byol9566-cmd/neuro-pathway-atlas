@@ -669,6 +669,15 @@ async function main() {
     b.onclick = () => scene.setView(preset);
     viewGroup.append(b);
   }
+  // the body sits in the mist with only the head above it; this lifts the mist off the whole body
+  const bodyToggle = el('button', { title: '안개를 발 아래로 내려 몸 전체를 드러냅니다. 다시 누르면 원래대로.' }, '몸 드러내기');
+  bodyToggle.setAttribute('aria-pressed', 'false');
+  bodyToggle.onclick = () => {
+    const on = !scene.isBodyRevealed;
+    scene.revealBody(on);
+    bodyToggle.classList.toggle('on', on);
+    bodyToggle.setAttribute('aria-pressed', String(on));
+  };
   const sectionToggle = el('button', { className: 'section-toggle', disabled: !sectionMeta, title: sectionMeta ? '가로 단면 패널' : '단면 데이터가 없습니다 (pipeline 빌드 필요)' }, '단면');
   sectionToggle.onclick = () => (sectionRoot.hidden ? openSection() : closeSection());
   const reset = el('button', { title: '숨긴 그룹·선택·시점을 처음 상태로' }, '기본값으로');
@@ -700,7 +709,7 @@ async function main() {
       el('dt', {}, 'Esc'), el('dd', {}, '선택·경로에서 나가기'),
       el('dt', {}, '/'), el('dd', {}, '구조 검색')),
     el('p', { className: 'sub' }, '단면 패널: 휠로 높이 이동, Ctrl+휠로 확대, 드래그로 이동.'));
-  toolbar.append(viewGroup, el('div', { className: 'button-group' }, sectionToggle, reset, helpToggle));
+  toolbar.append(viewGroup, el('div', { className: 'button-group' }, bodyToggle, sectionToggle, reset, helpToggle));
 
   window.addEventListener('keydown', (e) => {
     if (scene.introPlaying) return scene.skipIntro();

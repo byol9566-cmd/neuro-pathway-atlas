@@ -113,6 +113,8 @@ export class AtlasScene {
   private lastActivity = 0;
   /** where the mist surface should be: at rest under the brain, lower when the focus is on the body */
   private seaGoal = 0;
+  /** the "몸 드러내기" toggle: while on, the mist stays below the feet whatever is in focus */
+  private bodyRevealed = false;
   /** limb joints of the schematic body: pivot groups in the atlas (RAS) frame, with current and goal angles */
   private readonly joints = new Map<string, { info: ManifestJoint; group: THREE.Group; angle: number; goal: number }>();
   private framing = { x: 0.5, y: 0.5, scale: 1 };
@@ -602,6 +604,16 @@ export class AtlasScene {
     this.flyTo(BRAIN_CENTER.clone(), toPos, animate);
   }
 
+  /** Keep the whole body above the mist (on) or let the mist cover it again (off). */
+  revealBody(on: boolean) {
+    this.bodyRevealed = on;
+    this.poke();
+  }
+
+  get isBodyRevealed() {
+    return this.bodyRevealed;
+  }
+
   /** Frame the given meshes, keeping the current viewing direction. */
   focus(meshIds: Iterable<string>) {
     const box = new THREE.Box3();
@@ -778,9 +790,10 @@ export class AtlasScene {
       j.group.quaternion.setFromAxisAngle(axis, THREE.MathUtils.degToRad(j.angle * j.info.flexSign));
       this.poke();
     }
-    if (Math.abs(this.background.surfaceY - this.seaGoal) > 0.5) {
+    const seaTarget = this.bodyRevealed ? Math.min(this.seaGoal, BODY_CENTER.y - 900) : this.seaGoal;
+    if (Math.abs(this.background.surfaceY - seaTarget) > 0.5) {
       const k = this.reducedMotion.matches ? 1 : 1 - Math.exp(-dt * 3);
-      this.background.setLevel(this.background.surfaceY + (this.seaGoal - this.background.surfaceY) * k);
+      this.background.setLevel(this.background.surfaceY + (seaTarget - this.background.surfaceY) * k);
       sceneFloor.value = this.background.surfaceY;
       this.poke();
     }
