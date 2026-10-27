@@ -60,6 +60,7 @@ export class SectionPanel {
   private readonly viewport = document.createElement('div');
   private readonly slider = document.createElement('input');
   private readonly readout = document.createElement('span');
+  private readonly error = document.createElement('p');
   private readonly cache = new Map<number, Uint16Array>();
   private readonly pending = new Map<number, Promise<Uint16Array>>();
   private readonly tables: Record<OriginSide, Uint32Array> = { L: new Uint32Array(MAX_LABEL), R: new Uint32Array(MAX_LABEL) };
@@ -84,6 +85,10 @@ export class SectionPanel {
       mark.textContent = text;
       this.viewport.append(mark);
     }
+    this.error.className = 'section-error';
+    this.error.setAttribute('role', 'alert');
+    this.error.hidden = true;
+    this.viewport.append(this.error);
     this.slider.type = 'range';
     this.slider.min = '0';
     this.slider.max = String(meta.count - 1);
@@ -124,10 +129,21 @@ export class SectionPanel {
       this.drag = null;
       if (wasClick) this.onPick(this.hitAt(e.clientX, e.clientY));
     });
+    // a gesture the browser takes over (scroll, system swipe) ends the drag without a pick
+    for (const type of ['pointercancel', 'lostpointercapture']) this.viewport.addEventListener(type, () => (this.drag = null));
     this.viewport.addEventListener('pointerleave', () => this.onHover(null, 0, 0));
     new ResizeObserver(() => this.layout()).observe(this.viewport);
 
-    void this.show();
+    this.reveal();
+  }
+
+  /** Show the current slice; a slice that will not load says so in the panel instead of failing silently. */
+  private reveal() {
+    this.show().then(() => (this.error.hidden = true), (err) => {
+      console.warn(err);
+      this.error.textContent = '단면을 불러오지 못했습니다';
+      this.error.hidden = false;
+    });
   }
 
   get readoutElement() { return this.readout; }
@@ -143,7 +159,8 @@ export class SectionPanel {
     const clamped = Math.min(this.meta.count - 1, Math.max(0, index));
     if (clamped === this.index && this.current) return;
     this.index = clamped;
-    void this.show();
+    this.reveal();
+
   }
 
   /** New colours (selection changed): rebuild the lookup tables and repaint the current slice. */

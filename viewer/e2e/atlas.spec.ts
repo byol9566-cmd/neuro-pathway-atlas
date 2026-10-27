@@ -179,6 +179,80 @@ test('section panel shows the atlas labels at the chosen level and follows the s
   expect(errors).toEqual([]);
 });
 
+type Sea = { goal: number; level: number; rest: number; bodyRevealed: boolean };
+const sea = (page: Page) => page.evaluate(() => (window as any).__atlas.sea() as Sea);
+const mode = (page: Page) => page.evaluate(() => (window as any).__atlas.mode as { kind: string; step: number; playing: boolean });
+
+test('전신 and 자유 시점 toggle (aria-pressed), the mist follows the focus, and 초기화 resets both', async ({ page }) => {
+  const errors = await ready(page);
+  const body = page.getByRole('button', { name: '전신' });
+  const free = page.getByRole('button', { name: '자유 시점' });
+  await body.click();
+  await expect(body).toHaveAttribute('aria-pressed', 'true');
+  expect((await sea(page)).bodyRevealed).toBe(true);
+  await expect.poll(async () => { const s = await sea(page); return s.level < s.rest - 500; }).toBe(true); // under the feet
+  await free.click();
+  await expect(free).toHaveAttribute('aria-pressed', 'true');
+  expect(await page.evaluate(() => (window as any).__atlas.freeCamera())).toBe(true);
+
+  await page.getByRole('button', { name: '초기화' }).click();
+  await expect(body).toHaveAttribute('aria-pressed', 'false');
+  await expect(free).toHaveAttribute('aria-pressed', 'false');
+  expect(await page.evaluate(() => (window as any).__atlas.freeCamera())).toBe(false);
+  let s = await sea(page);
+  expect(s.bodyRevealed).toBe(false);
+  expect(s.goal).toBe(s.rest);
+
+  // a pathway reaching down the cord sinks the mist below it; leaving it brings the mist back up
+  await pickPathway(page, 'spinothalamic-lateral');
+  s = await sea(page);
+  expect(s.goal).toBeLessThan(s.rest);
+  await page.keyboard.press('Escape');
+  s = await sea(page);
+  expect(s.goal).toBe(s.rest);
+  expect(errors).toEqual([]);
+});
+
+test('keyboard: Enter on a focused 다음 steps and keeps the focus; Space on a focused button does not play', async ({ page }) => {
+  const errors = await ready(page);
+  await pickPathway(page, 'dcml');
+  const next = page.getByRole('button', { name: '다음 →' });
+  await page.getByRole('button', { name: '재생' }).focus();
+  await page.keyboard.press('Tab'); // 재생 → 다음
+  await expect(next).toBeFocused();
+  for (let i = 0; i < 3; i++) await page.keyboard.press('Enter');
+  expect((await mode(page)).step).toBe(3);
+  await expect(next).toBeFocused();
+
+  await page.getByRole('button', { name: '← 이전' }).focus();
+  await page.keyboard.press(' ');
+  const m = await mode(page);
+  expect(m.step).toBe(2); // Space pressed 이전…
+  expect(m.playing).toBe(false); // …and did not also start playback
+  // arrows still step from a focused button
+  await page.keyboard.press('ArrowRight');
+  expect((await mode(page)).step).toBe(3);
+  expect(errors).toEqual([]);
+});
+
+test('the circuit box stays open or shut across steps and pathways, as the reader left it', async ({ page }) => {
+  const errors = await ready(page);
+  await pickPathway(page, 'dcml');
+  const box = page.locator('#detail details.circuit-box');
+  const wasOpen = await box.evaluate((d) => (d as HTMLDetailsElement).open);
+  await box.locator('summary').click();
+  const open = !wasOpen;
+  await box.evaluate((d) => ((d as any).marked = true)); // the same element must survive a step change
+  await page.getByRole('button', { name: '다음 →' }).click();
+  await page.getByRole('button', { name: '다음 →' }).click();
+  expect(await box.evaluate((d) => [(d as HTMLDetailsElement).open, (d as any).marked])).toEqual([open, true]);
+  await expect(page.locator('#detail .circuit-node.on')).toHaveText(/^3/);
+
+  await pickPathway(page, 'papez'); // another pathway remembers the choice too
+  expect(await box.evaluate((d) => (d as HTMLDetailsElement).open)).toBe(open);
+  expect(errors).toEqual([]);
+});
+
 test.describe('phone layout', () => {
   test.use({ viewport: { width: 390, height: 844 }, hasTouch: true });
 
@@ -208,4 +282,22 @@ test.describe('phone layout', () => {
     await expect(page.locator('#detail h2')).toBeInViewport();
     expect(errors).toEqual([]);
   });
+
+  test('the toolbar wraps instead of overflowing, every button on screen and finger-sized', async ({ page }) => {
+    const errors = await ready(page);
+    const overflow = await page.locator('#toolbar').evaluate((t) => t.scrollWidth - t.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(0);
+    const coarse = await page.evaluate(() => matchMedia('(pointer: coarse)').matches);
+    const buttons = page.locator('#toolbar button');
+    expect(await buttons.count()).toBeGreaterThanOrEqual(11);
+    for (const b of await buttons.all()) {
+      await expect(b).toBeInViewport({ ratio: 1 });
+      expect((await b.boundingBox())!.height).toBeGreaterThanOrEqual(coarse ? 44 : 40);
+    }
+    // the docked sheet leaves most of the screen to the scene
+    const sheet = (await page.locator('#sidebar').boundingBox())!;
+    expect(sheet.height).toBeLessThan(844 * 0.34);
+    expect(errors).toEqual([]);
+  });
+
 });

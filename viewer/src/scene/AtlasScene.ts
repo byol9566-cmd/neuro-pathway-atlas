@@ -28,7 +28,7 @@ export interface AtlasEntry {
   state: MeshState;
 }
 
-export type ViewPreset = 'anterior' | 'posterior' | 'left' | 'right' | 'superior' | 'oblique' | 'body';
+export type ViewPreset = 'anterior' | 'posterior' | 'left' | 'right' | 'superior' | 'oblique';
 
 /** Atlas data is RAS mm (z up); three.js is y up. Anterior ends up on -z. */
 export const rasToThree = ([x, y, z]: Vec3) => new THREE.Vector3(x, z, -y);
@@ -45,8 +45,9 @@ const VIEW_DIRECTIONS: Record<ViewPreset, THREE.Vector3> = {
   right: new THREE.Vector3(1, 0, 0),
   superior: new THREE.Vector3(0, 1, 0.001),
   oblique: new THREE.Vector3(-0.75, 0.35, -0.6).normalize(),
-  body: new THREE.Vector3(-0.35, 0.08, -0.93).normalize(),
 };
+/** 전신: the body seen from the front and a little to its right */
+const BODY_DIRECTION = new THREE.Vector3(-0.35, 0.08, -0.93).normalize();
 const ACCENT = '#a0e7ff';
 /** after this long without input the loop drops to every other frame (pulses and drift stay smooth enough) */
 const IDLE_AFTER_S = 3;
@@ -154,16 +155,15 @@ export class AtlasScene {
     new ResizeObserver(() => this.resize()).observe(canvas.parentElement!);
     this.resize();
 
-    canvas.addEventListener('pointermove', (e) => {
-      const rect = canvas.getBoundingClientRect();
-      this.pointer.set(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1);
-      this.pointerClient = { x: e.clientX, y: e.clientY };
-      this.pointerDirty = true;
-      this.poke();
-    });
+    // a tap has no pointermove before it: down and up carry the position too, or the pick uses a stale one
+    canvas.addEventListener('pointermove', (e) => this.trackPointer(e));
     canvas.addEventListener('pointerleave', () => this.setHovered(null));
-    canvas.addEventListener('pointerdown', (e) => (this.downAt = { x: e.clientX, y: e.clientY }));
+    canvas.addEventListener('pointerdown', (e) => {
+      this.trackPointer(e);
+      this.downAt = { x: e.clientX, y: e.clientY };
+    });
     canvas.addEventListener('pointerup', (e) => {
+      this.trackPointer(e);
       const moved = this.downAt ? Math.hypot(e.clientX - this.downAt.x, e.clientY - this.downAt.y) : 99;
       this.downAt = null;
       if (moved >= 5 || this.intro) return;
@@ -175,6 +175,14 @@ export class AtlasScene {
       }
       this.onPick(hit);
     });
+  }
+
+  private trackPointer(e: PointerEvent) {
+    const rect = this.canvas.getBoundingClientRect();
+    this.pointer.set(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1);
+    this.pointerClient = { x: e.clientX, y: e.clientY };
+    this.pointerDirty = true;
+    this.poke();
   }
 
   async load(manifest: Manifest, glbUrl: string, onProgress: (fraction: number | null) => void = () => {}) {
@@ -608,10 +616,6 @@ export class AtlasScene {
   }
 
   setView(preset: ViewPreset, animate = true) {
-    if (preset === 'body') {
-      this.revealBody(true);
-      return;
-    }
     const toPos = BRAIN_CENTER.clone().addScaledVector(VIEW_DIRECTIONS[preset], HOME_DISTANCE);
     this.seaGoal = this.background.seaLevel;
     this.flyTo(BRAIN_CENTER.clone(), toPos, animate);
@@ -623,9 +627,9 @@ export class AtlasScene {
     this.bodyRevealed = on;
     if (on) {
       this.seaGoal = BODY_CENTER.y - 900;
-      this.flyTo(BODY_CENTER.clone(), BODY_CENTER.clone().addScaledVector(VIEW_DIRECTIONS.body, BODY_DISTANCE), true);
+      this.flyTo(BODY_CENTER.clone(), BODY_CENTER.clone().addScaledVector(BODY_DIRECTION, BODY_DISTANCE), true);
     } else {
-      this.seaGoal = this.background.seaLevel;
+      this.settleSea();
     }
     this.poke();
   }
@@ -633,6 +637,25 @@ export class AtlasScene {
   get isBodyRevealed() {
     return this.bodyRevealed;
   }
+
+  /** The mist for what is lit now: below the lowest active or involved mesh, or at rest when nothing is
+   *  (the 전신 toggle still keeps it under the feet, see frame()). */
+  settleSea() {
+    const box = new THREE.Box3();
+    for (const e of this.entries.values()) {
+      if ((e.state !== 'active' && e.state !== 'involved') || e.structure.id === 'body-skin') continue;
+      box.expandByPoint(rasToThree(e.info.bboxMin));
+      box.expandByPoint(rasToThree(e.info.bboxMax));
+    }
+    this.seaGoal = box.isEmpty() ? this.background.seaLevel : Math.min(this.background.seaLevel, box.min.y - 80);
+    this.poke();
+  }
+
+  /** where the mist is headed and where it is (world y), for tests */
+  get seaState() {
+    return { goal: this.seaGoal, level: this.background.surfaceY, rest: this.background.seaLevel, bodyRevealed: this.bodyRevealed };
+  }
+
 
   /** Frame the given meshes, keeping the current viewing direction. */
   focus(meshIds: Iterable<string>) {

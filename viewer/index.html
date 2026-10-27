@@ -15,6 +15,8 @@
   </head>
   <body>
     <div id="app">
+      <!-- first in tab order: the toolbar and the scene come before the lists in the DOM -->
+      <a id="skip-to-search" class="skip-link" href="#search">검색으로 건너뛰기</a>
       <main id="stage">
         <canvas id="canvas"></canvas>
         <div class="stage-grain" aria-hidden="true"></div>
@@ -22,13 +24,14 @@
         <div id="toolbar"></div>
         <div id="help" class="glass" hidden></div>
         <nav id="rail" class="glass" hidden aria-label="경로 단계"></nav>
-        <p id="hint"></p>
+        <p id="hint" aria-live="polite"></p>
         <button id="dock-toggle" class="glass" type="button" aria-controls="sidebar detail"></button>
         <div id="stats"></div>
         <section id="section" class="glass" hidden></section>
       </main>
       <aside id="sidebar" class="glass panel"></aside>
-      <aside id="detail" class="glass panel" hidden></aside>
+      <aside id="detail" class="glass panel" hidden aria-live="polite" aria-label="선택한 항목"></aside>
+
       <div id="tooltip" hidden></div>
       <div id="loading" role="status" aria-live="polite">
         <!-- first visit only: main.ts sets the source, so nobody else pays for the download -->

@@ -1,5 +1,5 @@
 import pathwaysJson from '../../content/pathways.json';
-import { renderCircuit } from './circuit';
+import { renderCircuit, type Circuit } from './circuit';
 import { pathwayMeshIds, pathwayRoute, resolveSide, stepMeshIds, type PathwayRoute } from './pathways';
 import { AtlasScene, type AtlasEntry, type ViewPreset } from './scene/AtlasScene';
 import { SectionPanel, type SectionHit, type SectionMeta } from './sections/SectionPanel';
@@ -49,14 +49,17 @@ function makeDraggable(panel: HTMLElement, handle: HTMLElement, bounds: HTMLElem
       const y = Math.min(Math.max(e.clientY - grabY - box.top, 0), box.height - rect.height);
       Object.assign(panel.style, { left: `${x}px`, top: `${y}px`, right: 'auto', bottom: 'auto' });
     };
+    // whichever of up / cancel comes first ends the drag and takes both listeners with it
     const up = () => {
       handle.removeEventListener('pointermove', move);
+      handle.removeEventListener('pointerup', up);
+      handle.removeEventListener('pointercancel', up);
       panel.classList.remove('dragging');
       onMoved();
     };
     handle.addEventListener('pointermove', move);
-    handle.addEventListener('pointerup', up, { once: true });
-    handle.addEventListener('pointercancel', up, { once: true });
+    handle.addEventListener('pointerup', up);
+    handle.addEventListener('pointercancel', up);
   });
   handle.addEventListener('dblclick', (e) => {
     if ((e.target as HTMLElement).closest('button, input, label')) return;
@@ -76,18 +79,24 @@ function playFilm(loading: HTMLElement) {
   let finish = () => {};
   const done = new Promise<boolean>((resolve) => {
     let settled = false;
+    const onPlaying = () => loading.classList.add('with-film');
     const settle = (played: boolean) => {
       if (settled) return;
       settled = true;
       window.clearTimeout(patience);
-      if (!played) loading.classList.remove('with-film');
+      // a late `playing` (after the patience ran out) must not bring the film back over the scene
+      video.removeEventListener('playing', onPlaying);
+      if (!played) {
+        video.pause();
+        loading.classList.remove('with-film');
+      }
       resolve(played);
     };
     finish = () => settle(!video.paused);
     // no picture after a few seconds (slow link, blocked autoplay): carry on without it
     const patience = window.setTimeout(() => video.currentTime === 0 && settle(false), 5000);
     video.addEventListener('error', () => settle(false));
-    video.addEventListener('playing', () => loading.classList.add('with-film'), { once: true });
+    video.addEventListener('playing', onPlaying, { once: true });
     video.addEventListener('timeupdate', () => video.duration - video.currentTime <= FILM_HANDOVER_S && settle(true));
     video.addEventListener('ended', () => settle(true));
     video.src = INTRO_FILM;
@@ -111,15 +120,25 @@ async function main() {
 
   const loadingBar = $('#loading-bar');
   const loadingCaption = $('#loading-caption');
+  let announced = -1;
   const showProgress = (fraction: number | null) => {
     loadingBar.classList.toggle('indeterminate', fraction === null);
     if (fraction === null) return;
     loadingBar.style.transform = `scaleX(${fraction})`;
-    loadingCaption.textContent = `신경로를 밝히는 중 · ${Math.round(fraction * 100)}%`;
+    // the caption is #loading's live region: it changes at quarter steps, not on every chunk received
+    const quarter = Math.min(4, Math.floor(fraction * 4));
+    if (quarter === announced) return;
+    announced = quarter;
+    loadingCaption.textContent = `신경로를 밝히는 중 · ${quarter * 25}%`;
   };
   showProgress(0);
 
-  const manifest: Manifest = await (await fetch(`${BASE}data/manifest.json`)).json();
+  const manifestUrl = `${BASE}data/manifest.json`;
+  const manifestResponse = await fetch(manifestUrl);
+  if (!manifestResponse.ok) throw new Error(`${manifestUrl} 응답 ${manifestResponse.status} — 아틀라스 데이터가 배포되지 않았습니다`);
+  const manifest: Manifest = await manifestResponse.json().catch(() => {
+    throw new Error(`${manifestUrl}이(가) JSON이 아닙니다 — 아틀라스 데이터가 배포되지 않았습니다`);
+  });
   const meshLookup = new Map<string, ManifestMesh>(manifest.meshes.map((m) => [m.id, m]));
   const structures = new Map<string, ManifestStructure>(manifest.structures.map((s) => [s.id, s]));
 
@@ -132,6 +151,8 @@ async function main() {
   let timer: number | undefined;
 
   const pathwayOf = (m: PathwayMode) => PATHWAYS.find((p) => p.id === m.pathwayId)!;
+  /** what is selected, ignoring the step, the origin side and playback: '' while exploring */
+  const subjectOf = (m: Mode) => (m.kind === 'pathway' ? `p:${m.pathwayId}` : m.kind === 'structure' ? `s:${m.structureId}` : '');
 
   function setMode(next: Mode, opts: { focus?: boolean } = {}) {
     const prev = mode;
@@ -149,6 +170,7 @@ async function main() {
       scene.setStates(() => 'normal');
       scene.setRoute(null);
       route = null;
+      scene.settleSea(); // a focus may have sunk it; nothing is lit now
     } else if (mode.kind === 'structure') {
       const ids = new Set(structures.get(mode.structureId)!.meshIds);
       scene.setStates((e) => (ids.has(e.info.id) ? 'active' : 'ghost'));
@@ -216,12 +238,14 @@ async function main() {
       }
     }
     renderSidebarState();
-    renderDetail(prev);
+    renderDetail();
     renderRail();
     renderHint();
     renderCallouts();
-    syncSection(true);
+    // the section jumps to a new selection's level; stepping keeps the slice the user chose
+    syncSection(subjectOf(prev) !== subjectOf(mode));
   }
+
 
   const startPathway = (p: Pathway) => setMode({ kind: 'pathway', pathwayId: p.id, origin: p.defaultOriginSide, step: 0, playing: false });
 
@@ -231,6 +255,11 @@ async function main() {
   const pathwayList = el('div', { className: 'groups' });
   const structureList = el('div', { className: 'groups' });
   const groupToggles: HTMLInputElement[] = [];
+  /** fold or unfold a sidebar group; its chevron's aria-expanded follows */
+  const setFolded = (group: Element, folded: boolean) => {
+    group.classList.toggle('collapsed', folded);
+    group.querySelector('.fold')?.setAttribute('aria-expanded', String(!folded));
+  };
   sidebar.append(
     el('header', { className: 'brand' },
       el('span', { className: 'brand-star' }, '✦'),
@@ -257,12 +286,13 @@ async function main() {
       btn.onclick = () => startPathway(p);
       items.append(btn);
     }
-    const fold = el('button', { className: 'fold', type: 'button', title: '펼치기/접기', ariaLabel: `${cat.name.ko} 펼치기` }, '›');
+    const fold = el('button', { className: 'fold', type: 'button', title: '펼치기/접기', ariaLabel: `${cat.name.ko} 목록` }, '›');
     const n3d = members.filter((p) => p.has3d !== false).length;
-    const section = el('section', { className: 'group' + (members.length > 8 ? ' collapsed' : '') },
+    const section = el('section', { className: 'group' },
       el('label', {}, cat.name.ko, el('small', {}, n3d === members.length ? String(members.length) : `${n3d}+${members.length - n3d}`), fold), items);
     section.dataset.category = cat.id;
-    fold.onclick = (e) => { e.preventDefault(); section.classList.toggle('collapsed'); };
+    setFolded(section, members.length > 8);
+    fold.onclick = (e) => { e.preventDefault(); setFolded(section, !section.classList.contains('collapsed')); };
     pathwayList.append(section);
   }
 
@@ -287,10 +317,11 @@ async function main() {
     const groupSwatch = el('span', { className: 'swatch' });
     groupSwatch.style.background = group.color;
     // long groups start folded; the chevron unfolds them, and so does selecting one of their structures
-    const fold = el('button', { className: 'fold', type: 'button', title: '펼치기/접기', ariaLabel: `${group.name.ko} 펼치기` }, '›');
-    const section = el('section', { className: 'group' + (members.length > 14 ? ' collapsed' : '') }, el('label', {}, toggle, groupSwatch, group.name.ko, el('small', {}, String(members.length)), fold), items);
+    const fold = el('button', { className: 'fold', type: 'button', title: '펼치기/접기', ariaLabel: `${group.name.ko} 목록` }, '›');
+    const section = el('section', { className: 'group' }, el('label', {}, toggle, groupSwatch, group.name.ko, el('small', {}, String(members.length)), fold), items);
     section.dataset.group = groupId;
-    fold.onclick = (e) => { e.preventDefault(); section.classList.toggle('collapsed'); };
+    setFolded(section, members.length > 14);
+    fold.onclick = (e) => { e.preventDefault(); setFolded(section, !section.classList.contains('collapsed')); };
     structureList.append(section);
   }
 
@@ -299,22 +330,38 @@ async function main() {
     for (const btn of sidebar.querySelectorAll<HTMLElement>('.item.structure, .item.pathway')) btn.hidden = !!q && !btn.dataset.search!.includes(q);
     for (const g of sidebar.querySelectorAll<HTMLElement>('.group')) {
       g.hidden = !g.querySelector('.item:not([hidden])');
-      if (q) g.classList.remove('collapsed'); // a search result must be visible
+      if (q) setFolded(g, false); // a search result must be visible
     }
   };
   search.oninput = filterStructures;
+  /** '/' and the skip link: on a phone the lists share the sheet with the selection, so go back to them */
+  const focusSearch = () => {
+    if (getComputedStyle(sidebar).display === 'none') setMode({ kind: 'explore' });
+    $('#app').classList.remove('dock-min');
+    search.focus();
+  };
+  $('#skip-to-search').onclick = (e) => {
+    e.preventDefault();
+    focusSearch();
+  };
 
   function renderSidebarState() {
     for (const b of sidebar.querySelectorAll<HTMLElement>('.item')) {
       const current = (mode.kind === 'pathway' && b.dataset.pathway === mode.pathwayId) ||
         (mode.kind === 'structure' && b.dataset.structure === mode.structureId);
       b.classList.toggle('current', current);
-      if (current) {
-        b.closest('.group')?.classList.remove('collapsed');
-        b.scrollIntoView({ block: 'nearest' });
-      }
+      if (current) b.setAttribute('aria-current', 'true');
+      else b.removeAttribute('aria-current');
+      if (!current) continue;
+      const group = b.closest('.group');
+      if (group) setFolded(group, false);
+      // scroll the list itself: scrollIntoView would also scroll the (overflow: hidden) page on a phone
+      const r = b.getBoundingClientRect();
+      const s = sidebar.getBoundingClientRect();
+      if (s.height && (r.top < s.top || r.bottom > s.bottom)) sidebar.scrollTop += r.top - s.top - (s.height - r.height) / 2;
     }
   }
+
 
   function attributionBlock() {
     const box = el('details', { className: 'attribution' }, el('summary', {}, '데이터 출처'));
@@ -340,7 +387,19 @@ async function main() {
   }
 
   // ---------- detail panel ----------
+  // Built once per subject (a structure, or a pathway). Stepping, playing and flipping the origin side only
+  // patch what changed, so focus, scroll position and the circuit box's open state stay where they were.
   const detail = $('#detail');
+  let panel: { key: string; update: (m: PathwayMode) => void; dispose: () => void } | null = null;
+  /** the 회로도 box, open or shut as the reader last left it this session (null: they have not touched it) */
+  let circuitOpen: boolean | null = (() => {
+    try {
+      const saved = sessionStorage.getItem('atlas.circuit');
+      return saved === null ? null : saved === '1';
+    } catch {
+      return null;
+    }
+  })();
 
   const compact = window.matchMedia('(max-width: 900px)');
 
@@ -378,26 +437,36 @@ async function main() {
     stage.style.setProperty('--subject-x', `${(left + right) / 2}px`);
     stage.style.setProperty('--subject-room', `${roomX}px`);
   }
-  new ResizeObserver(frameSubject).observe($('#stage'));
+  new ResizeObserver(frameSubject).observe($('#stage')); // the stage fills the window: this covers window resizes
   compact.addEventListener('change', frameSubject);
-  window.addEventListener('resize', frameSubject);
 
-  function renderDetail(prev: Mode) {
+  function renderDetail() {
+    const key = subjectOf(mode);
+    if (panel && panel.key === key) {
+      if (mode.kind === 'pathway') panel.update(mode);
+      return;
+    }
+    panel?.dispose();
+    panel = null;
     detail.hidden = mode.kind === 'explore';
     $('#app').classList.toggle('has-detail', !detail.hidden);
     if (!detail.hidden) $('#app').classList.remove('dock-min'); // a fresh selection is there to be read
-    frameSubject();
     detail.replaceChildren();
+    detail.scrollTop = 0; // and read from its title
+    frameSubject();
     if (mode.kind === 'explore') return;
-    const close = el('button', { className: 'close', title: '닫기 (Esc)' }, '×');
+    const close = el('button', { className: 'close', title: '닫기 (Esc)', ariaLabel: '닫기' }, '×');
     close.onclick = () => setMode({ kind: 'explore' });
     detail.append(close);
-    if (mode.kind === 'structure') renderStructure(structures.get(mode.structureId)!);
-    else renderPathway(mode);
-    // moving between steps of the same pathway should not replay the whole panel entrance
-    const sameSubject = prev.kind === 'pathway' && mode.kind === 'pathway' && prev.pathwayId === mode.pathwayId;
-    if (!sameSubject) staggered(detail);
+    if (mode.kind === 'structure') {
+      renderStructure(structures.get(mode.structureId)!);
+      panel = { key, update: () => {}, dispose: () => {} };
+    } else {
+      panel = { key, ...renderPathway(mode) };
+    }
+    staggered(detail);
   }
+
 
   function renderStructure(s: ManifestStructure) {
     const meshes = s.meshIds.map((id) => meshLookup.get(id)!);
@@ -428,71 +497,118 @@ async function main() {
     }
   }
 
+  /** Builds the pathway panel's skeleton; the returned `update` patches it for a step, play state or origin. */
   function renderPathway(m: PathwayMode) {
     const p = pathwayOf(m);
+    // handlers read the live mode: the skeleton outlives the mode it was built for
+    const live = () => mode as PathwayMode;
+    const go = (step: number) => setMode({ ...live(), step, playing: false });
     detail.append(el('p', { className: 'eyebrow' }, '신경경로'), el('h2', {}, p.name.ko), el('p', { className: 'sub' }, p.name.en ?? ''));
     if (p.reviewStatus === 'draft') detail.append(el('p', { className: 'warn' }, '초안: 아직 전문가 검수를 거치지 않은 설명입니다.'));
     if (p.has3d === false) detail.append(el('p', { className: 'missing' }, '이 항목은 3D로 표시할 구조가 없어 설명만 제공합니다.'));
     detail.append(el('p', {}, p.summary.ko));
 
-    const sides = el('div', { className: 'segmented' });
-    sides.style.setProperty('--index', m.origin === 'L' ? '0' : '1');
-    for (const side of ['L', 'R'] as const) {
-      const b = el('button', { className: side === m.origin ? 'on' : '' }, SIDE_LABEL[side]);
+    const sides = el('div', { className: 'segmented', role: 'group', ariaLabel: '시작하는 쪽' });
+    const sideButtons = (['L', 'R'] as const).map((side) => {
+      const b = el('button', { type: 'button' }, SIDE_LABEL[side]);
       b.dataset.origin = side;
-      b.onclick = () => setMode({ ...m, origin: side });
+      b.onclick = () => setMode({ ...live(), origin: side });
       sides.append(b);
-    }
+      return b;
+    });
     detail.append(el('div', { className: 'origin' }, el('span', {}, p.origin.ko), sides));
 
     // the circuit diagram: every step as a node, the signal's wires between them (crossings and
-    // inhibitory endings marked). For pathways with no 3D structures this is the picture.
-    const circuit = el('details', { className: 'circuit-box', open: p.has3d === false || p.category === 'cellular' });
-    circuit.append(el('summary', {}, '회로도'), renderCircuit(p, { origin: m.origin, step: m.step, meshes: meshLookup, structures, onStep: (i) => setMode({ ...m, step: i, playing: false }) }));
-    detail.append(circuit);
+    // inhibitory endings marked). For pathways with no 3D structures this is the picture, so it always opens.
+    const summary = el('summary', {}, '회로도');
+    const circuitBox = el('details', { className: 'circuit-box', open: p.has3d === false || (circuitOpen ?? p.category === 'cellular') });
+    summary.onclick = () => {
+      circuitOpen = !circuitBox.open; // the click has not toggled it yet
+      try { sessionStorage.setItem('atlas.circuit', circuitOpen ? '1' : '0'); } catch { /* private mode: this page only */ }
+    };
+    detail.append(circuitBox);
+    let circuit: Circuit | null = null;
+    let circuitSide: OriginSide | null = null;
 
     const steps = el('ol', { className: 'steps' });
-    p.steps.forEach((st, i) => {
-      const li = el('li', { className: i === m.step ? 'on' : i < m.step ? 'done' : '' });
-      const head = el('button', { className: 'step-head' }, st.title.ko);
-      head.onclick = () => setMode({ ...m, step: i, playing: false });
-      li.append(head);
-      if (i === m.step) {
-        const body = el('div', { className: 'step-body' });
-        const tags = el('p', { className: 'tags' });
-        if (st.neuronOrder) tags.append(el('span', {}, `${st.neuronOrder}차 뉴런`));
-        if (st.decussation) tags.append(el('span', { className: 'cross' }, '교차'));
-        const shown = new Set<string>();
-        for (const id of stepMeshIds(st, m.origin, meshLookup)) {
-          const mesh = meshLookup.get(id)!;
-          shown.add(mesh.structureId);
-          tags.append(el('span', { className: 'struct' }, `${structures.get(mesh.structureId)!.name.ko} · ${SIDE_LABEL[mesh.side]}`));
-        }
-        // a structure the atlas has no mesh for still gets named, muted, so the learner knows it belongs here
-        for (const ref of st.structures) {
-          if (shown.has(ref.id)) continue;
-          tags.append(el('span', { className: 'struct no-mesh' }, structures.get(ref.id)?.name.ko ?? ref.id, el('em', {}, '3D 없음')));
-        }
-        body.append(tags, el('p', {}, st.description.ko));
-        if (st.missing) body.append(el('p', { className: 'missing' }, st.missing.ko));
-        li.append(body);
-      }
-      steps.append(li);
+    const items = p.steps.map((st, i) => {
+      const head = el('button', { className: 'step-head', type: 'button' }, st.title.ko);
+      head.onclick = () => go(i);
+      return steps.appendChild(el('li', {}, head));
     });
     detail.append(steps);
+    let body: HTMLElement | null = null;
+    let bodyFor = '';
 
-    const prev = el('button', { disabled: m.step === 0 }, '← 이전');
-    prev.onclick = () => setMode({ ...m, step: m.step - 1, playing: false });
-    const play = el('button', { className: 'primary' }, m.playing ? '일시정지' : '재생');
-    play.onclick = () => togglePlay(m);
-    const next = el('button', { disabled: m.step === p.steps.length - 1 }, '다음 →');
-    next.onclick = () => setMode({ ...m, step: m.step + 1, playing: false });
+    const prev = el('button', { type: 'button' }, '← 이전');
+    prev.onclick = () => go(live().step - 1);
+    const play = el('button', { className: 'primary', type: 'button' });
+    play.onclick = () => togglePlay(live());
+    const next = el('button', { type: 'button' }, '다음 →');
+    next.onclick = () => go(live().step + 1);
     detail.append(el('div', { className: 'transport' }, prev, play, next));
 
     detail.append(el('h3', {}, '병변과 증상'));
     const lesions = el('dl', { className: 'lesions' });
     for (const l of p.lesions) lesions.append(el('dt', {}, l.level.ko), el('dd', {}, l.deficit.ko));
     detail.append(lesions);
+
+    const update = (m: PathwayMode) => {
+      sides.style.setProperty('--index', m.origin === 'L' ? '0' : '1');
+      for (const b of sideButtons) {
+        b.classList.toggle('on', b.dataset.origin === m.origin);
+        b.setAttribute('aria-pressed', String(b.dataset.origin === m.origin));
+      }
+      // the cell names depend on the side, so a new side redraws the diagram; a new step only re-marks it
+      if (m.origin !== circuitSide) {
+        circuit?.dispose();
+        circuit = renderCircuit(p, { origin: m.origin, step: m.step, meshes: meshLookup, structures, onStep: go });
+        circuitBox.replaceChildren(summary, circuit.root);
+        circuitSide = m.origin;
+      } else circuit!.setStep(m.step);
+      items.forEach((li, i) => {
+        li.className = i === m.step ? 'on' : i < m.step ? 'done' : '';
+        if (i === m.step) li.setAttribute('aria-current', 'step');
+        else li.removeAttribute('aria-current');
+      });
+      if (bodyFor !== `${m.step}${m.origin}`) {
+        body?.remove();
+        body = stepBody(p.steps[m.step], m.origin);
+        items[m.step].append(body);
+        bodyFor = `${m.step}${m.origin}`;
+      }
+      const last = m.step === p.steps.length - 1;
+      // a transport button that just became disabled would drop the focus to <body>: hand it to 재생
+      const stranded = (document.activeElement === prev && m.step === 0) || (document.activeElement === next && last);
+      prev.disabled = m.step === 0;
+      next.disabled = last;
+      play.textContent = m.playing ? '일시정지' : '재생';
+      if (stranded) play.focus();
+    };
+    update(m);
+    return { update, dispose: () => circuit?.dispose() };
+  }
+
+  /** The open step's tags, description and what is missing from the atlas. */
+  function stepBody(st: Pathway['steps'][number], origin: OriginSide) {
+    const body = el('div', { className: 'step-body' });
+    const tags = el('p', { className: 'tags' });
+    if (st.neuronOrder) tags.append(el('span', {}, `${st.neuronOrder}차 뉴런`));
+    if (st.decussation) tags.append(el('span', { className: 'cross' }, '교차'));
+    const shown = new Set<string>();
+    for (const id of stepMeshIds(st, origin, meshLookup)) {
+      const mesh = meshLookup.get(id)!;
+      shown.add(mesh.structureId);
+      tags.append(el('span', { className: 'struct' }, `${structures.get(mesh.structureId)!.name.ko} · ${SIDE_LABEL[mesh.side]}`));
+    }
+    // a structure the atlas has no mesh for still gets named, muted, so the learner knows it belongs here
+    for (const ref of st.structures) {
+      if (shown.has(ref.id)) continue;
+      tags.append(el('span', { className: 'struct no-mesh' }, structures.get(ref.id)?.name.ko ?? ref.id, el('em', {}, '3D 없음')));
+    }
+    body.append(tags, el('p', {}, st.description.ko));
+    if (st.missing) body.append(el('p', { className: 'missing' }, st.missing.ko));
+    return body;
   }
 
   function togglePlay(m: PathwayMode) {
@@ -502,19 +618,35 @@ async function main() {
 
   // ---------- stage: step rail, hint, callouts ----------
   const rail = $('#rail');
+  const railTitle = el('span', { className: 'rail-title' });
+  let railFor = '';
+  let ticks: HTMLButtonElement[] = [];
+  /** The ticks are built once per pathway (a focused tick keeps its focus); steps only move the marks. */
   function renderRail() {
     rail.hidden = mode.kind !== 'pathway';
-    rail.replaceChildren();
-    if (mode.kind !== 'pathway') return;
+    if (mode.kind !== 'pathway') {
+      railFor = '';
+      return;
+    }
     const m = mode;
     const p = pathwayOf(m);
-    const ticks = el('div', { className: 'rail-ticks' });
-    p.steps.forEach((st, i) => {
-      const tick = el('button', { className: `tick ${i === m.step ? 'on' : i < m.step ? 'done' : ''}`, title: st.title.ko }, String(i + 1).padStart(2, '0'));
-      tick.onclick = () => setMode({ ...m, step: i, playing: false });
-      ticks.append(tick);
+    if (railFor !== p.id) {
+      railFor = p.id;
+      const box = el('div', { className: 'rail-ticks' });
+      ticks = p.steps.map((st, i) => {
+        const tick = el('button', { className: 'tick', type: 'button', title: st.title.ko, ariaLabel: `${i + 1}단계 ${st.title.ko}` }, String(i + 1).padStart(2, '0'));
+        tick.onclick = () => setMode({ ...(mode as PathwayMode), step: i, playing: false });
+        return box.appendChild(tick);
+      });
+      rail.replaceChildren(box, railTitle);
+    }
+    ticks.forEach((tick, i) => {
+      tick.classList.toggle('on', i === m.step);
+      tick.classList.toggle('done', i < m.step);
+      if (i === m.step) tick.setAttribute('aria-current', 'step');
+      else tick.removeAttribute('aria-current');
     });
-    rail.append(ticks, el('span', { className: 'rail-title' }, p.steps[m.step].title.ko));
+    railTitle.textContent = p.steps[m.step].title.ko;
   }
 
   const hint = $('#hint');
@@ -529,23 +661,46 @@ async function main() {
   }
 
   const labels = $('#labels');
-  let callouts: { node: HTMLElement; entry: AtlasEntry }[] = [];
+  type Callout = { node: HTMLElement; label: HTMLElement; entry: AtlasEntry; w: number; h: number; x: number; y: number; visible: boolean; dy: number };
+  let callouts: Callout[] = [];
   function renderCallouts() {
     labels.replaceChildren();
     const active = [...scene.entries.values()].filter((e) => e.state === 'active' && !e.isShell).slice(0, MAX_CALLOUTS);
     callouts = active.map((entry) => {
-      const node = el('div', { className: 'callout' }, el('i', {}), el('span', {}, `${entry.structure.name.ko} · ${SIDE_LABEL[entry.info.side]}`));
+      const label = el('span', {}, `${entry.structure.name.ko} · ${SIDE_LABEL[entry.info.side]}`);
+      const node = el('div', { className: 'callout' }, el('i', {}), label);
       labels.append(node);
-      return { node, entry };
+      return { node, label, entry, w: 0, h: 0, x: 0, y: 0, visible: false, dy: 0 };
     });
   }
   scene.onFrame = () => {
-    for (const { node, entry } of callouts) {
-      const p = scene.project(entry.info.centroid);
-      node.style.opacity = p.visible ? '1' : '0';
-      node.style.transform = `translate(${p.x.toFixed(1)}px, ${p.y.toFixed(1)}px)`;
+    for (const c of callouts) {
+      const p = scene.project(c.entry.info.centroid);
+      Object.assign(c, p);
+      c.node.style.opacity = p.visible ? '1' : '0';
+      c.node.style.transform = `translate(${p.x.toFixed(1)}px, ${p.y.toFixed(1)}px)`;
+      if (!c.w) [c.w, c.h] = [c.label.offsetWidth, c.label.offsetHeight]; // measured once it has a size
+    }
+    // labels of nearby structures (the head in 전신) would stack: from the lowest up, a label that meets one
+    // already placed rises above it. Every label sits at the same offset from its point, so the points stand in.
+    const placed: { x: number; y: number; w: number; h: number }[] = [];
+    for (const c of callouts.filter((c) => c.visible).sort((a, b) => b.y - a.y)) {
+      let y = c.y;
+      for (let pass = 0, moved = true; moved && pass < MAX_CALLOUTS; pass++) {
+        moved = false;
+        for (const o of placed) {
+          if (c.x < o.x + o.w + 4 && o.x < c.x + c.w + 4 && y < o.y + o.h + 2 && o.y < y + c.h + 2) {
+            y = o.y - c.h - 2;
+            moved = true;
+          }
+        }
+      }
+      placed.push({ x: c.x, y, w: c.w, h: c.h });
+      const dy = Math.round(y - c.y);
+      if (dy !== c.dy) c.label.style.setProperty('--dy', `${(c.dy = dy)}px`);
     }
   };
+
 
   // ---------- 2D section panel ----------
   const tooltip = $('#tooltip');
@@ -591,15 +746,15 @@ async function main() {
       sectionRoot.append(header);
       makeDraggable(sectionRoot, header, $('#stage'), frameSubject);
       section = new SectionPanel(sectionRoot, sectionMeta, `${BASE}data/sections/axial/`, paintLabel);
-      const zoomOut = el('button', { title: '축소' }, '−');
+      const zoomOut = el('button', { title: '축소', ariaLabel: '단면 축소' }, '−');
       zoomOut.onclick = () => section!.setZoom(sectionZoom = Math.max(1, sectionZoom / 1.6));
-      const zoomIn = el('button', { title: '확대 (Ctrl+휠)' }, '+');
+      const zoomIn = el('button', { title: '확대 (Ctrl+휠)', ariaLabel: '단면 확대' }, '+');
       zoomIn.onclick = () => section!.setZoom(sectionZoom = Math.min(12, sectionZoom * 1.6));
       const brainstem = el('button', { title: '뇌줄기 확대' }, '뇌줄기');
       brainstem.onclick = () => { sectionZoom = 3.2; section!.centerOn(0, -32, sectionZoom); };
       const cut = el('input', { type: 'checkbox', id: 'section-cut' });
       cut.onchange = () => { scene.setSectionCut(cut.checked); refreshCap(); };
-      const close = el('button', { title: '단면 닫기' }, '×');
+      const close = el('button', { title: '단면 닫기', ariaLabel: '단면 닫기' }, '×');
       close.onclick = closeSection;
       header.append(section.readoutElement, el('span', { className: 'spacer' }), zoomOut, zoomIn, brainstem,
         el('label', { className: 'cut', title: '3D에서 이 높이 위쪽을 잘라 냅니다' }, cut, '자르기'), close);
@@ -619,6 +774,7 @@ async function main() {
     scene.setSectionPlane(section.zMm);
     syncSection(true);
     sectionToggle.classList.add('on');
+    sectionToggle.setAttribute('aria-pressed', 'true');
     $('#stage').classList.add('with-section');
     if (compact.matches) $('#app').classList.add('dock-min'); // the sheet needs the height the panel was using
     frameSubject();
@@ -638,6 +794,7 @@ async function main() {
     const cut = document.querySelector<HTMLInputElement>('#section-cut');
     if (cut) cut.checked = false;
     sectionToggle.classList.remove('on');
+    sectionToggle.setAttribute('aria-pressed', 'false');
     $('#stage').classList.remove('with-section');
     frameSubject();
   }
@@ -673,6 +830,7 @@ async function main() {
     else if (mode.kind === 'structure') setMode({ kind: 'explore' });
   };
   const stats = $('#stats');
+  stats.title = '초당 프레임 · 그리기 호출 수 · 그린 삼각형 수 (성능 확인용)';
   scene.onStats = ({ fps, calls, triangles }) => {
     stats.textContent = `${fps.toFixed(0)} fps · draw ${calls} · ${(triangles / 1000).toFixed(0)}k tri`;
     stats.dataset.fps = fps.toFixed(1);
@@ -680,7 +838,7 @@ async function main() {
 
   // ---------- toolbar ----------
   const toolbar = $('#toolbar');
-  const views: [ViewPreset, string][] = [['oblique', '기본'], ['left', '왼쪽'], ['right', '오른쪽'], ['anterior', '앞'], ['posterior', '뒤'], ['superior', '위']];
+  const views: [ViewPreset, string][] = [['oblique', '기본 시점'], ['left', '왼쪽'], ['right', '오른쪽'], ['anterior', '앞'], ['posterior', '뒤'], ['superior', '위']];
   const viewGroup = el('div', { className: 'button-group' });
   for (const [preset, label] of views) {
     const b = el('button', {}, label);
@@ -706,9 +864,10 @@ async function main() {
     freeToggle.classList.toggle('on', scene.freeCamera);
     freeToggle.setAttribute('aria-pressed', String(scene.freeCamera));
   };
-  const sectionToggle = el('button', { className: 'section-toggle', disabled: !sectionMeta, title: sectionMeta ? '가로 단면 패널' : '단면 데이터가 없습니다 (pipeline 빌드 필요)' }, '단면');
+  const sectionToggle = el('button', { className: 'section-toggle', disabled: !sectionMeta, title: sectionMeta ? '가로 단면 패널' : '단면 데이터 없음 (빌드 필요)' }, '단면');
+  sectionToggle.setAttribute('aria-pressed', 'false');
   sectionToggle.onclick = () => (sectionRoot.hidden ? openSection() : closeSection());
-  const reset = el('button', { title: '숨긴 그룹·선택·시점을 처음 상태로' }, '기본값으로');
+  const reset = el('button', { title: '숨긴 그룹·선택·검색·전신·자유 시점·시점을 처음 상태로' }, '초기화');
   reset.onclick = () => {
     if (scene.isBodyRevealed) bodyToggle.click();
     if (scene.freeCamera) freeToggle.click();
@@ -722,10 +881,15 @@ async function main() {
     scene.setView('oblique');
   };
   const help = $('#help');
-  const helpToggle = el('button', { title: '단축키와 조작법', className: 'help-toggle' }, '?');
+  const helpToggle = el('button', { title: '단축키와 조작법', ariaLabel: '단축키와 조작법', className: 'help-toggle' }, '?');
+  helpToggle.setAttribute('aria-expanded', 'false');
+  helpToggle.setAttribute('aria-controls', 'help');
   helpToggle.onclick = () => {
     help.hidden = !help.hidden;
+    // under the toolbar, however many rows it has wrapped to
+    if (!help.hidden) help.style.top = `${toolbar.offsetTop + toolbar.offsetHeight + 8}px`;
     helpToggle.classList.toggle('on', !help.hidden);
+    helpToggle.setAttribute('aria-expanded', String(!help.hidden));
   };
   help.append(
     el('h3', {}, '조작법'),
@@ -739,17 +903,23 @@ async function main() {
       el('dt', {}, 'Esc'), el('dd', {}, '선택·경로에서 나가기'),
       el('dt', {}, '/'), el('dd', {}, '구조 검색')),
     el('p', { className: 'sub' }, '단면 패널: 휠로 높이 이동, Ctrl+휠로 확대, 드래그로 이동.'));
-  toolbar.append(viewGroup, el('div', { className: 'button-group' }, freeToggle, sectionToggle, reset, helpToggle));
+  // the stats ride at the toolbar's end, so they wrap with it and never meet the hint or the panels
+  toolbar.append(viewGroup, el('div', { className: 'button-group' }, freeToggle, sectionToggle, reset, helpToggle), stats);
 
   window.addEventListener('keydown', (e) => {
     if (scene.introPlaying) return scene.skipIntro();
-    if (e.target instanceof HTMLInputElement) {
-      if (e.key === 'Escape') (e.target as HTMLInputElement).blur();
+    if (e.ctrlKey || e.metaKey || e.altKey) return; // browser and system shortcuts
+    const target = e.target instanceof Element ? e.target : null;
+    if (target?.closest('input, textarea, select')) {
+      if (e.key === 'Escape') (target as HTMLElement).blur();
       return;
     }
+    // a focused control answers its own activation keys: Space/Enter press the button, not 재생 as well.
+    // Arrows and Esc still step and leave, so a clicked (hence focused) 다음 does not trap them.
+    if ((e.key === ' ' || e.key === 'Enter') && target?.closest('button, summary, a')) return;
     if (e.key === '/') {
       e.preventDefault();
-      search.focus();
+      focusSearch();
       return;
     }
     if (e.key === 'Escape') {
@@ -777,6 +947,9 @@ async function main() {
       setMode,
       setView: (v: ViewPreset) => scene.setView(v, false),
       framing: () => scene.framingNow,
+      sea: () => scene.seaState,
+      freeCamera: () => scene.freeCamera,
+
       muscleGoals: () => scene.muscleGoals,
       section: {
         open: openSection,

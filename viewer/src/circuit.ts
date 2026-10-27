@@ -23,16 +23,30 @@ function h<K extends keyof HTMLElementTagNameMap>(tag: K, cls = '', text = ''): 
   return n;
 }
 
+export interface Circuit {
+  root: HTMLElement;
+  /** move the highlight to another step (node classes and lit wires; nothing is rebuilt) */
+  setStep: (index: number) => void;
+  /** stop watching the size; call when the diagram leaves the page */
+  dispose: () => void;
+}
+
 /** Builds the diagram; connectors are laid out once the nodes have their boxes. */
-export function renderCircuit(pathway: Pathway, opts: CircuitOptions): HTMLElement {
-  const root = h('div', 'circuit');
+export function renderCircuit(pathway: Pathway, opts: CircuitOptions): Circuit {
+  // a loop: the last step returns to a structure of the first (basal ganglia loops, Papez, VOR adaptation);
+  // its wire runs back up a rail left of the grid, which the `looped` padding keeps inside the box
+  const first = new Set(pathway.steps[0].structures.map((r) => r.id));
+  const looped = pathway.steps.length > 2 && pathway.steps[pathway.steps.length - 1].structures.some((r) => first.has(r.id));
+  const root = h('div', `circuit${looped ? ' looped' : ''}`);
   const grid = h('div', 'circuit-grid');
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   svg.setAttribute('class', 'circuit-wires');
+  svg.setAttribute('aria-hidden', 'true'); // the node buttons carry the text
   root.append(svg, grid);
+  let current = opts.step;
 
   const nodes: HTMLElement[] = pathway.steps.map((st, i) => {
-    const node = h('button', `circuit-node${i === opts.step ? ' on' : i < opts.step ? ' done' : ''}`);
+    const node = h('button', 'circuit-node');
     node.type = 'button';
     node.onclick = () => opts.onStep(i);
     const head = h('div', 'circuit-head');
@@ -46,7 +60,7 @@ export function renderCircuit(pathway: Pathway, opts: CircuitOptions): HTMLEleme
       if (s) names.add(s.name.ko.replace(/\s*\(.*?\)\s*/g, ''));
     }
     if (!names.size && st.missing) {
-      const m = st.missing.ko.match(/없음:\s*([^·3]+)/);
+      const m = st.missing.ko.match(/없음:\s*([^·]+)/);
       if (m) names.add(m[1].trim());
     }
     for (const n of [...names].slice(0, 3)) cells.append(h('span', 'circuit-cell', n));
@@ -59,6 +73,13 @@ export function renderCircuit(pathway: Pathway, opts: CircuitOptions): HTMLEleme
     grid.append(node);
     return node;
   });
+  const mark = () => nodes.forEach((node, i) => {
+    node.classList.toggle('on', i === current);
+    node.classList.toggle('done', i < current);
+    if (i === current) node.setAttribute('aria-current', 'step');
+    else node.removeAttribute('aria-current');
+  });
+  mark();
 
   const draw = () => {
     const box = root.getBoundingClientRect();
@@ -85,7 +106,7 @@ export function renderCircuit(pathway: Pathway, opts: CircuitOptions): HTMLEleme
       const inhibitory = INHIBITORY.test(step.transmitter ?? '');
       const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       path.setAttribute('d', d);
-      path.setAttribute('class', `wire${i < opts.step ? ' lit' : ''}${inhibitory ? ' inhib' : ''}`);
+      path.setAttribute('class', `wire${i < current ? ' lit' : ''}${inhibitory ? ' inhib' : ''}`);
       path.setAttribute('marker-end', inhibitory ? 'url(#circuit-bar)' : 'url(#circuit-arrow)');
       svg.append(path);
       if (step.decussation) {
@@ -99,16 +120,17 @@ export function renderCircuit(pathway: Pathway, opts: CircuitOptions): HTMLEleme
         svg.append(g);
       }
     }
-    // a loop: the last step returns to a structure of the first (basal ganglia loops, Papez, VOR adaptation)
-    const first = new Set(pathway.steps[0].structures.map((r) => r.id));
-    const last = pathway.steps[pathway.steps.length - 1];
-    if (nodes.length > 2 && last.structures.some((r) => first.has(r.id))) {
+    if (looped) {
+      // below every node, out to the rail, up past the top row, into node 1 from above: it crosses no node
       const a = nodes[nodes.length - 1].getBoundingClientRect();
       const b = nodes[0].getBoundingClientRect();
       const x0 = a.left + a.width / 2 - box.left, y0 = a.bottom - box.top;
       const x1 = b.left + b.width / 2 - box.left, y1 = b.top - box.top;
+      const below = Math.max(...nodes.map((n) => n.getBoundingClientRect().bottom)) - box.top + 9;
+      const above = Math.min(...nodes.map((n) => n.getBoundingClientRect().top)) - box.top - 8;
+      const rail = 5;
       const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-      path.setAttribute('d', `M ${x0} ${y0} C ${x0} ${y0 + 26}, ${-14} ${y0 + 26}, ${-14} ${(y0 + y1) / 2} S ${x1} ${y1 - 22}, ${x1} ${y1}`);
+      path.setAttribute('d', `M ${x0} ${y0} V ${below} H ${rail} V ${above} H ${x1} V ${y1}`);
       path.setAttribute('class', 'wire loop');
       path.setAttribute('marker-end', 'url(#circuit-arrow)');
       svg.append(path);
@@ -119,6 +141,17 @@ export function renderCircuit(pathway: Pathway, opts: CircuitOptions): HTMLEleme
     </defs>`);
   };
   requestAnimationFrame(draw);
-  new ResizeObserver(draw).observe(root);
-  return root;
+  const resize = new ResizeObserver(draw);
+  resize.observe(root);
+  return {
+    root,
+    setStep: (index) => {
+      if (index === current) return;
+      current = index;
+      mark();
+      draw();
+    },
+    dispose: () => resize.disconnect(),
+  };
 }
+

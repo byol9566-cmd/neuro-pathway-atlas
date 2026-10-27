@@ -88,4 +88,11 @@ export class WaveField {
     }
     this.texture = this.gpu.getCurrentRenderTarget(this.variable).texture;
   }
+
+  dispose() {
+    if (this.gpu) this.gpu.dispose(); // owns the render targets `texture` points into
+    else this.texture.dispose();
+
+  }
 }
+

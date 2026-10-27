@@ -322,4 +322,15 @@ export class MistSea {
     m.uViewHeight.value = viewHeight;
     m.uLevel.value = this.level;
   }
+
+  /** Free the GPU side (the sheets share one geometry; the motes have their own). */
+  dispose() {
+    this.group.removeFromParent();
+    const geometries = new Set<THREE.BufferGeometry>();
+    this.group.traverse((o) => { if ((o as THREE.Mesh).geometry) geometries.add((o as THREE.Mesh).geometry); });
+    for (const g of geometries) g.dispose();
+    for (const m of [...this.sheets, this.motes]) m.dispose();
+    this.waves.dispose();
+  }
 }
+

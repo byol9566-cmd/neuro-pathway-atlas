@@ -66,7 +66,11 @@ html, body, #app { height: 100%; margin: 0; overflow: hidden; }
 }
 .ui-in #toolbar { animation-delay: 70ms; }
 .ui-in #detail { animation-delay: 140ms; }
-.ui-in #hint, .ui-in #stats { animation-delay: 210ms; pointer-events: none; }
+.ui-in #hint, .ui-in #stats { animation-delay: 210ms; }
+.ui-in #hint { pointer-events: none; }
+/* the toolbar box spans the stage's width: only its buttons take the pointer, the gaps leave it to the scene */
+.ui-in #toolbar { pointer-events: none; }
+.ui-in #toolbar > * { pointer-events: auto; }
 @keyframes arrive { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 .rise { animation: rise 0.5s var(--ease) both; animation-delay: calc(var(--i, 0) * 45ms); }
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
@@ -154,7 +158,10 @@ dl.lesions dd { color: var(--text-2); }
 .transport { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 6px; }
 
 /* ---------- floating stage chrome ---------- */
-#toolbar { position: absolute; top: 14px; left: 312px; display: flex; gap: 8px; flex-wrap: wrap; }
+/* bounded on the right (by the detail panel when it is open) so a narrow window wraps it instead of
+   running it under the panel */
+#toolbar { position: absolute; top: 14px; left: 312px; right: 12px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.has-detail #toolbar { right: 368px; }
 .button-group { display: flex; border-radius: var(--r-md); overflow: hidden; border: 1px solid var(--hairline); background: var(--glass); -webkit-backdrop-filter: blur(14px) saturate(160%); backdrop-filter: blur(14px) saturate(160%); }
 .button-group button { border: 0; border-radius: 0; background: none; padding: 5px 11px; font-size: 12.5px; color: var(--text-2); }
 .button-group button + button { border-left: 1px solid var(--hairline); }
@@ -166,8 +173,9 @@ dl.lesions dd { color: var(--text-2); }
 dl.keys { gap: 4px 14px; margin: 8px 0; }
 dl.keys dt { font-family: var(--mono); font-size: 12px; color: var(--accent); white-space: nowrap; }
 
-#stats { position: absolute; bottom: 12px; left: 312px; font: 300 11px/1 var(--mono); color: var(--text-3); letter-spacing: 0.04em; }
-#hint { position: absolute; left: var(--subject-x, 50%); bottom: 18px; transform: translateX(-50%); margin: 0; font-size: 11.5px; letter-spacing: 0.12em; color: var(--text-2); text-shadow: 0 1px 6px #000; white-space: nowrap; }
+/* the stats ride at the end of the toolbar (main.ts moves them there): they wrap with it */
+#stats { margin-left: auto; padding: 0 2px; font: 300 11px/1 var(--mono); color: var(--text-3); letter-spacing: 0.04em; white-space: nowrap; cursor: help; }
+#hint { position: absolute; left: var(--subject-x, 50%); bottom: calc(18px + env(safe-area-inset-bottom)); transform: translateX(-50%); margin: 0; width: max-content; max-width: calc(var(--subject-room, 100%) - 24px); font-size: 11.5px; letter-spacing: 0.12em; color: var(--text-2); text-shadow: 0 1px 6px #000; text-align: center; }
 .ui-in #hint { animation-name: arrive-centered; }
 @keyframes arrive-centered { from { opacity: 0; transform: translate(-50%, 10px); } to { opacity: 1; transform: translate(-50%, 0); } }
 
@@ -189,8 +197,10 @@ dl.keys dt { font-family: var(--mono); font-size: 12px; color: var(--accent); wh
 #labels { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .callout { position: absolute; top: 0; left: 0; display: flex; align-items: flex-end; transition: opacity 0.25s; will-change: transform; }
 .callout i { width: 7px; height: 7px; margin: 0 0 -3px -3px; border-radius: 50%; background: var(--accent); box-shadow: var(--glow); flex: none; }
-.callout span { position: relative; margin: 0 0 22px 22px; padding: 1px 8px; font-size: 11.5px; letter-spacing: 0.04em; white-space: nowrap; color: var(--text); background: var(--glass-strong); border: 1px solid var(--hairline-strong); border-radius: 4px; }
-.callout span::before { content: ''; position: absolute; left: -25px; bottom: -12px; width: 30px; height: 1px; background: var(--accent); opacity: 0.7; transform: rotate(-38deg); transform-origin: left center; }
+/* --dy (main.ts) lifts a label clear of a neighbour's; the leader stays on the point and a stem joins it */
+.callout span { position: relative; margin: 0 0 22px 22px; padding: 1px 8px; font-size: 11.5px; letter-spacing: 0.04em; white-space: nowrap; color: var(--text); background: var(--glass-strong); border: 1px solid var(--hairline-strong); border-radius: 4px; transform: translateY(var(--dy, 0px)); }
+.callout span::before { content: ''; position: absolute; left: -25px; bottom: -12px; width: 30px; height: 1px; background: var(--accent); opacity: 0.7; transform: translateY(calc(-1 * var(--dy, 0px))) rotate(-38deg); transform-origin: left center; }
+.callout span::after { content: ''; position: absolute; left: -1px; top: 100%; width: 1px; height: calc(-1 * var(--dy, 0px) - 7px); background: var(--accent); opacity: 0.7; }
 
 #tooltip { position: fixed; top: 0; left: 0; pointer-events: none; background: var(--glass-strong); border: 1px solid var(--hairline-strong); border-radius: 5px; padding: 2px 8px; font-size: 12.5px; white-space: nowrap; z-index: 10; }
 
@@ -212,6 +222,7 @@ dl.keys dt { font-family: var(--mono); font-size: 12px; color: var(--accent); wh
 .section-viewport canvas { position: absolute; top: 0; left: 0; transform-origin: 0 0; }
 .section-mark { position: absolute; font-size: 10.5px; letter-spacing: 0.1em; color: var(--text-3); pointer-events: none; text-shadow: 0 0 3px #000; }
 .mark-r { left: 6px; top: 50%; } .mark-l { right: 6px; top: 50%; } .mark-a { top: 4px; left: 50%; } .mark-p { bottom: 4px; left: 50%; }
+.section-error { position: absolute; inset: auto 12px 12px; margin: 0; padding: 6px 10px; border-radius: var(--r-sm); background: var(--glass-strong); color: var(--warn-text); font-size: 12.5px; text-align: center; }
 .section-slider { writing-mode: vertical-lr; direction: rtl; width: 22px; margin: 8px 4px; accent-color: var(--accent); }
 
 /* folded structure / pathway groups */
@@ -256,26 +267,33 @@ dl.keys dt { font-family: var(--mono); font-size: 12px; color: var(--accent); wh
 
 #dock-toggle { display: none; }
 
+/* the first Tab stop: out of sight until focused */
+.skip-link { position: absolute; z-index: 30; top: 8px; left: 8px; padding: 8px 14px; border-radius: var(--r-sm); background: var(--accent); color: var(--accent-ink); font-weight: 600; text-decoration: none; transform: translateY(-200%); }
+.skip-link:focus { transform: none; outline: 2px solid var(--text); outline-offset: 2px; }
+
 /* ---------- phones and narrow windows: the scene on top, one panel docked below, nothing scrolls but the panel ---------- */
 @media (max-width: 900px) {
   #app { display: flex; flex-direction: column; height: 100dvh; }
   #stage { position: relative; inset: auto; flex: 1 1 0; min-height: 0; order: 0; }
-  .panel { position: relative; inset: auto; order: 1; flex: 0 0 auto; width: auto !important; height: 44dvh; margin: 0; padding: 16px 16px calc(16px + env(safe-area-inset-bottom));
+  /* the sheet starts low (30%) so the scene keeps most of the screen; ⌄/⌃ folds it away entirely */
+  .panel { position: relative; inset: auto; order: 1; flex: 0 0 auto; width: auto !important; height: 30dvh; margin: 0; padding: 16px 16px calc(16px + env(safe-area-inset-bottom));
     border-radius: var(--r-lg) var(--r-lg) 0 0; border-width: 1px 0 0; overscroll-behavior: contain; transition: height 0.35s var(--ease), padding 0.35s var(--ease); }
+  /* the desktop left/right offsets (id rules, so they beat .panel's inset) would shift a relative panel sideways */
+  #sidebar, #detail { left: auto; right: auto; }
   /* one panel at a time: what is selected, or else the lists */
+
   #app.has-detail #sidebar { display: none; }
   #app.dock-min .panel { height: 0; padding-top: 0; padding-bottom: 0; border-top-color: transparent; overflow: hidden; }
 
-  #toolbar { top: max(10px, env(safe-area-inset-top)); left: 0; right: 0; padding: 0 10px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-  #toolbar::-webkit-scrollbar { display: none; }
-  #toolbar > * { flex: 0 0 auto; }
-  #toolbar { gap: 6px; }
-  #toolbar button { min-height: 38px; padding-left: 9px; padding-right: 9px; font-size: 12px; letter-spacing: -0.01em; }
+  /* two rows, nothing off-screen: the views above, the toggles below, each group stretched to the width */
+  #toolbar, .has-detail #toolbar { top: max(10px, env(safe-area-inset-top)); left: 0; right: 0; padding: 0 10px; gap: 6px; }
+  #toolbar > .button-group { flex: 1 1 100%; }
+  #toolbar .button-group button { flex: 1 1 auto; min-height: 40px; padding-left: 6px; padding-right: 6px; font-size: 12px; letter-spacing: -0.01em; white-space: nowrap; }
   #help { left: 10px; right: 10px; top: 58px; max-height: calc(100% - 70px); overflow-y: auto; }
   #stats { display: none; }
-  #hint { bottom: 12px; max-width: calc(100% - 150px); white-space: normal; text-align: center; font-size: 11px; letter-spacing: 0.04em; line-height: 1.5; }
+  #hint { bottom: calc(12px + env(safe-area-inset-bottom)); max-width: calc(100% - 150px); white-space: normal; text-align: center; font-size: 11px; letter-spacing: 0.04em; line-height: 1.5; }
   #hint:empty { display: none; }
-  #rail { bottom: 54px; max-width: calc(100% - 20px); }
+  #rail { bottom: 62px; max-width: calc(100% - 20px); } /* clear of the 44 px ⌄ button */
   #dock-toggle { display: block; position: absolute; right: 10px; bottom: 10px; z-index: 6; padding: 8px 13px; border-radius: 99px; font-size: 12px; color: var(--text-2); }
 
   /* the section becomes a sheet over the lower part of the scene; the brain is framed into what is left above */
@@ -307,6 +325,7 @@ dl.keys dt { font-family: var(--mono); font-size: 12px; color: var(--accent); wh
 .circuit-box summary::before { content: '▸'; font-size: 10px; transition: transform 0.2s var(--ease-ui); }
 .circuit-box[open] summary::before { transform: rotate(90deg); }
 .circuit { position: relative; margin-top: 8px; }
+.circuit.looped { padding: 12px 0 16px 14px; } /* room for the loop wire's rail (circuit.ts) */
 .circuit-wires { position: absolute; inset: 0; pointer-events: none; overflow: visible; }
 .circuit-wires .wire { fill: none; stroke: var(--hairline-strong); stroke-width: 1.2; }
 .circuit-wires .wire.lit { stroke: var(--accent); stroke-width: 1.6; filter: drop-shadow(0 0 4px rgba(160, 231, 255, 0.5)); }
@@ -321,10 +340,18 @@ dl.keys dt { font-family: var(--mono); font-size: 12px; color: var(--accent); wh
 .circuit-node.done { border-color: color-mix(in srgb, var(--accent) 35%, transparent); color: var(--text); }
 .circuit-node.on { border-color: var(--accent); background: var(--accent-soft); color: var(--text); box-shadow: var(--glow); }
 .circuit-head { display: flex; gap: 6px; align-items: baseline; font-size: 12px; line-height: 1.3; }
-.circuit-index { font: 500 10px/1 var(--mono); color: var(--text-3); flex: none; padding-top: 1px; }
+.circuit-index { font: 500 11px/1 var(--mono); color: var(--text-3); flex: none; padding-top: 1px; }
 .circuit-node.on .circuit-index { color: var(--accent); }
 .circuit-cells { display: flex; flex-wrap: wrap; gap: 3px; }
-.circuit-cell { font-size: 10.5px; padding: 1px 6px; border-radius: 999px; border: 1px solid var(--hairline-strong); color: var(--text-2); background: rgba(255, 255, 255, 0.03); }
+.circuit-cell { font-size: 11px; padding: 1px 6px; border-radius: 999px; border: 1px solid var(--hairline-strong); color: var(--text-2); background: rgba(255, 255, 255, 0.03); }
 .circuit-cell.more { color: var(--text-3); }
-.circuit-meta { font: 10.5px/1.2 var(--mono); color: var(--text-3); }
+.circuit-meta { font: 11px/1.2 var(--mono);
+ color: var(--text-3); }
 .circuit-wires .wire.loop { stroke: var(--text-3); stroke-dasharray: 2 4; }
+
+/* fingers, not cursors: every button at least 44 px tall (WCAG 2.5.5); last, so it wins over the phone sizes */
+@media (pointer: coarse) {
+  #toolbar .button-group button, .panel button, #dock-toggle, .section-header button { min-height: 44px; }
+  .panel .close { width: 44px; height: 44px; }
+
+}
