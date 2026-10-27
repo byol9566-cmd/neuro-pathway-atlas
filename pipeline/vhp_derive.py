@@ -17,6 +17,10 @@ The wall is 1.5 mm thick (the real retina is ~0.3 mm; a thinner shell does not s
 in the mesh step) and the eye parts are written at 0.5 mm. Output: data/derived/vhp/<id>.<side>.mni.nii.gz,
 picked up by integrate_vhp.py like the segmented organs. These are approximations of the part boundary on
 a real shape, not segmentations: the manifest marks them `derived`.
+
+The cord re-posed onto the vertebral canal goes to its own file, sp-cord.M.mni-straight.nii.gz (read by the
+build and prepare_tracts.py); the projected sp-cord.M.mni.nii.gz stays as vhp_to_mni_all.py wrote it, so
+re-running this script gives the same output instead of closing and smoothing the cord once more.
 """
 import json
 from pathlib import Path
@@ -98,6 +102,7 @@ def pituitary_parts():
 
 
 CANAL = ROOT / "data" / "derived" / "bp3d" / "canal_axis.json"
+CORD_STRAIGHT = DER / "sp-cord.M.mni-straight.nii.gz"  # not *.mni.nii.gz: integrate_vhp.py must not pick it up
 CORD_NOTE = ("자세 보정: Visible Human 표본은 목이 젖혀져 있어 척수가 뒤로 기울어 내려간다. 큰구멍 아래의 척수를 "
              "BodyParts3D 전신 모델의 척추관 축(척추뼈마다 구한 척추구멍 중심)을 따라 옮겨 놓았다(모양·굵기는 분할 결과 그대로).")
 
@@ -152,8 +157,8 @@ def straighten_cord():
     out = sitk.BinaryMorphologicalClosing(out, [1, 1, 1])
     soft = sitk.SmoothingRecursiveGaussian(sitk.Cast(out, sitk.sitkFloat32), 1.0)
     out = sitk.Cast(soft > 0.5, sitk.sitkUInt8)
-    sitk.WriteImage(out, str(src))
-    print(f"  sp-cord.M.mni.nii.gz re-posed: {sitk.GetArrayFromImage(out).sum() / 1000:.2f} mL (was {mask.sum() / 1000:.2f} mL)")
+    sitk.WriteImage(out, str(CORD_STRAIGHT))
+    print(f"  {CORD_STRAIGHT.name}: {sitk.GetArrayFromImage(out).sum() / 1000:.2f} mL (projected {mask.sum() / 1000:.2f} mL)")
     return True
 
 
@@ -169,7 +174,8 @@ def main():
         for i in ids:
             derived[i] = {"organ": "뇌하수체"}
     if straighten_cord() is not None:
-        derived["sp-cord"] = {"note": CORD_NOTE}
+        # the build meshes the re-posed file instead of the content's projected one
+        derived["sp-cord"] = {"note": CORD_NOTE, "files": {"M": str(CORD_STRAIGHT.relative_to(ROOT))}}
     (DER / "derived.json").write_text(json.dumps(derived, indent=1) + "\n", encoding="utf-8")
     print("derived:", derived)
 

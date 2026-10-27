@@ -14,12 +14,9 @@ is textbook anatomy, right side in MNI (x lateral, y anterior, z superior):
   flattened discs; nodose, petrosal, Scarpa and the superior cervical ganglion are spindles along their
   nerve. Carotid sinus = dilated spindle at the bifurcation; carotid body = flattened ovoid behind it.
 """
-import json
 import sys
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-CONTENT = ROOT / "content" / "structures.json"
+from atlas_pipeline.content import STRUCTURES as CONTENT, load_structures, save_structures
 
 PETROUS = [-0.7, 0.7, 0.0]  # anteromedial direction of the right petrous axis (xy)
 COCHLEA = {"centreMni": [35, -29, -26], "axis": [0.6, 0.75, -0.3], "up": [0, 0, 1]}
@@ -53,7 +50,7 @@ MODELS = {
 
 
 def main(write):
-    data = json.loads(CONTENT.read_text(encoding="utf-8"))
+    data = load_structures()
     n = 0
     for s in data["structures"]:
         m = MODELS.get(s["id"])
@@ -68,7 +65,7 @@ def main(write):
     if missing:
         print("not in content:", missing)
     if write:
-        CONTENT.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_structures(data)
         print("written", CONTENT)
 
 

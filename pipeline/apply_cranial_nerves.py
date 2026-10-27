@@ -5,18 +5,18 @@ the pathway steps that follow them.
     pipeline/.venv/bin/python pipeline/apply_cranial_nerves.py [--write]
 
 Waypoints are textbook anatomy in MNI RAS for the right side (the left is mirrored): nucleus (taken from
-the current manifest centroid when the nucleus has a mesh) -> brainstem exit -> skull-base foramen ->
+the nucleus mesh's centroid in the mesh cache, data/derived/meshes, so a full build must come first and
+`build --only <these nerve ids>` after) -> brainstem exit -> skull-base foramen ->
 ganglion / target. No open 3D data gives these courses; the review sheet
 docs/data/structures-3d/cranial-nerves-review.md lists every waypoint for 성연.
 """
-import json
 import sys
 from pathlib import Path
 
+from atlas_pipeline.content import (cached_centroids, insert_after_group, link_step, load_pathways,
+                                    load_structures, save_pathways, save_structures, structure_index)
+
 ROOT = Path(__file__).resolve().parent.parent
-STRUCTURES = ROOT / "content" / "structures.json"
-PATHWAYS = ROOT / "content" / "pathways.json"
-MANIFEST = ROOT / "viewer" / "public" / "data" / "manifest.json"
 REVIEW = ROOT / "docs" / "data" / "structures-3d" / "cranial-nerves-review.md"
 
 # landmarks (right side, RAS mm) — foramina read from textbook relations to structures we have
@@ -109,12 +109,9 @@ NOTE = "기하 모형: 교과서 주행의 경유점(핵·뇌줄기 출구·두�
 
 
 def main(write):
-    s = json.loads(STRUCTURES.read_text(encoding="utf-8"))
-    by_id = {x["id"]: x for x in s["structures"]}
-    cent = {}
-    if MANIFEST.exists():
-        cent = {m["id"]: m["centroid"] for m in json.loads(MANIFEST.read_text(encoding="utf-8"))["meshes"]}
-    anchor = max(i for i, x in enumerate(s["structures"]) if x["group"] == "peripheral")
+    s = load_structures()
+    by_id = structure_index(s)
+    cent = cached_centroids()
     for n in NERVES:
         pts = [list(map(float, p)) for p in n["points"]]
         if n.get("nucleus"):
@@ -128,17 +125,14 @@ def main(write):
         if n["id"] in by_id:
             by_id[n["id"]].update(entry)
         else:
-            anchor += 1
-            s["structures"].insert(anchor, entry); by_id[n["id"]] = entry
-    p = json.loads(PATHWAYS.read_text(encoding="utf-8"))
+            insert_after_group(s["structures"], "peripheral", entry); by_id[n["id"]] = entry
+    p = load_pathways()
     changed = []
     for pw in p["pathways"]:
         for st in pw["steps"]:
             for sid, side in STEP_NERVES.get(st["id"], []):
-                if any(r["id"] == sid for r in st["structures"]):
-                    continue
-                st["structures"].append({"id": sid, "side": side})  # the nerve comes after the nucleus
-                changed.append((pw["id"], st["id"], sid, side))
+                if link_step(p, st["id"], sid, side):  # the nerve comes after the nucleus
+                    changed.append((pw["id"], st["id"], sid, side))
     print(f"{len(NERVES)} nerves; steps:", *changed, sep="\n  ")
     rows = ["# 뇌신경 주행 경유점 표 (성연 검수용, 2026-10-05)", "",
             "오른쪽 기준 MNI RAS mm. 첫 점은 핵 메시의 무게중심(있으면). 틀린 점을 적어 주면 `pipeline/apply_cranial_nerves.py`의 표만 고친다.", "",
@@ -146,8 +140,8 @@ def main(write):
     for n in NERVES:
         rows.append(f"| {n['id']} | {n['name']['ko']} | " + " → ".join(f"({p[0]:g}, {p[1]:g}, {p[2]:g})" for p in by_id[n['id']]['source']['params']['points']) + f" | {n['textbook']} |")
     if write:
-        STRUCTURES.write_text(json.dumps(s, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        PATHWAYS.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_structures(s)
+        save_pathways(p)
         REVIEW.write_text("\n".join(rows) + "\n", encoding="utf-8")
         print("written")
 

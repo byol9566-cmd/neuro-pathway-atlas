@@ -11,7 +11,7 @@ Edits, each recorded in the output's `note`:
 - cst-lateral-{l,r}: the lateral corticospinal tract of that side of the cord, i.e. the continuation of the
   OTHER side's bundle after the pyramidal decussation: from the contralateral bundle's medullary end,
   across the midline over ~10 mm, then down the cord along the Visible Human cord axis
-  (data/derived/vhp/sp-cord.M.mni.nii.gz) offset posterolaterally into the lateral funiculus.
+  (data/derived/vhp/sp-cord.M.mni-straight.nii.gz, re-posed by vhp_derive.py) offset posterolaterally into the lateral funiculus.
 - cst-anterior-{l,r}: the uncrossed anterior corticospinal tract: the same side's bundle continued down the
   anterior funiculus next to the midline.
 - ml-{l,r}: the atlas medial lemniscus runs on past the thalamus to the cortex (thalamocortical fibres);
@@ -30,7 +30,7 @@ import nibabel as nib
 
 ROOT = Path(__file__).resolve().parents[2]
 SRC = ROOT / "data" / "derived" / "tracts" / "centerlines.json"
-CORD = ROOT / "data" / "derived" / "vhp" / "sp-cord.M.mni.nii.gz"
+CORD = ROOT / "data" / "derived" / "vhp" / "sp-cord.M.mni-straight.nii.gz"  # vhp_derive.py
 OUT = ROOT / "data" / "derived" / "tracts" / "tracts-prepared.json"
 VPL = {"l": np.array([-15.0, -20.0, 5.0]), "r": np.array([15.0, -20.0, 5.0])}
 CORD_BOTTOM = -230.0

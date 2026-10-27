@@ -5,11 +5,10 @@ relax instead of contracting (AtlasScene.setContractions). Schematic — the amo
 
     pipeline/.venv/bin/python pipeline/apply_effects.py [--write]
 """
-import json
 import sys
-from pathlib import Path
 
-PATHWAYS = Path(__file__).resolve().parent.parent / "content" / "pathways.json"
+from atlas_pipeline.content import link_step, load_pathways, save_pathways
+
 EFFECTS = {
     "corticospinal-lateral-4": [{"joint": "elbow", "side": "contra", "angle": 70}],
     "corticospinal-anterior-4": [{"joint": "shoulder", "side": "ipsi", "angle": 25}],
@@ -55,7 +54,7 @@ MUSCLE = {
 
 
 def main(write):
-    p = json.loads(PATHWAYS.read_text(encoding="utf-8"))
+    p = load_pathways()
     n = 0
     for pw in p["pathways"]:
         for st in pw["steps"]:
@@ -64,8 +63,7 @@ def main(write):
                 n += 1
             if st["id"] in PUPIL:
                 st["effects"] = [e for e in st.get("effects", []) if "pupil" not in e] + PUPIL[st["id"]]
-                if not any(r["id"] == "so-iris" for r in st["structures"]):
-                    st["structures"].append({"id": "so-iris", "side": "ipsi"})
+                link_step(p, st["id"], "so-iris", "ipsi")
                 n += 1
             if st["id"] in EFFECTS:
                 if EFFECTS[st["id"]]:
@@ -75,12 +73,12 @@ def main(write):
             if st["id"] in MUSCLE:
                 st["effects"] = [e for e in st.get("effects", []) if "muscle" not in e] + MUSCLE[st["id"]]
                 for e in MUSCLE[st["id"]]:
-                    if e["muscle"] != "*" and not any(r["id"] == e["muscle"] for r in st["structures"]):
-                        st["structures"].append({"id": e["muscle"], "side": e["side"]})
+                    if e["muscle"] != "*":
+                        link_step(p, st["id"], e["muscle"], e["side"])
                 n += 1
     print(f"{n} steps with effects")
     if write:
-        PATHWAYS.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_pathways(p)
         print("written")
 
 

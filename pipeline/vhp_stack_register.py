@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Stack the Visible Human male head cryosections and register them to MNI152.
 
-    pipeline/.venv/bin/python pipeline/vhp_stack_register.py [--mm 1.0] [--skip-stack]
+    pipeline/.venv/bin/python pipeline/vhp_stack_register.py [--skip-stack]
 
 Input  data/raw/vhp/male-head/a_vm1001.png ... a_vm1377.png   (2048x1216 RGB, 0.33 mm/px, 1 mm apart)
-Output data/raw/vhp/vhp_head_rgb.npz   RGB volume at --mm (z, y, x, 3) in photo order, plus a grey volume
+Output data/raw/vhp/vhp_head_rgb.npz   RGB volume, F x F pixel blocks = 0.99 mm in-plane, 1 mm slices
+                                        (z, y, x, 3) in photo order, plus a grey volume
        data/raw/vhp/vhp_head_grey.nii.gz  grey volume, ITK/LPS axis order (see below)
        data/raw/vhp/vhp_to_mni.tfm     SimpleITK composite transform (affine; + B-spline with --bspline),
                                         MNI -> VHP (fixed -> moving: what Resample needs to pull VHP masks into MNI)
@@ -41,20 +42,28 @@ DERIVED = ROOT / "data" / "derived" / "vhp"
 MNI_DIR = ROOT / "data" / "raw" / "mni" / "mni_icbm152_nlin_asym_09c"
 MNI = MNI_DIR / "mni_icbm152_t1_tal_nlin_asym_09c.nii"
 MNI_MASK = MNI_DIR / "mni_icbm152_t1_tal_nlin_asym_09c_mask.nii"
-MM = float(sys.argv[sys.argv.index("--mm") + 1]) if "--mm" in sys.argv else 1.0
+# The photo <-> volume scale, shared by vhp_segment.to_mni and vhp_seed_from_mni (through lps_to_photo): the
+# volume is F x F pixel blocks, so its in-plane spacing is F * PX = 0.99 mm (not 1.0); slices are 1 mm apart
 PX = 0.33  # mm per pixel in the cryosections
+F = 3  # photo pixels per volume voxel, in-plane
+MM = F * PX  # in-plane voxel size of the grey volume
+SLICE_MM = 1.0
 FIRST, LAST = 1001, 1377
+N_SLICES = LAST - FIRST + 1  # data/raw/vhp/male-head holds all 377
 
 
 def load_stack():
     files = [SRC / f"a_vm{n}.png" for n in range(FIRST, LAST + 1)]
     files = [f for f in files if f.exists()]
-    f = int(round(MM / PX))
+    if len(files) != N_SLICES:
+        raise SystemExit(f"{SRC}: {len(files)} of the {N_SLICES} slices a_vm{FIRST}..{LAST}.png; the slice index "
+                         "is the z coordinate, so a gap would shift everything below it")
+    f = F
     slabs = []
     for p in files:
         im = np.asarray(Image.open(p).convert("RGB"))
         h, w = (im.shape[0] // f) * f, (im.shape[1] // f) * f
-        im = im[:h, :w].reshape(h // f, f, w // f, f, 3).mean(axis=(1, 3))  # box downsample to ~MM
+        im = im[:h, :w].reshape(h // f, f, w // f, f, 3).mean(axis=(1, 3))  # box downsample to MM
         slabs.append(im.astype(np.uint8))
     rgb = np.stack(slabs)  # (z, y, x, 3) in photo order; z increases downwards (slice numbers run head -> feet)
     return rgb, len(files)
@@ -68,25 +77,25 @@ def grey_volume(rgb):
     grey[blue_bg] = 0
     vol = grey[::-1, ::-1, :]  # LPS: z inferior->superior, y anterior->posterior, x right->left (= photo x)
     img = sitk.GetImageFromArray(vol)  # array (z, y, x) -> sitk (x, y, z)
-    img.SetSpacing((MM, MM, MM))
-    img.SetOrigin((-vol.shape[2] * MM / 2, -vol.shape[1] * MM / 2, -vol.shape[0] * MM / 2))
+    img.SetSpacing((MM, MM, SLICE_MM))
+    img.SetOrigin((-vol.shape[2] * MM / 2, -vol.shape[1] * MM / 2, -vol.shape[0] * SLICE_MM / 2))
     return img
 
 
 def photo_to_lps(grey, slice_no, x_px, y_px):
-    """full-resolution photo pixel on a slice -> LPS physical point in the grey volume"""
+    """full-resolution photo pixel on a slice -> LPS physical point in the grey volume (pixel i*F + 1, the
+    centre of the block voxel i was averaged from, lands on voxel i)"""
     nx, ny, nz = grey.GetSize()
-    f = MM / PX
-    idx = (x_px / f - 0.5, (ny - 1) - (y_px / f - 0.5), (nz - 1) - (slice_no - FIRST))
+    idx = ((x_px + 0.5) / F - 0.5, (ny - 1) - ((y_px + 0.5) / F - 0.5), (nz - 1) - (slice_no - FIRST))
     return np.array(grey.TransformContinuousIndexToPhysicalPoint(tuple(float(v) for v in idx)))
 
 
-def lps_to_photo(grey, p):
-    """inverse of photo_to_lps -> (slice number, x px, y px)"""
+def lps_to_photo(grey, p, exact=False):
+    """inverse of photo_to_lps -> (slice number, x px, y px), rounded to whole pixels unless `exact`"""
     nx, ny, nz = grey.GetSize()
-    f = MM / PX
     ix, iy, iz = grey.TransformPhysicalPointToContinuousIndex(tuple(float(v) for v in p))
-    return int(round(FIRST + (nz - 1) - iz)), int(round((ix + 0.5) * f)), int(round(((ny - 1) - iy + 0.5) * f))
+    out = (FIRST + (nz - 1) - iz, (ix + 0.5) * F - 0.5, ((ny - 1) - iy + 0.5) * F - 0.5)
+    return out if exact else tuple(int(round(v)) for v in out)
 
 
 def vhp_eye_centroids(grey):

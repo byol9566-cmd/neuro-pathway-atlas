@@ -8,13 +8,13 @@ Idempotent: structures already present are updated in place, pathway steps get a
 Which steps get which tract is an explicit table below (the steps' `missing` text names the tract), not a
 keyword match — '활꼴' also matches the arcuate *nucleus*.
 """
-import json
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-STRUCTURES = ROOT / "content" / "structures.json"
-PATHWAYS = ROOT / "content" / "pathways.json"
+sys.path.insert(0, str(ROOT / "pipeline"))
+from atlas_pipeline.content import (insert_after_group, link_step, load_pathways, load_structures,  # noqa: E402
+                                    save_pathways, save_structures, structure_index)
 
 NEW_STRUCTURES = [
     {"id": "tr-cst-cerebral", "name": {"ko": "겉질척수로 (방사관·속섬유막·대뇌다리 구간)", "en": "Corticospinal tract, cerebral course"},
@@ -150,9 +150,8 @@ def drop_covered(text, names):
 
 
 def main(write):
-    s = json.loads(STRUCTURES.read_text(encoding="utf-8"))
-    by_id = {x["id"]: x for x in s["structures"]}
-    anchor = max(i for i, x in enumerate(s["structures"]) if x["group"] == "tracts")
+    s = load_structures()
+    by_id = structure_index(s)
     for n in NEW_STRUCTURES:
         entry = {"id": n["id"], "group": "tracts", "tract": True, "name": n["name"],
                  "source": {"atlas": "hcp1065", "tracts": n["tracts"]}}
@@ -161,12 +160,11 @@ def main(write):
         if n["id"] in by_id:
             by_id[n["id"]].update(entry)
         else:
-            anchor += 1
-            s["structures"].insert(anchor, entry)
+            insert_after_group(s["structures"], "tracts", entry)
             by_id[n["id"]] = entry
     for sid, cl in CENTERLINE_FROM.items():
         by_id[sid]["source"]["centerlineFrom"] = cl
-    p = json.loads(PATHWAYS.read_text(encoding="utf-8"))
+    p = load_pathways()
     changed = []
     for pw in p["pathways"]:
         for st in pw["steps"]:
@@ -177,16 +175,14 @@ def main(write):
                         st["missing"]["ko"] = cleaned
                     else:
                         del st["missing"]
-                if any(r["id"] == sid for r in st["structures"]):
-                    continue
                 # the tract goes first so the route runs along it before reaching the step's grey matter
-                st["structures"].insert(0, {"id": sid, "side": side})
-                changed.append((pw["id"], st["id"], sid, side))
+                if link_step(p, st["id"], sid, side, "front"):
+                    changed.append((pw["id"], st["id"], sid, side))
     print(f"structures: {len(NEW_STRUCTURES)} hcp1065 tracts, centerline overrides {list(CENTERLINE_FROM)}")
     print("pathway steps:", *changed, sep="\n  ")
     if write:
-        STRUCTURES.write_text(json.dumps(s, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        PATHWAYS.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_structures(s)
+        save_pathways(p)
         print("written")
 
 

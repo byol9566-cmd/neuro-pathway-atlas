@@ -22,20 +22,22 @@ from pathlib import Path
 
 import numpy as np
 import SimpleITK as sitk
-import torch
 from PIL import Image
-from segment_anything import SamPredictor, sam_model_registry
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from vhp_stack_register import FIRST, MM, PX, F  # noqa: E402  the one photo <-> volume scale
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "raw" / "vhp" / "male-head"
-PX = 0.33
-OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT / "data" / "derived" / "vhp"
 TFM = ROOT / "data" / "raw" / "vhp" / "vhp_to_mni.tfm"
 MNI = ROOT / "data" / "raw" / "mni" / "mni_icbm152_nlin_asym_09c" / "mni_icbm152_t1_tal_nlin_asym_09c.nii"
 MNI_MASK = MNI.with_name("mni_icbm152_t1_tal_nlin_asym_09c_mask.nii")
 
 
 def load_sam():
+    import torch  # heavy, and only segmenting needs them: vhp_to_mni_all imports to_mni without
+    from segment_anything import SamPredictor, sam_model_registry
+
     sam = sam_model_registry["vit_b"](checkpoint=str(ROOT / "data" / "raw" / "sam" / "sam_vit_b_01ec64.pth"))
     sam.to("mps" if torch.backends.mps.is_available() else "cpu")
     return SamPredictor(sam)
@@ -94,12 +96,12 @@ def to_mni(stack, slices, shape_hw):
     vhp_stack_register.grey_volume), so the transform applies as is."""
     grey = sitk.ReadImage(str(GREY))
     nx, ny, nz = grey.GetSize()
-    mm = grey.GetSpacing()[0]
-    f = int(round(mm / PX))
-    first = 1001
+    if abs(grey.GetSpacing()[0] - MM) > 1e-6:
+        raise SystemExit(f"{GREY} has {grey.GetSpacing()[0]} mm voxels, not {MM}: re-run vhp_stack_register.py")
+    f = F
     vol = np.zeros((nz, ny, nx), dtype=np.uint8)  # (z, y, x) in the stack order (slice 1001 first)
     for n, m in zip(slices, stack):
-        k = n - first
+        k = n - FIRST
         if not (0 <= k < nz):
             continue  # slice outside the registered stack
         small = m[: ny * f, : nx * f].reshape(ny, f, nx, f).mean(axis=(1, 3)) > 0.5
@@ -151,6 +153,7 @@ def to_mni(stack, slices, shape_hw):
 
 def main():
     targets = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
+    OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT / "data" / "derived" / "vhp"
     OUT.mkdir(parents=True, exist_ok=True)
     pred = load_sam()
     for t in targets:

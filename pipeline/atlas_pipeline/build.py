@@ -20,7 +20,7 @@ import numpy as np
 import trimesh
 from scipy import ndimage
 
-from . import CONTENT_DIR, DATA_DIR, OUT_DIR, REPO_ROOT, bp3d, meshing, models, sections
+from . import CONTENT_DIR, DATA_DIR, OUT_DIR, REPO_ROOT, bp3d, content, meshing, models, sections
 
 # Labels that make up the brainstem / cerebellum outlines. `white_matter_of_hindbrain` (611) spans
 # both and is split by proximity in `shell_masks`.
@@ -82,6 +82,13 @@ ATTRIBUTION = [
         "citation": "Yeh FC. Population-based tract-to-region connectome of the human brain and its hierarchical topology. Nat Commun (2022). Data: Human Connectome Project (WU-Minn consortium).",
         "license": "CC BY-SA 4.0 — the tract paths derived here carry the same licence",
         "url": "https://brain.labsolver.org/hcp_trk_atlas.html",
+    },
+    {
+        "atlas": "mni",
+        "title": "MNI152 좌표 기반 타원체 자리표시",
+        "citation": "Ellipsoids at literature MNI coordinates for RVLM, CVLM, the gigantocellular and the reticulotegmental nucleus (docs/data/structures-3d/coords-reticular-2026-10-05.md) — placeholders until a published coordinate set exists.",
+        "license": "프로젝트 자체 제작 (좌표: 공개 문헌)",
+        "url": "",
     },
 ]
 
@@ -189,6 +196,18 @@ class NextBrain:
         return self._shells
 
 
+def clip_to_left(mask, spacing, origin):
+    """NextBrain labels spill up to x = +1.6 mm across the midline (cingulate, vmPFC, SMA ...); every label
+    mesh is a left copy plus its mirror, so the overlap would show twice. Keep voxel centres at x <= 0: the
+    left mesh then ends at the midline and its mirror starts there."""
+    x = origin[0] + np.arange(mask.shape[0]) * spacing
+    if x[-1] <= 0:
+        return mask
+    mask = mask.copy()
+    mask[x > 0] = False
+    return mask
+
+
 def load_aan_mask(filename: str):
     """AAN nuclei are 1 mm MNI152 masks; upsample x4 (nearest) so smoothing can round off the voxel blocks."""
     img = nib.as_closest_canonical(nib.load(DATA_DIR / "aan" / filename))
@@ -269,6 +288,8 @@ def build_from_mask(mask, spacing, origin, *, sigma_mm, faces_per_mm2, max_faces
 
 def build_vhp_side(structure, side, file):
     sid = structure["id"]
+    derived = VHP_DERIVED.get(sid) or {}
+    file = (derived.get("files") or {}).get(side, file)  # e.g. the cord re-posed by vhp_derive.py
     img = nib.as_closest_canonical(nib.load(REPO_ROOT / file))
     affine = img.affine
     mask = np.asanyarray(img.dataobj) > 0
@@ -283,7 +304,6 @@ def build_vhp_side(structure, side, file):
     cleaned, stats, mesh = build_from_mask(fine, spacing / factor, origin, sigma_mm=1.0, faces_per_mm2=2.0, max_faces=20000, closing_iters=1)
     vol = cleaned.sum() * (spacing / factor) ** 3
     rec = mesh_record(f"{sid}.{side}", structure, side, mesh, volume_mm3=vol, approx=False, stats=stats)
-    derived = VHP_DERIVED.get(sid) or {}
     if derived.get("organ"):
         rec["derived"] = derived["organ"]  # cut from this segmented organ by vhp_derive.py, not segmented itself
     if derived.get("note"):
@@ -397,6 +417,7 @@ def build_structure(structure: dict, nb: NextBrain):
 
     labels = nb.expand_labels(src)
     mask, spacing, origin = nb.label_mask(labels, stride=src.get("stride", 1))
+    mask = clip_to_left(mask, spacing, origin)  # every label structure is an L + mirrored R pair (add_pair)
     cleaned, stats = meshing.clean_mask(mask)
     vol = cleaned.sum() * spacing**3
     placeholder = src.get("placeholder")
@@ -407,6 +428,7 @@ def build_structure(structure: dict, nb: NextBrain):
         got = nb.prob_mask(labels, PROB_THRESHOLD)
         if got is not None:
             pmask, pspacing, porigin, cut = got
+            pmask = clip_to_left(pmask, pspacing, porigin)
             pcleaned, pstats = meshing.clean_mask(pmask)
             pvol = pcleaned.sum() * pspacing**3
             if vol == 0 and pcleaned.any():
@@ -529,7 +551,7 @@ def split_body_skin(meshes, structure_records, segment_meshes, torso_meshes, ski
 
 
 SKIN_PIECES = {f"{b}-skin" for b in LIMB_SEGMENTS}  # structures split_body_skin makes from body-skin
-MESH_CACHE = REPO_ROOT / "data" / "derived" / "meshes"  # <meshId>.ply + .json, structures/<id>.json
+MESH_CACHE = content.MESH_CACHE  # <meshId>.ply + .json, structures/<id>.json
 
 
 def load_cache():
@@ -564,7 +586,7 @@ def _load_hcp_tracts():
 
 
 HCP_TRACTS = _load_hcp_tracts()
-models.CORD_FILE = REPO_ROOT / "data" / "derived" / "vhp" / "sp-cord.M.mni.nii.gz"
+models.CORD_FILE = REPO_ROOT / "data" / "derived" / "vhp" / "sp-cord.M.mni-straight.nii.gz"  # vhp_derive.py
 
 
 def compress(raw_glb, out_glb) -> bool:
@@ -573,6 +595,38 @@ def compress(raw_glb, out_glb) -> bool:
         return False
     subprocess.run([str(cli), "meshopt", str(raw_glb), str(out_glb), "--level", "medium"], check=True, capture_output=True)
     return True
+
+
+def preflight(structures):
+    """-> the input files the given structures need that are missing (checked before anything is built)"""
+    need = {DATA_DIR / "nextbrain" / "atlas.labels.argmax.nii.gz": "python -m atlas_pipeline.fetch"}
+    for s in structures:
+        src = s["source"]
+        if src["atlas"] == "nextbrain" and "shell" not in src and not src.get("stride"):
+            need[PROB_DIR] = "python -m atlas_pipeline.fetch (probability maps)"
+        elif src["atlas"] == "aan":
+            for what in list((src.get("files") or {}).values()) or [AAN_COMBINED]:  # per-nucleus files or label ids
+                need[DATA_DIR / "aan" / what] = "python -m atlas_pipeline.fetch"
+        elif src["atlas"] == "vhp":
+            derived = (VHP_DERIVED.get(s["id"]) or {}).get("files") or {}
+            for side, file in (src.get("sides") or {src.get("side", "M"): src["file"]}).items():
+                need[REPO_ROOT / derived.get(side, file)] = "pipeline/vhp_to_mni_all.py (projects the masks, runs vhp_derive.py)"
+        elif src["atlas"] == "bp3d":
+            for p in (bp3d.ROOT / "isa_element_parts.txt", bp3d.ROOT / "partof_element_parts.txt", bp3d.ROOT / "to_mni.json", bp3d.OBJ):
+                need[p] = "BodyParts3D archive into data/raw/bodyparts3d (pipeline/README.md)"
+        elif src["atlas"] == "hcp1065":
+            need[REPO_ROOT / "data" / "derived" / "tracts" / "tracts-prepared.json"] = "pipeline/tracts/prepare_tracts.py"
+        elif src["atlas"] == "model":
+            # the cord-level shapes and axis tracts follow these; without them models.cord_axis quietly
+            # falls back to a textbook curve
+            need[models.CORD_FILE] = "pipeline/vhp_derive.py"
+            need[REPO_ROOT / "data" / "derived" / "bp3d" / "canal_axis.json"] = "pipeline/bp3d_canal_axis.py"
+    missing = []
+    for p, how in need.items():
+        empty = p.is_dir() and not any(p.iterdir())
+        if not p.exists() or empty:
+            missing.append(f"  {p.relative_to(REPO_ROOT)}{' (empty)' if empty else ''}  <- {how}")
+    return missing
 
 
 def main(argv=None):
@@ -595,6 +649,9 @@ def main(argv=None):
             print(f"not in content/structures.json: {', '.join(unknown)}", file=sys.stderr)
     structures = [s for s in config["structures"] if not args.only or s["id"] in args.only]
     rebuilt = {s["id"] for s in structures}
+    missing = preflight(structures)
+    if missing:
+        sys.exit("missing inputs, nothing built:\n" + "\n".join(missing))
 
     t0 = time.time()
     nb = NextBrain()

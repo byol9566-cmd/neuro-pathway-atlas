@@ -8,18 +8,18 @@ switched to {"atlas": "vhp", "file": ..., "side": ...}; bilateral structures get
 (the viewer expects <id>.L and <id>.R meshes). Attribution: Visible Human Project, U.S. National Library of
 Medicine (no licence required).
 """
-import json
 import sys
 from pathlib import Path
 
+from atlas_pipeline.content import STRUCTURES as CONTENT, load_structures, save_structures, structure_index
+
 ROOT = Path(__file__).resolve().parent.parent
 DER = ROOT / "data" / "derived" / "vhp"
-CONTENT = ROOT / "content" / "structures.json"
 
 
 def main(write):
-    data = json.loads(CONTENT.read_text(encoding="utf-8"))
-    by_id = {s["id"]: s for s in data["structures"]}
+    data = load_structures()
+    by_id = structure_index(data)
     files = sorted(DER.glob("*.mni.nii.gz"))
     changed = []
     for f in files:
@@ -43,7 +43,7 @@ def main(write):
             src["sides"] = sides
     print("vhp structures:", changed)
     if write:
-        CONTENT.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_structures(data)
         print("written", CONTENT)
 
 

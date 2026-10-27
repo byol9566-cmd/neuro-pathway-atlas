@@ -12,6 +12,7 @@ CC Attribution 4.0 International".
 from __future__ import annotations
 
 import json
+import sys
 from functools import lru_cache
 from pathlib import Path
 
@@ -67,7 +68,10 @@ def mesh_for(names: list[str], max_faces: int = 6000) -> trimesh.Trimesh:
     for n in names:
         if n not in idx:
             raise ValueError(f"BodyParts3D has no part named {n!r}")
-        parts += [load_part(f) for f in idx[n] if (OBJ / f"{f}.obj").exists()]
+        absent = [f for f in idx[n] if not (OBJ / f"{f}.obj").exists()]
+        if absent:  # the part is still built, but without these pieces
+            print(f"  bp3d: {n!r}: no .obj for element(s) {', '.join(absent)} in {OBJ}, left out", file=sys.stderr)
+        parts += [load_part(f) for f in idx[n] if f not in absent]
     if not parts:
         raise ValueError(f"no mesh files for {names}")
     m = trimesh.util.concatenate(parts)

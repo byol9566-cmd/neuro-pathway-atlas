@@ -10,15 +10,14 @@ anterolateral funiculus. Decussations are a z band where the tract eases across 
 entry is a textbook approximation and says so in the viewer; the table is the thing for 성연 to review
 (docs/data/structures-3d/axis-tracts-review.md is generated from it).
 """
-import json
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 from pipeline.tracts.apply_to_content import drop_covered  # noqa: E402
-STRUCTURES = ROOT / "content" / "structures.json"
-PATHWAYS = ROOT / "content" / "pathways.json"
+from atlas_pipeline.content import (insert_after_group, link_step, load_pathways, load_structures,  # noqa: E402
+                                    save_pathways, save_structures, structure_index)
 REVIEW = ROOT / "docs" / "data" / "structures-3d" / "axis-tracts-review.md"
 
 VPL = [15, -20, 5]; VPM = [17, -22, 0]
@@ -101,9 +100,8 @@ NOTE = "교과서 기하: 뇌줄기 축(NextBrain)과 척수 축(Visible Human)�
 
 
 def main(write):
-    s = json.loads(STRUCTURES.read_text(encoding="utf-8"))
-    by_id = {x["id"]: x for x in s["structures"]}
-    anchor = max(i for i, x in enumerate(s["structures"]) if x["group"] == "tracts")
+    s = load_structures()
+    by_id = structure_index(s)
     for t in TRACTS:
         entry = {"id": t["id"], "group": "tracts", "tract": True, "name": t["name"],
                  "source": {"atlas": "model", "shape": "axis-tract", "params": t["params"], "centreMni": [0, 0, 0], "bilateral": True,
@@ -111,9 +109,8 @@ def main(write):
         if t["id"] in by_id:
             by_id[t["id"]].update(entry)
         else:
-            anchor += 1
-            s["structures"].insert(anchor, entry); by_id[t["id"]] = entry
-    p = json.loads(PATHWAYS.read_text(encoding="utf-8"))
+            insert_after_group(s["structures"], "tracts", entry); by_id[t["id"]] = entry
+    p = load_pathways()
     changed = []
     for pw in p["pathways"]:
         for st in pw["steps"]:
@@ -124,10 +121,8 @@ def main(write):
                         st["missing"]["ko"] = cleaned
                     else:
                         del st["missing"]
-                if any(r["id"] == sid for r in st["structures"]):
-                    continue
-                st["structures"].insert(0, {"id": sid, "side": side})
-                changed.append((pw["id"], st["id"], sid, side))
+                if link_step(p, st["id"], sid, side, "front"):
+                    changed.append((pw["id"], st["id"], sid, side))
     print(f"{len(TRACTS)} axis tracts; steps:", *changed, sep="\n  ")
     rows = ["# 뇌줄기·척수 섬유로 — 교과서 기하 표 (성연 검수용, 2026-10-05)", "",
             "뷰어의 경로 재생이 이 선을 따른다. 위치는 단면 반지름에 대한 비율(가쪽, 앞쪽), 교차는 z 구간(MNI mm). 틀린 곳을 적어 주면 표만 고치면 된다(`pipeline/apply_axis_tracts.py`).", "",
@@ -137,8 +132,8 @@ def main(write):
         keys = "; ".join(f"{int(k[0])}: {k[1]:+.2f}, {k[2]:+.2f}" for k in pr["keys"])
         rows.append(f"| {t['id']} | {t['name']['ko']} | {pr['z_top']} ~ {pr['z_bottom']} | {pr.get('cross', '—')} | {keys} | {t['textbook']} |")
     if write:
-        STRUCTURES.write_text(json.dumps(s, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        PATHWAYS.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_structures(s)
+        save_pathways(p)
         REVIEW.write_text("\n".join(rows) + "\n", encoding="utf-8")
         print("written")
 

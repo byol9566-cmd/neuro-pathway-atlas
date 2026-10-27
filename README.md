@@ -38,10 +38,14 @@ cd viewer   && npm test                            # 경로 로직 + content 무
 cd viewer   && npx playwright install chromium && npm run e2e   # 브라우저 시나리오
 ```
 
-## 데이터 규모 (2026-10-03)
+## 데이터 규모 (2026-10-27)
 
-- 구조 187개(`content/structures.json`): NextBrain 라벨 148, Harvard AAN 핵 3, MNI 좌표 타원체 자리표시 39(눈·속귀·뇌하수체·신경절·척수 분절 — 추정 좌표, 화면에 "근사" 표시). 만든 방법은 `docs/data/structures-3d/README.md`.
-- 경로·기전 247개(`content/pathways.json`, `pipeline/integrate_pathways.py`로 성연 데이터셋에서 변환): 194개는 3D 구조가 켜지고 53개는 설명만. 전부 `reviewStatus: draft` — 설명 문장은 공개 문헌 근거(`docs/data/pathway-evidence/`)로 다시 쓰는 중.
+- 구조 313개(`content/structures.json`): NextBrain 라벨 145, Harvard AAN 핵 2, HCP1065 신경로 27, BodyParts3D 55(몸 윤곽·뼈·근육·내장),
+  Visible Human 9(눈·뇌하수체·척수), 기하 모형 71(속귀·신경절·말초신경·척수 분절 등), MNI 좌표 타원체 자리표시 4(그물체 핵 — 화면에 "근사" 표시).
+  만든 방법은 `docs/data/structures-3d/README.md`.
+- 경로·기전 247개(`content/pathways.json`, `pipeline/integrate_pathways.py`로 성연 데이터셋에서 변환): 197개는 3D 구조가 켜지고 50개는 설명만.
+  전부 `reviewStatus: draft` — 설명 문장은 공개 문헌 근거(`docs/data/pathway-evidence/`)로 다시 쓰는 중.
+  `pipeline/content_lint.py`가 단계의 `missing` 문구와 `has3d`를 구조 목록·manifest에 맞춰 정리한다(`pipeline/tests/test_content.py`).
 
 ## 화면 구성
 
@@ -77,7 +81,18 @@ Ctrl+휠 또는 +/−: 확대, 드래그: 이동, 클릭: 구조 선택. 구조�
 
 ## 데이터와 라이선스
 
-- NextBrain (Casamitjana et al., Nature 2025) — CC0 — https://doi.org/10.5522/04/24243835
-- Harvard Ascending Arousal Network Atlas v2.0 (Edlow et al.) — CC0 — https://zenodo.org/records/8161638
+`pipeline/atlas_pipeline/build.py`의 `ATTRIBUTION` 목록(빌드 때 `manifest.json`의 `attribution`으로 그대로 나감)과 같은 순서다.
+
+| atlas | 출처 | 이 프로젝트에서 쓰는 곳 | 라이선스 | 우리가 지킬 것 |
+|---|---|---|---|---|
+| `nextbrain` | NextBrain (Casamitjana et al., Nature 2025) — https://doi.org/10.5522/04/24243835 | 대뇌겉질·시상·바닥핵·둘레계통·뇌줄기 핵·소뇌·시상하부, 일부 신경로와 뇌 윤곽 (145개) | CC0 1.0 | 의무 없음(출처 표기는 관행으로 유지) |
+| `aan` | Harvard Ascending Arousal Network Atlas v2.0 (Edlow et al.) — https://zenodo.org/records/8161638 | 등쪽솔기핵, 다리뇌 콜린성핵군(PPT/LDT) (2개) | CC0 1.0 | 의무 없음(출처 표기는 관행으로 유지) |
+| `vhp` | Visible Human Project, U.S. NLM — https://www.nlm.nih.gov/research/visible/visible_human.html | 안구·수정체·망막·각막, 뇌하수체, 척수 (9개; SAM으로 분할 후 MNI 정합) | NLM: 라이선스 불필요 | 의무 없음(NLM 출처 표기 권장) |
+| `model` | 기하 모형 (이 프로젝트에서 교과서 치수로 작성) | 속귀·신경절·말초신경·척수 분절·경동맥굴 등 (71개) | 프로젝트 자체 제작 | 없음 |
+| `bp3d` | BodyParts3D, © DBCLS — https://dbarchive.biosciencedbc.jp/en/bodyparts3d/desc.html | 몸 윤곽·뼈·근육·내장 (55개, 폴리곤 축소 후 MNI에 맞춤) | CC BY 4.0 | 저작자 표시(© The Database Center for Life Science, CC BY 4.0)와 변경 사실 표기 |
+| `hcp1065` | HCP1065 tractography atlas (Yeh, DSI Studio) — https://brain.labsolver.org/hcp_trk_atlas.html | 신경로 중심선·튜브 메시 (27개) | CC BY-SA 4.0 | 저작자 표시 + 동일조건변경허락: 이 데이터로 만든 신경로 메시도 CC BY-SA 4.0으로 배포 |
+| `mni` | MNI152 좌표 기반 타원체 자리표시 | RVLM·CVLM·거대세포그물핵·피개그물핵 (4개, 공개된 좌표 세트가 생길 때까지 임시) | 프로젝트 자체 제작 (좌표: 공개 문헌) | 없음(좌표 출처 문헌 표기) |
+
+HCP1065에서 만든 신경로 메시는 CC BY-SA 4.0이고 지금은 나머지 메시와 같은 `atlas.glb` 한 파일에 묶여 있으므로, 그 합본 파일은 BY-SA 조건으로 배포되는 셈이다 — 신경로를 별도 GLB로 분리할지는 아직 결정 전이다.
 
 NextBrain은 왼쪽 반구 아틀라스라서 오른쪽 구조는 좌우 반전으로 만든다.

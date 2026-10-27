@@ -4,16 +4,17 @@ segments), the viscera and glands that autonomic pathways reach, and the skeleta
 pathways end on. Names are BodyParts3D English part names (isa leaf names or part-of compound names);
 left/right parts are real, not mirrored.
 
-    pipeline/.venv/bin/python pipeline/apply_body.py [--write]
+    pipeline/.venv/bin/python pipeline/apply_body.py [--write] [--allow-missing]
+
+Exits non-zero when a part name is not in the BodyParts3D index, unless --allow-missing.
 """
-import json
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-STRUCTURES = ROOT / "content" / "structures.json"
 sys.path.insert(0, str(ROOT / "pipeline"))
 from atlas_pipeline import bp3d  # noqa: E402
+from atlas_pipeline.content import load_structures, save_structures, structure_index  # noqa: E402
 
 GROUPS = {
     "body-shell": {"name": {"ko": "몸 외곽·뼈대", "en": "Body shell and skeleton"}, "color": "#9aa3ad"},
@@ -98,9 +99,9 @@ NOTE = "BodyParts3D(DBCLS, CC BY 4.0) 전신 모델의 저해상(99% 축소) 메
 
 
 def main(write):
-    data = json.loads(STRUCTURES.read_text(encoding="utf-8"))
+    data = load_structures()
     data["groups"].update({k: v for k, v in GROUPS.items() if k not in data["groups"]})
-    by_id = {s["id"]: s for s in data["structures"]}
+    by_id = structure_index(data)
     idx = bp3d.index()
     missing = []
     for sid, group, name, parts, budget in STRUCTURES_DEF:
@@ -114,8 +115,11 @@ def main(write):
         else:
             data["structures"].append(entry); by_id[sid] = entry
     print(f"{len(STRUCTURES_DEF)} body structures; missing part names: {missing}")
+    if missing and "--allow-missing" not in sys.argv:
+        # a renamed or absent part would silently drop out of its mesh (or fail the build): stop here
+        sys.exit("BodyParts3D has no part with these names; fix STRUCTURES_DEF or pass --allow-missing")
     if write:
-        STRUCTURES.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_structures(data)
         print("written")
 
 

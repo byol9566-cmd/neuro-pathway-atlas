@@ -32,8 +32,16 @@ AAN_FILES = [
     "AAN_LC_L_MNI152_1mm_v2p0.nii",
     "AAN_LC_R_MNI152_1mm_v2p0.nii",
     "AAN_DR_MNI152_1mm_v2p0.nii",
+    "AAN_Brainstem_MNI152_1mm_v2p0.nii",  # the combined volume (one label per nucleus): build.load_aan_labels
     "README.md",
 ]
+
+
+def check_size(path):
+    """a download that ended early can leave an empty file that every later run would take as done"""
+    if path.stat().st_size == 0:
+        path.unlink()
+        raise RuntimeError(f"{path} downloaded empty; removed it, re-run the fetch")
 
 
 def fetch_nextbrain():
@@ -42,6 +50,8 @@ def fetch_nextbrain():
         print("nextbrain: up to date")
         return
     n = extract_members(NEXTBRAIN_ZIP, todo)
+    for dest in todo.values():
+        check_size(dest)
     print(f"nextbrain: fetched {len(todo)} file(s), {n / 1e6:.1f} MB over the wire")
 
 
@@ -77,6 +87,7 @@ def fetch_nextbrain_probabilities():
             dest = PROB_DIR / f"{lab}.npz"
             tmp = dest.with_suffix(".part")
             tmp.write_bytes(z.read(members[order.index(lab) + 1]))
+            check_size(tmp)
             tmp.replace(dest)
     print(f"nextbrain probabilities: fetched {len(todo)} label(s), {raw.bytes_fetched / 1e6:.0f} MB over the wire")
 
@@ -90,6 +101,7 @@ def fetch_aan():
         tmp = dest.with_suffix(dest.suffix + ".part")
         with urllib.request.urlopen(AAN_BASE.format(name=name), timeout=120) as r, open(tmp, "wb") as out:
             shutil.copyfileobj(r, out, 1 << 20)
+        check_size(tmp)
         tmp.replace(dest)
         print(f"aan: {name} ({dest.stat().st_size / 1e6:.1f} MB)")
 

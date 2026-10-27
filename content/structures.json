@@ -515,20 +515,6 @@
       }
     },
     {
-      "id": "mb-red-nucleus",
-      "group": "basal-ganglia",
-      "name": {
-        "ko": "적색핵",
-        "en": "Red nucleus"
-      },
-      "source": {
-        "atlas": "nextbrain",
-        "labels": [
-          385
-        ]
-      }
-    },
-    {
       "id": "lim-hippocampus",
       "centerline": true,
       "group": "limbic",
@@ -929,6 +915,20 @@
       }
     },
     {
+      "id": "mb-red-nucleus",
+      "group": "brainstem-nuclei",
+      "name": {
+        "ko": "적색핵",
+        "en": "Red nucleus"
+      },
+      "source": {
+        "atlas": "nextbrain",
+        "labels": [
+          385
+        ]
+      }
+    },
+    {
       "id": "bs-lc-nextbrain",
       "group": "brainstem-nuclei",
       "name": {
@@ -940,21 +940,6 @@
         "labels": [
           589
         ]
-      }
-    },
-    {
-      "id": "bs-lc-aan",
-      "group": "brainstem-nuclei",
-      "name": {
-        "ko": "청색반점 (Harvard AAN)",
-        "en": "Locus coeruleus (Harvard AAN)"
-      },
-      "source": {
-        "atlas": "aan",
-        "files": {
-          "L": "AAN_LC_L_MNI152_1mm_v2p0.nii",
-          "R": "AAN_LC_R_MNI152_1mm_v2p0.nii"
-        }
       }
     },
     {

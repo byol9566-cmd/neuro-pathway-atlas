@@ -171,7 +171,7 @@ def disc(radius=2.0, thickness=0.8, **_):
 
 # ---------------------------------------------------------------- spinal cord columns
 _CORD_AXIS = None
-CORD_FILE = None  # set by build.py: data/derived/vhp/sp-cord.M.mni.nii.gz
+CORD_FILE = None  # set by build.py: data/derived/vhp/sp-cord.M.mni-straight.nii.gz (vhp_derive.py)
 Z_T1, Z_L1, Z_CONUS = -230.0, -470.0, -495.0
 
 

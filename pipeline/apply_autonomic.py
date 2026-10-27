@@ -6,6 +6,9 @@ medulla, cardiac nerves to the heart, the hypogastric route to the bladder, and 
 nerves (S2-4) to the bladder. Positions are textbook relations to structures we have; the viewer says so.
 
     pipeline/.venv/bin/python pipeline/apply_autonomic.py [--write]
+
+Organ and ganglion positions are mesh centroids from the mesh cache (data/derived/meshes): run a full build
+first, and `build --only <these nerve ids>` after.
 """
 import json
 import sys
@@ -13,10 +16,10 @@ from pathlib import Path
 
 import numpy as np
 
+from atlas_pipeline.content import (cached_centroids, insert_after_group, link_step, load_pathways,
+                                    load_structures, save_pathways, save_structures, structure_index)
+
 ROOT = Path(__file__).resolve().parent.parent
-STRUCTURES = ROOT / "content" / "structures.json"
-PATHWAYS = ROOT / "content" / "pathways.json"
-MANIFEST = ROOT / "viewer" / "public" / "data" / "manifest.json"
 CANAL = ROOT / "data" / "derived" / "bp3d" / "canal_axis.json"
 NOTE = "기하 모형: 공개 3D 데이터가 없는 자율신경 주행을 BodyParts3D 몸(척추관 축·장기 위치)과 교과서 관계로 그린 관."
 
@@ -28,9 +31,7 @@ def canal():
 
 
 def main(write):
-    if not MANIFEST.exists():  # organ positions come from the built atlas (for now)
-        sys.exit(f"{MANIFEST} is missing: run a full build first (PYTHONPATH=pipeline pipeline/.venv/bin/python -m atlas_pipeline.build)")
-    cen = {m["id"]: np.array(m["centroid"]) for m in json.loads(MANIFEST.read_text())["meshes"]}
+    cen = {k: np.array(v) for k, v in cached_centroids().items()}  # organ positions come from the built atlas
     c = canal()
     # the paravertebral trunk: beside the vertebral bodies, ~22 mm lateral of the canal and ~28 mm in front
     trunk = [[c(z)[0] + 22, c(z)[1] + 28, float(z)] for z in range(-120, -560, -20)]
@@ -63,9 +64,8 @@ def main(write):
          [[6, c(-560)[1], -560.0], [12, c(-560)[1] + 30, -610.0], [10, bladder[1] - 20, bladder[2] + 30], [float(bladder[0]) + 10, float(bladder[1]) - 15, float(bladder[2])]],
          "S2~S4 절전섬유가 아래아랫배신경얼기로 → 방광벽 신경절 → 배뇨근 수축(배뇨), 발기."),
     ]
-    data = json.loads(STRUCTURES.read_text(encoding="utf-8"))
-    by_id = {x["id"]: x for x in data["structures"]}
-    anchor = max(i for i, x in enumerate(data["structures"]) if x["group"] == "peripheral")
+    data = load_structures()
+    by_id = structure_index(data)
     # nerves to a midline organ: the left copy keeps the organ end un-mirrored so both sides reach it
     fixed_tail = {"pn-cardiac-nerves": 1, "pn-hypogastric": 1}
     for sid, name, radius, pts, text in nerves:
@@ -79,7 +79,7 @@ def main(write):
         if sid in by_id:
             by_id[sid].update(entry)
         else:
-            anchor += 1; data["structures"].insert(anchor, entry); by_id[sid] = entry
+            insert_after_group(data["structures"], "peripheral", entry); by_id[sid] = entry
     steps = {
         "sympathetic-somatic-2": [("pn-sympathetic-trunk", "ipsi")],
         "sympathetic-thoracic-1": [("pn-sympathetic-trunk", "ipsi")],
@@ -101,18 +101,16 @@ def main(write):
         "autonomic-sexual-1": [("pn-pelvic-splanchnic", "ipsi")],
         "autonomic-sexual-2": [("pn-hypogastric", "ipsi")],
     }
-    p = json.loads(PATHWAYS.read_text(encoding="utf-8"))
+    p = load_pathways()
     changed = 0
-    for pw in p["pathways"]:
-        for st in pw["steps"]:
-            for sid, side in steps.get(st["id"], []):
-                if not any(r["id"] == sid for r in st["structures"]):
-                    st["structures"].insert(0, {"id": sid, "side": side}); changed += 1
+    for step_id, links in steps.items():
+        for sid, side in links:
+            changed += link_step(p, step_id, sid, side, "front")
     print(f"{len(nerves)} autonomic structures, {changed} step links")
     if write:
-        STRUCTURES.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_structures(data)
         if changed:
-            PATHWAYS.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            save_pathways(p)
         print("written")
 
 

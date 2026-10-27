@@ -6,12 +6,9 @@ motor outputs, organs and glands for autonomic outputs, skin for the sensory ori
 Sides follow the step's existing side convention ('ipsi' = the side the pathway's origin switch names);
 midline organs are 'ipsi' and resolve to their single M mesh.
 """
-import json
 import sys
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-PATHWAYS = ROOT / "content" / "pathways.json"
+from atlas_pipeline.content import link_step, load_pathways, save_pathways
 
 STEP_TARGETS = {
     # cranial motor outputs -> muscles
@@ -69,18 +66,15 @@ STEP_TARGETS = {
 
 
 def main(write):
-    p = json.loads(PATHWAYS.read_text(encoding="utf-8"))
+    p = load_pathways()
     changed = []
-    for pw in p["pathways"]:
-        for st in pw["steps"]:
-            for sid, side in STEP_TARGETS.get(st["id"], []):
-                if any(r["id"] == sid for r in st["structures"]):
-                    continue
-                st["structures"].append({"id": sid, "side": side})
-                changed.append((st["id"], sid, side))
+    for step_id, targets in STEP_TARGETS.items():
+        for sid, side in targets:
+            if link_step(p, step_id, sid, side):
+                changed.append((step_id, sid, side))
     print(f"{len(changed)} step targets added")
     if write:
-        PATHWAYS.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        save_pathways(p)
         print("written")
 
 
