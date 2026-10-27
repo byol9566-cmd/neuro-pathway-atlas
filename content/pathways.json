@@ -6453,6 +6453,11 @@
               "joint": "knee",
               "side": "ipsi",
               "angle": 45
+            },
+            {
+              "muscle": "mu-quadriceps",
+              "side": "ipsi",
+              "action": "relax"
             }
           ]
         }
@@ -6495,7 +6500,14 @@
           "neuronOrder": 1,
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 근방추 · 척수신경절 (DRG) · 뒤뿌리 · 3D 없음: 근방추, 척수신경절 (DRG), 뒤뿌리"
-          }
+          },
+          "effects": [
+            {
+              "muscle": "*",
+              "side": "ipsi",
+              "action": "none"
+            }
+          ]
         },
         {
           "id": "stretch-reflex-2",
@@ -6614,6 +6626,11 @@
               "eye": "adduct",
               "side": "ipsi",
               "angle": 15
+            },
+            {
+              "muscle": "mu-lateral-rectus",
+              "side": "ipsi",
+              "action": "relax"
             }
           ]
         },
@@ -6637,11 +6654,22 @@
             {
               "id": "pn-cn3",
               "side": "contra"
+            },
+            {
+              "id": "mu-medial-rectus",
+              "side": "contra"
             }
           ],
           "missing": {
             "ko": "현재 제공 데이터에 독립 3D 정의 없음: 눈돌림신경 (III) · 안쪽곧은근 · 3D 없음: 안쪽곧은근"
-          }
+          },
+          "effects": [
+            {
+              "muscle": "mu-medial-rectus",
+              "side": "contra",
+              "action": "relax"
+            }
+          ]
         }
       ],
       "lesions": []

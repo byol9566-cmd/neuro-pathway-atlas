@@ -166,6 +166,17 @@ async function main() {
       const pupils: Record<string, number> = {};
       const eyes: Record<string, [number, number]> = {};
       const lenses: Record<string, number> = {};
+      // the step's skeletal muscles contract, except those an effect marks as relaxing or merely sensed
+      const contracting = new Set([...active].filter((id) => id.startsWith('mu-')));
+      const relaxed = new Set<string>();
+      for (const fx of pathway.steps[m.step].effects ?? []) {
+        if (!fx.muscle || fx.action === 'contract') continue;
+        const hit = [...contracting].filter((id) => fx.muscle === '*' || id === `${fx.muscle}.${resolveSide(fx.side, m.origin)}` || id === `${fx.muscle}.M`);
+        for (const id of hit) {
+          contracting.delete(id);
+          if (fx.action === 'relax') relaxed.add(id);
+        }
+      }
       for (const fx of pathway.steps[m.step].effects ?? []) {
         const side = resolveSide(fx.side, m.origin);
         if (fx.joint && fx.angle !== undefined) {
@@ -186,7 +197,7 @@ async function main() {
       scene.setPupils(pupils);
       scene.setEyeRotations(eyes);
       scene.setLenses(lenses);
-      scene.setContractions(active); // the step's skeletal muscles contract
+      scene.setContractions(contracting, relaxed);
 
       const routeChanged = prev.kind !== 'pathway' || prev.pathwayId !== m.pathwayId || prev.origin !== m.origin;
       if (routeChanged) {
@@ -451,9 +462,16 @@ async function main() {
         const tags = el('p', { className: 'tags' });
         if (st.neuronOrder) tags.append(el('span', {}, `${st.neuronOrder}차 뉴런`));
         if (st.decussation) tags.append(el('span', { className: 'cross' }, '교차'));
+        const shown = new Set<string>();
         for (const id of stepMeshIds(st, m.origin, meshLookup)) {
           const mesh = meshLookup.get(id)!;
+          shown.add(mesh.structureId);
           tags.append(el('span', { className: 'struct' }, `${structures.get(mesh.structureId)!.name.ko} · ${SIDE_LABEL[mesh.side]}`));
+        }
+        // a structure the atlas has no mesh for still gets named, muted, so the learner knows it belongs here
+        for (const ref of st.structures) {
+          if (shown.has(ref.id)) continue;
+          tags.append(el('span', { className: 'struct no-mesh' }, structures.get(ref.id)?.name.ko ?? ref.id, el('em', {}, '3D 없음')));
         }
         body.append(tags, el('p', {}, st.description.ko));
         if (st.missing) body.append(el('p', { className: 'missing' }, st.missing.ko));
@@ -759,6 +777,7 @@ async function main() {
       setMode,
       setView: (v: ViewPreset) => scene.setView(v, false),
       framing: () => scene.framingNow,
+      muscleGoals: () => scene.muscleGoals,
       section: {
         open: openSection,
         get z() { return section?.zMm; },

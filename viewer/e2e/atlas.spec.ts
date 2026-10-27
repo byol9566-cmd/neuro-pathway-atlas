@@ -43,7 +43,7 @@ test('loads every mesh and starts in explore mode', async ({ page }) => {
 });
 
 test('DCML pathway highlights the contralateral chain and flips with the origin side', async ({ page }) => {
-  await ready(page);
+  const errors = await ready(page);
   await pickPathway(page, 'dcml');
   let s = await states(page);
   expect(s['bs-gracile.R']).toBe('involved'); // default origin: right body
@@ -72,10 +72,11 @@ test('DCML pathway highlights the contralateral chain and flips with the origin 
   expect(s['ctx-postcentral.R']).toBe('active');
   expect(s['ctx-postcentral.L']).toBe('ghost');
   expect(s['bs-gracile.L']).toBe('involved');
+  expect(errors).toEqual([]);
 });
 
 test('selecting a structure isolates it; Escape returns to explore', async ({ page }) => {
-  await ready(page);
+  const errors = await ready(page);
   await page.locator('#search').fill('배쪽뒤가쪽');  // 'VPL' alone also matches the superior thalamic radiation
   await expect(page.locator('.structure:visible')).toHaveCount(1);
   await pickStructure(page, 'thal-vpl');
@@ -88,6 +89,7 @@ test('selecting a structure isolates it; Escape returns to explore', async ({ pa
   await shot(page, '04-structure-vpl');
   await page.keyboard.press('Escape');
   expect((await states(page))['thal-vpm.L']).toBe('normal');
+  expect(errors).toEqual([]);
 });
 
 test('remaining pathways render', async ({ page }) => {
@@ -103,8 +105,38 @@ test('remaining pathways render', async ({ page }) => {
   expect(errors).toEqual([]);
 });
 
+test('every pathway opens and steps through without an error', async ({ page }) => {
+  test.setTimeout(180_000);
+  const errors = await ready(page);
+  const ids = await page.locator('[data-pathway]').evaluateAll((els) => els.map((e) => (e as HTMLElement).dataset.pathway!));
+  expect(ids.length).toBeGreaterThan(200);
+  // every step of every pathway, alternating origin sides, in batches: under software WebGL the page renders
+  // a frame (over a second with a new route) between any two calls, so the work stays inside the page and
+  // only the end of each batch lets a frame through to exercise the per-frame code
+  for (let i = 0; i < ids.length; i += 25) {
+    const failed = await page.evaluate(async (batch) => {
+      const atlas = (window as any).__atlas;
+      const failed: string[] = [];
+      for (const pathwayId of batch) {
+        atlas.setMode({ kind: 'pathway', pathwayId, origin: 'R', step: 0, playing: false });
+        const steps = document.querySelectorAll('#detail .steps li').length;
+        if (!steps) failed.push(`${pathwayId}: no steps rendered`);
+        for (let step = 0; step < steps; step++) {
+          atlas.setMode({ kind: 'pathway', pathwayId, origin: step % 2 ? 'L' : 'R', step, playing: false });
+          if (atlas.mode.step !== step || !document.querySelector('#detail .steps li.on')) failed.push(`${pathwayId}: step ${step} did not render`);
+        }
+      }
+      await new Promise(requestAnimationFrame);
+      return failed;
+    }, ids.slice(i, i + 25));
+    expect(failed).toEqual([]);
+  }
+  await page.evaluate(() => (window as any).__atlas.setMode({ kind: 'explore' }));
+  expect(errors).toEqual([]);
+});
+
 test('clicking a mesh in the 3D view selects its structure', async ({ page }) => {
-  await ready(page);
+  const errors = await ready(page);
   await settle(page);
   const box = (await page.locator('#canvas').boundingBox())!;
   await page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
@@ -120,6 +152,7 @@ test('clicking a mesh in the 3D view selects its structure', async ({ page }) =>
   await page.mouse.click(close.x + close.width / 2, close.y + close.height / 2);
   expect(await page.evaluate(() => (window as any).__atlas.mode.kind)).toBe('explore');
   await expect(page.locator('#detail')).toBeHidden();
+  expect(errors).toEqual([]);
 });
 
 test('section panel shows the atlas labels at the chosen level and follows the selection', async ({ page }) => {

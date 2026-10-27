@@ -28,6 +28,8 @@ def canal():
 
 
 def main(write):
+    if not MANIFEST.exists():  # organ positions come from the built atlas (for now)
+        sys.exit(f"{MANIFEST} is missing: run a full build first (PYTHONPATH=pipeline pipeline/.venv/bin/python -m atlas_pipeline.build)")
     cen = {m["id"]: np.array(m["centroid"]) for m in json.loads(MANIFEST.read_text())["meshes"]}
     c = canal()
     # the paravertebral trunk: beside the vertebral bodies, ~22 mm lateral of the canal and ~28 mm in front
@@ -55,7 +57,7 @@ def main(write):
          [celiac, [22, (celiac[1] + adrenal[1]) / 2, -465.0], list(adrenal)],
          "큰내장신경의 절전섬유가 복강신경절을 지나쳐 부신속질 크롬친화세포에 직접 시냅스."),
         ("pn-hypogastric", {"ko": "아랫배신경·아래아랫배신경얼기 (→ 방광)", "en": "Hypogastric nerves and inferior hypogastric plexus"}, 0.7,
-         [trunk[-2], [8, c(-560)[1] + 25, -570.0], hypogastric, [float(bladder[0]), float(bladder[1]) - 10, float(bladder[2]) + 10]],
+         [trunk[-2], [8, c(-560)[1] + 25, -570.0], hypogastric, list(bladder)],
          "요추 내장신경 → 위아랫배신경얼기(대동맥 갈림) → 아랫배신경 → 아래아랫배신경얼기 → 방광·전립샘(저장·사정)."),
         ("pn-pelvic-splanchnic", {"ko": "골반내장신경 (S2~4 부교감)", "en": "Pelvic splanchnic nerves"}, 0.7,
          [[6, c(-560)[1], -560.0], [12, c(-560)[1] + 30, -610.0], [10, bladder[1] - 20, bladder[2] + 30], [float(bladder[0]) + 10, float(bladder[1]) - 15, float(bladder[2])]],
@@ -64,11 +66,15 @@ def main(write):
     data = json.loads(STRUCTURES.read_text(encoding="utf-8"))
     by_id = {x["id"]: x for x in data["structures"]}
     anchor = max(i for i, x in enumerate(data["structures"]) if x["group"] == "peripheral")
+    # nerves to a midline organ: the left copy keeps the organ end un-mirrored so both sides reach it
+    fixed_tail = {"pn-cardiac-nerves": 1, "pn-hypogastric": 1}
     for sid, name, radius, pts, text in nerves:
         if radius is None:
             src = {"atlas": "model", "shape": "ellipsoid", "params": {"radii": [6, 4, 10]}, "centreMni": [round(v, 1) for v in pts], "axis": [0, 0, 1], "bilateral": True, "modelNote": NOTE + " " + text}
         else:
             src = {"atlas": "model", "shape": "path-tube", "params": {"radius": radius, "points": [[round(float(v), 1) for v in p] for p in pts]}, "centreMni": [0, 0, 0], "bilateral": True, "modelNote": NOTE + " " + text}
+            if sid in fixed_tail:
+                src["params"]["mirrorFixedTail"] = fixed_tail[sid]
         entry = {"id": sid, "group": "peripheral", "name": name, "source": src}
         if sid in by_id:
             by_id[sid].update(entry)
@@ -105,7 +111,8 @@ def main(write):
     print(f"{len(nerves)} autonomic structures, {changed} step links")
     if write:
         STRUCTURES.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-        PATHWAYS.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        if changed:
+            PATHWAYS.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print("written")
 
 

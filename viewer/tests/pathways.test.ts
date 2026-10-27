@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import pathwaysJson from '../../content/pathways.json';
 import structuresJson from '../../content/structures.json';
 import { meshFor, pathwayMeshIds, pathwayRoute, resolveSide, stepMeshIds } from '../src/pathways';
@@ -42,8 +42,15 @@ describe('side resolution', () => {
     expect([...pathwayMeshIds(crossing, 'L', meshes)]).toEqual(['nuc.L', 'tract.R']);
   });
 
-  it('reports unknown structures instead of silently skipping them', () => {
-    expect(() => stepMeshIds(crossing.steps[0], 'L', lookup())).toThrow(/nuc/);
+  it('skips a structure with no mesh and warns once per step and structure', () => {
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const meshes = lookup(mesh('tract.R', [1, 0, 5]));
+    const step = { ...crossing.steps[0], structures: [{ id: 'nuc', side: 'ipsi' as const }, { id: 'tract', side: 'contra' as const }] };
+    expect(stepMeshIds(step, 'L', meshes)).toEqual(['tract.R']);
+    expect(stepMeshIds(step, 'L', meshes)).toEqual(['tract.R']);
+    expect(warn).toHaveBeenCalledTimes(1);
+    expect(warn.mock.calls[0][0]).toMatch(/s1: no mesh for nuc/);
+    warn.mockRestore();
   });
 });
 

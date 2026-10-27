@@ -405,15 +405,28 @@ export class AtlasScene {
     return m;
   }
 
-  /** Contract the given skeletal muscles (shorter along their long axis, thicker across); others relax. */
-  setContractions(meshIds: Iterable<string>) {
+  /** relaxing muscles are drawn in a greyer, dimmer version of their colour */
+  private readonly relaxedTint = new Map<string, THREE.Color>();
+
+  /** Contract the given skeletal muscles (shorter along their long axis, thicker across); the `relaxed` ones
+   *  lengthen a little and dim (an antagonist let go); the rest return to rest. */
+  setContractions(meshIds: Iterable<string>, relaxed: Iterable<string> = []) {
     const want = new Set(meshIds);
-    for (const id of want) {
+    const slack = new Set(relaxed);
+    this.relaxedTint.clear();
+    for (const id of new Set([...want, ...slack])) {
       const entry = this.entries.get(id);
-      if (entry && entry.structure.group === 'muscles') this.musclePivot(entry).goal = 1;
+      if (!entry || entry.structure.group !== 'muscles') continue;
+      this.musclePivot(entry).goal = slack.has(id) ? -0.5 : 1;
+      if (slack.has(id)) this.relaxedTint.set(id, entry.baseColor.clone().lerp(new THREE.Color(0x8a8a8a), 0.45).multiplyScalar(0.7));
     }
-    for (const [id, m] of this.muscles) if (!want.has(id)) m.goal = 0;
+    for (const [id, m] of this.muscles) if (!want.has(id) && !slack.has(id)) m.goal = 0;
     this.poke();
+  }
+
+  /** where each muscle is heading: 1 contracted, -0.5 relaxed (lengthened), 0 at rest — for tests */
+  get muscleGoals() {
+    return Object.fromEntries([...this.muscles].map(([id, m]) => [id, m.goal]));
   }
 
   /** Turn the eyes: per side [degrees about the vertical axis (+ = toward the nose), degrees of elevation]. */
@@ -814,7 +827,7 @@ export class AtlasScene {
     const still = this.reducedMotion.matches;
     const pulse = still ? 0.5 : 0.5 + 0.5 * Math.sin(time * 3.2);
     for (const e of this.entries.values()) {
-      if (e.state !== 'ghost') applySolidState(e.solid, e.baseColor, e.state, e === this.hovered, pulse);
+      if (e.state !== 'ghost') applySolidState(e.solid, this.relaxedTint.get(e.info.id) ?? e.baseColor, e.state, e === this.hovered, pulse);
       else e.ghost.uniforms.uHover.value = e === this.hovered ? 1 : 0;
     }
     this.route?.update(still ? 0 : time, still ? 1 : dt);

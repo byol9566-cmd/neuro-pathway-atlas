@@ -148,6 +148,8 @@ dl.lesions dd { color: var(--text-2); }
 .tags span { font-size: 11.5px; border-radius: 4px; padding: 0 6px; background: rgba(255, 255, 255, 0.06); color: var(--text-2); }
 .tags .cross { background: color-mix(in srgb, var(--cross) 18%, transparent); color: var(--cross); }
 .tags .struct { background: var(--accent-soft); color: var(--accent); }
+.tags .no-mesh { background: rgba(255, 255, 255, 0.04); color: var(--text-3); }
+.tags .no-mesh em { font-style: normal; font-size: 10px; color: var(--warn-text); border: 1px solid color-mix(in srgb, var(--warn) 50%, transparent); border-radius: 4px; padding: 0 3px; margin-left: 4px; }
 .missing { font-size: 12px; color: var(--text-2); border-left: 1px dashed var(--hairline-strong); padding-left: 8px; }
 .transport { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 6px; }
 

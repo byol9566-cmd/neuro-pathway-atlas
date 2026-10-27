@@ -78,6 +78,10 @@ export interface StepEffect {
   eye?: 'abduct' | 'adduct' | 'elevate' | 'depress';
   /** the lens thickens for near vision */
   lens?: 'accommodate';
+  /** a muscle of the step (structure id, or '*' for all of them) that relaxes or is only sensed, so it does
+   *  not contract; every other mu-* structure of the step contracts */
+  muscle?: string;
+  action?: 'contract' | 'relax' | 'none';
 }
 
 export interface PathwayStructureRef {

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Body effects of pathway steps: which limb joint flexes (+deg) or extends (-deg) when the step is
-reached (viewer: AtlasScene.setJointAngles). Schematic — the amounts are illustrative.
+reached (viewer: AtlasScene.setJointAngles), eye and pupil movements, and which of the step's muscles
+relax instead of contracting (AtlasScene.setContractions). Schematic — the amounts are illustrative.
 
     pipeline/.venv/bin/python pipeline/apply_effects.py [--write]
 """
@@ -43,6 +44,16 @@ EYE = {
 }
 
 
+# muscles of a step that do not contract: an antagonist that relaxes (reciprocal inhibition) or a muscle whose
+# stretch is only sensed. "*" means every muscle of the step; "relax" also shows it lengthening and dimmed
+MUSCLE = {
+    "withdrawal-reflex-3": [{"muscle": "mu-quadriceps", "side": "ipsi", "action": "relax"}],
+    "stretch-reflex-1": [{"muscle": "*", "side": "ipsi", "action": "none"}],
+    "hvor-inhibition-2": [{"muscle": "mu-lateral-rectus", "side": "ipsi", "action": "relax"}],
+    "hvor-inhibition-3": [{"muscle": "mu-medial-rectus", "side": "contra", "action": "relax"}],
+}
+
+
 def main(write):
     p = json.loads(PATHWAYS.read_text(encoding="utf-8"))
     n = 0
@@ -61,6 +72,12 @@ def main(write):
                     st["effects"] = EFFECTS[st["id"]]; n += 1
                 else:
                     st.pop("effects", None)
+            if st["id"] in MUSCLE:
+                st["effects"] = [e for e in st.get("effects", []) if "muscle" not in e] + MUSCLE[st["id"]]
+                for e in MUSCLE[st["id"]]:
+                    if e["muscle"] != "*" and not any(r["id"] == e["muscle"] for r in st["structures"]):
+                        st["structures"].append({"id": e["muscle"], "side": e["side"]})
+                n += 1
     print(f"{n} steps with effects")
     if write:
         PATHWAYS.write_text(json.dumps(p, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

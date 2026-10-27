@@ -22,6 +22,7 @@ from atlas_pipeline import bp3d  # noqa: E402
 ORDINALS = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"]
 NAMES = [f"{o} cervical vertebra" for o in ORDINALS[:7]] + [f"{o} thoracic vertebra" for o in ORDINALS[:12]] + [f"{o} lumbar vertebra" for o in ORDINALS[:5]]
 OUT = ROOT / "data" / "derived" / "bp3d" / "canal_axis.json"
+MIN_GAP_MM = 3.0
 
 
 def canal_centre(mesh):
@@ -51,6 +52,16 @@ def main():
         rows.append({"vertebra": n, "x": round(x, 1), "y": round(y, 1), "z": round(z, 1), "gapMm": round(gap, 1)})
         print(f"{n:28s} canal ({x:6.1f}, {y:6.1f}, {z:7.1f})  gap {gap:.0f} mm")
     rows.sort(key=lambda r: -r["z"])
+    # no clear hole (gap < MIN_GAP_MM): the fallback point is not the canal (third cervical: 8 mm off its
+    # neighbours), so take x, y from the neighbouring vertebrae along z instead
+    good = [r for r in rows if r["gapMm"] >= MIN_GAP_MM]
+    gz = np.array([-r["z"] for r in good])
+    for r in rows:
+        if r["gapMm"] < MIN_GAP_MM:
+            r["x"] = round(float(np.interp(-r["z"], gz, [g["x"] for g in good])), 1)
+            r["y"] = round(float(np.interp(-r["z"], gz, [g["y"] for g in good])), 1)
+            r["interpolated"] = True
+            print(f"{r['vertebra']:28s} no canal gap: interpolated ({r['x']:6.1f}, {r['y']:6.1f})")
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"source": "BodyParts3D vertebrae, MNI (bp3d.to_mni)", "points": rows}, indent=1))
     print("wrote", OUT)

@@ -3,6 +3,9 @@
     python -m atlas_pipeline.build [--only ID ...] [--no-compress]
 
 NextBrain is a left-hemisphere volume in MNI-aligned RAS mm; right-side meshes are mirrored across x = 0.
+Every built mesh is also kept in data/derived/meshes (<meshId>.ply + its manifest record): a full build
+rewrites that cache, `--only` rebuilds the given structures into it and assembles the outputs from the
+whole cache, so they stay complete.
 """
 
 import argparse
@@ -345,8 +348,11 @@ def build_structure(structure: dict, nb: NextBrain):
         if src.get("bilateral", True):
             rec_r = mesh_record(f"{sid}.R", structure, "R", mesh, volume_mm3=vol, approx=True, line=line); rec_r["note"] = note
             out.append((f"{sid}.R", mesh, rec_r))
-            mesh_l = meshing.mirror_x(mesh)
-            line_l = None if line is None else np.asarray(line) * np.array([-1.0, 1.0, 1.0])
+            if models.builds_left(src):  # the cord-level shapes and nerves to midline organs draw their own left
+                mesh_l, line_l = models.build(src, "L")
+            else:
+                mesh_l = meshing.mirror_x(mesh)
+                line_l = None if line is None else np.asarray(line) * np.array([-1.0, 1.0, 1.0])
             rec_l = mesh_record(f"{sid}.L", structure, "L", mesh_l, volume_mm3=vol, approx=True, line=line_l); rec_l["note"] = note
             out.append((f"{sid}.L", mesh_l, rec_l))
         else:
@@ -391,12 +397,11 @@ def build_structure(structure: dict, nb: NextBrain):
 
     labels = nb.expand_labels(src)
     mask, spacing, origin = nb.label_mask(labels, stride=src.get("stride", 1))
-    if not mask.any():
-        raise ValueError(f"{sid}: labels {labels} have no voxels in the atlas")
     cleaned, stats = meshing.clean_mask(mask)
     vol = cleaned.sum() * spacing**3
     placeholder = src.get("placeholder")
     prob_note = None
+    only_prob = False  # nothing of the label survives in the argmax: the probability map only places it
     if vol < PROB_BELOW_MM3 and not src.get("stride"):
         # small nucleus: the probability maps give its real extent where the argmax only kept a core
         got = nb.prob_mask(labels, PROB_THRESHOLD)
@@ -404,12 +409,21 @@ def build_structure(structure: dict, nb: NextBrain):
             pmask, pspacing, porigin, cut = got
             pcleaned, pstats = meshing.clean_mask(pmask)
             pvol = pcleaned.sum() * pspacing**3
-            if pvol >= PLACEHOLDER_BELOW_MM3 and pvol > vol:
+            if vol == 0 and pcleaned.any():
+                # (MNTB: 2 argmax voxels, gone after cleaning; its map peaks at 0.37) a low cut gives a
+                # position, not a shape: an ellipsoid at the map's centroid
+                only_prob = True
+                prob_note = (f"NextBrain 확률 지도에서 p ≥ {cut:.2f}인 복셀({pvol:.1f} mm³)의 중심에 둔 타원체. "
+                             "argmax 라벨에는 남은 복셀이 없다.")
+                mask, spacing, origin, cleaned, stats, vol = pcleaned, pspacing, porigin, pcleaned, pstats, pvol
+            elif pvol >= PLACEHOLDER_BELOW_MM3 and pvol > vol:
                 prob_note = (f"NextBrain 확률 지도에서 p ≥ {cut:.2f}인 복셀로 만든 형태. " +
                              (f"argmax 라벨은 {vol:.1f} mm³만 남아 모양이 없었다." if vol < PLACEHOLDER_BELOW_MM3
                               else f"argmax 라벨({vol:.0f} mm³)은 이웃 구조에 밀려 일부만 남아 있었다."))
                 mask, spacing, origin, cleaned, stats, vol = pmask, pspacing, porigin, pcleaned, pstats, pvol
-    if vol < PLACEHOLDER_BELOW_MM3 and (placeholder or mask.any()):
+    if vol == 0:
+        raise ValueError(f"{sid}: labels {labels} have no voxels in the atlas or its probability maps")
+    if only_prob or (vol < PLACEHOLDER_BELOW_MM3 and (placeholder or mask.any())):
         # too few voxels for a surface: an ellipsoid at the label's centroid. Explicit radii if the
         # content gives them, otherwise a sphere a little larger than the label's own volume so the
         # nucleus is at least visible (small nuclei of the reviewer's list land here)
@@ -421,9 +435,10 @@ def build_structure(structure: dict, nb: NextBrain):
             radii = [r, r, r]
         mesh = meshing.ellipsoid(center, radii)
         add_pair(mesh, volume_mm3=mask.sum() * spacing**3, approx=True, stats=stats)
+        if prob_note:
+            for _, _, rec in out:
+                rec["note"] = prob_note
         return out
-    if not mask.any():
-        raise ValueError(f"{sid}: labels {labels} have no voxels")
 
     sigma = 0.5 if src.get("stride", 1) > 1 else (0.2 if vol < 30 else 0.3)
     mesh = meshing.mask_to_mesh(cleaned, spacing, origin, smooth_sigma_mm=sigma)
@@ -490,33 +505,57 @@ def limb_joints(segment_meshes: dict) -> list:
     return out
 
 
-def split_body_skin(scene, mesh_records, structure_records, segment_meshes, torso_meshes, skin_structure):
+def split_body_skin(meshes, structure_records, segment_meshes, torso_meshes, skin_structure):
     """Replace the single skin mesh by a torso piece plus one piece per limb bone segment (as structures
-    '<bone>-skin'), so the limbs' skin follows the joints."""
-    skin = scene.geometry.get("body-skin.M")
+    '<bone>-skin'), so the limbs' skin follows the joints. meshes: mesh id -> (trimesh, record);
+    structure_records: structure id -> record."""
+    skin = meshes.get("body-skin.M", (None,))[0]
     if skin is None or not segment_meshes or not torso_meshes:
         return
     pieces = bp3d.split_skin(skin, segment_meshes, torso_meshes)
-    scene.delete_geometry("body-skin.M")
-    rec_skin = next(r for r in mesh_records if r["id"] == "body-skin.M")
-    mesh_records.remove(rec_skin)
     torso = pieces.pop("torso")
-    torso.vertex_normals  # noqa: B018
-    scene.add_geometry(torso, node_name="body-skin.M", geom_name="body-skin.M")
     r = mesh_record("body-skin.M", skin_structure, "M", torso, volume_mm3=float(abs(torso.volume)), approx=False); r["note"] = skin_structure.get("note", "")
-    mesh_records.append(r)
+    meshes["body-skin.M"] = (torso, r)
     by_struct = {}
     for seg_id, piece in pieces.items():
         bone, side = seg_id.rsplit(".", 1)
         sid = f"{bone}-skin"
-        piece.vertex_normals  # noqa: B018
-        scene.add_geometry(piece, node_name=f"{sid}.{side}", geom_name=f"{sid}.{side}")
         fake = {"id": sid, "name": {"ko": f"피부 — {SKIN_PIECE_NAMES[bone]}", "en": f"Skin, {bone.replace('bone-', '')}"}, "group": "body-shell"}
         r = mesh_record(f"{sid}.{side}", fake, side, piece, volume_mm3=float(abs(piece.volume)), approx=False); r["note"] = skin_structure.get("note", "")
-        mesh_records.append(r)
+        meshes[f"{sid}.{side}"] = (piece, r)
         by_struct.setdefault(sid, (fake, []))[1].append(f"{sid}.{side}")
     for sid, (fake, ids) in by_struct.items():
-        structure_records.append({"id": sid, "group": "body-shell", "name": fake["name"], "tract": False, "approx": False, "atlas": "bp3d", "labels": [], "meshIds": sorted(ids)})
+        structure_records[sid] = {"id": sid, "group": "body-shell", "name": fake["name"], "tract": False, "approx": False, "atlas": "bp3d", "labels": [], "meshIds": sorted(ids)}
+
+
+SKIN_PIECES = {f"{b}-skin" for b in LIMB_SEGMENTS}  # structures split_body_skin makes from body-skin
+MESH_CACHE = REPO_ROOT / "data" / "derived" / "meshes"  # <meshId>.ply + .json, structures/<id>.json
+
+
+def load_cache():
+    """-> (meshes: id -> (trimesh, record), structure records: id -> record) from MESH_CACHE"""
+    meshes, srecs = {}, {}
+    for j in sorted(MESH_CACHE.glob("*.json")):
+        ply = j.with_suffix(".ply")
+        if ply.exists():
+            meshes[j.stem] = (trimesh.load(ply, process=False), json.loads(j.read_text(encoding="utf-8")))
+    for j in sorted((MESH_CACHE / "structures").glob("*.json")):
+        srecs[j.stem] = json.loads(j.read_text(encoding="utf-8"))
+    return meshes, srecs
+
+
+def write_cache(meshes: dict, srecs: dict, drop_meshes=(), drop_structures=()):
+    (MESH_CACHE / "structures").mkdir(parents=True, exist_ok=True)
+    for mid in drop_meshes:
+        for ext in (".ply", ".json"):
+            (MESH_CACHE / f"{mid}{ext}").unlink(missing_ok=True)
+    for sid in drop_structures:
+        (MESH_CACHE / "structures" / f"{sid}.json").unlink(missing_ok=True)
+    for mid, (mesh, rec) in meshes.items():
+        (MESH_CACHE / f"{mid}.ply").write_bytes(mesh.export(file_type="ply"))
+        (MESH_CACHE / f"{mid}.json").write_text(json.dumps(rec, ensure_ascii=False), encoding="utf-8")
+    for sid, rec in srecs.items():
+        (MESH_CACHE / "structures" / f"{sid}.json").write_text(json.dumps(rec, ensure_ascii=False), encoding="utf-8")
 
 
 def _load_hcp_tracts():
@@ -538,23 +577,31 @@ def compress(raw_glb, out_glb) -> bool:
 
 def main(argv=None):
     ap = argparse.ArgumentParser()
-    ap.add_argument("--only", nargs="*", help="build only these structure ids (manifest is still complete for them)")
+    ap.add_argument("--only", nargs="*", help="rebuild only these structure ids into the mesh cache (data/derived/meshes), "
+                    "then write atlas.glb + manifest.json from the whole cache (needs one full build first); "
+                    "skips the 2D section export")
     ap.add_argument("--no-compress", action="store_true")
     ap.add_argument("--no-sections", action="store_true", help="skip exporting the 2D section slices")
     args = ap.parse_args(argv)
 
     config = json.loads((CONTENT_DIR / "structures.json").read_text())
+    content_ids = {s["id"] for s in config["structures"]}
+    if args.only:
+        if not any(MESH_CACHE.glob("*.json")):
+            sys.exit(f"--only needs the mesh cache, and {MESH_CACHE} is empty: run a full build first "
+                     "(PYTHONPATH=pipeline pipeline/.venv/bin/python -m atlas_pipeline.build)")
+        unknown = [i for i in args.only if i not in content_ids]
+        if unknown:
+            print(f"not in content/structures.json: {', '.join(unknown)}", file=sys.stderr)
     structures = [s for s in config["structures"] if not args.only or s["id"] in args.only]
+    rebuilt = {s["id"] for s in structures}
 
     t0 = time.time()
     nb = NextBrain()
     models.BRAINSTEM_AXIS = nb.brainstem_axis()
     print(f"nextbrain loaded: {nb.data.shape} @ {nb.spacing} mm, {len(nb.present)} labels ({time.time() - t0:.1f}s)")
 
-    scene = trimesh.Scene()
-    mesh_records, structure_records, skipped = [], [], []
-    segment_meshes = {}  # limb bone segments, for the joint pivots
-    torso_meshes = []
+    new_meshes, new_srecs, skipped = {}, {}, []
     for s in structures:
         t = time.time()
         try:
@@ -564,37 +611,70 @@ def main(argv=None):
             skipped.append(s["id"])
             continue
         for mesh_id, mesh, rec in built:
-            mesh.vertex_normals  # noqa: B018 -- compute so the GLB carries smooth normals
-            scene.add_geometry(mesh, node_name=mesh_id, geom_name=mesh_id)
-            mesh_records.append(rec)
-            if s["id"] in LIMB_SEGMENTS:
-                segment_meshes[mesh_id] = mesh
-            if s["id"] in TORSO_BONES:
-                torso_meshes.append(mesh)
+            new_meshes[mesh_id] = (mesh, rec)
         first = built[0][2]
-        structure_records.append(
-            {
-                "id": s["id"],
-                "group": s["group"],
-                "name": s["name"],
-                "tract": bool(s.get("tract")),
-                "approx": first["approx"],
-                "atlas": s["source"]["atlas"],
-                # atlas label ids behind this structure: lets the 2D section panel map a pixel to it
-                "labels": nb.expand_labels(s["source"]) if s["source"]["atlas"] == "nextbrain" and "shell" not in s["source"] else [],
-                "meshIds": [m[0] for m in built],
-                **({"color": s["color"]} if s.get("color") else {}),
-            }
-        )
+        new_srecs[s["id"]] = {
+            "id": s["id"],
+            "group": s["group"],
+            "name": s["name"],
+            "tract": bool(s.get("tract")),
+            "approx": first["approx"],
+            # atlas label ids behind this structure: lets the 2D section panel map a pixel to it
+            "labels": nb.expand_labels(s["source"]) if s["source"]["atlas"] == "nextbrain" and "shell" not in s["source"] else [],
+            "meshIds": [m[0] for m in built],
+            **({"color": s["color"]} if s.get("color") else {}),
+        }
         flag = " [placeholder]" if first["approx"] else ""
         kept = first.get("cleanup", {}).get("keptFraction")
         print(f"  {s['id']:24s} {first['volumeMm3']:9.1f} mm3  {first['faces']:6d} faces  kept={kept}  {time.time() - t:4.1f}s{flag}")
 
     if skipped:
         print(f"skipped {len(skipped)} structures with no usable voxels: {', '.join(skipped)}")
+
+    # the rebuilt structures replace their cached meshes (the skin pieces go with body-skin); everything
+    # else comes from the cache
+    replaced = lambda sid: sid in rebuilt or (sid in SKIN_PIECES and "body-skin" in rebuilt)
+    meshes, srecs = load_cache() if args.only else ({}, {})
+    stale_meshes = [mid for mid, (_, rec) in meshes.items() if replaced(rec["structureId"])]
+    stale_srecs = [sid for sid in srecs if replaced(sid)]
+    for mid in stale_meshes:
+        del meshes[mid]
+    for sid in stale_srecs:
+        del srecs[sid]
+    meshes.update(new_meshes)
+    srecs.update(new_srecs)
+    by_structure = lambda ids: [m for m, rec in meshes.values() if rec["structureId"] in ids]
+    segment_meshes = {mid: m for mid, (m, rec) in meshes.items() if rec["structureId"] in LIMB_SEGMENTS}  # for the joint pivots
     skin_structure = next((s for s in structures if s["id"] == "body-skin"), None)
     if skin_structure:
-        split_body_skin(scene, mesh_records, structure_records, segment_meshes, torso_meshes, skin_structure)
+        split_body_skin(meshes, srecs, segment_meshes, by_structure(TORSO_BONES), skin_structure)
+    if args.only:
+        write_cache({mid: v for mid, v in meshes.items() if replaced(v[1]["structureId"])},
+                    {sid: v for sid, v in srecs.items() if replaced(sid)}, drop_meshes=stale_meshes, drop_structures=stale_srecs)
+    else:
+        shutil.rmtree(MESH_CACHE, ignore_errors=True)
+        write_cache(meshes, srecs)
+
+    # structures since removed from content/structures.json do not linger in the cache's outputs
+    keep = lambda sid: sid in content_ids or (sid in SKIN_PIECES and "body-skin" in content_ids)
+    order = [s["id"] for s in config["structures"]] + sorted(SKIN_PIECES)
+    structure_records = [srecs[sid] for sid in order if sid in srecs and keep(sid)]
+    gone = sorted(sid for sid in srecs if not keep(sid))
+    if gone:
+        print(f"cache entries no longer in content, left out: {', '.join(gone)}")
+    if args.only:
+        missing = sorted(content_ids - set(srecs) - set(skipped))
+        if missing:
+            print(f"not in the cache (run a full build to add them): {', '.join(missing)}", file=sys.stderr)
+    scene = trimesh.Scene()
+    mesh_records = []
+    for srec in structure_records:
+        for mid in srec["meshIds"]:
+            mesh, rec = meshes[mid]
+            mesh.vertex_normals  # noqa: B018 -- compute so the GLB carries smooth normals
+            scene.add_geometry(mesh, node_name=mid, geom_name=mid)
+            mesh_records.append(rec)
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     raw = OUT_DIR / "atlas.raw.glb"
     final = OUT_DIR / "atlas.glb"

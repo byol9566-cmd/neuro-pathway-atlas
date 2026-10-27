@@ -54,8 +54,13 @@ def sheet_effects():
         pw, st = STEP[sid]
         for e in lst:
             rows.append([sid, pw["name"]["ko"], st["title"]["ko"], f"동공 {e['pupil']} ({e['side']})", "", ""])
+    for sid, lst in fx.MUSCLE.items():
+        pw, st = STEP[sid]
+        for e in lst:
+            what = "근육 이완" if e["action"] == "relax" else "수축 없음" if e["action"] == "none" else "근육 수축"
+            rows.append([sid, pw["name"]["ko"], st["title"]["ko"], f"{what} ({e['side']})", "모든 근육" if e["muscle"] == "*" else ko(e["muscle"]), ""])
     return "\n".join([
-        "# 3. 경로 단계의 몸 작용 (관절·눈·동공)", "",
+        "# 3. 경로 단계의 몸 작용 (관절·눈·동공·근육 이완)", "",
         "뷰어에서 그 단계에 도달하면 일어나는 움직임. 각도는 설명용 대표값. **틀린 것·빠진 것(어떤 경로의 마지막 단계에 어떤 관절·근육 작용이 있어야 하는지)**을 '답변' 열에 적어 주세요. 'ipsi/contra'는 경로의 기시쪽 기준.", "",
         md_table(["단계 id", "경로", "단계", "작용 (쪽)", "값", "답변"], rows), "",
         "## 단계 → 근육·장기 종착 (apply_body_targets.py)", "",

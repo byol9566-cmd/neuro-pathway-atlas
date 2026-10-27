@@ -252,7 +252,7 @@ def cord_extension(**_):
 
 def cord_column(z_top: float, z_bottom: float, offset=(2.5, -0.5), radius=0.8, lateral_sign=1.0, **_):
     """a cell column inside the cord: offset (lateral, anterior) from the axis, in mm at a 4.5 mm cord,
-    scaled with the local radius; right side (lateral_sign=+1)"""
+    scaled with the local radius; right side (lateral_sign=+1), left with -1 (mirrored about the axis)"""
     ax = cord_axis()
     zs = [z for z in sorted(ax, reverse=True) if z_bottom <= z <= z_top]
     P, R = [], []
@@ -283,14 +283,20 @@ BUILDERS = {
 
 
 def path_tube(points, radius=1.0, **_):
-    """a nerve drawn as a tube through MNI waypoints (resampled every 2 mm so the bends are smooth)"""
+    """a nerve drawn as a tube through MNI waypoints (resampled every 2 mm so the bends are smooth); it
+    starts and ends exactly on the first and last waypoints (the ganglion, the organ)"""
     P = np.asarray(points, float)
     seg = np.linalg.norm(np.diff(P, axis=0), axis=1)
     s = np.concatenate([[0], np.cumsum(seg)])
     t = np.arange(0, s[-1], 2.0)
-    Q = np.stack([np.interp(t, s, P[:, i]) for i in range(3)], axis=1)
-    k = np.ones(3) / 3
-    Q = np.stack([np.convolve(np.pad(Q[:, i], 1, mode="edge"), k, mode="valid") for i in range(3)], axis=1)
+    t = np.append(t[t < s[-1] - 0.5], s[-1])  # the end itself, not the last 2 mm step short of it
+    if len(t) < 2:  # shorter than a step: the waypoints as given
+        Q = P
+    else:
+        Q = np.stack([np.interp(t, s, P[:, i]) for i in range(3)], axis=1)
+        k = np.ones(3) / 3
+        if len(Q) > 2:
+            Q[1:-1] = np.stack([np.convolve(Q[:, i], k, mode="valid") for i in range(3)], axis=1)  # ends stay pinned
     return meshing.tube(Q, np.full(len(Q), float(radius)), segments=10), Q
 
 
@@ -323,8 +329,8 @@ def axis_tract(keys, z_top, z_bottom, radius=1.4, cross=None, top_point=None, bo
     the tract runs on the other side.
     top_point / bottom_point: absolute RAS points (|x| used) joined to the tract's upper / lower end — a
     nucleus of origin or a target; their side follows the tract's side at that end.
-    The mesh is for the side `lateral_sign` (+1 right, below any decussation) and is mirrored by the
-    builder for the other."""
+    The mesh is for the side `lateral_sign` (+1 right, -1 left; the side above any decussation); the
+    builder draws the other side with the opposite sign, i.e. mirrored about the neuraxis, not x = 0."""
     ax = neuraxis()
     K = np.array(sorted(keys, key=lambda k: k[0]), dtype=float)
     zs = [z for z in sorted(ax, reverse=True) if z_bottom <= z <= z_top]
@@ -367,10 +373,31 @@ BUILDERS["axis-tract"] = axis_tract
 WORLD_SHAPES = {"cord-extension", "cord-column", "path-tube", "axis-tract"}  # built in MNI already: no placement
 
 
-def build(source: dict):
-    """-> (mesh, centerline or None) for one side (the right) in MNI from a `model` source; tube-shaped
-    models (tracts, nerves, cord columns) return the polyline the pathway animation should follow"""
-    out = BUILDERS[source["shape"]](**source.get("params", {}))
+# along the cord the neuraxis is not at x = 0 (the Visible Human cord sits ~4 mm left of the MNI
+# midline), so these are built once per side about the axis instead of mirrored across x = 0
+SIDED_SHAPES = {"cord-column", "axis-tract"}
+
+
+def builds_left(source: dict) -> bool:
+    """whether build(source, "L") draws the left side itself (otherwise it is the right mirrored at x = 0):
+    the cord-level shapes, and nerves whose last `mirrorFixedTail` waypoints sit on a midline organ"""
+    return source["shape"] in SIDED_SHAPES or bool(source.get("params", {}).get("mirrorFixedTail"))
+
+
+def build(source: dict, side: str = "R"):
+    """-> (mesh, centerline or None) for one side (the right unless builds_left) in MNI from a `model`
+    source; tube-shaped models (tracts, nerves, cord columns) return the polyline the pathway animation
+    should follow"""
+    params = dict(source.get("params", {}))
+    if side == "L":
+        if source["shape"] in SIDED_SHAPES:
+            params["lateral_sign"] = -float(params.get("lateral_sign", 1.0))
+        else:  # path-tube with mirrorFixedTail: mirror the waypoints except the last N, so both sides meet the organ
+            P = np.array(params["points"], float)
+            n = int(params["mirrorFixedTail"])
+            P[: len(P) - n, 0] *= -1
+            params["points"] = P
+    out = BUILDERS[source["shape"]](**params)
     mesh, line = out if isinstance(out, tuple) else (out, None)
     if source["shape"] in WORLD_SHAPES:
         return mesh, line

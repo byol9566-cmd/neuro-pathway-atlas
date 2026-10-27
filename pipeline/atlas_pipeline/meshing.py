@@ -31,6 +31,8 @@ def clean_mask(mask: np.ndarray, closing_iters: int = 1, min_component_frac: flo
         return mask.copy(), MaskStats(0, 0, 0, 0)
     work = ndimage.binary_closing(mask, iterations=closing_iters) if closing_iters else mask
     labels, n = ndimage.label(work)
+    if n == 0:  # a voxel or two on the crop border: the closing's erosion wipes it out
+        return np.zeros_like(mask, dtype=bool), MaskStats(int(mask.sum()), 0, int(n_raw), 0)
     sizes = np.bincount(labels.ravel())[1:]
     keep = np.flatnonzero(sizes >= min_component_frac * sizes.max()) + 1
     cleaned = np.isin(labels, keep)

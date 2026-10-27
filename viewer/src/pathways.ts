@@ -12,12 +12,18 @@ export function meshFor(structureId: string, side: OriginSide, meshes: MeshLooku
   return meshes.get(`${structureId}.${side}`) ?? meshes.get(`${structureId}.M`);
 }
 
+const warned = new Set<string>();
+
+/** Meshes a step lights up; a structure with no mesh (yet) is skipped with one warning per step and structure. */
 export function stepMeshIds(step: PathwayStep, origin: OriginSide, meshes: MeshLookup): string[] {
   const ids: string[] = [];
   for (const ref of step.structures) {
     const mesh = meshFor(ref.id, resolveSide(ref.side, origin), meshes);
-    if (!mesh) throw new Error(`pathway step ${step.id}: no mesh for ${ref.id}`);
-    ids.push(mesh.id);
+    if (mesh) ids.push(mesh.id);
+    else if (!warned.has(`${step.id}/${ref.id}`)) {
+      warned.add(`${step.id}/${ref.id}`);
+      console.warn(`pathway step ${step.id}: no mesh for ${ref.id}`);
+    }
   }
   return ids;
 }
