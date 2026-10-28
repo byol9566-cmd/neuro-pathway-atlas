@@ -1,4 +1,4 @@
-# 3. 경로 단계의 몸 작용 (관절·눈·동공)
+# 3. 경로 단계의 몸 작용 (관절·눈·동공·근육 이완)
 
 뷰어에서 그 단계에 도달하면 일어나는 움직임. 각도는 설명용 대표값. **틀린 것·빠진 것(어떤 경로의 마지막 단계에 어떤 관절·근육 작용이 있어야 하는지)**을 '답변' 열에 적어 주세요. 'ipsi/contra'는 경로의 기시쪽 기준.
 
@@ -28,6 +28,10 @@
 | pupillary-light-reflex-4 | 동공빛반사 | 짧은섬모체신경 → 동공조임근 | 동공 constrict (contra) |  |  |
 | autonomic-pupil-dilation-3 | 교감 동공확대 | 눈 교감효과기 | 동공 dilate (ipsi) |  |  |
 | accommodation-2 | 눈 조절·근접반응 | 부교감 조절 가지 | 동공 constrict (ipsi) |  |  |
+| withdrawal-reflex-3 | 굽힘회피반사 | 굽힘근 수축·폄근 이완 | 근육 이완 (ipsi) | 넙다리네갈래근 |  |
+| stretch-reflex-1 | 근방추 신장반사 | 근육 길이 증가 → Ia | 수축 없음 (ipsi) | 모든 근육 |  |
+| hvor-inhibition-2 | VOR의 길항근 억제 가지 | 같은쪽 가쪽곧은근 이완 | 근육 이완 (ipsi) | 가쪽곧은근 |  |
+| hvor-inhibition-3 | VOR의 길항근 억제 가지 | 반대쪽 안쪽곧은근 이완 | 근육 이완 (contra) | 안쪽곧은근 |  |
 
 ## 단계 → 근육·장기 종착 (apply_body_targets.py)
 

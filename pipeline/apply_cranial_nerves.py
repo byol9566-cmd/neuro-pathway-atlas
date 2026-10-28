@@ -10,6 +10,7 @@ the nucleus mesh's centroid in the mesh cache, data/derived/meshes, so a full bu
 ganglion / target. No open 3D data gives these courses; the review sheet
 docs/data/structures-3d/cranial-nerves-review.md lists every waypoint for 성연.
 """
+import datetime
 import sys
 from pathlib import Path
 
@@ -134,7 +135,7 @@ def main(write):
                 if link_step(p, st["id"], sid, side):  # the nerve comes after the nucleus
                     changed.append((pw["id"], st["id"], sid, side))
     print(f"{len(NERVES)} nerves; steps:", *changed, sep="\n  ")
-    rows = ["# 뇌신경 주행 경유점 표 (성연 검수용, 2026-10-05)", "",
+    rows = [f"# 뇌신경 주행 경유점 표 (성연 검수용, {datetime.date.today().isoformat()})", "",
             "오른쪽 기준 MNI RAS mm. 첫 점은 핵 메시의 무게중심(있으면). 틀린 점을 적어 주면 `pipeline/apply_cranial_nerves.py`의 표만 고친다.", "",
             "| id | 이름 | 경유점 (x, y, z) | 교과서 주행 |", "|---|---|---|---|"]
     for n in NERVES:

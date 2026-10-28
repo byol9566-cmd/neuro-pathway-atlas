@@ -10,6 +10,7 @@ anterolateral funiculus. Decussations are a z band where the tract eases across 
 entry is a textbook approximation and says so in the viewer; the table is the thing for 성연 to review
 (docs/data/structures-3d/axis-tracts-review.md is generated from it).
 """
+import datetime
 import sys
 from pathlib import Path
 
@@ -124,7 +125,7 @@ def main(write):
                 if link_step(p, st["id"], sid, side, "front"):
                     changed.append((pw["id"], st["id"], sid, side))
     print(f"{len(TRACTS)} axis tracts; steps:", *changed, sep="\n  ")
-    rows = ["# 뇌줄기·척수 섬유로 — 교과서 기하 표 (성연 검수용, 2026-10-05)", "",
+    rows = [f"# 뇌줄기·척수 섬유로 — 교과서 기하 표 (성연 검수용, {datetime.date.today().isoformat()})", "",
             "뷰어의 경로 재생이 이 선을 따른다. 위치는 단면 반지름에 대한 비율(가쪽, 앞쪽), 교차는 z 구간(MNI mm). 틀린 곳을 적어 주면 표만 고치면 된다(`pipeline/apply_axis_tracts.py`).", "",
             "| id | 이름 | 범위 z | 교차 z | 단면 위치 키프레임 (z: 가쪽, 앞) | 교과서 주행 요약 |", "|---|---|---|---|---|---|"]
     for t in TRACTS:

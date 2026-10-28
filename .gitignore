@@ -26,3 +26,7 @@ docs/handover-seongyeon/*.zip
 
 # Playwright MCP session logs and snapshots
 .playwright-mcp/
+
+# review bundle: screenshots and the zip are delivered by hand; markdown/csv stay tracked
+docs/handover-seongyeon/review-*/7_viewer_screenshots/
+docs/handover-seongyeon/review-*.zip
