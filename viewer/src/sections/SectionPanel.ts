@@ -66,6 +66,7 @@ export class SectionPanel {
   private readonly tables: Record<OriginSide, Uint32Array> = { L: new Uint32Array(MAX_LABEL), R: new Uint32Array(MAX_LABEL) };
   private index: number;
   private current: Uint16Array | null = null;
+  private cap: HTMLCanvasElement | null = null;
   private zoom = 1;
   private pan = { x: 0, y: 0 }; // canvas pixels at the viewport centre, relative to the canvas centre
   private drag: { x: number; y: number; moved: number } | null = null;
@@ -275,9 +276,9 @@ export class SectionPanel {
     const labels = this.current;
     if (!labels) return null;
     const { width, height } = this.meta;
-    const canvas = document.createElement('canvas');
-    canvas.width = width * 2;
-    canvas.height = height;
+    // one canvas, repainted per slice: the 3D cap keeps its texture and only re-uploads it
+    const canvas = (this.cap ??= document.createElement('canvas'));
+    if (canvas.width !== width * 2 || canvas.height !== height) [canvas.width, canvas.height] = [width * 2, height];
     const ctx = canvas.getContext('2d')!;
     const out = ctx.createImageData(width * 2, height);
     const px = new Uint32Array(out.data.buffer);

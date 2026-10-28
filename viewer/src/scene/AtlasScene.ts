@@ -26,6 +26,8 @@ export interface AtlasEntry {
    *  spinal cord runs down through the mist sea */
   isOutline: boolean;
   state: MeshState;
+  /** not in a hidden group (or forced on by a pathway or selection); `object.visible` also drops sunk ghosts */
+  shown: boolean;
 }
 
 export type ViewPreset = 'anterior' | 'posterior' | 'left' | 'right' | 'superior' | 'oblique';
@@ -49,8 +51,14 @@ const VIEW_DIRECTIONS: Record<ViewPreset, THREE.Vector3> = {
 /** 전신: the body seen from the front and a little to its right */
 const BODY_DIRECTION = new THREE.Vector3(-0.35, 0.08, -0.93).normalize();
 const ACCENT = '#a0e7ff';
-/** after this long without input the loop drops to every other frame (pulses and drift stay smooth enough) */
+/** after this long without input the loop drops to IDLE_FPS (pulses and drift stay smooth enough) */
 const IDLE_AFTER_S = 3;
+const IDLE_FPS = 20;
+/** groups drawn as ghosts until chosen: the shells and cortex, and everything that would otherwise bury
+ *  the nuclei — the tract tubes, the body shell, muscles and viscera */
+const GHOST_GROUPS = new Set(['cortex', 'spinal-cord', 'tracts', 'body-shell', 'muscles', 'viscera']);
+/** a ghost has dissolved completely this far below the mist surface (see the fade in materials.ts) */
+const GHOST_SINK_MM = 120;
 
 const smooth = (a: number, b: number, t: number) => {
   const k = Math.min(1, Math.max(0, (t - a) / (b - a)));
@@ -105,13 +113,15 @@ export class AtlasScene {
   private readonly sectionPlane = new THREE.Group();
   /** the slice image laid on the cut face */
   private sectionCap: THREE.Mesh | null = null;
+  private capSize = '';
   private readonly cutPlane = new THREE.Plane(new THREE.Vector3(0, -1, 0), 0);
   private cutEnabled = false;
   private fly: { fromTarget: THREE.Vector3; toTarget: THREE.Vector3; fromPos: THREE.Vector3; toPos: THREE.Vector3; t: number } | null = null;
   private intro: Intro | null = null;
   private lastFrameMs = performance.now();
   private time = 0;
-  private lastActivity = 0;
+  /** wall clock (ms) of the last input or change: the loop runs at full rate for IDLE_AFTER_S after it */
+  private lastActivityMs = 0;
   /** where the mist surface should be: at rest under the brain, lower when the focus is on the body */
   private seaGoal = 0;
   /** the 전신 toggle: while on, the mist stays below the feet whatever is in focus */
@@ -123,13 +133,16 @@ export class AtlasScene {
   private framing = { x: 0.5, y: 0.5, scale: 1 };
   private framingGoal = { x: 0.5, y: 0.5, scale: 1 };
   private framed = false;
-  private frameParity = 0;
+  private viewSize = { w: 1, h: 1 };
   private frames = 0;
+  private readonly euler = new THREE.Euler();
+  private readonly axis = new THREE.Vector3();
   private statsAt = 0;
 
   constructor(private readonly canvas: HTMLCanvasElement) {
     this.renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
-    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    // phones and tablets: 1.5x is sharp enough at arm's length and saves almost half the pixels of 2x
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, window.matchMedia('(pointer: coarse)').matches ? 1.5 : 2));
     this.renderer.setClearColor('#030304');
     this.raycaster.firstHitOnly = true;
     this.background = new MistSea(BRAIN_CENTER, this.renderer);
@@ -207,15 +220,13 @@ export class AtlasScene {
       if (!info) return;
       const structure = structures.get(info.structureId)!;
       const isShell = structure.group === 'shell';
-      // groups drawn as ghosts until chosen: the shells and cortex, and everything that would otherwise bury
-      // the nuclei — the tract tubes, the body shell, muscles and viscera
-      const GHOST_GROUPS = new Set(['cortex', 'spinal-cord', 'tracts', 'body-shell', 'muscles', 'viscera']);
       const isOutline = isShell || GHOST_GROUPS.has(structure.group);
       const baseColor = structure.color ? new THREE.Color(structure.color) : structureColor(manifest.groups[structure.group].color, indexInGroup.get(structure.id)!, isShell);
       if (!object.geometry.attributes.normal) object.geometry.computeVertexNormals();
       object.geometry.computeBoundsTree();
+      object.geometry.computeBoundingSphere();
       const entry: AtlasEntry = {
-        info, structure, object, baseColor, isShell, isOutline, state: 'normal', halo: null,
+        info, structure, object, baseColor, isShell, isOutline, state: 'normal', halo: null, shown: true,
         solid: solidMaterial(baseColor), ghost: ghostMaterial(baseColor, isShell),
       };
       object.userData.entry = entry;
@@ -250,6 +261,7 @@ export class AtlasScene {
       sceneReveal.value = 1;
       this.background.level = SETTLED_LEVEL;
       this.finishReveal();
+      this.poke();
       return Promise.resolve();
     }
     return new Promise((resolve) => {
@@ -516,8 +528,19 @@ export class AtlasScene {
     for (const entry of this.entries.values()) {
       // a hidden group still shows the meshes a pathway or selection needs
       const forced = entry.state === 'active' || entry.state === 'involved';
-      entry.object.visible = forced || !this.hiddenGroups.has(entry.structure.group);
+      entry.shown = forced || !this.hiddenGroups.has(entry.structure.group);
+      entry.object.visible = entry.shown && !this.sunk(entry);
     }
+  }
+
+  private readonly sphere = new THREE.Sphere();
+
+  /** A ghost wholly below the point where the mist has dissolved it draws nothing but still costs a draw
+   *  call and its vertices: skip it (and it cannot be picked through the mist either). */
+  private sunk(entry: AtlasEntry) {
+    if (entry.state !== 'ghost' || !entry.object.geometry.boundingSphere) return false;
+    const s = this.sphere.copy(entry.object.geometry.boundingSphere).applyMatrix4(entry.object.matrixWorld);
+    return s.center.y + s.radius < sceneFloor.value - GHOST_SINK_MM;
   }
 
   private buildSectionPlane() {
@@ -554,6 +577,14 @@ export class AtlasScene {
    * `pixelMm` wide per pixel, covering RAS x in [xMin, -xMin] and y in [yMin, yMax].
    */
   setSectionCap(canvas: HTMLCanvasElement | null, extent?: { xMin: number; yMin: number; yMax: number; pixelMm: number }) {
+    const map = (this.sectionCap?.material as THREE.MeshBasicMaterial | undefined)?.map;
+    if (canvas && extent && map?.image === canvas && this.capSize === `${canvas.width}x${canvas.height}x${extent.pixelMm}`) {
+      // the same canvas repainted for another slice: re-upload it and move the cap to the new level
+      map.needsUpdate = true;
+      this.sectionCap!.position.set(0, this.cutPlane.constant - 0.15, -(extent.yMin + extent.yMax) / 2);
+      this.poke();
+      return;
+    }
     if (this.sectionCap) {
       this.sectionCap.removeFromParent();
       (this.sectionCap.material as THREE.MeshBasicMaterial).map?.dispose();
@@ -579,6 +610,7 @@ export class AtlasScene {
     cap.renderOrder = 25;
     cap.raycast = () => {};
     this.sectionCap = cap;
+    this.capSize = `${canvas.width}x${canvas.height}x${extent.pixelMm}`;
     this.root.add(cap);
   }
 
@@ -682,8 +714,8 @@ export class AtlasScene {
   /** Screen position (CSS px within the canvas) of a point given in RAS mm. */
   project(ras: Vec3): { x: number; y: number; visible: boolean } {
     const v = rasToThree(ras).project(this.camera);
-    const rect = this.canvas.getBoundingClientRect();
-    return { x: ((v.x + 1) / 2) * rect.width, y: ((1 - v.y) / 2) * rect.height, visible: v.z > -1 && v.z < 1 && Math.abs(v.x) < 1.05 && Math.abs(v.y) < 1.05 };
+    const { w, h } = this.viewSize; // kept by resize(): reading the layout per label per frame forces a reflow
+    return { x: ((v.x + 1) / 2) * w, y: ((1 - v.y) / 2) * h, visible: v.z > -1 && v.z < 1 && Math.abs(v.x) < 1.05 && Math.abs(v.y) < 1.05 };
   }
 
   private flyTo(toTarget: THREE.Vector3, toPos: THREE.Vector3, animate: boolean) {
@@ -699,7 +731,7 @@ export class AtlasScene {
   }
 
   private poke() {
-    this.lastActivity = this.time;
+    this.lastActivityMs = performance.now();
   }
 
   /**
@@ -734,6 +766,7 @@ export class AtlasScene {
     const parent = this.canvas.parentElement!;
     const { clientWidth: w, clientHeight: h } = parent;
     if (!w || !h) return;
+    this.viewSize = { w, h };
     this.renderer.setSize(w, h, false);
     this.camera.aspect = w / h;
     this.camera.updateProjectionMatrix();
@@ -741,16 +774,22 @@ export class AtlasScene {
     this.poke();
   }
 
+  private readonly pickTiers: THREE.Object3D[][] = [[], []];
+  private readonly hits: THREE.Intersection[] = [];
+
   private raycast(): AtlasEntry | null {
     this.raycaster.setFromCamera(this.pointer, this.camera);
     // solid structures win over ghosts; shells are never pickable (they would swallow every click)
-    const tiers: AtlasEntry[][] = [[], []];
+    const tiers = this.pickTiers;
+    tiers[0].length = tiers[1].length = 0;
     for (const e of this.entries.values()) {
       if (!e.object.visible || e.isShell) continue;
-      tiers[e.state === 'ghost' ? 1 : 0].push(e);
+      tiers[e.state === 'ghost' ? 1 : 0].push(e.object);
     }
     for (const tier of tiers) {
-      const hit = this.raycaster.intersectObjects(tier.map((e) => e.object), false)[0];
+      const hits = this.raycaster.intersectObjects(tier, false, this.hits);
+      const hit = hits[0];
+      hits.length = 0;
       if (hit) return hit.object.userData.entry as AtlasEntry;
     }
     return null;
@@ -765,16 +804,19 @@ export class AtlasScene {
 
   private frame() {
     const now = performance.now();
+    const still = this.reducedMotion.matches;
+    // nothing but slow drift and pulses to show: IDLE_FPS is plenty, and with reduced motion nothing moves
+    // at all, so the last frame stands until something changes
+    const reframing = Math.abs(this.framing.x - this.framingGoal.x) > 5e-4 || Math.abs(this.framing.y - this.framingGoal.y) > 5e-4
+      || Math.abs(this.framing.scale - this.framingGoal.scale) > 5e-4;
+    const busy = reframing || this.intro !== null || this.fly !== null || this.downAt !== null || this.background.rippling
+      || now - this.lastActivityMs < IDLE_AFTER_S * 1000;
+    // a few ms of slack so a 60 Hz display does not round 50 ms up to four vsyncs
+    if (!busy && (still || now - this.lastFrameMs < 1000 / IDLE_FPS - 4)) return;
+    // dt spans every skipped vsync, so idle animation keeps its real speed
     const dt = Math.min((now - this.lastFrameMs) / 1000, 0.1);
     this.lastFrameMs = now;
     const time = (this.time += dt);
-
-    // nothing but slow drift and pulses to show: every other frame is plenty
-    const reframing = Math.abs(this.framing.x - this.framingGoal.x) > 5e-4 || Math.abs(this.framing.y - this.framingGoal.y) > 5e-4
-      || Math.abs(this.framing.scale - this.framingGoal.scale) > 5e-4;
-    const busy = reframing || this.intro !== null || this.fly !== null || this.downAt !== null || this.background.rippling || time - this.lastActivity < IDLE_AFTER_S;
-    this.frameParity ^= 1;
-    if (!busy && this.frameParity) return;
 
     if (this.intro) this.stepIntro(dt);
     if (reframing) {
@@ -803,8 +845,7 @@ export class AtlasScene {
       // GLB frame is RAS: +z up, +x right. Turning toward the nose: the right eye's anterior pole (+y) goes to -x,
       // a positive rotation about +z; the left eye the opposite. Elevation is a positive rotation about +x.
       const toward = side === 'R' ? 1 : -1;
-      const q = new THREE.Quaternion().setFromEuler(new THREE.Euler(THREE.MathUtils.degToRad(e.rot[1]), 0, THREE.MathUtils.degToRad(toward * e.rot[0]), 'XYZ'));
-      e.group.quaternion.copy(q);
+      e.group.quaternion.setFromEuler(this.euler.set(THREE.MathUtils.degToRad(e.rot[1]), 0, THREE.MathUtils.degToRad(toward * e.rot[0]), 'XYZ'));
       this.poke();
     }
     for (const m of this.muscles.values()) {
@@ -830,8 +871,7 @@ export class AtlasScene {
       if (Math.abs(j.angle - j.goal) < 0.05) continue;
       const k = this.reducedMotion.matches ? 1 : 1 - Math.exp(-dt * 4);
       j.angle += (j.goal - j.angle) * k;
-      const axis = new THREE.Vector3(...j.info.axis).normalize();
-      j.group.quaternion.setFromAxisAngle(axis, THREE.MathUtils.degToRad(j.angle * j.info.flexSign));
+      j.group.quaternion.setFromAxisAngle(this.axis.fromArray(j.info.axis).normalize(), THREE.MathUtils.degToRad(j.angle * j.info.flexSign));
       this.poke();
     }
     const seaTarget = this.bodyRevealed ? Math.min(this.seaGoal, BODY_CENTER.y - 900) : this.seaGoal;
@@ -847,11 +887,11 @@ export class AtlasScene {
       this.setHovered(this.raycast());
     }
 
-    const still = this.reducedMotion.matches;
     const pulse = still ? 0.5 : 0.5 + 0.5 * Math.sin(time * 3.2);
     for (const e of this.entries.values()) {
       if (e.state !== 'ghost') applySolidState(e.solid, this.relaxedTint.get(e.info.id) ?? e.baseColor, e.state, e === this.hovered, pulse);
       else e.ghost.uniforms.uHover.value = e === this.hovered ? 1 : 0;
+      if (e.shown) e.object.visible = !this.sunk(e);
     }
     this.route?.update(still ? 0 : time, still ? 1 : dt);
     this.camera.updateMatrixWorld();

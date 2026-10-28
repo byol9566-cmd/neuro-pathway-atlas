@@ -13,6 +13,7 @@ stage="${TMPDIR:-/tmp}/neuro-pathway-atlas-deploy/neuro-pathway-atlas"
 rm -rf "$stage"
 mkdir -p "$stage"
 cp -R dist/. "$stage"/
+cp vercel.json "$stage"/ # cache headers: hashed /assets for a year, the unhashed /data and /media for an hour
 test -d "$link" && cp -R "$link" "$stage"/.vercel
 # the first upload of a new build sometimes ends in "Not authorized" after the missing files are sent;
 # a second call then succeeds immediately

@@ -170,6 +170,9 @@ const SUBJECT_RADIUS = 110; // mm: lines of sight passing closer to the centre t
 const SHEET_RADIUS = 2800;
 const PATCH_SIZE = 1500; // mm: the square around the subject where the pointer can stir the surface
 const BASE_FLOW = 26; // mm per second
+/** grid of each sheet: ~35 mm a cell still carries the swell (its finest octave is ~90 mm across) */
+const SHEET_SEGMENTS = 160;
+const MOTE_COUNT = 42000;
 
 export class MistSea {
   readonly group = new THREE.Group();
@@ -197,7 +200,7 @@ export class MistSea {
     this.surfaceY = seaLevel;
     this.plane = new THREE.Plane(new THREE.Vector3(0, 1, 0), -seaLevel);
 
-    const geometry = new THREE.PlaneGeometry(SHEET_RADIUS * 2, SHEET_RADIUS * 2, 300, 300).rotateX(-Math.PI / 2);
+    const geometry = new THREE.PlaneGeometry(SHEET_RADIUS * 2, SHEET_RADIUS * 2, SHEET_SEGMENTS, SHEET_SEGMENTS).rotateX(-Math.PI / 2);
     // two sheets a little apart, out of step with each other: the folds overlap like veils
     for (const [seed, offset, amplitude, brightness] of [[0, 0, 46, 1], [19.7, -34, 60, 0.55]]) {
       const material = new THREE.ShaderMaterial({
@@ -233,7 +236,7 @@ export class MistSea {
       this.group.add(sheet);
     }
 
-    const count = 42000;
+    const count = MOTE_COUNT;
     const radius = 1500;
     const position = new Float32Array(count * 3);
     const lift = new Float32Array(count);
@@ -252,6 +255,8 @@ export class MistSea {
     moteGeometry.setAttribute('aLift', new THREE.BufferAttribute(lift, 1));
     moteGeometry.setAttribute('aSize', new THREE.BufferAttribute(size, 1));
     moteGeometry.setAttribute('aPhase', new THREE.BufferAttribute(phase, 1));
+    // phones and tablets draw half: the motes are scattered at random, so any prefix is an even thinning
+    if (window.matchMedia('(pointer: coarse)').matches) moteGeometry.setDrawRange(0, count / 2);
     this.motes = new THREE.ShaderMaterial({
       vertexShader: MOTE_VERT,
       fragmentShader: MOTE_FRAG,
